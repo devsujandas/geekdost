@@ -28,24 +28,38 @@ export default function NotFound() {
               <h1 className="text-6xl font-bold text-primary mb-4">404</h1>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.4 }}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
               <h2 className="text-3xl font-bold text-foreground mb-4">Page Not Found</h2>
               <p className="text-lg text-muted-foreground mb-8 text-pretty">
                 The page you're looking for doesn't exist or has been moved. Let's get you back on track with our
                 programming resources.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {/* ✅ FIXED BUTTONS */}
+              <div className="flex flex-row gap-3 justify-center flex-wrap">
                 <Link href="/">
-                  <InteractiveButton className="flex items-center space-x-2">
-                    <FaHome className="h-4 w-4" />
-                    <span>Go Home</span>
+                  <InteractiveButton className="px-5 py-2 rounded-xl shadow-md hover:shadow-lg transition-all duration-200">
+                    {/* wrapper div ensures icon + text stay side by side */}
+                    <div className="flex flex-row items-center gap-2">
+                      <FaHome className="h-4 w-4 shrink-0" />
+                      <span className="font-medium">Go Home</span>
+                    </div>
                   </InteractiveButton>
                 </Link>
+
                 <Link href="/search">
-                  <InteractiveButton variant="outline" className="flex items-center space-x-2">
-                    <FaSearch className="h-4 w-4" />
-                    <span>Search Topics</span>
+                  <InteractiveButton
+                    variant="outline"
+                    className="px-5 py-2 rounded-xl shadow-md hover:shadow-lg transition-all duration-200"
+                  >
+                    <div className="flex flex-row items-center gap-2">
+                      <FaSearch className="h-4 w-4 shrink-0" />
+                      <span className="font-medium">Search Topics</span>
+                    </div>
                   </InteractiveButton>
                 </Link>
               </div>
