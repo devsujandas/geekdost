@@ -97,17 +97,17 @@ export function AdvancedSearch({
             <InteractiveButton
               variant="outline"
               onClick={() => setIsFilterOpen(!isFilterOpen)}
-              className={`flex items-center space-x-2   ${
+              className={`inline-flex items-center justify-center gap-2 h-10 px-4 text-sm font-medium transition-colors ${
                 isFilterOpen ? "bg-primary/10 text-primary" : ""
               }`}
             >
-              <FaFilter className="h-4 w-4" />
-              <span>Filters</span>
+              <FaFilter className="h-4 w-4 flex-shrink-0" />
+              <span className="whitespace-nowrap">Filters</span>
               {hasActiveFilters && (
                 <motion.div 
                   initial={{ scale: 0 }} 
                   animate={{ scale: 1 }} 
-                  className="w-2 h-2 bg-primary rounded-full ml-1" 
+                  className="w-2 h-2 bg-primary rounded-full flex-shrink-0" 
                 />
               )}
             </InteractiveButton>
