@@ -221,7 +221,7 @@ export default function AboutPage() {
   </a>
     {/* Instagram */}
   <a
-    href="https://instagram.com/yourusername"
+    href="https://instagram.com/devsujandas"
     target="_blank"
     rel="noopener noreferrer"
     className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition"
