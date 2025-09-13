@@ -21,22 +21,18 @@ export default function TopicsPage() {
   useEffect(() => {
     let results = topicsData
 
-    // Apply search filter
     if (searchQuery.trim() !== "") {
       results = searchTopics(searchQuery)
     }
 
-    // Apply category filter
     if (selectedCategory !== "All") {
       results = results.filter((topic) => topic.category === selectedCategory)
     }
 
-    // Apply difficulty filter
     if (selectedDifficulty !== "All") {
       results = results.filter((topic) => topic.difficulty === selectedDifficulty)
     }
 
-    // Apply sorting
     results = sortTopics(results, sortBy)
 
     setFilteredTopics(results)
@@ -44,21 +40,23 @@ export default function TopicsPage() {
 
   return (
     <PageLayout>
-      <div className="container mx-auto max-w-6xl px-4 py-8">
+      <div className="container mx-auto max-w-7xl px-6 py-12">
         {/* Header */}
         <ScrollReveal>
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">All Programming Topics</h1>
-            <p className="text-xl text-muted-foreground text-pretty max-w-2xl mx-auto">
-              Explore our comprehensive collection of programming topics, roadmaps, and code examples to accelerate your
-              learning journey.
+          <div className="text-center mb-14">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-5">
+              All Programming Topics
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Explore our comprehensive collection of programming topics, roadmaps, and code examples
+              to accelerate your learning journey.
             </p>
           </div>
         </ScrollReveal>
 
-        {/* Advanced Search and Filter */}
+        {/* Advanced Search */}
         <ScrollReveal delay={0.2}>
-          <div className="mb-12">
+          <div className="mb-14">
             <AdvancedSearch
               onSearch={setSearchQuery}
               onCategoryFilter={setSelectedCategory}
@@ -77,21 +75,22 @@ export default function TopicsPage() {
         {/* Topics Grid */}
         <ScrollReveal delay={0.4}>
           {filteredTopics.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              <StaggeredList stagger={0.05}>
-                {filteredTopics.map((topic) => (
-                  <div key={topic.id}>
-                    <TopicCard topic={topic} />
-                  </div>
-                ))}
-              </StaggeredList>
-            </div>
+            <StaggeredList
+              stagger={0.06}
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+            >
+              {filteredTopics.map((topic) => (
+                <div key={topic.id} className="w-full h-full">
+                  <TopicCard topic={topic} />
+                </div>
+              ))}
+            </StaggeredList>
           ) : (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-center py-16"
+              className="text-center py-20"
             >
               <GlassmorphismCard>
                 <h3 className="text-2xl font-semibold text-foreground mb-4">No topics found</h3>
