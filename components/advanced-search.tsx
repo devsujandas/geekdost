@@ -97,7 +97,7 @@ export function AdvancedSearch({
             <InteractiveButton
               variant="outline"
               onClick={() => setIsFilterOpen(!isFilterOpen)}
-              className={`flex items-center space-x-2 h-10 px-4 ${
+              className={`flex items-center space-x-2   ${
                 isFilterOpen ? "bg-primary/10 text-primary" : ""
               }`}
             >
