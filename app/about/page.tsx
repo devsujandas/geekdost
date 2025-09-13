@@ -180,7 +180,7 @@ export default function AboutPage() {
   <div className="flex justify-center md:justify-start gap-4 mt-6">
   {/* GitHub */}
   <a
-    href="https://github.com/"
+    href="https://github.com/devsujandas"
     target="_blank"
     rel="noopener noreferrer"
     className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition"
@@ -193,7 +193,7 @@ export default function AboutPage() {
 
   {/* LinkedIn */}
   <a
-    href="https://linkedin.com/"
+    href="https://in.linkedin.com/in/devsujandas "
     target="_blank"
     rel="noopener noreferrer"
     className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition"
@@ -217,6 +217,23 @@ export default function AboutPage() {
            2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 
            2 0 0 1 2-2h4V4a2 2 0 0 1 2-2zm0 
            4h4V4h-4v2z"/>
+</svg>
+  </a>
+    {/* Instagram */}
+  <a
+    href="https://instagram.com/yourusername"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-5 h-5" viewBox="0 0 24 24">
+  <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 
+           0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 
+           0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 
+           0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm5 
+           3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 
+           6 3 3 0 010-6zm4.5-.75a1.25 1.25 0 11-.001 
+           2.501A1.25 1.25 0 0116.5 8.25z"/>
 </svg>
 
   </a>
