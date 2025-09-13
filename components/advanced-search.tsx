@@ -97,19 +97,22 @@ export function AdvancedSearch({
             <InteractiveButton
               variant="outline"
               onClick={() => setIsFilterOpen(!isFilterOpen)}
-              className={`inline-flex items-center justify-center gap-2 h-10 px-4 text-sm font-medium transition-colors ${
+              className={`px-4 h-10 text-sm font-medium transition-colors ${
                 isFilterOpen ? "bg-primary/10 text-primary" : ""
               }`}
             >
-              <FaFilter className="h-4 w-4 flex-shrink-0" />
-              <span className="whitespace-nowrap">Filters</span>
-              {hasActiveFilters && (
-                <motion.div 
-                  initial={{ scale: 0 }} 
-                  animate={{ scale: 1 }} 
-                  className="w-2 h-2 bg-primary rounded-full flex-shrink-0" 
-                />
-              )}
+              {/* ✅ Wrapper ensures icon + text side by side */}
+              <div className="flex flex-row items-center gap-2">
+                <FaFilter className="h-4 w-4 shrink-0" />
+                <span className="whitespace-nowrap">Filters</span>
+                {hasActiveFilters && (
+                  <motion.div 
+                    initial={{ scale: 0 }} 
+                    animate={{ scale: 1 }} 
+                    className="w-2 h-2 bg-primary rounded-full shrink-0" 
+                  />
+                )}
+              </div>
             </InteractiveButton>
           </div>
         </div>
