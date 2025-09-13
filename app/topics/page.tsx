@@ -34,101 +34,115 @@ export default function TopicsPage() {
 
   return (
     <PageLayout>
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        {/* Header */}
-        <ScrollReveal>
-          <div className="text-center mb-14">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-5">
-              All Programming Topics
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Explore our comprehensive collection of programming topics, roadmaps, and code examples
-              to accelerate your learning journey.
-            </p>
-          </div>
-        </ScrollReveal>
-
-        {/* Advanced Search */}
-        <ScrollReveal delay={0.2}>
-          <div className="mb-14">
-            <AdvancedSearch
-              onSearch={setSearchQuery}
-              onCategoryFilter={setSelectedCategory}
-              onDifficultyFilter={setSelectedDifficulty}
-              onSort={setSortBy}
-              searchQuery={searchQuery}
-              selectedCategory={selectedCategory}
-              selectedDifficulty={selectedDifficulty}
-              sortBy={sortBy}
-              resultsCount={filteredTopics.length}
-              totalCount={topicsData.length}
-            />
-          </div>
-        </ScrollReveal>
-
-        {/* Topics Grid - Improved Layout */}
-        <ScrollReveal delay={0.4}>
-          {filteredTopics.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
-              {filteredTopics.map((topic, index) => (
-                <motion.div
-                  key={topic.id}
-                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  transition={{ 
-                    duration: 0.5,
-                    delay: index * 0.06,
-                    ease: "easeOut"
-                  }}
-                  whileHover={{ 
-                    y: -8,
-                    transition: { duration: 0.2 }
-                  }}
-                  className="h-full"
-                >
-                  <TopicCard topic={topic} />
-                </motion.div>
-              ))}
+      <div className="min-h-screen bg-background">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 py-8 sm:py-12">
+          {/* Header */}
+          <ScrollReveal>
+            <div className="text-center mb-10 sm:mb-14">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-5">
+                All Programming Topics
+              </h1>
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
+                Explore our comprehensive collection of programming topics, roadmaps, and code examples
+                to accelerate your learning journey.
+              </p>
             </div>
-          ) : (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="flex items-center justify-center min-h-[400px]"
-            >
-              <GlassmorphismCard>
-                <div className="text-center p-8 md:p-12 max-w-md mx-auto">
-                  <div className="mb-6">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-muted/20 flex items-center justify-center">
-                      <svg className="w-8 h-8 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <h3 className="text-2xl font-semibold text-foreground mb-4">
-                    No topics found
-                  </h3>
-                  <p className="text-muted-foreground mb-8 leading-relaxed">
-                    Try adjusting your search terms or filters to find what you're looking for.
-                  </p>
-                  <InteractiveButton
-                    onClick={() => {
-                      setSearchQuery("")
-                      setSelectedCategory("All")
-                      setSelectedDifficulty("All")
-                      setSortBy("default")
-                    }}
-                    variant="outline"
-                    className="w-full sm:w-auto"
-                  >
-                    Clear All Filters
-                  </InteractiveButton>
+          </ScrollReveal>
+
+          {/* Advanced Search - Fixed positioning issues */}
+          <ScrollReveal delay={0.2}>
+            <div className="mb-8 sm:mb-12 relative z-10">
+              <div className="sticky top-4 bg-background/95 backdrop-blur-sm rounded-xl border border-border/50 shadow-lg p-4 sm:p-6">
+                <AdvancedSearch
+                  onSearch={setSearchQuery}
+                  onCategoryFilter={setSelectedCategory}
+                  onDifficultyFilter={setSelectedDifficulty}
+                  onSort={setSortBy}
+                  searchQuery={searchQuery}
+                  selectedCategory={selectedCategory}
+                  selectedDifficulty={selectedDifficulty}
+                  sortBy={sortBy}
+                  resultsCount={filteredTopics.length}
+                  totalCount={topicsData.length}
+                />
+              </div>
+            </div>
+          </ScrollReveal>
+
+          {/* Topics Grid - Improved responsive layout */}
+          <ScrollReveal delay={0.4}>
+            {filteredTopics.length > 0 ? (
+              <div className="relative z-0">
+                {/* Responsive Grid Container */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+                  {filteredTopics.map((topic, index) => (
+                    <motion.div
+                      key={topic.id}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ 
+                        duration: 0.6,
+                        delay: index * 0.06,
+                        ease: "easeOut"
+                      }}
+                      className="w-full h-full"
+                    >
+                      <TopicCard topic={topic} />
+                    </motion.div>
+                  ))}
                 </div>
-              </GlassmorphismCard>
-            </motion.div>
-          )}
-        </ScrollReveal>
+
+                {/* Load More Button (if needed) */}
+                {filteredTopics.length > 12 && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.8 }}
+                    className="text-center mt-12"
+                  >
+                    <InteractiveButton
+                      variant="outline"
+                      className="px-8 py-3"
+                    >
+                      Load More Topics
+                    </InteractiveButton>
+                  </motion.div>
+                )}
+              </div>
+            ) : (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-center py-16 sm:py-20"
+              >
+                <GlassmorphismCard className="max-w-md mx-auto">
+                  <div className="p-6 sm:p-8">
+                    <div className="text-4xl sm:text-5xl mb-4">🔍</div>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-foreground mb-4">
+                      No topics found
+                    </h3>
+                    <p className="text-muted-foreground mb-6 text-sm sm:text-base">
+                      Try adjusting your search terms or filters to find what you're looking for.
+                    </p>
+                    <InteractiveButton
+                      onClick={() => {
+                        setSearchQuery("")
+                        setSelectedCategory("All")
+                        setSelectedDifficulty("All")
+                        setSortBy("default")
+                      }}
+                      variant="outline"
+                      className="w-full sm:w-auto"
+                    >
+                      Clear All Filters
+                    </InteractiveButton>
+                  </div>
+                </GlassmorphismCard>
+              </motion.div>
+            )}
+          </ScrollReveal>
+        </div>
       </div>
     </PageLayout>
   )
