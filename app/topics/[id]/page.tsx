@@ -89,7 +89,7 @@ export default function TopicPage({ params }: TopicPageProps) {
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">{topic.title}</h1>
               <p className="text-xl text-muted-foreground mb-6 text-pretty max-w-2xl">{topic.description}</p>
-              <div className="flex items-center space-x-6 text-sm text-muted-foreground mb-6">
+              <div className="flex flex-wrap justify-center items-center space-x-6 text-sm text-muted-foreground mb-6">
                 <div className="flex items-center space-x-2">
                   <FaClock className="h-4 w-4" />
                   <span>{topic.roadmap.length} Learning Steps</span>
@@ -103,34 +103,36 @@ export default function TopicPage({ params }: TopicPageProps) {
                   <span>{topic.notes.length} Key Notes</span>
                 </div>
               </div>
-
-              {/* 🔹 Tab Buttons */}
-              <div className="flex flex-wrap gap-4 justify-center">
-                <InteractiveButton
-                  variant={activeTab === "roadmap" ? "default" : "outline"}
-                  onClick={() => setActiveTab("roadmap")}
-                >
-                  Roadmap
-                </InteractiveButton>
-                <InteractiveButton
-                  variant={activeTab === "notes" ? "default" : "outline"}
-                  onClick={() => setActiveTab("notes")}
-                >
-                  Notes
-                </InteractiveButton>
-                <InteractiveButton
-                  variant={activeTab === "code" ? "default" : "outline"}
-                  onClick={() => setActiveTab("code")}
-                >
-                  Code
-                </InteractiveButton>
-              </div>
             </div>
           </GlassmorphismCard>
         </motion.div>
 
+        {/* 🔹 Tab Buttons Card */}
+        <GlassmorphismCard className="mb-12">
+          <div className="flex flex-wrap justify-center gap-4">
+            <InteractiveButton
+              variant={activeTab === "roadmap" ? "primary" : "outline"}
+              onClick={() => setActiveTab("roadmap")}
+            >
+              Roadmap
+            </InteractiveButton>
+            <InteractiveButton
+              variant={activeTab === "notes" ? "primary" : "outline"}
+              onClick={() => setActiveTab("notes")}
+            >
+              Notes
+            </InteractiveButton>
+            <InteractiveButton
+              variant={activeTab === "code" ? "primary" : "outline"}
+              onClick={() => setActiveTab("code")}
+            >
+              Code
+            </InteractiveButton>
+          </div>
+        </GlassmorphismCard>
+
         {/* Content Sections with Smooth Animation */}
-        <div className="mt-12">
+        <div className="mt-8">
           <AnimatePresence mode="wait">
             {activeTab === "roadmap" && (
               <motion.section
