@@ -43,7 +43,7 @@ export const topicsData: Topic[] = [
   category: "Programming",
   difficulty: "Beginner",
   tags: ["python", "data-science", "automation"],
-  image: "/images/python.png", //  added for image view
+  image: "/images/javascript.jpeg", //  added for image view
   roadmap: [
     {
       id: "py-1",
