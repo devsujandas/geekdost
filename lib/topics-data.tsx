@@ -1097,7 +1097,7 @@ exports.handler = async (event) => {
     category: "Security",
     difficulty: "Intermediate",
     tags: ["cybersecurity", "web-security", "owasp", "https"],
-    image: "/images/python.png", //  added for image view
+    image: "/images/cybersecurity.jpeg", //  added for image view
     roadmap: [
       {
         id: "cyber-1",
