@@ -117,7 +117,7 @@ plt.show()`,
   "category": "Programming",
   "difficulty": "Beginner",
   "tags": ["javascript", "web-development", "nodejs", "frontend", "backend"],
-  "image": "/images/javascript.png",
+  "image": "/images/javascript.webp",
   "roadmap": [
     {
       "id": "js-1",
@@ -246,7 +246,7 @@ plt.show()`,
     category: "Programming",
     difficulty: "Intermediate",
     tags: ["java", "object-oriented", "spring"],
-    image: "/images/python.png", //  added for image view
+    image: "/images/java.png", //  added for image view
     roadmap: [
       {
         id: "java-1",
