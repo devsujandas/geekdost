@@ -108,79 +108,133 @@ plt.show()`,
   ],
 },
 {
-  id: "javascript",
-  slug: "javascript", 
-  title: "JavaScript",
-  description: "Frontend and backend development with JavaScript",
-  icon: "FaJs",
-  color: "from-yellow-400 to-orange-500",
-  category: "Programming",
-  difficulty: "Beginner",
-  tags: ["javascript", "web-development", "nodejs"],
-  image: "/images/python.png", //  added for image view
-  roadmap: [
+  "id": "javascript",
+  "slug": "javascript",
+  "title": "JavaScript",
+  "description": "Master JavaScript for frontend and backend development. Learn from basics to advanced concepts including ES6+, async programming, and Node.js.",
+  "icon": "FaJs",
+  "color": "from-yellow-400 to-orange-500",
+  "category": "Programming",
+  "difficulty": "Beginner",
+  "tags": ["javascript", "web-development", "nodejs", "frontend", "backend"],
+  "image": "/images/javascript.png",
+  "roadmap": [
     {
-      id: "js-1",
-      title: "JavaScript Fundamentals",
-      description: "Variables, functions, DOM manipulation",
-      duration: "3 weeks",
+      "id": "js-1",
+      "title": "JavaScript Basics",
+      "description": "Variables, data types, operators, and basic syntax",
+      "duration": "2 weeks"
     },
     {
-      id: "js-2",
-      title: "ES6+ Features",
-      description: "Arrow functions, destructuring, modules",
-      duration: "2 weeks",
+      "id": "js-2",
+      "title": "Control Flow & Functions",
+      "description": "Conditionals, loops, functions, and scope",
+      "duration": "2 weeks"
     },
     {
-      id: "js-3",
-      title: "Async Programming",
-      description: "Promises, async/await, fetch API",
-      duration: "2 weeks",
+      "id": "js-3",
+      "title": "DOM Manipulation",
+      "description": "Selecting elements, event handling, and dynamic content",
+      "duration": "2 weeks"
     },
     {
-      id: "js-4",
-      title: "Node.js Basics",
-      description: "Server-side JavaScript development",
-      duration: "3 weeks",
+      "id": "js-4",
+      "title": "ES6+ Features",
+      "description": "Arrow functions, destructuring, template literals, and modules",
+      "duration": "2 weeks"
     },
+    {
+      "id": "js-5",
+      "title": "Arrays & Objects",
+      "description": "Advanced array methods, object manipulation, and JSON",
+      "duration": "2 weeks"
+    },
+    {
+      "id": "js-6",
+      "title": "Asynchronous JavaScript",
+      "description": "Callbacks, promises, async/await, and fetch API",
+      "duration": "3 weeks"
+    },
+    {
+      "id": "js-7",
+      "title": "Error Handling & Debugging",
+      "description": "Try/catch, debugging tools, and error handling strategies",
+      "duration": "1 week"
+    },
+    {
+      "id": "js-8",
+      "title": "Modern JavaScript Patterns",
+      "description": "Modules, classes, and modern development patterns",
+      "duration": "2 weeks"
+    },
+    {
+      "id": "js-9",
+      "title": "Node.js Fundamentals",
+      "description": "Server-side JavaScript, npm, and basic server creation",
+      "duration": "3 weeks"
+    },
+    {
+      "id": "js-10",
+      "title": "Advanced JavaScript Concepts",
+      "description": "Closures, prototypal inheritance, and memory management",
+      "duration": "2 weeks"
+    },
+    {
+      "id": "js-11",
+      "title": "Testing & Debugging",
+      "description": "Unit testing, integration testing, and advanced debugging",
+      "duration": "2 weeks"
+    },
+    {
+      "id": "js-12",
+      "title": "Build Tools & Bundlers",
+      "description": "Webpack, Vite, and modern build processes",
+      "duration": "2 weeks"
+    },
+    {
+      "id": "js-13",
+      "title": "Advanced Node.js",
+      "description": "Express.js, REST APIs, authentication, and databases",
+      "duration": "4 weeks"
+    },
+    {
+      "id": "js-14",
+      "title": "Performance Optimization",
+      "description": "Memory management, runtime optimization, and best practices",
+      "duration": "2 weeks"
+    }
   ],
-  notes: [
-    "Essential for web development (frontend and backend)",
-    "Event-driven and asynchronous programming model",
-    "Huge ecosystem with npm packages",
-    "Can be used for mobile apps, desktop apps, and IoT",
+  "notes": [
+    "JavaScript is essential for both frontend and backend web development",
+    "Event-driven and asynchronous programming model is fundamental",
+    "Huge ecosystem with over 1 million npm packages available",
+    "Can be used for mobile apps (React Native), desktop apps (Electron), and IoT",
+    "Regular updates with new ECMAScript specifications each year",
+    "Strong community support and extensive learning resources"
   ],
-  codeSnippets: [
+  "codeSnippets": [
     {
-      id: "js-snippet-1",
-      title: "Create Vite Project",
-      description: "Fast build tool for modern web projects",
-      language: "bash",
-      code: "npm create vite@latest my-app -- --template react-ts\ncd my-app\nnpm install\nnpm run dev",
+      "id": "js-snippet-1",
+      "title": "DOM Manipulation Example",
+      "description": "Basic DOM manipulation with event handling",
+      "language": "javascript",
+      "code": "// Select elements and add event listener\nconst button = document.getElementById('myButton');\nconst output = document.getElementById('output');\n\nbutton.addEventListener('click', () => {\n  output.textContent = 'Button clicked!';\n  output.style.color = 'green';\n});\n\n// Create and append new element\nconst newElement = document.createElement('div');\nnewElement.textContent = 'New element created!';\ndocument.body.appendChild(newElement);"
     },
     {
-      id: "js-snippet-2",
-      title: "Fetch API Example",
-      description: "Making HTTP requests in JavaScript",
-      language: "javascript",
-      code: `// Async/await approach
-async function fetchData() {
-  try {
-    const response = await fetch('https://api.example.com/data');
-    const data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error('Error:', error);
-  }
-}
-
-// Promise approach
-fetch('https://api.example.com/data')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));`,
+      "id": "js-snippet-2",
+      "title": "Async/Await with Fetch API",
+      "description": "Modern approach to handle asynchronous operations",
+      "language": "javascript",
+      "code": "// Async function to fetch data from API\nasync function getUserData(userId) {\n  try {\n    const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);\n    \n    if (!response.ok) {\n      throw new Error('Network response was not ok');\n    }\n    \n    const userData = await response.json();\n    console.log('User data:', userData);\n    return userData;\n  } catch (error) {\n    console.error('Error fetching user data:', error);\n    throw error;\n  }\n}\n\n// Usage\ngetUserData(1)\n  .then(data => console.log('Data received:', data))\n  .catch(error => console.error('Error:', error));"
     },
-  ],
+    {
+      "id": "js-snippet-3",
+      "title": "Modern JavaScript Features",
+      "description": "ES6+ features including destructuring, spread, and arrow functions",
+      "language": "javascript",
+      "code": "// Destructuring assignment\nconst person = { name: 'John', age: 30, city: 'New York' };\nconst { name, age, ...rest } = person;\nconsole.log(name); // 'John'\nconsole.log(rest); // { city: 'New York' }\n\n// Spread operator with arrays\nconst numbers = [1, 2, 3];\nconst newNumbers = [...numbers, 4, 5]; // [1, 2, 3, 4, 5]\n\n// Arrow functions and array methods\nconst users = [\n  { id: 1, name: 'Alice', active: true },\n  { id: 2, name: 'Bob', active: false },\n  { id: 3, name: 'Charlie', active: true }\n];\n\nconst activeUsers = users\n  .filter(user => user.active)\n  .map(user => ({\n    userId: user.id,\n    userName: user.name.toUpperCase()\n  }));\n\nconsole.log(activeUsers);\n// [{ userId: 1, userName: 'ALICE' }, { userId: 3, userName: 'CHARLIE' }]"
+    }
+  ]
 },
   {
     id: "java",
