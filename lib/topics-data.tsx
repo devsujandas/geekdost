@@ -2,6 +2,7 @@
 
 export interface Topic {
   id: string
+  slug: string
   title: string
   description: string
   icon: string
@@ -12,6 +13,7 @@ export interface Topic {
   roadmap: RoadmapItem[]
   notes: string[]
   codeSnippets: CodeSnippet[]
+  image?: string // Optional image property for image view
 }
 
 export interface RoadmapItem {
@@ -32,60 +34,62 @@ export interface CodeSnippet {
 
 export const topicsData: Topic[] = [
   {
-    id: "python",
-    title: "Python",
-    description: "Master Python basics and data science fundamentals",
-    icon: "FaPython",
-    color: "from-blue-500 to-yellow-500",
-    category: "Programming",
-    difficulty: "Beginner",
-    tags: ["python", "data-science", "automation"],
-    roadmap: [
-      {
-        id: "py-1",
-        title: "Python Basics",
-        description: "Variables, data types, control structures",
-        duration: "2 weeks",
-      },
-      {
-        id: "py-2",
-        title: "Functions & Modules",
-        description: "Creating reusable code components",
-        duration: "1 week",
-      },
-      {
-        id: "py-3",
-        title: "OOP Concepts",
-        description: "Classes, objects, inheritance",
-        duration: "2 weeks",
-      },
-      {
-        id: "py-4",
-        title: "Data Science Libraries",
-        description: "NumPy, Pandas, Matplotlib",
-        duration: "3 weeks",
-      },
-    ],
-    notes: [
-      "Python is beginner-friendly with readable syntax",
-      "Great for data science, web development, and automation",
-      "Large ecosystem of libraries and frameworks",
-      "Strong community support and documentation",
-    ],
-    codeSnippets: [
-      {
-        id: "py-snippet-1",
-        title: "Install Data Science Libraries",
-        description: "Essential packages for data analysis",
-        language: "bash",
-        code: "pip install numpy pandas matplotlib seaborn jupyter",
-      },
-      {
-        id: "py-snippet-2",
-        title: "Basic Data Analysis",
-        description: "Load and explore CSV data",
-        language: "python",
-        code: `import pandas as pd
+  id: "python", // keep id for uniqueness
+  slug: "python", 
+  title: "Python",
+  description: "Master Python basics and data science fundamentals",
+  icon: "FaPython",
+  color: "from-blue-500 to-yellow-500",
+  category: "Programming",
+  difficulty: "Beginner",
+  tags: ["python", "data-science", "automation"],
+  image: "/images/python.png", // ✅ added for image view
+  roadmap: [
+    {
+      id: "py-1",
+      title: "Python Basics",
+      description: "Variables, data types, control structures",
+      duration: "2 weeks",
+    },
+    {
+      id: "py-2",
+      title: "Functions & Modules",
+      description: "Creating reusable code components",
+      duration: "1 week",
+    },
+    {
+      id: "py-3",
+      title: "OOP Concepts",
+      description: "Classes, objects, inheritance",
+      duration: "2 weeks",
+    },
+    {
+      id: "py-4",
+      title: "Data Science Libraries",
+      description: "NumPy, Pandas, Matplotlib",
+      duration: "3 weeks",
+    },
+  ],
+  notes: [
+    "Python is beginner-friendly with readable syntax",
+    "Great for data science, web development, and automation",
+    "Large ecosystem of libraries and frameworks",
+    "Strong community support and documentation",
+  ],
+  codeSnippets: [
+    {
+      id: "py-snippet-1",
+      title: "Install Data Science Libraries",
+      description: "Essential packages for data analysis",
+      language: "bash",
+      code: "pip install numpy pandas matplotlib seaborn jupyter",
+    },
+    {
+      id: "py-snippet-2",
+      title: "Basic Data Analysis",
+      description: "Load and explore CSV data",
+      language: "python",
+      code: `import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -100,11 +104,12 @@ print(df.describe())
 # Simple visualization
 df.plot(kind='hist')
 plt.show()`,
-      },
-    ],
-  },
+    },
+  ],
+},
   {
     id: "javascript",
+    slug: "JavaScript", 
     title: "JavaScript",
     description: "Frontend and backend development with JavaScript",
     icon: "FaJs",
@@ -112,6 +117,7 @@ plt.show()`,
     category: "Programming",
     difficulty: "Beginner",
     tags: ["javascript", "web-development", "nodejs"],
+    image: "/images/python.png", // ✅ added for image view
     roadmap: [
       {
         id: "js-1",
@@ -178,6 +184,7 @@ fetch('https://api.example.com/data')
   },
   {
     id: "java",
+    slug: "java", 
     title: "Java",
     description: "Object-oriented programming and Spring framework",
     icon: "FaJava",
@@ -185,6 +192,7 @@ fetch('https://api.example.com/data')
     category: "Programming",
     difficulty: "Intermediate",
     tags: ["java", "object-oriented", "spring"],
+    image: "/images/python.png", // ✅ added for image view
     roadmap: [
       {
         id: "java-1",
@@ -251,6 +259,7 @@ fetch('https://api.example.com/data')
   },
   {
     id: "web-development",
+    slug: "web-development", 
     title: "Web Development",
     description: "HTML, CSS, React, and modern web technologies",
     icon: "FaCode",
@@ -258,6 +267,7 @@ fetch('https://api.example.com/data')
     category: "Web Development",
     difficulty: "Beginner",
     tags: ["html", "css", "react", "web"],
+    image: "/images/python.png", // ✅ added for image view
     roadmap: [
       {
         id: "web-1",
@@ -347,6 +357,7 @@ export default UserProfile;`,
   },
   {
     id: "data-science",
+    slug: "data-science", 
     title: "Data Science",
     description: "NumPy, Pandas, Matplotlib for data analysis",
     icon: "FaChartBar",
@@ -354,6 +365,7 @@ export default UserProfile;`,
     category: "Data Science",
     difficulty: "Intermediate",
     tags: ["data-science", "numpy", "pandas", "matplotlib"],
+    image: "/images/python.png", // ✅ added for image view
     roadmap: [
       {
         id: "ds-1",
@@ -445,6 +457,7 @@ plt.show()`,
   },
   {
     id: "machine-learning",
+    slug: "machine-learning", 
     title: "Machine Learning",
     description: "scikit-learn and TensorFlow fundamentals",
     icon: "FaBrain",
@@ -452,6 +465,7 @@ plt.show()`,
     category: "Data Science",
     difficulty: "Intermediate",
     tags: ["machine-learning", "scikit-learn", "tensorflow"],
+    image: "/images/python.png", // ✅ added for image view
     roadmap: [
       {
         id: "ml-1",
@@ -534,6 +548,7 @@ print(classification_report(y_test, y_pred))`,
   },
   {
     id: "sql-databases",
+    slug: "sql-databases", 
     title: "SQL & Databases",
     description: "CRUD operations, joins, and database design",
     icon: "FaDatabase",
@@ -541,6 +556,7 @@ print(classification_report(y_test, y_pred))`,
     category: "Programming",
     difficulty: "Intermediate",
     tags: ["sql", "databases", "crud", "joins"],
+    image: "/images/python.png", // ✅ added for image view
     roadmap: [
       {
         id: "sql-1",
@@ -633,6 +649,7 @@ WHERE id IN (
   },
   {
     id: "git-github",
+    slug: "git-github", 
     title: "Git & GitHub",
     description: "Version control and collaboration workflows",
     icon: "FaGitAlt",
@@ -640,6 +657,7 @@ WHERE id IN (
     category: "DevOps",
     difficulty: "Beginner",
     tags: ["git", "github", "version-control", "collaboration"],
+    image: "/images/python.png", // ✅ added for image view
     roadmap: [
       {
         id: "git-1",
@@ -731,6 +749,7 @@ git remote prune origin`,
   },
   {
     id: "devops",
+    slug: "devops", 
     title: "DevOps",
     description: "Docker, CI/CD, and deployment automation",
     icon: "FaDocker",
@@ -738,6 +757,7 @@ git remote prune origin`,
     category: "DevOps",
     difficulty: "Intermediate",
     tags: ["devops", "docker", "ci-cd", "deployment"],
+    image: "/images/python.png", // ✅ added for image view
     roadmap: [
       {
         id: "devops-1",
@@ -828,6 +848,7 @@ CMD ["npm", "start"]`,
   },
   {
     id: "ai-llms",
+    slug: "ai-llms", 
     title: "AI & LLMs",
     description: "Prompt engineering and OpenAI API integration",
     icon: "FaRobot",
@@ -835,6 +856,7 @@ CMD ["npm", "start"]`,
     category: "Data Science",
     difficulty: "Advanced",
     tags: ["ai", "llms", "openai", "prompt-engineering"],
+    image: "/images/python.png", // ✅ added for image view
     roadmap: [
       {
         id: "ai-1",
@@ -911,6 +933,7 @@ console.log('This is a conceptual example for learning');`,
   },
   {
     id: "cloud-computing",
+    slug: "cloud-computing", 
     title: "Cloud Computing",
     description: "AWS, GCP, Azure fundamentals and services",
     icon: "FaCloud",
@@ -918,6 +941,7 @@ console.log('This is a conceptual example for learning');`,
     category: "Infrastructure",
     difficulty: "Intermediate",
     tags: ["cloud", "aws", "gcp", "azure"],
+    image: "/images/python.png", // ✅ added for image view
     roadmap: [
       {
         id: "cloud-1",
@@ -1011,6 +1035,7 @@ exports.handler = async (event) => {
   },
   {
     id: "cybersecurity",
+    slug: "cybersecurity", 
     title: "Cybersecurity",
     description: "Web security, OWASP, HTTPS, and authentication",
     icon: "FaShieldAlt",
@@ -1018,6 +1043,7 @@ exports.handler = async (event) => {
     category: "Security",
     difficulty: "Intermediate",
     tags: ["cybersecurity", "web-security", "owasp", "https"],
+    image: "/images/python.png", // ✅ added for image view
     roadmap: [
       {
         id: "cyber-1",

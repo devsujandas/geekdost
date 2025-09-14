@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { motion } from "framer-motion"
 import { FaCode, FaRocket, FaUsers } from "react-icons/fa"
 import { topicsData } from "@/lib/topics-data"
@@ -11,8 +12,13 @@ import { AnimatedCounter } from "@/components/animated-counter"
 import { FloatingElements } from "@/components/floating-elements"
 import { InteractiveButton } from "@/components/interactive-button"
 import { StaggeredList } from "@/components/staggered-list"
+import Image from "next/image"
+import { useRouter } from "next/navigation"
 
 export default function HomePage() {
+  const [view, setView] = useState<"default" | "image">("default")
+  const router = useRouter()
+
   return (
     <PageLayout>
       {/* Hero Section */}
@@ -34,10 +40,15 @@ export default function HomePage() {
               <motion.span
                 initial={{ backgroundPosition: "0% 50%" }}
                 animate={{ backgroundPosition: "100% 50%" }}
-                transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse" }}
+                transition={{
+                  duration: 3,
+                  repeat: Number.POSITIVE_INFINITY,
+                  repeatType: "reverse",
+                }}
                 className="bg-gradient-to-r from-primary via-blue-500 to-primary bg-[length:200%_100%] bg-clip-text text-transparent [&:not(:hover)]:text-foreground hover:text-transparent"
                 style={{
-                  background: "linear-gradient(90deg, hsl(var(--primary)), #3b82f6, hsl(var(--primary)))",
+                  background:
+                    "linear-gradient(90deg, hsl(var(--primary)), #3b82f6, hsl(var(--primary)))",
                   backgroundSize: "200% 100%",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
@@ -63,11 +74,12 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-lg text-muted-foreground mb-12 text-pretty max-w-2xl mx-auto"
             >
-              Your ultimate developer hub for programming roadmaps, code snippets, and learning resources. Master the
-              skills that matter with curated content and practical examples.
+              Your ultimate developer hub for programming roadmaps, code
+              snippets, and learning resources. Master the skills that matter
+              with curated content and practical examples.
             </motion.p>
 
-            {/* Stats Cards with Animated Counters */}
+            {/* Stats Cards */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -75,9 +87,7 @@ export default function HomePage() {
               className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-16"
             >
               <GlassmorphismCard delay={0.9} className="text-center">
-                <motion.div whileHover={{ scale: 1.1, rotate: 5 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <FaCode className="h-8 w-8 text-primary mx-auto mb-3" />
-                </motion.div>
+                <FaCode className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   <AnimatedCounter value={12} suffix="+" />
                 </h3>
@@ -85,9 +95,7 @@ export default function HomePage() {
               </GlassmorphismCard>
 
               <GlassmorphismCard delay={1.0} className="text-center">
-                <motion.div whileHover={{ scale: 1.1, rotate: -5 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <FaRocket className="h-8 w-8 text-primary mx-auto mb-3" />
-                </motion.div>
+                <FaRocket className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   <AnimatedCounter value={50} suffix="+" />
                 </h3>
@@ -95,9 +103,7 @@ export default function HomePage() {
               </GlassmorphismCard>
 
               <GlassmorphismCard delay={1.1} className="text-center">
-                <motion.div whileHover={{ scale: 1.1, rotate: 5 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <FaUsers className="h-8 w-8 text-primary mx-auto mb-3" />
-                </motion.div>
+                <FaUsers className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   <AnimatedCounter value={100} suffix="+" />
                 </h3>
@@ -109,30 +115,83 @@ export default function HomePage() {
       </section>
 
       {/* Topics Grid Section */}
-      <ScrollReveal>
-        <section className="py-20 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
-                Explore Programming Topics
-              </h2>
-              <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
-                Choose from our curated collection of programming topics, each with detailed roadmaps, practical notes,
-                and ready-to-use code snippets.
-              </p>
-            </div>
+      <div className="container mx-auto max-w-6xl">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Explore Programming Topics
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
+            Choose from our curated collection of programming topics, each with
+            detailed roadmaps, practical notes, and ready-to-use code snippets.
+          </p>
 
-            {/* Topics Grid with Staggered Animation */}
-            <StaggeredList stagger={0.05}>
-              {topicsData.map((topic) => (
-                <div key={topic.id} className="mb-6">
-                  <TopicCard topic={topic} />
-                </div>
-              ))}
-            </StaggeredList>
+          {/* Toggle Buttons */}
+          <div className="flex justify-center gap-4">
+            <InteractiveButton
+              size="sm"
+              variant={view === "default" ? "primary" : "outline"}
+              onClick={() => setView("default")}
+            >
+              Default View
+            </InteractiveButton>
+            <InteractiveButton
+              size="sm"
+              variant={view === "image" ? "primary" : "outline"}
+              onClick={() => setView("image")}
+            >
+              Image View
+            </InteractiveButton>
           </div>
-        </section>
-      </ScrollReveal>
+        </div>
+
+        {/* Topics Grid */}
+        {view === "default" ? (
+          <StaggeredList stagger={0.05}>
+            {topicsData.map((topic) => (
+              <div
+                key={topic.id}
+                className="mb-6 cursor-pointer"
+                onClick={() => router.push(`/topics/${topic.slug}`)}
+              >
+                <TopicCard topic={topic} />
+              </div>
+            ))}
+          </StaggeredList>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {topicsData.map((topic) => (
+              <motion.div
+                key={topic.id}
+                className="group rounded-2xl overflow-hidden shadow-lg bg-background/40 backdrop-blur-lg border border-border hover:shadow-xl transition cursor-pointer"
+                whileHover={{ scale: 1.03 }}
+                onClick={() => router.push(`/topics/${topic.slug}`)}
+              >
+                <div className="h-full flex flex-col">
+                  <div className="relative h-48 w-full overflow-hidden">
+                    <Image
+                      src={(topic as any).image ?? "/images/default-topic.jpg"}
+                      alt={topic.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-6 flex flex-col flex-grow">
+                    <h3 className="text-xl font-bold text-foreground mb-2">
+                      {topic.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm flex-grow">
+                      {topic.description}
+                    </p>
+                    <button className="mt-4 px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition">
+                      Explore
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        )}
+      </div>
 
       {/* Call to Action Section */}
       <ScrollReveal>
@@ -149,10 +208,14 @@ export default function HomePage() {
                   Ready to Level Up Your Skills?
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8 text-pretty">
-                  Join thousands of developers who are accelerating their learning journey with GeekDost. Start
-                  exploring our comprehensive roadmaps and practical code examples today.
+                  Join thousands of developers who are accelerating their
+                  learning journey with GeekDost. Start exploring our
+                  comprehensive roadmaps and practical code examples today.
                 </p>
-                <InteractiveButton size="lg" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+                <InteractiveButton
+                  size="lg"
+                  onClick={() => router.push("/topics")}
+                >
                   Start Learning Now
                 </InteractiveButton>
               </motion.div>
