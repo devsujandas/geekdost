@@ -711,7 +711,7 @@ WHERE id IN (
     category: "DevOps",
     difficulty: "Beginner",
     tags: ["git", "github", "version-control", "collaboration"],
-    image: "/images/python.png", //  added for image view
+    image: "/images/git-github.png", //  added for image view
     roadmap: [
       {
         id: "git-1",
