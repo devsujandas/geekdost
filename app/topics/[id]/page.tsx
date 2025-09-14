@@ -107,29 +107,33 @@ export default function TopicPage({ params }: TopicPageProps) {
           </GlassmorphismCard>
         </motion.div>
 
-        {/* 🔹 Tab Buttons Card */}
-        <GlassmorphismCard className="mb-12">
-          <div className="flex flex-wrap justify-center gap-4">
-            <InteractiveButton
-              variant={activeTab === "roadmap" ? "primary" : "outline"}
-              onClick={() => setActiveTab("roadmap")}
-            >
-              Roadmap
-            </InteractiveButton>
-            <InteractiveButton
-              variant={activeTab === "notes" ? "primary" : "outline"}
-              onClick={() => setActiveTab("notes")}
-            >
-              Notes
-            </InteractiveButton>
-            <InteractiveButton
-              variant={activeTab === "code" ? "primary" : "outline"}
-              onClick={() => setActiveTab("code")}
-            >
-              Code
-            </InteractiveButton>
-          </div>
-        </GlassmorphismCard>
+{/* 🔹 Tab Buttons Card */}
+<GlassmorphismCard className="mb-12">
+  <div className="flex justify-center gap-4 overflow-x-auto whitespace-nowrap no-scrollbar">
+    <InteractiveButton
+      variant={activeTab === "roadmap" ? "primary" : "outline"}
+      onClick={() => setActiveTab("roadmap")}
+      className="flex-shrink-0"
+    >
+      Roadmap
+    </InteractiveButton>
+    <InteractiveButton
+      variant={activeTab === "notes" ? "primary" : "outline"}
+      onClick={() => setActiveTab("notes")}
+      className="flex-shrink-0"
+    >
+      Notes
+    </InteractiveButton>
+    <InteractiveButton
+      variant={activeTab === "code" ? "primary" : "outline"}
+      onClick={() => setActiveTab("code")}
+      className="flex-shrink-0"
+    >
+      Code
+    </InteractiveButton>
+  </div>
+</GlassmorphismCard>
+
 
         {/* Content Sections with Smooth Animation */}
         <div className="mt-8">
