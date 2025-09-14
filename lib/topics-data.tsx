@@ -811,7 +811,7 @@ git remote prune origin`,
     category: "DevOps",
     difficulty: "Intermediate",
     tags: ["devops", "docker", "ci-cd", "deployment"],
-    image: "/images/python.png", //  added for image view
+    image: "/images/devops.jpg", //  added for image view
     roadmap: [
       {
         id: "devops-1",
