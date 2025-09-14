@@ -117,7 +117,7 @@ plt.show()`,
   "category": "Programming",
   "difficulty": "Beginner",
   "tags": ["javascript", "web-development", "nodejs", "frontend", "backend"],
-  "image": "/images/javascript.webp",
+  "image": "/images/javascript.jpeg", //image
   "roadmap": [
     {
       "id": "js-1",
