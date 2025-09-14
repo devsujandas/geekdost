@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { FaCode, FaUsers, FaRocket, FaHeart, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa"
+import { FaCode, FaUsers, FaRocket, FaHeart, FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaGlobe } from "react-icons/fa"
 import { PageLayout } from "@/components/page-layout"
 import { GlassmorphismCard } from "@/components/glassmorphism-card"
 
@@ -198,37 +198,51 @@ export default function AboutPage() {
               media or reach out directly.
             </p>
             <div className="flex justify-center space-x-6">
-              <motion.a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="p-3 rounded-lg bg-accent/10 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
-              >
-                <FaGithub className="h-6 w-6" />
-              </motion.a>
-              <motion.a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="p-3 rounded-lg bg-accent/10 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
-              >
-                <FaTwitter className="h-6 w-6" />
-              </motion.a>
-              <motion.a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="p-3 rounded-lg bg-accent/10 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
-              >
-                <FaLinkedin className="h-6 w-6" />
-              </motion.a>
-            </div>
+  <motion.a
+    href="https://github.com/devsujandas"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.1, y: -2 }}
+    whileTap={{ scale: 0.95 }}
+    className="p-3 rounded-lg bg-accent/10 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
+  >
+    <FaGithub className="h-6 w-6" />
+  </motion.a>
+
+  <motion.a
+    href="https://instagram.com/devsujandas"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.1, y: -2 }}
+    whileTap={{ scale: 0.95 }}
+    className="p-3 rounded-lg bg-accent/10 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
+  >
+    <FaInstagram className="h-6 w-6" />
+  </motion.a>
+
+  <motion.a
+    href="https://in.linkedin.com/in/devsujandas"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.1, y: -2 }}
+    whileTap={{ scale: 0.95 }}
+    className="p-3 rounded-lg bg-accent/10 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
+  >
+    <FaLinkedin className="h-6 w-6" />
+  </motion.a>
+
+  <motion.a
+    href="https://www.sujandas.info/"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.1, y: -2 }}
+    whileTap={{ scale: 0.95 }}
+    className="p-3 rounded-lg bg-accent/10 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
+  >
+    <FaGlobe className="h-6 w-6" />
+  </motion.a>
+</div>
+
           </GlassmorphismCard>
         </motion.section>
       </div>
