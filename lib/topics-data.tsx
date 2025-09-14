@@ -995,7 +995,7 @@ console.log('This is a conceptual example for learning');`,
     category: "Infrastructure",
     difficulty: "Intermediate",
     tags: ["cloud", "aws", "gcp", "azure"],
-    image: "/images/Cloud-Computing.jpg", //  added for image view
+    image: "/images/Cloud-Computing.png", //  added for image view
     roadmap: [
       {
         id: "cloud-1",
