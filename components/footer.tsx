@@ -121,10 +121,22 @@ export function Footer() {
                 className="mx-1"
               >
                 <FaHeart className="h-4 w-4 text-red-500" />
-              </motion.div>
-              <span>by Sujan Das, for developers</span>
-            </div>
-          </motion.div>
+</motion.div>
+<span>
+  by{" "}
+  <a
+    href="https://www.sujandas.info/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-primary hover:underline transition-colors duration-200"
+  >
+    Sujan Das
+  </a>
+  , for developers
+</span>
+</div>
+</motion.div>
+
         </GlassmorphismCard>
       </div>
     </footer>
