@@ -246,7 +246,7 @@ plt.show()`,
     category: "Programming",
     difficulty: "Intermediate",
     tags: ["java", "object-oriented", "spring"],
-    image: "/images/java.png", //  added for image view
+    image: "/images/java.jpg", //  added for image view
     roadmap: [
       {
         id: "java-1",
