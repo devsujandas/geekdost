@@ -910,7 +910,7 @@ CMD ["npm", "start"]`,
     category: "Data Science",
     difficulty: "Advanced",
     tags: ["ai", "llms", "openai", "prompt-engineering"],
-    image: "/images/python.png", //  added for image view
+    image: "/images/ai-llms.jpg", //  added for image view
     roadmap: [
       {
         id: "ai-1",
