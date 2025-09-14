@@ -107,7 +107,7 @@ export default function TopicPage({ params }: TopicPageProps) {
           </GlassmorphismCard>
         </motion.div>
 
-{/* 🔹 Tab Buttons Card */}
+  {/* 🔹 Tab Buttons Card */}
 <GlassmorphismCard className="mb-12">
   <div className="flex justify-center gap-4 overflow-x-auto whitespace-nowrap no-scrollbar">
     <InteractiveButton
