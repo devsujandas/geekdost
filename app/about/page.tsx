@@ -158,7 +158,7 @@ export default function AboutPage() {
         {/* Avatar */}
         <div className="flex-shrink-0">
           <img
-            src="/developer-avatar-1.jpg" // replace with your image
+            src="/developer-avatar-1.png" // replace with your image
             alt="Sujan Das"
             className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-primary/30 shadow-lg object-cover"
           />
@@ -176,68 +176,7 @@ export default function AboutPage() {
             platform has been built with love and attention to detail.
           </p>
 
-          {/* Social Buttons (optional) */}
-  <div className="flex justify-center md:justify-start gap-4 mt-6">
-  {/* GitHub */}
-  <a
-    href="https://github.com/devsujandas"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition"
-  >
-    {/* GitHub Icon */}
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-5 h-5" viewBox="0 0 24 24">
-      <path fillRule="evenodd" d="M12 .5C5.648.5.5 5.648.5 12a11.5 11.5 0 0 0 7.865 10.936c.576.106.785-.25.785-.555 0-.274-.01-1.002-.015-1.966-3.2.695-3.876-1.543-3.876-1.543-.524-1.333-1.28-1.688-1.28-1.688-1.046-.715.08-.7.08-.7 1.157.082 1.767 1.19 1.767 1.19 1.028 1.762 2.696 1.252 3.354.957.104-.744.402-1.252.73-1.54-2.553-.29-5.238-1.277-5.238-5.682 0-1.256.45-2.283 1.188-3.087-.12-.29-.515-1.457.112-3.037 0 0 .967-.31 3.17 1.18a11.043 11.043 0 0 1 2.886-.388c.98.005 1.968.132 2.886.388 2.202-1.49 3.167-1.18 3.167-1.18.63 1.58.235 2.747.116 3.037.74.804 1.186 1.831 1.186 3.087 0 4.415-2.688 5.388-5.253 5.672.414.36.785 1.096.785 2.212 0 1.598-.014 2.89-.014 3.283 0 .307.206.666.79.552A11.5 11.5 0 0 0 23.5 12c0-6.352-5.148-11.5-11.5-11.5Z" clipRule="evenodd"/>
-    </svg>
-  </a>
 
-  {/* LinkedIn */}
-  <a
-    href="https://in.linkedin.com/in/devsujandas "
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition"
-  >
-    {/* LinkedIn Icon */}
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-5 h-5" viewBox="0 0 24 24">
-      <path d="M4.98 3.5c0 1.38-1.12 2.5-2.49 2.5A2.5 2.5 0 0 1 0 3.5C0 2.12 1.12 1 2.49 1A2.5 2.5 0 0 1 4.98 3.5ZM.24 8.98h4.5V24h-4.5V8.98ZM8.62 8.98h4.32v2.05h.06c.6-1.14 2.07-2.34 4.27-2.34 4.56 0 5.4 3 5.4 6.9V24h-4.5v-7.6c0-1.81-.03-4.14-2.53-4.14-2.53 0-2.92 1.97-2.92 4v7.74h-4.5V8.98Z"/>
-    </svg>
-  </a>
-
-  {/* Portfolio (Globe Icon) */}
-  <a
-    href="https://www.sujandas.info/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition"
-  >
-    {/* Globe Icon */}
-<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-5 h-5" viewBox="0 0 24 24">
-  <path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 
-           2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 
-           2 0 0 1 2-2h4V4a2 2 0 0 1 2-2zm0 
-           4h4V4h-4v2z"/>
-</svg>
-  </a>
-    {/* Instagram */}
-  <a
-    href="https://instagram.com/devsujandas"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition"
-  >
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-5 h-5" viewBox="0 0 24 24">
-  <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 
-           0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 
-           0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 
-           0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm5 
-           3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 
-           6 3 3 0 010-6zm4.5-.75a1.25 1.25 0 11-.001 
-           2.501A1.25 1.25 0 0116.5 8.25z"/>
-</svg>
-
-  </a>
-</div>
 
         </div>
       </div>
