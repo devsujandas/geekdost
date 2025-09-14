@@ -1,19 +1,20 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { notFound } from "next/navigation"
-import { FaArrowLeft, FaClock, FaCheckCircle } from "react-icons/fa"
+import { FaArrowLeft, FaClock, FaCheckCircle, FaCode } from "react-icons/fa"
 import Link from "next/link"
+import { useState } from "react"
 import { getTopicById } from "@/lib/topics-data"
 import { PageLayout } from "@/components/page-layout"
 import { GlassmorphismCard } from "@/components/glassmorphism-card"
 import { RoadmapTimeline } from "@/components/roadmap-timeline"
 import { CodeSnippet } from "@/components/code-snippet"
+import { InteractiveButton } from "@/components/interactive-button"
 import {
   FaPython,
   FaJs,
   FaJava,
-  FaCode,
   FaChartBar,
   FaBrain,
   FaDatabase,
@@ -47,6 +48,7 @@ interface TopicPageProps {
 
 export default function TopicPage({ params }: TopicPageProps) {
   const topic = getTopicById(params.id)
+  const [activeTab, setActiveTab] = useState<"roadmap" | "notes" | "code">("roadmap")
 
   if (!topic) {
     notFound()
@@ -78,7 +80,7 @@ export default function TopicPage({ params }: TopicPageProps) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-8"
         >
           <GlassmorphismCard className="text-center">
             <div className="flex flex-col items-center">
@@ -87,7 +89,7 @@ export default function TopicPage({ params }: TopicPageProps) {
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">{topic.title}</h1>
               <p className="text-xl text-muted-foreground mb-6 text-pretty max-w-2xl">{topic.description}</p>
-              <div className="flex items-center space-x-6 text-sm text-muted-foreground">
+              <div className="flex items-center space-x-6 text-sm text-muted-foreground mb-6">
                 <div className="flex items-center space-x-2">
                   <FaClock className="h-4 w-4" />
                   <span>{topic.roadmap.length} Learning Steps</span>
@@ -101,63 +103,96 @@ export default function TopicPage({ params }: TopicPageProps) {
                   <span>{topic.notes.length} Key Notes</span>
                 </div>
               </div>
+
+              {/* 🔹 Tab Buttons */}
+              <div className="flex flex-wrap gap-4 justify-center">
+                <InteractiveButton
+                  variant={activeTab === "roadmap" ? "default" : "outline"}
+                  onClick={() => setActiveTab("roadmap")}
+                >
+                  Roadmap
+                </InteractiveButton>
+                <InteractiveButton
+                  variant={activeTab === "notes" ? "default" : "outline"}
+                  onClick={() => setActiveTab("notes")}
+                >
+                  Notes
+                </InteractiveButton>
+                <InteractiveButton
+                  variant={activeTab === "code" ? "default" : "outline"}
+                  onClick={() => setActiveTab("code")}
+                >
+                  Code
+                </InteractiveButton>
+              </div>
             </div>
           </GlassmorphismCard>
         </motion.div>
 
-        {/* Content Sections */}
-        <div className="space-y-16">
-          {/* Roadmap Section */}
-          <motion.section
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Learning Roadmap</h2>
-            <RoadmapTimeline roadmap={topic.roadmap} />
-          </motion.section>
+        {/* Content Sections with Smooth Animation */}
+        <div className="mt-12">
+          <AnimatePresence mode="wait">
+            {activeTab === "roadmap" && (
+              <motion.section
+                key="roadmap"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+              >
+                <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Learning Roadmap</h2>
+                <RoadmapTimeline roadmap={topic.roadmap} />
+              </motion.section>
+            )}
 
-          {/* Notes Section */}
-          <motion.section
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Key Notes</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {topic.notes.map((note, index) => (
-                <GlassmorphismCard key={index} delay={0.5 + index * 0.1}>
-                  <div className="flex items-start space-x-3">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-1">
-                      <span className="text-xs font-bold text-primary">{index + 1}</span>
-                    </div>
-                    <p className="text-card-foreground text-pretty">{note}</p>
-                  </div>
-                </GlassmorphismCard>
-              ))}
-            </div>
-          </motion.section>
+            {activeTab === "notes" && (
+              <motion.section
+                key="notes"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+              >
+                <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Key Notes</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {topic.notes.map((note, index) => (
+                    <GlassmorphismCard key={index} delay={0.5 + index * 0.1}>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-1">
+                          <span className="text-xs font-bold text-primary">{index + 1}</span>
+                        </div>
+                        <p className="text-card-foreground text-pretty">{note}</p>
+                      </div>
+                    </GlassmorphismCard>
+                  ))}
+                </div>
+              </motion.section>
+            )}
 
-          {/* Code Snippets Section */}
-          <motion.section
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Code Examples</h2>
-            <div className="space-y-8">
-              {topic.codeSnippets.map((snippet, index) => (
-                <CodeSnippet
-                  key={snippet.id}
-                  title={snippet.title}
-                  description={snippet.description}
-                  language={snippet.language}
-                  code={snippet.code}
-                  delay={0.7 + index * 0.1}
-                />
-              ))}
-            </div>
-          </motion.section>
+            {activeTab === "code" && (
+              <motion.section
+                key="code"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+              >
+                <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Code Examples</h2>
+                <div className="space-y-8">
+                  {topic.codeSnippets.map((snippet, index) => (
+                    <CodeSnippet
+                      key={snippet.id}
+                      title={snippet.title}
+                      description={snippet.description}
+                      language={snippet.language}
+                      code={snippet.code}
+                      delay={0.7 + index * 0.1}
+                    />
+                  ))}
+                </div>
+              </motion.section>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </PageLayout>
