@@ -122,7 +122,7 @@ export function Footer() {
               >
                 <FaHeart className="h-4 w-4 text-red-500" />
               </motion.div>
-              <span>by developers, for developers</span>
+              <span>by Sujan Das, for developers</span>
             </div>
           </motion.div>
         </GlassmorphismCard>
