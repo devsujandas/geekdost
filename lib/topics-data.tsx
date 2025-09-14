@@ -34,7 +34,7 @@ export interface CodeSnippet {
 
 export const topicsData: Topic[] = [
   {
-  id: "python", // keep id for uniqueness
+  id: "python", 
   slug: "python", 
   title: "Python",
   description: "Master Python basics and data science fundamentals",
@@ -43,7 +43,7 @@ export const topicsData: Topic[] = [
   category: "Programming",
   difficulty: "Beginner",
   tags: ["python", "data-science", "automation"],
-  image: "/images/python.png", // ✅ added for image view
+  image: "/images/python.png", //  added for image view
   roadmap: [
     {
       id: "py-1",
@@ -107,63 +107,63 @@ plt.show()`,
     },
   ],
 },
-  {
-    id: "javascript",
-    slug: "JavaScript", 
-    title: "JavaScript",
-    description: "Frontend and backend development with JavaScript",
-    icon: "FaJs",
-    color: "from-yellow-400 to-orange-500",
-    category: "Programming",
-    difficulty: "Beginner",
-    tags: ["javascript", "web-development", "nodejs"],
-    image: "/images/python.png", // ✅ added for image view
-    roadmap: [
-      {
-        id: "js-1",
-        title: "JavaScript Fundamentals",
-        description: "Variables, functions, DOM manipulation",
-        duration: "3 weeks",
-      },
-      {
-        id: "js-2",
-        title: "ES6+ Features",
-        description: "Arrow functions, destructuring, modules",
-        duration: "2 weeks",
-      },
-      {
-        id: "js-3",
-        title: "Async Programming",
-        description: "Promises, async/await, fetch API",
-        duration: "2 weeks",
-      },
-      {
-        id: "js-4",
-        title: "Node.js Basics",
-        description: "Server-side JavaScript development",
-        duration: "3 weeks",
-      },
-    ],
-    notes: [
-      "Essential for web development (frontend and backend)",
-      "Event-driven and asynchronous programming model",
-      "Huge ecosystem with npm packages",
-      "Can be used for mobile apps, desktop apps, and IoT",
-    ],
-    codeSnippets: [
-      {
-        id: "js-snippet-1",
-        title: "Create Vite Project",
-        description: "Fast build tool for modern web projects",
-        language: "bash",
-        code: "npm create vite@latest my-app -- --template react-ts\ncd my-app\nnpm install\nnpm run dev",
-      },
-      {
-        id: "js-snippet-2",
-        title: "Fetch API Example",
-        description: "Making HTTP requests in JavaScript",
-        language: "javascript",
-        code: `// Async/await approach
+{
+  id: "javascript",
+  slug: "javascript", 
+  title: "JavaScript",
+  description: "Frontend and backend development with JavaScript",
+  icon: "FaJs",
+  color: "from-yellow-400 to-orange-500",
+  category: "Programming",
+  difficulty: "Beginner",
+  tags: ["javascript", "web-development", "nodejs"],
+  image: "/images/python.png", //  added for image view
+  roadmap: [
+    {
+      id: "js-1",
+      title: "JavaScript Fundamentals",
+      description: "Variables, functions, DOM manipulation",
+      duration: "3 weeks",
+    },
+    {
+      id: "js-2",
+      title: "ES6+ Features",
+      description: "Arrow functions, destructuring, modules",
+      duration: "2 weeks",
+    },
+    {
+      id: "js-3",
+      title: "Async Programming",
+      description: "Promises, async/await, fetch API",
+      duration: "2 weeks",
+    },
+    {
+      id: "js-4",
+      title: "Node.js Basics",
+      description: "Server-side JavaScript development",
+      duration: "3 weeks",
+    },
+  ],
+  notes: [
+    "Essential for web development (frontend and backend)",
+    "Event-driven and asynchronous programming model",
+    "Huge ecosystem with npm packages",
+    "Can be used for mobile apps, desktop apps, and IoT",
+  ],
+  codeSnippets: [
+    {
+      id: "js-snippet-1",
+      title: "Create Vite Project",
+      description: "Fast build tool for modern web projects",
+      language: "bash",
+      code: "npm create vite@latest my-app -- --template react-ts\ncd my-app\nnpm install\nnpm run dev",
+    },
+    {
+      id: "js-snippet-2",
+      title: "Fetch API Example",
+      description: "Making HTTP requests in JavaScript",
+      language: "javascript",
+      code: `// Async/await approach
 async function fetchData() {
   try {
     const response = await fetch('https://api.example.com/data');
@@ -179,9 +179,9 @@ fetch('https://api.example.com/data')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));`,
-      },
-    ],
-  },
+    },
+  ],
+},
   {
     id: "java",
     slug: "java", 
@@ -192,7 +192,7 @@ fetch('https://api.example.com/data')
     category: "Programming",
     difficulty: "Intermediate",
     tags: ["java", "object-oriented", "spring"],
-    image: "/images/python.png", // ✅ added for image view
+    image: "/images/python.png", //  added for image view
     roadmap: [
       {
         id: "java-1",
@@ -267,7 +267,7 @@ fetch('https://api.example.com/data')
     category: "Web Development",
     difficulty: "Beginner",
     tags: ["html", "css", "react", "web"],
-    image: "/images/python.png", // ✅ added for image view
+    image: "/images/python.png", //  added for image view
     roadmap: [
       {
         id: "web-1",
@@ -365,7 +365,7 @@ export default UserProfile;`,
     category: "Data Science",
     difficulty: "Intermediate",
     tags: ["data-science", "numpy", "pandas", "matplotlib"],
-    image: "/images/python.png", // ✅ added for image view
+    image: "/images/python.png", //  added for image view
     roadmap: [
       {
         id: "ds-1",
@@ -465,7 +465,7 @@ plt.show()`,
     category: "Data Science",
     difficulty: "Intermediate",
     tags: ["machine-learning", "scikit-learn", "tensorflow"],
-    image: "/images/python.png", // ✅ added for image view
+    image: "/images/python.png", //  added for image view
     roadmap: [
       {
         id: "ml-1",
@@ -556,7 +556,7 @@ print(classification_report(y_test, y_pred))`,
     category: "Programming",
     difficulty: "Intermediate",
     tags: ["sql", "databases", "crud", "joins"],
-    image: "/images/python.png", // ✅ added for image view
+    image: "/images/python.png", //  added for image view
     roadmap: [
       {
         id: "sql-1",
@@ -657,7 +657,7 @@ WHERE id IN (
     category: "DevOps",
     difficulty: "Beginner",
     tags: ["git", "github", "version-control", "collaboration"],
-    image: "/images/python.png", // ✅ added for image view
+    image: "/images/python.png", //  added for image view
     roadmap: [
       {
         id: "git-1",
@@ -757,7 +757,7 @@ git remote prune origin`,
     category: "DevOps",
     difficulty: "Intermediate",
     tags: ["devops", "docker", "ci-cd", "deployment"],
-    image: "/images/python.png", // ✅ added for image view
+    image: "/images/python.png", //  added for image view
     roadmap: [
       {
         id: "devops-1",
@@ -856,7 +856,7 @@ CMD ["npm", "start"]`,
     category: "Data Science",
     difficulty: "Advanced",
     tags: ["ai", "llms", "openai", "prompt-engineering"],
-    image: "/images/python.png", // ✅ added for image view
+    image: "/images/python.png", //  added for image view
     roadmap: [
       {
         id: "ai-1",
@@ -941,7 +941,7 @@ console.log('This is a conceptual example for learning');`,
     category: "Infrastructure",
     difficulty: "Intermediate",
     tags: ["cloud", "aws", "gcp", "azure"],
-    image: "/images/python.png", // ✅ added for image view
+    image: "/images/python.png", //  added for image view
     roadmap: [
       {
         id: "cloud-1",
@@ -1043,7 +1043,7 @@ exports.handler = async (event) => {
     category: "Security",
     difficulty: "Intermediate",
     tags: ["cybersecurity", "web-security", "owasp", "https"],
-    image: "/images/python.png", // ✅ added for image view
+    image: "/images/python.png", //  added for image view
     roadmap: [
       {
         id: "cyber-1",
