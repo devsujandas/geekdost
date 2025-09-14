@@ -321,7 +321,7 @@ plt.show()`,
     category: "Web Development",
     difficulty: "Beginner",
     tags: ["html", "css", "react", "web"],
-    image: "/images/python.png", //  added for image view
+    image: "/images/web-development.jpeg", //  added for image view
     roadmap: [
       {
         id: "web-1",
@@ -419,7 +419,7 @@ export default UserProfile;`,
     category: "Data Science",
     difficulty: "Intermediate",
     tags: ["data-science", "numpy", "pandas", "matplotlib"],
-    image: "/images/python.png", //  added for image view
+    image: "/images/data-science.png", //  added for image view
     roadmap: [
       {
         id: "ds-1",
@@ -519,7 +519,7 @@ plt.show()`,
     category: "Data Science",
     difficulty: "Intermediate",
     tags: ["machine-learning", "scikit-learn", "tensorflow"],
-    image: "/images/python.png", //  added for image view
+    image: "/images/machine-learning.jpg", //  added for image view
     roadmap: [
       {
         id: "ml-1",
@@ -610,7 +610,7 @@ print(classification_report(y_test, y_pred))`,
     category: "Programming",
     difficulty: "Intermediate",
     tags: ["sql", "databases", "crud", "joins"],
-    image: "/images/python.png", //  added for image view
+    image: "/images/SQL-Database.webp", //  added for image view
     roadmap: [
       {
         id: "sql-1",
