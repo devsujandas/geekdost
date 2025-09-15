@@ -114,9 +114,9 @@ export default function TopicPage({ params }: TopicPageProps) {
     <InteractiveButton
       variant={activeTab === "roadmap" ? "primary" : "outline"}
       onClick={() => setActiveTab("roadmap")}
-      className="!flex !flex-row !items-center gap-2 px-4 !important"
+      className="!flex !flex-row !items-center gap-2 px-0 !important"
     >
-      <Map className="w-4 h-4" style={{display: 'inline-block', verticalAlign: 'middle'}} />
+      <Map className="h-4" style={{display: 'inline-block', verticalAlign: 'middle'}} />
       <span style={{display: 'inline-block', verticalAlign: 'middle'}}>Roadmap</span>
     </InteractiveButton>
     <InteractiveButton
@@ -124,7 +124,7 @@ export default function TopicPage({ params }: TopicPageProps) {
       onClick={() => setActiveTab("notes")}
       className="!flex !flex-row !items-center gap-2 px-4 !important"
     >
-      <FileText className="w-4 h-4" style={{display: 'inline-block', verticalAlign: 'middle'}} />
+      <FileText className="h-4" style={{display: 'inline-block', verticalAlign: 'middle'}} />
       <span style={{display: 'inline-block', verticalAlign: 'middle'}}>Notes</span>
     </InteractiveButton>
     <InteractiveButton
@@ -132,7 +132,7 @@ export default function TopicPage({ params }: TopicPageProps) {
       onClick={() => setActiveTab("code")}
       className="!flex !flex-row !items-center gap-2 px-4 !important"
     >
-      <Code2 className="w-4 h-4" style={{display: 'inline-block', verticalAlign: 'middle'}} />
+      <Code2 className="h-4" style={{display: 'inline-block', verticalAlign: 'middle'}} />
       <span style={{display: 'inline-block', verticalAlign: 'middle'}}>Code</span>
     </InteractiveButton>
   </div>
