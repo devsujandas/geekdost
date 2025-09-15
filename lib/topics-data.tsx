@@ -2013,6 +2013,8 @@ export default UserProfile;`,
       },
     ],
   },
+
+  /* data-science */
   {
     id: "data-science",
     slug: "data-science", 
@@ -2113,6 +2115,9 @@ plt.show()`,
       },
     ],
   },
+
+/* machine-learning */
+
   {
     id: "machine-learning",
     slug: "machine-learning", 
@@ -2204,6 +2209,8 @@ print(classification_report(y_test, y_pred))`,
       },
     ],
   },
+
+  /* SQL & Databases */
   {
     id: "sql-databases",
     slug: "sql-databases", 
@@ -2305,6 +2312,8 @@ WHERE id IN (
       },
     ],
   },
+
+  /* Git & GitHub */
   {
     id: "git-github",
     slug: "git-github", 
@@ -2405,6 +2414,8 @@ git remote prune origin`,
       },
     ],
   },
+
+  /* DevOps */
   {
     id: "devops",
     slug: "devops", 
@@ -2504,6 +2515,8 @@ CMD ["npm", "start"]`,
       },
     ],
   },
+
+  /* AI & LLMs */
   {
     id: "ai-llms",
     slug: "ai-llms", 
@@ -2589,6 +2602,8 @@ console.log('This is a conceptual example for learning');`,
       },
     ],
   },
+
+  /* Cloud Computing */
   {
     id: "cloud-computing",
     slug: "cloud-computing", 
@@ -2691,6 +2706,8 @@ exports.handler = async (event) => {
       },
     ],
   },
+
+  /* Cybersecurity */
   {
     id: "cybersecurity",
     slug: "cybersecurity", 
