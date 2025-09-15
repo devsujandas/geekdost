@@ -78,11 +78,11 @@ export default function SearchPage() {
             className="mb-12"
           >
             <GlassmorphismCard>
-              <h3 className="text-base font-medium text-foreground mb-4 flex items-center">
+              <h3 className="text-base font-medium text-foreground mb-4 flex items-center justify-center">
                 <FaLightbulb className="h-4 w-4 text-primary mr-2" />
                 Popular Searches
               </h3>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap justify-center gap-2">
                 {popularSearches.map((search) => (
                   <button
                     key={search}
