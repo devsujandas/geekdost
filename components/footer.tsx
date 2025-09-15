@@ -55,7 +55,7 @@ export function Footer() {
                 <img 
                 src="/geekdost.png" 
                 alt="GeekDost Logo" 
-                className="h-8 mb-4"
+                className="h-6 mb-4"
                 />
 
                 <p className="text-muted-foreground text-sm mb-6 text-pretty">
