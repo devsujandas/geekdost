@@ -11,6 +11,7 @@ import { GlassmorphismCard } from "@/components/glassmorphism-card"
 import { RoadmapTimeline } from "@/components/roadmap-timeline"
 import { CodeSnippet } from "@/components/code-snippet"
 import { InteractiveButton } from "@/components/interactive-button"
+import { Map, FileText, Code2 } from "lucide-react"
 import {
   FaPython,
   FaJs,
@@ -109,30 +110,34 @@ export default function TopicPage({ params }: TopicPageProps) {
 
   {/* 🔹 Tab Buttons Card */}
 <GlassmorphismCard className="mb-12">
-  <div className="flex justify-center gap-4 overflow-x-auto whitespace-nowrap no-scrollbar">
+  <div className="flex flex-row justify-center items-center gap-4 flex-wrap">
     <InteractiveButton
       variant={activeTab === "roadmap" ? "primary" : "outline"}
       onClick={() => setActiveTab("roadmap")}
-      className="flex-shrink-0"
+      className="!flex !flex-row !items-center gap-2 px-4 !important"
     >
-      ✦ Roadmap
+      <Map className="w-4 h-4" style={{display: 'inline-block', verticalAlign: 'middle'}} />
+      <span style={{display: 'inline-block', verticalAlign: 'middle'}}>Roadmap</span>
     </InteractiveButton>
     <InteractiveButton
       variant={activeTab === "notes" ? "primary" : "outline"}
       onClick={() => setActiveTab("notes")}
-      className="flex-shrink-0"
+      className="!flex !flex-row !items-center gap-2 px-4 !important"
     >
-     ▦ Notes
+      <FileText className="w-4 h-4" style={{display: 'inline-block', verticalAlign: 'middle'}} />
+      <span style={{display: 'inline-block', verticalAlign: 'middle'}}>Notes</span>
     </InteractiveButton>
     <InteractiveButton
       variant={activeTab === "code" ? "primary" : "outline"}
       onClick={() => setActiveTab("code")}
-      className="flex-shrink-0"
+      className="!flex !flex-row !items-center gap-2 px-4 !important"
     >
-      ⟨/⟩ Snippets
+      <Code2 className="w-4 h-4" style={{display: 'inline-block', verticalAlign: 'middle'}} />
+      <span style={{display: 'inline-block', verticalAlign: 'middle'}}>Code</span>
     </InteractiveButton>
   </div>
 </GlassmorphismCard>
+
 
 
         {/* Content Sections with Smooth Animation */}
