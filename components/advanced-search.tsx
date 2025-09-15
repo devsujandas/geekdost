@@ -191,14 +191,15 @@ export function AdvancedSearch({
                     <label className="block text-sm font-medium text-transparent">
                       Action
                     </label>
-                    <InteractiveButton
-                      variant="outline"
-                      onClick={clearAllFilters}
-                      disabled={!hasActiveFilters}
-                      className="w-full h-10 disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                      Clear All
-                    </InteractiveButton>
+<InteractiveButton
+  variant="primary"
+  onClick={clearAllFilters}
+  disabled={!hasActiveFilters}
+  className="w-full h-10 rounded-lg bg-red-600 text-white font-medium shadow-sm hover:bg-red-700 hover:shadow-md transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-red-400"
+>
+  Clear All
+</InteractiveButton>
+
                   </div>
                 </div>
               </div>

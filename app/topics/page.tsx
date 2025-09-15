@@ -32,7 +32,7 @@ export default function TopicsPage() {
     }
     results = sortTopics(results, sortBy)
     setFilteredTopics(results)
-    setVisibleCount(9) // filter পরিবর্তন হলে reset করে প্রথম 9টা দেখাবে
+    setVisibleCount(9) // 
   }, [searchQuery, selectedCategory, selectedDifficulty, sortBy])
 
   return (
