@@ -43,14 +43,20 @@ export function FloatingNavbar() {
         <GlassmorphismCard hover={false} className="px-6 py-3">
           <div className="flex items-center space-x-8">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="text-xl font-bold text-foreground hover:text-primary transition-colors"
-              >
-                GeekDost
-              </motion.div>
-            </Link>
+        <Link href="/" className="flex items-center space-x-2">
+          <motion.div
+           whileHover={{ scale: 1.05 }}
+           className="transition-transform" 
+        >
+          <Image
+          src="/geekdost.png"
+          alt="GeekDost Logo"
+          width={120}   
+          height={40}   
+          className="object-contain"
+        />
+          </motion.div>
+        </Link>
 
             {/* Navigation Items */}
             <div className="flex items-center space-x-6">
