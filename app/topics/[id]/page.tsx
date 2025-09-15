@@ -133,7 +133,7 @@ export default function TopicPage({ params }: TopicPageProps) {
       className="!flex !flex-row !items-center gap-2  !important"
     >
       <Code2 className="h-4" style={{display: 'inline-block', verticalAlign: 'middle'}} />
-      <span style={{display: 'inline-block', verticalAlign: 'middle'}}>Code</span>
+      <span style={{display: 'inline-block', verticalAlign: 'middle'}}>Snippets</span>
     </InteractiveButton>
   </div>
 </GlassmorphismCard>
