@@ -6,6 +6,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { FaHome, FaCode, FaSearch, FaUser, FaBars, FaTimes } from "react-icons/fa"
 import { GlassmorphismCard } from "./glassmorphism-card"
+import Image from "next/image"
 
 const navItems = [
   { href: "/", icon: FaHome, label: "Home" },
