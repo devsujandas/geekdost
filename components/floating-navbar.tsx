@@ -96,7 +96,20 @@ export function FloatingNavbar() {
         <GlassmorphismCard hover={false} className="m-4 px-4 py-3 rounded-xl">
           <div className="flex items-center justify-between">
             {/* Logo */}
-
+        <Link href="/" className="flex items-center space-x-2">
+          <motion.div
+           whileHover={{ scale: 1.05 }}
+           className="transition-transform" 
+        >
+          <Image
+          src="/geekdost.png"
+          alt="GeekDost Logo"
+          width={120}   
+          height={40}   
+          className="object-contain"
+        />
+          </motion.div>
+        </Link>
             {/* Mobile Menu Button */}
             <motion.button
               whileTap={{ scale: 0.95 }}
