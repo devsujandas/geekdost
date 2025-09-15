@@ -33,509 +33,570 @@ export interface CodeSnippet {
 }
 
 export const topicsData: Topic[] = [
+  /* PYTHON */
   {
-  id: "python",
-  slug: "python",
-  title: "Python",
-  description: "A complete Python roadmap covering basics, advanced concepts, data science, web development, automation, and machine learning with hands-on code examples.",
-  icon: "FaPython",
-  color: "from-blue-500 to-yellow-500",
-  category: "Programming",
-  difficulty: "Advanced",
-  tags: ["python", "data-science", "automation", "machine-learning", "web-development", "scripting", "software-engineering"],
-  image: "/images/python.png",
-  roadmap: [
-  { 
-    id: "py-1", 
-    title: "Installation & Setup", 
-    description: "Download Python from python.org, install and add to PATH, configure VS Code or preferred IDE, understand the difference between interactive mode (REPL) and running scripts, learn how to use terminal/command prompt for Python execution.", 
-    duration: "3-4 days" 
-  },
-  { 
-    id: "py-2", 
-    title: "Python Basics", 
-    description: "Understand Python syntax rules, variables, constants, basic data types (int, float, str, bool), type conversion, user input (input()), print formatting, comments (single-line & multi-line), basic arithmetic and comparison operators.", 
-    duration: "1.5 weeks" 
-  },
-  { 
-    id: "py-3", 
-    title: "Control Structures", 
-    description: "Learn conditional statements (if, elif, else), logical operators, nested conditions, for/while loops, loop control keywords (break, continue, pass), range() function, and simple flow control programs like calculators and number guessing games.", 
-    duration: "1 week" 
-  },
-  { 
-    id: "py-4", 
-    title: "Functions & Modules", 
-    description: "Define and call functions, parameters and return values, default arguments, variable-length arguments (*args, **kwargs), scope (local, global), importing built-in and custom modules, and organizing reusable code.", 
-    duration: "1 week" 
-  },
-  { 
-    id: "py-5", 
-    title: "Data Structures", 
-    description: "Explore lists (CRUD operations, slicing), tuples, sets (union, intersection, difference), dictionaries (key-value operations), membership tests, unpacking, list/set/dict comprehensions, mutability concepts, and when to use which data structure.", 
-    duration: "1.5 weeks" 
-  },
-  { 
-    id: "py-6", 
-    title: "String Handling", 
-    description: "Work with string indexing, slicing, concatenation, repetition, common methods (upper, lower, strip, split, join, replace), formatting using f-strings and format(), and learn basics of regular expressions for pattern matching.", 
-    duration: "1 week" 
-  },
-  { 
-    id: "py-7", 
-    title: "File Handling", 
-    description: "Learn to read, write, and append files, use context managers (with open), handle CSV files with csv module, work with JSON files using json module, and understand file paths and modes.", 
-    duration: "1 week" 
-  },
-  { 
-    id: "py-8", 
-    title: "Error & Exception Handling", 
-    description: "Understand runtime vs syntax errors, use try-except-finally, catch specific exceptions, raise custom errors, create custom exception classes, and write robust error-handling code.", 
-    duration: "3-4 days" 
-  },
-  { 
-    id: "py-9", 
-    title: "Object-Oriented Programming", 
-    description: "Learn about classes, objects, attributes, methods, constructors (__init__), inheritance, polymorphism, encapsulation (public/private/protected), dunder/magic methods (__str__, __len__), and class/static methods.", 
-    duration: "2 weeks" 
-  },
-  { 
-    id: "py-10", 
-    title: "Advanced Python", 
-    description: "Deep dive into iterators, generators (yield), decorators (function wrappers), context managers (with custom classes), and understand Python’s data model for writing clean, efficient code.", 
-    duration: "1.5 weeks" 
-  },
-  { 
-    id: "py-11", 
-    title: "Virtual Environments & Package Management", 
-    description: "Create and activate virtual environments using venv, install and uninstall packages with pip, freeze dependencies in requirements.txt, explore pipenv and poetry for advanced environment management.", 
-    duration: "3 days" 
-  },
-  { 
-    id: "py-12", 
-    title: "Standard Library", 
-    description: "Explore Python’s powerful standard library: os (file operations), sys (arguments), datetime (date & time), math & random modules, itertools (combinatorics), collections (namedtuple, Counter, defaultdict), json (parsing).", 
-    duration: "1 week" 
-  },
-  { 
-    id: "py-13", 
-    title: "Testing & Debugging", 
-    description: "Write tests using unittest & pytest, use assert statements, debug with pdb module, add logging for better traceability, and practice test-driven development (TDD) for small programs.", 
-    duration: "1 week" 
-  },
-  { 
-    id: "py-14", 
-    title: "Functional Programming", 
-    description: "Learn to use lambda expressions, higher-order functions, map, filter, reduce, closures, recursion, and understand immutability and side-effect-free functions.", 
-    duration: "4-5 days" 
-  },
-  { 
-    id: "py-15", 
-    title: "Data Science Libraries", 
-    description: "Learn NumPy (arrays, broadcasting, vectorization), Pandas (Series, DataFrame, data cleaning, grouping, merging), Matplotlib (plots, bar, scatter, histograms), Seaborn (advanced visualization).", 
-    duration: "3 weeks" 
-  },
-  { 
-    id: "py-16", 
-    title: "APIs & Web Requests", 
-    description: "Use requests module for GET/POST requests, handle JSON responses, work with REST APIs (GitHub API, weather API), error handling for HTTP requests, and build simple API clients.", 
-    duration: "1 week" 
-  },
-  { 
-    id: "py-17", 
-    title: "Automation & Scripting", 
-    description: "Automate repetitive tasks using os, shutil, pathlib, sched modules, rename files, send emails (smtplib), scrape data (BeautifulSoup), generate reports, and schedule scripts.", 
-    duration: "1 week" 
-  },
-  { 
-    id: "py-18", 
-    title: "Databases", 
-    description: "Work with SQLite (connect, create tables, insert, update, delete records), use parameterized queries to avoid SQL injection, fetch results, and learn SQLAlchemy ORM basics.", 
-    duration: "1.5 weeks" 
-  },
-  { 
-    id: "py-19", 
-    title: "Web Development", 
-    description: "Learn Flask basics, routing, Jinja templates, forms, session handling, building REST APIs, and creating a simple CRUD app with database integration.", 
-    duration: "2 weeks" 
-  },
-  { 
-    id: "py-20", 
-    title: "Machine Learning Basics", 
-    description: "Use scikit-learn for train-test split, train models (Linear Regression, Logistic Regression, Decision Trees), evaluate with accuracy/MAE, and visualize results.", 
-    duration: "3 weeks" 
-  },
-  { 
-    id: "py-21", 
-    title: "Version Control & Deployment", 
-    description: "Learn Git basics (clone, commit, push, pull, branching), collaborate via GitHub, deploy Flask apps on Render/Heroku, and manage secrets and environment variables.", 
-    duration: "1 week" 
-  },
-  { 
-    id: "py-22", 
-    title: "Project Building", 
-    description: "Apply knowledge by building real projects: CLI calculator, file organizer, Flask CRUD app, dashboard with Pandas, small ML models (spam classifier, house price predictor).", 
-    duration: "2-3 weeks" 
-  },
-  { 
-    id: "py-23", 
-    title: "Best Practices & Clean Code", 
-    description: "Follow PEP8 style guide, write readable and maintainable code, use docstrings, comments, type hints, refactor code, and learn design patterns for scalable projects.", 
-    duration: "4-5 days" 
-  },
-  { 
-    id: "py-24", 
-    title: "Performance Optimization", 
-    description: "Profile code with cProfile, use timeit for benchmarking, optimize loops, use built-in functions effectively, caching with functools.lru_cache, and basic multiprocessing.", 
-    duration: "4-5 days" 
-  },
-  { 
-    id: "py-25", 
-    title: "Career Preparation", 
-    description: "Prepare for interviews with Python coding problems, learn common algorithms & data structures in Python, explore open-source contributions, and create a GitHub portfolio.", 
-    duration: "1 week" 
-  },
-],
-
-notes: [
-  "Python is one of the most versatile and in-demand programming languages. It is used in data science, AI/ML, automation, web development, cybersecurity, IoT, DevOps scripting, and even game development. Mastering Python opens multiple career opportunities across industries.",
-  "Start by learning how to install Python properly, set up environment variables (PATH), and configure a modern IDE like VS Code, PyCharm, or Jupyter Notebook for smooth development.",
-  "Always create and use virtual environments (venv, pipenv, or poetry) to isolate dependencies for each project. This avoids version conflicts, makes collaboration easier, and ensures smooth deployment.",
-  "Follow PEP8 coding standards for better readability: use consistent indentation (4 spaces), descriptive variable names, proper spacing, and organized imports. Well-formatted code is easier to maintain and debug.",
-  "Write clear docstrings (triple quotes) for all functions, classes, and modules. Combine them with type hints (PEP 484) so your code is self-documented and IDEs can provide better autocompletion.",
-  "Master exception handling using try-except-finally blocks. Handle common errors gracefully and never expose raw tracebacks to users. Log errors and provide helpful messages instead.",
-  "Take advantage of Python’s powerful features: list comprehensions, dictionary comprehensions, generator expressions, and built-in functions like zip(), enumerate(), map(), filter(), and reduce(). These make code more efficient and pythonic.",
-  "Understand memory management basics and avoid unnecessary large data structures. Learn about iterators, generators, and lazy evaluation to write memory-efficient code.",
-  "Learn automation-related modules early: os, sys, shutil, pathlib, sched, and subprocess. These allow you to work with files, directories, processes, and schedule scripts — ideal for automating repetitive tasks.",
-  "Practice after every topic by building small projects like a calculator, to-do list app, number guessing game, text-based adventure game, CSV data analyzer, or automation scripts. This reinforces learning and builds your portfolio.",
-  "Version control is critical — learn Git (init, add, commit, push, pull, branch, merge) and host your projects on GitHub or GitLab. This builds credibility and shows potential employers your coding history.",
-  "Use logging instead of print statements for debugging. Python’s logging module supports different levels (DEBUG, INFO, WARNING, ERROR, CRITICAL) and can log to files, making it production-ready.",
-  "Write tests using unittest or pytest to keep your code reliable. Testing ensures new changes don't break existing functionality and encourages better design patterns.",
-  "Learn about Python's standard library deeply: os, sys, math, random, datetime, collections, itertools, functools, json, re (regex). These modules help solve most problems without third-party libraries.",
-  "Understand software design patterns (Singleton, Factory, Observer, etc.) and apply OOP principles like inheritance, polymorphism, and encapsulation properly for cleaner architecture.",
-  "Document dependencies using requirements.txt or pyproject.toml and lock versions when necessary. This ensures consistent builds across machines and production servers.",
-  "Refactor code frequently: remove duplicate code, break long functions into smaller reusable pieces, and improve variable naming. Clean code saves time in the long run.",
-  "Break large applications into well-structured packages and modules with clear separation of concerns. This makes debugging and collaboration easier.",
-  "Learn how to profile and optimize code performance using timeit, cProfile, and memory_profiler. Optimize only after measuring actual bottlenecks to avoid premature optimization.",
-  "Participate in coding challenges and practice problem-solving on platforms like LeetCode, HackerRank, Codewars, or Advent of Code to sharpen your logical thinking and prepare for interviews.",
-  "Study common data structures and algorithms (sorting, searching, recursion, stacks, queues) in Python to solve competitive programming and real-world problems efficiently.",
-  "Stay updated with Python’s latest versions (3.x releases). New features like pattern matching (match-case), dataclasses, type hint improvements, and asyncio enhancements can simplify code.",
-  "Learn deployment basics: use GitHub Actions or CI/CD pipelines to automate testing and deployment, and host web apps on Render, Heroku, or Railway for real-world experience.",
-  "Document your journey — write README.md files for every project, maintain a learning log, and share insights via blogs or LinkedIn. This builds an online presence and shows dedication to learning."
-],
-
-codeSnippets: [
-  { id: "py-snippet-1", title: "Hello World", description: "Basic program to print output", language: "python", code: `print("Hello, Python!")` },
-
-  { id: "py-snippet-2", title: "Variables & Input", description: "Store user input and display it", language: "python", code: `name = input("Enter your name: ")\nprint("Hello", name)` },
-
-  { id: "py-snippet-3", title: "Type Casting", description: "Convert string to integer", language: "python", code: `age = int("25")\nprint(age + 5)` },
-
-  { id: "py-snippet-4", title: "Basic Math", description: "Perform arithmetic operations", language: "python", code: `a, b = 5, 2\nprint(a + b, a - b, a * b, a / b)` },
-
-  { id: "py-snippet-5", title: "If-Else", description: "Conditional decision making", language: "python", code: `x = 10\nif x > 5:\n    print("x is large")\nelse:\n    print("x is small")` },
-
-  { id: "py-snippet-6", title: "Match-Case", description: "Pattern matching (Python 3.10+)", language: "python", code: `command = "start"\nmatch command:\n    case "start":\n        print("Starting...")\n    case "stop":\n        print("Stopping...")\n    case _:\n        print("Unknown command")` },
-
-  { id: "py-snippet-7", title: "For Loop", description: "Iterate over a range of numbers", language: "python", code: `for i in range(1, 6):\n    print(i)` },
-
-  { id: "py-snippet-8", title: "While Loop", description: "Repeat code until condition is false", language: "python", code: `count = 0\nwhile count < 3:\n    print(count)\n    count += 1` },
-
-  { id: "py-snippet-9", title: "Break & Continue", description: "Control loop execution", language: "python", code: `for i in range(5):\n    if i == 2:\n        continue\n    if i == 4:\n        break\n    print(i)` },
-
-  { id: "py-snippet-10", title: "Functions", description: "Reusable block of code", language: "python", code: `def greet(name):\n    return f"Hello {name}"\nprint(greet("Alice"))` },
-
-  { id: "py-snippet-11", title: "Lambda Function", description: "Anonymous one-line function", language: "python", code: `square = lambda x: x**2\nprint(square(4))` },
-
-  { id: "py-snippet-12", title: "List Example", description: "Create and modify a list", language: "python", code: `fruits = ["apple", "banana"]\nfruits.append("cherry")\nprint(fruits)` },
-
-  { id: "py-snippet-13", title: "List Comprehension", description: "Compact way to build lists", language: "python", code: `squares = [x**2 for x in range(5)]\nprint(squares)` },
-
-  { id: "py-snippet-14", title: "Tuple Example", description: "Immutable sequence", language: "python", code: `coordinates = (10, 20)\nprint(coordinates[0])` },
-
-  { id: "py-snippet-15", title: "Set Example", description: "Remove duplicates automatically", language: "python", code: `nums = {1, 2, 2, 3}\nprint(nums)` },
-
-  { id: "py-snippet-16", title: "Dictionary Example", description: "Key-value storage", language: "python", code: `person = {"name": "Bob", "age": 25}\nprint(person["name"])` },
-
-  { id: "py-snippet-17", title: "Enumerate Example", description: "Get index while looping", language: "python", code: `for i, fruit in enumerate(["apple", "banana"]):\n    print(i, fruit)` },
-
-  { id: "py-snippet-18", title: "Zip Example", description: "Combine lists into pairs", language: "python", code: `names = ["Alice", "Bob"]\nages = [24, 30]\nfor name, age in zip(names, ages):\n    print(name, age)` },
-
-  { id: "py-snippet-19", title: "String Formatting", description: "Use f-strings", language: "python", code: `name = "Alice"\nprint(f"Welcome {name}")` },
-
-  { id: "py-snippet-20", title: "Regex Example", description: "Find words with regex", language: "python", code: `import re\nresult = re.findall(r"[a-z]+", "Hello123World")\nprint(result)` },
-
-  { id: "py-snippet-21", title: "File Handling", description: "Write and read a file", language: "python", code: `with open("file.txt", "w") as f:\n    f.write("Hello!")\nwith open("file.txt") as f:\n    print(f.read())` },
-
-  { id: "py-snippet-22", title: "Exception Handling", description: "Catch runtime errors", language: "python", code: `try:\n    x = int("abc")\nexcept ValueError:\n    print("Invalid number!")` },
-
-  { id: "py-snippet-23", title: "With Context Manager", description: "Auto-close resources", language: "python", code: `with open("data.txt", "w") as f:\n    f.write("Safe file writing")` },
-
-  { id: "py-snippet-24", title: "Class & Object", description: "OOP basics", language: "python", code: `class Dog:\n    def __init__(self, name):\n        self.name = name\n    def bark(self):\n        print(self.name, "says Woof!")\nd = Dog("Buddy")\nd.bark()` },
-
-  { id: "py-snippet-25", title: "Inheritance", description: "Reuse parent methods", language: "python", code: `class Animal:\n    def sound(self):\n        print("Animal sound")\nclass Dog(Animal):\n    pass\nDog().sound()` },
-
-  { id: "py-snippet-26", title: "Polymorphism", description: "Different classes, same method", language: "python", code: `class Cat:\n    def speak(self): print("Meow")\nclass Dog:\n    def speak(self): print("Woof")\nfor pet in [Cat(), Dog()]:\n    pet.speak()` },
-
-  { id: "py-snippet-27", title: "Property Decorator", description: "Getter and setter", language: "python", code: `class Person:\n    def __init__(self, age):\n        self._age = age\n    @property\n    def age(self): return self._age\n    @age.setter\n    def age(self, value): self._age = value\np = Person(20)\np.age = 25\nprint(p.age)` },
-
-  { id: "py-snippet-28", title: "Generator", description: "Yield one value at a time", language: "python", code: `def countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\nfor i in countdown(3):\n    print(i)` },
-
-  { id: "py-snippet-29", title: "Decorator", description: "Modify function behavior", language: "python", code: `def log(func):\n    def wrapper():\n        print("Start")\n        func()\n        print("End")\n    return wrapper\n@log\ndef hello():\n    print("Hello")\nhello()` },
-
-  { id: "py-snippet-30", title: "Using os module", description: "List current directory files", language: "python", code: `import os\nprint(os.listdir())` },
-
-  { id: "py-snippet-31", title: "Datetime Example", description: "Work with dates", language: "python", code: `from datetime import datetime\nprint(datetime.now())` },
-
-  { id: "py-snippet-32", title: "JSON Handling", description: "Serialize to JSON", language: "python", code: `import json\ndata = {"x": 10}\nprint(json.dumps(data))` },
-
-  { id: "py-snippet-33", title: "CSV Handling", description: "Write and read CSV", language: "python", code: `import csv\nwith open("data.csv", "w", newline="") as f:\n    writer = csv.writer(f)\n    writer.writerow(["name", "age"])\n    writer.writerow(["Alice", 25])` },
-
-  { id: "py-snippet-34", title: "Random Module", description: "Generate random numbers", language: "python", code: `import random\nprint(random.randint(1, 10))` },
-
-  { id: "py-snippet-35", title: "Requests Example", description: "GET API request", language: "python", code: `import requests\nr = requests.get("https://api.github.com")\nprint(r.status_code)` },
-
-  { id: "py-snippet-36", title: "Pandas Example", description: "Create DataFrame", language: "python", code: `import pandas as pd\ndf = pd.DataFrame({"A": [1,2], "B": [3,4]})\nprint(df)` },
-
-  { id: "py-snippet-37", title: "Matplotlib Plot", description: "Line graph example", language: "python", code: `import matplotlib.pyplot as plt\nplt.plot([1,2,3],[2,4,6])\nplt.show()` },
-
-  { id: "py-snippet-38", title: "Numpy Array", description: "Basic array operations", language: "python", code: `import numpy as np\narr = np.array([1, 2, 3])\nprint(arr * 2)` },
-
-  { id: "py-snippet-39", title: "List Sorting", description: "Sort using custom key", language: "python", code: `nums = [5, 2, 8]\nnums.sort(reverse=True)\nprint(nums)` },
-
-  { id: "py-snippet-40", title: "Counter Example", description: "Count occurrences", language: "python", code: `from collections import Counter\nprint(Counter("banana"))` },
-
-  { id: "py-snippet-41", title: "NamedTuple Example", description: "Lightweight class", language: "python", code: `from collections import namedtuple\nPoint = namedtuple("Point", "x y")\np = Point(10, 20)\nprint(p.x)` },
-
-  { id: "py-snippet-42", title: "Dataclass Example", description: "Auto-generate methods", language: "python", code: `from dataclasses import dataclass\n@dataclass\nclass Item:\n    name: str\n    price: float\nprint(Item("Book", 12.5))` },
-
-  { id: "py-snippet-43", title: "Contextlib Example", description: "Create custom context manager", language: "python", code: `from contextlib import contextmanager\n@contextmanager\ndef my_context():\n    print("Start")\n    yield\n    print("End")\nwith my_context():\n    print("Inside")` },
-
-  { id: "py-snippet-44", title: "Asyncio Example", description: "Run async tasks", language: "python", code: `import asyncio\nasync def main():\n    await asyncio.sleep(1)\n    print("Done")\nasyncio.run(main())` },
-
-  { id: "py-snippet-45", title: "Logging Example", description: "Use logging module", language: "python", code: `import logging\nlogging.basicConfig(level=logging.INFO)\nlogging.info("This is a log message")` },
-
-  { id: "py-snippet-46", title: "Timeit Example", description: "Measure execution speed", language: "python", code: `import timeit\nprint(timeit.timeit("sum(range(1000))", number=1000))` },
-
-  { id: "py-snippet-47", title: "SQLite Example", description: "Simple database query", language: "python", code: `import sqlite3\nconn = sqlite3.connect(":memory:")\nc = conn.cursor()\nc.execute("CREATE TABLE users (name TEXT)")\nc.execute("INSERT INTO users VALUES ('Alice')")\nfor row in c.execute("SELECT * FROM users"):\n    print(row)` },
-
-  { id: "py-snippet-48", title: "Itertools Example", description: "Use combinations", language: "python", code: `import itertools\nprint(list(itertools.combinations([1,2,3], 2)))` },
-
-  { id: "py-snippet-49", title: "Fibonacci Recursion", description: "Classic recursion example", language: "python", code: `def fib(n):\n    return n if n<=1 else fib(n-1)+fib(n-2)\nprint(fib(5))` },
-
-  { id: "py-snippet-50", title: "Web Scraping", description: "Fetch page title with requests + bs4", language: "python", code: `import requests\nfrom bs4 import BeautifulSoup\nr = requests.get("https://example.com")\nsoup = BeautifulSoup(r.text, "html.parser")\nprint(soup.title.string)` },
-
-  { id: "py-snippet-51", title: "Flask App", description: "Minimal web server", language: "python", code: `from flask import Flask\napp = Flask(__name__)\n@app.route("/")\ndef home():\n    return "Hello Flask"\nif __name__ == "__main__":\n    app.run(debug=True)` },
-
-  { id: "py-snippet-52", title: "Tkinter GUI", description: "Create simple window", language: "python", code: `import tkinter as tk\nroot = tk.Tk()\nroot.title("My App")\ntk.Label(root, text="Hello GUI").pack()\nroot.mainloop()` },
-]
-
-},
-
-{
-  "id": "javascript",
-  "slug": "javascript",
-  "title": "JavaScript",
-  "description": "Master JavaScript for frontend and backend development. Learn from basics to advanced concepts including ES6+, async programming, and Node.js.",
-  "icon": "FaJs",
-  "color": "from-yellow-400 to-orange-500",
+  "id": "python",
+  "slug": "python",
+  "title": "Python",
+  "description": "A comprehensive Python roadmap covering everything from fundamentals to advanced topics including data science, web development, automation, machine learning, and software engineering best practices with extensive code examples.",
+  "icon": "FaPython",
+  "color": "from-blue-500 to-yellow-500",
   "category": "Programming",
-  "difficulty": "Beginner",
-  "tags": ["javascript", "web-development", "nodejs", "frontend", "backend"],
-  "image": "/images/javascript.jpeg", //image
+  "difficulty": "Advanced",
+  "tags": ["python", "data-science", "automation", "machine-learning", "web-development", "scripting", "software-engineering", "backend", "ai"],
+  "image": "/images/python.png",
   "roadmap": [
-    {
-      "id": "js-1",
-      "title": "JavaScript Basics",
-      "description": "Variables, data types, operators, and basic syntax",
-      "duration": "2 weeks"
+    { 
+      "id": "py-1", 
+      "title": "Installation & Setup", 
+      "description": "Download Python from python.org (recommended version 3.8+), install and verify PATH configuration, set up virtual environments, configure VS Code with Python extension, Jupyter Notebook, or PyCharm IDE. Understand the difference between interactive mode (REPL) and script execution, learn terminal/command prompt usage for Python execution, and set up debugging capabilities.", 
+      "duration": "3-4 days" 
     },
-    {
-      "id": "js-2",
-      "title": "Control Flow & Functions",
-      "description": "Conditionals, loops, functions, and scope",
-      "duration": "2 weeks"
+    { 
+      "id": "py-2", 
+      "title": "Python Basics & Syntax", 
+      "description": "Master Python syntax rules, variables and naming conventions, constants, all basic data types (int, float, str, bool, complex), type conversion functions (int(), float(), str(), bool()), user input handling with input(), advanced print formatting options, comments (single-line, multi-line, docstrings), and all arithmetic, comparison, and assignment operators.", 
+      "duration": "1.5 weeks" 
     },
-    {
-      "id": "js-3",
-      "title": "DOM Manipulation",
-      "description": "Selecting elements, event handling, and dynamic content",
-      "duration": "2 weeks"
+    { 
+      "id": "py-3", 
+      "title": "Control Structures & Flow", 
+      "description": "Master conditional statements (if, elif, else, nested if), all logical operators (and, or, not), comparison chaining, for/while loops with else clauses, loop control keywords (break, continue, pass), range() function with different parameters, match-case statements (Python 3.10+), and build practical programs like calculators, number guessing games, and menu-driven applications.", 
+      "duration": "1 week" 
     },
-    {
-      "id": "js-4",
-      "title": "ES6+ Features",
-      "description": "Arrow functions, destructuring, template literals, and modules",
-      "duration": "2 weeks"
+    { 
+      "id": "py-4", 
+      "title": "Functions & Modular Programming", 
+      "description": "Define and call functions with proper documentation, parameters (positional, keyword) and return values (single and multiple), default arguments, variable-length arguments (*args, **kwargs), lambda functions, function annotations, scope rules (local, global, nonlocal), namespace concepts, importing built-in modules, creating and organizing custom modules, and understanding __name__ == \"__main__\" pattern.", 
+      "duration": "1 week" 
     },
-    {
-      "id": "js-5",
-      "title": "Arrays & Objects",
-      "description": "Advanced array methods, object manipulation, and JSON",
-      "duration": "2 weeks"
+    { 
+      "id": "py-5", 
+      "title": "Data Structures & Collections", 
+      "description": "Comprehensive exploration of lists (CRUD operations, slicing, copying methods), tuples (immutable sequences, packing/unpacking), sets (mathematical operations, frozensets), dictionaries (key-value operations, methods, views), advanced membership testing, sequence unpacking, list/set/dict comprehensions with conditions, mutability concepts, deep vs shallow copying, and practical use cases for each data structure.", 
+      "duration": "1.5 weeks" 
     },
-    {
-      "id": "js-6",
-      "title": "Asynchronous JavaScript",
-      "description": "Callbacks, promises, async/await, and fetch API",
-      "duration": "3 weeks"
+    { 
+      "id": "py-6", 
+      "title": "String Manipulation & Processing", 
+      "description": "Master string indexing, slicing, concatenation, repetition, all important string methods (upper, lower, strip, split, join, replace, find, index, count, format), advanced formatting using f-strings (Python 3.6+) and format() method, Unicode handling, bytes vs strings, and regular expressions (re module) for advanced pattern matching, searching, and validation.", 
+      "duration": "1 week" 
     },
-    {
-      "id": "js-7",
-      "title": "Error Handling & Debugging",
-      "description": "Try/catch, debugging tools, and error handling strategies",
-      "duration": "1 week"
+    { 
+      "id": "py-7", 
+      "title": "File Handling & I/O Operations", 
+      "description": "Learn to read, write, and append files in different modes (text, binary), use context managers (with statement) for automatic resource cleanup, handle CSV files with csv module (reader, writer, DictReader, DictWriter), work with JSON files using json module (load, loads, dump, dumps), handle file paths with pathlib and os.path, and understand file encodings and exceptions.", 
+      "duration": "1 week" 
     },
-    {
-      "id": "js-8",
-      "title": "Modern JavaScript Patterns",
-      "description": "Modules, classes, and modern development patterns",
-      "duration": "2 weeks"
+    { 
+      "id": "py-8", 
+      "title": "Error & Exception Handling", 
+      "description": "Understand different error types (syntax, runtime, logical), use try-except-else-finally blocks comprehensively, catch specific exceptions, raise exceptions with custom messages, create custom exception classes, use exception chaining, and write robust, production-quality error-handling code with proper logging and user feedback.", 
+      "duration": "3-4 days" 
     },
-    {
-      "id": "js-9",
-      "title": "Node.js Fundamentals",
-      "description": "Server-side JavaScript, npm, and basic server creation",
-      "duration": "3 weeks"
+    { 
+      "id": "py-9", 
+      "title": "Object-Oriented Programming (OOP)", 
+      "description": "Deep dive into classes, objects, instance attributes vs class attributes, methods (instance, class, static), constructors (__init__) and destructors (__del__), inheritance (single, multiple, multilevel), method resolution order (MRO), polymorphism, encapsulation (name mangling, properties), abstract base classes, dunder/magic methods (__str__, __repr__, __len__, __add__, etc.), and OOP design principles.", 
+      "duration": "2 weeks" 
     },
-    {
-      "id": "js-10",
-      "title": "Advanced JavaScript Concepts",
-      "description": "Closures, prototypal inheritance, and memory management",
-      "duration": "2 weeks"
+    { 
+      "id": "py-10", 
+      "title": "Advanced Python Concepts", 
+      "description": "Comprehensive exploration of iterators (__iter__, __next__), generators (yield, generator expressions), decorators (function decorators, class decorators, parameterized decorators), context managers (creating custom ones with classes and contextlib), descriptors, metaclasses, and understanding Python's data model and internal mechanisms for writing efficient, pythonic code.", 
+      "duration": "1.5 weeks" 
     },
-    {
-      "id": "js-11",
-      "title": "Testing & Debugging",
-      "description": "Unit testing, integration testing, and advanced debugging",
-      "duration": "2 weeks"
+    { 
+      "id": "py-11", 
+      "title": "Virtual Environments & Dependency Management", 
+      "description": "Create, activate, and manage virtual environments using venv and virtualenv, install and uninstall packages with pip (including version pinning), freeze dependencies into requirements.txt, understand dependency resolution, explore advanced tools like pipenv and poetry for professional dependency management, and create reproducible development environments.", 
+      "duration": "3 days" 
     },
-    {
-      "id": "js-12",
-      "title": "Build Tools & Bundlers",
-      "description": "Webpack, Vite, and modern build processes",
-      "duration": "2 weeks"
+    { 
+      "id": "py-12", 
+      "title": "Python Standard Library", 
+      "description": "Explore Python's extensive standard library: os and sys modules (system operations), datetime and time modules (date/time handling), math, statistics and random modules (mathematical operations), itertools (advanced iteration tools), functools (higher-order functions), collections (namedtuple, Counter, defaultdict, OrderedDict), json (JSON parsing), and re (regular expressions).", 
+      "duration": "1 week" 
     },
-    {
-      "id": "js-13",
-      "title": "Advanced Node.js",
-      "description": "Express.js, REST APIs, authentication, and databases",
-      "duration": "4 weeks"
+    { 
+      "id": "py-13", 
+      "title": "Testing, Debugging & Logging", 
+      "description": "Write comprehensive tests using unittest & pytest frameworks, use assert statements effectively, debug with pdb module and IDE debuggers, add logging with different levels (DEBUG, INFO, WARNING, ERROR, CRITICAL), configure log formatting and handlers, practice test-driven development (TDD), and measure code coverage with coverage.py.", 
+      "duration": "1 week" 
     },
-    {
-      "id": "js-14",
-      "title": "Performance Optimization",
-      "description": "Memory management, runtime optimization, and best practices",
-      "duration": "2 weeks"
+    { 
+      "id": "py-14", 
+      "title": "Functional Programming Paradigms", 
+      "description": "Learn functional programming concepts: pure functions, immutability, first-class and higher-order functions, lambda expressions, map, filter, reduce functions, function composition, partial functions, closures, decorators, recursion, and iterators/generators. Understand when functional approaches are preferable to imperative programming.", 
+      "duration": "4-5 days" 
+    },
+    { 
+      "id": "py-15", 
+      "title": "Data Science & Scientific Computing", 
+      "description": "Master NumPy (arrays, universal functions, broadcasting, indexing, vectorization), Pandas (Series, DataFrame, data cleaning, transformation, grouping, aggregation, merging, time series), Matplotlib (figure, axes, plots, customization, subplots), Seaborn (statistical visualization), and SciPy (scientific computing). Work with real datasets for practical experience.", 
+      "duration": "3 weeks" 
+    },
+    { 
+      "id": "py-16", 
+      "title": "Web APIs & HTTP Requests", 
+      "description": "Use requests module for all HTTP methods (GET, POST, PUT, DELETE), handle JSON responses and errors, work with REST APIs (authentication, headers, parameters), use GitHub API, weather APIs, and other public APIs, handle rate limiting, manage sessions and cookies, and build robust API clients with proper error handling and retry mechanisms.", 
+      "duration": "1 week" 
+    },
+    { 
+      "id": "py-17", 
+      "title": "Automation & Scripting", 
+      "description": "Automate repetitive tasks using os, shutil, pathlib, subprocess modules, file and directory operations, schedule tasks with sched and APScheduler, send emails with smtplib, automate web browsing with Selenium, web scraping with BeautifulSoup and Scrapy, generate reports automatically, and create system administration scripts.", 
+      "duration": "1 week" 
+    },
+    { 
+      "id": "py-18", 
+      "title": "Database Programming", 
+      "description": "Work with SQLite (connection management, CRUD operations, transactions), use parameterized queries to prevent SQL injection, fetch results with different methods, understand database normalization, explore ORM with SQLAlchemy (declarative base, sessions, relationships), and connect to other databases like PostgreSQL and MySQL using appropriate drivers.", 
+      "duration": "1.5 weeks" 
+    },
+    { 
+      "id": "py-19", 
+      "title": "Web Development with Flask/Django", 
+      "description": "Learn Flask (routing, templates with Jinja2, forms with WTForms, sessions, blueprints, REST APIs) and Django basics (MTV architecture, models, views, templates, forms, admin interface). Build complete CRUD applications with database integration, user authentication, and deployment preparation.", 
+      "duration": "2 weeks" 
+    },
+    { 
+      "id": "py-20", 
+      "title": "Machine Learning Fundamentals", 
+      "description": "Use scikit-learn for complete ML workflow (data preprocessing, train-test split, feature engineering), train and evaluate models (Linear Regression, Logistic Regression, Decision Trees, Random Forests, SVM), understand evaluation metrics (accuracy, precision, recall, F1, MAE, MSE), perform cross-validation, and visualize results with matplotlib.", 
+      "duration": "3 weeks" 
+    },
+    { 
+      "id": "py-21", 
+      "title": "Version Control & Deployment", 
+      "description": "Master Git basics (init, add, commit, push, pull, branching, merging, rebasing), collaborate via GitHub/GitLab (issues, PRs, projects), deploy Flask/Django apps on platforms like Heroku, Render, or Railway, use Docker for containerization, manage environment variables and secrets, and implement basic CI/CD pipelines with GitHub Actions.", 
+      "duration": "1 week" 
+    },
+    { 
+      "id": "py-22", 
+      "title": "Project Building & Portfolio Development", 
+      "description": "Apply knowledge by building real-world projects: CLI tools, file organizers, web scrapers, Flask/Django CRUD apps, data analysis dashboards, machine learning models (spam classifier, house price predictor, sentiment analysis), automation scripts, and REST APIs. Focus on code quality, documentation, and deployment.", 
+      "duration": "2-3 weeks" 
+    },
+    { 
+      "id": "py-23", 
+      "title": "Code Quality & Best Practices", 
+      "description": "Follow PEP8 style guide rigorously, write readable and maintainable code, use docstrings and type hints (PEP 484), practice code reviews, refactor code effectively, learn common design patterns (Singleton, Factory, Observer, etc.), implement SOLID principles, and use linters (flake8, pylint) and formatters (black, isort).", 
+      "duration": "4-5 days" 
+    },
+    { 
+      "id": "py-24", 
+      "title": "Performance Optimization & Profiling", 
+      "description": "Profile code with cProfile and line_profiler, use timeit for micro-benchmarking, optimize loops and algorithms, use built-in functions effectively, implement caching with functools.lru_cache, understand Big-O notation, utilize multiprocessing and threading for concurrency, and apply memory optimization techniques.", 
+      "duration": "4-5 days" 
+    },
+    { 
+      "id": "py-25", 
+      "title": "Career Preparation & Advanced Topics", 
+      "description": "Prepare for technical interviews with Python coding problems, master common algorithms & data structures in Python, explore open-source contributions, create a professional GitHub portfolio, learn about async programming with asyncio, explore data engineering with Apache Spark, and stay updated with Python's evolution and new features.", 
+      "duration": "1 week" 
     }
   ],
   "notes": [
-    "JavaScript is essential for both frontend and backend web development",
-    "Event-driven and asynchronous programming model is fundamental",
-    "Huge ecosystem with over 1 million npm packages available",
-    "Can be used for mobile apps (React Native), desktop apps (Electron), and IoT",
-    "Regular updates with new ECMAScript specifications each year",
-    "Strong community support and extensive learning resources"
+    "Python is consistently ranked among the top programming languages worldwide due to its versatility, readability, and extensive ecosystem. It dominates in data science, AI/ML, automation, web development (backend), scientific computing, DevOps, and education sectors.",
+    "Begin with proper Python installation from python.org (never the Microsoft Store version on Windows). Always add Python to PATH during installation and verify by running 'python --version' in your terminal/command prompt.",
+    "Set up a professional development environment: VS Code with Python extension is recommended for beginners and professionals alike. Configure linting, formatting, debugging, and test integration for optimal productivity.",
+    "Virtual environments are non-negotiable for Python development. Use 'python -m venv envname' to create isolated environments for each project. Activate with 'source envname/bin/activate' (Linux/Mac) or 'envname\\Scripts\\activate' (Windows).",
+    "Master PEP 8 style guide early: use 4 spaces per indentation level, maximum 79 characters per line, proper spacing around operators and after commas, and descriptive variable/function names (snake_case for variables/functions, PascalCase for classes).",
+    "Documentation is crucial: write comprehensive docstrings for all modules, classes, and functions following Google-style or NumPy-style conventions. Use type hints (PEP 484) for better code clarity and IDE support.",
+    "Error handling should be proactive, not reactive. Use specific exception types in try-except blocks, avoid bare except clauses, and create custom exception classes for your application's unique error conditions.",
+    "Leverage Python's rich standard library before reaching for third-party packages. Many common tasks can be accomplished with built-in modules like os, sys, collections, itertools, functools, and json.",
+    "Embrace Pythonic code patterns: use list/dict comprehensions instead of loops for simple transformations, leverage built-in functions like enumerate() and zip(), utilize context managers for resource handling, and prefer EAFP (Easier to Ask for Forgiveness than Permission) over LBYL (Look Before You Leap).",
+    "Practice consistently with small projects after each learning milestone: build a calculator, todo list, number guessing game, text-based adventure, password manager, web scraper, or data visualization dashboard.",
+    "Version control with Git is essential. Commit frequently with descriptive messages, use branches for new features, and host your code on GitHub or GitLab. A strong GitHub profile is invaluable for job seekers.",
+    "Use logging instead of print statements for anything beyond simple debugging. Configure different log levels and handlers to create production-ready applications with proper audit trails.",
+    "Testing is not optional for professional development. Write unit tests for your functions, integration tests for your modules, and practice test-driven development (TDD) for critical components.",
+    "Understand Python's memory management and performance characteristics. Learn about reference counting, garbage collection, and how to avoid common pitfalls like circular references and memory leaks.",
+    "Master object-oriented principles but don't force OOP where functional approaches are simpler. Use classes when you need to maintain state or combine data with behavior, but remember that functions are first-class objects in Python.",
+    "Dependency management is critical for reproducible builds. Use requirements.txt with pinned versions for production deployments. Consider poetry or pipenv for more complex dependency resolution.",
+    "Refactor mercilessly: eliminate code duplication, break large functions into smaller ones, improve naming, and simplify complex logic. Clean code is maintainable code.",
+    "Organize large projects into packages with clear separation of concerns. Use __init__.py files appropriately and structure your code for easy testing and collaboration.",
+    "Performance optimization should be data-driven, not speculative. Profile your code to identify actual bottlenecks before optimizing. Often, algorithm improvements yield better results than micro-optimizations.",
+    "Participate in the Python community: join local meetups, attend conferences (PyCon), contribute to open-source projects, and engage on platforms like Stack Overflow, Reddit's r/learnpython, and Real Python.",
+    "Stay current with Python developments: follow PEPs (Python Enhancement Proposals), read release notes for new versions, and gradually adopt new features like pattern matching, structural pattern matching, and improved error messages.",
+    "Prepare for technical interviews by practicing algorithm problems on LeetCode, HackerRank, and Codewars. Focus on Python-specific optimizations and learn to discuss time and space complexity clearly.",
+    "Explore specialized domains: web development (Django, Flask, FastAPI), data science (pandas, NumPy, scikit-learn), machine learning (TensorFlow, PyTorch), automation (Selenium, BeautifulSoup), and DevOps (Fabric, Ansible).",
+    "Document your learning journey through blog posts, tutorial creation, and project documentation. Teaching others reinforces your own understanding and builds valuable communication skills."
   ],
   "codeSnippets": [
-    {
-      "id": "js-snippet-1",
-      "title": "DOM Manipulation Example",
-      "description": "Basic DOM manipulation with event handling",
-      "language": "javascript",
-      "code": "// Select elements and add event listener\nconst button = document.getElementById('myButton');\nconst output = document.getElementById('output');\n\nbutton.addEventListener('click', () => {\n  output.textContent = 'Button clicked!';\n  output.style.color = 'green';\n});\n\n// Create and append new element\nconst newElement = document.createElement('div');\nnewElement.textContent = 'New element created!';\ndocument.body.appendChild(newElement);"
+    { 
+      "id": "py-snippet-1", 
+      "title": "Hello World", 
+      "description": "Basic program to print output", 
+      "language": "python", 
+      "code": "print(\"Hello, Python!\")\nprint(\"Welcome to Python Programming\")" 
     },
-    {
-      "id": "js-snippet-2",
-      "title": "Async/Await with Fetch API",
-      "description": "Modern approach to handle asynchronous operations",
-      "language": "javascript",
-      "code": "// Async function to fetch data from API\nasync function getUserData(userId) {\n  try {\n    const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);\n    \n    if (!response.ok) {\n      throw new Error('Network response was not ok');\n    }\n    \n    const userData = await response.json();\n    console.log('User data:', userData);\n    return userData;\n  } catch (error) {\n    console.error('Error fetching user data:', error);\n    throw error;\n  }\n}\n\n// Usage\ngetUserData(1)\n  .then(data => console.log('Data received:', data))\n  .catch(error => console.error('Error:', error));"
+    { 
+      "id": "py-snippet-2", 
+      "title": "Variables & Input", 
+      "description": "Store user input and display it with formatting", 
+      "language": "python", 
+      "code": "name = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\nprint(f\"Hello {name}, you are {age} years old!\")" 
     },
-    {
-      "id": "js-snippet-3",
-      "title": "Modern JavaScript Features",
-      "description": "ES6+ features including destructuring, spread, and arrow functions",
-      "language": "javascript",
-      "code": "// Destructuring assignment\nconst person = { name: 'John', age: 30, city: 'New York' };\nconst { name, age, ...rest } = person;\nconsole.log(name); // 'John'\nconsole.log(rest); // { city: 'New York' }\n\n// Spread operator with arrays\nconst numbers = [1, 2, 3];\nconst newNumbers = [...numbers, 4, 5]; // [1, 2, 3, 4, 5]\n\n// Arrow functions and array methods\nconst users = [\n  { id: 1, name: 'Alice', active: true },\n  { id: 2, name: 'Bob', active: false },\n  { id: 3, name: 'Charlie', active: true }\n];\n\nconst activeUsers = users\n  .filter(user => user.active)\n  .map(user => ({\n    userId: user.id,\n    userName: user.name.toUpperCase()\n  }));\n\nconsole.log(activeUsers);\n// [{ userId: 1, userName: 'ALICE' }, { userId: 3, userName: 'CHARLIE' }]"
+    { 
+      "id": "py-snippet-3", 
+      "title": "Type Conversion", 
+      "description": "Convert between different data types safely", 
+      "language": "python", 
+      "code": "# Safe type conversion with error handling\ntry:\n    number = float(\"123.45\")\n    print(f\"Converted number: {number}\")\nexcept ValueError:\n    print(\"Invalid number format\")" 
+    },
+    { 
+      "id": "py-snippet-4", 
+      "title": "Arithmetic Operations", 
+      "description": "Perform mathematical calculations", 
+      "language": "python", 
+      "code": "a, b = 10, 3\nprint(f\"Addition: {a + b}\")\nprint(f\"Subtraction: {a - b}\")\nprint(f\"Multiplication: {a * b}\")\nprint(f\"Division: {a / b}\")\nprint(f\"Floor Division: {a // b}\")\nprint(f\"Exponentiation: {a ** b}\")\nprint(f\"Modulus: {a % b}\")" 
+    },
+    { 
+      "id": "py-snippet-5", 
+      "title": "If-Elif-Else", 
+      "description": "Conditional decision making with multiple branches", 
+      "language": "python", 
+      "code": "score = 85\n\nif score >= 90:\n    grade = \"A\"\nelif score >= 80:\n    grade = \"B\"\nelif score >= 70:\n    grade = \"C\"\nelif score >= 60:\n    grade = \"D\"\nelse:\n    grade = \"F\"\n\nprint(f\"Score: {score}, Grade: {grade}\")" 
+    },
+    { 
+      "id": "py-snippet-6", 
+      "title": "Match-Case (Python 3.10+)", 
+      "description": "Structural pattern matching for complex conditions", 
+      "language": "python", 
+      "code": "def handle_command(command):\n    match command.split():\n        case [\"quit\"]:\n            return \"Quitting application...\"\n        case [\"load\", filename]:\n            return f\"Loading {filename}\"\n        case [\"save\", filename]:\n            return f\"Saving {filename}\"\n        case [\"delete\", *files]:\n            return f\"Deleting {', '.join(files)}\"\n        case _:\n            return \"Unknown command\"\n\nprint(handle_command(\"load document.txt\"))" 
+    },
+    { 
+      "id": "py-snippet-7", 
+      "title": "For Loop with Range", 
+      "description": "Iterate over a sequence of numbers", 
+      "language": "python", 
+      "code": "print(\"Counting from 1 to 5:\")\nfor i in range(1, 6):\n    print(i)\n\nprint(\"\\nEven numbers from 0 to 10:\")\nfor i in range(0, 11, 2):\n    print(i)" 
+    },
+    { 
+      "id": "py-snippet-8", 
+      "title": "While Loop with Condition", 
+      "description": "Repeat code until condition is false", 
+      "language": "python", 
+      "code": "count = 0\nmax_count = 5\n\nwhile count < max_count:\n    print(f\"Count: {count}\")\n    count += 1\nelse:\n    print(\"Loop completed successfully!\")" 
+    },
+    { 
+      "id": "py-snippet-9", 
+      "title": "Loop Control Statements", 
+      "description": "Use break, continue, and pass in loops", 
+      "language": "python", 
+      "code": "print(\"Numbers from 1 to 10 (skipping 5 and stopping at 8):\")\nfor i in range(1, 11):\n    if i == 5:\n        continue  # Skip this iteration\n    if i == 9:\n        break     # Exit loop entirely\n    print(i)\nelse:\n    print(\"This won't print because loop was broken\")" 
+    },
+    { 
+      "id": "py-snippet-10", 
+      "title": "Function Definition", 
+      "description": "Create reusable code with functions", 
+      "language": "python", 
+      "code": "def calculate_area(length, width):\n    \"\"\"Calculate the area of a rectangle.\n    \n    Args:\n        length (float): The length of the rectangle\n        width (float): The width of the rectangle\n    \n    Returns:\n        float: The area of the rectangle\n    \"\"\"\n    return length * width\n\n# Using the function\narea = calculate_area(10, 5)\nprint(f\"Area: {area}\")" 
+    },
+    { 
+      "id": "py-snippet-11", 
+      "title": "Lambda Functions", 
+      "description": "Create anonymous functions for simple operations", 
+      "language": "python", 
+      "code": "# Simple lambda function\nsquare = lambda x: x ** 2\nprint(f\"Square of 5: {square(5)}\")\n\n# Lambda with multiple parameters\nmultiply = lambda x, y: x * y\nprint(f\"Product of 3 and 4: {multiply(3, 4)}\")\n\n# Using lambda with built-in functions\nnumbers = [1, 2, 3, 4, 5]\nsquared_numbers = list(map(lambda x: x ** 2, numbers))\nprint(f\"Squared numbers: {squared_numbers}\")" 
+    },
+    { 
+      "id": "py-snippet-12", 
+      "title": "List Operations", 
+      "description": "Create and manipulate lists", 
+      "language": "python", 
+      "code": "# Creating and modifying a list\nfruits = [\"apple\", \"banana\"]\nfruits.append(\"cherry\")\nfruits.insert(1, \"blueberry\")\nfruits.extend([\"date\", \"elderberry\"])\nprint(f\"All fruits: {fruits}\")\n\n# Accessing elements\nprint(f\"First fruit: {fruits[0]}\")\nprint(f\"Last fruit: {fruits[-1]}\")\nprint(f\"Sliced list: {fruits[1:4]}\")\n\n# Removing elements\nremoved_fruit = fruits.pop(2)\nprint(f\"Removed: {removed_fruit}, Remaining: {fruits}\")\n\n# List length\nprint(f\"Number of fruits: {len(fruits)}\")" 
+    },
+    { 
+      "id": "py-snippet-13", 
+      "title": "List Comprehensions", 
+      "description": "Create lists concisely with comprehensions", 
+      "language": "python", 
+      "code": "# Basic list comprehension\nsquares = [x**2 for x in range(1, 6)]\nprint(f\"Squares: {squares}\")\n\n# List comprehension with condition\neven_squares = [x**2 for x in range(1, 11) if x % 2 == 0]\nprint(f\"Even squares: {even_squares}\")\n\n# Nested list comprehension\nmatrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nflattened = [num for row in matrix for num in row]\nprint(f\"Flattened matrix: {flattened}\")\n\n# Dictionary comprehension\nsquare_dict = {x: x**2 for x in range(1, 6)}\nprint(f\"Square dictionary: {square_dict}\")" 
+    },
+    { 
+      "id": "py-snippet-14", 
+      "title": "Tuple Operations", 
+      "description": "Work with immutable sequences", 
+      "language": "python", 
+      "code": "# Creating tuples\ncoordinates = (10, 20)\nprint(f\"Coordinates: {coordinates}\")\n\n# Accessing tuple elements\nx, y = coordinates  # Tuple unpacking\nprint(f\"X: {x}, Y: {y}\")\n\n# Single element tuple (note the comma)\nsingle_tuple = (42,)\nprint(f\"Single element tuple: {single_tuple}\")\n\n# Returning multiple values from function\ndef get_name_and_age():\n    return \"Alice\", 30\n\nname, age = get_name_and_age()\nprint(f\"Name: {name}, Age: {age}\")" 
+    },
+    { 
+      "id": "py-snippet-15", 
+      "title": "Set Operations", 
+      "description": "Work with unordered unique collections", 
+      "language": "python", 
+      "code": "# Creating sets\nfruits = {\"apple\", \"banana\", \"cherry\", \"apple\"}  # Duplicates removed\nprint(f\"Fruits set: {fruits}\")\n\n# Set operations\nset_a = {1, 2, 3, 4, 5}\nset_b = {4, 5, 6, 7, 8}\n\nprint(f\"Union: {set_a | set_b}\")\nprint(f\"Intersection: {set_a & set_b}\")\nprint(f\"Difference: {set_a - set_b}\")\nprint(f\"Symmetric Difference: {set_a ^ set_b}\")\n\n# Set methods\nset_a.add(6)\nset_a.remove(1)  # Raises KeyError if not found\nset_a.discard(10)  # No error if not found\nprint(f\"Modified set: {set_a}\")" 
+    },
+    { 
+      "id": "py-snippet-16", 
+      "title": "Dictionary Operations", 
+      "description": "Work with key-value pairs", 
+      "language": "python", 
+      "code": "# Creating dictionaries\nperson = {\"name\": \"Bob\", \"age\": 25, \"city\": \"New York\"}\nprint(f\"Person: {person}\")\n\n# Accessing values\nprint(f\"Name: {person['name']}\")\nprint(f\"Age: {person.get('age')}\")\nprint(f\"Country: {person.get('country', 'USA')}\")  # Default value\n\n# Adding and modifying\nperson[\"email\"] = \"bob@example.com\"\nperson[\"age\"] = 26\nprint(f\"Updated person: {person}\")\n\n# Iterating through dictionary\nprint(\"\\nKey-Value pairs:\")\nfor key, value in person.items():\n    print(f\"{key}: {value}\")\n\n# Dictionary comprehension\nsquare_dict = {x: x**2 for x in range(1, 6)}\nprint(f\"\\nSquare dictionary: {square_dict}\")" 
+    },
+    { 
+      "id": "py-snippet-17", 
+      "title": "Enumerate Function", 
+      "description": "Get index and value while iterating", 
+      "language": "python", 
+      "code": "fruits = [\"apple\", \"banana\", \"cherry\"]\n\nprint(\"Using enumerate:\")\nfor index, fruit in enumerate(fruits):\n    print(f\"Index {index}: {fruit}\")\n\nprint(\"\\nWith custom start index:\")\nfor index, fruit in enumerate(fruits, start=1):\n    print(f\"#{index}: {fruit}\")" 
+    },
+    { 
+      "id": "py-snippet-18", 
+      "title": "Zip Function", 
+      "description": "Combine multiple iterables", 
+      "language": "python", 
+      "code": "names = [\"Alice\", \"Bob\", \"Charlie\"]\nages = [25, 30, 35]\ncities = [\"Paris\", \"London\", \"Berlin\"]\n\nprint(\"Combining lists with zip:\")\nfor name, age, city in zip(names, ages, cities):\n    print(f\"{name} is {age} years old and lives in {city}\")\n\nprint(\"\\nCreating dictionary from two lists:\")\nname_age_dict = dict(zip(names, ages))\nprint(name_age_dict)" 
+    },
+    { 
+      "id": "py-snippet-19", 
+      "title": "String Formatting", 
+      "description": "Format strings using different methods", 
+      "language": "python", 
+      "code": "name = \"Alice\"\nage = 30\n\n# f-strings (Python 3.6+)\nprint(f\"Hello {name}, you are {age} years old!\")\n\n# format() method\nprint(\"Hello {}, you are {} years old!\".format(name, age))\nprint(\"Hello {0}, you are {1} years old!\".format(name, age))\n\n# Formatting numbers\npi = 3.1415926535\nprint(f\"Pi rounded to 2 decimals: {pi:.2f}\")\n\n# Formatting large numbers\nlarge_number = 1000000\nprint(f\"Formatted number: {large_number:,}\")" 
+    },
+    { 
+      "id": "py-snippet-20", 
+      "title": "Regular Expressions", 
+      "description": "Pattern matching with regex", 
+      "language": "python", 
+      "code": "import re\n\n# Finding all matches\ntext = \"Hello123World456Python789\"\nnumbers = re.findall(r\"\\d+\", text)\nprint(f\"Numbers found: {numbers}\")\n\n# Searching for pattern\npattern = r\"\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b\"\ntext = \"Contact us at info@example.com or support@company.org\"\nemails = re.findall(pattern, text)\nprint(f\"Emails found: {emails}\")\n\n# Splitting text\nresult = re.split(r\"\\d+\", text)\nprint(f\"Split result: {result}\")\n\n# Replacement\nnew_text = re.sub(r\"\\d+\", \"NUMBER\", text)\nprint(f\"After replacement: {new_text}\")" 
+    },
+    { 
+      "id": "py-snippet-21", 
+      "title": "File Handling", 
+      "description": "Read and write files safely", 
+      "language": "python", 
+      "code": "# Writing to a file\nwith open(\"example.txt\", \"w\") as file:\n    file.write(\"Hello, World!\\n\")\n    file.write(\"This is a second line.\\n\")\n\n# Reading from a file\nwith open(\"example.txt\", \"r\") as file:\n    content = file.read()\n    print(\"File content:\")\n    print(content)\n\n# Reading line by line\nprint(\"\\nReading line by line:\")\nwith open(\"example.txt\", \"r\") as file:\n    for line_num, line in enumerate(file, 1):\n        print(f\"Line {line_num}: {line.strip()}\")" 
+    },
+    { 
+      "id": "py-snippet-22", 
+      "title": "Exception Handling", 
+      "description": "Handle errors gracefully", 
+      "language": "python", 
+      "code": "def divide_numbers(a, b):\n    try:\n        result = a / b\n    except ZeroDivisionError:\n        return \"Error: Division by zero is not allowed.\"\n    except TypeError:\n        return \"Error: Both arguments must be numbers.\"\n    else:\n        return f\"Result: {result}\"\n    finally:\n        print(\"Division operation completed.\")\n\n# Test cases\nprint(divide_numbers(10, 2))\nprint(divide_numbers(10, 0))\nprint(divide_numbers(10, \"2\"))" 
+    },
+    { 
+      "id": "py-snippet-23", 
+      "title": "Context Manager", 
+      "description": "Manage resources with with statement", 
+      "language": "python", 
+      "code": "class DatabaseConnection:\n    def __init__(self, db_name):\n        self.db_name = db_name\n        print(f\"Connecting to {db_name}\")\n    \n    def __enter__(self):\n        print(\"Connection established\")\n        return self\n    \n    def execute_query(self, query):\n        print(f\"Executing: {query}\")\n        return \"Query results\"\n    \n    def __exit__(self, exc_type, exc_val, exc_tb):\n        print(\"Closing connection\")\n        if exc_type:\n            print(f\"An error occurred: {exc_val}\")\n        return True  # Suppress exceptions if needed\n\n# Using the context manager\nwith DatabaseConnection(\"my_database\") as db:\n    result = db.execute_query(\"SELECT * FROM users\")\n    print(result)" 
+    },
+    { 
+      "id": "py-snippet-24", 
+      "title": "Class & Object", 
+      "description": "Object-oriented programming basics", 
+      "language": "python", 
+      "code": "class Dog:\n    # Class attribute\n    species = \"Canis familiaris\"\n    \n    # Initializer / Instance attributes\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    \n    # Instance method\n    def bark(self):\n        return f\"{self.name} says Woof!\"\n    \n    # Another instance method\n    def description(self):\n        return f\"{self.name} is {self.age} years old\"\n    \n    # String representation\n    def __str__(self):\n        return f\"{self.name} is {self.age} years old\"\n\n# Creating objects\nbuddy = Dog(\"Buddy\", 5)\nmax = Dog(\"Max\", 3)\n\nprint(buddy.bark())\nprint(max.description())\nprint(f\"Both dogs are {Dog.species}\")\nprint(buddy)  # Uses __str__ method" 
+    },
+    { 
+      "id": "py-snippet-25", 
+      "title": "Inheritance", 
+      "description": "Create subclasses that inherit from parent classes", 
+      "language": "python", 
+      "code": "class Animal:\n    def __init__(self, name):\n        self.name = name\n    \n    def speak(self):\n        raise NotImplementedError(\"Subclass must implement this method\")\n\nclass Dog(Animal):\n    def speak(self):\n        return f\"{self.name} says Woof!\"\n\nclass Cat(Animal):\n    def speak(self):\n        return f\"{self.name} says Meow!\"\n\n# Creating objects\nanimals = [Dog(\"Buddy\"), Cat(\"Whiskers\")]\n\nfor animal in animals:\n    print(animal.speak())" 
+    },
+    { 
+      "id": "py-snippet-26", 
+      "title": "Polymorphism", 
+      "description": "Different classes with same interface", 
+      "language": "python", 
+      "code": "class Rectangle:\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n    \n    def area(self):\n        return self.width * self.height\n\nclass Circle:\n    def __init__(self, radius):\n        self.radius = radius\n    \n    def area(self):\n        return 3.14159 * self.radius ** 2\n\n# Different shapes with same interface\nshapes = [Rectangle(5, 10), Circle(7)]\n\nfor shape in shapes:\n    print(f\"Area: {shape.area():.2f}\")" 
+    },
+    { 
+      "id": "py-snippet-27", 
+      "title": "Property Decorator", 
+      "description": "Use getters and setters with properties", 
+      "language": "python", 
+      "code": "class Person:\n    def __init__(self, first_name, last_name, age):\n        self.first_name = first_name\n        self.last_name = last_name\n        self._age = age  # Private variable\n    \n    @property\n    def age(self):\n        \"\"\"Getter for age\"\"\"\n        return self._age\n    \n    @age.setter\n    def age(self, value):\n        \"\"\"Setter for age with validation\"\"\"\n        if not isinstance(value, int):\n            raise TypeError(\"Age must be an integer\")\n        if value < 0:\n            raise ValueError(\"Age cannot be negative\")\n        self._age = value\n    \n    @property\n    def full_name(self):\n        \"\"\"Computed property\"\"\"\n        return f\"{self.first_name} {self.last_name}\"\n\n# Using the class\nperson = Person(\"John\", \"Doe\", 30)\nprint(person.full_name)\nprint(f\"Age: {person.age}\")\n\nperson.age = 35  # Uses setter\nprint(f\"New age: {person.age}\")" 
+    },
+    { 
+      "id": "py-snippet-28", 
+      "title": "Generator Functions", 
+      "description": "Create iterators with yield", 
+      "language": "python", 
+      "code": "def fibonacci_generator(limit):\n    \"\"\"Generate Fibonacci numbers up to limit\"\"\"\n    a, b = 0, 1\n    while a <= limit:\n        yield a\n        a, b = b, a + b\n\n# Using the generator\nprint(\"Fibonacci numbers up to 50:\")\nfor num in fibonacci_generator(50):\n    print(num, end=\" \")\n\nprint(\"\\n\\nUsing generator expression:\")\n# Generator expression (similar to list comprehension but lazy)\nsquares_gen = (x**2 for x in range(10))\nfor square in squares_gen:\n    print(square, end=\" \")" 
+    },
+    { 
+      "id": "py-snippet-29", 
+      "title": "Decorators", 
+      "description": "Modify function behavior with decorators", 
+      "language": "python", 
+      "code": "import time\nfrom functools import wraps\n\ndef timer_decorator(func):\n    \"\"\"Decorator that measures function execution time\"\"\"\n    @wraps(func)  # Preserves function metadata\n    def wrapper(*args, **kwargs):\n        start_time = time.time()\n        result = func(*args, **kwargs)\n        end_time = time.time()\n        print(f\"{func.__name__} executed in {end_time - start_time:.4f} seconds\")\n        return result\n    return wrapper\n\ndef debug_decorator(func):\n    \"\"\"Decorator that logs function calls\"\"\"\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__} with args: {args}, kwargs: {kwargs}\")\n        result = func(*args, **kwargs)\n        print(f\"{func.__name__} returned: {result}\")\n        return result\n    return wrapper\n\n# Applying multiple decorators\n@timer_decorator\n@debug_decorator\ndef factorial(n):\n    \"\"\"Calculate factorial of n\"\"\"\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)\n\n# Test the decorated function\nprint(factorial(5))" 
+    },
+    { 
+      "id": "py-snippet-30", 
+      "title": "OS Module", 
+      "description": "Interact with operating system", 
+      "language": "python", 
+      "code": "import os\n\n# Get current working directory\nprint(f\"Current directory: {os.getcwd()}\")\n\n# List files and directories\nprint(\"\\nContents of current directory:\")\nfor item in os.listdir('.'):\n    print(f\"{'DIR' if os.path.isdir(item) else 'FILE'}: {item}\")\n\n# Create a directory\nos.makedirs(\"test_dir\", exist_ok=True)\n\n# Check if path exists\nprint(f\"\\nTest directory exists: {os.path.exists('test_dir')}\")\n\n# Environment variables\nprint(f\"\\nHome directory: {os.getenv('HOME')}\")\nprint(f\"Python path: {os.getenv('PYTHONPATH')}\")" 
+    },
+    { 
+      "id": "py-snippet-31", 
+      "title": "Datetime Module", 
+      "description": "Work with dates and times", 
+      "language": "python", 
+      "code": "from datetime import datetime, date, time, timedelta\n\n# Current date and time\nnow = datetime.now()\nprint(f\"Current datetime: {now}\")\nprint(f\"Formatted: {now.strftime('%Y-%m-%d %H:%M:%S')}\")\n\n# Specific date\nd = date(2023, 12, 25)\nprint(f\"Christmas: {d}\")\n\n# Time operations\ntomorrow = now + timedelta(days=1)\nprint(f\"Tomorrow: {tomorrow}\")\n\n# Difference between dates\nnew_year = date(2024, 1, 1)\ntoday = date.today()\ndays_remaining = (new_year - today).days\nprint(f\"Days until New Year: {days_remaining}\")\n\n# Parsing date from string\ndate_str = \"2023-10-15\"\nparsed_date = datetime.strptime(date_str, \"%Y-%m-%d\")\nprint(f\"Parsed date: {parsed_date}\")" 
+    },
+    { 
+      "id": "py-snippet-32", 
+      "title": "JSON Handling", 
+      "description": "Serialize and deserialize JSON data", 
+      "language": "python", 
+      "code": "import json\n\n# Python dictionary\nperson = {\n    \"name\": \"Alice\",\n    \"age\": 30,\n    \"city\": \"New York\",\n    \"hobbies\": [\"reading\", \"hiking\", \"coding\"],\n    \"is_student\": False\n}\n\n# Convert to JSON string\njson_string = json.dumps(person, indent=2)\nprint(\"JSON String:\")\nprint(json_string)\n\n# Write JSON to file\nwith open(\"person.json\", \"w\") as file:\n    json.dump(person, file, indent=2)\n\n# Read JSON from file\nwith open(\"person.json\", \"r\") as file:\n    loaded_person = json.load(file)\n\nprint(\"\\nLoaded from file:\")\nprint(loaded_person)\n\n# Custom serialization for complex objects\nclass Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    \n    def to_json(self):\n        return {\"name\": self.name, \"age\": self.age}\n\n# Custom JSON encoder\nclass PersonEncoder(json.JSONEncoder):\n    def default(self, obj):\n        if isinstance(obj, Person):\n            return obj.to_json()\n        return super().default(obj)\n\n# Using custom encoder\nalice = Person(\"Alice\", 30)\nprint(\"\\nCustom encoding:\")\nprint(json.dumps(alice, cls=PersonEncoder))" 
+    },
+    { 
+      "id": "py-snippet-33", 
+      "title": "CSV Handling", 
+      "description": "Read and write CSV files", 
+      "language": "python", 
+      "code": "import csv\n\n# Writing to CSV\nwith open(\"data.csv\", \"w\", newline=\"\") as file:\n    writer = csv.writer(file)\n    writer.writerow([\"Name\", \"Age\", \"City\"])  # Header\n    writer.writerow([\"Alice\", 25, \"New York\"])\n    writer.writerow([\"Bob\", 30, \"London\"])\n    writer.writerow([\"Charlie\", 35, \"Paris\"])\n\n# Reading from CSV\nprint(\"Reading CSV with csv.reader:\")\nwith open(\"data.csv\", \"r\") as file:\n    reader = csv.reader(file)\n    for row in reader:\n        print(row)\n\n# Using DictReader for easier access\nprint(\"\\nReading CSV with DictReader:\")\nwith open(\"data.csv\", \"r\") as file:\n    reader = csv.DictReader(file)\n    for row in reader:\n        print(f\"{row['Name']} is {row['Age']} years old and lives in {row['City']}\")\n\n# Writing with DictWriter\nwith open(\"data_dict.csv\", \"w\", newline=\"\") as file:\n    fieldnames = [\"Name\", \"Age\", \"City\"]\n    writer = csv.DictWriter(file, fieldnames=fieldnames)\n    \n    writer.writeheader()\n    writer.writerow({\"Name\": \"Diana\", \"Age\": 28, \"City\": \"Berlin\"})\n    writer.writerow({\"Name\": \"Eve\", \"Age\": 32, \"City\": \"Tokyo\"})" 
+    },
+    { 
+      "id": "py-snippet-34", 
+      "title": "Random Module", 
+      "description": "Generate random numbers and selections", 
+      "language": "python", 
+      "code": "import random\n\n# Random float between 0 and 1\nprint(f\"Random float: {random.random()}\")\n\n# Random integer in range\nprint(f\"Random integer (1-10): {random.randint(1, 10)}\")\n\n# Random choice from sequence\nfruits = [\"apple\", \"banana\", \"cherry\", \"date\"]\nprint(f\"Random fruit: {random.choice(fruits)}\")\n\n# Multiple random choices (with replacement)\nprint(f\"3 random fruits: {random.choices(fruits, k=3)}\")\n\n# Sample without replacement\nprint(f\"Sample of 2 fruits: {random.sample(fruits, 2)}\")\n\n# Shuffle a list\ncards = [\"Ace\", \"King\", \"Queen\", \"Jack\"]\nrandom.shuffle(cards)\nprint(f\"Shuffled cards: {cards}\")\n\n# Random float in range\nprint(f\"Random float (5.5-10.5): {random.uniform(5.5, 10.5)}\")\n\n# Gaussian distribution\nprint(f\"Gaussian random: {random.gauss(0, 1)}\")" 
+    },
+    { 
+      "id": "py-snippet-35", 
+      "title": "Requests Module", 
+      "description": "Make HTTP requests to APIs", 
+      "language": "python", 
+      "code": "import requests\n\n# GET request\nresponse = requests.get(\"https://api.github.com\")\nprint(f\"Status Code: {response.status_code}\")\nprint(f\"Headers: {dict(response.headers)}\")\n\n# Check if request was successful\nif response.status_code == 200:\n    data = response.json()\n    print(f\"GitHub API URL: {data['current_user_url']}\")\nelse:\n    print(f\"Request failed with status {response.status_code}\")\n\n# GET request with parameters\nparams = {\"q\": \"python\", \"sort\": \"stars\", \"order\": \"desc\"}\nresponse = requests.get(\"https://api.github.com/search/repositories\", params=params)\n\nif response.status_code == 200:\n    results = response.json()\n    print(f\"\\nFound {results['total_count']} Python repositories\")\n    for repo in results[\"items\"][:3]:\n        print(f\"{repo['name']}: {repo['stargazers_count']} stars\")\n\n# POST request\npayload = {\"name\": \"John\", \"job\": \"Developer\"}\nresponse = requests.post(\"https://reqres.in/api/users\", json=payload)\nprint(f\"\\nPOST response: {response.json()}\")" 
+    },
+    { 
+      "id": "py-snippet-36", 
+      "title": "Pandas DataFrame", 
+      "description": "Work with data using Pandas", 
+      "language": "python", 
+      "code": "import pandas as pd\n\n# Create DataFrame from dictionary\ndata = {\n    \"Name\": [\"Alice\", \"Bob\", \"Charlie\", \"Diana\"],\n    \"Age\": [25, 30, 35, 28],\n    \"City\": [\"New York\", \"London\", \"Paris\", \"Berlin\"]\n}\n\ndf = pd.DataFrame(data)\nprint(\"DataFrame:\")\nprint(df)\nprint(f\"\\nShape: {df.shape}\")\n\n# Accessing data\nprint(\"\\nFirst two rows:\")\nprint(df.head(2))\n\nprint(\"\\nAges column:\")\nprint(df[\"Age\"])\n\nprint(\"\\nFiltered data (Age > 28):\")\nprint(df[df[\"Age\"] > 28])\n\n# Basic statistics\nprint(\"\\nDescriptive statistics:\")\nprint(df.describe())\n\n# Add new column\ndf[\"Senior\"] = df[\"Age\"] > 30\nprint(\"\\nDataFrame with new column:\")\nprint(df)\n\n# Group by and aggregate\nprint(\"\\nAverage age by senior status:\")\nprint(df.groupby(\"Senior\")[\"Age\"].mean())\n\n# Read from CSV\n# df = pd.read_csv(\"data.csv\")\n# Write to CSV\n# df.to_csv(\"output.csv\", index=False)" 
+    },
+    { 
+      "id": "py-snippet-37", 
+      "title": "Matplotlib Plotting", 
+      "description": "Create visualizations with Matplotlib", 
+      "language": "python", 
+      "code": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# Create sample data\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\n# Create figure and axis\nfig, ax = plt.subplots(figsize=(10, 6))\n\n# Plot data\nax.plot(x, y, label=\"sin(x)\", color=\"blue\", linewidth=2)\nax.plot(x, np.cos(x), label=\"cos(x)\", color=\"red\", linestyle=\"--\")\n\n# Customize plot\nax.set_title(\"Trigonometric Functions\")\nax.set_xlabel(\"x\")\nax.set_ylabel(\"y\")\nax.legend()\nax.grid(True, alpha=0.3)\n\n# Show plot\nplt.tight_layout()\nplt.savefig(\"plot.png\", dpi=300)\nplt.show()\n\n# Bar chart\nfig, ax = plt.subplots(figsize=(8, 6))\ncategories = [\"A\", \"B\", \"C\", \"D\"]\nvalues = [23, 45, 56, 78]\n\nax.bar(categories, values, color=[\"red\", \"blue\", \"green\", \"orange\"])\nax.set_title(\"Bar Chart Example\")\nax.set_ylabel(\"Values\")\n\nplt.tight_layout()\nplt.show()" 
+    },
+    { 
+      "id": "py-snippet-38", 
+      "title": "NumPy Arrays", 
+      "description": "Perform numerical operations with NumPy", 
+      "language": "python", 
+      "code": "import numpy as np\n\n# Create arrays\narr1 = np.array([1, 2, 3, 4, 5])\narr2 = np.array([[1, 2, 3], [4, 5, 6]])\n\nprint(\"1D Array:\")\nprint(arr1)\nprint(f\"Shape: {arr1.shape}\")\n\nprint(\"\\n2D Array:\")\nprint(arr2)\nprint(f\"Shape: {arr2.shape}\")\n\n# Array operations\nprint(\"\\nArray operations:\")\nprint(f\"Add 5: {arr1 + 5}\")\nprint(f\"Multiply by 2: {arr1 * 2}\")\nprint(f\"Sum: {arr1.sum()}\")\nprint(f\"Mean: {arr1.mean()}\")\n\n# Array creation functions\nzeros = np.zeros((3, 3))\nones = np.ones((2, 4))\nrange_arr = np.arange(0, 10, 2)\nrandom_arr = np.random.rand(3, 3)\n\nprint(\"\\nZeros array:\")\nprint(zeros)\n\nprint(\"\\nRandom array:\")\nprint(random_arr)\n\n# Array indexing and slicing\nprint(\"\\nArray slicing:\")\nprint(f\"First 3 elements: {arr1[:3]}\")\nprint(f\"Last 2 elements: {arr1[-2:]}\")\nprint(f\"Element at index 2: {arr1[2]}\")\n\n# Matrix operations\nmatrix1 = np.array([[1, 2], [3, 4]])\nmatrix2 = np.array([[5, 6], [7, 8]])\n\nprint(\"\\nMatrix multiplication:\")\nprint(np.dot(matrix1, matrix2))\n\nprint(\"\\nElement-wise multiplication:\")\nprint(matrix1 * matrix2)" 
+    },
+    { 
+      "id": "py-snippet-39", 
+      "title": "List Sorting", 
+      "description": "Sort lists with custom criteria", 
+      "language": "python", 
+      "code": "# Basic sorting\nnumbers = [5, 2, 8, 1, 9]\nnumbers.sort()\nprint(f\"Sorted numbers: {numbers}\")\n\n# Sorting in reverse\nnumbers.sort(reverse=True)\nprint(f\"Reverse sorted: {numbers}\")\n\n# Using sorted() function (creates new list)\nnames = [\"Charlie\", \"Alice\", \"Bob\"]\nsorted_names = sorted(names)\nprint(f\"Original: {names}\")\nprint(f\"Sorted: {sorted_names}\")\n\n# Custom sorting with key\nwords = [\"apple\", \"banana\", \"cherry\", \"date\"]\nsorted_by_length = sorted(words, key=len)\nprint(f\"Sorted by length: {sorted_by_length}\")\n\n# Sorting complex objects\npeople = [\n    {\"name\": \"Alice\", \"age\": 30},\n    {\"name\": \"Bob\", \"age\": 25},\n    {\"name\": \"Charlie\", \"age\": 35}\n]\n\n# Sort by age\nsorted_by_age = sorted(people, key=lambda x: x[\"age\"])\nprint(f\"Sorted by age: {sorted_by_age}\")\n\n# Sort by name length\nsorted_by_name_length = sorted(people, key=lambda x: len(x[\"name\"]))\nprint(f\"Sorted by name length: {sorted_by_name_length}\")\n\n# Multiple sort criteria (age then name)\nsorted_people = sorted(people, key=lambda x: (x[\"age\"], x[\"name\"]))\nprint(f\"Sorted by age then name: {sorted_people}\")" 
+    },
+    { 
+      "id": "py-snippet-40", 
+      "title": "Counter Example", 
+      "description": "Count occurrences with collections.Counter", 
+      "language": "python", 
+      "code": "from collections import Counter\n\n# Count occurrences in a string\nword = \"mississippi\"\nletter_counts = Counter(word)\nprint(f\"Letter counts in '{word}': {letter_counts}\")\n\n# Most common elements\nprint(f\"Most common letters: {letter_counts.most_common(3)}\")\n\n# Count occurrences in a list\nfruits = [\"apple\", \"banana\", \"apple\", \"orange\", \"banana\", \"apple\"]\nfruit_counts = Counter(fruits)\nprint(f\"Fruit counts: {fruit_counts}\")\n\n# Update counter\nmore_fruits = [\"apple\", \"orange\", \"grape\"]\nfruit_counts.update(more_fruits)\nprint(f\"Updated fruit counts: {fruit_counts}\")\n\n# Arithmetic operations\ncounter1 = Counter(a=3, b=1)\ncounter2 = Counter(a=1, b=2)\n\nprint(f\"Addition: {counter1 + counter2}\")\nprint(f\"Subtraction: {counter1 - counter2}\")\nprint(f\"Intersection: {counter1 & counter2}\")\nprint(f\"Union: {counter1 | counter2}\")" 
+    },
+    { 
+      "id": "py-snippet-41", 
+      "title": "NamedTuple Example", 
+      "description": "Create lightweight object classes", 
+      "language": "python", 
+      "code": "from collections import namedtuple\n\n# Create a namedtuple type\nPoint = namedtuple(\"Point\", [\"x\", \"y\"])\n\n# Create instances\np1 = Point(10, 20)\np2 = Point(30, 40)\n\nprint(f\"Point 1: {p1}\")\nprint(f\"Point 2: {p2}\")\nprint(f\"p1.x: {p1.x}, p1.y: {p1.y}\")\n\n# Access by index (still works)\nprint(f\"p1[0]: {p1[0]}, p1[1]: {p1[1]}\")\n\n# Unpacking\nx, y = p1\nprint(f\"Unpacked: x={x}, y={y}\")\n\n# _replace method (creates new instance)\np3 = p1._replace(x=15)\nprint(f\"Modified point: {p3}\")\n\n# _asdict method\nprint(f\"As dictionary: {p1._asdict()}\")\n\n# More complex example\nPerson = namedtuple(\"Person\", [\"name\", \"age\", \"city\"])\npeople = [\n    Person(\"Alice\", 30, \"New York\"),\n    Person(\"Bob\", 25, \"London\"),\n    Person(\"Charlie\", 35, \"Paris\")\n]\n\nfor person in people:\n    print(f\"{person.name} is {person.age} years old and lives in {person.city}\")" 
+    },
+    { 
+      "id": "py-snippet-42", 
+      "title": "Dataclass Example", 
+      "description": "Create classes with automatically generated methods", 
+      "language": "python", 
+      "code": "from dataclasses import dataclass, field\nfrom typing import List\n\n@dataclass\nclass Person:\n    name: str\n    age: int\n    city: str = \"Unknown\"  # Default value\n    hobbies: List[str] = field(default_factory=list)  # Default factory\n    \n    def greet(self):\n        return f\"Hello, my name is {self.name} and I'm {self.age} years old\"\n\n# Create instances\nperson1 = Person(\"Alice\", 30, \"New York\", [\"reading\", \"hiking\"])\nperson2 = Person(\"Bob\", 25)\n\nprint(person1)\nprint(person2)\nprint(person1.greet())\n\n# Comparison (automatically implemented)\nperson3 = Person(\"Alice\", 30, \"New York\", [\"reading\", \"hiking\"])\nprint(f\"person1 == person3: {person1 == person3}\")\n\n# Immutable dataclass\n@dataclass(frozen=True)\nclass Point:\n    x: int\n    y: int\n\np = Point(10, 20)\nprint(f\"Point: {p}\")\n# p.x = 15  # This would raise an error because frozen=True" 
+    },
+    { 
+      "id": "py-snippet-43", 
+      "title": "Contextlib Example", 
+      "description": "Create context managers with contextlib", 
+      "language": "python", 
+      "code": "from contextlib import contextmanager\nimport time\n\n@contextmanager\ndef timer():\n    \"\"\"Context manager to measure execution time\"\"\"\n    start_time = time.time()\n    try:\n        yield\n    finally:\n        end_time = time.time()\n        print(f\"Execution time: {end_time - start_time:.4f} seconds\")\n\n# Using the context manager\nwith timer():\n    # Simulate some work\n    time.sleep(1)\n    print(\"Work completed\")\n\n@contextmanager\ndef open_file(filename, mode):\n    \"\"\"Custom context manager for file handling\"\"\"\n    file = open(filename, mode)\n    try:\n        yield file\n    finally:\n        file.close()\n\n# Using the custom file context manager\nwith open_file(\"test.txt\", \"w\") as f:\n    f.write(\"Hello, context manager!\")\n\n# Using multiple context managers\nwith timer(), open_file(\"test.txt\", \"r\") as f:\n    content = f.read()\n    print(f\"File content: {content}\")" 
+    },
+    { 
+      "id": "py-snippet-44", 
+      "title": "Asyncio Example", 
+      "description": "Write asynchronous code with asyncio", 
+      "language": "python", 
+      "code": "import asyncio\nimport time\n\nasync def say_after(delay, message):\n    \"\"\"Coroutine that says a message after a delay\"\"\"\n    await asyncio.sleep(delay)\n    print(message)\n    return f\"Completed: {message}\"\n\nasync def main():\n    print(f\"Started at {time.strftime('%X')}\")\n    \n    # Run coroutines concurrently\n    task1 = asyncio.create_task(say_after(1, \"Hello\"))\n    task2 = asyncio.create_task(say_after(2, \"World\"))\n    \n    # Wait for both tasks to complete\n    results = await asyncio.gather(task1, task2)\n    \n    print(f\"Finished at {time.strftime('%X')}\")\n    print(f\"Results: {results}\")\n\n# Run the main coroutine\nasyncio.run(main())\n\n# Asynchronous HTTP request example\nasync def fetch_data():\n    \"\"\"Simulate fetching data from an API\"\"\"\n    print(\"Fetching data...\")\n    await asyncio.sleep(2)  # Simulate network delay\n    return {\"data\": [1, 2, 3]}\n\nasync def process_data():\n    \"\"\"Process the fetched data\"\"\"\n    data = await fetch_data()\n    print(f\"Processing data: {data}\")\n    return [x * 2 for x in data[\"data\"]]\n\n# Run the data processing pipeline\nresult = asyncio.run(process_data())\nprint(f\"Final result: {result}\")" 
+    },
+    { 
+      "id": "py-snippet-45", 
+      "title": "Logging Example", 
+      "description": "Use logging module for professional logging", 
+      "language": "python", 
+      "code": "import logging\n\n# Basic configuration\nlogging.basicConfig(\n    level=logging.DEBUG,\n    format=\"%(asctime)s - %(name)s - %(levelname)s - %(message)s\",\n    handlers=[\n        logging.FileHandler(\"app.log\"),\n        logging.StreamHandler()\n    ]\n)\n\n# Create logger\nlogger = logging.getLogger(__name__)\n\n# Log messages at different levels\ndef divide(a, b):\n    logger.debug(f\"Dividing {a} by {b}\")\n    try:\n        result = a / b\n        logger.info(f\"Division successful: {result}\")\n        return result\n    except ZeroDivisionError:\n        logger.error(\"Division by zero!\")\n        return None\n    except Exception as e:\n        logger.exception(\"Unexpected error in division\")\n        return None\n\n# Test the function\nprint(\"Testing division function:\")\ndivide(10, 2)\ndivide(10, 0)\n\n# Advanced logging with different handlers\nlogger = logging.getLogger(\"my_app\")\nlogger.setLevel(logging.DEBUG)\n\n# Create handlers\nconsole_handler = logging.StreamHandler()\nconsole_handler.setLevel(logging.INFO)\n\nfile_handler = logging.FileHandler(\"debug.log\")\nfile_handler.setLevel(logging.DEBUG)\n\n# Create formatters\nconsole_format = logging.Formatter(\"%(levelname)s - %(message)s\")\nfile_format = logging.Formatter(\"%(asctime)s - %(name)s - %(levelname)s - %(message)s\")\n\n# Add formatters to handlers\nconsole_handler.setFormatter(console_format)\nfile_handler.setFormatter(file_format)\n\n# Add handlers to logger\nlogger.addHandler(console_handler)\nlogger.addHandler(file_handler)\n\n# Test advanced logging\nlogger.debug(\"This is a debug message\")\nlogger.info(\"This is an info message\")\nlogger.warning(\"This is a warning message\")\nlogger.error(\"This is an error message\")\nlogger.critical(\"This is a critical message\")" 
+    },
+    { 
+      "id": "py-snippet-46", 
+      "title": "Timeit Example", 
+      "description": "Measure code execution time", 
+      "language": "python", 
+      "code": "import timeit\n\n# Time a simple expression\ntime_taken = timeit.timeit('\"-\".join(str(n) for n in range(100))', number=10000)\nprint(f\"Time taken: {time_taken:.4f} seconds\")\n\n# Compare two approaches\nsetup_code = \"\"\"\ndef list_comprehension():\n    return [x**2 for x in range(1000)]\n\ndef for_loop():\n    result = []\n    for x in range(1000):\n        result.append(x**2)\n    return result\n\"\"\"\n\nlist_comp_time = timeit.timeit('list_comprehension()', setup=setup_code, number=1000)\nfor_loop_time = timeit.timeit('for_loop()', setup=setup_code, number=1000)\n\nprint(f\"List comprehension: {list_comp_time:.4f} seconds\")\nprint(f\"For loop: {for_loop_time:.4f} seconds\")\nprint(f\"Difference: {abs(list_comp_time - for_loop_time):.4f} seconds\")\n\n# Using timeit with a function\ndef test_function():\n    return sum(range(10000))\n\n# Time the function\nt = timeit.Timer(test_function)\nprint(f\"Function execution time: {t.timeit(number=1000):.4f} seconds\")\n\n# Using timeit in Jupyter/IPython\n# %timeit sum(range(10000))\n# %timeit [x**2 for x in range(1000)]" 
+    },
+    { 
+      "id": "py-snippet-47", 
+      "title": "SQLite Example", 
+      "description": "Work with SQLite databases", 
+      "language": "python", 
+      "code": "import sqlite3\nimport os\n\n# Remove existing database file if it exists\nif os.path.exists(\"example.db\"):\n    os.remove(\"example.db\")\n\n# Connect to SQLite database (creates if not exists)\nconn = sqlite3.connect(\"example.db\")\nc = conn.cursor()\n\n# Create table\nc.execute(\"\"\"\nCREATE TABLE IF NOT EXISTS users (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    name TEXT NOT NULL,\n    email TEXT UNIQUE NOT NULL,\n    age INTEGER\n)\"\"\")\n\n# Insert data\nusers = [\n    (\"Alice\", \"alice@example.com\", 30),\n    (\"Bob\", \"bob@example.com\", 25),\n    (\"Charlie\", \"charlie@example.com\", 35)\n]\n\nc.executemany(\"INSERT INTO users (name, email, age) VALUES (?, ?, ?)\", users)\n\n# Commit the changes\nconn.commit()\n\n# Query data\nprint(\"All users:\")\nc.execute(\"SELECT * FROM users\")\nfor row in c.fetchall():\n    print(row)\n\nprint(\"\\nUsers older than 28:\")\nc.execute(\"SELECT name, age FROM users WHERE age > ?\", (28,))\nfor row in c.fetchall():\n    print(f\"Name: {row[0]}, Age: {row[1]}\")\n\n# Update data\nc.execute(\"UPDATE users SET age = ? WHERE name = ?\", (26, \"Bob\"))\nconn.commit()\n\nprint(\"\\nAfter update:\")\nc.execute(\"SELECT name, age FROM users WHERE name = ?\", (\"Bob\",))\nprint(c.fetchone())\n\n# Delete data\nc.execute(\"DELETE FROM users WHERE name = ?\", (\"Charlie\",))\nconn.commit()\n\nprint(\"\\nAfter deletion:\")\nc.execute(\"SELECT COUNT(*) FROM users\")\nprint(f\"Total users: {c.fetchone()[0]}\")\n\n# Close connection\nconn.close()" 
+    },
+    { 
+      "id": "py-snippet-48", 
+      "title": "Itertools Example", 
+      "description": "Use itertools for advanced iteration", 
+      "language": "python", 
+      "code": "import itertools\n\n# Infinite iterators\nprint(\"Counting from 10:\")\nfor i in itertools.count(10):\n    print(i, end=\" \")\n    if i >= 15:\n        break\n\nprint(\"\\n\\nCycling through elements:\")\ncount = 0\nfor item in itertools.cycle([\"A\", \"B\", \"C\"]):\n    print(item, end=\" \")\n    count += 1\n    if count >= 6:\n        break\n\n# Combinatoric iterators\nprint(\"\\n\\nAll combinations of 2 letters:\")\ncombinations = list(itertools.combinations(\"ABC\", 2))\nprint(combinations)\n\nprint(\"\\nAll permutations of 2 letters:\")\npermutations = list(itertools.permutations(\"ABC\", 2))\nprint(permutations)\n\nprint(\"\\nCartesian product:\")\nproduct = list(itertools.product([1, 2], [\"A\", \"B\"]))\nprint(product)\n\n# Terminating iterators\nprint(\"\\nAccumulated sum:\")\naccumulated = list(itertools.accumulate([1, 2, 3, 4, 5]))\nprint(accumulated)\n\nprint(\"\\nGrouping data:\")\ndata = [(\"A\", 1), (\"A\", 2), (\"B\", 3), (\"B\", 4), (\"C\", 5)]\nfor key, group in itertools.groupby(data, lambda x: x[0]):\n    print(f\"{key}: {list(group)}\")\n\n# Chaining iterators\nprint(\"\\nChained iterators:\")\nchained = list(itertools.chain([1, 2, 3], [\"A\", \"B\", \"C\"], range(4, 7)))\nprint(chained)\n\n# Compressing data\nprint(\"\\nCompressed data:\")\nselector = [True, False, True, False, True]\ncompressed = list(itertools.compress(\"ABCDE\", selector))\nprint(compressed)" 
+    },
+    { 
+      "id": "py-snippet-49", 
+      "title": "Fibonacci Sequence", 
+      "description": "Implement Fibonacci with different approaches", 
+      "language": "python", 
+      "code": "def fibonacci_recursive(n):\n    \"\"\"Fibonacci using recursion (inefficient for large n)\"\"\"\n    if n <= 1:\n        return n\n    return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)\n\n# Memoization version\nfrom functools import lru_cache\n\n@lru_cache(maxsize=None)\ndef fibonacci_memoized(n):\n    \"\"\"Fibonacci with memoization (efficient)\"\"\"\n    if n <= 1:\n        return n\n    return fibonacci_memoized(n-1) + fibonacci_memoized(n-2)\n\ndef fibonacci_iterative(n):\n    \"\"\"Fibonacci using iteration (most efficient)\"\"\"\n    if n <= 1:\n        return n\n    \n    a, b = 0, 1\n    for _ in range(2, n+1):\n        a, b = b, a + b\n    return b\n\ndef fibonacci_generator():\n    \"\"\"Generator that yields Fibonacci numbers indefinitely\"\"\"\n    a, b = 0, 1\n    while True:\n        yield a\n        a, b = b, a + b\n\n# Test the functions\nprint(\"Fibonacci sequence:\")\nprint(\"Recursive (n=10):\", fibonacci_recursive(10))\nprint(\"Memoized (n=50):\", fibonacci_memoized(50))\nprint(\"Iterative (n=50):\", fibonacci_iterative(50))\n\nprint(\"\\nFirst 15 Fibonacci numbers from generator:\")\nfib_gen = fibonacci_generator()\nfor i in range(15):\n    print(next(fib_gen), end=\" \")" 
+    },
+    { 
+      "id": "py-snippet-50", 
+      "title": "Web Scraping", 
+      "description": "Extract data from websites", 
+      "language": "python", 
+      "code": "import requests\nfrom bs4 import BeautifulSoup\n\n# Fetch webpage\nurl = \"https://httpbin.org/html\"  # Using a test URL\nheaders = {\n    \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\"\n}\n\ntry:\n    response = requests.get(url, headers=headers, timeout=10)\n    response.raise_for_status()  # Raise exception for bad status codes\n    \n    # Parse HTML\n    soup = BeautifulSoup(response.text, \"html.parser\")\n    \n    # Extract title\n    title = soup.find(\"h1\")\n    if title:\n        print(f\"Title: {title.text}\")\n    \n    # Extract all paragraphs\n    paragraphs = soup.find_all(\"p\")\n    print(\"\\nParagraphs:\")\n    for i, p in enumerate(paragraphs, 1):\n        print(f\"{i}. {p.text}\")\n    \n    # Extract links\n    links = soup.find_all(\"a\", href=True)\n    print(\"\\nLinks:\")\n    for link in links:\n        print(f\"{link.text}: {link['href']}\")\n    \n    # Extract specific element by class\n    # specific_element = soup.find(\"div\", class_=\"some-class\")\n    \n    # Extract table data\n    tables = soup.find_all(\"table\")\n    for table in tables:\n        rows = table.find_all(\"tr\")\n        for row in rows:\n            cells = row.find_all([\"td\", \"th\"])\n            cell_data = [cell.text.strip() for cell in cells]\n            print(\" | \".join(cell_data))\n\nexcept requests.exceptions.RequestException as e:\n    print(f\"Request failed: {e}\")\nexcept Exception as e:\n    print(f\"An error occurred: {e}\")\n\n# Note: Always check website's robots.txt and terms of service before scraping\n# Consider using APIs instead of scraping when available" 
+    },
+    { 
+      "id": "py-snippet-51", 
+      "title": "Flask Web Application", 
+      "description": "Create a simple web server with Flask", 
+      "language": "python", 
+      "code": "from flask import Flask, render_template, request, redirect, url_for, jsonify\n\napp = Flask(__name__)\n\n# In-memory storage for demonstration\nbooks = [\n    {\"id\": 1, \"title\": \"Python Crash Course\", \"author\": \"Eric Matthes\"},\n    {\"id\": 2, \"title\": \"Fluent Python\", \"author\": \"Luciano Ramalho\"},\n    {\"id\": 3, \"title\": \"Automate the Boring Stuff\", \"author\": \"Al Sweigart\"}\n]\n\n@app.route(\"/\")\ndef home():\n    return \"<h1>Welcome to the Book API!</h1><p>Visit /books to see all books.</p>\"\n\n@app.route(\"/books\")\ndef get_books():\n    return jsonify(books)\n\n@app.route(\"/books/<int:book_id>\")\ndef get_book(book_id):\n    book = next((b for b in books if b[\"id\"] == book_id), None)\n    if book:\n        return jsonify(book)\n    return jsonify({\"error\": \"Book not found\"}), 404\n\n@app.route(\"/books\", methods=[\"POST\"])\ndef add_book():\n    if not request.json or not \"title\" in request.json:\n        return jsonify({\"error\": \"Title is required\"}), 400\n    \n    new_book = {\n        \"id\": len(books) + 1,\n        \"title\": request.json[\"title\"],\n        \"author\": request.json.get(\"author\", \"\")\n    }\n    \n    books.append(new_book)\n    return jsonify(new_book), 201\n\n@app.route(\"/books/<int:book_id>\", methods=[\"PUT\"])\ndef update_book(book_id):\n    book = next((b for b in books if b[\"id\"] == book_id), None)\n    if not book:\n        return jsonify({\"error\": \"Book not found\"}), 404\n    \n    book[\"title\"] = request.json.get(\"title\", book[\"title\"])\n    book[\"author\"] = request.json.get(\"author\", book[\"author\"])\n    \n    return jsonify(book)\n\n@app.route(\"/books/<int:book_id>\", methods=[\"DELETE\"])\ndef delete_book(book_id):\n    global books\n    books = [b for b in books if b[\"id\"] != book_id]\n    return jsonify({\"result\": \"Book deleted\"})\n\n@app.route(\"/html\")\ndef books_html():\n    return render_template(\"books.html\", books=books)\n\nif __name__ == \"__main__\":\n    app.run(debug=True, host=\"0.0.0.0\", port=5000)" 
+    },
+    { 
+      "id": "py-snippet-52", 
+      "title": "Tkinter GUI Application", 
+      "description": "Create a desktop application with Tkinter", 
+      "language": "python", 
+      "code": "import tkinter as tk\nfrom tkinter import ttk, messagebox, filedialog\n\nclass TodoApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"Todo Application\")\n        self.root.geometry(\"500x400\")\n        \n        self.tasks = []\n        \n        self.create_widgets()\n        self.load_tasks()\n    \n    def create_widgets(self):\n        # Main frame\n        main_frame = ttk.Frame(self.root, padding=\"10\")\n        main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))\n        \n        # Input area\n        ttk.Label(main_frame, text=\"New Task:\").grid(row=0, column=0, sticky=tk.W)\n        \n        self.task_var = tk.StringVar()\n        task_entry = ttk.Entry(main_frame, textvariable=self.task_var, width=40)\n        task_entry.grid(row=0, column=1, padx=5, sticky=(tk.W, tk.E))\n        task_entry.bind(\"<Return>\", lambda e: self.add_task())\n        \n        add_button = ttk.Button(main_frame, text=\"Add Task\", command=self.add_task)\n        add_button.grid(row=0, column=2, padx=5)\n        \n        # Task list\n        ttk.Label(main_frame, text=\"Tasks:\").grid(row=1, column=0, sticky=tk.W, pady=(10, 0))\n        \n        self.task_listbox = tk.Listbox(main_frame, width=50, height=15)\n        self.task_listbox.grid(row=2, column=0, columnspan=3, pady=5, sticky=(tk.W, tk.E, tk.N, tk.S))\n        \n        # Buttons\n        button_frame = ttk.Frame(main_frame)\n        button_frame.grid(row=3, column=0, columnspan=3, pady=10)\n        \n        complete_button = ttk.Button(button_frame, text=\"Mark Complete\", command=self.complete_task)\n        complete_button.pack(side=tk.LEFT, padx=5)\n        \n        delete_button = ttk.Button(button_frame, text=\"Delete Task\", command=self.delete_task)\n        delete_button.pack(side=tk.LEFT, padx=5)\n        \n        save_button = ttk.Button(button_frame, text=\"Save Tasks\", command=self.save_tasks)\n        save_button.pack(side=tk.LEFT, padx=5)\n        \n        # Configure grid weights\n        self.root.columnconfigure(0, weight=1)\n        self.root.rowconfigure(0, weight=1)\n        main_frame.columnconfigure(1, weight=1)\n        main_frame.rowconfigure(2, weight=1)\n    \n    def add_task(self):\n        task = self.task_var.get().strip()\n        if task:\n            self.tasks.append({\"task\": task, \"completed\": False})\n            self.update_listbox()\n            self.task_var.set(\"\")\n        else:\n            messagebox.showwarning(\"Warning\", \"Please enter a task!\")\n    \n    def complete_task(self):\n        selected = self.task_listbox.curselection()\n        if selected:\n            index = selected[0]\n            self.tasks[index][\"completed\"] = not self.tasks[index][\"completed\"]\n            self.update_listbox()\n        else:\n            messagebox.showwarning(\"Warning\", \"Please select a task!\")\n    \n    def delete_task(self):\n        selected = self.task_listbox.curselection()\n        if selected:\n            index = selected[0]\n            del self.tasks[index]\n            self.update_listbox()\n        else:\n            messagebox.showwarning(\"Warning\", \"Please select a task!\")\n    \n    def update_listbox(self):\n        self.task_listbox.delete(0, tk.END)\n        for task in self.tasks:\n            prefix = \"[✓] \" if task[\"completed\"] else \"[ ] \"\n            self.task_listbox.insert(tk.END, prefix + task[\"task\"])\n    \n    def save_tasks(self):\n        filename = filedialog.asksaveasfilename(\n            defaultextension=\".txt\",\n            filetypes=[(\"Text files\", \"*.txt\"), (\"All files\", \"*.*\")]\n        )\n        if filename:\n            with open(filename, \"w\") as f:\n                for task in self.tasks:\n                    status = \"completed\" if task[\"completed\"] else \"pending\"\n                    f.write(f\"{task['task']} ({status})\\n\")\n            messagebox.showinfo(\"Success\", f\"Tasks saved to {filename}\")\n    \n    def load_tasks(self):\n        # This would typically load from a file\n        self.tasks = [\n            {\"task\": \"Learn Python\", \"completed\": True},\n            {\"task\": \"Build a GUI app\", \"completed\": False},\n            {\"task\": \"Deploy to production\", \"completed\": False}\n        ]\n        self.update_listbox()\n\n# Create and run the application\nif __name__ == \"__main__\":\n    root = tk.Tk()\n    app = TodoApp(root)\n    root.mainloop()" 
     }
   ]
 },
-  {
-    id: "java",
-    slug: "java", 
-    title: "Java",
-    description: "Object-oriented programming and Spring framework",
-    icon: "FaJava",
-    color: "from-red-500 to-orange-600",
-    category: "Programming",
-    difficulty: "Intermediate",
-    tags: ["java", "object-oriented", "spring"],
-    image: "/images/java.jpg", //  added for image view
-    roadmap: [
-      {
-        id: "java-1",
-        title: "Java Fundamentals",
-        description: "Syntax, OOP principles, collections",
-        duration: "4 weeks",
-      },
-      {
-        id: "java-2",
-        title: "Advanced Java",
-        description: "Multithreading, exception handling, I/O",
-        duration: "3 weeks",
-      },
-      {
-        id: "java-3",
-        title: "Spring Framework",
-        description: "Dependency injection, Spring Boot",
-        duration: "4 weeks",
-      },
-      {
-        id: "java-4",
-        title: "Database Integration",
-        description: "JPA, Hibernate, Spring Data",
-        duration: "3 weeks",
-      },
-    ],
-    notes: [
-      'Platform-independent "write once, run anywhere"',
-      "Strong typing and object-oriented design",
-      "Excellent for enterprise applications",
-      "Large ecosystem and mature frameworks",
-    ],
-    codeSnippets: [
-      {
-        id: "java-snippet-1",
-        title: "Compile and Run Java",
-        description: "Basic Java compilation and execution",
-        language: "bash",
-        code: "javac HelloWorld.java\njava HelloWorld",
-      },
-      {
-        id: "java-snippet-2",
-        title: "Simple Java Class",
-        description: "Basic class structure with main method",
-        language: "java",
-        code: `public class HelloWorld {
-    private String message;
-    
-    public HelloWorld(String message) {
-        this.message = message;
-    }
-    
-    public void displayMessage() {
-        System.out.println(message);
-    }
-    
-    public static void main(String[] args) {
-        HelloWorld hello = new HelloWorld("Hello, World!");
-        hello.displayMessage();
-    }
-}`,
-      },
-    ],
-  },
+ 
+  /* JAVA */
+
+
+  /* JAVASCRIPT */
+
+  /* WEB DEVELOPMENT */
   {
     id: "web-development",
     slug: "web-development", 
