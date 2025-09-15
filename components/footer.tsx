@@ -57,7 +57,7 @@ export function Footer() {
                 alt="GeekDost Logo" 
                 className="h-6 mb-4"
                 />
-
+                
                 <p className="text-muted-foreground text-sm mb-6 text-pretty">
                   Your ultimate developer hub for programming roadmaps, code snippets, and learning resources.
                   Empowering developers to level up their skills.
