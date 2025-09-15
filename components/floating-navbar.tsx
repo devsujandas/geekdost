@@ -96,9 +96,6 @@ export function FloatingNavbar() {
         <GlassmorphismCard hover={false} className="m-4 px-4 py-3 rounded-xl">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="text-xl font-bold text-foreground hover:text-primary transition-colors">
-              GeekDost
-            </Link>
 
             {/* Mobile Menu Button */}
             <motion.button
