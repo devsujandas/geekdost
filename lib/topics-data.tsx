@@ -592,7 +592,605 @@ export const topicsData: Topic[] = [
 },
  
   /* JAVA */
-
+{
+  "id": "java",
+  "slug": "java",
+  "title": "Java Programming Mastery",
+  "description": "Comprehensive Java programming journey from fundamentals to advanced enterprise development. Covers OOP principles, data structures, multithreading, Spring Framework, and real-world application development.",
+  "icon": "FaJava",
+  "color": "from-red-500 to-orange-500",
+  "category": "Programming",
+  "difficulty": "Intermediate",
+  "tags": ["java", "backend", "oop", "spring", "android", "jvm", "enterprise", "microservices"],
+  "image": "/images/java.jpg",
+  "roadmap": [
+    { 
+      "id": "java-1", 
+      "title": "Java Basics & Environment Setup", 
+      "description": "Install JDK, configure development environment (IDE), understand Java syntax, variables, primitive data types, operators, and basic input/output operations. Learn about JVM, JRE, and JDK differences.",
+      "duration": "2 weeks",
+    },
+    { 
+      "id": "java-2", 
+      "title": "Control Flow Statements", 
+      "description": "Master decision-making structures (if-else, switch-case) and looping constructs (for, while, do-while). Understand break, continue, and nested control flow statements.",
+      "duration": "1.5 weeks",
+    },
+    { 
+      "id": "java-3", 
+      "title": "Methods & Functions", 
+      "description": "Learn to define methods, pass parameters, return values, and understand method overloading. Explore recursion, variable arguments (varargs), and method scope.",
+      "duration": "1.5 weeks",
+    },
+    { 
+      "id": "java-4", 
+      "title": "Object-Oriented Programming Fundamentals", 
+      "description": "Introduction to OOP concepts: classes, objects, fields, constructors, access modifiers (public, private, protected). Understand object creation and memory allocation.",
+      "duration": "2 weeks",
+    },
+    { 
+      "id": "java-5", 
+      "title": "Encapsulation & Inheritance", 
+      "description": "Implement encapsulation with getters/setters, understand inheritance hierarchies, super keyword, method overriding, and the instanceof operator.",
+      "duration": "2 weeks",
+    },
+    { 
+      "id": "java-6", 
+      "title": "Polymorphism & Abstraction", 
+      "description": "Master polymorphism through method overriding, understand abstract classes, interfaces, and the principles of abstraction in OOP design.",
+      "duration": "2.5 weeks",
+    },
+    { 
+      "id": "java-7", 
+      "title": "Packages & Access Control", 
+      "description": "Organize code with packages, understand import statements, classpath, and detailed access control mechanisms including module system (Java 9+).",
+      "duration": "1.5 weeks",
+    },
+    { 
+      "id": "java-8", 
+      "title": "Exception Handling", 
+      "description": "Comprehensive error handling with try-catch-finally blocks, throw/throws keywords, custom exceptions, and exception hierarchy best practices.",
+      "duration": "2 weeks",
+    },
+    { 
+      "id": "java-9", 
+      "title": "Java Collections Framework", 
+      "description": "In-depth study of Collections API: Lists, Sets, Maps, Queues, Iterators, Comparators, and generics for type-safe collections.",
+      "duration": "3 weeks",
+    },
+    { 
+      "id": "java-10", 
+      "title": "Strings & Text Processing", 
+      "description": "Master String manipulation, immutability, StringBuilder, StringBuffer, regular expressions, and text processing techniques.",
+      "duration": "2 weeks",
+    },
+    { 
+      "id": "java-11", 
+      "title": "File I/O & Serialization", 
+      "description": "Read/write files using various I/O classes, understand serialization/deserialization, NIO package, and file system operations.",
+      "duration": "2.5 weeks",
+    },
+    { 
+      "id": "java-12", 
+      "title": "Multithreading & Concurrency", 
+      "description": "Comprehensive concurrency programming: Thread class, Runnable interface, synchronization, thread pools, locks, and concurrent utilities.",
+      "duration": "4 weeks",
+    },
+    { 
+      "id": "java-13", 
+      "title": "Java Streams & Functional Programming", 
+      "description": "Modern Java features: lambda expressions, streams API, optional class, method references, and functional programming patterns.",
+      "duration": "3 weeks",
+    },
+    { 
+      "id": "java-14", 
+      "title": "Java Memory Management", 
+      "description": "Deep dive into JVM architecture, garbage collection algorithms, stack vs heap memory, performance tuning, and memory leaks prevention.",
+      "duration": "2 weeks",
+    },
+    { 
+      "id": "java-15", 
+      "title": "Java Annotations & Reflection", 
+      "description": "Create and use annotations, reflection API for meta-programming, dynamic class loading, and framework development basics.",
+      "duration": "2.5 weeks",
+    },
+    { 
+      "id": "java-16", 
+      "title": "Database Connectivity (JDBC)", 
+      "description": "Connect Java applications to databases using JDBC, perform CRUD operations, use prepared statements, connection pooling, and transactions.",
+      "duration": "3.5 weeks",
+    },
+    { 
+      "id": "java-17", 
+      "title": "Build Tools & Dependency Management", 
+      "description": "Master build automation with Maven and Gradle, manage dependencies, create multi-module projects, and understand repository management.",
+      "duration": "2 weeks",
+    },
+    { 
+      "id": "java-18", 
+      "title": "Spring Framework Core", 
+      "description": "Spring IoC container, dependency injection, bean configuration, aspect-oriented programming (AOP), and Spring expression language.",
+      "duration": "4 weeks",
+    },
+    { 
+      "id": "java-19", 
+      "title": "Spring Boot & REST APIs", 
+      "description": "Develop production-ready applications with Spring Boot, create RESTful web services, implement security, and integrate with JPA for data persistence.",
+      "duration": "5 weeks",
+    },
+    { 
+      "id": "java-20", 
+      "title": "Capstone Project: Enterprise Application", 
+      "description": "Build a complete Java enterprise application integrating all learned concepts: OOP design, database, REST API, security, and deployment.",
+      "duration": "6 weeks",
+      
+    }
+  ],
+  "notes": [
+    "Java is platform-independent through the Java Virtual Machine (JVM) which executes bytecode",
+    "Strongly typed language with compile-time type checking for better code reliability",
+    "Follows Write-Once-Run-Anywhere (WORA) philosophy enabling cross-platform compatibility",
+    "Extensive ecosystem with over 5 million developers and vast library support",
+    "Primary language for Android app development (though Kotlin is now preferred)",
+    "Widely used in enterprise applications, web services, and large-scale systems",
+    "Java syntax is C-style and similar to C++ but without pointers and multiple inheritance",
+    "Automatic memory management through garbage collection reduces memory leaks",
+    "Packages provide namespace management and access control for large codebases",
+    "Collections Framework offers efficient, reusable data structures and algorithms",
+    "Generics enable type safety at compile-time while maintaining runtime efficiency",
+    "Multithreading capabilities allow concurrent programming for better resource utilization",
+    "Streams API (Java 8+) enables functional-style operations on collections",
+    "Checked exceptions enforce error handling at compile time for more robust code",
+    "Annotations provide metadata that can be processed at compile-time or runtime",
+    "Reflection allows runtime inspection and modification of classes and objects",
+    "Build tools like Maven and Gradle automate dependency management and compilation",
+    "JDBC provides database independence through standardized database connectivity",
+    "Spring Framework revolutionized enterprise Java with dependency injection and AOP",
+    "JUnit is the standard testing framework for writing and running unit tests",
+    "Logging frameworks (SLF4J, Logback) provide flexible application logging capabilities",
+    "Interfaces promote loose coupling and polymorphism in software design",
+    "Immutable objects are inherently thread-safe and simplify concurrent programming",
+    "Composition over inheritance principle leads to more flexible and maintainable code",
+    "Try-with-resources (Java 7+) ensures automatic resource cleanup for AutoCloseable objects",
+    "JVM memory model understanding is crucial for performance optimization",
+    "Java Platform Module System (JPMS) introduced in Java 9 provides better encapsulation",
+    "Just-In-Time (JIT) compilation optimizes bytecode to native code for performance",
+    "Java has long-term support (LTS) versions that receive updates for extended periods",
+    "Java Community Process (JCP) governs the evolution of the Java platform",
+    "Deployment typically uses JAR files for applications and WAR files for web applications",
+    "Java Native Interface (JNI) allows integration with native code written in other languages",
+    "Java Management Extensions (JMX) provides tools for monitoring and managing applications",
+    "Java has strong security features including sandboxing and security manager",
+    "Java Performance Monitoring tools (jconsole, jvisualvm, jstack) help diagnose issues",
+    "Lambda expressions (Java 8+) significantly reduced boilerplate code for functional interfaces",
+    "Optional class helps avoid NullPointerException and makes null checks explicit",
+    "Java continues to evolve with six-month release cycles bringing new features regularly",
+    "Popular IDEs like IntelliJ IDEA, Eclipse, and NetBeans provide powerful development tools",
+    "Java has extensive documentation (Javadoc) culture promoting self-documenting code"
+  ],
+  "codeSnippets": [
+    {
+      "id": "java-snippet-1",
+      "title": "Hello World Program",
+      "description": "Basic Java program structure with main method",
+      "language": "java",
+      "code": "public class HelloWorld {\n  public static void main(String[] args) {\n    System.out.println(\"Hello, Java!\");\n  }\n}"
+    },
+    {
+      "id": "java-snippet-2",
+      "title": "If-Else Conditional",
+      "description": "Decision making with if-else statement",
+      "language": "java",
+      "code": "int x = 10;\nif (x > 15) {\n  System.out.println(\"x is greater than 15\");\n} else if (x > 5) {\n  System.out.println(\"x is between 6 and 15\");\n} else {\n  System.out.println(\"x is 5 or less\");\n}"
+    },
+    {
+      "id": "java-snippet-3",
+      "title": "Switch Statement",
+      "description": "Multi-way branching with switch-case",
+      "language": "java",
+      "code": "int day = 3;\nString dayName;\nswitch (day) {\n  case 1: dayName = \"Monday\"; break;\n  case 2: dayName = \"Tuesday\"; break;\n  case 3: dayName = \"Wednesday\"; break;\n  case 4: dayName = \"Thursday\"; break;\n  case 5: dayName = \"Friday\"; break;\n  case 6: dayName = \"Saturday\"; break;\n  case 7: dayName = \"Sunday\"; break;\n  default: dayName = \"Invalid day\";\n}\nSystem.out.println(dayName);"
+    },
+    {
+      "id": "java-snippet-4",
+      "title": "For Loop",
+      "description": "Iteration with for loop",
+      "language": "java",
+      "code": "for (int i = 1; i <= 5; i++) {\n  System.out.println(\"Iteration: \" + i);\n}"
+    },
+    {
+      "id": "java-snippet-5",
+      "title": "Enhanced For Loop",
+      "description": "Iterating over arrays/collections with for-each",
+      "language": "java",
+      "code": "int[] numbers = {1, 2, 3, 4, 5};\nfor (int num : numbers) {\n  System.out.println(\"Number: \" + num);\n}"
+    },
+    {
+      "id": "java-snippet-6",
+      "title": "While Loop",
+      "description": "Condition-based iteration with while loop",
+      "language": "java",
+      "code": "int count = 1;\nwhile (count <= 5) {\n  System.out.println(\"Count: \" + count);\n  count++;\n}"
+    },
+    {
+      "id": "java-snippet-7",
+      "title": "Do-While Loop",
+      "description": "Post-test loop that executes at least once",
+      "language": "java",
+      "code": "int i = 1;\ndo {\n  System.out.println(\"Value: \" + i);\n  i++;\n} while (i <= 5);"
+    },
+    {
+      "id": "java-snippet-8",
+      "title": "Method Definition",
+      "description": "Creating reusable methods with parameters and return value",
+      "language": "java",
+      "code": "public class Calculator {\n  public static int add(int a, int b) {\n    return a + b;\n  }\n  \n  public static void main(String[] args) {\n    int result = add(5, 3);\n    System.out.println(\"Sum: \" + result);\n  }\n}"
+    },
+    {
+      "id": "java-snippet-9",
+      "title": "Method Overloading",
+      "description": "Multiple methods with same name but different parameters",
+      "language": "java",
+      "code": "public class MathOperations {\n  public static int multiply(int a, int b) {\n    return a * b;\n  }\n  \n  public static double multiply(double a, double b) {\n    return a * b;\n  }\n  \n  public static void main(String[] args) {\n    System.out.println(\"Int multiplication: \" + multiply(5, 3));\n    System.out.println(\"Double multiplication: \" + multiply(5.5, 2.0));\n  }\n}"
+    },
+    {
+      "id": "java-snippet-10",
+      "title": "Class and Object Creation",
+      "description": "Defining a class and creating objects",
+      "language": "java",
+      "code": "class Car {\n  String brand;\n  String model;\n  int year;\n  \n  public Car(String brand, String model, int year) {\n    this.brand = brand;\n    this.model = model;\n    this.year = year;\n  }\n  \n  void displayInfo() {\n    System.out.println(brand + \" \" + model + \" (\" + year + \")\");\n  }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    Car myCar = new Car(\"Toyota\", \"Camry\", 2022);\n    myCar.displayInfo();\n  }\n}"
+    },
+    {
+      "id": "java-snippet-11",
+      "title": "Getter and Setter Methods",
+      "description": "Implementing encapsulation with accessor and mutator methods",
+      "language": "java",
+      "code": "class Person {\n  private String name;\n  private int age;\n  \n  public String getName() {\n    return name;\n  }\n  \n  public void setName(String name) {\n    this.name = name;\n  }\n  \n  public int getAge() {\n    return age;\n  }\n  \n  public void setAge(int age) {\n    if (age > 0) this.age = age;\n  }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    Person person = new Person();\n    person.setName(\"John\");\n    person.setAge(25);\n    System.out.println(\"Name: \" + person.getName() + \", Age: \" + person.getAge());\n  }\n}"
+    },
+    {
+      "id": "java-snippet-12",
+      "title": "Inheritance Example",
+      "description": "Creating subclass that extends a superclass",
+      "language": "java",
+      "code": "class Animal {\n  void eat() {\n    System.out.println(\"This animal eats food\");\n  }\n}\n\nclass Dog extends Animal {\n  void bark() {\n    System.out.println(\"The dog barks\");\n  }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    Dog myDog = new Dog();\n    myDog.eat();  // Inherited method\n    myDog.bark(); // Own method\n  }\n}"
+    },
+    {
+      "id": "java-snippet-13",
+      "title": "Method Overriding",
+      "description": "Subclass providing specific implementation of superclass method",
+      "language": "java",
+      "code": "class Shape {\n  void draw() {\n    System.out.println(\"Drawing a shape\");\n  }\n}\n\nclass Circle extends Shape {\n  @Override\n  void draw() {\n    System.out.println(\"Drawing a circle\");\n  }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    Shape shape = new Circle();\n    shape.draw(); // Calls Circle's draw method\n  }\n}"
+    },
+    {
+      "id": "java-snippet-14",
+      "title": "Abstract Class",
+      "description": "Defining abstract classes and methods",
+      "language": "java",
+      "code": "abstract class Vehicle {\n  abstract void start();\n  \n  void stop() {\n    System.out.println(\"Vehicle stopped\");\n  }\n}\n\nclass Car extends Vehicle {\n  @Override\n  void start() {\n    System.out.println(\"Car started with key\");\n  }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    Vehicle myCar = new Car();\n    myCar.start();\n    myCar.stop();\n  }\n}"
+    },
+    {
+      "id": "java-snippet-15",
+      "title": "Interface Implementation",
+      "description": "Defining and implementing interfaces",
+      "language": "java",
+      "code": "interface Drawable {\n  void draw();\n  default void print() {\n    System.out.println(\"Printing drawing\");\n  }\n}\n\nclass Circle implements Drawable {\n  @Override\n  public void draw() {\n    System.out.println(\"Drawing a circle\");\n  }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    Drawable circle = new Circle();\n    circle.draw();\n    circle.print();\n  }\n}"
+    },
+    {
+      "id": "java-snippet-16",
+      "title": "Package Usage",
+      "description": "Organizing classes into packages",
+      "language": "java",
+      "code": "package com.example.util;\n\npublic class StringUtil {\n  public static boolean isEmpty(String str) {\n    return str == null || str.trim().isEmpty();\n  }\n}\n\n// In another file\nimport com.example.util.StringUtil;\n\npublic class Main {\n  public static void main(String[] args) {\n    String test = \"\";\n    System.out.println(\"Is empty: \" + StringUtil.isEmpty(test));\n  }\n}"
+    },
+    {
+      "id": "java-snippet-17",
+      "title": "Exception Handling",
+      "description": "Catching and handling exceptions with try-catch",
+      "language": "java",
+      "code": "public class ExceptionExample {\n  public static void main(String[] args) {\n    try {\n      int[] numbers = {1, 2, 3};\n      System.out.println(numbers[5]); // ArrayIndexOutOfBoundsException\n    } catch (ArrayIndexOutOfBoundsException e) {\n      System.out.println(\"Array index is out of bounds!\");\n    } catch (Exception e) {\n      System.out.println(\"Something went wrong: \" + e.getMessage());\n    } finally {\n      System.out.println(\"This block always executes\");\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-18",
+      "title": "Custom Exception",
+      "description": "Creating and throwing custom exceptions",
+      "language": "java",
+      "code": "class InsufficientFundsException extends Exception {\n  public InsufficientFundsException(String message) {\n    super(message);\n  }\n}\n\nclass BankAccount {\n  private double balance;\n  \n  public void withdraw(double amount) throws InsufficientFundsException {\n    if (amount > balance) {\n      throw new InsufficientFundsException(\"Insufficient funds. Current balance: \" + balance);\n    }\n    balance -= amount;\n  }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    BankAccount account = new BankAccount();\n    try {\n      account.withdraw(100);\n    } catch (InsufficientFundsException e) {\n      System.out.println(e.getMessage());\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-19",
+      "title": "ArrayList Usage",
+      "description": "Working with ArrayList collection",
+      "language": "java",
+      "code": "import java.util.ArrayList;\nimport java.util.Iterator;\n\npublic class ArrayListExample {\n  public static void main(String[] args) {\n    ArrayList<String> fruits = new ArrayList<>();\n    fruits.add(\"Apple\");\n    fruits.add(\"Banana\");\n    fruits.add(\"Orange\");\n    \n    System.out.println(\"First fruit: \" + fruits.get(0));\n    System.out.println(\"All fruits:\");\n    \n    // Using for-each loop\n    for (String fruit : fruits) {\n      System.out.println(fruit);\n    }\n    \n    // Using iterator\n    Iterator<String> iterator = fruits.iterator();\n    while (iterator.hasNext()) {\n      System.out.println(iterator.next());\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-20",
+      "title": "HashMap Usage",
+      "description": "Storing key-value pairs with HashMap",
+      "language": "java",
+      "code": "import java.util.HashMap;\nimport java.util.Map;\n\npublic class HashMapExample {\n  public static void main(String[] args) {\n    HashMap<String, Integer> ageMap = new HashMap<>();\n    ageMap.put(\"John\", 25);\n    ageMap.put(\"Jane\", 30);\n    ageMap.put(\"Bob\", 35);\n    \n    System.out.println(\"John's age: \" + ageMap.get(\"John\"));\n    \n    // Iterating through HashMap\n    for (Map.Entry<String, Integer> entry : ageMap.entrySet()) {\n      System.out.println(entry.getKey() + \" is \" + entry.getValue() + \" years old\");\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-21",
+      "title": "HashSet Usage",
+      "description": "Working with HashSet for unique elements",
+      "language": "java",
+      "code": "import java.util.HashSet;\nimport java.util.Set;\n\npublic class HashSetExample {\n  public static void main(String[] args) {\n    Set<String> uniqueNames = new HashSet<>();\n    uniqueNames.add(\"John\");\n    uniqueNames.add(\"Jane\");\n    uniqueNames.add(\"John\"); // Duplicate, won't be added\n    \n    System.out.println(\"Unique names: \" + uniqueNames);\n    System.out.println(\"Size: \" + uniqueNames.size());\n    System.out.println(\"Contains Jane: \" + uniqueNames.contains(\"Jane\"));\n  }\n}"
+    },
+    {
+      "id": "java-snippet-22",
+      "title": "Generics Example",
+      "description": "Using generics for type-safe collections",
+      "language": "java",
+      "code": "// Generic class\nclass Box<T> {\n  private T content;\n  \n  public void setContent(T content) {\n    this.content = content;\n  }\n  \n  public T getContent() {\n    return content;\n  }\n}\n\npublic class GenericsExample {\n  public static void main(String[] args) {\n    Box<String> stringBox = new Box<>();\n    stringBox.setContent(\"Hello Generics\");\n    \n    Box<Integer> integerBox = new Box<>();\n    integerBox.setContent(123);\n    \n    System.out.println(\"String box: \" + stringBox.getContent());\n    System.out.println(\"Integer box: \" + integerBox.getContent());\n  }\n}"
+    },
+    {
+      "id": "java-snippet-23",
+      "title": "String Manipulation",
+      "description": "Common string operations and methods",
+      "language": "java",
+      "code": "public class StringOperations {\n  public static void main(String[] args) {\n    String str = \" Hello Java World \";\n    \n    System.out.println(\"Original: '\" + str + \"'\");\n    System.out.println(\"Trimmed: '\" + str.trim() + \"'\");\n    System.out.println(\"Uppercase: \" + str.toUpperCase());\n    System.out.println(\"Lowercase: \" + str.toLowerCase());\n    System.out.println(\"Length: \" + str.length());\n    System.out.println(\"Substring: \" + str.substring(7, 11));\n    System.out.println(\"Replace: \" + str.replace(\"Java\", \"Programming\"));\n    System.out.println(\"Contains 'Java': \" + str.contains(\"Java\"));\n    \n    // String comparison\n    String str1 = \"hello\";\n    String str2 = \"HELLO\";\n    System.out.println(\"Equals: \" + str1.equals(str2));\n    System.out.println(\"Equals ignore case: \" + str1.equalsIgnoreCase(str2));\n  }\n}"
+    },
+    {
+      "id": "java-snippet-24",
+      "title": "StringBuilder Example",
+      "description": "Efficient string manipulation with StringBuilder",
+      "language": "java",
+      "code": "public class StringBuilderExample {\n  public static void main(String[] args) {\n    StringBuilder sb = new StringBuilder();\n    \n    sb.append(\"Hello\");\n    sb.append(\" \");\n    sb.append(\"World\");\n    \n    System.out.println(\"StringBuilder content: \" + sb.toString());\n    System.out.println(\"Length: \" + sb.length());\n    System.out.println(\"Capacity: \" + sb.capacity());\n    \n    sb.insert(5, \" Java\");\n    System.out.println(\"After insert: \" + sb.toString());\n    \n    sb.reverse();\n    System.out.println(\"Reversed: \" + sb.toString());\n  }\n}"
+    },
+    {
+      "id": "java-snippet-25",
+      "title": "Regular Expressions",
+      "description": "Pattern matching with regular expressions",
+      "language": "java",
+      "code": "import java.util.regex.Pattern;\nimport java.util.regex.Matcher;\n\npublic class RegexExample {\n  public static void main(String[] args) {\n    String text = \"The quick brown fox jumps over the lazy dog 123.\";\n    String pattern = \"[a-z]+\\\";\n    \n    Pattern p = Pattern.compile(pattern);\n    Matcher m = p.matcher(text);\n    \n    System.out.println(\"Matching words:\");\n    while (m.find()) {\n      System.out.println(\"Found: \" + m.group() + \" at position \" + m.start());\n    }\n    \n    // Email validation\n    String email = \"test@example.com\";\n    String emailPattern = \"^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$\";\n    boolean isValidEmail = Pattern.matches(emailPattern, email);\n    System.out.println(\"Is valid email: \" + isValidEmail);\n  }\n}"
+    },
+    {
+      "id": "java-snippet-26",
+      "title": "File Reading",
+      "description": "Reading text from a file",
+      "language": "java",
+      "code": "import java.io.BufferedReader;\nimport java.io.FileReader;\nimport java.io.IOException;\n\npublic class FileReadExample {\n  public static void main(String[] args) {\n    String fileName = \"sample.txt\";\n    \n    try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {\n      String line;\n      System.out.println(\"File content:\");\n      while ((line = reader.readLine()) != null) {\n        System.out.println(line);\n      }\n    } catch (IOException e) {\n      System.out.println(\"Error reading file: \" + e.getMessage());\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-27",
+      "title": "File Writing",
+      "description": "Writing text to a file",
+      "language": "java",
+      "code": "import java.io.BufferedWriter;\nimport java.io.FileWriter;\nimport java.io.IOException;\n\npublic class FileWriteExample {\n  public static void main(String[] args) {\n    String fileName = \"output.txt\";\n    \n    try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {\n      writer.write(\"Hello, File I/O!\\n\");\n      writer.write(\"This is a second line.\\n\");\n      writer.write(\"Java file writing example.\\n\");\n      System.out.println(\"Data written to file successfully.\");\n    } catch (IOException e) {\n      System.out.println(\"Error writing to file: \" + e.getMessage());\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-28",
+      "title": "Serialization",
+      "description": "Converting objects to byte stream for storage/transmission",
+      "language": "java",
+      "code": "import java.io.*;\n\nclass Person implements Serializable {\n  private static final long serialVersionUID = 1L;\n  private String name;\n  private int age;\n  \n  public Person(String name, int age) {\n    this.name = name;\n    this.age = age;\n  }\n  \n  @Override\n  public String toString() {\n    return \"Person{name='\" + name + \"', age=\" + age + \"}\";\n  }\n}\n\npublic class SerializationExample {\n  public static void main(String[] args) {\n    Person person = new Person(\"John\", 30);\n    \n    // Serialize object\n    try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(\"person.ser\"))) {\n      oos.writeObject(person);\n      System.out.println(\"Object serialized successfully\");\n    } catch (IOException e) {\n      e.printStackTrace();\n    }\n    \n    // Deserialize object\n    try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(\"person.ser\"))) {\n      Person deserializedPerson = (Person) ois.readObject();\n      System.out.println(\"Deserialized object: \" + deserializedPerson);\n    } catch (IOException | ClassNotFoundException e) {\n      e.printStackTrace();\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-29",
+      "title": "Thread Creation",
+      "description": "Creating threads by extending Thread class",
+      "language": "java",
+      "code": "class MyThread extends Thread {\n  @Override\n  public void run() {\n    for (int i = 1; i <= 5; i++) {\n      System.out.println(Thread.currentThread().getName() + \" - Count: \" + i);\n      try {\n        Thread.sleep(500); // Pause for 500 milliseconds\n      } catch (InterruptedException e) {\n        System.out.println(\"Thread interrupted\");\n      }\n    }\n  }\n}\n\npublic class ThreadExample {\n  public static void main(String[] args) {\n    MyThread thread1 = new MyThread();\n    MyThread thread2 = new MyThread();\n    \n    thread1.setName(\"Thread-1\");\n    thread2.setName(\"Thread-2\");\n    \n    thread1.start();\n    thread2.start();\n  }\n}"
+    },
+    {
+      "id": "java-snippet-30",
+      "title": "Runnable Interface",
+      "description": "Creating threads by implementing Runnable interface",
+      "language": "java",
+      "code": "class MyRunnable implements Runnable {\n  @Override\n  public void run() {\n    for (int i = 1; i <= 5; i++) {\n      System.out.println(Thread.currentThread().getName() + \" - Count: \" + i);\n      try {\n        Thread.sleep(500);\n      } catch (InterruptedException e) {\n        System.out.println(\"Thread interrupted\");\n      }\n    }\n  }\n}\n\npublic class RunnableExample {\n  public static void main(String[] args) {\n    MyRunnable myRunnable = new MyRunnable();\n    \n    Thread thread1 = new Thread(myRunnable, \"Runnable-Thread-1\");\n    Thread thread2 = new Thread(myRunnable, \"Runnable-Thread-2\");\n    \n    thread1.start();\n    thread2.start();\n  }\n}"
+    },
+    {
+      "id": "java-snippet-31",
+      "title": "Synchronized Method",
+      "description": "Thread synchronization for thread safety",
+      "language": "java",
+      "code": "class Counter {\n  private int count = 0;\n  \n  public synchronized void increment() {\n    count++;\n  }\n  \n  public synchronized int getCount() {\n    return count;\n  }\n}\n\nclass IncrementThread extends Thread {\n  private Counter counter;\n  \n  public IncrementThread(Counter counter) {\n    this.counter = counter;\n  }\n  \n  @Override\n  public void run() {\n    for (int i = 0; i < 1000; i++) {\n      counter.increment();\n    }\n  }\n}\n\npublic class SynchronizationExample {\n  public static void main(String[] args) throws InterruptedException {\n    Counter counter = new Counter();\n    \n    IncrementThread thread1 = new IncrementThread(counter);\n    IncrementThread thread2 = new IncrementThread(counter);\n    \n    thread1.start();\n    thread2.start();\n    \n    thread1.join();\n    thread2.join();\n    \n    System.out.println(\"Final count: \" + counter.getCount()); // Should be 2000\n  }\n}"
+    },
+    {
+      "id": "java-snippet-32",
+      "title": "Lambda Expression",
+      "description": "Using lambda expressions for concise code",
+      "language": "java",
+      "code": "import java.util.Arrays;\nimport java.util.List;\n\npublic class LambdaExample {\n  public static void main(String[] args) {\n    List<String> names = Arrays.asList(\"John\", \"Jane\", \"Bob\", \"Alice\");\n    \n    // Traditional approach\n    System.out.println(\"Traditional for-each:\");\n    for (String name : names) {\n      System.out.println(name);\n    }\n    \n    // Lambda expression\n    System.out.println(\"\\nUsing lambda:\");\n    names.forEach(name -> System.out.println(name));\n    \n    // Method reference\n    System.out.println(\"\\nUsing method reference:\");\n    names.forEach(System.out::println);\n    \n    // Filtering with lambda\n    System.out.println(\"\\nNames starting with 'J':\");\n    names.stream()\n         .filter(name -> name.startsWith(\"J\"))\n         .forEach(System.out::println);\n  }\n}"
+    },
+    {
+      "id": "java-snippet-33",
+      "title": "Stream API",
+      "description": "Processing collections with Stream API",
+      "language": "java",
+      "code": "import java.util.Arrays;\nimport java.util.List;\nimport java.util.stream.Collectors;\n\npublic class StreamExample {\n  public static void main(String[] args) {\n    List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);\n    \n    // Filter even numbers and square them\n    List<Integer> result = numbers.stream()\n                                  .filter(n -> n % 2 == 0)\n                                  .map(n -> n * n)\n                                  .collect(Collectors.toList());\n    \n    System.out.println(\"Even numbers squared: \" + result);\n    \n    // Sum of all numbers\n    int sum = numbers.stream().reduce(0, Integer::sum);\n    System.out.println(\"Sum: \" + sum);\n    \n    // Find maximum\n    int max = numbers.stream().max(Integer::compare).get();\n    System.out.println(\"Max: \" + max);\n    \n    // Count elements\n    long count = numbers.stream().count();\n    System.out.println(\"Count: \" + count);\n  }\n}"
+    },
+    {
+      "id": "java-snippet-34",
+      "title": "Optional Class",
+      "description": "Handling potential null values with Optional",
+      "language": "java",
+      "code": "import java.util.Optional;\n\npublic class OptionalExample {\n  public static void main(String[] args) {\n    String name = \"John\";\n    String nullName = null;\n    \n    // Creating Optional objects\n    Optional<String> optionalName = Optional.of(name);\n    Optional<String> optionalNull = Optional.ofNullable(nullName);\n    Optional<String> emptyOptional = Optional.empty();\n    \n    // Check if value is present\n    System.out.println(\"optionalName is present: \" + optionalName.isPresent());\n    System.out.println(\"optionalNull is present: \" + optionalNull.isPresent());\n    \n    // Get value or default\n    String result1 = optionalName.orElse(\"Default Name\");\n    String result2 = optionalNull.orElse(\"Default Name\");\n    \n    System.out.println(\"Result1: \" + result1);\n    System.out.println(\"Result2: \" + result2);\n    \n    // If present, do something\n    optionalName.ifPresent(n -> System.out.println(\"Name: \" + n));\n    optionalNull.ifPresent(n -> System.out.println(\"This won't print\"));\n    \n    // Filter and map\n    Optional<String> filtered = optionalName.filter(n -> n.length() > 3);\n    filtered.ifPresent(n -> System.out.println(\"Filtered name: \" + n));\n  }\n}"
+    },
+    {
+      "id": "java-snippet-35",
+      "title": "Date and Time API",
+      "description": "Working with dates and times in Java 8+",
+      "language": "java",
+      "code": "import java.time.LocalDate;\nimport java.time.LocalDateTime;\nimport java.time.LocalTime;\nimport java.time.format.DateTimeFormatter;\nimport java.time.temporal.ChronoUnit;\n\npublic class DateTimeExample {\n  public static void main(String[] args) {\n    // Current date and time\n    LocalDate currentDate = LocalDate.now();\n    LocalTime currentTime = LocalTime.now();\n    LocalDateTime currentDateTime = LocalDateTime.now();\n    \n    System.out.println(\"Current Date: \" + currentDate);\n    System.out.println(\"Current Time: \" + currentTime);\n    System.out.println(\"Current DateTime: \" + currentDateTime);\n    \n    // Specific date\n    LocalDate specificDate = LocalDate.of(2023, 12, 25);\n    System.out.println(\"Christmas: \" + specificDate);\n    \n    // Date calculations\n    LocalDate tomorrow = currentDate.plusDays(1);\n    LocalDate nextWeek = currentDate.plusWeeks(1);\n    LocalDate nextMonth = currentDate.plusMonths(1);\n    LocalDate nextYear = currentDate.plusYears(1);\n    \n    System.out.println(\"Tomorrow: \" + tomorrow);\n    System.out.println(\"Next week: \" + nextWeek);\n    System.out.println(\"Next month: \" + nextMonth);\n    System.out.println(\"Next year: \" + nextYear);\n    \n    // Date difference\n    long daysBetween = ChronoUnit.DAYS.between(currentDate, specificDate);\n    System.out.println(\"Days until Christmas: \" + daysBetween);\n    \n    // Formatting\n    DateTimeFormatter formatter = DateTimeFormatter.ofPattern(\"yyyy-MM-dd HH:mm:ss\");\n    String formattedDateTime = currentDateTime.format(formatter);\n    System.out.println(\"Formatted DateTime: \" + formattedDateTime);\n  }\n}"
+    },
+    {
+      "id": "java-snippet-36",
+      "title": "JDBC Database Connection",
+      "description": "Connecting to database using JDBC",
+      "language": "java",
+      "code": "import java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.ResultSet;\nimport java.sql.SQLException;\nimport java.sql.Statement;\n\npublic class JdbcExample {\n  public static void main(String[] args) {\n    String url = \"jdbc:mysql://localhost:3306/mydatabase\";\n    String username = \"root\";\n    String password = \"password\";\n    \n    try (Connection connection = DriverManager.getConnection(url, username, password)) {\n      System.out.println(\"Database connected!\");\n      \n      // Create statement\n      Statement statement = connection.createStatement();\n      \n      // Create table\n      String createTableSQL = \"CREATE TABLE IF NOT EXISTS users (\" +\n                             \"id INT AUTO_INCREMENT PRIMARY KEY, \" +\n                             \"name VARCHAR(50) NOT NULL, \" +\n                             \"email VARCHAR(50) NOT NULL)\";\n      statement.execute(createTableSQL);\n      \n      // Insert data\n      String insertSQL = \"INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com')\";\n      int rowsInserted = statement.executeUpdate(insertSQL);\n      System.out.println(rowsInserted + \" row(s) inserted.\");\n      \n      // Query data\n      String selectSQL = \"SELECT * FROM users\";\n      ResultSet resultSet = statement.executeQuery(selectSQL);\n      \n      while (resultSet.next()) {\n        int id = resultSet.getInt(\"id\");\n        String name = resultSet.getString(\"name\");\n        String email = resultSet.getString(\"email\");\n        System.out.println(\"ID: \" + id + \", Name: \" + name + \", Email: \" + email);\n      }\n      \n    } catch (SQLException e) {\n      System.out.println(\"Database connection failed: \" + e.getMessage());\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-37",
+      "title": "JDBC PreparedStatement",
+      "description": "Using PreparedStatement for parameterized queries",
+      "language": "java",
+      "code": "import java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.PreparedStatement;\nimport java.sql.ResultSet;\nimport java.sql.SQLException;\n\npublic class PreparedStatementExample {\n  public static void main(String[] args) {\n    String url = \"jdbc:mysql://localhost:3306/mydatabase\";\n    String username = \"root\";\n    String password = \"password\";\n    \n    try (Connection connection = DriverManager.getConnection(url, username, password)) {\n      System.out.println(\"Database connected!\");\n      \n      // Insert data with PreparedStatement\n      String insertSQL = \"INSERT INTO users (name, email) VALUES (?, ?)\";\n      PreparedStatement insertStatement = connection.prepareStatement(insertSQL);\n      \n      insertStatement.setString(1, \"Alice Smith\");\n      insertStatement.setString(2, \"alice@example.com\");\n      insertStatement.executeUpdate();\n      \n      insertStatement.setString(1, \"Bob Johnson\");\n      insertStatement.setString(2, \"bob@example.com\");\n      insertStatement.executeUpdate();\n      \n      System.out.println(\"Data inserted successfully.\");\n      \n      // Query with parameter\n      String selectSQL = \"SELECT * FROM users WHERE name = ?\";\n      PreparedStatement selectStatement = connection.prepareStatement(selectSQL);\n      selectStatement.setString(1, \"Alice Smith\");\n      \n      ResultSet resultSet = selectStatement.executeQuery();\n      while (resultSet.next()) {\n        System.out.println(\"ID: \" + resultSet.getInt(\"id\") + \n                          \", Name: \" + resultSet.getString(\"name\") + \n                          \", Email: \" + resultSet.getString(\"email\"));\n      }\n      \n    } catch (SQLException e) {\n      System.out.println(\"Database operation failed: \" + e.getMessage());\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-38",
+      "title": "Enum Example",
+      "description": "Defining and using enumerations",
+      "language": "java",
+      "code": "enum Day {\n  SUNDAY(\"Weekend\"),\n  MONDAY(\"Weekday\"),\n  TUESDAY(\"Weekday\"),\n  WEDNESDAY(\"Weekday\"),\n  THURSDAY(\"Weekday\"),\n  FRIDAY(\"Weekday\"),\n  SATURDAY(\"Weekend\");\n  \n  private String type;\n  \n  Day(String type) {\n    this.type = type;\n  }\n  \n  public String getType() {\n    return type;\n  }\n}\n\npublic class EnumExample {\n  public static void main(String[] args) {\n    Day today = Day.MONDAY;\n    \n    System.out.println(\"Today is: \" + today);\n    System.out.println(\"Type: \" + today.getType());\n    System.out.println(\"Ordinal: \" + today.ordinal());\n    \n    // Switch statement with enum\n    switch (today) {\n      case MONDAY:\n        System.out.println(\"Start of the work week\");\n        break;\n      case FRIDAY:\n        System.out.println(\"End of the work week\");\n        break;\n      default:\n        System.out.println(\"Midweek\");\n    }\n    \n    // Iterate through all enum values\n    System.out.println(\"\\nAll days:\");\n    for (Day day : Day.values()) {\n      System.out.println(day + \" (\" + day.getType() + \")\");\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-39",
+      "title": "Annotation Example",
+      "description": "Creating and using custom annotations",
+      "language": "java",
+      "code": "import java.lang.annotation.ElementType;\nimport java.lang.annotation.Retention;\nimport java.lang.annotation.RetentionPolicy;\nimport java.lang.annotation.Target;\n\n// Custom annotation definition\n@Retention(RetentionPolicy.RUNTIME)\n@Target(ElementType.METHOD)\n@interface MyAnnotation {\n  String value() default \"Default value\";\n  int count() default 0;\n}\n\nclass AnnotationTest {\n  // Using the custom annotation\n  @MyAnnotation(value = \"Test method\", count = 5)\n  public void testMethod() {\n    System.out.println(\"Testing custom annotation\");\n  }\n  \n  @MyAnnotation // Using default values\n  public void anotherMethod() {\n    System.out.println(\"Another method\");\n  }\n}\n\npublic class AnnotationExample {\n  public static void main(String[] args) {\n    AnnotationTest test = new AnnotationTest();\n    test.testMethod();\n    test.anotherMethod();\n    \n    // Reflection to read annotations\n    try {\n      Class<?> clazz = AnnotationTest.class;\n      java.lang.reflect.Method method = clazz.getMethod(\"testMethod\");\n      MyAnnotation annotation = method.getAnnotation(MyAnnotation.class);\n      \n      if (annotation != null) {\n        System.out.println(\"Annotation value: \" + annotation.value());\n        System.out.println(\"Annotation count: \" + annotation.count());\n      }\n    } catch (NoSuchMethodException e) {\n      e.printStackTrace();\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-40",
+      "title": "Reflection Example",
+      "description": "Inspecting classes at runtime using reflection",
+      "language": "java",
+      "code": "import java.lang.reflect.Constructor;\nimport java.lang.reflect.Field;\nimport java.lang.reflect.Method;\n\nclass Person {\n  private String name;\n  private int age;\n  \n  public Person() {}\n  \n  public Person(String name, int age) {\n    this.name = name;\n    this.age = age;\n  }\n  \n  public String getName() {\n    return name;\n  }\n  \n  public void setName(String name) {\n    this.name = name;\n  }\n  \n  public int getAge() {\n    return age;\n  }\n  \n  public void setAge(int age) {\n    this.age = age;\n  }\n  \n  private void privateMethod() {\n    System.out.println(\"This is a private method\");\n  }\n}\n\npublic class ReflectionExample {\n  public static void main(String[] args) {\n    try {\n      // Get Class object\n      Class<?> personClass = Class.forName(\"Person\");\n      \n      // Get constructors\n      System.out.println(\"Constructors:\");\n      Constructor<?>[] constructors = personClass.getConstructors();\n      for (Constructor<?> constructor : constructors) {\n        System.out.println(\"  \" + constructor);\n      }\n      \n      // Get methods\n      System.out.println(\"\\nMethods:\");\n      Method[] methods = personClass.getMethods();\n      for (Method method : methods) {\n        System.out.println(\"  \" + method.getName());\n      }\n      \n      // Get declared fields (including private)\n      System.out.println(\"\\nFields:\");\n      Field[] fields = personClass.getDeclaredFields();\n      for (Field field : fields) {\n        System.out.println(\"  \" + field.getName() + \" (\" + field.getType() + \")\");\n      }\n      \n      // Create instance using reflection\n      Constructor<?> constructor = personClass.getConstructor(String.class, int.class);\n      Person person = (Person) constructor.newInstance(\"John\", 30);\n      System.out.println(\"\\nCreated person: \" + person.getName() + \", \" + person.getAge());\n      \n      // Access private method\n      Method privateMethod = personClass.getDeclaredMethod(\"privateMethod\");\n      privateMethod.setAccessible(true);\n      privateMethod.invoke(person);\n      \n    } catch (Exception e) {\n      e.printStackTrace();\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-41",
+      "title": "Varargs Example",
+      "description": "Using variable arguments in methods",
+      "language": "java",
+      "code": "public class VarargsExample {\n  \n  // Method with varargs\n  public static void printNumbers(int... numbers) {\n    System.out.println(\"Number of arguments: \" + numbers.length);\n    for (int num : numbers) {\n      System.out.print(num + \" \");\n    }\n    System.out.println();\n  }\n  \n  // Method with normal parameter and varargs\n  public static void printValues(String message, double... values) {\n    System.out.print(message + \": \");\n    for (double val : values) {\n      System.out.print(val + \" \");\n    }\n    System.out.println();\n  }\n  \n  public static void main(String[] args) {\n    // Calling with different number of arguments\n    printNumbers(1);\n    printNumbers(1, 2);\n    printNumbers(1, 2, 3, 4, 5);\n    printNumbers(); // Empty varargs\n    \n    printValues(\"Values\", 1.1, 2.2, 3.3);\n    printValues(\"No values\");\n    \n    // Passing array to varargs\n    int[] arr = {10, 20, 30};\n    printNumbers(arr);\n  }\n}"
+    },
+    {
+      "id": "java-snippet-42",
+      "title": "Singleton Pattern",
+      "description": "Implementing singleton design pattern",
+      "language": "java",
+      "code": "class Singleton {\n  // Private static instance\n  private static Singleton instance;\n  \n  // Private constructor to prevent instantiation\n  private Singleton() {\n    System.out.println(\"Singleton instance created\");\n  }\n  \n  // Public static method to get instance\n  public static Singleton getInstance() {\n    if (instance == null) {\n      instance = new Singleton();\n    }\n    return instance;\n  }\n  \n  // Instance method\n  public void showMessage() {\n    System.out.println(\"Hello from Singleton!\");\n  }\n}\n\npublic class SingletonExample {\n  public static void main(String[] args) {\n    // Get the singleton instance\n    Singleton singleton1 = Singleton.getInstance();\n    singleton1.showMessage();\n    \n    // Try to get another instance\n    Singleton singleton2 = Singleton.getInstance();\n    singleton2.showMessage();\n    \n    // Check if both references point to the same object\n    System.out.println(\"Are both instances the same? \" + (singleton1 == singleton2));\n    \n    // Try to create instance using reflection (will fail due to private constructor)\n    try {\n      // This would throw an exception\n      // Singleton illegalInstance = new Singleton();\n    } catch (Exception e) {\n      System.out.println(\"Cannot instantiate Singleton: \" + e.getMessage());\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-43",
+      "title": "Factory Pattern",
+      "description": "Implementing factory design pattern",
+      "language": "java",
+      "code": "// Product interface\ninterface Shape {\n  void draw();\n}\n\n// Concrete products\nclass Circle implements Shape {\n  @Override\n  public void draw() {\n    System.out.println(\"Drawing a Circle\");\n  }\n}\n\nclass Rectangle implements Shape {\n  @Override\n  public void draw() {\n    System.out.println(\"Drawing a Rectangle\");\n  }\n}\n\nclass Square implements Shape {\n  @Override\n  public void draw() {\n    System.out.println(\"Drawing a Square\");\n  }\n}\n\n// Factory class\nclass ShapeFactory {\n  // Factory method\n  public Shape getShape(String shapeType) {\n    if (shapeType == null) {\n      return null;\n    }\n    \n    if (shapeType.equalsIgnoreCase(\"CIRCLE\")) {\n      return new Circle();\n    } else if (shapeType.equalsIgnoreCase(\"RECTANGLE\")) {\n      return new Rectangle();\n    } else if (shapeType.equalsIgnoreCase(\"SQUARE\")) {\n      return new Square();\n    }\n    \n    return null;\n  }\n}\n\npublic class FactoryPatternExample {\n  public static void main(String[] args) {\n    ShapeFactory shapeFactory = new ShapeFactory();\n    \n    // Get Circle object and call its draw method\n    Shape shape1 = shapeFactory.getShape(\"CIRCLE\");\n    shape1.draw();\n    \n    // Get Rectangle object and call its draw method\n    Shape shape2 = shapeFactory.getShape(\"RECTANGLE\");\n    shape2.draw();\n    \n    // Get Square object and call its draw method\n    Shape shape3 = shapeFactory.getShape(\"SQUARE\");\n    shape3.draw();\n  }\n}"
+    },
+    {
+      "id": "java-snippet-44",
+      "title": "Observer Pattern",
+      "description": "Implementing observer design pattern",
+      "language": "java",
+      "code": "import java.util.ArrayList;\nimport java.util.List;\n\n// Observer interface\ninterface Observer {\n  void update(String message);\n}\n\n// Subject interface\ninterface Subject {\n  void registerObserver(Observer observer);\n  void removeObserver(Observer observer);\n  void notifyObservers();\n}\n\n// Concrete subject\nclass NewsAgency implements Subject {\n  private List<Observer> observers;\n  private String news;\n  \n  public NewsAgency() {\n    observers = new ArrayList<>();\n  }\n  \n  @Override\n  public void registerObserver(Observer observer) {\n    observers.add(observer);\n  }\n  \n  @Override\n  public void removeObserver(Observer observer) {\n    observers.remove(observer);\n  }\n  \n  @Override\n  public void notifyObservers() {\n    for (Observer observer : observers) {\n      observer.update(news);\n    }\n  }\n  \n  public void setNews(String news) {\n    this.news = news;\n    notifyObservers();\n  }\n}\n\n// Concrete observers\nclass NewsChannel implements Observer {\n  private String name;\n  private String news;\n  \n  public NewsChannel(String name) {\n    this.name = name;\n  }\n  \n  @Override\n  public void update(String news) {\n    this.news = news;\n    display();\n  }\n  \n  public void display() {\n    System.out.println(name + \" broadcasting: \" + news);\n  }\n}\n\npublic class ObserverPatternExample {\n  public static void main(String[] args) {\n    NewsAgency agency = new NewsAgency();\n    \n    NewsChannel channel1 = new NewsChannel(\"CNN\");\n    NewsChannel channel2 = new NewsChannel(\"BBC\");\n    NewsChannel channel3 = new NewsChannel(\"Al Jazeera\");\n    \n    agency.registerObserver(channel1);\n    agency.registerObserver(channel2);\n    agency.registerObserver(channel3);\n    \n    agency.setNews(\"Breaking: Java 17 released with new features!\");\n    \n    System.out.println(\"\\nRemoving BBC from observers...\");\n    agency.removeObserver(channel2);\n    \n    agency.setNews(\"Update: Java developers excited about new release!\");\n  }\n}"
+    },
+    {
+      "id": "java-snippet-45",
+      "title": "Java NIO File Operations",
+      "description": "Using Java NIO for file operations",
+      "language": "java",
+      "code": "import java.io.IOException;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\nimport java.nio.file.StandardCopyOption;\nimport java.util.List;\n\npublic class NioExample {\n  public static void main(String[] args) {\n    try {\n      // Create directory\n      Path dirPath = Paths.get(\"test_dir\");\n      if (!Files.exists(dirPath)) {\n        Files.createDirectory(dirPath);\n        System.out.println(\"Directory created: \" + dirPath.toAbsolutePath());\n      }\n      \n      // Create file\n      Path filePath = Paths.get(\"test_dir/test_file.txt\");\n      if (!Files.exists(filePath)) {\n        Files.createFile(filePath);\n        System.out.println(\"File created: \" + filePath.toAbsolutePath());\n      }\n      \n      // Write to file\n      String content = \"Hello Java NIO!\\nThis is a test file.\";\n      Files.write(filePath, content.getBytes());\n      System.out.println(\"Content written to file\");\n      \n      // Read from file\n      List<String> lines = Files.readAllLines(filePath);\n      System.out.println(\"File content:\");\n      for (String line : lines) {\n        System.out.println(line);\n      }\n      \n      // Copy file\n      Path copyPath = Paths.get(\"test_dir/test_file_copy.txt\");\n      Files.copy(filePath, copyPath, StandardCopyOption.REPLACE_EXISTING);\n      System.out.println(\"File copied to: \" + copyPath.getFileName());\n      \n      // Get file information\n      System.out.println(\"File size: \" + Files.size(filePath) + \" bytes\");\n      System.out.println(\"Is readable: \" + Files.isReadable(filePath));\n      System.out.println(\"Is writable: \" + Files.isWritable(filePath));\n      \n      // Delete file\n      Files.deleteIfExists(copyPath);\n      System.out.println(\"Copy file deleted\");\n      \n    } catch (IOException e) {\n      System.out.println(\"IO Error: \" + e.getMessage());\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-46",
+      "title": "Java Networking",
+      "description": "Basic networking with sockets",
+      "language": "java",
+      "code": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.io.PrintWriter;\nimport java.net.ServerSocket;\nimport java.net.Socket;\n\nclass SimpleServer {\n  public static void main(String[] args) {\n    try (ServerSocket serverSocket = new ServerSocket(8080)) {\n      System.out.println(\"Server started on port 8080\");\n      \n      while (true) {\n        try (Socket clientSocket = serverSocket.accept();\n             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);\n             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))) {\n          \n          System.out.println(\"Client connected: \" + clientSocket.getInetAddress());\n          \n          String inputLine;\n          while ((inputLine = in.readLine()) != null) {\n            System.out.println(\"Received: \" + inputLine);\n            out.println(\"Echo: \" + inputLine);\n            \n            if (inputLine.equals(\"exit\")) {\n              break;\n            }\n          }\n        } catch (IOException e) {\n          System.out.println(\"Error handling client: \" + e.getMessage());\n        }\n      }\n    } catch (IOException e) {\n      System.out.println(\"Could not start server: \" + e.getMessage());\n    }\n  }\n}\n\nclass SimpleClient {\n  public static void main(String[] args) {\n    try (Socket socket = new Socket(\"localhost\", 8080);\n         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);\n         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));\n         BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in))) {\n      \n      System.out.println(\"Connected to server\");\n      \n      String userInput;\n      while ((userInput = stdIn.readLine()) != null) {\n        out.println(userInput);\n        System.out.println(\"Server response: \" + in.readLine());\n        \n        if (userInput.equals(\"exit\")) {\n          break;\n        }\n      }\n    } catch (IOException e) {\n      System.out.println(\"Could not connect to server: \" + e.getMessage());\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-47",
+      "title": "Java Logging",
+      "description": "Using Java's built-in logging framework",
+      "language": "java",
+      "code": "import java.util.logging.Level;\nimport java.util.logging.Logger;\n\npublic class LoggingExample {\n  // Create a logger\n  private static final Logger logger = Logger.getLogger(LoggingExample.class.getName());\n  \n  public static void main(String[] args) {\n    // Log messages at different levels\n    logger.severe(\"This is a severe message\");\n    logger.warning(\"This is a warning message\");\n    logger.info(\"This is an info message\");\n    logger.config(\"This is a config message\");\n    logger.fine(\"This is a fine message\");\n    logger.finer(\"This is a finer message\");\n    logger.finest(\"This is the finest message\");\n    \n    // Log with parameters\n    String user = \"John\";\n    int age = 30;\n    logger.log(Level.INFO, \"User {0} is {1} years old\", new Object[]{user, age});\n    \n    // Log an exception\n    try {\n      int result = 10 / 0;\n    } catch (Exception e) {\n      logger.log(Level.SEVERE, \"An error occurred\", e);\n    }\n    \n    // Conditional logging\n    if (logger.isLoggable(Level.FINE)) {\n      logger.fine(\"This is expensive to compute: \" + expensiveOperation());\n    }\n  }\n  \n  private static String expensiveOperation() {\n    // Simulate expensive operation\n    try {\n      Thread.sleep(100);\n    } catch (InterruptedException e) {\n      logger.warning(\"Sleep interrupted\");\n    }\n    return \"Expensive result\";\n  }\n}"
+    },
+    {
+      "id": "java-snippet-48",
+      "title": "JUnit Testing",
+      "description": "Writing unit tests with JUnit",
+      "language": "java",
+      "code": "import org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.DisplayName;\nimport static org.junit.jupiter.api.Assertions.*;\n\nclass Calculator {\n  public int add(int a, int b) {\n    return a + b;\n  }\n  \n  public int subtract(int a, int b) {\n    return a - b;\n  }\n  \n  public int multiply(int a, int b) {\n    return a * b;\n  }\n  \n  public double divide(int a, int b) {\n    if (b == 0) {\n      throw new IllegalArgumentException(\"Cannot divide by zero\");\n    }\n    return (double) a / b;\n  }\n}\n\nclass CalculatorTest {\n  private Calculator calculator;\n  \n  @BeforeEach\n  void setUp() {\n    calculator = new Calculator();\n  }\n  \n  @Test\n  @DisplayName(\"Test addition\")\n  void testAdd() {\n    assertEquals(5, calculator.add(2, 3), \"2 + 3 should equal 5\");\n    assertEquals(0, calculator.add(-2, 2), \"-2 + 2 should equal 0\");\n  }\n  \n  @Test\n  @DisplayName(\"Test subtraction\")\n  void testSubtract() {\n    assertEquals(1, calculator.subtract(3, 2), \"3 - 2 should equal 1\");\n    assertEquals(-5, calculator.subtract(2, 7), \"2 - 7 should equal -5\");\n  }\n  \n  @Test\n  @DisplayName(\"Test multiplication\")\n  void testMultiply() {\n    assertEquals(6, calculator.multiply(2, 3), \"2 * 3 should equal 6\");\n    assertEquals(0, calculator.multiply(5, 0), \"5 * 0 should equal 0\");\n  }\n  \n  @Test\n  @DisplayName(\"Test division\")\n  void testDivide() {\n    assertEquals(2.0, calculator.divide(4, 2), \"4 / 2 should equal 2.0\");\n    assertEquals(2.5, calculator.divide(5, 2), \"5 / 2 should equal 2.5\");\n  }\n  \n  @Test\n  @DisplayName(\"Test division by zero\")\n  void testDivideByZero() {\n    Exception exception = assertThrows(IllegalArgumentException.class, () -> {\n      calculator.divide(5, 0);\n    });\n    \n    String expectedMessage = \"Cannot divide by zero\";\n    String actualMessage = exception.getMessage();\n    \n    assertTrue(actualMessage.contains(expectedMessage));\n  }\n  \n  @Test\n  @DisplayName(\"Test multiple operations\")\n  void testMultipleOperations() {\n    assertAll(\"Multiple operations\",\n      () -> assertEquals(5, calculator.add(2, 3)),\n      () -> assertEquals(6, calculator.multiply(2, 3)),\n      () -> assertEquals(1, calculator.subtract(3, 2)),\n      () -> assertEquals(2.0, calculator.divide(4, 2))\n    );\n  }\n}"
+    },
+    {
+      "id": "java-snippet-49",
+      "title": "Java Records",
+      "description": "Using records (Java 14+) for data classes",
+      "language": "java",
+      "code": "// Record declaration (compact class for data)\nrecord Person(String name, int age, String email) {\n  // Compact constructor for validation\n  public Person {\n    if (age < 0) {\n      throw new IllegalArgumentException(\"Age cannot be negative\");\n    }\n    if (email == null || !email.contains(\"@\")) {\n      throw new IllegalArgumentException(\"Invalid email\");\n    }\n  }\n  \n  // Additional method\n  public String greet() {\n    return \"Hello, \" + name + \"!\";\n  }\n}\n\npublic class RecordExample {\n  public static void main(String[] args) {\n    try {\n      // Create record instance\n      Person person = new Person(\"John Doe\", 30, \"john@example.com\");\n      \n      // Access components\n      System.out.println(\"Name: \" + person.name());\n      System.out.println(\"Age: \" + person.age());\n      System.out.println(\"Email: \" + person.email());\n      \n      // Call custom method\n      System.out.println(person.greet());\n      \n      // toString() is automatically implemented\n      System.out.println(\"Person details: \" + person);\n      \n      // equals() and hashCode() are automatically implemented\n      Person person2 = new Person(\"John Doe\", 30, \"john@example.com\");\n      System.out.println(\"Are persons equal? \" + person.equals(person2));\n      \n      // This will throw an exception\n      // Person invalidPerson = new Person(\"Invalid\", -5, \"invalid\");\n      \n    } catch (IllegalArgumentException e) {\n      System.out.println(\"Error creating person: \" + e.getMessage());\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-50",
+      "title": "Sealed Classes",
+      "description": "Using sealed classes (Java 17+) for controlled inheritance",
+      "language": "java",
+      "code": "// Sealed class declaration\nsealed abstract class Shape permits Circle, Rectangle, Square {\n  public abstract double area();\n}\n\n// Permitted subclasses\nfinal class Circle extends Shape {\n  private final double radius;\n  \n  public Circle(double radius) {\n    this.radius = radius;\n  }\n  \n  @Override\n  public double area() {\n    return Math.PI * radius * radius;\n  }\n}\n\nfinal class Rectangle extends Shape {\n  private final double width;\n  private final double height;\n  \n  public Rectangle(double width, double height) {\n    this.width = width;\n    this.height = height;\n  }\n  \n  @Override\n  public double area() {\n    return width * height;\n  }\n}\n\nnon-sealed class Square extends Shape {\n  private final double side;\n  \n  public Square(double side) {\n    this.side = side;\n  }\n  \n  @Override\n  public double area() {\n    return side * side;\n  }\n}\n\n// Can extend non-sealed class\nclass ColoredSquare extends Square {\n  private final String color;\n  \n  public ColoredSquare(double side, String color) {\n    super(side);\n    this.color = color;\n  }\n  \n  public String getColor() {\n    return color;\n  }\n}\n\npublic class SealedClassesExample {\n  public static void main(String[] args) {\n    Shape circle = new Circle(5.0);\n    Shape rectangle = new Rectangle(4.0, 6.0);\n    Shape square = new Square(4.0);\n    Shape coloredSquare = new ColoredSquare(3.0, \"Red\");\n    \n    System.out.println(\"Circle area: \" + circle.area());\n    System.out.println(\"Rectangle area: \" + rectangle.area());\n    System.out.println(\"Square area: \" + square.area());\n    System.out.println(\"Colored square area: \" + coloredSquare.area());\n    \n    // Pattern matching with instanceof (Java 16+)\n    if (coloredSquare instanceof ColoredSquare cs) {\n      System.out.println(\"Square color: \" + cs.getColor());\n    }\n    \n    // Using switch expression with pattern matching (Java 17+)\n    String shapeDescription = switch (square) {\n      case Circle c -> \"Circle with area \" + c.area();\n      case Rectangle r -> \"Rectangle with area \" + r.area();\n      case Square s -> \"Square with area \" + s.area();\n      case ColoredSquare cs -> \"Colored square with area \" + cs.area() + \" and color \" + cs.getColor();\n      default -> \"Unknown shape\";\n    };\n    \n    System.out.println(shapeDescription);\n  }\n}"
+    },
+    {
+      "id": "java-snippet-51",
+      "title": "Pattern Matching",
+      "description": "Using pattern matching with instanceof",
+      "language": "java",
+      "code": "abstract class Animal {\n  public abstract String makeSound();\n}\n\nclass Dog extends Animal {\n  @Override\n  public String makeSound() {\n    return \"Woof!\";\n  }\n  \n  public String fetch() {\n    return \"Fetching the ball!\";\n  }\n}\n\nclass Cat extends Animal {\n  @Override\n  public String makeSound() {\n    return \"Meow!\";\n  }\n  \n  public String climb() {\n    return \"Climbing the tree!\";\n  }\n}\n\npublic class PatternMatchingExample {\n  public static void main(String[] args) {\n    Animal[] animals = {new Dog(), new Cat(), new Dog()};\n    \n    // Traditional approach\n    System.out.println(\"Traditional approach:\");\n    for (Animal animal : animals) {\n      if (animal instanceof Dog) {\n        Dog dog = (Dog) animal;\n        System.out.println(dog.fetch());\n      } else if (animal instanceof Cat) {\n        Cat cat = (Cat) animal;\n        System.out.println(cat.climb());\n      }\n    }\n    \n    // Pattern matching (Java 16+)\n    System.out.println(\"\\nPattern matching:\");\n    for (Animal animal : animals) {\n      if (animal instanceof Dog dog) {\n        System.out.println(dog.fetch());\n      } else if (animal instanceof Cat cat) {\n        System.out.println(cat.climb());\n      }\n    }\n    \n    // Using pattern matching in switch (Java 17+)\n    System.out.println(\"\\nPattern matching in switch:\");\n    for (Animal animal : animals) {\n      String result = switch (animal) {\n        case Dog dog -> dog.fetch();\n        case Cat cat -> cat.climb();\n        default -> \"Unknown animal\";\n      };\n      System.out.println(result);\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-52",
+      "title": "Text Blocks",
+      "description": "Using text blocks (Java 15+) for multiline strings",
+      "language": "java",
+      "code": "public class TextBlocksExample {\n  public static void main(String[] args) {\n    // Traditional approach with concatenation\n    String traditionalHtml = \"<html>\\n\" +\n                           \"    <body>\\n\" +\n                           \"        <h1>Hello, World!</h1>\\n\" +\n                           \"    </body>\\n\" +\n                           \"</html>\";\n    \n    System.out.println(\"Traditional HTML:\");\n    System.out.println(traditionalHtml);\n    \n    // Using text blocks\n    String textBlockHtml = \"\"\"\n                          <html>\n                              <body>\n                                  <h1>Hello, Text Blocks!</h1>\n                              </body>\n                          </html>\n                          \"\"\";\n    \n    System.out.println(\"\\nText Block HTML:\");\n    System.out.println(textBlockHtml);\n    \n    // Text blocks with interpolation\n    String name = \"John\";\n    int age = 30;\n    \n    String message = \"\"\"\n                    Hello, %s!\n                    You are %d years old.\n                    \"\"\".formatted(name, age);\n    \n    System.out.println(\"\\nFormatted message:\");\n    System.out.println(message);\n    \n    // JSON example\n    String json = \"\"\"\n                 {\n                   \"name\": \"John Doe\",\n                   \"age\": 30,\n                   \"email\": \"john@example.com\",\n                   \"hobbies\": [\"reading\", \"gaming\", \"coding\"]\n                 }\n                 \"\"\";\n    \n    System.out.println(\"\\nJSON example:\");\n    System.out.println(json);\n    \n    // SQL query example\n    String sql = \"\"\"\n                SELECT id, name, email\n                FROM users\n                WHERE age > 18\n                ORDER BY name ASC\n                \"\"\";\n    \n    System.out.println(\"\\nSQL example:\");\n    System.out.println(sql);\n  }\n}"
+    },
+    {
+      "id": "java-snippet-53",
+      "title": "HTTP Client",
+      "description": "Making HTTP requests with Java 11+ HttpClient",
+      "language": "java",
+      "code": "import java.net.URI;\nimport java.net.http.HttpClient;\nimport java.net.http.HttpRequest;\nimport java.net.http.HttpResponse;\nimport java.time.Duration;\n\npublic class HttpClientExample {\n  public static void main(String[] args) {\n    // Create HttpClient\n    HttpClient client = HttpClient.newBuilder()\n        .version(HttpClient.Version.HTTP_2)\n        .connectTimeout(Duration.ofSeconds(10))\n        .build();\n    \n    // Create HTTP GET request\n    HttpRequest request = HttpRequest.newBuilder()\n        .uri(URI.create(\"https://jsonplaceholder.typicode.com/posts/1\"))\n        .GET()\n        .header(\"Accept\", \"application/json\")\n        .build();\n    \n    try {\n      // Send request and get response\n      HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());\n      \n      // Print response details\n      System.out.println(\"Status Code: \" + response.statusCode());\n      System.out.println(\"Response Body:\");\n      System.out.println(response.body());\n      \n    } catch (Exception e) {\n      System.out.println(\"Error making HTTP request: \" + e.getMessage());\n    }\n    \n    // Async request example\n    System.out.println(\"\\nMaking async request...\");\n    HttpRequest asyncRequest = HttpRequest.newBuilder()\n        .uri(URI.create(\"https://jsonplaceholder.typicode.com/posts/2\"))\n        .GET()\n        .build();\n    \n    client.sendAsync(asyncRequest, HttpResponse.BodyHandlers.ofString())\n        .thenApply(HttpResponse::body)\n        .thenAccept(body -> {\n          System.out.println(\"Async Response:\");\n          System.out.println(body);\n        })\n        .join(); // Wait for async operation to complete\n    \n    // POST request example\n    System.out.println(\"\\nMaking POST request...\");\n    String jsonBody = \"\"\"\n                    {\n                      \"title\": \"foo\",\n                      \"body\": \"bar\",\n                      \"userId\": 1\n                    }\n                    \"\"\";\n    \n    HttpRequest postRequest = HttpRequest.newBuilder()\n        .uri(URI.create(\"https://jsonplaceholder.typicode.com/posts\"))\n        .POST(HttpRequest.BodyPublishers.ofString(jsonBody))\n        .header(\"Content-Type\", \"application/json\")\n        .build();\n    \n    try {\n      HttpResponse<String> postResponse = client.send(postRequest, HttpResponse.BodyHandlers.ofString());\n      System.out.println(\"POST Response Status: \" + postResponse.statusCode());\n      System.out.println(\"POST Response Body:\");\n      System.out.println(postResponse.body());\n    } catch (Exception e) {\n      System.out.println(\"Error making POST request: \" + e.getMessage());\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-54",
+      "title": "Process API",
+      "description": "Working with processes using Process API",
+      "language": "java",
+      "code": "import java.io.IOException;\nimport java.time.Duration;\nimport java.time.Instant;\nimport java.util.Optional;\nimport java.util.stream.Stream;\n\npublic class ProcessApiExample {\n  public static void main(String[] args) {\n    // Get current process information\n    ProcessHandle currentProcess = ProcessHandle.current();\n    System.out.println(\"Current Process ID: \" + currentProcess.pid());\n    System.out.println(\"Is alive: \" + currentProcess.isAlive());\n    \n    // Get process info\n    Optional<ProcessHandle.Info> info = currentProcess.info();\n    info.ifPresent(processInfo -> {\n      System.out.println(\"Command: \" + processInfo.command().orElse(\"Unknown\"));\n      System.out.println(\"Arguments: \" + \n          String.join(\" \", processInfo.arguments().orElse(new String[]{})));\n      System.out.println(\"Start time: \" + processInfo.startInstant().orElse(Instant.now()));\n      System.out.println(\"CPU duration: \" + processInfo.totalCpuDuration().orElse(Duration.ZERO));\n      System.out.println(\"User: \" + processInfo.user().orElse(\"Unknown\"));\n    });\n    \n    // List all processes\n    System.out.println(\"\\nAll processes:\");\n    Stream<ProcessHandle> allProcesses = ProcessHandle.allProcesses();\n    allProcesses.limit(10).forEach(process -> {\n      System.out.println(\"PID: \" + process.pid() + \n          \", Command: \" + process.info().flatMap(ProcessHandle.Info::command).orElse(\"Unknown\"));\n    });\n    \n    // Start a new process\n    try {\n      ProcessBuilder processBuilder = new ProcessBuilder(\"java\", \"-version\");\n      Process process = processBuilder.start();\n      \n      // Wait for process to complete\n      int exitCode = process.waitFor();\n      System.out.println(\"\\nProcess exited with code: \" + exitCode);\n      \n    } catch (IOException | InterruptedException e) {\n      System.out.println(\"Error starting process: \" + e.getMessage());\n    }\n    \n    // Process destruction and termination\n    try {\n      ProcessBuilder sleepProcessBuilder = new ProcessBuilder(\"sleep\", \"30\");\n      Process sleepProcess = sleepProcessBuilder.start();\n      \n      System.out.println(\"Started sleep process with PID: \" + sleepProcess.pid());\n      \n      // Check if process is alive\n      if (sleepProcess.isAlive()) {\n        System.out.println(\"Sleep process is alive\");\n        \n        // Destroy process\n        sleepProcess.destroy();\n        System.out.println(\"Sleep process destroyed\");\n        \n        // Wait for process to terminate\n        sleepProcess.waitFor();\n        System.out.println(\"Sleep process terminated with exit code: \" + sleepProcess.exitValue());\n      }\n      \n    } catch (IOException | InterruptedException e) {\n      System.out.println(\"Error with sleep process: \" + e.getMessage());\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-55",
+      "title": "CompletableFuture",
+      "description": "Asynchronous programming with CompletableFuture",
+      "language": "java",
+      "code": "import java.util.concurrent.CompletableFuture;\nimport java.util.concurrent.ExecutionException;\nimport java.util.concurrent.TimeUnit;\n\npublic class CompletableFutureExample {\n  public static void main(String[] args) {\n    // Simple CompletableFuture\n    CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> {\n      try {\n        TimeUnit.SECONDS.sleep(1);\n      } catch (InterruptedException e) {\n        throw new IllegalStateException(e);\n      }\n      return \"Result of the asynchronous computation\";\n    });\n    \n    // Block and get the result\n    try {\n      String result = future.get();\n      System.out.println(result);\n    } catch (InterruptedException | ExecutionException e) {\n      e.printStackTrace();\n    }\n    \n    // ThenApply - transforming result\n    CompletableFuture<String> welcomeText = CompletableFuture.supplyAsync(() -> {\n      try {\n        TimeUnit.SECONDS.sleep(1);\n      } catch (InterruptedException e) {\n        throw new IllegalStateException(e);\n      }\n      return \"John\";\n    }).thenApply(name -> {\n      return \"Hello \" + name;\n    }).thenApply(greeting -> {\n      return greeting + \", Welcome to CompletableFuture\";\n    });\n    \n    try {\n      System.out.println(welcomeText.get());\n    } catch (InterruptedException | ExecutionException e) {\n      e.printStackTrace();\n    }\n    \n    // ThenAccept - consuming result\n    CompletableFuture.supplyAsync(() -> {\n      return \"Some result\";\n    }).thenAccept(result -> {\n      System.out.println(\"Received result: \" + result);\n    });\n    \n    // ThenRun - running after completion\n    CompletableFuture.supplyAsync(() -> {\n      return \"Some result\";\n    }).thenRun(() -> {\n      System.out.println(\"Task completed\");\n    });\n    \n    // Combining CompletableFutures\n    CompletableFuture<String> future1 = CompletableFuture.supplyAsync(() -> {\n      return \"Hello\";\n    });\n    \n    CompletableFuture<String> future2 = CompletableFuture.supplyAsync(() -> {\n      return \"World\";\n    });\n    \n    CompletableFuture<String> combined = future1.thenCombine(future2, (s1, s2) -> {\n      return s1 + \" \" + s2;\n    });\n    \n    try {\n      System.out.println(combined.get());\n    } catch (InterruptedException | ExecutionException e) {\n      e.printStackTrace();\n    }\n    \n    // Multiple futures with allOf\n    CompletableFuture<String> future3 = CompletableFuture.supplyAsync(() -> {\n      try {\n        TimeUnit.SECONDS.sleep(2);\n      } catch (InterruptedException e) {\n        throw new IllegalStateException(e);\n      }\n      return \"Future 3\";\n    });\n    \n    CompletableFuture<String> future4 = CompletableFuture.supplyAsync(() -> {\n      try {\n        TimeUnit.SECONDS.sleep(1);\n      } catch (InterruptedException e) {\n        throw new IllegalStateException(e);\n      }\n      return \"Future 4\";\n    });\n    \n    CompletableFuture<Void> allFutures = CompletableFuture.allOf(future3, future4);\n    \n    allFutures.thenRun(() -> {\n      try {\n        System.out.println(\"All futures completed: \" + future3.get() + \", \" + future4.get());\n      } catch (InterruptedException | ExecutionException e) {\n        e.printStackTrace();\n      }\n    });\n    \n    // Exception handling\n    CompletableFuture<String> exceptionalFuture = CompletableFuture.supplyAsync(() -> {\n      if (true) {\n        throw new RuntimeException(\"Exception occurred!\");\n      }\n      return \"Success\";\n    }).exceptionally(ex -> {\n      System.out.println(\"Exception: \" + ex.getMessage());\n      return \"Recovered value\";\n    });\n    \n    try {\n      System.out.println(exceptionalFuture.get());\n    } catch (InterruptedException | ExecutionException e) {\n      e.printStackTrace();\n    }\n    \n    // Wait for all operations to complete\n    try {\n      TimeUnit.SECONDS.sleep(5);\n    } catch (InterruptedException e) {\n      e.printStackTrace();\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-56",
+      "title": "Java Modules",
+      "description": "Creating and using Java modules (JPMS)",
+      "language": "java",
+      "code": "// module-info.java (for com.example.app module)\n/*\nmodule com.example.app {\n    requires java.logging;\n    requires java.sql;\n    requires transitive com.example.utils;\n    \n    exports com.example.app.service;\n    exports com.example.app.model to com.example.client;\n    \n    opens com.example.app.internal to com.example.framework;\n    \n    uses com.example.spi.ServiceProvider;\n    provides com.example.spi.ServiceProvider with com.example.app.provider.MyServiceProvider;\n}\n*/\n\n// Example service interface in com.example.app module\npackage com.example.app.service;\n\npublic interface CalculatorService {\n    double add(double a, double b);\n    double subtract(double a, double b);\n}\n\n// Service implementation\npackage com.example.app.service;\n\npublic class BasicCalculatorService implements CalculatorService {\n    @Override\n    public double add(double a, double b) {\n        return a + b;\n    }\n    \n    @Override\n    public double subtract(double a, double b) {\n        return a - b;\n    }\n}\n\n// Service provider in another package\npackage com.example.app.provider;\n\nimport com.example.app.service.CalculatorService;\n\npublic class AdvancedCalculatorService implements CalculatorService {\n    @Override\n    public double add(double a, double b) {\n        return a + b;\n    }\n    \n    @Override\n    public double subtract(double a, double b) {\n        return a - b;\n    }\n    \n    public double multiply(double a, double b) {\n        return a * b;\n    }\n    \n    public double divide(double a, double b) {\n        if (b == 0) {\n            throw new ArithmeticException(\"Division by zero\");\n        }\n        return a / b;\n    }\n}\n\n// Main class using the module system\npackage com.example.app;\n\nimport com.example.app.service.CalculatorService;\nimport java.util.ServiceLoader;\n\npublic class ModuleApp {\n    public static void main(String[] args) {\n        System.out.println(\"Java Module System Example\");\n        \n        // Using ServiceLoader to load services\n        Iterable<CalculatorService> services = ServiceLoader.load(CalculatorService.class);\n        \n        for (CalculatorService service : services) {\n            System.out.println(\"Service: \" + service.getClass().getName());\n            System.out.println(\"5 + 3 = \" + service.add(5, 3));\n            System.out.println(\"5 - 3 = \" + service.subtract(5, 3));\n            \n            // Check if it's the advanced service\n            if (service instanceof com.example.app.provider.AdvancedCalculatorService) {\n                com.example.app.provider.AdvancedCalculatorService advancedService = \n                    (com.example.app.provider.AdvancedCalculatorService) service;\n                System.out.println(\"5 * 3 = \" + advancedService.multiply(5, 3));\n                System.out.println(\"6 / 3 = \" + advancedService.divide(6, 3));\n            }\n        }\n        \n        // Module information\n        Module appModule = ModuleApp.class.getModule();\n        System.out.println(\"\\nModule name: \" + appModule.getName());\n        System.out.println(\"Is named module: \" + appModule.isNamed());\n        \n        if (appModule.isNamed()) {\n            System.out.println(\"Descriptor: \" + appModule.getDescriptor());\n        }\n    }\n}"
+    },
+    {
+      "id": "java-snippet-57",
+      "title": "Java Security",
+      "description": "Basic security operations in Java",
+      "language": "java",
+      "code": "import java.security.MessageDigest;\nimport java.security.NoSuchAlgorithmException;\nimport java.security.SecureRandom;\nimport java.util.Base64;\nimport javax.crypto.Cipher;\nimport javax.crypto.KeyGenerator;\nimport javax.crypto.SecretKey;\nimport javax.crypto.spec.GCMParameterSpec;\n\npublic class SecurityExample {\n  public static void main(String[] args) {\n    try {\n      // Hashing with SHA-256\n      String input = \"Hello, Security!\";\n      MessageDigest digest = MessageDigest.getInstance(\"SHA-256\");\n      byte[] hash = digest.digest(input.getBytes());\n      \n      System.out.println(\"Input: \" + input);\n      System.out.println(\"SHA-256 Hash: \" + bytesToHex(hash));\n      \n      // Base64 encoding/decoding\n      String original = \"Hello, Base64!\";\n      String encoded = Base64.getEncoder().encodeToString(original.getBytes());\n      String decoded = new String(Base64.getDecoder().decode(encoded));\n      \n      System.out.println(\"\\nOriginal: \" + original);\n      System.out.println(\"Encoded: \" + encoded);\n      System.out.println(\"Decoded: \" + decoded);\n      \n      // Generate random numbers\n      SecureRandom random = SecureRandom.getInstanceStrong();\n      byte[] randomBytes = new byte[16];\n      random.nextBytes(randomBytes);\n      \n      System.out.println(\"\\nRandom bytes: \" + bytesToHex(randomBytes));\n      \n      // AES encryption (simplified example)\n      KeyGenerator keyGen = KeyGenerator.getInstance(\"AES\");\n      keyGen.init(256);\n      SecretKey secretKey = keyGen.generateKey();\n      \n      Cipher cipher = Cipher.getInstance(\"AES/GCM/NoPadding\");\n      byte[] iv = new byte[12]; // 96 bits IV for GCM\n      random.nextBytes(iv);\n      \n      GCMParameterSpec parameterSpec = new GCMParameterSpec(128, iv);\n      \n      // Encryption\n      cipher.init(Cipher.ENCRYPT_MODE, secretKey, parameterSpec);\n      byte[] plaintext = \"Secret message\".getBytes();\n      byte[] ciphertext = cipher.doFinal(plaintext);\n      \n      System.out.println(\"\\nPlaintext: \" + new String(plaintext));\n      System.out.println(\"Ciphertext: \" + bytesToHex(ciphertext));\n      \n      // Decryption\n      cipher.init(Cipher.DECRYPT_MODE, secretKey, parameterSpec);\n      byte[] decryptedText = cipher.doFinal(ciphertext);\n      \n      System.out.println(\"Decrypted: \" + new String(decryptedText));\n      \n    } catch (Exception e) {\n      System.out.println(\"Security error: \" + e.getMessage());\n      e.printStackTrace();\n    }\n  }\n  \n  private static String bytesToHex(byte[] bytes) {\n    StringBuilder result = new StringBuilder();\n    for (byte b : bytes) {\n      result.append(String.format(\"%02x\", b));\n    }\n    return result.toString();\n  }\n}"
+    },
+    {
+      "id": "java-snippet-58",
+      "title": "Java Native Interface",
+      "description": "Basic JNI example",
+      "language": "java",
+      "code": "public class JNIExample {\n  \n  // Load native library\n  static {\n    System.loadLibrary(\"nativeLibrary\");\n  }\n  \n  // Native method declarations\n  public native String getNativeMessage();\n  public native int addNumbers(int a, int b);\n  public native void printArray(int[] array);\n  \n  public static void main(String[] args) {\n    JNIExample example = new JNIExample();\n    \n    // Call native method\n    String message = example.getNativeMessage();\n    System.out.println(\"Native message: \" + message);\n    \n    // Call native method with parameters\n    int sum = example.addNumbers(5, 3);\n    System.out.println(\"5 + 3 = \" + sum);\n    \n    // Call native method with array\n    int[] numbers = {1, 2, 3, 4, 5};\n    example.printArray(numbers);\n  }\n}\n\n/*\n// Corresponding C code (nativeLibrary.c):\n#include <jni.h>\n#include <stdio.h>\n#include \"JNIExample.h\"\n\nJNIEXPORT jstring JNICALL Java_JNIExample_getNativeMessage(JNIEnv *env, jobject obj) {\n    return (*env)->NewStringUTF(env, \"Hello from Native Code!\");\n}\n\nJNIEXPORT jint JNICALL Java_JNIExample_addNumbers(JNIEnv *env, jobject obj, jint a, jint b) {\n    return a + b;\n}\n\nJNIEXPORT void JNICALL Java_JNIExample_printArray(JNIEnv *env, jobject obj, jintArray array) {\n    jsize length = (*env)->GetArrayLength(env, array);\n    jint *elements = (*env)->GetIntArrayElements(env, array, NULL);\n    \n    printf(\"Array from native code: \");\n    for (int i = 0; i < length; i++) {\n        printf(\"%d \", elements[i]);\n    }\n    printf(\"\\n\");\n    \n    (*env)->ReleaseIntArrayElements(env, array, elements, 0);\n}\n*/"
+    },
+    {
+      "id": "java-snippet-59",
+      "title": "Java Management Extensions",
+      "description": "Using JMX for monitoring and management",
+      "language": "java",
+      "code": "import java.lang.management.ManagementFactory;\nimport javax.management.MBeanServer;\nimport javax.management.ObjectName;\n\n// MBean interface\ninterface SystemConfigMBean {\n  void setThreadCount(int threadCount);\n  int getThreadCount();\n  \n  void setSchemaName(String schemaName);\n  String getSchemaName();\n  \n  String doConfig();\n}\n\n// MBean implementation\nclass SystemConfig implements SystemConfigMBean {\n  private int threadCount = 10;\n  private String schemaName = \"default\";\n  \n  @Override\n  public void setThreadCount(int threadCount) {\n    this.threadCount = threadCount;\n  }\n  \n  @Override\n  public int getThreadCount() {\n    return threadCount;\n  }\n  \n  @Override\n  public void setSchemaName(String schemaName) {\n    this.schemaName = schemaName;\n  }\n  \n  @Override\n  public String getSchemaName() {\n    return schemaName;\n  }\n  \n  @Override\n  public String doConfig() {\n    return \"Config set to: ThreadCount=\" + threadCount + \", SchemaName=\" + schemaName;\n  }\n}\n\npublic class JMXExample {\n  public static void main(String[] args) {\n    try {\n      // Get the MBean server\n      MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();\n      \n      // Create object name\n      ObjectName name = new ObjectName(\"com.example:type=SystemConfig\");\n      \n      // Create MBean and register it\n      SystemConfig mbean = new SystemConfig();\n      mbs.registerMBean(mbean, name);\n      \n      System.out.println(\"MBean registered. Use JConsole or VisualVM to connect.\");\n      System.out.println(\"Current config: \" + mbean.doConfig());\n      \n      // Keep the application running\n      System.out.println(\"Waiting for connections...\");\n      Thread.sleep(Long.MAX_VALUE);\n      \n    } catch (Exception e) {\n      System.out.println(\"JMX error: \" + e.getMessage());\n      e.printStackTrace();\n    }\n  }\n}"
+    },
+    {
+      "id": "java-snippet-60",
+      "title": "Java Flight Recorder",
+      "description": "Using JFR for performance monitoring",
+      "language": "java",
+      "code": "import jdk.jfr.Configuration;\nimport jdk.jfr.FlightRecorder;\nimport jdk.jfr.consumer.RecordingStream;\nimport java.time.Duration;\nimport java.util.concurrent.TimeUnit;\n\npublic class JFRExample {\n  public static void main(String[] args) {\n    System.out.println(\"Java Flight Recorder Example\");\n    \n    // Check if Flight Recorder is available\n    if (!FlightRecorder.isAvailable()) {\n      System.out.println(\"Flight Recorder is not available\");\n      return;\n    }\n    \n    // List available configurations\n    System.out.println(\"\\nAvailable JFR configurations:\");\n    try {\n      for (Configuration config : Configuration.getConfigurations()) {\n        System.out.println(\"  \" + config.getName() + \" - \" + config.getDescription());\n      }\n    } catch (Exception e) {\n      System.out.println(\"Error getting configurations: \" + e.getMessage());\n    }\n    \n    // Start a recording\n    System.out.println(\"\\nStarting JFR recording for 30 seconds...\");\n    \n    try (RecordingStream rs = new RecordingStream()) {\n      // Enable specific events\n      rs.enable(\"jdk.CPULoad\").withPeriod(Duration.ofSeconds(1));\n      rs.enable(\"jdk.GarbageCollection\").withPeriod(Duration.ofSeconds(1));\n      rs.enable(\"jdk.JavaMonitorEnter\").withThreshold(Duration.ofMillis(10));\n      \n      // Add event handlers\n      rs.onEvent(\"jdk.CPULoad\", event -> {\n        System.out.printf(\"CPU Load: JVM=%.2f%%, System=%.2f%%%n\",\n            event.getFloat(\"jvmUser\") * 100 + event.getFloat(\"jvmSystem\") * 100,\n            event.getFloat(\"machineTotal\") * 100);\n      });\n      \n      rs.onEvent(\"jdk.GarbageCollection\", event -> {\n        System.out.printf(\"GC: %s, duration=%.2fms%n\",\n            event.getString(\"name\"),\n            event.getDuration(\"duration\").toMillis());\n      });\n      \n      rs.onEvent(\"jdk.JavaMonitorEnter\", event -> {\n        if (event.getDuration(\"duration\").toMillis() > 10) {\n          System.out.printf(\"Monitor contention: %s, duration=%.2fms%n\",\n              event.getString(\"monitorClass\"),\n              event.getDuration(\"duration\").toMillis());\n        }\n      });\n      \n      // Start the recording stream\n      rs.startAsync();\n      \n      // Generate some load\n      generateLoad();\n      \n      // Wait for a while\n      TimeUnit.SECONDS.sleep(30);\n      \n    } catch (Exception e) {\n      System.out.println(\"JFR error: \" + e.getMessage());\n      e.printStackTrace();\n    }\n    \n    System.out.println(\"JFR recording completed\");\n  }\n  \n  private static void generateLoad() {\n    // Start some threads to generate load\n    for (int i = 0; i < 5; i++) {\n      new Thread(() -> {\n        while (true) {\n          // Some computation\n          Math.sin(Math.random());\n          \n          // Occasionally sleep\n          if (Math.random() > 0.8) {\n            try {\n              Thread.sleep(10);\n            } catch (InterruptedException e) {\n              Thread.currentThread().interrupt();\n              break;\n            }\n          }\n        }\n      }).start();\n    }\n  }\n}"
+    }
+  ]
+},
 
   /* JAVASCRIPT */
 
