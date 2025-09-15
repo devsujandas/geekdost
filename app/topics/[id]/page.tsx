@@ -122,7 +122,7 @@ export default function TopicPage({ params }: TopicPageProps) {
       onClick={() => setActiveTab("notes")}
       className="flex-shrink-0"
     >
-     ✎ Notes
+     ▦ Notes
     </InteractiveButton>
     <InteractiveButton
       variant={activeTab === "code" ? "primary" : "outline"}
