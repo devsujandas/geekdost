@@ -115,21 +115,21 @@ export default function TopicPage({ params }: TopicPageProps) {
       onClick={() => setActiveTab("roadmap")}
       className="flex-shrink-0"
     >
-      Roadmap
+      ✦ Roadmap
     </InteractiveButton>
     <InteractiveButton
       variant={activeTab === "notes" ? "primary" : "outline"}
       onClick={() => setActiveTab("notes")}
       className="flex-shrink-0"
     >
-      Notes
+     ✎ Notes
     </InteractiveButton>
     <InteractiveButton
       variant={activeTab === "code" ? "primary" : "outline"}
       onClick={() => setActiveTab("code")}
       className="flex-shrink-0"
     >
-      Snippets
+       Snippets
     </InteractiveButton>
   </div>
 </GlassmorphismCard>
