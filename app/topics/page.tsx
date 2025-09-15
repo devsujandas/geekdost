@@ -97,20 +97,26 @@ export default function TopicsPage() {
 
                 {/* Load More Button */}
                 {visibleCount < filteredTopics.length && (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.8 }}
-                    className="text-center mt-12"
-                  >
-                    <InteractiveButton
-                      variant="outline"
-                      className="px-8 py-3"
-                      onClick={() => setVisibleCount((prev) => prev + 9)}
-                    >
-                      Load More Topics
-                    </InteractiveButton>
-                  </motion.div>
+                 <motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.8 }}
+  className="text-center mt-12"
+>
+  <InteractiveButton
+    onClick={() => setVisibleCount((prev) => prev + 9)}
+    className="
+      px-8 py-3 rounded-md font-medium text-sm sm:text-base
+      border border-border text-foreground
+      transition-all duration-200
+      hover:bg-foreground hover:text-background
+      focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+    "
+  >
+    Load More Topics
+  </InteractiveButton>
+</motion.div>
+
                 )}
               </div>
             ) : (
