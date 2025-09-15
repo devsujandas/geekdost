@@ -129,7 +129,7 @@ export default function TopicPage({ params }: TopicPageProps) {
       onClick={() => setActiveTab("code")}
       className="flex-shrink-0"
     >
-       Snippets
+      ⟨/⟩ Snippets
     </InteractiveButton>
   </div>
 </GlassmorphismCard>
