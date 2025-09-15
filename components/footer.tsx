@@ -52,7 +52,12 @@ export function Footer() {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-2xl font-bold text-foreground mb-4">GeekDost</h3>
+                <img 
+  src="/geekdost.png" 
+  alt="GeekDost Logo" 
+  className="h-8 mb-4"
+/>
+
                 <p className="text-muted-foreground text-sm mb-6 text-pretty">
                   Your ultimate developer hub for programming roadmaps, code snippets, and learning resources.
                   Empowering developers to level up their skills.

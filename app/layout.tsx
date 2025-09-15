@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   description: "Your ultimate developer hub for programming roadmaps, code snippets, and learning resources",
   generator: "GeekDost",
   keywords: ["programming", "developer", "roadmaps", "code snippets", "tutorials", "web development"],
-  authors: [{ name: "GeekDost Team" }],
+  authors: [{ name: "Sujan Das" }],
   viewport: "width=device-width, initial-scale=1",
   openGraph: {
     title: "GeekDost - Roadmaps & Snippets for Developers",
     description: "Your ultimate developer hub for programming roadmaps, code snippets, and learning resources",
-    url: "https://geekdost.dev",
+    url: "https://geekdost.vercel.app",
     siteName: "GeekDost",
     images: [
       {
