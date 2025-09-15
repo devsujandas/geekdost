@@ -15,7 +15,7 @@ export default function SearchPage() {
   const [isSearching, setIsSearching] = useState(false)
   const [visibleCount, setVisibleCount] = useState(9)
 
-  // শুধু difficulty filter (default All Difficulty)
+  // Difficulty filter
   const [selectedDifficulty, setSelectedDifficulty] = useState("")
 
   useEffect(() => {
@@ -29,13 +29,13 @@ export default function SearchPage() {
         setIsSearching(false)
       }
 
-      // difficulty filter (future proof)
+      // Difficulty filter
       if (selectedDifficulty && selectedDifficulty !== "All Difficulty") {
         results = results.filter((t) => t.difficulty === selectedDifficulty)
       }
 
       setSearchResults(results)
-      setVisibleCount(9) // reset on new search/filter
+      setVisibleCount(9) // Reset visible count on new search/filter
     }, 300)
 
     return () => clearTimeout(delayedSearch)
@@ -60,7 +60,7 @@ export default function SearchPage() {
           </p>
         </motion.div>
 
-        {/* Search + Filter */}
+        {/* Search + Difficulty Filter */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -80,7 +80,7 @@ export default function SearchPage() {
               />
             </div>
 
-            {/* শুধুমাত্র All Difficulty dropdown */}
+            {/* Difficulty Dropdown */}
             <div>
               <select
                 value={selectedDifficulty}
@@ -88,6 +88,9 @@ export default function SearchPage() {
                 className="px-3 py-2 rounded-lg bg-background border border-border text-foreground w-full"
               >
                 <option value="">All Difficulty</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
               </select>
             </div>
           </GlassmorphismCard>
