@@ -106,14 +106,12 @@ export default function TopicsPage() {
   <InteractiveButton
     onClick={() => setVisibleCount((prev) => prev + 9)}
     className="
-      px-8 py-3 rounded-md font-medium text-sm sm:text-base
+      px-6 py-2 rounded-md text-sm sm:text-base
       border border-border text-foreground
-      transition-all duration-200
-      hover:bg-foreground hover:text-background
-      focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+      hover:bg-muted transition-colors
     "
   >
-    Load More Topics
+    Load More
   </InteractiveButton>
 </motion.div>
 
