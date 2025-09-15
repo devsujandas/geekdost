@@ -165,20 +165,7 @@ export default function AboutPage() {
         </div>
 
         {/* Info Section */}
-        <div className="text-center md:text-left">
-          <h3 className="text-3xl font-bold text-foreground mb-2">Sujan Das</h3>
-          <p className="text-primary text-lg font-medium mb-4">
-            UI/UX Designer & Developer
-          </p>
-          <p className="text-muted-foreground leading-relaxed max-w-xl">
-            I’m passionate about crafting intuitive, beautiful, and functional 
-            digital experiences. From design to development, every part of this 
-            platform has been built with love and attention to detail.
-          </p>
 
-
-
-        </div>
       </div>
     </GlassmorphismCard>
   </div>
