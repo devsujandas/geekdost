@@ -53,10 +53,10 @@ export function Footer() {
                 viewport={{ once: true }}
               >
                 <img 
-  src="/geekdost.png" 
-  alt="GeekDost Logo" 
-  className="h-8 mb-4"
-/>
+                src="/geekdost.png" 
+                alt="GeekDost Logo" 
+                className="h-8 mb-4"
+                />
 
                 <p className="text-muted-foreground text-sm mb-6 text-pretty">
                   Your ultimate developer hub for programming roadmaps, code snippets, and learning resources.
