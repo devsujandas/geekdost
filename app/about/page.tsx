@@ -170,13 +170,13 @@ export default function AboutPage() {
 
  
   <p className="text-primary text-lg font-medium mb-4">
-    Data Science Engineer & Digital Experience Architect
+    Data Science Engineer & Digital Architect
   </p>
 
  <p className="text-muted-foreground leading-relaxed max-w-xl">
-  Passionate about designing and developing intuitive, beautiful, and functional
-  digital experiences, I’m a Data Science Engineer with Python at my core —
-  enthusiastic about AI/ML and creating smart, seamless user experiences.
+  Passionate about crafting intuitive, beautiful, and functional digital experiences,
+   I’m a Data Science Engineer with Python at my core 
+   — focused on AI/ML and building smart, seamless user experiences.
 </p>
 
 
