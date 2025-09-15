@@ -78,21 +78,23 @@ export default function SearchPage() {
             className="mb-12"
           >
             <GlassmorphismCard>
-              <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center">
-                <FaLightbulb className="h-5 w-5 text-primary mr-2" />
+              <h3 className="text-base font-medium text-foreground mb-4 flex items-center">
+                <FaLightbulb className="h-4 w-4 text-primary mr-2" />
                 Popular Searches
               </h3>
               <div className="flex flex-wrap gap-2">
                 {popularSearches.map((search) => (
-                  <motion.button
+                  <button
                     key={search}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
                     onClick={() => setSearchQuery(search)}
-                    className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors duration-200"
+                    className="
+                      px-3 py-1.5 rounded-md text-sm
+                      border border-border text-foreground
+                      hover:bg-muted transition-colors
+                    "
                   >
                     {search}
-                  </motion.button>
+                  </button>
                 ))}
               </div>
             </GlassmorphismCard>
