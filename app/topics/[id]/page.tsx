@@ -3,7 +3,6 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { notFound } from "next/navigation"
 import { FaArrowLeft, FaClock, FaCheckCircle, FaCode } from "react-icons/fa"
-import { Map, FileText, Code2 } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 import { getTopicById } from "@/lib/topics-data"
@@ -114,27 +113,22 @@ export default function TopicPage({ params }: TopicPageProps) {
     <InteractiveButton
       variant={activeTab === "roadmap" ? "primary" : "outline"}
       onClick={() => setActiveTab("roadmap")}
-      className="flex items-center gap-2 flex-shrink-0"
+      className="flex-shrink-0"
     >
-      <Map className="w-4 h-4" />
       Roadmap
     </InteractiveButton>
-
     <InteractiveButton
       variant={activeTab === "notes" ? "primary" : "outline"}
       onClick={() => setActiveTab("notes")}
-      className="flex items-center gap-2 flex-shrink-0"
+      className="flex-shrink-0"
     >
-      <FileText className="w-4 h-4" />
       Notes
     </InteractiveButton>
-
     <InteractiveButton
       variant={activeTab === "code" ? "primary" : "outline"}
       onClick={() => setActiveTab("code")}
-      className="flex items-center gap-2 flex-shrink-0"
+      className="flex-shrink-0"
     >
-      <Code2 className="w-4 h-4" />
       Code
     </InteractiveButton>
   </div>
