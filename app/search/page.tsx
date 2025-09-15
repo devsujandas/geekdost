@@ -13,23 +13,33 @@ export default function SearchPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [searchResults, setSearchResults] = useState(topicsData)
   const [isSearching, setIsSearching] = useState(false)
-  const [visibleCount, setVisibleCount] = useState(9) // প্রথমে 9 টা দেখাবে
+  const [visibleCount, setVisibleCount] = useState(9)
+
+  // শুধু difficulty filter (default All Difficulty)
+  const [selectedDifficulty, setSelectedDifficulty] = useState("")
 
   useEffect(() => {
     const delayedSearch = setTimeout(() => {
+      let results = []
       if (searchQuery.trim() === "") {
-        setSearchResults(topicsData)
+        results = topicsData
       } else {
         setIsSearching(true)
-        const results = searchTopics(searchQuery)
-        setSearchResults(results)
+        results = searchTopics(searchQuery)
         setIsSearching(false)
       }
-      setVisibleCount(9) // নতুন search হলে আবার 9 টা থেকে শুরু হবে
+
+      // difficulty filter (future proof)
+      if (selectedDifficulty && selectedDifficulty !== "All Difficulty") {
+        results = results.filter((t) => t.difficulty === selectedDifficulty)
+      }
+
+      setSearchResults(results)
+      setVisibleCount(9) // reset on new search/filter
     }, 300)
 
     return () => clearTimeout(delayedSearch)
-  }, [searchQuery])
+  }, [searchQuery, selectedDifficulty])
 
   const popularSearches = ["Python", "JavaScript", "React", "Docker", "Machine Learning", "Git", "SQL", "AWS"]
 
@@ -50,14 +60,15 @@ export default function SearchPage() {
           </p>
         </motion.div>
 
-        {/* Search Section */}
+        {/* Search + Filter */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-12"
         >
-          <GlassmorphismCard className="max-w-2xl mx-auto">
+          <GlassmorphismCard className="max-w-3xl mx-auto space-y-6">
+            {/* Search Input */}
             <div className="relative">
               <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
               <Input
@@ -67,6 +78,17 @@ export default function SearchPage() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-12 pr-4 py-4 text-lg bg-input/50 border-border/50 focus:border-primary/50"
               />
+            </div>
+
+            {/* শুধুমাত্র All Difficulty dropdown */}
+            <div>
+              <select
+                value={selectedDifficulty}
+                onChange={(e) => setSelectedDifficulty(e.target.value)}
+                className="px-3 py-2 rounded-lg bg-background border border-border text-foreground w-full"
+              >
+                <option value="">All Difficulty</option>
+              </select>
             </div>
           </GlassmorphismCard>
         </motion.div>
@@ -80,23 +102,21 @@ export default function SearchPage() {
             className="mb-12"
           >
             <GlassmorphismCard>
-              <h3 className="text-base font-medium text-foreground mb-4 flex items-center justify-center">
-                <FaLightbulb className="h-4 w-4 text-primary mr-2" />
+              <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center justify-center">
+                <FaLightbulb className="h-5 w-5 text-primary mr-2" />
                 Popular Searches
               </h3>
               <div className="flex flex-wrap justify-center gap-2">
                 {popularSearches.map((search) => (
-                  <button
+                  <motion.button
                     key={search}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                     onClick={() => setSearchQuery(search)}
-                    className="
-                      px-3 py-1.5 rounded-md text-sm
-                      border border-border text-foreground
-                      hover:bg-muted transition-colors
-                    "
+                    className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm hover:bg-primary/20 transition-colors duration-200"
                   >
                     {search}
-                  </button>
+                  </motion.button>
                 ))}
               </div>
             </GlassmorphismCard>
@@ -123,14 +143,14 @@ export default function SearchPage() {
             ))}
           </div>
 
-          {/* Load More */}
+          {/* Load More Button */}
           {visibleCount < searchResults.length && (
-            <div className="text-center mt-8">
+            <div className="flex justify-center mt-10">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setVisibleCount((prev) => prev + 9)}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-medium transition-colors duration-200"
               >
                 Load More
               </motion.button>
