@@ -13,6 +13,7 @@ export default function SearchPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [searchResults, setSearchResults] = useState(topicsData)
   const [isSearching, setIsSearching] = useState(false)
+  const [visibleCount, setVisibleCount] = useState(9) // প্রথমে 9 টা দেখাবে
 
   useEffect(() => {
     const delayedSearch = setTimeout(() => {
@@ -24,6 +25,7 @@ export default function SearchPage() {
         setSearchResults(results)
         setIsSearching(false)
       }
+      setVisibleCount(9) // নতুন search হলে আবার 9 টা থেকে শুরু হবে
     }, 300)
 
     return () => clearTimeout(delayedSearch)
@@ -114,12 +116,26 @@ export default function SearchPage() {
             </div>
           )}
 
-          {/* Results Grid - desktop এ 3 column */}
+          {/* Results Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {searchResults.map((topic, index) => (
+            {searchResults.slice(0, visibleCount).map((topic, index) => (
               <TopicCard key={topic.id} topic={topic} delay={0.1 + index * 0.05} />
             ))}
           </div>
+
+          {/* Load More */}
+          {visibleCount < searchResults.length && (
+            <div className="text-center mt-8">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setVisibleCount((prev) => prev + 9)}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+              >
+                Load More
+              </motion.button>
+            </div>
+          )}
 
           {/* No Results */}
           {searchQuery && searchResults.length === 0 && !isSearching && (
