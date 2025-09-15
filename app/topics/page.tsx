@@ -7,7 +7,6 @@ import { GlassmorphismCard } from "@/components/glassmorphism-card"
 import { TopicCard } from "@/components/topic-card"
 import { AdvancedSearch } from "@/components/advanced-search"
 import { ScrollReveal } from "@/components/scroll-reveal"
-import { StaggeredList } from "@/components/staggered-list"
 import { InteractiveButton } from "@/components/interactive-button"
 
 export default function TopicsPage() {
@@ -16,6 +15,9 @@ export default function TopicsPage() {
   const [selectedDifficulty, setSelectedDifficulty] = useState("All")
   const [sortBy, setSortBy] = useState("default")
   const [filteredTopics, setFilteredTopics] = useState(topicsData)
+
+  // নতুন state for load more
+  const [visibleCount, setVisibleCount] = useState(9)
 
   useEffect(() => {
     let results = topicsData
@@ -30,6 +32,7 @@ export default function TopicsPage() {
     }
     results = sortTopics(results, sortBy)
     setFilteredTopics(results)
+    setVisibleCount(9) // filter পরিবর্তন হলে reset করে প্রথম 9টা দেখাবে
   }, [searchQuery, selectedCategory, selectedDifficulty, sortBy])
 
   return (
@@ -49,7 +52,7 @@ export default function TopicsPage() {
             </div>
           </ScrollReveal>
 
-          {/* Advanced Search - Fixed positioning issues */}
+          {/* Advanced Search */}
           <ScrollReveal delay={0.2}>
             <div className="mb-8 sm:mb-12 relative z-10">
               <div className="sticky top-4 bg-background/95 backdrop-blur-sm rounded-xl border border-border/50 shadow-lg p-4 sm:p-6">
@@ -69,13 +72,13 @@ export default function TopicsPage() {
             </div>
           </ScrollReveal>
 
-          {/* Topics Grid - Improved responsive layout */}
+          {/* Topics Grid */}
           <ScrollReveal delay={0.4}>
             {filteredTopics.length > 0 ? (
               <div className="relative z-0">
                 {/* Responsive Grid Container */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-                  {filteredTopics.map((topic, index) => (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                  {filteredTopics.slice(0, visibleCount).map((topic, index) => (
                     <motion.div
                       key={topic.id}
                       initial={{ opacity: 0, y: 20 }}
@@ -92,8 +95,8 @@ export default function TopicsPage() {
                   ))}
                 </div>
 
-                {/* Load More Button (if needed) */}
-                {filteredTopics.length > 12 && (
+                {/* Load More Button */}
+                {visibleCount < filteredTopics.length && (
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -103,6 +106,7 @@ export default function TopicsPage() {
                     <InteractiveButton
                       variant="outline"
                       className="px-8 py-3"
+                      onClick={() => setVisibleCount((prev) => prev + 9)}
                     >
                       Load More Topics
                     </InteractiveButton>
