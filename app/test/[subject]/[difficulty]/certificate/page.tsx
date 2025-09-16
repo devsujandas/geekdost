@@ -18,14 +18,15 @@ export default function CertificatePage() {
 
   if (!latest) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center min-h-screen bg-white">
         <p>No Certificate Found</p>
       </div>
     )
   }
 
   return (
-    <div className="py-10">
+    <div className="min-h-screen bg-white flex flex-col items-center justify-start py-10">
+      {/* Certificate */}
       <Certificate result={latest} />
 
       {/* Extra navigation buttons */}
