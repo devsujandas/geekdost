@@ -43,13 +43,14 @@ export default function Certificate({ result }: { result: any }) {
         }}
       >
         {/* Watermark */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
-          <img
-            src="/geekdost.png"
-            alt="GeekDost Watermark"
-            style={{ width: "70%", objectFit: "contain" }}
-          />
-        </div>
+<div className="absolute inset-0 flex items-center justify-center opacity-40 pointer-events-none">
+  <img
+    src="/geekdost.png"
+    alt="GeekDost Watermark"
+    style={{ width: "80%", objectFit: "contain" }}
+  />
+</div>
+
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-between h-full py-10 px-12 text-black">
@@ -57,7 +58,7 @@ export default function Certificate({ result }: { result: any }) {
           <div className="mb-8">
             <h1
               className="text-5xl font-extrabold tracking-wide"
-              style={{ fontFamily: `"Playfair Display", serif`, color: "#111827" }}
+              style={{ fontFamily: `"Playfair Display", serif`, color: "#ecb30bff" }}
             >
               Certificate of Achievement
             </h1>
@@ -70,18 +71,19 @@ export default function Certificate({ result }: { result: any }) {
           </div>
 
           {/* Recipient */}
-          <div className="mb-8">
-            <p
-              className="text-4xl font-extrabold underline underline-offset-8"
-              style={{
-                fontFamily: `"Poppins", sans-serif`,
-                color: "#4338ca", // indigo-700
-                textDecorationColor: "#facc15", // yellow-400
-              }}
-            >
-              {userName}
-            </p>
-          </div>
+<div className="mb-8">
+  <p
+    className="text-5xl font-extrabold tracking-wide"
+    style={{
+      fontFamily: `"Cinzel Decorative", serif`,
+      color: "#161515ff",
+      letterSpacing: "2px",
+    }}
+  >
+    {userName}
+  </p>
+</div>
+
 
           {/* Body */}
           <div className="max-w-3xl text-center mb-8">
@@ -132,22 +134,24 @@ export default function Certificate({ result }: { result: any }) {
             </div>
 
             {/* Seal */}
-            <div
-              className="absolute left-1/2 -translate-x-1/2 bottom-20 rounded-full flex items-center justify-center shadow-xl"
-              style={{
-                width: "120px",
-                height: "120px",
-                background: "#facc15",
-                border: "4px solid #ca8a04",
-              }}
-            >
-              <span
-                className="text-xs font-bold uppercase text-center"
-                style={{ color: "#1f2937" }}
-              >
-                GeekDost <br /> Official Seal
-              </span>
-            </div>
+            <div className="flex flex-col items-center mt-8">
+  {/* Issued By Text */}
+  <p
+  className="text-2xl text-gray-800 mb-0 pb-0 leading-none"
+  style={{ fontFamily: '"Playfair Display", serif', fontWeight: 600 }}
+>
+  Issued by
+</p>
+
+
+  {/* Logo */}
+  <img
+    src="/geekdost.png"
+    alt="GeekDost Logo"
+    className="w-32 h-32 object-contain drop-shadow-xl -mt-9"
+  />
+</div>
+
 
             {/* Signature */}
             <div className="text-right">
