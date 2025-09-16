@@ -20,7 +20,7 @@ export default function CertificatePage() {
   // --- No certificate found ---
   if (!latest) {
     return (
-      // ✅ Full page pure black background
+      
       <div className="flex items-center justify-center min-h-screen bg-black px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
