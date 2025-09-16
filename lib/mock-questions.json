@@ -2704,6 +2704,9 @@
 
 
 
+
+
+
   {
     "id": "java-basic-001",
     "subject": "java",
@@ -2731,7 +2734,879 @@
     "options": ["Procedural", "Object-Oriented", "Functional", "All of the above"],
     "answerIndex": 1
   },
-
+  {
+    "id": "java-basic-004",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "Which keyword is used to declare a constant variable in Java?",
+    "options": ["const", "final", "static", "constant"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-005",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the result of 10 % 3 in Java?",
+    "options": ["3", "1", "0", "3.333"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-006",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Control Flow",
+    "question": "Which statement is used to exit a loop in Java?",
+    "options": ["break", "exit", "continue", "return"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-007",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Methods",
+    "question": "What is the return type of a method that doesn't return any value?",
+    "options": ["void", "null", "None", "empty"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-008",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "How do you declare an array in Java?",
+    "options": ["int[] arr;", "int arr[];", "array int arr;", "Both 1 and 2"],
+    "answerIndex": 3
+  },
+  {
+    "id": "java-basic-009",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method returns the length of a String?",
+    "options": ["length()", "size()", "length", "getSize()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-010",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "OOP",
+    "question": "What is the default value of an int variable in Java?",
+    "options": ["0", "null", "undefined", "1"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-011",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Inheritance",
+    "question": "Which keyword is used to inherit a class in Java?",
+    "options": ["extends", "inherits", "implements", "super"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-012",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Packages",
+    "question": "Which keyword is used to import a package in Java?",
+    "options": ["import", "include", "package", "using"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-013",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Constructors",
+    "question": "What is the name of the constructor method?",
+    "options": ["Same as class name", "constructor", "init", "new"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-014",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which data type is used for true/false values?",
+    "options": ["boolean", "bool", "Bit", "flag"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-015",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the result of 5 + 2 * 3 in Java?",
+    "options": ["21", "11", "17", "15"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-016",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Control Flow",
+    "question": "Which loop is guaranteed to execute at least once?",
+    "options": ["for", "while", "do-while", "foreach"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-017",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Methods",
+    "question": "What is method signature in Java?",
+    "options": ["Method name and parameters", "Return type and method name", "Method name only", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-018",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "How do you get the length of an array?",
+    "options": ["arr.length()", "arr.length", "arr.size()", "arr.size"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-019",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method compares two strings for equality?",
+    "options": ["equals()", "==", "compare()", "equal()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-020",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "OOP",
+    "question": "What is the default value of a boolean variable?",
+    "options": ["false", "true", "null", "undefined"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-021",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Inheritance",
+    "question": "Which keyword refers to the parent class?",
+    "options": ["super", "this", "parent", "base"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-022",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Packages",
+    "question": "Which package is automatically imported in Java?",
+    "options": ["java.util", "java.lang", "java.io", "java.awt"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-023",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Constructors",
+    "question": "Can a constructor return a value?",
+    "options": ["Yes", "No", "Only void", "Only int"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-024",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What is the size of int in Java?",
+    "options": ["32 bits", "16 bits", "64 bits", "Depends on platform"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-025",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "Which operator is used for object comparison?",
+    "options": ["==", "equals()", "=", "==="],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-026",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Control Flow",
+    "question": "Which statement skips the current iteration of a loop?",
+    "options": ["break", "continue", "skip", "next"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-027",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Methods",
+    "question": "Can a method be overloaded by changing return type only?",
+    "options": ["Yes", "No", "Only if parameters are same", "Only if class is final"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-028",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "How do you initialize an array with values?",
+    "options": ["int[] arr = {1,2,3};", "int[] arr = new int[]{1,2,3};", "int arr[] = {1,2,3};", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "java-basic-029",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method converts a string to uppercase?",
+    "options": ["toUpperCase()", "upperCase()", "toUpper()", "convertUpper()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-030",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "OOP",
+    "question": "What is an object?",
+    "options": ["Instance of a class", "Blueprint of a class", "Method of a class", "Variable of a class"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-031",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Inheritance",
+    "question": "Which keyword is used to implement an interface?",
+    "options": ["extends", "implements", "interface", "implement"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-032",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Packages",
+    "question": "Which keyword is used to define a package?",
+    "options": ["package", "import", "namespace", "lib"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-033",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Constructors",
+    "question": "What is a default constructor?",
+    "options": ["Constructor with no parameters", "Constructor provided by compiler", "Constructor with default values", "Both 1 and 2"],
+    "answerIndex": 3
+  },
+  {
+    "id": "java-basic-034",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which is not a primitive data type?",
+    "options": ["int", "float", "String", "boolean"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-035",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What does the ++ operator do?",
+    "options": ["Adds 1", "Increments by 1", "Multiplies by 2", "Doubles the value"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-036",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Control Flow",
+    "question": "Which is not a conditional statement?",
+    "options": ["if", "switch", "for", "ternary"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-037",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Methods",
+    "question": "What is method overloading?",
+    "options": ["Same method name, different parameters", "Same method in different classes", "Method with same name as class", "Method that loads classes"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-038",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "How do you access the first element of an array?",
+    "options": ["arr[0]", "arr[1]", "arr.first", "arr.get(0)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-039",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method checks if a string is empty?",
+    "options": ["isEmpty()", "isBlank()", "empty()", "blank()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-040",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "OOP",
+    "question": "What is encapsulation?",
+    "options": ["Binding data and methods together", "Hiding implementation details", "Both 1 and 2", "Inheriting from multiple classes"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-041",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Inheritance",
+    "question": "Can a class inherit from multiple classes in Java?",
+    "options": ["Yes", "No", "Only interfaces", "Only abstract classes"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-042",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Packages",
+    "question": "What is the purpose of packages?",
+    "options": ["To organize classes", "To prevent naming conflicts", "To control access", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "java-basic-043",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Constructors",
+    "question": "Can a constructor be private?",
+    "options": ["Yes", "No", "Only in abstract classes", "Only in final classes"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-044",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What is autoboxing?",
+    "options": ["Converting primitive to wrapper class", "Converting wrapper to primitive", "Boxing objects", "Packing data"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-045",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the ternary operator?",
+    "options": ["?:", "??", "::", "->"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-046",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Control Flow",
+    "question": "Which is true about switch statements?",
+    "options": ["Can use strings", "Can use enums", "Need break statements", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "java-basic-047",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Methods",
+    "question": "What is a static method?",
+    "options": ["Method that belongs to class, not instance", "Method that cannot change", "Method that is always available", "Method that returns static"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-048",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "How do you copy an array?",
+    "options": ["System.arraycopy()", "Arrays.copyOf()", "clone() method", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "java-basic-049",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method splits a string?",
+    "options": ["split()", "divide()", "break()", "tokenize()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-050",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "OOP",
+    "question": "What is polymorphism?",
+    "options": ["Many forms", "Same interface, different implementations", "Both 1 and 2", "Many classes"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-051",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Inheritance",
+    "question": "What is method overriding?",
+    "options": ["Redefining method in child class", "Changing method parameters", "Making method private", "Hiding method"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-052",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Packages",
+    "question": "Which package contains the Scanner class?",
+    "options": ["java.util", "java.io", "java.lang", "java.text"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-053",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Constructors",
+    "question": "Can a constructor call another constructor?",
+    "options": ["Yes, using this()", "Yes, using super()", "No", "Both 1 and 2"],
+    "answerIndex": 3
+  },
+  {
+    "id": "java-basic-054",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What is the wrapper class for int?",
+    "options": ["Integer", "Int", "Number", "INT"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-055",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is instanceof operator used for?",
+    "options": ["To check object type", "To get instance", "To create instance", "To compare instances"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-056",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Control Flow",
+    "question": "What does the default case do in switch?",
+    "options": ["Executes when no match", "Is required", "Is always executed", "Must be last"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-057",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Methods",
+    "question": "What is a varargs parameter?",
+    "options": ["Variable number of arguments", "Variable arguments", "Both 1 and 2", "Variable array"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-058",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "How do you sort an array?",
+    "options": ["Arrays.sort()", "Collections.sort()", "Array.sort()", "Sort.array()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-059",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method finds the index of a character?",
+    "options": ["indexOf()", "find()", "search()", "locate()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-060",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "OOP",
+    "question": "What is an abstract class?",
+    "options": ["Class that cannot be instantiated", "Class with abstract methods", "Both 1 and 2", "Class with no methods"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-061",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Inheritance",
+    "question": "What is the super() call?",
+    "options": ["Calls parent constructor", "Calls parent method", "Refers to parent class", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "java-basic-062",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Packages",
+    "question": "Which package contains Math class?",
+    "options": ["java.lang", "java.util", "java.math", "java.number"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-063",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Constructors",
+    "question": "Is constructor inherited?",
+    "options": ["Yes", "No", "Only if public", "Only if protected"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-064",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What is unboxing?",
+    "options": ["Converting wrapper to primitive", "Converting primitive to wrapper", "Removing from box", "Unpacking data"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-065",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is short-circuit evaluation?",
+    "options": ["Stops evaluation when result is known", "Uses less electricity", "Faster evaluation", "Circuit evaluation"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-066",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Control Flow",
+    "question": "Which loop is best for arrays?",
+    "options": ["for", "while", "do-while", "for-each"],
+    "answerIndex": 3
+  },
+  {
+    "id": "java-basic-067",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Methods",
+    "question": "Can static methods access instance variables?",
+    "options": ["Yes", "No", "Only if final", "Only if public"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-068",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "What is a multidimensional array?",
+    "options": ["Array of arrays", "2D array", "3D array", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "java-basic-069",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Are strings mutable in Java?",
+    "options": ["Yes", "No", "Only if using StringBuffer", "Only in some cases"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-070",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "OOP",
+    "question": "What is an interface?",
+    "options": ["Contract for classes", "Collection of abstract methods", "Both 1 and 2", "Type of class"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-071",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Inheritance",
+    "question": "What is the Object class?",
+    "options": ["Root of class hierarchy", "Parent of all classes", "Both 1 and 2", "Class for objects"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-072",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Packages",
+    "question": "Which package contains Date class?",
+    "options": ["java.util", "java.time", "java.date", "java.sql"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-073",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Constructors",
+    "question": "Can a constructor be overloaded?",
+    "options": ["Yes", "No", "Only in same package", "Only if static"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-074",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What is the size of double in Java?",
+    "options": ["64 bits", "32 bits", "16 bits", "128 bits"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-075",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the assignment operator?",
+    "options": ["=", "==", "===", "=>"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-076",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Control Flow",
+    "question": "What is an enhanced for loop?",
+    "options": ["for-each loop", "Improved for loop", "Both 1 and 2", "Advanced for loop"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-077",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Methods",
+    "question": "What is a recursive method?",
+    "options": ["Method that calls itself", "Method that returns", "Method with parameters", "Method with loops"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-078",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "What is ArrayIndexOutOfBoundsException?",
+    "options": ["When accessing invalid index", "When array is full", "When array is null", "When array is empty"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-079",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which class represents mutable strings?",
+    "options": ["StringBuilder", "StringBuffer", "Both 1 and 2", "MutableString"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-080",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "OOP",
+    "question": "What is a final class?",
+    "options": ["Class that cannot be extended", "Class that is complete", "Class that is immutable", "Class that is static"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-081",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Inheritance",
+    "question": "What is dynamic method dispatch?",
+    "options": ["Runtime polymorphism", "Method calling at runtime", "Both 1 and 2", "Dynamic binding"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-082",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Packages",
+    "question": "Which package contains IOException?",
+    "options": ["java.io", "java.util", "java.lang", "java.exception"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-083",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Constructors",
+    "question": "What is constructor chaining?",
+    "options": ["Calling one constructor from another", "Chaining constructors together", "Both 1 and 2", "Linking constructors"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-084",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What is the range of byte in Java?",
+    "options": ["-128 to 127", "0 to 255", "-256 to 255", "-127 to 128"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-085",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the bitwise AND operator?",
+    "options": ["&", "&&", "|", "||"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-086",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Control Flow",
+    "question": "What is labeled break?",
+    "options": ["Break to specific label", "Break with label", "Both 1 and 2", "Labeled statement"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-087",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Methods",
+    "question": "What is method hiding?",
+    "options": ["Hiding static methods", "Making method private", "Both 1 and 2", "Overriding static methods"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-088",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "What is an anonymous array?",
+    "options": ["Array without name", "Array created without variable", "Both 1 and 2", "Array with no type"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-089",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "What is string interning?",
+    "options": ["Reusing string literals", "String pooling", "Both 1 and 2", "String internalization"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-090",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "OOP",
+    "question": "What is a singleton class?",
+    "options": ["Class with one instance", "Class that prevents multiple instances", "Both 1 and 2", "Class with single method"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-091",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Inheritance",
+    "question": "What is the covariant return type?",
+    "options": ["Subclass can change return type", "Return type can be subclass", "Both 1 and 2", "Same return type"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-092",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Packages",
+    "question": "Which package contains Pattern class?",
+    "options": ["java.util.regex", "java.regex", "java.pattern", "java.util.pattern"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-093",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Constructors",
+    "question": "What is a copy constructor?",
+    "options": ["Constructor that copies object", "Constructor with object parameter", "Both 1 and 2", "Constructor that clones"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-094",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What is the default value of char?",
+    "options": ["'\u0000'", "null", "' '", "0"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-095",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the unsigned right shift operator?",
+    "options": [">>>", ">>", "<<", "<<"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-096",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Control Flow",
+    "question": "What is fall-through in switch?",
+    "options": ["Continuing to next case", "Falling to default", "Both 1 and 2", "Breaking switch"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-097",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Methods",
+    "question": "What is a native method?",
+    "options": ["Method implemented in native code", "Method that is natural", "Both 1 and 2", "Method in native language"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-098",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "What is the Arrays class?",
+    "options": ["Utility class for arrays", "Class for array operations", "Both 1 and 2", "Array type class"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-099",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "What is string concatenation?",
+    "options": ["Joining strings", "Using + operator", "Both 1 and 2", "Adding strings"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-basic-100",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "OOP",
+    "question": "What is composition?",
+    "options": ["Has-a relationship", "Containing objects", "Both 1 and 2", "Inheritance alternative"],
+    "answerIndex": 2
+  },
   {
     "id": "java-inter-001",
     "subject": "java",
@@ -2759,11 +3634,883 @@
     "options": ["Same method name with different parameters", "Same method in child class", "Overriding parent class method", "None"],
     "answerIndex": 0
   },
-
+  {
+    "id": "java-inter-004",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "Which collection maintains insertion order?",
+    "options": ["HashSet", "TreeSet", "LinkedHashSet", "HashMap"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-005",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the difference between checked and unchecked exceptions?",
+    "options": ["Checked must be handled, unchecked don't", "Checked are runtime, unchecked are compile time", "Unchecked must be handled, checked don't", "There is no difference"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-inter-006",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the difference between abstract class and interface?",
+    "options": ["Abstract class can have implementation, interface can't", "Interface can have fields, abstract class can't", "Abstract class supports multiple inheritance, interface doesn't", "There is no difference"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-inter-007",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "Which is synchronized?",
+    "options": ["ArrayList", "HashMap", "Vector", "HashSet"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-008",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the try-with-resources statement?",
+    "options": ["Automatically closes resources", "Try with additional resources", "Both 1 and 2", "Try with resource management"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-inter-009",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the diamond problem?",
+    "options": ["Multiple inheritance ambiguity", "Diamond-shaped inheritance", "Both 1 and 2", "Interface inheritance problem"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-010",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is the difference between ArrayList and LinkedList?",
+    "options": ["ArrayList is array-based, LinkedList is node-based", "ArrayList is faster for access, LinkedList for insertion", "Both 1 and 2", "LinkedList is always better"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-011",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is exception propagation?",
+    "options": ["Exception moving up call stack", "Exception spreading", "Both 1 and 2", "Exception handling chain"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-inter-012",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the Liskov Substitution Principle?",
+    "options": ["Subtypes must be substitutable for base types", "All principles are equal", "Substitution should be limited", "No substitution allowed"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-inter-013",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a fail-fast iterator?",
+    "options": ["Iterator that fails on modification", "Fast iterator", "Both 1 and 2", "Iterator that doesn't fail"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-inter-014",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the difference between throw and throws?",
+    "options": ["throw is used to throw exception, throws declares exception", "throws is used to throw exception, throw declares exception", "They are the same", "throw is for unchecked, throws for checked"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-inter-015",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the Open-Closed Principle?",
+    "options": ["Open for extension, closed for modification", "Open for modification, closed for extension", "Both 1 and 2", "No modification allowed"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-inter-016",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a Comparator?",
+    "options": ["Interface for sorting", "Object that compares", "Both 1 and 2", "Comparison operator"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-017",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is a custom exception?",
+    "options": ["User-defined exception", "Exception created by user", "Both 1 and 2", "Standard exception"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-018",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the Single Responsibility Principle?",
+    "options": ["Class should have one reason to change", "Class should do one thing", "Both 1 and 2", "Class should be small"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-019",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is the difference between HashMap and Hashtable?",
+    "options": ["HashMap is not synchronized, Hashtable is", "HashMap allows null, Hashtable doesn't", "Both 1 and 2", "Hashtable is faster"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-020",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the finally block used for?",
+    "options": ["Cleanup code", "Code that always executes", "Both 1 and 2", "Exception handling"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-021",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the Interface Segregation Principle?",
+    "options": ["Many specific interfaces better than one general", "Interfaces should be segregated", "Both 1 and 2", "Interfaces should be large"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-022",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a PriorityQueue?",
+    "options": ["Queue that orders elements", "Priority-based queue", "Both 1 and 2", "Queue with priority"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-023",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is a chained exception?",
+    "options": ["Exception with cause", "Linked exceptions", "Both 1 and 2", "Exception chain"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-024",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the Dependency Inversion Principle?",
+    "options": ["Depend on abstractions, not concretions", "Invert dependencies", "Both 1 and 2", "Depend on implementations"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-025",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is the difference between Set and List?",
+    "options": ["Set doesn't allow duplicates, List does", "Set is unordered, List is ordered", "Both 1 and 2", "Set is faster"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-026",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the suppressed exception?",
+    "options": ["Exception suppressed by try-with-resources", "Hidden exception", "Both 1 and 2", "Ignored exception"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-inter-027",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a marker interface?",
+    "options": ["Interface with no methods", "Interface that marks capability", "Both 1 and 2", "Interface with markers"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-028",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a weak HashMap?",
+    "options": ["HashMap with weak keys", "Map that doesn't prevent garbage collection", "Both 1 and 2", "Weak reference map"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-029",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the assert statement?",
+    "options": ["For debugging assumptions", "To check conditions", "Both 1 and 2", "For exception handling"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-030",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a functional interface?",
+    "options": ["Interface with one abstract method", "Interface for functions", "Both 1 and 2", "Interface with many methods"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-031",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is the Collections class?",
+    "options": ["Utility class for collections", "Class with collection algorithms", "Both 1 and 2", "Collection of collections"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-032",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the difference between Error and Exception?",
+    "options": ["Error is unrecoverable, Exception is recoverable", "Error is for system, Exception for application", "Both 1 and 2", "They are the same"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-033",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a lambda expression?",
+    "options": ["Anonymous function", "Function without name", "Both 1 and 2", "Named function"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-034",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is an EnumSet?",
+    "options": ["Set for enums", "Specialized set for enum types", "Both 1 and 2", "Enum collection"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-035",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the stack trace?",
+    "options": ["Call stack information", "Stack of method calls", "Both 1 and 2", "Exception trace"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-036",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is method reference?",
+    "options": ["Reference to method", "Shortcut for lambda", "Both 1 and 2", "Method pointer"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-037",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a NavigableMap?",
+    "options": ["Map with navigation methods", "Map that can be navigated", "Both 1 and 2", "Map with directions"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-038",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the multicatch block?",
+    "options": ["Catching multiple exceptions", "Single catch for multiple exceptions", "Both 1 and 2", "Multiple catch blocks"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-039",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a stream?",
+    "options": ["Sequence of elements", "Functional-style operations", "Both 1 and 2", "Data flow"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-040",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is the difference between Iterator and ListIterator?",
+    "options": ["ListIterator is bidirectional", "ListIterator is for lists", "Both 1 and 2", "Iterator is better"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-041",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the try-catch-finally order?",
+    "options": ["try, catch, finally", "try, finally, catch", "Any order", "Only try-catch"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-inter-042",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the Optional class?",
+    "options": ["Container for optional value", "Prevents null pointer exceptions", "Both 1 and 2", "Optional parameter class"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-043",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a ConcurrentHashMap?",
+    "options": ["Thread-safe HashMap", "Concurrent map", "Both 1 and 2", "Synchronized HashMap"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-044",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the difference between final, finally, and finalize?",
+    "options": ["final is keyword, finally is block, finalize is method", "All are different", "Both 1 and 2", "They are similar"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-045",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a predicate?",
+    "options": ["Functional interface for boolean test", "Condition tester", "Both 1 and 2", "Boolean function"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-046",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a TreeMap?",
+    "options": ["Sorted map", "Map with tree structure", "Both 1 and 2", "Tree-based map"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-047",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the throws clause?",
+    "options": ["Declares exceptions method may throw", "Exception specification", "Both 1 and 2", "Throws exception"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-048",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a consumer?",
+    "options": ["Functional interface that consumes input", "Accepts input, returns nothing", "Both 1 and 2", "Input processor"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-049",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a CopyOnWriteArrayList?",
+    "options": ["Thread-safe list", "Copy on write list", "Both 1 and 2", "Synchronized list"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-050",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the difference between RuntimeException and Exception?",
+    "options": ["RuntimeException is unchecked, Exception is checked", "RuntimeException doesn't need declaration", "Both 1 and 2", "They are the same"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-051",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a function?",
+    "options": ["Functional interface with input and output", "Function that maps input to output", "Both 1 and 2", "Mathematical function"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-052",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a BlockingQueue?",
+    "options": ["Queue that blocks when full or empty", "Thread-safe queue", "Both 1 and 2", "Synchronized queue"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-053",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the getCause() method?",
+    "options": ["Returns cause of exception", "Gets underlying exception", "Both 1 and 2", "Gets exception reason"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-054",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a supplier?",
+    "options": ["Functional interface that supplies values", "Provides output, takes no input", "Both 1 and 2", "Value provider"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-055",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is an IdentityHashMap?",
+    "options": ["HashMap that uses == instead of equals()", "Map for identity comparison", "Both 1 and 2", "Map for objects"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-056",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the printStackTrace() method?",
+    "options": ["Prints stack trace", "Debugging method", "Both 1 and 2", "Prints exception"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-057",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a unary operator?",
+    "options": ["Functional interface for one operand", "Operation on single input", "Both 1 and 2", "Single operator"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-058",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a Stack?",
+    "options": ["LIFO data structure", "Last-in-first-out", "Both 1 and 2", "Queue variant"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-059",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the difference between throw and throw new?",
+    "options": ["throw throws existing exception, throw new creates new", "They are the same", "throw new is for checked exceptions", "throw is for runtime exceptions"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-inter-060",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a binary operator?",
+    "options": ["Functional interface for two operands", "Operation on two inputs", "Both 1 and 2", "Double operator"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-061",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a Queue?",
+    "options": ["FIFO data structure", "First-in-first-out", "Both 1 and 2", "Stack variant"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-062",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the initCause() method?",
+    "options": ["Sets cause of exception", "Initializes exception cause", "Both 1 and 2", "Creates exception"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-063",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the :: operator?",
+    "options": ["Method reference operator", "Scope resolution", "Both 1 and 2", "Class operator"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-inter-064",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a Deque?",
+    "options": ["Double-ended queue", "Queue with two ends", "Both 1 and 2", "Dual queue"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-065",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the difference between Exception and Throwable?",
+    "options": ["Throwable is superclass of Exception", "Exception is for applications, Throwable for all", "Both 1 and 2", "They are the same"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-066",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a stream pipeline?",
+    "options": ["Sequence of stream operations", "Source, operations, terminal operation", "Both 1 and 2", "Stream flow"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-067",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a Properties class?",
+    "options": ["HashTable for properties", "Configuration storage", "Both 1 and 2", "Property map"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-068",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the getMessage() method?",
+    "options": ["Returns exception message", "Gets error description", "Both 1 and 2", "Gets exception details"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-069",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a collector?",
+    "options": ["Accumulates stream elements", "Reduces stream to collection", "Both 1 and 2", "Collection creator"],
+    "answerIndex": 2
+  },
+  {
+    "极-id": "java-inter-070",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a BitSet?",
+    "options": ["Set of bits", "Bit vector", "Both 1 and 2", "Binary set"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-071",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the difference between throw and throws?",
+    "options": ["throw is statement, throws is clause", "throw throws exception, throws declares exception", "Both 1 and 2", "They are the same"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-072",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a parallel stream?",
+    "options": ["Stream that processes in parallel", "Multi-threaded stream", "Both 1 and 2", "Concurrent stream"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-073",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a WeakHashMap?",
+    "options": ["Map with weak references", "Doesn't prevent garbage collection", "Both 1 and 2", "Weak key map"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-074",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the finally block used for?",
+    "options": ["Cleanup resources", "Code that must run", "Both 1 and 2", "Exception handling"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-075",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a method reference?",
+    "options": ["Reference to existing method", "Shortcut for lambda", "Both 1 and 2", "Method pointer"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-076",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a ConcurrentSkipListMap?",
+    "options": ["Concurrent sorted map", "Thread-safe navigable map", "Both 1 and 2", "Skip list map"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-077",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the try-with-resources statement?",
+    "options": ["Automatically closes resources", "Resource management", "Both 1 and 2", "Try with resources"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-078",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a predicate?",
+    "options": ["Boolean-valued function", "Condition tester", "Both 1 and 2", "Test function"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-079",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a EnumMap?",
+    "options": ["Map for enum keys", "Specialized map for enums", "Both 1 and 2", "Enum key map"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-080",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the difference between checked and unchecked exceptions?",
+    "options": ["Checked must be declared or handled", "Unchecked don't need declaration", "Both 1 and 2", "They are the same"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-081",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a function?",
+    "options": ["Maps input to output", "Functional interface", "Both 1 and 2", "Mathematical function"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-082",
+    "极subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a LinkedHashMap?",
+    "options": ["HashMap with insertion order", "Maintains order", "Both 1 and 2", "Linked map"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-083",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the throw statement?",
+    "options": ["Throws exception", "Transfers control", "Both 1 and 2", "Exception thrower"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-084",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a consumer?",
+    "options": ["Accepts input, returns nothing", "Functional interface", "Both 1 and 2", "Input consumer"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-085",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a TreeSet?",
+    "options": ["Sorted set", "Set with ordering", "Both 1 and 2", "Tree-based set"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-086",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the catch block?",
+    "options": ["Handles exception", "Exception handler", "Both 1 and 2", "Catches exceptions"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-087",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a supplier?",
+    "options": ["Provides output, no input", "Functional interface", "Both 1 and 2", "Value supplier"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-088",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a Hashtable?",
+    "options": ["Synchronized map", "Legacy class", "Both 1 and 2", "Hash table"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-089",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the try block?",
+    "options": ["Code that may throw exception", "Protected code", "Both 1 and 2", "Exception trial"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-090",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a unary operator?",
+    "options": ["Single operand operation", "Functional interface", "Both 1 and 2", "Unary function"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-091",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a Vector?",
+    "options": ["Synchronized ArrayList", "Legacy class", "Both 1 and 2", "Dynamic array"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-092",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the finally block?",
+    "options": ["Always executes", "Cleanup block", "Both 1 and 2", "Final block"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-093",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a binary operator?",
+    "options": ["Two operand operation", "Functional interface", "Both 1 and 2", "Binary function"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-094",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a Stack?",
+    "options": ["LIFO structure", "Last-in-first-out", "Both 1 and 2", "Push-pop structure"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-095",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the throw keyword?",
+    "options": ["Throws exception", "Exception throw", "Both 1 and 2", "Throws keyword"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-096",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a stream?",
+    "options": ["Sequence of elements", "Functional operations", "Both 极1 and 2", "Data stream"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-097",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a PriorityQueue?",
+    "options": ["Ordered queue", "Priority-based", "Both 1 and 2", "Sorted queue"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-098",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the throws clause?",
+    "options": ["Declares exceptions", "Exception specification", "Both 1 and 2", "Throws declaration"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-099",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a lambda expression?",
+    "options": ["Anonymous function", "Function literal", "Both 1 and 2", "Lambda function"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-100",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "What is a HashMap?",
+    "options": ["Key-value store", "Hash table implementation", "Both 1 and 2", "Map implementation"],
+    "answerIndex": 2
+  },
   {
     "id": "java-adv-001",
     "subject": "java",
-    "difficulty": "advance",
+    "difficulty": "advanced",
     "topic": "Concurrency",
     "question": "Which package provides concurrency utilities in Java?",
     "options": ["java.util.concurrent", "java.thread", "java.sync", "java.concurrent"],
@@ -2772,19 +4519,893 @@
   {
     "id": "java-adv-002",
     "subject": "java",
-    "difficulty": "advance",
+    "difficulty": "advanced",
     "topic": "JVM",
     "question": "What does JIT stand for in Java?",
-    "options": ["Java Internal Translator", "Just In Time compiler", "Java Intermediate Tool", "Joint Instruction Translator"],
+    "极options": ["Java Internal Translator", "Just In Time compiler", "Java Intermediate Tool", "Joint Instruction Translator"],
     "answerIndex": 1
   },
   {
     "id": "java-adv-003",
     "subject": "java",
-    "difficulty": "advance",
+    "difficulty": "advanced",
     "topic": "Frameworks",
     "question": "Which of the following is a popular Java framework?",
     "options": ["Django", "Spring", "Flask", "Rails"],
     "answerIndex": 1
+  },
+  {
+    "id": "java-adv-004",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a thread?",
+    "options": ["Lightweight process", "Unit of execution", "Both 1 and 2", "Process component"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-005",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM?",
+    "options": ["Java Virtual Machine", "Runtime environment", "Both 1 and 2", "Java compiler"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-006",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Spring Framework?",
+    "options": ["Application framework", "Dependency injection", "Both 1 and 2", "Web framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-007",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is the synchronized keyword?",
+    "options": ["For thread safety", "Mutual exclusion", "Both 1 and 2", "Synchronization"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-008",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is bytecode?",
+    "options": ["Intermediate code", "JVM instructions", "Both 1 and 2", "Java code"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-009",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Hibernate?",
+    "options": ["ORM framework", "Object-relational mapping", "Both 1 and 2", "Database tool"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-010",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a deadlock?",
+    "options": ["Threads waiting for each other", "Circular dependency", "Both 1 and 2", "Thread lock"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-011",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is garbage collection?",
+    "options": ["Memory management", "Automatic memory回收", "Both 1 and 2", "Memory cleanup"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-012",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Spring Boot?",
+    "options": ["Rapid application development", "Spring with defaults", "Both 1 and 2", "Spring extension"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-013",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is an executor service?",
+    "options": ["Thread pool management", "Task execution service", "Both 1 and 2", "Executor framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-014",
+    "subject": "极java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the classloader?",
+    "options": ["Loads classes", "Part of JVM", "Both 1 and 2", "Class manager"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-015",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is JPA?",
+    "options": ["Java Persistence API", "ORM specification", "Both 1 and 2", "Persistence framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-016",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a countdown latch?",
+    "options": ["Synchronization aid", "Waits for completion", "Both 1 and 2", "Countdown timer"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-017",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the heap?",
+    "options": ["Memory for objects", "Runtime data area", "Both 1 and 2", "Object store"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-018",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Spring MVC?",
+    "options": ["Web framework", "Model-View-Controller", "Both 1 and 2", "Spring web"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-019",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a cyclic barrier?",
+    "options": ["Synchronization point", "Reusable barrier", "Both 1 and 2", "Cyclic synchronizer"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-020",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the stack?",
+    "options": ["Stores method calls", "Thread-specific", "Both 1 and 2", "Call stack"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-021",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Jackson?",
+    "options": ["JSON processor", "Data binding", "Both 1 and 2", "JSON library"],
+    "answer极Index": 2
+  },
+  {
+    "id": "java-adv-022",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a semaphore?",
+    "options": ["Controls access", "Counting semaphore", "Both 1 and 2", "Access controller"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-023",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is JIT compilation?",
+    "options": ["Just-in-time compilation", "Runtime compilation", "Both 1 and 2", "Dynamic compilation"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-024",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Maven?",
+    "options": ["Build tool", "Dependency management", "Both 1 and 2", "Project tool"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-025",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a future?",
+    "options": ["Represents async result", "Future value", "Both 1 and 2", "Async task"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-026",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the method area?",
+    "options": ["Stores class data", "Part of heap", "Both 1 and 2", "Class storage"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-027",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Gradle?",
+    "极options": ["Build tool", "Groovy-based", "Both 1 and 2", "Build system"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-028",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a lock?",
+    "options": ["Synchronization mechanism", "Explicit lock", "Both 1 and 2", "Lock object"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-029",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the young generation?",
+    "options": ["Heap area for new objects", "Garbage collection area", "Both 1 and 2", "New generation"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-030",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is JUnit?",
+    "options": ["Testing framework", "Unit testing", "Both 1 and 2", "Test framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-031",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is thread pooling?",
+    "options": ["Reusing threads", "Thread management", "Both 1 and 2", "Pool of threads"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-032",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the old generation?",
+    "options": ["Heap area for old objects", "Tenured generation", "Both 1 and 2", "Old objects"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-033",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Log4j?",
+    "options": ["Logging framework", "Log management", "Both 1 and 2", "Logger"],
+    "answerIndex极": 2
+  },
+  {
+    "id": "java-adv-034",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is atomicity?",
+    "options": ["Indivisible operation", "All or nothing", "Both 1 and 2", "Atomic operation"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-035",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is permgen?",
+    "options": ["Permanent generation", "Class metadata", "Both 1 and 2", "Permanent space"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-036",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Apache Struts?",
+    "options": ["Web framework", "MVC framework", "Both 1 and 2", "Web application framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-037",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is visibility?",
+    "options": ["Memory visibility", "Thread seeing changes", "Both 1 and 2", "Visible changes"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-038",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is metaspace?",
+    "options": ["Replacement for permgen", "Class metadata", "Both 1 and 2", "Meta space"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-039",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is JSF?",
+    "options": ["JavaServer Faces", "Web framework", "Both 1 and 2", "UI framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-040",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a race condition?",
+    "options": ["Timing-dependent behavior", "Unexpected results", "Both 1 and 2", "Race between threads"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-041",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JRE?",
+    "options": ["Java Runtime Environment", "Runs Java programs", "Both 1 and 2", "Java runtime"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-042",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Play Framework?",
+    "options": ["Web framework", "Reactive framework", "Both 1 and 2", "Play framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-043",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a blocking queue?",
+    "options": ["Queue that blocks", "Thread-safe queue", "Both 1 and 2", "Blocking collection"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-044",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JDK?",
+    "options": ["Java Development Kit", "Development tools", "Both 1 and 2", "Java kit"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-045",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Apache Kafka?",
+    "options": ["Message broker", "Streaming platform", "Both 1 and 2", "Messaging system"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-046",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a callable?",
+    "options": ["Task that returns result", "Like Runnable with return", "Both 1 and 2", "Callable task"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-047",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the garbage collector?",
+    "options": ["Manages memory", "Reclaims memory", "Both 1 and 2", "Memory manager"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-048",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Micronaut?",
+    "options": ["Modern framework", "Lightweight", "Both 1 and 2", "Microservices framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-049",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a fork-join pool?",
+    "options": ["For divide-and-conquer", "Work-stealing pool", "Both 1 and 2", "Fork join framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-050",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the hotspot JVM?",
+    "options": ["Oracle's JVM", "Performance engine", "Both 1 and 2", "Hotspot virtual machine"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-051",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Quarkus?",
+    "options": ["Kubernetes-native framework", "Supersonic Subatomic Java", "Both 1 and 2", "Cloud framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-052",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a completable future?",
+    "options": ["Completable async result", "Future with callbacks", "Both 1 and 2", "Completable task"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-053",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM spec?",
+    "options": ["JVM specification", "Standard definition", "Both 1 and 2", "Virtual machine spec"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-054",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Vaadin?",
+    "options": ["Web framework", "UI components", "Both 1 and 2", "Web UI framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-055",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a phaser?",
+    "options": ["Flexible barrier", "Synchronization aid", "Both 1 and 2", "Phase synchronizer"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-056",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the Java memory model?",
+    "options": ["Memory consistency model", "Defines how threads interact", "Both 1 and 2", "Memory model"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-057",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Dropwizard?",
+    "options": ["Java framework", "For web services", "Both 1 and 2", "Web service framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-058",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a read-write lock?",
+    "options": ["Allows multiple readers", "Single writer", "Both 1 and 2", "Read write synchronization"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-059",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM TI?",
+    "options": ["JVM Tool Interface", "For tools and agents", "Both 1 and 2", "Tool interface"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-060",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question极": "What is Apache CXF?",
+    "options": ["Web services framework", "SOAP and REST", "Both 1 and 2", "Web service framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-061",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a condition variable?",
+    "options": ["For thread signaling", "Wait and notify", "Both 1 and 2", "Condition synchronization"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-062",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM heap dump?",
+    "options": ["Snapshot of heap", "For memory analysis", "Both 1 and 2", "Heap snapshot"],
+    "answerIndex": 2
+  },
+  {
+    "id极": "java-adv-063",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Jersey?",
+    "options": ["JAX-RS implementation", "REST framework", "Both 1 and 2", "RESTful services"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-064",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a thread local?",
+    "options": ["Thread-specific storage", "Per-thread variables", "Both 1 and 2", "Thread local storage"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-065",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM stack trace?",
+    "options": ["Call stack snapshot", "For debugging", "Both 1 and 2", "Stack snapshot"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-066",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Apache Tomcat?",
+    "options": ["Servlet container", "Web server", "Both 1 and 2", "Java web server"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-067",
+    "subject极": "java",
+    "difficulty": "极advanced",
+    "topic": "Concurrency",
+    "question": "What is an atomic variable?",
+    "options": ["Thread-safe variable", "Atomic operations", "Both 1 and 2", "Atomic reference"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-068",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM profiler?",
+    "options": ["Performance analyzer", "Monitors execution", "Both 1 and 2", "Profiling tool"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-069",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Netty?",
+    "options": ["Network framework", "Asynchronous event-driven", "Both 1 and 2", "Network application framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-070",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a stamped lock?",
+    "options": ["Optimistic locking", "Read-write lock with stamp", "Both 1 and 2", "Stamped synchronization"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-071",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM monitor?",
+    "options": ["Synchronization mechanism", "Intrinsic lock", "Both 1 and 2", "Monitor lock"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-072",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is JHipster?",
+    "options": ["Application generator", "Spring Boot + Angular", "Both 1 and 2", "Development platform"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-073",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a exchange?",
+    "options": ["Synchronization point", "Threads exchange data", "Both 1 and 2", "Data exchange"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-074",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM agent?",
+    "options": ["Modifies JVM behavior", "Instrumentation agent", "Both 1 and 2", "JVM tool"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-075",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Apache Wicket?",
+    "极options": ["Web framework", "Component-based", "Both 1 and 2", "Web application framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-076",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a blocking operation?",
+    "options": ["Operation that blocks", "Waits for condition", "Both 1 and 2", "Blocking call"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-077",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM verifier?",
+    "options": ["Checks bytecode", "Security verification", "Both 1 and 2", "Bytecode verifier"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-078",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Vert.x?",
+    "options": ["Reactive framework", "Event-driven", "Both 1 and 2", "Reactive application platform"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-079",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a non-blocking algorithm?",
+    "options": ["Algorithm that doesn't block", "Lock-free algorithm", "Both 1 and 2", "Non-blocking implementation"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-080",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM interpreter?",
+    "options": ["Executes bytecode", "Interprets instructions", "Both 1 and 2", "Bytecode interpreter"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-081",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Apache Shiro?",
+    "options": ["Security framework", "Authentication and authorization", "Both 极1 and 2", "Security library"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-082",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a spin lock?",
+    "options": ["Lock that spins", "Busy-wait lock", "Both 1 and 2", "Spinning lock"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-083",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM compiler?",
+    "options": ["Compiles bytecode", "JIT compiler", "Both 1 and 2", "Code compiler"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-084",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Thymeleaf?",
+    "options": ["Template engine", "For web and email", "Both 1 and 2", "Template library"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-085",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a work-stealing algorithm?",
+    "options": ["For thread pools", "Steals work from other threads", "Both 1 and 2", "Work stealing"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-086",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM runtime?",
+    "options": ["Runtime environment", "Executes programs", "Both 1 and 2", "Java runtime"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-087",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Flyway?",
+    "options": ["Database migration", "Version control for database", "Both 1 and 2", "Database tool"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-088",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a memory barrier?",
+    "options": ["Memory ordering constraint", "Prevents instruction reordering", "Both 1 and 2", "Memory fence"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-089",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM shutdown hook?",
+    "options": ["Runs on JVM shutdown", "Cleanup code", "Both 1 and 2", "Shutdown routine"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-090",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Liquibase?",
+    "options": ["Database migration", "Database change management", "Both 1 and 2", "Database versioning"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-091",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a concurrent collection?",
+    "options": ["Thread-safe collection", "Designed for concurrency", "Both 1 and 2", "Concurrent data structure"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-092",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM attach API?",
+    "options": ["Attach to running JVM", "For tools", "Both 1 and 2", "Attachment API"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-093",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is MapStruct?",
+    "options": ["Mapping framework", "Code generator", "Both 1 and 2", "Object mapper"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-094",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a condition queue?",
+    "options": ["For thread waiting", "Condition-based waiting", "Both 1 and 2", "Condition variable queue"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-095",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM management API?",
+    "options": ["Monitors JVM", "Management interface", "Both 1 and 2", "JMX API"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-096",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is TestNG?",
+    "options": ["Testing framework", "Next generation testing", "Both 1 and 2", "Test framework"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-097",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a fork-join task?",
+    "options": ["For divide-and-conquer", "Recursive task", "Both 1 and 2", "Fork join task"],
+    "answer极Index": 2
+  },
+  {
+    "id": "java-adv-098",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "JVM",
+    "question": "What is the JVM bytecode engineering?",
+    "options": ["Modifying bytecode", "Bytecode manipulation", "Both 1 and 2", "Bytecode engineering"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-099",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Frameworks",
+    "question": "What is Apache Commons?",
+    "options": ["Utility library", "Common utilities", "Both 1 and 2", "Commons library"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-adv-100",
+    "subject": "java",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a concurrent modifier?",
+    "options": ["Modifies for concurrency", "Thread-safe modification", "Both 1 and 2", "Concurrent modification"],
+    "answerIndex": 2
   }
 ]
+

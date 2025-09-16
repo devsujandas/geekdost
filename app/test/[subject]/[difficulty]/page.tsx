@@ -148,8 +148,8 @@ export default function ExamPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4">
-      {/* Timer */} 
-      <div className="fixed top-4 right-4 glass px-4 py-2 rounded-lg font-bold text-lg">
+      {/* ✅ Timer fixed with z-index so it never hides */}
+      <div className="fixed top-4 right-4 glass px-4 py-2 rounded-lg font-bold text-lg z-50">
         ⏳ {formatTime(timeLeft)}
       </div>
 
