@@ -1,116 +1,50 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { getQuestions } from "@/lib/questions"
-import { saveResult, saveProgress, getProgress, clearProgress } from "@/lib/storage"
+import { saveResult } from "@/lib/storage"
 import { motion, AnimatePresence } from "framer-motion"
 import ExamNavigation from "@/components/ExamNavigation"
 
-export default function ExamPage() {
+export default function PracticePage() {
   const { subject, difficulty } = useParams()
   const router = useRouter()
 
   const [questions, setQuestions] = useState<any[]>([])
   const [current, setCurrent] = useState(0)
   const [answers, setAnswers] = useState<Record<string, number | null>>({})
-  const [timeLeft, setTimeLeft] = useState(60 * 60) // 60 mins in seconds
   const [submitting, setSubmitting] = useState(false)
   const [progress, setProgress] = useState(0)
   const [showConfirm, setShowConfirm] = useState(false)
-  const [timePerQ, setTimePerQ] = useState<Record<string, number>>({})
 
-  const timerRef = useRef<NodeJS.Timeout | null>(null)
-  const lastChangeRef = useRef<number>(Date.now())
-
-  // Load questions + progress
+  // Load questions
   useEffect(() => {
     const q = getQuestions(subject as string, difficulty as string, 50)
     setQuestions(q)
-
     const init: Record<string, null> = {}
     q.forEach((x) => (init[x.id] = null))
-
-    const saved = getProgress(subject as string, difficulty as string)
-    if (saved) {
-      setAnswers(saved.answers)
-      setCurrent(saved.current)
-      setTimeLeft(saved.timeLeft)
-      setTimePerQ(saved.timePerQ || {})
-    } else {
-      setAnswers(init)
-      setTimePerQ({})
-    }
+    setAnswers(init)
   }, [subject, difficulty])
-
-  // Timer
-  useEffect(() => {
-    if (!questions.length) return
-    timerRef.current = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          clearInterval(timerRef.current!)
-          submit(true)
-          return 0
-        }
-        return prev - 1
-      })
-    }, 1000)
-    return () => clearInterval(timerRef.current!)
-  }, [questions])
-
-  // Track time per question
-  useEffect(() => {
-    const now = Date.now()
-    const prevQ = questions[current]?.id
-    if (prevQ && lastChangeRef.current) {
-      const diff = Math.floor((now - lastChangeRef.current) / 1000)
-      setTimePerQ((prev) => ({ ...prev, [prevQ]: (prev[prevQ] || 0) + diff }))
-    }
-    lastChangeRef.current = now
-  }, [current])
-
-  // Auto save
-  useEffect(() => {
-    if (questions.length) {
-      saveProgress(subject as string, difficulty as string, {
-        answers,
-        current,
-        timeLeft,
-        timePerQ,
-      })
-    }
-  }, [answers, current, timeLeft, timePerQ, subject, difficulty, questions])
-
-  function formatTime(sec: number) {
-    const m = Math.floor(sec / 60)
-    const s = sec % 60
-    return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`
-  }
 
   function selectAnswer(qid: string, idx: number) {
     setAnswers((prev) => ({ ...prev, [qid]: idx }))
   }
 
-  function submit(auto = false) {
+  function submit() {
     setSubmitting(true)
-    clearInterval(timerRef.current!)
-    clearProgress(subject as string, difficulty as string)
 
     const result = {
       subject,
       difficulty,
-      mode: "exam", // ✅ fixed exam mode
+      mode: "practice", // 🔥 fixed practice mode
       answers,
       total: questions.length,
       date: new Date().toISOString(),
-      timeTaken: 60 * 60 - timeLeft,
-      timePerQ,
-      autoSubmitted: auto,
     }
     saveResult(result)
 
-    // Simulate calculating with animated progress
+    // Fake calculating animation
     let percent = 0
     const interval = setInterval(() => {
       percent += Math.floor(Math.random() * 15) + 5
@@ -133,13 +67,13 @@ export default function ExamPage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen px-6 text-center">
         <motion.h2 initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-2xl font-bold mb-6">
-          Calculating Your Result...
+          Checking Your Practice...
         </motion.h2>
         <div className="w-full max-w-md bg-accent/20 rounded-full h-4 overflow-hidden mb-4">
           <motion.div className="bg-primary h-4" initial={{ width: "0%" }} animate={{ width: `${progress}%` }} />
         </div>
         <p className="text-lg font-semibold text-primary">{progress}%</p>
-        <p className="text-muted-foreground mt-2">Analyzing answers, please wait...</p>
+        <p className="text-muted-foreground mt-2">Almost done...</p>
       </div>
     )
   }
@@ -148,11 +82,6 @@ export default function ExamPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4">
-      {/* Timer */} 
-      <div className="fixed top-4 right-4 glass px-4 py-2 rounded-lg font-bold text-lg">
-        ⏳ {formatTime(timeLeft)}
-      </div>
-
       {/* Question Card */}
       <motion.div
         className="glass p-8 rounded-2xl max-w-2xl w-full"
@@ -165,19 +94,31 @@ export default function ExamPage() {
         <p className="mb-6 text-lg text-center">{q.question}</p>
 
         <div className="space-y-3 mb-8">
-          {q.options.map((opt: string, idx: number) => (
-            <button
-              key={idx}
-              onClick={() => selectAnswer(q.id, idx)}
-              className={`block w-full text-left px-4 py-3 rounded-lg border transition-all duration-200 ${
-                answers[q.id] === idx
-                  ? "border-primary bg-primary/20"
-                  : "border-border hover:bg-accent/10"
-              }`}
-            >
-              {opt}
-            </button>
-          ))}
+          {q.options.map((opt: string, idx: number) => {
+            const isSelected = answers[q.id] === idx
+            const isCorrect = idx === q.answerIndex
+
+            return (
+              <button
+                key={idx}
+                onClick={() => selectAnswer(q.id, idx)}
+                className={`block w-full text-left px-4 py-3 rounded-lg border transition-all duration-200 ${
+                  isSelected
+                    ? "border-primary bg-primary/20"
+                    : "border-border hover:bg-accent/10"
+                } ${
+                  // ✅ practice mode এ সাথে সাথে দেখাবে correct/wrong
+                  isSelected
+                    ? isCorrect
+                      ? "border-green-500 bg-green-500/10"
+                      : "border-red-500 bg-red-500/10"
+                    : ""
+                }`}
+              >
+                {opt}
+              </button>
+            )
+          })}
         </div>
 
         <div className="flex justify-between">
@@ -197,7 +138,7 @@ export default function ExamPage() {
               onClick={() => setShowConfirm(true)}
               className="px-6 py-2 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90"
             >
-              Submit
+              Finish Practice
             </button>
           )}
         </div>
@@ -221,7 +162,7 @@ export default function ExamPage() {
               exit={{ scale: 0.9 }}
               className="glass p-6 rounded-xl max-w-md w-full text-center"
             >
-              <h3 className="text-xl font-bold mb-4">Submit Exam?</h3>
+              <h3 className="text-xl font-bold mb-4">Submit Practice?</h3>
               <p className="text-muted-foreground mb-6">
                 You still have {Object.values(answers).filter((a) => a === null).length} unanswered questions.
               </p>
@@ -230,10 +171,10 @@ export default function ExamPage() {
                   Cancel
                 </button>
                 <button
-                  onClick={() => submit(false)}
+                  onClick={() => submit()}
                   className="px-4 py-2 bg-primary text-primary-foreground rounded-lg"
                 >
-                  Submit Anyway
+                  Submit
                 </button>
               </div>
             </motion.div>

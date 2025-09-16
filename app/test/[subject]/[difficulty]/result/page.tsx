@@ -40,6 +40,12 @@ export default function ResultPage() {
   const wrong = answered - score
   const percentage = Math.round((score / latest.total) * 100)
 
+  // --- Grade Calculation ---
+  let grade = "F"
+  if (percentage >= 90) grade = "O" // Outstanding
+  else if (percentage >= 75) grade = "A" // Excellent
+  else if (percentage >= 60) grade = "E" // Eligible
+
   // --- Performance Summary ---
   let summary = { icon: <FaRegSadTear className="text-red-500 h-6 w-6" />, text: "Needs improvement. Keep practicing!" }
   if (percentage >= 80)
@@ -73,8 +79,8 @@ export default function ResultPage() {
   const resultData = {
     subject,
     difficulty,
-    score,
-    total: latest.total,
+    mode: latest.mode, // ✅ include mode
+    grade,
     percentage,
     answered,
     notAnswered,
@@ -117,6 +123,7 @@ export default function ResultPage() {
 
         {/* Score */}
         <p className="text-lg font-semibold">Score: {score} / {latest.total}</p>
+        <p className="text-md font-medium mt-1">Grade: {grade}</p>
 
         {/* Performance Summary */}
         <div className="flex items-center justify-center gap-2 mt-4">
@@ -185,6 +192,20 @@ export default function ResultPage() {
             Other Subjects
           </button>
         </div>
+
+        {/* Suggest Practice if Exam failed */}
+        {latest.mode === "exam" && percentage < 60 && (
+          <div className="mt-8 p-4 bg-yellow-100 border border-yellow-400 text-yellow-800 rounded-lg">
+            <p className="font-semibold">You scored below 60% in Exam Mode.</p>
+            <p className="text-sm mt-1">We recommend trying a <span className="font-bold">Practice Test</span> to improve your skills.</p>
+            <button
+              onClick={() => router.push(`/test/${subject}/${difficulty}/practice`)}
+              className="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-lg hover:opacity-90"
+            >
+              Start Practice Test
+            </button>
+          </div>
+        )}
       </motion.div>
 
       {/* Weakness Analysis */}
@@ -231,10 +252,10 @@ export default function ResultPage() {
         })}
       </div>
 
-      {/* Certificate of Completion */}
-      {percentage >= 60 && (
+      {/* Certificate of Completion (Exam Mode only) */}
+      {latest.mode === "exam" && percentage >= 60 && (
         <div className="mt-12">
-          <Certificate result={{ ...resultData, score }} />
+          <Certificate result={resultData} />
         </div>
       )}
     </div>

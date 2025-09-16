@@ -1,17 +1,30 @@
 "use client"
 
-import { useParams, useRouter } from "next/navigation"
+import { useParams, useRouter, useSearchParams } from "next/navigation"
 import { MdOutlineQuiz } from "react-icons/md"
 import { motion } from "framer-motion"
 
 export default function DifficultyPage() {
   const { subject } = useParams()
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const mode = searchParams.get("mode") // ✅ check query param
+
   const levels = [
     { id: "basic", label: "Basic" },
     { id: "intermediate", label: "Intermediate" },
     { id: "advance", label: "Advance" },
   ]
+
+  function handleClick(level: string) {
+    if (mode === "practice") {
+      // ✅ Practice Mode → সরাসরি practice page
+      router.push(`/test/${subject}/${level}/practice`)
+    } else {
+      // ✅ Exam Mode (default) → rules page
+      router.push(`/test/${subject}/${level}/rules`)
+    }
+  }
 
   return (
     <div className="container mx-auto py-20 px-6 text-center">
@@ -30,8 +43,7 @@ export default function DifficultyPage() {
         {levels.map((lvl, idx) => (
           <motion.button
             key={lvl.id}
-            // 👉 এখন rules page এ যাবে, exam এ না
-            onClick={() => router.push(`/test/${subject}/${lvl.id}/rules`)}
+            onClick={() => handleClick(lvl.id)}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="glass p-10 rounded-2xl flex flex-col items-center justify-center 
