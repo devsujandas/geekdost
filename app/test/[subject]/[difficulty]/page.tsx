@@ -5,7 +5,7 @@ import { useParams, useRouter } from "next/navigation"
 import { getQuestions } from "@/lib/questions"
 import { saveResult, saveProgress, getProgress, clearProgress } from "@/lib/storage"
 import { motion, AnimatePresence } from "framer-motion"
-import ExamNavigation from "@/components/ExamNavigation"
+import { FaCheckCircle, FaTimesCircle, FaQuestionCircle } from "react-icons/fa"
 
 export default function ExamPage() {
   const { subject, difficulty } = useParams()
@@ -14,7 +14,7 @@ export default function ExamPage() {
   const [questions, setQuestions] = useState<any[]>([])
   const [current, setCurrent] = useState(0)
   const [answers, setAnswers] = useState<Record<string, number | null>>({})
-  const [timeLeft, setTimeLeft] = useState(60 * 60) // 60 mins in seconds
+  const [timeLeft, setTimeLeft] = useState(60 * 60) // 60 mins
   const [submitting, setSubmitting] = useState(false)
   const [progress, setProgress] = useState(0)
   const [showConfirm, setShowConfirm] = useState(false)
@@ -100,7 +100,7 @@ export default function ExamPage() {
     const result = {
       subject,
       difficulty,
-      mode: "exam", // ✅ fixed exam mode
+      mode: "exam",
       answers,
       total: questions.length,
       date: new Date().toISOString(),
@@ -110,7 +110,6 @@ export default function ExamPage() {
     }
     saveResult(result)
 
-    // Simulate calculating with animated progress
     let percent = 0
     const interval = setInterval(() => {
       percent += Math.floor(Math.random() * 15) + 5
@@ -146,16 +145,23 @@ export default function ExamPage() {
 
   const q = questions[current]
 
+  // ✅ Correct Answer / Not Answered count
+  const totalQuestions = questions.length
+  const answeredCount = Object.values(answers).filter(
+    (a) => a !== null && a !== undefined
+  ).length
+  const notAnsweredCount = totalQuestions - answeredCount
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4">
-      {/* ✅ Timer fixed with z-index so it never hides */}
+    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-6">
+      {/* Timer */}
       <div className="fixed top-4 right-4 glass px-4 py-2 rounded-lg font-bold text-lg z-50">
         ⏳ {formatTime(timeLeft)}
       </div>
 
       {/* Question Card */}
       <motion.div
-        className="glass p-8 rounded-2xl max-w-2xl w-full"
+        className="glass p-6 md:p-8 rounded-2xl max-w-2xl w-full mb-6"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -203,8 +209,44 @@ export default function ExamPage() {
         </div>
       </motion.div>
 
+      {/* Legend */}
+      <div className="flex gap-6 mt-2 text-sm text-gray-400 flex-wrap justify-center">
+        <div className="flex items-center gap-1">
+          <FaCheckCircle className="text-green-500" /> Answered
+        </div>
+        <div className="flex items-center gap-1">
+          <FaTimesCircle className="text-blue-500" /> Current
+        </div>
+        <div className="flex items-center gap-1">
+          <FaQuestionCircle className="text-gray-400" /> Not Answered
+        </div>
+      </div>
+
       {/* Navigation Grid */}
-      <ExamNavigation total={questions.length} current={current} answers={answers} onNavigate={setCurrent} />
+      <div className="mt-4 mb-6 max-h-[260px] overflow-y-auto grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 gap-2 max-w-3xl w-full p-2 rounded-xl">
+        {questions.map((q, i) => {
+          const userAns = answers[q.id]
+          const isAnswered = userAns !== null && userAns !== undefined
+          const isCurrent = i === current
+          return (
+            <motion.button
+              key={q.id}
+              onClick={() => setCurrent(i)}
+              className={`w-10 h-10 rounded-lg font-semibold transition ${
+                isCurrent
+                  ? "bg-blue-600 text-white"
+                  : isAnswered
+                  ? "bg-green-500 text-white"
+                  : "bg-gray-800 text-gray-300 hover:bg-gray-700"
+              }`}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              {i + 1}
+            </motion.button>
+          )
+        })}
+      </div>
 
       {/* Confirm Submit Modal */}
       <AnimatePresence>
@@ -222,9 +264,14 @@ export default function ExamPage() {
               className="glass p-6 rounded-xl max-w-md w-full text-center"
             >
               <h3 className="text-xl font-bold mb-4">Submit Exam?</h3>
-              <p className="text-muted-foreground mb-6">
-                You still have {Object.values(answers).filter((a) => a === null).length} unanswered questions.
-              </p>
+              <div className="flex flex-col items-center gap-2 mb-6 text-sm">
+                <span className="flex items-center gap-2">
+                  <FaCheckCircle className="text-green-500" /> Answered: {answeredCount}
+                </span>
+                <span className="flex items-center gap-2">
+                  <FaQuestionCircle className="text-gray-400" /> Not Answered: {notAnsweredCount}
+                </span>
+              </div>
               <div className="flex justify-center gap-4">
                 <button onClick={() => setShowConfirm(false)} className="px-4 py-2 glass rounded-lg">
                   Cancel
