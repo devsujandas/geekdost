@@ -1,4 +1,5 @@
 [
+    
   {
     "id": "py-basic-001",
     "subject": "python",
@@ -17,88 +18,2689 @@
     "options": ["function", "define", "def", "fun"],
     "answerIndex": 2
   },
-
   {
-    "id": "java-basic-001",
-    "subject": "java",
-    "difficulty": "basic",
-    "topic": "Syntax",
-    "question": "Which keyword is used to define a class in Java?",
-    "options": ["class", "define", "struct", "ClassDef"],
-    "answerIndex": 0
-  },
-  {
-    "id": "java-basic-002",
-    "subject": "java",
+    "id": "py-basic-003",
+    "subject": "python",
     "difficulty": "basic",
     "topic": "Data Types",
-    "question": "Which of these is a primitive data type in Java?",
-    "options": ["String", "int", "Integer", "ArrayList"],
-    "answerIndex": 1
+    "question": "Which of the following is a mutable data type in Python?",
+    "options": ["int", "string", "tuple", "list"],
+    "answerIndex": 3
   },
   {
-    "id": "java-basic-003",
-    "subject": "java",
+    "id": "py-basic-004",
+    "subject": "python",
     "difficulty": "basic",
-    "topic": "OOP",
-    "question": "Java supports which type of programming paradigm?",
-    "options": ["Procedural", "Object-Oriented", "Functional", "All of the above"],
-    "answerIndex": 1
-  },
-
-  {
-    "id": "java-inter-001",
-    "subject": "java",
-    "difficulty": "intermediate",
-    "topic": "Collections",
-    "question": "Which interface is implemented by HashMap in Java?",
-    "options": ["List", "Set", "Map", "Collection"],
+    "topic": "Variables",
+    "question": "Which of the following is a valid variable name in Python?",
+    "options": ["2var", "var-name", "_var", "var name"],
     "answerIndex": 2
   },
   {
-    "id": "java-inter-002",
-    "subject": "java",
+    "id": "py-basic-005",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "What does the len() function return for the string 'Python'?",
+    "options": ["5", "6", "7", "8"],
+    "answerIndex": 1
+  },
+  
+  {
+    "id": "py-basic-006",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you add an element to the end of a list?",
+    "options": ["list.add()", "list.append()", "list.insert()", "list.push()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-007",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "Which keyword is used to start an 'else if' statement in Python?",
+    "options": ["elseif", "elif", "else if", "elsif"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-008",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "Which loop is used to iterate over a sequence in Python?",
+    "options": ["for loop", "while loop", "do-while loop", "repeat loop"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-009",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the output of print(10 // 3)?",
+    "options": ["3.333", "3", "4", "3.0"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-010",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method is used to convert a string to uppercase?",
+    "options": ["upper()", "toupper()", "uppercase()", "toUpper()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-011",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you access the last element of a list?",
+    "options": ["list[0]", "list[-1]", "list[last]", "list.end()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-012",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Dictionaries",
+    "question": "How do you access a value in a dictionary?",
+    "options": ["dict.value(key)", "dict[key]", "dict.get(key)", "Both 2 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-013",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What keyword is used to return a value from a function?",
+    "options": ["return", "break", "yield", "exit"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-014",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which data type is used to store a sequence of characters?",
+    "options": ["int", "float", "string", "char"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-basic-015",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the output of print(2 ** 3)?",
+    "options": ["6", "8", "9", "23"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-016",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "What is the data type of the variable: x = 5",
+    "options": ["int", "float", "string", "double"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-017",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which operator is used to concatenate strings?",
+    "options": ["+", "&", "concat", "|"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-018",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you remove an element from a list by value?",
+    "options": ["list.delete()", "list.remove()", "list.pop()", "list.del()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-019",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Tuples",
+    "question": "How are tuples different from lists?",
+    "options": ["Tuples are mutable", "Lists are immutable", "Tuples are immutable", "There is no difference"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-basic-020",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "What is the output of: print(5 > 3 and 2 < 1)",
+    "options": ["True", "False", "Error", "None"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-021",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "Which statement is used to skip the current iteration of a loop?",
+    "options": ["break", "continue", "pass", "skip"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-022",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is the default return value of a function that doesn't have a return statement?",
+    "options": ["0", "None", "False", "Error"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-023",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which data type would you use to store true/false values?",
+    "options": ["int", "float", "bool", "string"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-basic-024",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the output of: print(10 % 3)",
+    "options": ["3", "1", "0", "3.333"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-025",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method is used to find the position of a substring in a string?",
+    "options": ["find()", "search()", "index()", "Both 1 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-026",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you create a copy of a list?",
+    "options": ["list.copy()", "list.clone()", "list[:]", "Both 1 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-027",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Dictionaries",
+    "question": "How do you check if a key exists in a dictionary?",
+    "options": ["dict.has_key()", "key in dict", "dict.exists()", "dict.contains()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-028",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is the correct way to define a function with parameters?",
+    "options": ["def func: parameters", "def func(parameters)", "function func(parameters)", "define func(parameters)"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-029",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "What is the scope of a variable defined inside a function?",
+    "options": ["Global", "Local", "Both", "Neither"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-030",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method is used to replace parts of a string?",
+    "options": ["replace()", "sub()", "swap()", "change()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-031",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you get the number of elements in a list?",
+    "options": ["list.size()", "list.length()", "len(list)", "list.count()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-basic-032",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Tuples",
+    "question": "How do you create a tuple with one element?",
+    "options": ["(1)", "(1,)", "tuple(1)", "[1]"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-033",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "What is the output of: print(not True)",
+    "options": ["True", "False", "Error", "None"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-034",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "Which statement is used to exit a loop prematurely?",
+    "options": ["break", "continue", "exit", "return"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-035",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is a docstring used for?",
+    "options": ["To document a function", "To create a string variable", "To print documentation", "To comment code"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-036",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which data type is used to store key-value pairs?",
+    "options": ["list", "tuple", "dictionary", "set"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-basic-037",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the output of: print('hello' * 3)",
+    "options": ["hellohellohello", "hello3", "Error", "hello hello hello"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-038",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method is used to split a string into a list?",
+    "options": ["split()", "divide()", "partition()", "separate()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-039",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you reverse a list in place?",
+    "options": ["list.reverse()", "list[::-1]", "reversed(list)", "Both 1 and 2"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-040",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Dictionaries",
+    "question": "How do you get all the keys from a dictionary?",
+    "options": ["dict.keys()", "dict.get_keys()", "dict.all_keys()", "dict.key_list()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-041",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is the purpose of the return statement?",
+    "options": ["To exit a function", "To return a value from a function", "To print a value", "To stop program execution"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-042",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "How do you convert a string to an integer?",
+    "options": ["int()", "str_to_int()", "convert_int()", "to_int()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-043",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method is used to remove whitespace from the beginning and end of a string?",
+    "options": ["trim()", "strip()", "clean()", "remove_whitespace()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-044",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you add multiple elements to a list?",
+    "options": ["list.add_many()", "list.extend()", "list.append_many()", "list.insert_many()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-045",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Tuples",
+    "question": "How do you access the first element of a tuple?",
+    "options": ["tuple[0]", "tuple[1]", "tuple.first()", "tuple(0)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-046",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "What is the output of: print(5 == '5')",
+    "options": ["True", "False", "Error", "None"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-047",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "What does the range(5) function generate?",
+    "options": ["[0, 1, 2, 3, 4]", "[1, 2, 3, 4, 5]", "[0, 1, 2, 3, 4, 5]", "[5]"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-048",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is a lambda function?",
+    "options": ["A function with no name", "A large function", "A function that returns lambda", "A function that only works with numbers"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-049",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which data type is unordered and does not allow duplicates?",
+    "options": ["list", "tuple", "dictionary", "set"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-050",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the output of: print(7 / 2)",
+    "options": ["3", "3.5", "3.0", "4"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-051",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "How do you check if a string contains only digits?",
+    "options": ["string.isdigit()", "string.isnumeric()", "string.isdecimal()", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-052",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you sort a list in ascending order?",
+    "options": ["list.sort()", "list.order()", "sorted(list)", "Both 1 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-053",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Dictionaries",
+    "question": "How do you add a new key-value pair to a dictionary?",
+    "options": ["dict.add(key, value)", "dict.insert(key, value)", "dict[key] = value", "dict.update(key, value)"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-basic-054",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is the purpose of the pass statement in a function?",
+    "options": ["To skip the function", "To do nothing (placeholder)", "To pass arguments", "To return None"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-055",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "How do you check the data type of a variable?",
+    "options": ["type()", "dtype()", "typeof()", "get_type()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-056",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method is used to convert the first character to uppercase?",
+    "options": ["capitalize()", "title()", "upper_first()", "first_upper()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-057",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you remove the last element from a list?",
+    "options": ["list.remove_last()", "list.pop()", "list.delete()", "list.remove(-1)"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-058",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Tuples",
+    "question": "Can you modify a tuple after it's created?",
+    "options": ["Yes", "No", "Only if it's small", "Only with special methods"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-059",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "What is the output of: print(0 and 5)",
+    "options": ["0", "5", "False", "True"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-060",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "How do you iterate over both index and value in a list?",
+    "options": ["for index, value in list:", "for index, value in enumerate(list)", "for i in range(len(list)):", "Both 2 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-061",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is a function parameter?",
+    "options": ["A variable passed to a function", "The return value of a function", "A local variable in a function", "A global variable"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-062",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which data type would you use to store an immutable sequence of values?",
+    "options": ["list", "tuple", "dictionary", "set"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-063",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the output of: print(True + True)",
+    "options": ["2", "True", "False", "Error"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-064",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "How do you check if a string starts with a specific substring?",
+    "options": ["string.startswith()", "string.beginwith()", "string.prefix()", "string.first()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-065",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you create a list with numbers from 0 to 4?",
+    "options": ["list(0, 1, 2, 3, 4)", "[0, 1, 2, 3, 4]", "list(range(5))", "Both 2 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-066",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Dictionaries",
+    "question": "How do you remove a key from a dictionary?",
+    "options": ["dict.remove(key)", "dict.delete(key)", "del dict[key]", "dict.pop(key)"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-067",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is the purpose of default parameter values?",
+    "options": ["To make parameters optional", "To set minimum values", "To prevent errors", "To optimize performance"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-068",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "How do you convert a number to a string?",
+    "options": ["str()", "string()", "toString()", "convert_str()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-069",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method is used to convert a string to lowercase?",
+    "options": ["lower()", "tolower()", "lowercase()", "toLower()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-070",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you find the index of an element in a list?",
+    "options": ["list.find()", "list.index()", "list.search()", "list.position()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-071",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Tuples",
+    "question": "How do you convert a list to a tuple?",
+    "options": ["tuple(list)", "list.tuple()", "convert_tuple(list)", "to_tuple(list)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-072",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "What is the output of: print(5 if True else 10)",
+    "options": ["5", "10", "True", "False"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-073",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "What does the else clause do in a for loop?",
+    "options": ["Runs if the loop completes normally", "Runs if the loop breaks", "Runs always", "Is not allowed in for loops"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-074",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is a recursive function?",
+    "options": ["A function that calls itself", "A function that returns quickly", "A function with many parameters", "A function that never returns"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-075",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which data type would you use to store a collection of unique elements?",
+    "options": ["list", "tuple", "dictionary", "set"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-076",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the output of: print(3 * 'ab')",
+    "options": ["ababab", "3ab", "ab3", "Error"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-077",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "How do you check if a string contains only alphabetic characters?",
+    "options": ["string.isalpha()", "string.isletter()", "string.alphabetic()", "string.letters()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-078",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you create a list of squares of numbers from 0 to 4?",
+    "options": ["[x^2 for x in range(5)]", "[x*x for x in range(5)]", "list(map(lambda x: x*x, range(5)))", "Both 2 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-079",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Dictionaries",
+    "question": "How do you get all the values from a dictionary?",
+    "options": ["dict.values()", "dict.get_values()", "dict.all_values()", "dict.value_list()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-080",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is the purpose of the global keyword?",
+    "options": ["To declare a global variable", "To access a global variable", "To make a variable global", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-081",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "How do you convert a string to a float?",
+    "options": ["float()", "to_float()", "convert_float()", "str_to_float()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-082",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method is used to join elements of a list into a string?",
+    "options": ["join()", "concat()", "combine()", "merge()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-083",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you create a shallow copy of a list?",
+    "options": ["list.copy()", "list[:]", "list(list)", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-084",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Tuples",
+    "question": "How do you convert a tuple to a list?",
+    "options": ["list(tuple)", "tuple.list()", "convert_list(tuple)", "to_list(tuple)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-085",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "What is the output of: print(not 0)",
+    "options": ["True", "False", "0", "1"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-086",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "How do you create an infinite loop?",
+    "options": ["while True:", "for i in infinity:", "loop forever:", "while 1:"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-087",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is the purpose of the *args parameter?",
+    "options": ["To accept any number of arguments", "To accept only keyword arguments", "To accept a list of arguments", "To accept a tuple of arguments"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-088",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which data type would you use to store a sequence of elements that can be changed?",
+    "options": ["tuple", "string", "list", "set"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-basic-089",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the output of: print(2 + 3 * 4 ** 2)",
+    "options": ["80", "50", "56", "98"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-090",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "How do you check if a string ends with a specific substring?",
+    "options": ["string.endswith()", "string.finishwith()", "string.suffix()", "string.last()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-091",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you insert an element at a specific position in a list?",
+    "options": ["list.insert(position, element)", "list.add(position, element)", "list.put(position, element)", "list[position] = element"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-092",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Dictionaries",
+    "question": "How do you create a dictionary?",
+    "options": ["dict = {}", "dict = dict()", "dict = []", "Both 1 and 2"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-093",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is the purpose of the **kwargs parameter?",
+    "options": ["To accept any number of keyword arguments", "To accept only positional arguments", "To accept a dictionary of arguments", "To accept a list of keyword arguments"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-094",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "How do you swap two variables?",
+    "options": ["a, b = b, a", "temp = a; a = b; b = temp", "swap(a, b)", "Both 1 and 2"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-095",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "How do you count occurrences of a substring in a string?",
+    "options": ["string.count()", "string.occurrences()", "string.find_all()", "string.times()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-096",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Lists",
+    "question": "How do you remove all elements from a list?",
+    "options": ["list.remove_all()", "list.delete_all()", "list.clear()", "list.empty()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-basic-097",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Tuples",
+    "question": "How do you access the last element of a tuple?",
+    "options": ["tuple[0]", "tuple[-1]", "tuple.last()", "tuple(end)"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-basic-098",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "What is the output of: print(5 > 3 > 1)",
+    "options": ["True", "False", "Error", "None"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-basic-099",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "How do you iterate over a dictionary's keys and values?",
+    "options": ["for key, value in dict:", "for key, value in dict.items():", "for key in dict: value = dict[key]", "Both 2 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-basic-100",
+    "subject": "python",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is the purpose of the return None statement?",
+    "options": ["To explicitly return None", "To exit a function without returning a value", "To indicate an error", "Both 1 and 2"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-001",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this list comprehension create: [x**2 for x in range(5)]?",
+    "options": ["[0, 1, 4, 9, 16]", "[1, 4, 9, 16, 25]", "[0, 1, 2, 3, 4]", "[1, 2, 3, 4, 5]"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-002",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "What is a decorator in Python?",
+    "options": ["A function that modifies another function", "A special kind of variable", "A way to decorate output", "A type of loop"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-003",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "What keyword is used to create a generator function?",
+    "options": ["generator", "yield", "return", "generate"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-004",
+    "subject": "python",
     "difficulty": "intermediate",
     "topic": "Exception Handling",
-    "question": "Which block is always executed in Java exception handling?",
-    "options": ["try", "catch", "finally", "throw"],
+    "question": "Which keyword is used to handle exceptions?",
+    "options": ["try", "catch", "except", "Both 1 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-005",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "File Handling",
+    "question": "How do you open a file for reading?",
+    "options": ["open(file, 'r')", "open(file, 'read')", "open(file, 'w')", "open(file)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-006",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "How do you import a specific function from a module?",
+    "options": ["import function from module", "from module import function", "import module.function", "require module:function"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-007",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the first parameter of an instance method?",
+    "options": ["self", "this", "cls", "instance"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-008",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Inheritance",
+    "question": "How do you call a parent class method from a child class?",
+    "options": ["parent.method()", "super().method()", "self.parent.method()", "class.parent.method()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-009",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this list comprehension create: [x for x in range(10) if x % 2 == 0]?",
+    "options": ["[0, 2, 4, 6, 8]", "[2, 4, 6, 8]", "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]", "[1, 3, 5, 7, 9]"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-010",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "What is the @ symbol used for in Python?",
+    "options": ["For matrix multiplication", "For decorators", "For both 1 and 2", "For email addresses"],
     "answerIndex": 2
   },
   {
-    "id": "java-inter-003",
-    "subject": "java",
+    "id": "py-inter-011",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "What is the advantage of using a generator over a list?",
+    "options": ["Faster execution", "Memory efficiency", "Easier to write", "More functionality"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-012",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What does the finally block do?",
+    "options": ["Runs only if there's an exception", "Runs only if there's no exception", "Runs always", "Runs before the try block"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-inter-013",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "File Handling",
+    "question": "How do you ensure a file is properly closed after operations?",
+    "options": ["Using try-finally", "Using with statement", "Calling close() explicitly", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-014",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is the purpose of __init__.py files?",
+    "options": ["To initialize variables", "To mark a directory as a Python package", "To run initialization code", "To define main functions"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-015",
+    "subject": "python",
     "difficulty": "intermediate",
     "topic": "OOP",
-    "question": "What is method overloading in Java?",
-    "options": ["Same method name with different parameters", "Same method in child class", "Overriding parent class method", "None"],
+    "question": "What is encapsulation?",
+    "options": ["Bundling data and methods together", "Hiding implementation details", "Both 1 and 2", "Inheriting from multiple classes"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-inter-016",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Inheritance",
+    "question": "What is method overriding?",
+    "options": ["Changing a method's parameters", "Providing a new implementation for a method in a child class", "Making a method private", "Deleting a method from a parent class"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-017",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this nested list comprehension create: [[i*j for j in range(3)] for i in range(3)]?",
+    "options": ["[[0, 0, 0], [0, 1, 2], [0, 2, 4]]", "[[0, 1, 2], [0, 1, 2], [0, 1, 2]]", "[[0, 0, 0], [1, 1, 1], [2, 2, 2]]", "[[0, 1, 2], [0, 2, 4], [0, 3, 6]]"],
     "answerIndex": 0
   },
-
   {
-    "id": "java-adv-001",
-    "subject": "java",
-    "difficulty": "advance",
+    "id": "py-inter-018",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "What is a common use case for decorators?",
+    "options": ["Adding logging to functions", "Timing function execution", "Authentication checks", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-019",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "How do you create a generator expression?",
+    "options": ["Using () instead of []", "Using {} instead of []", "Using <> instead of []", "Using yield instead of return"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-020",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What does the else clause do in a try-except block?",
+    "options": ["Runs if there's an exception", "Runs if there's no exception", "Runs always", "Is not allowed in try-except blocks"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-021",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "File Handling",
+    "question": "How do you read all lines of a file into a list?",
+    "options": ["file.read()", "file.read_lines()", "file.readlines()", "list(file)"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-inter-022",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is the purpose of if __name__ == '__main__':?",
+    "options": ["To check if the script is being run directly", "To check if the script is being imported", "To define the main function", "To set the module name"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-023",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is polymorphism?",
+    "options": ["Ability to take many forms", "Using the same interface for different data types", "Both 1 and 2", "Inheriting from multiple classes"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-inter-024",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Inheritance",
+    "question": "What is multiple inheritance?",
+    "options": ["A class with many methods", "A class that inherits from multiple parents", "A class with many attributes", "A class that has many child classes"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-025",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this list comprehension create: [x.upper() for x in ['a', 'b', 'c']]?",
+    "options": ["['A', 'B', 'C']", "['a', 'b', 'c']", "[65, 66, 67]", "['a', 'b', 'c'] in uppercase"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-026",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "Can decorators take arguments?",
+    "options": ["Yes", "No", "Only if they are functions", "Only if they are classes"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-027",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "How do you get the next value from a generator?",
+    "options": ["generator.next()", "next(generator)", "generator.get()", "generator.value()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-028",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "How do you raise an exception?",
+    "options": ["raise Exception('message')", "throw Exception('message')", "exception Exception('message')", "error Exception('message')"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-029",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "File Handling",
+    "question": "How do you write to a file?",
+    "options": ["file.write('text')", "file.append('text')", "file.put('text')", "file.print('text')"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-030",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "How do you import a module with an alias?",
+    "options": ["import module as alias", "from module import as alias", "import module alias", "alias = import module"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-031",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a class variable?",
+    "options": ["A variable shared by all instances", "A variable unique to each instance", "A variable defined in a function", "A global variable in a class"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-032",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Inheritance",
+    "question": "What is the method resolution order (MRO)?",
+    "options": ["The order in which methods are called", "The order in which classes are searched for methods", "The order of method parameters", "The order of class inheritance"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-033",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this list comprehension create: [(x, y) for x in [1,2] for y in [3,4]]?",
+    "options": ["[(1, 3), (1, 4), (2, 3), (2, 4)]", "[(1, 2), (3, 4)]", "[(1, 3), (2, 4)]", "[(1, 2), (1, 3), (2, 3), (2, 4)]"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-034",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "What is a class decorator?",
+    "options": ["A decorator that modifies a class", "A decorator defined in a class", "A class that acts as a decorator", "A decorator that only works with classes"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-035",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "What is the difference between yield and return?",
+    "options": ["yield pauses function execution, return ends it", "return pauses function execution, yield ends it", "They are the same", "yield is for generators, return is for functions"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-036",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "How do you create a custom exception?",
+    "options": ["class MyException(Exception): pass", "def MyException(Exception): pass", "new Exception('MyException')", "create Exception('MyException')"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-037",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "File Handling",
+    "question": "How do you check if a file exists?",
+    "options": ["os.path.exists(file)", "file.exists()", "os.exists(file)", "path.exists(file)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-038",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is the purpose of the sys module?",
+    "options": ["System-specific parameters and functions", "String operations", "Mathematical operations", "File operations"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-039",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is an instance variable?",
+    "options": ["A variable shared by all instances", "A variable unique to each instance", "A variable defined in a function", "A global variable in a class"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-040",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Inheritance",
+    "question": "What is the super() function used for?",
+    "options": ["To call a parent class method", "To create a super class", "To make a class superior", "To inherit from multiple classes"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-041",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this list comprehension create: [x for x in 'hello' if x in 'aeiou']?",
+    "options": ["['e', 'o']", "['h', 'e', 'l', 'l', 'o']", "['e']", "['h', 'l', 'l']"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-042",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "Can you apply multiple decorators to a function?",
+    "options": ["Yes", "No", "Only if they are different types", "Only if they are in the right order"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-043",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "What is the main benefit of generator expressions over list comprehensions?",
+    "options": ["They are faster", "They use less memory", "They are easier to write", "They support more operations"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-044",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What does the assert statement do?",
+    "options": ["Raises an exception if a condition is false", "Checks if a condition is true", "Prints an error message", "Stops program execution"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-045",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "File Handling",
+    "question": "How do you read a file line by line?",
+    "options": ["for line in file:", "file.read_line()", "file.each_line()", "while file.has_line():"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-046",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is the math module used for?",
+    "options": ["Mathematical operations", "String operations", "File operations", "System operations"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-047",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a static method?",
+    "options": ["A method that doesn't access instance or class variables", "A method that is always available", "A method that can't be overridden", "A method that is called automatically"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-048",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Inheritance",
+    "question": "What is the diamond problem?",
+    "options": ["A problem with multiple inheritance", "A problem with diamond-shaped code", "A problem with diamond operators", "A problem with diamond patterns"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-049",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this list comprehension create: [len(x) for x in ['a', 'bb', 'ccc']]?",
+    "options": ["[1, 2, 3]", "[1, 2, 3]", ["1", "2", "3"], "[97, 98, 99]"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-050",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "What is the @staticmethod decorator used for?",
+    "options": ["To define a static method", "To make a method static", "To create a static variable", "To prevent method overriding"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-051",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "How do you create a generator function?",
+    "options": ["Use yield instead of return", "Use generator instead of def", "Use gen instead of def", "Use yield instead of print"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-052",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the base class for all exceptions?",
+    "options": ["Exception", "BaseException", "Error", "Throwable"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-053",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "File Handling",
+    "question": "How do you append to a file?",
+    "options": ["open(file, 'a')", "open(file, 'append')", "open(file, 'w+')", "open(file, 'r+')"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-054",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is the os module used for?",
+    "options": ["Operating system interfaces", "Object serialization", "Output streaming", "Object selection"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-055",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is a class method?",
+    "options": ["A method that works with the class rather than instances", "A method defined in a class", "A method that can only be called from the class", "A method that creates classes"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-056",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Inheritance",
+    "question": "How do you prevent a method from being overridden?",
+    "options": ["Make it private", "Use the final keyword", "Python doesn't prevent method overriding", "Use the @final decorator"],
+    "answerIndex": 2
+  },
+  {
+    "id": "py-inter-057",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this list comprehension create: [x for x in range(10) if x % 2 == 0 if x % 3 == 0]?",
+    "options": ["[0, 6]", "[0, 2, 4, 6, 8]", "[0, 3, 6, 9]", "[6]"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-058",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "What is the @classmethod decorator used for?",
+    "options": ["To define a class method", "To create a class", "To modify a class", "To inherit from a class"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-059",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "What is the send() method used for in generators?",
+    "options": ["To send a value into the generator", "To send a value out of the generator", "To send an exception", "To send a message"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-060",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "How do you catch multiple exceptions?",
+    "options": ["except (Exception1, Exception2):", "except Exception1, Exception2:", "catch (Exception1, Exception2):", "try (Exception1, Exception2):"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-061",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "File Handling",
+    "question": "How do you get the current working directory?",
+    "options": ["os.getcwd()", "os.cwd()", "os.current_dir()", "os.pwd()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-062",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is the datetime module used for?",
+    "options": ["Date and time operations", "Data time operations", "Date time formatting", "Data time formatting"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-063",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the purpose of the __init__ method?",
+    "options": ["To initialize an object", "To create a class", "To initialize a module", "To initialize a function"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-064",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Inheritance",
+    "question": "What is method overloading?",
+    "options": ["Defining multiple methods with the same name but different parameters", "Overloading a method with too much code", "Making a method too complex", "Python doesn't support method overloading"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-065",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this list comprehension create: [x+y for x in [1,2] for y in [3,4]]?",
+    "options": ["[4, 5, 5, 6]", "[4, 5, 6, 7]", "[1+3, 1+4, 2+3, 2+4]", "Both 1 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-066",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "What is the @property decorator used for?",
+    "options": ["To define a property", "To make a method behave like a property", "To create a property class", "To decorate properties"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-inter-067",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "How do you create a generator from a list?",
+    "options": ["(x for x in list)", "generator(list)", "yield from list", "Both 1 and 3"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-068",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the purpose of the else clause in a try-except block?",
+    "options": ["To run code when no exception occurs", "To run code after finally", "To handle other exceptions", "To run code before try"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-069",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "File Handling",
+    "question": "How do you delete a file?",
+    "options": ["os.remove(file)", "file.delete()", "os.delete(file)", "remove(file)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-070",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is the json module used for?",
+    "options": ["JSON encoding and decoding", "JavaScript operations", "Java object notation", "JavaScript object notation"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-071",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the purpose of the __str__ method?",
+    "options": ["To return a string representation of an object", "To convert an object to a string", "To print an object", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-072",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Inheritance",
+    "question": "What is abstract base class (ABC)?",
+    "options": ["A class that can't be instantiated", "A class with abstract methods", "A class that must be subclassed", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-073",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this list comprehension create: [x for x in range(5) if x % 2 == 0 else x*2]?",
+    "options": ["SyntaxError", "[0, 2, 4]", "[0, 1, 4, 3, 8]", "[0, 2, 4, 6, 8]"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-074",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "Can decorators be chained?",
+    "options": ["Yes", "No", "Only if they are different", "Only if they are the same"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-075",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "What is the throw() method used for in generators?",
+    "options": ["To raise an exception inside the generator", "To throw a value", "To stop the generator", "To skip a value"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-076",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "How do you get information about an exception?",
+    "options": ["Using the as keyword", "Accessing exception attributes", "Using sys.exc_info()", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-077",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "File Handling",
+    "question": "How do you rename a file?",
+    "options": ["os.rename(old, new)", "file.rename(new)", "os.rename_file(old, new)", "rename(old, new)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-078",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is the random module used for?",
+    "options": ["Generate random numbers", "Select random elements", "Shuffle sequences", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-079",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the purpose of the __del__ method?",
+    "options": ["Destructor method", "Delete method", "Delayed method", "Delivery method"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-080",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Inheritance",
+    "question": "What is method chaining?",
+    "options": ["Calling multiple methods in a single statement", "Chaining methods together", "Linking methods", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-081",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this list comprehension create: [{x: x**2} for x in range(3)]?",
+    "options": ["[{0: 0}, {1: 1}, {2: 4}]", "[{0: 0, 1: 1, 2: 4}]", "[0, 1, 4]", "{0: 0, 1: 1, 2: 4}"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-082",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "What is a decorator factory?",
+    "options": ["A function that returns a decorator", "A factory for decorators", "A class that creates decorators", "A decorator that creates factories"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-083",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "What is the close() method used for in generators?",
+    "options": ["To close the generator", "To stop the generator", "To free resources", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-084",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the purpose of the with statement?",
+    "options": ["To simplify exception handling", "To manage resources", "To ensure clean-up", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-085",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "File Handling",
+    "question": "How do you check if a path is a file?",
+    "options": ["os.path.isfile(path)", "path.is_file()", "os.isfile(path)", "is_file(path)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-086",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is the re module used for?",
+    "options": ["Regular expressions", "Read operations", "Return operations", "Reverse operations"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-087",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the purpose of the __eq__ method?",
+    "options": ["To define equality comparison", "To check if objects are equal", "To compare objects", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-088",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Inheritance",
+    "question": "What is interface inheritance?",
+    "options": ["Inheriting only method signatures", "Inheriting implementation", "Inheriting attributes", "Inheriting both interface and implementation"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-089",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this list comprehension create: [x for x in range(10) if x % 2 == 0 and x % 3 == 0]?",
+    "options": ["[0, 6]", "[0, 2, 4, 6, 8]", "[0, 3, 6, 9]", "[6]"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-090",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "What is the @wraps decorator used for?",
+    "options": ["To preserve function metadata", "To wrap functions", "To create wrappers", "To decorate wraps"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-091",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "What is the difference between a generator and a normal function?",
+    "options": ["Generators use yield, functions use return", "Generators can pause and resume", "Generators are more memory efficient", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-092",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "How do you create a context manager?",
+    "options": ["Using __enter__ and __exit__ methods", "Using the contextmanager decorator", "Using with statement", "Both 1 and 2"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-093",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "File Handling",
+    "question": "How do you get the size of a file?",
+    "options": ["os.path.getsize(file)", "file.size()", "os.size(file)", "size(file)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-094",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is the collections module used for?",
+    "options": ["Specialized container datatypes", "Collection operations", "Data collection", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-095",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is the purpose of the __slots__ attribute?",
+    "options": ["To save memory", "To restrict attribute creation", "To optimize performance", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-096",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Inheritance",
+    "question": "What is mixin?",
+    "options": ["A class that provides functionality to be inherited", "A way to mix classes", "A type of multiple inheritance", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-inter-097",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "List Comprehensions",
+    "question": "What does this list comprehension create: [x if x % 2 == 0 else 'odd' for x in range(5)]?",
+    "options": ["[0, 'odd', 2, 'odd', 4]", "[0, 1, 2, 3, 4]", "['even', 'odd', 'even', 'odd', 'even']", "[0, 'odd', 2, 'odd', 4]"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-098",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Decorators",
+    "question": "Can decorators be applied to classes?",
+    "options": ["Yes", "No", "Only to certain classes", "Only if they are class decorators"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-099",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Generators",
+    "question": "What is the yield from statement used for?",
+    "options": ["To delegate to a subgenerator", "To yield from a list", "To yield all values", "To yield from a function"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-inter-100",
+    "subject": "python",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "What is the purpose of the traceback module?",
+    "options": ["To extract and format stack traces", "To trace exceptions", "To backtrace errors", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-001",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaclasses",
+    "question": "What is a metaclass in Python?",
+    "options": ["The class of a class", "A class that creates classes", "A special type of class", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-002",
+    "subject": "python",
+    "difficulty": "advanced",
     "topic": "Concurrency",
-    "question": "Which package provides concurrency utilities in Java?",
-    "options": ["java.util.concurrent", "java.thread", "java.sync", "java.concurrent"],
+    "question": "What is the Global Interpreter Lock (GIL)?",
+    "options": ["A mutex that protects access to Python objects", "A lock that prevents multiple threads from executing Python bytecodes", "A mechanism for thread safety", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-003",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a descriptor in Python?",
+    "options": ["An object attribute with binding behavior", "A way to customize attribute access", "A protocol for implementing properties", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-004",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the async keyword used for?",
+    "options": ["To define an asynchronous function", "To create async operations", "To enable await", "All of the above"],
     "answerIndex": 0
   },
   {
-    "id": "java-adv-002",
-    "subject": "java",
-    "difficulty": "advance",
-    "topic": "JVM",
-    "question": "What does JIT stand for in Java?",
-    "options": ["Java Internal Translator", "Just In Time compiler", "Java Intermediate Tool", "Joint Instruction Translator"],
+    "id": "py-adv-005",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is metaprogramming?",
+    "options": ["Writing programs that manipulate other programs", "Creating programs at runtime", "Modifying program behavior", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-006",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is the difference between threading and multiprocessing?",
+    "options": ["Threading uses threads, multiprocessing uses processes", "Threading shares memory, multiprocessing doesn't", "Multiprocessing avoids GIL limitations", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-007",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What are the three descriptor protocols?",
+    "options": ["__get__, __set__, __delete__", "__get__, __put__, __remove__", "__access__, __modify__, __delete__", "__get__, __set__, __remove__"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-008",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the await keyword used for?",
+    "options": ["To wait for an asynchronous operation", "To pause execution until a result is available", "To work with coroutines", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-009",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is monkey patching?",
+    "options": ["Modifying code at runtime", "Changing classes or modules at runtime", "Dynamic modification of code", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-010",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a race condition?",
+    "options": ["When behavior depends on sequence of events", "When multiple threads access shared data", "When outcome depends on timing", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-011",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is the difference between a descriptor and a property?",
+    "options": ["Properties are implemented using descriptors", "Descriptors are more general", "Properties are a specific use case of descriptors", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-012",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is an event loop?",
+    "options": ["The core of async programming", "A loop that manages async tasks", "A scheduler for coroutines", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-013",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is introspection?",
+    "options": ["The ability to examine objects at runtime", "Getting information about objects", "Inspecting code structure", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-014",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a deadlock?",
+    "options": ["When threads are waiting for each other", "A circular dependency in locking", "When no progress can be made", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-015",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a data descriptor?",
+    "options": ["A descriptor that defines __set__ or __delete__", "A descriptor that only defines __get__", "A descriptor for data attributes", "A descriptor that stores data"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-016",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is a coroutine?",
+    "options": ["A special function that can be paused and resumed", "An async function", "A generator-like object for async programming", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-017",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __getattr__ and __getattribute__?",
+    "options": ["To customize attribute access", "To handle missing attributes", "To implement dynamic attributes", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-018",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a thread pool?",
+    "options": ["A collection of worker threads", "A way to manage concurrent tasks", "A pool of reusable threads", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-019",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a non-data descriptor?",
+    "options": ["A descriptor that only defines __get__", "A descriptor that doesn't define __set__ or __delete__", "A read-only descriptor", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-020",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and threads?",
+    "options": ["Async is single-threaded, threads are multi-threaded", "Async uses cooperative multitasking, threads use preemptive", "Async avoids context switching overhead", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-021",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is a class decorator that modifies the class?",
+    "options": ["A function that takes a class and returns a modified class", "A decorator applied to a class", "A way to modify class behavior", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-022",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a semaphore?",
+    "options": ["A synchronization primitive", "A counter for controlling access", "A way to limit concurrent access", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-023",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "How do descriptors work with inheritance?",
+    "options": ["They follow the method resolution order", "They are inherited like other attributes", "They can be overridden in subclasses", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-024",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the asyncio module used for?",
+    "options": ["Asynchronous I/O", "Event loop management", "Async/await support", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-025",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __new__ method?",
+    "options": ["To create a new instance", "To control object creation", "To customize instantiation", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-026",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a mutex?",
+    "options": ["A mutual exclusion lock", "A way to protect shared resources", "A synchronization primitive", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-027",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is the difference between __getattr__ and __getattribute__?",
+    "options": ["__getattribute__ is called for all attribute access, __getattr__ only for missing attributes", "__getattr__ is called first", "__getattribute__ is for new-style classes only", "They are the same"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-028",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is a future?",
+    "options": ["An object that represents a result that may not be available yet", "A placeholder for a result", "A way to handle async results", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-029",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of the type() function with three arguments?",
+    "options": ["To create a new class", "To dynamically create classes", "To modify class creation", "All of the above"],
     "answerIndex": 1
   },
   {
-    "id": "java-adv-003",
-    "subject": "java",
-    "difficulty": "advance",
-    "topic": "Frameworks",
-    "question": "Which of the following is a popular Java framework?",
-    "options": ["Django", "Spring", "Flask", "Rails"],
+    "id": "py-adv-030",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a condition variable?",
+    "options": ["A synchronization primitive", "A way to wait for a condition", "A mechanism for thread communication", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-031",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a class method descriptor?",
+    "options": ["The descriptor that implements class methods", "A descriptor for class methods", "The protocol for class methods", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-032",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and synchronous code?",
+    "options": ["Async doesn't block, synchronous does", "Async uses callbacks, synchronous doesn't", "Async is for I/O-bound tasks", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-033",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __metaclass__?",
+    "options": ["To specify the metaclass for a class", "To customize class creation", "To modify class behavior", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-034",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a thread-safe data structure?",
+    "options": ["A data structure that can be safely accessed by multiple threads", "A synchronized data structure", "A data structure with built-in locking", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-035",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a static method descriptor?",
+    "options": ["The descriptor that implements static methods", "A descriptor for static methods", "The protocol for static methods", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-036",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is a task in asyncio?",
+    "options": ["A wrapper around a coroutine", "A unit of work", "A way to schedule coroutines", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-037",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __prepare__ method in metaclasses?",
+    "options": ["To prepare the class namespace", "To customize the namespace dictionary", "To modify attribute ordering", "All of the above"],
     "answerIndex": 1
+  },
+  {
+    "id": "py-adv-038",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a read-write lock?",
+    "options": ["A lock that allows multiple readers or single writer", "A synchronization primitive", "A way to optimize read-heavy workloads", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-039",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is the property descriptor?",
+    "options": ["The descriptor that implements the property built-in", "A way to create managed attributes", "A data descriptor", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-040",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between await and yield from?",
+    "options": ["await is for coroutines, yield from is for generators", "await is async, yield from is sync", "They are similar but used in different contexts", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-041",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __init_subclass__?",
+    "options": ["To customize subclass creation", "To modify subclass behavior", "To run code when a subclass is created", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-042",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a process pool?",
+    "options": ["A collection of worker processes", "A way to manage parallel tasks", "A pool of reusable processes", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-043",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is the difference between a descriptor and a decorator?",
+    "options": ["Descriptors manage attribute access, decorators modify functions", "They serve different purposes", "Descriptors are lower-level", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-044",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and callbacks?",
+    "options": ["Async is more readable", "Async avoids callback hell", "Async uses await syntax", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-045",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __set_name__?",
+    "options": ["To know the name of the attribute a descriptor is assigned to", "To customize attribute naming", "To modify attribute assignment", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-046",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a barrier?",
+    "options": ["A synchronization primitive", "A way to make threads wait until all reach a point", "A coordination mechanism", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-047",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a cached property?",
+    "options": ["A property that caches its value", "A descriptor that computes once and stores", "A way to optimize expensive computations", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-048",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and generators?",
+    "options": ["Async is for concurrency, generators for iteration", "They use different keywords", "They serve different purposes", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-049",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __class_getitem__?",
+    "options": ["To support generic types", "To customize class subscripting", "To implement PEP 484 generics", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-050",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a thread-local variable?",
+    "options": ["A variable with a separate value for each thread", "A way to store thread-specific data", "A variable that is local to a thread", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-051",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a lazy property?",
+    "options": ["A property that is computed only when accessed", "A descriptor that delays computation", "A way to optimize memory usage", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-052",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and parallel programming?",
+    "options": ["Async is concurrent but may not be parallel", "Parallel uses multiple cores, async may not", "Async is for I/O-bound, parallel for CPU-bound", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-053",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __mro_entries__?",
+    "options": ["To customize MRO computation", "To modify inheritance", "To support generic types", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-054",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a monitor?",
+    "options": ["A synchronization construct", "A way to protect shared resources", "A mutex with condition variables", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-055",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a validating descriptor?",
+    "options": ["A descriptor that validates input", "A descriptor with __set__ that checks values", "A way to enforce constraints", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-056",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and event-driven programming?",
+    "options": ["Async is a form of event-driven programming", "Async uses await syntax", "Event-driven uses callbacks", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-057",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __subclasses__()?",
+    "options": ["To get all direct subclasses of a class", "To inspect class hierarchy", "To find all descendants", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-058",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a spinlock?",
+    "options": ["A lock that busy-waits", "A low-level synchronization primitive", "A lock that spins in a loop", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-059",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a computed property?",
+    "options": ["A property that is computed on access", "A descriptor that computes values", "A way to create dynamic attributes", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-060",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and reactive programming?",
+    "options": ["Async is about concurrency, reactive about data flows", "They are different paradigms", "Reactive uses observables, async uses await", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-061",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __dict__?",
+    "options": ["To access the namespace of an object", "To inspect attributes", "To modify attributes dynamically", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-062",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a memory model?",
+    "options": ["A specification of how memory accesses behave in concurrent code", "A way to understand memory consistency", "A model of memory operations", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-063",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a non-overriding descriptor?",
+    "options": ["A descriptor that doesn't override instance attributes", "A non-data descriptor", "A descriptor that only works on classes", "All of the above"],
+    "answerIndex": 1
+  },
+  {
+    "id": "py-adv-064",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and coroutine-based programming?",
+    "options": ["Async uses coroutines", "They are essentially the same", "Async/await is syntax for coroutines", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-065",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __bases__?",
+    "options": ["To get the base classes of a class", "To inspect inheritance", "To modify inheritance", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-066",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a lock-free algorithm?",
+    "options": ["An algorithm that doesn't use locks", "A concurrent algorithm", "An algorithm that uses atomic operations", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-067",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a overriding descriptor?",
+    "options": ["A data descriptor", "A descriptor that overrides instance attributes", "A descriptor with __set__ or __delete__", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-068",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and callback-based async?",
+    "options": ["Async/await is more readable", "They achieve the same thing with different syntax", "Callback-based uses callbacks, async uses await", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-069",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __qualname__?",
+    "options": ["To get the qualified name of a class or function", "To inspect the full name", "To get the path from module", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-070",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a wait-free algorithm?",
+    "options": ["An algorithm that guarantees progress for all threads", "A stronger guarantee than lock-free", "An algorithm that doesn't wait", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-071",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a class-level descriptor?",
+    "options": ["A descriptor defined on a class", "A descriptor that works on class attributes", "A descriptor for class variables", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-072",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and parallel execution?",
+    "options": ["Async is about concurrency, parallel about simultaneity", "Async can be single-threaded, parallel is multi-threaded", "They are orthogonal concepts", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-073",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __annotations__?",
+    "options": ["To access type annotations", "To inspect function signatures", "To get variable types", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-074",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a memory barrier?",
+    "options": ["A instruction that enforces ordering of memory operations", "A way to ensure memory consistency", "A low-level synchronization primitive", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-075",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a instance-level descriptor?",
+    "options": ["A descriptor defined on an instance", "A descriptor that works on instance attributes", "A descriptor for instance variables", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-076",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and multithreading?",
+    "options": ["Async is single-threaded, multithreading is multi-threaded", "Async uses cooperative multitasking, multithreading uses preemptive", "Async avoids GIL limitations for I/O", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-077",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __module__?",
+    "options": ["To get the module name of a class or function", "To inspect the module", "To find where something is defined", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-078",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a atomic operation?",
+    "options": ["An operation that appears indivisible", "An operation that cannot be interrupted", "An operation that is thread-safe", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-079",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a read-only descriptor?",
+    "options": ["A descriptor that only defines __get__", "A non-data descriptor", "A descriptor that doesn't allow setting", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-080",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and synchronous I/O?",
+    "options": ["Async doesn't block, synchronous does", "Async can handle more connections", "Async is more scalable for I/O", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-081",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __doc__?",
+    "options": ["To access the docstring", "To get documentation", "To inspect help text", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-082",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a condition variable?",
+    "options": ["A synchronization primitive", "A way to wait for a condition", "A mechanism for thread communication", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-083",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a write-only descriptor?",
+    "options": ["A descriptor that only defines __set__", "A descriptor that doesn't allow reading", "A data descriptor without __get__", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-084",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and synchronous programming?",
+    "options": ["Async is non-blocking, synchronous is blocking", "Async uses callbacks or await, synchronous doesn't", "Async is for I/O-bound, synchronous for CPU-bound", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-085",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __name__?",
+    "options": ["To get the name of a function or class", "To inspect the name", "To get the identifier", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-086",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a read-write lock?",
+    "options": ["A lock that allows multiple readers or single writer", "A synchronization primitive", "A way to optimize read-heavy workloads", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-087",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a bidirectional descriptor?",
+    "options": ["A descriptor that works for both getting and setting", "A data descriptor", "A descriptor with both __get__ and __set__", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-088",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and event loop programming?",
+    "options": ["Async uses an event loop", "They are closely related", "Event loop is the mechanism, async is the syntax", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-089",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __package__?",
+    "options": ["To get the package name of a module", "To inspect the package", "To find the package", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-090",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a thread pool executor?",
+    "options": ["A way to manage thread pools", "A high-level interface for threading", "A concurrent.futures class", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-091",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a default descriptor?",
+    "options": ["A descriptor that provides default values", "A descriptor for default attributes", "A way to handle missing attributes", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-092",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and promise-based programming?",
+    "options": ["Async/await is syntax for promises", "They are similar concepts", "Promises are for JavaScript, async for Python", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-093",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __builtins__?",
+    "options": ["To access built-in functions and types", "To inspect built-in names", "To get the built-in module", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-094",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a process pool executor?",
+    "options": ["A way to manage process pools", "A high-level interface for multiprocessing", "A concurrent.futures class", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-095",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a transforming descriptor?",
+    "options": ["A descriptor that transforms values", "A descriptor that modifies attribute access", "A way to customize behavior", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-096",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and callback hell?",
+    "options": ["Async/await avoids callback hell", "Callback hell is nested callbacks, async is flat", "Async is more readable", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-097",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Metaprogramming",
+    "question": "What is the purpose of __spec__?",
+    "options": ["To get the import spec of a module", "To inspect module specifications", "To get module details", "All of the above"],
+    "answerIndex": 0
+  },
+  {
+    "id": "py-adv-098",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Concurrency",
+    "question": "What is a future in concurrent programming?",
+    "options": ["An object that represents a result that may not be available yet", "A placeholder for a result", "A way to handle async results", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-099",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Descriptors",
+    "question": "What is a logging descriptor?",
+    "options": ["A descriptor that logs attribute access", "A way to track attribute usage", "A descriptor for debugging", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "py-adv-100",
+    "subject": "python",
+    "difficulty": "advanced",
+    "topic": "Async/Await",
+    "question": "What is the difference between async and traditional threading?",
+    "options": ["Async is more lightweight", "Async uses fewer resources", "Async is better for I/O-bound tasks", "All of the above"],
+    "answerIndex": 3
   }
+
+
 ]

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import html2canvas from "html2canvas"
+import jsPDF from "jspdf"
 import { useRef } from "react"
 
 export default function Certificate({ result }: { result: any }) {
@@ -32,7 +33,7 @@ export default function Certificate({ result }: { result: any }) {
       }
     })
 
-    // ✅ Render the DOM node itself (not clone)
+    // ✅ Render DOM node to canvas
     const canvas = await html2canvas(certificateRef.current, {
       scale: 3,
       useCORS: true,
@@ -40,10 +41,21 @@ export default function Certificate({ result }: { result: any }) {
       logging: false,
     })
 
-    const link = document.createElement("a")
-    link.download = `certificate-${userName}.png`
-    link.href = canvas.toDataURL("image/png")
-    link.click()
+    const imgData = canvas.toDataURL("image/png")
+
+    // ✅ Create PDF (landscape A4)
+    const pdf = new jsPDF("landscape", "pt", "a4")
+    const pageWidth = pdf.internal.pageSize.getWidth()
+    const pageHeight = pdf.internal.pageSize.getHeight()
+
+    // Fit image into A4 size
+    const imgWidth = pageWidth
+    const imgHeight = (canvas.height * pageWidth) / canvas.width
+
+    const y = (pageHeight - imgHeight) / 2
+    pdf.addImage(imgData, "PNG", 0, y, imgWidth, imgHeight)
+
+    pdf.save(`certificate-${userName}.pdf`)
   }
 
   return (
@@ -158,24 +170,23 @@ export default function Certificate({ result }: { result: any }) {
               </p>
             </div>
 
-           {/* Seal */}
-<div className="flex flex-col items-center mt-8">
-  <p
-    className="text-2xl text-gray-800 mb-0 leading-none"
-    style={{
-      fontFamily: '"Playfair Display", serif',
-      fontWeight: 600,
-    }}
-  >
-    Issued by
-  </p>
-  <img
-    src="/geekdost.png"
-    alt="GeekDost Logo"
-    className="w-35 h-8 object-contain drop-shadow-xl"
-  />
-</div>
-
+            {/* Seal */}
+            <div className="flex flex-col items-center mt-8">
+              <p
+                className="text-2xl text-gray-800 mb-0 leading-none"
+                style={{
+                  fontFamily: '"Playfair Display", serif',
+                  fontWeight: 600,
+                }}
+              >
+                Issued by
+              </p>
+              <img
+                src="/geekdost.png"
+                alt="GeekDost Logo"
+                className="w-35 h-8 object-contain drop-shadow-xl"
+              />
+            </div>
 
             {/* Signature */}
             <div className="text-right">
@@ -214,7 +225,7 @@ export default function Certificate({ result }: { result: any }) {
           background: "linear-gradient(to right, #4f46e5, #7c3aed)",
         }}
       >
-        Download Certificate
+        Download Certificate (PDF)
       </button>
     </div>
   )
