@@ -37,13 +37,13 @@ export default function Certificate({ result }: { result: any }) {
         className="relative mx-auto shadow-2xl rounded-2xl overflow-hidden"
         style={{
           width: "1100px", // fixed size (landscape ratio)
-          height: "720px", // ⬅️ height কমানো হলো
+          height: "720px", // ⬅️ height 
           background: "linear-gradient(135deg, #e6f4ff 0%, #fdfdfd 100%)", // ✅ HEX gradient
           border: "10px double #1e3a8a", // ✅ HEX navy border
         }}
       >
         {/* Watermark */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-40 pointer-events-none">
+        <div className="absolute inset-0 flex items-center justify-center opacity-25 pointer-events-none">
           <img
             src="/geekdost.png"
             alt="GeekDost Watermark"
@@ -103,8 +103,9 @@ export default function Certificate({ result }: { result: any }) {
               className="mt-6 text-lg font-medium"
               style={{ fontFamily: `"Merriweather", serif`, color: "#111827" }}
             >
-              We hereby recognize your commitment, knowledge, and excellence in
-              performance.
+              This certificate proudly acknowledges your <span style={{ fontWeight: 600 }}>dedication, knowledge,</span>  
+  and <span style={{ fontWeight: 600 }}>outstanding achievement</span>,  
+  reflecting true commitment to excellence.
             </p>
           </div>
 
@@ -152,21 +153,22 @@ export default function Certificate({ result }: { result: any }) {
                 src="/signature.png"
                 alt="Signature"
                 style={{
-                  height: "56px",
+                  height: "40px",
                   margin: "0 auto 4px",
                   opacity: 0.9,
                 }}
               />
               <p
-                className="font-semibold"
-                style={{
-                  fontFamily: `"Great Vibes", cursive`,
-                  color: "#111827",
-                  fontSize: "20px",
-                }}
-              >
-                Sujan Das
-              </p>
+  className="font-semibold"
+  style={{
+    fontFamily: `"Satisfy", cursive`, // ✅ clean & premium font
+    color: "#111827",
+    fontSize: "20px",
+  }}
+>
+  Sujan Das
+</p>
+
               <p className="text-xs" style={{ color: "#4b5563" }}>
                 Founder, GeekDost
               </p>
