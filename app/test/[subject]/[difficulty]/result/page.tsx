@@ -5,6 +5,8 @@ import { useParams, useRouter } from "next/navigation"
 import { getQuestions } from "@/lib/questions"
 import { getResults } from "@/lib/storage"
 import { motion } from "framer-motion"
+import { FaTrophy, FaThumbsUp, FaRegSadTear, FaClock } from "react-icons/fa"
+import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts"
 
 export default function ResultPage() {
   const { subject, difficulty } = useParams()
@@ -32,7 +34,33 @@ export default function ResultPage() {
     (acc, q) => (latest.answers[q.id] === q.answerIndex ? acc + 1 : acc),
     0
   )
+  const wrong = answered - score
   const percentage = Math.round((score / latest.total) * 100)
+
+  // --- Performance Summary ---
+  let summary = { icon: <FaRegSadTear className="text-red-500 h-6 w-6" />, text: "Needs improvement. Keep practicing!" }
+  if (percentage >= 80)
+    summary = { icon: <FaTrophy className="text-yellow-400 h-6 w-6" />, text: "Excellent performance! Keep it up." }
+  else if (percentage >= 50)
+    summary = { icon: <FaThumbsUp className="text-green-500 h-6 w-6" />, text: "Good job! You’re improving." }
+
+  // --- Time Taken ---
+  let timeTaken = ""
+  if (latest.startTime && latest.date) {
+    const start = new Date(latest.startTime)
+    const end = new Date(latest.date)
+    const diff = Math.floor((end.getTime() - start.getTime()) / 1000)
+    const min = Math.floor(diff / 60)
+    const sec = diff % 60
+    timeTaken = `${min}m ${sec}s`
+  }
+
+  // --- Chart Data ---
+  const chartData = [
+    { name: "Correct", value: score, color: "#22c55e" },
+    { name: "Wrong", value: wrong, color: "#ef4444" },
+    { name: "Not Answered", value: notAnswered, color: "#facc15" },
+  ]
 
   return (
     <div className="container mx-auto py-10 px-4">
@@ -44,6 +72,8 @@ export default function ResultPage() {
         className="glass rounded-2xl p-8 max-w-xl mx-auto text-center"
       >
         <h1 className="text-3xl font-extrabold mb-4">Your Result</h1>
+
+        {/* Circular Progress */}
         <div className="flex justify-center mb-6">
           <div className="relative w-28 h-28">
             <motion.svg
@@ -77,9 +107,24 @@ export default function ResultPage() {
             </span>
           </div>
         </div>
+
+        {/* Score */}
         <p className="text-lg font-semibold">
           Score: {score} / {latest.total}
         </p>
+
+        {/* Performance Summary */}
+        <div className="flex items-center justify-center gap-2 mt-4">
+          {summary.icon}
+          <span className="text-sm">{summary.text}</span>
+        </div>
+
+        {/* Time Taken */}
+        {timeTaken && (
+          <div className="flex items-center justify-center gap-2 mt-2 text-sm text-muted-foreground">
+            <FaClock className="h-4 w-4" /> Time Taken: {timeTaken}
+          </div>
+        )}
 
         {/* Stats */}
         <div className="grid grid-cols-2 gap-4 mt-6">
@@ -91,6 +136,28 @@ export default function ResultPage() {
             <p className="text-lg font-bold">{notAnswered}</p>
             <p className="text-sm text-muted-foreground">Not Answered</p>
           </div>
+        </div>
+
+        {/* Difficulty Breakdown Chart */}
+        <div className="mt-8 h-64">
+          <ResponsiveContainer>
+            <PieChart>
+              <Pie
+                data={chartData}
+                dataKey="value"
+                nameKey="name"
+                cx="50%"
+                cy="50%"
+                outerRadius={80}
+                label
+              >
+                {chartData.map((entry, index) => (
+                  <Cell key={index} fill={entry.color} />
+                ))}
+              </Pie>
+              <Tooltip />
+            </PieChart>
+          </ResponsiveContainer>
         </div>
 
         {/* Actions */}
