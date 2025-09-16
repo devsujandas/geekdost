@@ -1,22 +1,20 @@
 "use client"
 
 import { motion } from "framer-motion"
+import html2canvas from "html2canvas"   // ⬅️ lazy import বাদ দিয়ে direct import করো
 
 export default function Certificate({ result }: { result: any }) {
   if (!result) return null
 
-  const handleDownload = () => {
+  const handleDownload = async () => {
     const element = document.getElementById("certificate")
     if (!element) return
 
-    import("html2canvas").then((html2canvas) => {
-      html2canvas.default(element).then((canvas) => {
-        const link = document.createElement("a")
-        link.download = "certificate.png"
-        link.href = canvas.toDataURL()
-        link.click()
-      })
-    })
+    const canvas = await html2canvas(element, { scale: 2 }) // scale ↑ for better quality
+    const link = document.createElement("a")
+    link.download = "certificate.png"
+    link.href = canvas.toDataURL("image/png")
+    link.click()
   }
 
   return (
@@ -25,7 +23,7 @@ export default function Certificate({ result }: { result: any }) {
         id="certificate"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="glass rounded-2xl p-8 max-w-2xl mx-auto border-2 border-primary"
+        className="glass rounded-2xl p-8 max-w-2xl mx-auto border-2 border-primary bg-white text-black"
       >
         <h1 className="text-2xl font-bold mb-2">Certificate of Completion</h1>
         <p className="text-muted-foreground mb-4">This is to certify that</p>
@@ -36,10 +34,11 @@ export default function Certificate({ result }: { result: any }) {
           ({result.difficulty}) with a score of{" "}
           <span className="font-semibold">
             {result.score}/{result.total}
-          </span>
-          .
+          </span>.
         </p>
-        <p className="mt-6 text-sm">GeekDost | {new Date(result.date).toLocaleDateString()}</p>
+        <p className="mt-6 text-sm">
+          GeekDost | {new Date(result.date).toLocaleDateString()}
+        </p>
       </motion.div>
 
       <button

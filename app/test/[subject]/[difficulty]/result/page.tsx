@@ -232,7 +232,11 @@ export default function ResultPage() {
       </div>
 
       {/* Certificate of Completion */}
-      {percentage >= 60 && <Certificate result={{ ...resultData, score }} />}
+      {percentage >= 60 && (
+        <div className="mt-12">
+          <Certificate result={{ ...resultData, score }} />
+        </div>
+      )}
     </div>
   )
 }
