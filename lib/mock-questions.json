@@ -1,9 +1,9 @@
 [
- 
   {
     "id": "py-basic-001",
     "subject": "python",
     "difficulty": "basic",
+    "topic": "Operators",
     "question": "What is the output of print(2+3*4)?",
     "options": ["20", "14", "10", "24"],
     "answerIndex": 1
@@ -12,116 +12,93 @@
     "id": "py-basic-002",
     "subject": "python",
     "difficulty": "basic",
+    "topic": "Functions",
     "question": "Which keyword is used to define a function in Python?",
     "options": ["function", "define", "def", "fun"],
     "answerIndex": 2
   },
-  {
-    "id": "py-basic-003",
-    "subject": "python",
-    "difficulty": "basic",
-    "question": "Which of these is a valid variable name?",
-    "options": ["2var", "_count", "for", "-name"],
-    "answerIndex": 1
-  },
-  {
-    "id": "py-basic-004",
-    "subject": "python",
-    "difficulty": "basic",
-    "question": "What is the correct file extension for Python files?",
-    "options": [".js", ".py", ".java", ".txt"],
-    "answerIndex": 1
-  },
-  {
-    "id": "py-basic-005",
-    "subject": "python",
-    "difficulty": "basic",
-    "question": "Which data type is mutable in Python?",
-    "options": ["tuple", "list", "str", "int"],
-    "answerIndex": 1
-  },
 
-  
   {
-    "id": "py-inter-001",
-    "subject": "python",
-    "difficulty": "intermediate",
-    "question": "What will be the output of print([i for i in range(5)])?",
-    "options": ["[1,2,3,4,5]", "[0,1,2,3,4]", "[0,1,2,3,4,5]", "Error"],
-    "answerIndex": 1
-  },
-  {
-    "id": "py-inter-002",
-    "subject": "python",
-    "difficulty": "intermediate",
-    "question": "Which module in Python is used for regular expressions?",
-    "options": ["regex", "re", "regexp", "match"],
-    "answerIndex": 1
-  },
-  {
-    "id": "py-inter-003",
-    "subject": "python",
-    "difficulty": "intermediate",
-    "question": "What is the output of len({'a':1,'b':2,'c':3})?",
-    "options": ["2", "3", "6", "Error"],
-    "answerIndex": 1
-  },
-  {
-    "id": "py-inter-004",
-    "subject": "python",
-    "difficulty": "intermediate",
-    "question": "What does the enumerate() function return?",
-    "options": ["Iterator of index-value pairs", "List of indexes", "Dictionary", "Nothing"],
+    "id": "java-basic-001",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Syntax",
+    "question": "Which keyword is used to define a class in Java?",
+    "options": ["class", "define", "struct", "ClassDef"],
     "answerIndex": 0
   },
   {
-    "id": "py-inter-005",
-    "subject": "python",
+    "id": "java-basic-002",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which of these is a primitive data type in Java?",
+    "options": ["String", "int", "Integer", "ArrayList"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-003",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "OOP",
+    "question": "Java supports which type of programming paradigm?",
+    "options": ["Procedural", "Object-Oriented", "Functional", "All of the above"],
+    "answerIndex": 1
+  },
+
+  {
+    "id": "java-inter-001",
+    "subject": "java",
     "difficulty": "intermediate",
-    "question": "Which keyword is used to handle exceptions?",
-    "options": ["except", "error", "catch", "trycatch"],
+    "topic": "Collections",
+    "question": "Which interface is implemented by HashMap in Java?",
+    "options": ["List", "Set", "Map", "Collection"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-002",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "Which block is always executed in Java exception handling?",
+    "options": ["try", "catch", "finally", "throw"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-003",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is method overloading in Java?",
+    "options": ["Same method name with different parameters", "Same method in child class", "Overriding parent class method", "None"],
     "answerIndex": 0
   },
 
   {
-    "id": "py-adv-001",
-    "subject": "python",
+    "id": "java-adv-001",
+    "subject": "java",
     "difficulty": "advance",
-    "question": "Which of these is a Python web framework?",
-    "options": ["Flask", "Spring", "Django", "Both Flask and Django"],
-    "answerIndex": 3
-  },
-  {
-    "id": "py-adv-002",
-    "subject": "python",
-    "difficulty": "advance",
-    "question": "What is a Python decorator?",
-    "options": ["A function returning another function", "A loop structure", "A class", "A keyword"],
+    "topic": "Concurrency",
+    "question": "Which package provides concurrency utilities in Java?",
+    "options": ["java.util.concurrent", "java.thread", "java.sync", "java.concurrent"],
     "answerIndex": 0
   },
   {
-    "id": "py-adv-003",
-    "subject": "python",
+    "id": "java-adv-002",
+    "subject": "java",
     "difficulty": "advance",
-    "question": "Which library is used for data manipulation and analysis?",
-    "options": ["numpy", "matplotlib", "pandas", "scipy"],
-    "answerIndex": 2
+    "topic": "JVM",
+    "question": "What does JIT stand for in Java?",
+    "options": ["Java Internal Translator", "Just In Time compiler", "Java Intermediate Tool", "Joint Instruction Translator"],
+    "answerIndex": 1
   },
   {
-    "id": "py-adv-004",
-    "subject": "python",
+    "id": "java-adv-003",
+    "subject": "java",
     "difficulty": "advance",
-    "question": "What does GIL stand for in Python?",
-    "options": ["Global Interpreter Lock", "General Interface Library", "Global Integer Loop", "None"],
-    "answerIndex": 0
-  },
-  {
-    "id": "py-adv-005",
-    "subject": "python",
-    "difficulty": "advance",
-    "question": "Which of the following enables asynchronous programming in Python?",
-    "options": ["threading", "multiprocessing", "async/await", "lambda"],
-    "answerIndex": 2
+    "topic": "Frameworks",
+    "question": "Which of the following is a popular Java framework?",
+    "options": ["Django", "Spring", "Flask", "Rails"],
+    "answerIndex": 1
   }
-  
 ]

@@ -20,7 +20,8 @@ export default function DifficultyPage() {
         Choose Difficulty
       </h1>
       <p className="text-muted-foreground mb-12 max-w-2xl mx-auto">
-        Select the level of challenge for <span className="font-semibold">{subject}</span> mock test.
+        Select the level of challenge for{" "}
+        <span className="font-semibold">{subject}</span> mock test.
         Each level contains 50 random questions every time.
       </p>
 
@@ -29,7 +30,8 @@ export default function DifficultyPage() {
         {levels.map((lvl, idx) => (
           <motion.button
             key={lvl.id}
-            onClick={() => router.push(`/test/${subject}/${lvl.id}`)}
+            // 👉 এখন rules page এ যাবে, exam এ না
+            onClick={() => router.push(`/test/${subject}/${lvl.id}/rules`)}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="glass p-10 rounded-2xl flex flex-col items-center justify-center 

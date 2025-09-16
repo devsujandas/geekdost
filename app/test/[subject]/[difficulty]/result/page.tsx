@@ -5,8 +5,10 @@ import { useParams, useRouter } from "next/navigation"
 import { getQuestions } from "@/lib/questions"
 import { getResults } from "@/lib/storage"
 import { motion } from "framer-motion"
-import { FaTrophy, FaThumbsUp, FaRegSadTear, FaClock } from "react-icons/fa"
+import { FaTrophy, FaThumbsUp, FaRegSadTear, FaClock, FaDownload, FaShareAlt } from "react-icons/fa"
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts"
+import { exportResultJSON, exportResultCSV, shareResult } from "@/lib/export"
+import Certificate from "@/components/Certificate"
 
 export default function ResultPage() {
   const { subject, difficulty } = useParams()
@@ -28,6 +30,7 @@ export default function ResultPage() {
     )
   }
 
+  // --- Score Calculation ---
   const answered = Object.values(latest.answers).filter((a) => a !== null).length
   const notAnswered = latest.total - answered
   const score = questions.reduce(
@@ -45,15 +48,19 @@ export default function ResultPage() {
     summary = { icon: <FaThumbsUp className="text-green-500 h-6 w-6" />, text: "Good job! You’re improving." }
 
   // --- Time Taken ---
-  let timeTaken = ""
-  if (latest.startTime && latest.date) {
-    const start = new Date(latest.startTime)
-    const end = new Date(latest.date)
-    const diff = Math.floor((end.getTime() - start.getTime()) / 1000)
-    const min = Math.floor(diff / 60)
-    const sec = diff % 60
-    timeTaken = `${min}m ${sec}s`
-  }
+  const timeTaken = latest.timeTaken
+    ? `${Math.floor(latest.timeTaken / 60)}m ${latest.timeTaken % 60}s`
+    : "N/A"
+  const avgTime = latest.timeTaken ? (latest.timeTaken / latest.total).toFixed(1) : null
+
+  // --- Weakness Analysis by Topic ---
+  const topicStats: Record<string, { correct: number; wrong: number }> = {}
+  questions.forEach((q) => {
+    const userAns = latest.answers[q.id]
+    if (!topicStats[q.topic]) topicStats[q.topic] = { correct: 0, wrong: 0 }
+    if (userAns === q.answerIndex) topicStats[q.topic].correct++
+    else if (userAns !== null) topicStats[q.topic].wrong++
+  })
 
   // --- Chart Data ---
   const chartData = [
@@ -62,13 +69,29 @@ export default function ResultPage() {
     { name: "Not Answered", value: notAnswered, color: "#facc15" },
   ]
 
+  // --- Export Data ---
+  const resultData = {
+    subject,
+    difficulty,
+    score,
+    total: latest.total,
+    percentage,
+    answered,
+    notAnswered,
+    wrong,
+    timeTaken,
+    timePerQ: latest.timePerQ,
+    answers: latest.answers,
+    questions,
+    date: latest.date,
+  }
+
   return (
     <div className="container mx-auto py-10 px-4">
       {/* --- Score Card --- */}
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.5 }}
         className="glass rounded-2xl p-8 max-w-xl mx-auto text-center"
       >
         <h1 className="text-3xl font-extrabold mb-4">Your Result</h1>
@@ -76,28 +99,12 @@ export default function ResultPage() {
         {/* Circular Progress */}
         <div className="flex justify-center mb-6">
           <div className="relative w-28 h-28">
-            <motion.svg
-              className="w-28 h-28 transform -rotate-90"
-              viewBox="0 0 100 100"
-            >
-              <circle
-                cx="50"
-                cy="50"
-                r="45"
-                stroke="currentColor"
-                strokeWidth="10"
-                className="text-accent/30"
-                fill="transparent"
-              />
+            <motion.svg className="w-28 h-28 transform -rotate-90" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="10" className="text-accent/30" fill="transparent" />
               <motion.circle
-                cx="50"
-                cy="50"
-                r="45"
-                stroke="currentColor"
-                strokeWidth="10"
-                className="text-primary"
-                fill="transparent"
-                strokeDasharray="283"
+                cx="50" cy="50" r="45"
+                stroke="currentColor" strokeWidth="10" className="text-primary"
+                fill="transparent" strokeDasharray="283"
                 strokeDashoffset={283 - (283 * percentage) / 100}
                 transition={{ duration: 1 }}
               />
@@ -109,9 +116,7 @@ export default function ResultPage() {
         </div>
 
         {/* Score */}
-        <p className="text-lg font-semibold">
-          Score: {score} / {latest.total}
-        </p>
+        <p className="text-lg font-semibold">Score: {score} / {latest.total}</p>
 
         {/* Performance Summary */}
         <div className="flex items-center justify-center gap-2 mt-4">
@@ -120,21 +125,24 @@ export default function ResultPage() {
         </div>
 
         {/* Time Taken */}
-        {timeTaken && (
-          <div className="flex items-center justify-center gap-2 mt-2 text-sm text-muted-foreground">
-            <FaClock className="h-4 w-4" /> Time Taken: {timeTaken}
-          </div>
-        )}
+        <div className="flex items-center justify-center gap-2 mt-2 text-sm text-muted-foreground">
+          <FaClock className="h-4 w-4" /> Time Taken: {timeTaken}
+          {avgTime && <span>| Avg: {avgTime}s per Q</span>}
+        </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 gap-4 mt-6">
+        <div className="grid grid-cols-3 gap-4 mt-6">
           <div className="glass rounded-lg p-4">
-            <p className="text-lg font-bold">{answered}</p>
-            <p className="text-sm text-muted-foreground">Answered</p>
+            <p className="text-lg font-bold text-green-500">{score}</p>
+            <p className="text-sm">Correct</p>
           </div>
           <div className="glass rounded-lg p-4">
-            <p className="text-lg font-bold">{notAnswered}</p>
-            <p className="text-sm text-muted-foreground">Not Answered</p>
+            <p className="text-lg font-bold text-red-500">{wrong}</p>
+            <p className="text-sm">Wrong</p>
+          </div>
+          <div className="glass rounded-lg p-4">
+            <p className="text-lg font-bold text-yellow-500">{notAnswered}</p>
+            <p className="text-sm">Not Answered</p>
           </div>
         </div>
 
@@ -142,15 +150,7 @@ export default function ResultPage() {
         <div className="mt-8 h-64">
           <ResponsiveContainer>
             <PieChart>
-              <Pie
-                data={chartData}
-                dataKey="value"
-                nameKey="name"
-                cx="50%"
-                cy="50%"
-                outerRadius={80}
-                label
-              >
+              <Pie data={chartData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} label>
                 {chartData.map((entry, index) => (
                   <Cell key={index} fill={entry.color} />
                 ))}
@@ -160,30 +160,47 @@ export default function ResultPage() {
           </ResponsiveContainer>
         </div>
 
+        {/* Export & Share */}
+        <div className="mt-6 flex gap-4 justify-center">
+          <button onClick={() => exportResultJSON(resultData)} className="px-4 py-2 glass rounded-lg flex items-center gap-2">
+            <FaDownload /> JSON
+          </button>
+          <button onClick={() => exportResultCSV(resultData)} className="px-4 py-2 glass rounded-lg flex items-center gap-2">
+            <FaDownload /> CSV
+          </button>
+          <button onClick={() => shareResult(resultData)} className="px-4 py-2 glass rounded-lg flex items-center gap-2">
+            <FaShareAlt /> Share
+          </button>
+        </div>
+
         {/* Actions */}
-        <div className="mt-8 flex flex-wrap gap-4 justify-center">
-          <button
-            onClick={() => router.push(`/test/${subject}/${difficulty}`)}
-            className="px-4 py-2 bg-primary text-primary-foreground rounded-lg"
-          >
+        <div className="mt-6 flex flex-wrap gap-4 justify-center">
+          <button onClick={() => router.push(`/test/${subject}/${difficulty}`)} className="px-4 py-2 bg-primary text-primary-foreground rounded-lg">
             Retake Test
           </button>
-          <button
-            onClick={() => router.push(`/test/${subject}`)}
-            className="px-4 py-2 glass rounded-lg"
-          >
+          <button onClick={() => router.push(`/test/${subject}`)} className="px-4 py-2 glass rounded-lg">
             Choose Difficulty
           </button>
-          <button
-            onClick={() => router.push(`/test`)}
-            className="px-4 py-2 glass rounded-lg"
-          >
+          <button onClick={() => router.push(`/test`)} className="px-4 py-2 glass rounded-lg">
             Other Subjects
           </button>
         </div>
       </motion.div>
 
-      {/* --- Review Section --- */}
+      {/* Weakness Analysis */}
+      <h2 className="text-2xl font-bold mt-12 mb-6 text-center">Weakness Analysis</h2>
+      <div className="max-w-2xl mx-auto grid gap-4">
+        {Object.entries(topicStats).map(([topic, stats]: any) => (
+          <div key={topic} className="glass p-4 rounded-xl flex justify-between">
+            <span className="font-medium capitalize">{topic}</span>
+            <span className="text-sm text-muted-foreground">
+              Correct: {stats.correct} | Wrong: {stats.wrong}
+            </span>
+          </div>
+        ))}
+      </div>
+
+      {/* Review Section */}
       <h2 className="text-2xl font-bold mt-12 mb-6 text-center">Review Answers</h2>
       <div className="space-y-4 max-w-3xl mx-auto">
         {questions.map((q, i) => {
@@ -203,18 +220,19 @@ export default function ResultPage() {
                   : "border-red-500 bg-red-500/10"
               }`}
             >
-              <p className="font-medium mb-2">
-                Q{i + 1}. {q.question}
-              </p>
-              <p className="text-sm">
-                Your Answer:{" "}
-                {userAns !== null ? q.options[userAns] : "Not Answered"}
-              </p>
+              <p className="font-medium mb-2">Q{i + 1}. {q.question}</p>
+              <p className="text-sm">Your Answer: {userAns !== null ? q.options[userAns] : "Not Answered"}</p>
               <p className="text-sm">Correct: {q.options[q.answerIndex]}</p>
+              {latest.timePerQ && latest.timePerQ[q.id] && (
+                <p className="text-xs text-muted-foreground">Time Spent: {latest.timePerQ[q.id]}s</p>
+              )}
             </motion.div>
           )
         })}
       </div>
+
+      {/* Certificate of Completion */}
+      {percentage >= 60 && <Certificate result={{ ...resultData, score }} />}
     </div>
   )
 }
