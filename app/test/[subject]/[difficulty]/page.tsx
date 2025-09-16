@@ -14,6 +14,7 @@ export default function ExamPage() {
   const [current, setCurrent] = useState(0)
   const [answers, setAnswers] = useState<Record<string, number | null>>({})
   const [submitting, setSubmitting] = useState(false)
+  const [progress, setProgress] = useState(0)
 
   useEffect(() => {
     const q = getQuestions(subject as string, difficulty as string, 50)
@@ -39,10 +40,19 @@ export default function ExamPage() {
     }
     saveResult(result)
 
-    // Simulate calculating animation (3–5 sec delay)
-    setTimeout(() => {
-      router.push(`/test/${subject}/${difficulty}/result`)
-    }, 4000)
+    // Simulate calculating with animated progress
+    let percent = 0
+    const interval = setInterval(() => {
+      percent += Math.floor(Math.random() * 15) + 5 // random increment 5–20
+      if (percent >= 100) {
+        percent = 100
+        clearInterval(interval)
+        setTimeout(() => {
+          router.push(`/test/${subject}/${difficulty}/result`)
+        }, 600) // short pause at 100%
+      }
+      setProgress(percent)
+    }, 500)
   }
 
   if (!questions.length) {
@@ -51,15 +61,28 @@ export default function ExamPage() {
 
   if (submitting) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen">
-        <motion.div
-          className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mb-6"
-          initial={{ scale: 0.8 }}
-          animate={{ scale: 1 }}
-          transition={{ repeat: Infinity, duration: 1 }}
-        />
-        <h2 className="text-2xl font-bold mb-2">Calculating your result...</h2>
-        <p className="text-muted-foreground">Please wait a moment</p>
+      <div className="flex flex-col items-center justify-center min-h-screen px-6 text-center">
+        <motion.h2
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-2xl font-bold mb-6"
+        >
+          Calculating Your Result...
+        </motion.h2>
+
+        {/* Progress Bar */}
+        <div className="w-full max-w-md bg-accent/20 rounded-full h-4 overflow-hidden mb-4">
+          <motion.div
+            className="bg-primary h-4"
+            initial={{ width: "0%" }}
+            animate={{ width: `${progress}%` }}
+            transition={{ ease: "easeOut", duration: 0.4 }}
+          />
+        </div>
+
+        <p className="text-lg font-semibold text-primary">{progress}%</p>
+        <p className="text-muted-foreground mt-2">Analyzing answers, please wait...</p>
       </div>
     )
   }
@@ -104,7 +127,7 @@ export default function ExamPage() {
               Previous
             </button>
           ) : (
-            <div /> // Empty placeholder to balance layout
+            <div /> // Empty placeholder
           )}
 
           {current < questions.length - 1 ? (
