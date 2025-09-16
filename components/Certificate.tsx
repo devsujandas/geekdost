@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import html2canvas from "html2canvas"
+import { useRef } from "react"
 
 export default function Certificate({ result }: { result: any }) {
   if (!result) return null
@@ -11,10 +12,15 @@ export default function Certificate({ result }: { result: any }) {
       ? localStorage.getItem("userName") || "[Your Name]"
       : "[Your Name]"
 
+  const certificateRef = useRef<HTMLDivElement>(null)
+
   const handleDownload = async () => {
-    const element = document.getElementById("certificate")
-    if (!element) return
-    const canvas = await html2canvas(element, { scale: 3, useCORS: true })
+    if (!certificateRef.current) return
+    const canvas = await html2canvas(certificateRef.current, {
+      scale: 3,
+      useCORS: true,
+      backgroundColor: "#ffffff", // ✅ white fallback background
+    })
     const link = document.createElement("a")
     link.download = `certificate-${userName}.png`
     link.href = canvas.toDataURL("image/png")
@@ -24,16 +30,16 @@ export default function Certificate({ result }: { result: any }) {
   return (
     <div className="text-center mt-10">
       <motion.div
-        id="certificate"
+        ref={certificateRef}
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
-        className="relative mx-auto shadow-2xl rounded-2xl overflow-hidden bg-white"
+        className="relative mx-auto shadow-2xl rounded-2xl overflow-hidden"
         style={{
-          width: "1100px", // fixed width
-          height: "825px", // 4:3 ratio
-          background: "linear-gradient(135deg, #e6f4ff 0%, #fdfdfd 100%)",
-          border: "10px double #1e3a8a",
+          width: "1100px", // fixed size (landscape ratio)
+          height: "825px",
+          background: "linear-gradient(135deg, #e6f4ff 0%, #fdfdfd 100%)", // ✅ HEX gradient
+          border: "10px double #1e3a8a", // ✅ HEX navy border
         }}
       >
         {/* Watermark */}
@@ -41,55 +47,61 @@ export default function Certificate({ result }: { result: any }) {
           <img
             src="/geekdost.png"
             alt="GeekDost Watermark"
-            className="w-[70%] object-contain"
+            style={{ width: "70%", objectFit: "contain" }}
           />
         </div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center justify-between h-full py-12 px-16 text-black">
+        <div className="relative z-10 flex flex-col items-center justify-between h-full py-10 px-12 text-black">
           {/* Header */}
-          <div>
+          <div className="mb-8">
             <h1
-              className="text-6xl font-extrabold tracking-wide text-gray-900"
-              style={{ fontFamily: `"Playfair Display", serif` }}
+              className="text-5xl font-extrabold tracking-wide"
+              style={{ fontFamily: `"Playfair Display", serif`, color: "#111827" }}
             >
               Certificate of Achievement
             </h1>
             <p
-              className="text-xl italic text-gray-600 mt-4"
-              style={{ fontFamily: `"Lora", serif` }}
+              className="text-lg italic mt-2"
+              style={{ fontFamily: `"Lora", serif`, color: "#374151" }}
             >
               This is proudly presented to
             </p>
           </div>
 
           {/* Recipient */}
-          <div>
+          <div className="mb-8">
             <p
-              className="text-5xl font-extrabold text-indigo-700 underline decoration-yellow-500 underline-offset-8"
-              style={{ fontFamily: `"Poppins", sans-serif` }}
+              className="text-4xl font-extrabold underline underline-offset-8"
+              style={{
+                fontFamily: `"Poppins", sans-serif`,
+                color: "#4338ca", // indigo-700
+                textDecorationColor: "#facc15", // yellow-400
+              }}
             >
               {userName}
             </p>
           </div>
 
           {/* Body */}
-          <div className="max-w-3xl text-center">
+          <div className="max-w-3xl text-center mb-8">
             <p
-              className="text-2xl leading-relaxed text-gray-700"
-              style={{ fontFamily: `"Inter", sans-serif` }}
+              className="text-xl leading-relaxed"
+              style={{ fontFamily: `"Inter", sans-serif`, color: "#374151" }}
             >
               for successfully completing the{" "}
-              <span className="font-semibold capitalize">{result.subject}</span>{" "}
+              <span style={{ fontWeight: "600" }} className="capitalize">
+                {result.subject}
+              </span>{" "}
               test ({result.difficulty}) with an outstanding score of{" "}
-              <span className="font-bold text-yellow-600">
+              <span style={{ fontWeight: "700", color: "#ca8a04" }}>
                 {result.score}/{result.total}
               </span>
               .
             </p>
             <p
-              className="mt-6 text-xl font-medium text-gray-800"
-              style={{ fontFamily: `"Merriweather", serif` }}
+              className="mt-6 text-lg font-medium"
+              style={{ fontFamily: `"Merriweather", serif`, color: "#111827" }}
             >
               We hereby recognize your commitment, knowledge, and excellence in
               performance.
@@ -97,21 +109,42 @@ export default function Certificate({ result }: { result: any }) {
           </div>
 
           {/* Divider */}
-          <div className="w-52 h-[3px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
+          <div
+            className="mb-10"
+            style={{
+              width: "160px",
+              height: "2px",
+              background:
+                "linear-gradient(to right, transparent, #facc15, transparent)",
+            }}
+          ></div>
 
           {/* Footer */}
-          <div className="flex justify-between items-end w-full mt-8">
+          <div className="flex justify-between items-center w-full px-12">
             {/* Date */}
             <div className="text-left">
-              <p className="text-base text-gray-500 italic">Date</p>
-              <p className="font-medium text-gray-800 text-xl">
+              <p className="text-sm italic" style={{ color: "#6b7280" }}>
+                Date
+              </p>
+              <p className="font-medium text-lg" style={{ color: "#111827" }}>
                 {new Date(result.date).toLocaleDateString()}
               </p>
             </div>
 
             {/* Seal */}
-            <div className="bg-yellow-400 rounded-full w-32 h-32 flex items-center justify-center shadow-xl border-4 border-yellow-600">
-              <span className="text-xs font-bold uppercase text-gray-800 text-center">
+            <div
+              className="absolute left-1/2 -translate-x-1/2 bottom-20 rounded-full flex items-center justify-center shadow-xl"
+              style={{
+                width: "120px",
+                height: "120px",
+                background: "#facc15",
+                border: "4px solid #ca8a04",
+              }}
+            >
+              <span
+                className="text-xs font-bold uppercase text-center"
+                style={{ color: "#1f2937" }}
+              >
                 GeekDost <br /> Official Seal
               </span>
             </div>
@@ -121,24 +154,37 @@ export default function Certificate({ result }: { result: any }) {
               <img
                 src="/signature.png"
                 alt="Signature"
-                className="h-16 mx-auto mb-1 opacity-90"
+                style={{
+                  height: "56px",
+                  margin: "0 auto 4px",
+                  opacity: 0.9,
+                }}
               />
               <p
-                className="font-semibold text-gray-900 text-lg"
-                style={{ fontFamily: `"Great Vibes", cursive` }}
+                className="font-semibold"
+                style={{
+                  fontFamily: `"Great Vibes", cursive`,
+                  color: "#111827",
+                  fontSize: "20px",
+                }}
               >
                 Sujan Das
               </p>
-              <p className="text-sm text-gray-600">Founder, GeekDost</p>
+              <p className="text-xs" style={{ color: "#4b5563" }}>
+                Founder, GeekDost
+              </p>
             </div>
           </div>
         </div>
       </motion.div>
 
-      {/* Download button */}
+      {/* Download Button */}
       <button
         onClick={handleDownload}
-        className="mt-8 px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-700 text-white font-semibold rounded-lg shadow hover:opacity-90 transition"
+        className="mt-8 px-8 py-3 text-white font-semibold rounded-lg shadow transition"
+        style={{
+          background: "linear-gradient(to right, #4f46e5, #7c3aed)", // ✅ HEX gradient
+        }}
       >
         Download Certificate
       </button>
