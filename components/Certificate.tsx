@@ -158,23 +158,24 @@ export default function Certificate({ result }: { result: any }) {
               </p>
             </div>
 
-            {/* Seal */}
-            <div className="flex flex-col items-center mt-8">
-              <p
-                className="text-2xl text-gray-800 mb-0 pb-0 leading-none"
-                style={{
-                  fontFamily: '"Playfair Display", serif',
-                  fontWeight: 600,
-                }}
-              >
-                Issued by
-              </p>
-              <img
-                src="/geekdost.png"
-                alt="GeekDost Logo"
-                className="w-32 h-32 object-contain drop-shadow-xl -mt-9"
-              />
-            </div>
+           {/* Seal */}
+<div className="flex flex-col items-center mt-8">
+  <p
+    className="text-2xl text-gray-800 mb-0 leading-none"
+    style={{
+      fontFamily: '"Playfair Display", serif',
+      fontWeight: 600,
+    }}
+  >
+    Issued by
+  </p>
+  <img
+    src="/geekdost.png"
+    alt="GeekDost Logo"
+    className="w-35 h-8 object-contain drop-shadow-xl"
+  />
+</div>
+
 
             {/* Signature */}
             <div className="text-right">
