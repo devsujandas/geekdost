@@ -225,7 +225,7 @@ export default function Certificate({ result }: { result: any }) {
           background: "linear-gradient(to right, #4f46e5, #7c3aed)",
         }}
       >
-        Download Certificate (PDF)
+        Download Certificate
       </button>
     </div>
   )
