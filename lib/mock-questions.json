@@ -2700,7 +2700,91 @@
     "question": "What is the difference between async and traditional threading?",
     "options": ["Async is more lightweight", "Async uses fewer resources", "Async is better for I/O-bound tasks", "All of the above"],
     "answerIndex": 3
+  },
+
+
+
+  {
+    "id": "java-basic-001",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Syntax",
+    "question": "Which keyword is used to define a class in Java?",
+    "options": ["class", "define", "struct", "ClassDef"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-basic-002",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which of these is a primitive data type in Java?",
+    "options": ["String", "int", "Integer", "ArrayList"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-basic-003",
+    "subject": "java",
+    "difficulty": "basic",
+    "topic": "OOP",
+    "question": "Java supports which type of programming paradigm?",
+    "options": ["Procedural", "Object-Oriented", "Functional", "All of the above"],
+    "answerIndex": 1
+  },
+
+  {
+    "id": "java-inter-001",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Collections",
+    "question": "Which interface is implemented by HashMap in Java?",
+    "options": ["List", "Set", "Map", "Collection"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-002",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "Exception Handling",
+    "question": "Which block is always executed in Java exception handling?",
+    "options": ["try", "catch", "finally", "throw"],
+    "answerIndex": 2
+  },
+  {
+    "id": "java-inter-003",
+    "subject": "java",
+    "difficulty": "intermediate",
+    "topic": "OOP",
+    "question": "What is method overloading in Java?",
+    "options": ["Same method name with different parameters", "Same method in child class", "Overriding parent class method", "None"],
+    "answerIndex": 0
+  },
+
+  {
+    "id": "java-adv-001",
+    "subject": "java",
+    "difficulty": "advance",
+    "topic": "Concurrency",
+    "question": "Which package provides concurrency utilities in Java?",
+    "options": ["java.util.concurrent", "java.thread", "java.sync", "java.concurrent"],
+    "answerIndex": 0
+  },
+  {
+    "id": "java-adv-002",
+    "subject": "java",
+    "difficulty": "advance",
+    "topic": "JVM",
+    "question": "What does JIT stand for in Java?",
+    "options": ["Java Internal Translator", "Just In Time compiler", "Java Intermediate Tool", "Joint Instruction Translator"],
+    "answerIndex": 1
+  },
+  {
+    "id": "java-adv-003",
+    "subject": "java",
+    "difficulty": "advance",
+    "topic": "Frameworks",
+    "question": "Which of the following is a popular Java framework?",
+    "options": ["Django", "Spring", "Flask", "Rails"],
+    "answerIndex": 1
   }
-
-
 ]

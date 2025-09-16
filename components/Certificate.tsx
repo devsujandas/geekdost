@@ -173,7 +173,7 @@ export default function Certificate({ result }: { result: any }) {
             {/* Seal */}
             <div className="flex flex-col items-center mt-8">
               <p
-                className="text-2xl text-gray-800 mb-0 leading-none"
+                className="text-2xl text-gray-800 mb-2 leading-none"
                 style={{
                   fontFamily: '"Playfair Display", serif',
                   fontWeight: 600,
