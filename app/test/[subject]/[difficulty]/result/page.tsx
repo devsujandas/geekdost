@@ -5,10 +5,8 @@ import { useParams, useRouter } from "next/navigation"
 import { getQuestions } from "@/lib/questions"
 import { getResults } from "@/lib/storage"
 import { motion } from "framer-motion"
-import { FaTrophy, FaThumbsUp, FaRegSadTear, FaClock, FaDownload, FaShareAlt } from "react-icons/fa"
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts"
+import { FaTrophy, FaThumbsUp, FaRegSadTear, FaClock, FaDownload, FaShareAlt, FaAward } from "react-icons/fa"
 import { exportResultJSON, exportResultCSV, shareResult } from "@/lib/export"
-import Certificate from "@/components/Certificate"
 
 export default function ResultPage() {
   const { subject, difficulty } = useParams()
@@ -42,9 +40,9 @@ export default function ResultPage() {
 
   // --- Grade Calculation ---
   let grade = "F"
-  if (percentage >= 90) grade = "O" // Outstanding
-  else if (percentage >= 75) grade = "A" // Excellent
-  else if (percentage >= 60) grade = "E" // Eligible
+  if (percentage >= 90) grade = "O"
+  else if (percentage >= 75) grade = "A"
+  else if (percentage >= 60) grade = "E"
 
   // --- Performance Summary ---
   let summary = { icon: <FaRegSadTear className="text-red-500 h-6 w-6" />, text: "Needs improvement. Keep practicing!" }
@@ -68,18 +66,11 @@ export default function ResultPage() {
     else if (userAns !== null) topicStats[q.topic].wrong++
   })
 
-  // --- Chart Data ---
-  const chartData = [
-    { name: "Correct", value: score, color: "#22c55e" },
-    { name: "Wrong", value: wrong, color: "#ef4444" },
-    { name: "Not Answered", value: notAnswered, color: "#facc15" },
-  ]
-
   // --- Export Data ---
   const resultData = {
     subject,
     difficulty,
-    mode: latest.mode, // ✅ include mode
+    mode: latest.mode,
     grade,
     percentage,
     answered,
@@ -153,22 +144,24 @@ export default function ResultPage() {
           </div>
         </div>
 
-        {/* Difficulty Breakdown Chart */}
-        <div className="mt-8 h-64">
-          <ResponsiveContainer>
-            <PieChart>
-              <Pie data={chartData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} label>
-                {chartData.map((entry, index) => (
-                  <Cell key={index} fill={entry.color} />
-                ))}
-              </Pie>
-              <Tooltip />
-            </PieChart>
-          </ResponsiveContainer>
-        </div>
+        {/* Achievement Claim Section */}
+        {latest.mode === "exam" && percentage >= 60 && (
+          <div className="mt-10 text-center">
+            <h3 className="text-lg font-semibold mb-2">Congratulations! 🎉</h3>
+            <p className="text-sm text-muted-foreground mb-4">
+              You are eligible to claim your achievement certificate.
+            </p>
+            <button
+              onClick={() => router.push(`/test/${subject}/${difficulty}/certificate`)}
+              className="px-6 py-2 bg-primary text-white rounded-lg flex items-center gap-2 mx-auto hover:opacity-90"
+            >
+              <FaAward /> Claim Achievement
+            </button>
+          </div>
+        )}
 
         {/* Export & Share */}
-        <div className="mt-6 flex gap-4 justify-center">
+        <div className="mt-8 flex gap-4 justify-center">
           <button onClick={() => exportResultJSON(resultData)} className="px-4 py-2 glass rounded-lg flex items-center gap-2">
             <FaDownload /> JSON
           </button>
@@ -199,7 +192,7 @@ export default function ResultPage() {
             <p className="font-semibold">You scored below 60% in Exam Mode.</p>
             <p className="text-sm mt-1">We recommend trying a <span className="font-bold">Practice Test</span> to improve your skills.</p>
             <button
-              onClick={() => router.push(`/test/${subject}/${difficulty}/practice`)}
+              onClick={() => router.push(`/test/${subject}?mode=practice`)}
               className="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-lg hover:opacity-90"
             >
               Start Practice Test
@@ -251,13 +244,6 @@ export default function ResultPage() {
           )
         })}
       </div>
-
-      {/* Certificate of Completion (Exam Mode only) */}
-      {latest.mode === "exam" && percentage >= 60 && (
-        <div className="mt-12">
-          <Certificate result={resultData} />
-        </div>
-      )}
     </div>
   )
 }
