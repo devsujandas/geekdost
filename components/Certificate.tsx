@@ -16,11 +16,30 @@ export default function Certificate({ result }: { result: any }) {
 
   const handleDownload = async () => {
     if (!certificateRef.current) return
+
+    // ✅ Sanitize styles directly on the element in the DOM
+    certificateRef.current.querySelectorAll("*").forEach((el) => {
+      const style = window.getComputedStyle(el)
+
+      if (style.color.includes("oklch")) {
+        (el as HTMLElement).style.color = "#000000"
+      }
+      if (style.background.includes("oklch")) {
+        (el as HTMLElement).style.background = "#ffffff"
+      }
+      if (style.borderColor.includes("oklch")) {
+        (el as HTMLElement).style.borderColor = "#1e3a8a"
+      }
+    })
+
+    // ✅ Render the DOM node itself (not clone)
     const canvas = await html2canvas(certificateRef.current, {
       scale: 3,
       useCORS: true,
-      backgroundColor: "#ffffff", // ✅ white fallback background
+      backgroundColor: "#ffffff",
+      logging: false,
     })
+
     const link = document.createElement("a")
     link.download = `certificate-${userName}.png`
     link.href = canvas.toDataURL("image/png")
@@ -37,9 +56,9 @@ export default function Certificate({ result }: { result: any }) {
         className="relative mx-auto shadow-2xl rounded-2xl overflow-hidden"
         style={{
           width: "1100px", // fixed size (landscape ratio)
-          height: "720px", // ⬅️ height 
-          background: "linear-gradient(135deg, #e6f4ff 0%, #fdfdfd 100%)", // ✅ HEX gradient
-          border: "10px double #1e3a8a", // ✅ HEX navy border
+          height: "720px",
+          background: "linear-gradient(135deg, #e6f4ff 0%, #fdfdfd 100%)",
+          border: "10px double #1e3a8a",
         }}
       >
         {/* Watermark */}
@@ -57,7 +76,10 @@ export default function Certificate({ result }: { result: any }) {
           <div className="mb-8">
             <h1
               className="text-5xl font-extrabold tracking-wide"
-              style={{ fontFamily: `"Playfair Display", serif`, color: "#ecb30bff" }}
+              style={{
+                fontFamily: `"Playfair Display", serif`,
+                color: "#ecb30bff",
+              }}
             >
               Certificate of Achievement
             </h1>
@@ -101,11 +123,15 @@ export default function Certificate({ result }: { result: any }) {
             </p>
             <p
               className="mt-6 text-lg font-medium"
-              style={{ fontFamily: `"Merriweather", serif`, color: "#111827" }}
+              style={{
+                fontFamily: `"Merriweather", serif`,
+                color: "#111827",
+              }}
             >
-              This certificate proudly acknowledges your <span style={{ fontWeight: 600 }}>dedication, knowledge,</span>  
-  and <span style={{ fontWeight: 600 }}>outstanding achievement</span>,  
-  reflecting true commitment to excellence.
+              This certificate proudly acknowledges your{" "}
+              <span style={{ fontWeight: 600 }}>dedication, knowledge,</span>{" "}
+              and <span style={{ fontWeight: 600 }}>outstanding achievement</span>,  
+              reflecting true commitment to excellence.
             </p>
           </div>
 
@@ -136,7 +162,10 @@ export default function Certificate({ result }: { result: any }) {
             <div className="flex flex-col items-center mt-8">
               <p
                 className="text-2xl text-gray-800 mb-0 pb-0 leading-none"
-                style={{ fontFamily: '"Playfair Display", serif', fontWeight: 600 }}
+                style={{
+                  fontFamily: '"Playfair Display", serif',
+                  fontWeight: 600,
+                }}
               >
                 Issued by
               </p>
@@ -159,16 +188,15 @@ export default function Certificate({ result }: { result: any }) {
                 }}
               />
               <p
-  className="font-semibold"
-  style={{
-    fontFamily: `"Satisfy", cursive`, // ✅ clean & premium font
-    color: "#111827",
-    fontSize: "20px",
-  }}
->
-  Sujan Das
-</p>
-
+                className="font-semibold"
+                style={{
+                  fontFamily: `"Satisfy", cursive`,
+                  color: "#111827",
+                  fontSize: "20px",
+                }}
+              >
+                Sujan Das
+              </p>
               <p className="text-xs" style={{ color: "#4b5563" }}>
                 Founder, GeekDost
               </p>
@@ -182,7 +210,7 @@ export default function Certificate({ result }: { result: any }) {
         onClick={handleDownload}
         className="mt-8 px-8 py-3 text-white font-semibold rounded-lg shadow transition"
         style={{
-          background: "linear-gradient(to right, #4f46e5, #7c3aed)", // ✅ HEX gradient
+          background: "linear-gradient(to right, #4f46e5, #7c3aed)",
         }}
       >
         Download Certificate
