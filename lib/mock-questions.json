@@ -5406,6 +5406,145 @@
     "question": "What is a concurrent modifier?",
     "options": ["Modifies for concurrency", "Thread-safe modification", "Both 1 and 2", "Concurrent modification"],
     "answerIndex": 2
+  },
+
+
+  
+  {
+    "id": "js-basic-001",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "Which keyword is used to declare a variable in modern JavaScript?",
+    "options": ["var", "let", "const", "Both 2 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-002",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What is the data type of null in JavaScript?",
+    "options": ["null", "object", "undefined", "number"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-003",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the result of '5' + 3 in JavaScript?",
+    "options": ["8", "53", "NaN", "Error"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-004",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "How do you define a function in JavaScript?",
+    "options": ["function myFunc() {}", "def myFunc() {}", "myFunc = function() {}", "Both 1 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-005",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "Which method adds an element to the end of an array?",
+    "options": ["push()", "append()", "add()", "insert()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-001",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Closures",
+    "question": "What is a closure in JavaScript?",
+    "options": ["A function with access to its outer scope", "A closed function", "A function that returns nothing", "A private function"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-002",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "DOM",
+    "question": "Which method selects an element by its ID?",
+    "options": ["document.querySelector()", "document.getElementById()", "document.getElementByID()", "Both 1 and 2"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-inter-003",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What does the spread operator (...) do?",
+    "options": ["Expands iterables", "Spreads elements", "Copies arrays/objects", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-inter-004",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "Which keyword is used with async functions?",
+    "options": ["await", "async", "wait", "Both 1 and 2"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-inter-005",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Objects",
+    "question": "How do you create an object in JavaScript?",
+    "options": ["{}", "new Object()", "Object.create()", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-adv-001",
+    "subject": "javascript",
+    "difficulty": "advanced",
+    "topic": "Prototypes",
+    "question": "What is prototypal inheritance in JavaScript?",
+    "options": ["Objects inherit from other objects", "Class-based inheritance", "Prototype chain", "Both 1 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-adv-002",
+    "subject": "javascript",
+    "difficulty": "advanced",
+    "topic": "Event Loop",
+    "question": "How does the JavaScript event loop work?",
+    "options": ["Handles async operations", "Uses call stack and callback queue", "Manages concurrency model", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-adv-003",
+    "subject": "javascript",
+    "difficulty": "advanced",
+    "topic": "Promises",
+    "question": "What does Promise.all() do?",
+    "options": ["Waits for all promises to resolve", "Returns array of results", "Fails if any promise fails", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-adv-004",
+    "subject": "javascript",
+    "difficulty": "advanced",
+    "topic": "Modules",
+    "question": "How do you export a function in ES6 modules?",
+    "options": ["export function myFunc() {}", "export {myFunc}", "module.exports = myFunc", "Both 1 and 2"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-adv-005",
+    "subject": "javascript",
+    "difficulty": "advanced",
+    "topic": "This Keyword",
+    "question": "What determines the value of 'this' in JavaScript?",
+    "options": ["How function is called", "Execution context", "Arrow functions don't have own 'this'", "All of the above"],
+    "answerIndex": 3
   }
 ]
+
 

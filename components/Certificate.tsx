@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import html2canvas from "html2canvas"
 import jsPDF from "jspdf"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 
 export default function Certificate({ result }: { result: any }) {
   if (!result) return null
@@ -14,11 +14,12 @@ export default function Certificate({ result }: { result: any }) {
       : "[Your Name]"
 
   const certificateRef = useRef<HTMLDivElement>(null)
+  const [isDownloading, setIsDownloading] = useState(false)
 
   const handleDownload = async () => {
     if (!certificateRef.current) return
+    setIsDownloading(true)
 
-    // ✅ Sanitize styles directly on the element in the DOM
     certificateRef.current.querySelectorAll("*").forEach((el) => {
       const style = window.getComputedStyle(el)
 
@@ -33,7 +34,6 @@ export default function Certificate({ result }: { result: any }) {
       }
     })
 
-    // ✅ Render DOM node to canvas
     const canvas = await html2canvas(certificateRef.current, {
       scale: 3,
       useCORS: true,
@@ -42,20 +42,18 @@ export default function Certificate({ result }: { result: any }) {
     })
 
     const imgData = canvas.toDataURL("image/png")
-
-    // ✅ Create PDF (landscape A4)
     const pdf = new jsPDF("landscape", "pt", "a4")
     const pageWidth = pdf.internal.pageSize.getWidth()
     const pageHeight = pdf.internal.pageSize.getHeight()
 
-    // Fit image into A4 size
     const imgWidth = pageWidth
     const imgHeight = (canvas.height * pageWidth) / canvas.width
-
     const y = (pageHeight - imgHeight) / 2
-    pdf.addImage(imgData, "PNG", 0, y, imgWidth, imgHeight)
 
+    pdf.addImage(imgData, "PNG", 0, y, imgWidth, imgHeight)
     pdf.save(`certificate-${userName}.pdf`)
+
+    setIsDownloading(false)
   }
 
   return (
@@ -67,7 +65,7 @@ export default function Certificate({ result }: { result: any }) {
         transition={{ duration: 0.6 }}
         className="relative mx-auto shadow-2xl rounded-2xl overflow-hidden"
         style={{
-          width: "1100px", // fixed size (landscape ratio)
+          width: "1100px",
           height: "720px",
           background: "linear-gradient(135deg, #e6f4ff 0%, #fdfdfd 100%)",
           border: "10px double #1e3a8a",
@@ -142,7 +140,8 @@ export default function Certificate({ result }: { result: any }) {
             >
               This certificate proudly acknowledges your{" "}
               <span style={{ fontWeight: 600 }}>dedication, knowledge,</span>{" "}
-              and <span style={{ fontWeight: 600 }}>outstanding achievement</span>,  
+              and{" "}
+              <span style={{ fontWeight: 600 }}>outstanding achievement</span>,  
               reflecting true commitment to excellence.
             </p>
           </div>
@@ -217,16 +216,23 @@ export default function Certificate({ result }: { result: any }) {
         </div>
       </motion.div>
 
-      {/* Download Button */}
-      <button
-        onClick={handleDownload}
-        className="mt-8 px-8 py-3 text-white font-semibold rounded-lg shadow transition"
-        style={{
-          background: "linear-gradient(to right, #4f46e5, #7c3aed)",
-        }}
-      >
-        Download Certificate
-      </button>
+      {/* Download Button - Centered */}
+      <div className="flex justify-center">
+        <button
+          onClick={handleDownload}
+          disabled={isDownloading}
+          className="mt-8 px-8 py-3 text-white font-semibold rounded-lg shadow transition flex items-center justify-center"
+          style={{
+            background: "linear-gradient(to right, #4f46e5, #7c3aed)",
+          }}
+        >
+          {isDownloading ? (
+            <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+          ) : (
+            "Download Certificate"
+          )}
+        </button>
+      </div>
     </div>
   )
 }
