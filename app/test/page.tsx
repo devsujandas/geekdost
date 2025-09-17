@@ -10,8 +10,11 @@ import {
   FaCloud,
   FaLock,
   FaCode,
+  FaProjectDiagram,
+  FaNetworkWired
+
 } from "react-icons/fa"
-import { SiTensorflow, SiOpenai, SiC, SiCplusplus} from "react-icons/si"
+import { SiTensorflow, SiOpenai, SiC, SiCplusplus, SiLinux } from "react-icons/si"
 import { FaArrowRight } from "react-icons/fa"
 import { MdWeb, MdOutlineDeveloperMode } from "react-icons/md"
 import { PageLayout } from "@/components/page-layout"
@@ -35,6 +38,12 @@ const subjects = [
   { id: "ai-llms", name: "AI & LLMs", icon: <SiOpenai className="h-10 w-10 text-primary" /> },
   { id: "cloud", name: "Cloud Computing", icon: <FaCloud className="h-10 w-10 text-primary" /> },
   { id: "cyber", name: "Cyber Security", icon: <FaLock className="h-10 w-10 text-primary" /> },
+  { id: "os", name: "Operating Systems", icon: <SiLinux className="h-10 w-10 text-primary" /> },
+  { id: "networks", name: "Computer Networks", icon: <FaNetworkWired className="h-10 w-10 text-primary" /> },
+  { id: "se", name: "Software Engineering", icon: <FaProjectDiagram className="h-10 w-10 text-primary" /> }
+
+
+
 ]
 
 export default function TestPage() {
