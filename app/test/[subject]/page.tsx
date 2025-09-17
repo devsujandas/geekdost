@@ -2,26 +2,25 @@
 
 import { useParams, useRouter, useSearchParams } from "next/navigation"
 import { MdOutlineQuiz } from "react-icons/md"
+import { FaArrowRight } from "react-icons/fa"
 import { motion } from "framer-motion"
 
 export default function DifficultyPage() {
   const { subject } = useParams()
   const router = useRouter()
   const searchParams = useSearchParams()
-  const mode = searchParams.get("mode") // ✅ check query param
+  const mode = searchParams.get("mode")
 
   const levels = [
-    { id: "basic", label: "Basic" },
-    { id: "intermediate", label: "Intermediate" },
-    { id: "advance", label: "Advance" },
+    { id: "basic", label: "Basic", desc: "Start with fundamentals" },
+    { id: "intermediate", label: "Intermediate", desc: "For learners with some experience" },
+    { id: "advance", label: "Advance", desc: "Challenge yourself at expert level" },
   ]
 
   function handleClick(level: string) {
     if (mode === "practice") {
-      
       router.push(`/test/${subject}/${level}/practice`)
     } else {
-     
       router.push(`/test/${subject}/${level}/rules`)
     }
   }
@@ -38,24 +37,40 @@ export default function DifficultyPage() {
         Each level contains 50 random questions every time.
       </p>
 
-      {/* Difficulty Buttons */}
+      {/* Difficulty Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
         {levels.map((lvl, idx) => (
           <motion.button
             key={lvl.id}
             onClick={() => handleClick(lvl.id)}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
-            className="glass p-10 rounded-2xl flex flex-col items-center justify-center 
-                       transition-all duration-300 hover:shadow-lg"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: idx * 0.05 }}
+            className="glass relative rounded-2xl p-10 flex flex-col items-center justify-center 
+                       border border-primary/30 hover:border-primary/70
+                       shadow-md hover:shadow-xl transition-all duration-300 group"
           >
-            <MdOutlineQuiz className="h-10 w-10 text-primary mb-4" />
+            {/* Icon */}
+            <div
+              className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 
+                         group-hover:bg-primary/20 transition-all duration-300 mb-4"
+            >
+              <MdOutlineQuiz className="h-10 w-10 text-primary" />
+            </div>
+
+            {/* Level Name */}
             <span className="text-xl font-semibold">{lvl.label}</span>
-            <p className="text-sm text-muted-foreground mt-2">
-              {idx === 0 && "Start with fundamentals"}
-              {idx === 1 && "For learners with some experience"}
-              {idx === 2 && "Challenge yourself at expert level"}
+
+            {/* Description */}
+            <p className="text-sm text-muted-foreground mt-2 flex items-center gap-1">
+              {lvl.desc} <FaArrowRight className="inline h-3 w-3" />
             </p>
+
+            {/* Glow Effect */}
+            <span className="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 
+                             group-hover:opacity-100 transition duration-300 pointer-events-none" />
           </motion.button>
         ))}
       </div>

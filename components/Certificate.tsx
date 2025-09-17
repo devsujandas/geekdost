@@ -7,6 +7,40 @@ import { useRef, useState } from "react"
 export default function Certificate({ result }: { result: any }) {
   if (!result) return null
 
+  
+  if (result.mode !== "exam") {
+    return (
+      <div className="flex items-center justify-center min-h-screen text-center">
+        <p>
+          Certificates are only available for <b>exam mode</b>.
+        </p>
+      </div>
+    )
+  }
+
+  // ✅ Calculate grade
+  const questions = result.questions || []
+  const score = questions.reduce((acc: number, q: any) => {
+    const userAns = result.answers[q.id]
+    return userAns === q.answerIndex ? acc + 1 : acc
+  }, 0)
+
+  const percentage = Math.round((score / result.total) * 100)
+
+  let grade: string | null = null
+  if (percentage >= 90) grade = "O"
+  else if (percentage >= 80) grade = "E"
+  else if (percentage >= 70) grade = "A"
+  else if (percentage >= 60) grade = "B"
+
+  if (!grade) {
+    return (
+      <div className="flex items-center justify-center min-h-screen text-center">
+        <p>You scored below 60%. Certificate cannot be generated.</p>
+      </div>
+    )
+  }
+
   const userName =
     typeof window !== "undefined"
       ? localStorage.getItem("userName") || "[Your Name]"
@@ -19,17 +53,16 @@ export default function Certificate({ result }: { result: any }) {
     if (!certificateRef.current) return
     setIsDownloading(true)
 
-    // Fix colors before rendering (oklch → hex fallback)
     certificateRef.current.querySelectorAll("*").forEach((el) => {
       const style = window.getComputedStyle(el)
       if (style.color.includes("oklch")) {
-        (el as HTMLElement).style.color = "#000000"
+        ;(el as HTMLElement).style.color = "#000000"
       }
       if (style.background.includes("oklch")) {
-        (el as HTMLElement).style.background = "#ffffff"
+        ;(el as HTMLElement).style.background = "#ffffff"
       }
       if (style.borderColor.includes("oklch")) {
-        (el as HTMLElement).style.borderColor = "#1e3a8a"
+        ;(el as HTMLElement).style.borderColor = "#1e3a8a"
       }
     })
 
@@ -40,10 +73,7 @@ export default function Certificate({ result }: { result: any }) {
       logging: false,
     })
 
-    // Convert canvas to image (PNG)
     const imgData = canvas.toDataURL("image/png")
-
-    // Create a link element to download
     const link = document.createElement("a")
     link.href = imgData
     link.download = `certificate-${userName}.png`
@@ -59,20 +89,37 @@ export default function Certificate({ result }: { result: any }) {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
-        className="relative mx-auto shadow-2xl rounded-2xl overflow-hidden"
+        className="relative mx-auto rounded-2xl overflow-hidden"
         style={{
-          width: "1100px",
-          height: "720px",
-          background: "linear-gradient(135deg, #e6f4ff 0%, #fdfdfd 100%)",
-          border: "10px double #1e3a8a",
-        }}
+  width: "1100px",
+  height: "720px",
+  background: `
+    radial-gradient(circle at top left, #fef9c3, #fefce8 30%, #ffffff 60%),
+    linear-gradient(135deg, #ffffff, #f9fafb)
+  `,
+  border: "20px solid transparent",
+  borderImage: "linear-gradient(90deg, #0fcba5ff, #22f29fff, #be42efff, #0caec7ff) 1",
+  boxShadow: `
+    0 0 45px rgba(202,138,4,0.4), 
+    inset 0 0 25px rgba(0,0,0,0.06)
+  `,
+  borderRadius: "18px",
+  position: "relative",
+}}
+
       >
+        {/* Corner Decorations */}
+        <div className="absolute top-4 left-4 w-12 h-12 border-l-4 border-t-4 border-yellow-600 rounded-tl-xl opacity-70"></div>
+        <div className="absolute top-4 right-4 w-12 h-12 border-r-4 border-t-4 border-yellow-600 rounded-tr-xl opacity-70"></div>
+        <div className="absolute bottom-4 left-4 w-12 h-12 border-l-4 border-b-4 border-yellow-600 rounded-bl-xl opacity-70"></div>
+        <div className="absolute bottom-4 right-4 w-12 h-12 border-r-4 border-b-4 border-yellow-600 rounded-br-xl opacity-70"></div>
+
         {/* Watermark */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-25 pointer-events-none">
+        <div className="absolute inset-0 flex items-center justify-center opacity-15 pointer-events-none">
           <img
             src="/geekdost.png"
             alt="GeekDost Watermark"
-            style={{ width: "80%", objectFit: "contain" }}
+            style={{ width: "70%", objectFit: "contain" }}
           />
         </div>
 
@@ -84,7 +131,8 @@ export default function Certificate({ result }: { result: any }) {
               className="text-5xl font-extrabold tracking-wide"
               style={{
                 fontFamily: `"Playfair Display", serif`,
-                color: "#ecb30bff",
+                color: "#d97706",
+                textShadow: "2px 2px 6px rgba(0,0,0,0.2)",
               }}
             >
               Certificate of Achievement
@@ -103,7 +151,7 @@ export default function Certificate({ result }: { result: any }) {
               className="text-5xl font-extrabold tracking-wide"
               style={{
                 fontFamily: `"Cinzel Decorative", serif`,
-                color: "#161515ff",
+                color: "#111827",
                 letterSpacing: "2px",
               }}
             >
@@ -121,12 +169,13 @@ export default function Certificate({ result }: { result: any }) {
               <span style={{ fontWeight: "600" }} className="capitalize">
                 {result.subject}
               </span>{" "}
-              test ({result.difficulty}) with an outstanding score of{" "}
-              <span style={{ fontWeight: "700", color: "#ca8a04" }}>
-                {result.score}/{result.total}
+              test ({result.difficulty}) with an outstanding grade of{" "}
+              <span style={{ fontWeight: "700", color: "#b45309" }}>
+                {grade}
               </span>
               .
             </p>
+
             <p
               className="mt-6 text-lg font-medium"
               style={{
@@ -147,7 +196,7 @@ export default function Certificate({ result }: { result: any }) {
             className="mb-10"
             style={{
               width: "160px",
-              height: "2px",
+              height: "3px",
               background:
                 "linear-gradient(to right, transparent, #facc15, transparent)",
             }}
@@ -179,7 +228,7 @@ export default function Certificate({ result }: { result: any }) {
               <img
                 src="/geekdost.png"
                 alt="GeekDost Logo"
-                className="w-35 h-8 object-contain drop-shadow-xl"
+                className="w-36 h-10 object-contain drop-shadow-xl"
               />
             </div>
 

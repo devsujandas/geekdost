@@ -36,6 +36,7 @@ type Result = {
   timeTaken: number
   timePerQ: Record<string, number>
   questions: Question[]
+  grade?: string // 👈 ensure grade is part of result
 }
 
 export default function ResultPage() {
@@ -120,12 +121,12 @@ export default function ResultPage() {
       topicStats[q.topic].wrong++
   })
 
-  // --- Export Data ---
+  // --- Export Data (now includes grade) ---
   const resultData = {
     subject,
     difficulty,
     mode: latest.mode,
-    grade,
+    grade, // 👈 added here so certificate gets it
     percentage,
     answered,
     notAnswered,
@@ -244,15 +245,14 @@ export default function ResultPage() {
                 You scored below 60%. Focus on your weak topics and practice
                 more to earn your certificate next time!
               </p>
-<button
-  onClick={() =>
-    router.push(`/test/${subject}/${difficulty}/practice`)
-  }
-  className="px-6 py-2 bg-yellow-500 text-white rounded-lg flex items-center gap-2 mx-auto hover:opacity-90"
->
-  Practice More
-</button>
-
+              <button
+                onClick={() =>
+                  router.push(`/test/${subject}/${difficulty}/practice`)
+                }
+                className="px-6 py-2 bg-yellow-500 text-white rounded-lg flex items-center gap-2 mx-auto hover:opacity-90"
+              >
+                Practice More
+              </button>
             </div>
           ) : null}
 

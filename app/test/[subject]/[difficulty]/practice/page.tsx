@@ -17,6 +17,9 @@ export default function PracticePage() {
   const [submitting, setSubmitting] = useState(false)
   const [progress, setProgress] = useState(0)
   const [showConfirm, setShowConfirm] = useState(false)
+  const [startTime, setStartTime] = useState<number>(Date.now()) // ✅ Track start time
+  const [timePerQ, setTimePerQ] = useState<Record<string, number>>({}) // ✅ Track per-question time
+  const [lastSwitch, setLastSwitch] = useState<number>(Date.now()) // ✅ Track last question switch
 
   // Load questions
   useEffect(() => {
@@ -25,14 +28,43 @@ export default function PracticePage() {
     const init: Record<string, null> = {}
     q.forEach((x) => (init[x.id] = null))
     setAnswers(init)
+    setStartTime(Date.now()) // reset start time when loaded
+    setLastSwitch(Date.now())
   }, [subject, difficulty])
 
   function selectAnswer(qid: string, idx: number) {
     setAnswers((prev) => ({ ...prev, [qid]: idx }))
   }
 
+  // ✅ Track time spent on each question
+  function switchQuestion(newIndex: number) {
+    const now = Date.now()
+    const qid = questions[current].id
+    const spent = Math.floor((now - lastSwitch) / 1000)
+
+    setTimePerQ((prev) => ({
+      ...prev,
+      [qid]: (prev[qid] || 0) + spent,
+    }))
+
+    setLastSwitch(now)
+    setCurrent(newIndex)
+  }
+
   function submit() {
+    // ✅ Add last question time
+    const now = Date.now()
+    const lastQ = questions[current].id
+    const spent = Math.floor((now - lastSwitch) / 1000)
+
+    const finalTimePerQ = {
+      ...timePerQ,
+      [lastQ]: (timePerQ[lastQ] || 0) + spent,
+    }
+
     setSubmitting(true)
+
+    const totalTime = Math.floor((now - startTime) / 1000) // ✅ Total time
 
     const result = {
       subject,
@@ -41,8 +73,11 @@ export default function PracticePage() {
       answers,
       total: questions.length,
       date: new Date().toISOString(),
-      questions, // ✅ এখন questions সবসময় save হবে
+      questions, // ✅ Save questions always
+      timeTaken: totalTime, // ✅ Save total time
+      timePerQ: finalTimePerQ, // ✅ Save per-question times
     }
+
     saveResult(result)
 
     // Fake calculating animation
@@ -61,7 +96,11 @@ export default function PracticePage() {
   }
 
   if (!questions.length) {
-    return <div className="flex items-center justify-center min-h-screen">Loading...</div>
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        Loading...
+      </div>
+    )
   }
 
   if (submitting) {
@@ -132,7 +171,7 @@ export default function PracticePage() {
         <div className="flex justify-between">
           {current > 0 ? (
             <button
-              onClick={() => setCurrent((c) => c - 1)}
+              onClick={() => switchQuestion(current - 1)}
               className="px-5 py-2 glass rounded-lg"
             >
               Previous
@@ -142,7 +181,7 @@ export default function PracticePage() {
           )}
           {current < questions.length - 1 ? (
             <button
-              onClick={() => setCurrent((c) => c + 1)}
+              onClick={() => switchQuestion(current + 1)}
               className="px-5 py-2 glass rounded-lg"
             >
               Next
@@ -163,7 +202,7 @@ export default function PracticePage() {
         total={questions.length}
         current={current}
         answers={answers}
-        onNavigate={setCurrent}
+        onNavigate={(idx) => switchQuestion(idx)}
       />
 
       {/* Confirm Submit Modal */}
