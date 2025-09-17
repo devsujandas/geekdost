@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import html2canvas from "html2canvas"
-import jsPDF from "jspdf"
 import { useRef, useState } from "react"
 
 export default function Certificate({ result }: { result: any }) {
@@ -20,9 +19,9 @@ export default function Certificate({ result }: { result: any }) {
     if (!certificateRef.current) return
     setIsDownloading(true)
 
+    // Fix colors before rendering (oklch → hex fallback)
     certificateRef.current.querySelectorAll("*").forEach((el) => {
       const style = window.getComputedStyle(el)
-
       if (style.color.includes("oklch")) {
         (el as HTMLElement).style.color = "#000000"
       }
@@ -41,17 +40,14 @@ export default function Certificate({ result }: { result: any }) {
       logging: false,
     })
 
+    // Convert canvas to image (PNG)
     const imgData = canvas.toDataURL("image/png")
-    const pdf = new jsPDF("landscape", "pt", "a4")
-    const pageWidth = pdf.internal.pageSize.getWidth()
-    const pageHeight = pdf.internal.pageSize.getHeight()
 
-    const imgWidth = pageWidth
-    const imgHeight = (canvas.height * pageWidth) / canvas.width
-    const y = (pageHeight - imgHeight) / 2
-
-    pdf.addImage(imgData, "PNG", 0, y, imgWidth, imgHeight)
-    pdf.save(`certificate-${userName}.pdf`)
+    // Create a link element to download
+    const link = document.createElement("a")
+    link.href = imgData
+    link.download = `certificate-${userName}.png`
+    link.click()
 
     setIsDownloading(false)
   }
@@ -216,7 +212,7 @@ export default function Certificate({ result }: { result: any }) {
         </div>
       </motion.div>
 
-      {/* Download Button - Centered */}
+      {/* Download Button */}
       <div className="flex justify-center">
         <button
           onClick={handleDownload}
@@ -229,7 +225,7 @@ export default function Certificate({ result }: { result: any }) {
           {isDownloading ? (
             <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
           ) : (
-            "Download Certificate"
+            "Download as Image"
           )}
         </button>
       </div>
