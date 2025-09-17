@@ -17075,7 +17075,9 @@
 
 
 
-  
+
+
+ 
   {
     "id": "ml-basic-001",
     "subject": "ml",
@@ -17287,7 +17289,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-basic-016",
+    "id": "ml-basic-016",
     "subject": "ml",
     "difficulty": "basic",
     "topic": "Types of ML",
@@ -18477,7 +18479,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-001",
+    "id": "ml-inter-001",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -18491,7 +18493,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-002",
+    "id": "ml-inter-002",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -18505,7 +18507,7 @@
     "answerIndex": 3
   },
   {
-    "id": "ds-inter-003",
+    "id": "ml-inter-003",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -18519,7 +18521,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-004",
+    "id": "ml-inter-004",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Feature Engineering",
@@ -18533,7 +18535,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-005",
+    "id": "ml-inter-005",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Algorithms",
@@ -18547,7 +18549,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-006",
+    "id": "ml-inter-006",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -18561,7 +18563,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-007",
+    "id": "ml-inter-007",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -18575,7 +18577,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-008",
+    "id": "ml-inter-008",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -18589,7 +18591,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-009",
+    "id": "ml-inter-009",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -18603,7 +18605,7 @@
     "answerIndex": 2
   },
   {
-    "id": "ds-inter-010",
+    "id": "ml-inter-010",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Feature Engineering",
@@ -18617,7 +18619,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-011",
+    "id": "ml-inter-011",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Algorithms",
@@ -18631,7 +18633,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-012",
+    "id": "ml-inter-012",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -18645,7 +18647,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-013",
+    "id": "ml-inter-013",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -18659,7 +18661,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-014",
+    "id": "ml-inter-014",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -18673,7 +18675,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-015",
+    "id": "ml-inter-015",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -18687,7 +18689,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-016",
+    "id": "ml-inter-016",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Feature Engineering",
@@ -18701,7 +18703,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-017",
+    "id": "ml-inter-017",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Algorithms",
@@ -18715,7 +18717,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-018",
+    "id": "ml-inter-018",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -18729,7 +18731,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-019",
+    "id": "ml-inter-019",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -18743,7 +18745,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-020",
+    "id": "ml-inter-020",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -18757,7 +18759,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-021",
+    "id": "ml-inter-021",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -18771,7 +18773,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-022",
+    "id": "ml-inter-022",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Algorithms",
@@ -18785,7 +18787,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-023",
+    "id": "ml-inter-023",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -18799,7 +18801,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-024",
+    "id": "ml-inter-024",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Dimensionality Reduction",
@@ -18813,7 +18815,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-025",
+    "id": "ml-inter-025",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -18827,7 +18829,7 @@
     "answerIndex": 2
   },
   {
-    "id": "ds-inter-026",
+    "id": "ml-inter-026",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -18841,7 +18843,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-027",
+    "id": "ml-inter-027",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -18855,7 +18857,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-028",
+    "id": "ml-inter-028",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Algorithms",
@@ -18869,7 +18871,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-029",
+    "id": "ml-inter-029",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -18883,7 +18885,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-030",
+    "id": "ml-inter-030",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Tools",
@@ -18897,7 +18899,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-031",
+    "id": "ml-inter-031",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -18911,7 +18913,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-032",
+    "id": "ml-inter-032",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -18925,7 +18927,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-033",
+    "id": "ml-inter-033",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -18939,7 +18941,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-034",
+    "id": "ml-inter-034",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Algorithms",
@@ -18953,7 +18955,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-035",
+    "id": "ml-inter-035",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -18967,7 +18969,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-036",
+    "id": "ml-inter-036",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "NLP",
@@ -18981,7 +18983,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-037",
+    "id": "ml-inter-037",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -18995,7 +18997,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-038",
+    "id": "ml-inter-038",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19009,7 +19011,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-039",
+    "id": "ml-inter-039",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19023,7 +19025,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-040",
+    "id": "ml-inter-040",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Tools",
@@ -19037,7 +19039,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-041",
+    "id": "ml-inter-041",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Algorithms",
@@ -19051,7 +19053,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-042",
+    "id": "ml-inter-042",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -19065,7 +19067,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-043",
+    "id": "ml-inter-043",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -19079,7 +19081,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-044",
+    "id": "ml-inter-044",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19093,7 +19095,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-045",
+    "id": "ml-inter-045",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19107,7 +19109,7 @@
     "answerIndex": 2
   },
   {
-    "id": "ds-inter-046",
+    "id": "ml-inter-046",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "NLP",
@@ -19121,7 +19123,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-047",
+    "id": "ml-inter-047",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -19135,7 +19137,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-048",
+    "id": "ml-inter-048",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19149,7 +19151,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-049",
+    "id": "ml-inter-049",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19163,7 +19165,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-050",
+    "id": "ml-inter-050",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Tools",
@@ -19177,7 +19179,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-051",
+    "id": "ml-inter-051",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Algorithms",
@@ -19191,7 +19193,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-052",
+    "id": "ml-inter-052",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -19205,7 +19207,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-053",
+    "id": "ml-inter-053",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -19219,7 +19221,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-054",
+    "id": "ml-inter-054",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19233,7 +19235,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-055",
+    "id": "ml-inter-055",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19247,7 +19249,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-056",
+    "id": "ml-inter-056",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "NLP",
@@ -19261,7 +19263,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-057",
+    "id": "ml-inter-057",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -19275,7 +19277,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-058",
+    "id": "ml-inter-058",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19289,7 +19291,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-059",
+    "id": "ml-inter-059",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19303,7 +19305,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-060",
+    "id": "ml-inter-060",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Tools",
@@ -19317,7 +19319,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-061",
+    "id": "ml-inter-061",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Algorithms",
@@ -19331,7 +19333,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-062",
+    "id": "ml-inter-062",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -19345,7 +19347,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-063",
+    "id": "ml-inter-063",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -19359,7 +19361,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-064",
+    "id": "ml-inter-064",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19373,7 +19375,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-065",
+    "id": "ml-inter-065",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19387,7 +19389,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-066",
+    "id": "ml-inter-066",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "NLP",
@@ -19401,7 +19403,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-067",
+    "id": "ml-inter-067",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -19415,7 +19417,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-068",
+    "id": "ml-inter-068",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19429,7 +19431,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-069",
+    "id": "ml-inter-069",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19443,7 +19445,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-070",
+    "id": "ml-inter-070",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Tools",
@@ -19457,7 +19459,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-071",
+    "id": "ml-inter-071",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Algorithms",
@@ -19471,7 +19473,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-072",
+    "id": "ml-inter-072",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -19485,7 +19487,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-073",
+    "id": "ml-inter-073",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -19499,7 +19501,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-074",
+    "id": "ml-inter-074",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19513,7 +19515,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-075",
+    "id": "ml-inter-075",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19527,7 +19529,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-076",
+    "id": "ml-inter-076",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "NLP",
@@ -19541,7 +19543,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-077",
+    "id": "ml-inter-077",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -19555,7 +19557,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-078",
+    "id": "ml-inter-078",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19569,7 +19571,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-079",
+    "id": "ml-inter-079",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19583,7 +19585,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-080",
+    "id": "ml-inter-080",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Tools",
@@ -19597,7 +19599,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-081",
+    "id": "ml-inter-081",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Algorithms",
@@ -19611,7 +19613,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-082",
+    "id": "ml-inter-082",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -19625,7 +19627,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-083",
+    "id": "ml-inter-083",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -19639,7 +19641,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-084",
+    "id": "ml-inter-084",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19653,7 +19655,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-085",
+    "id": "ml-inter-085",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19667,7 +19669,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-086",
+    "id": "ml-inter-086",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "NLP",
@@ -19681,7 +19683,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-087",
+    "id": "ml-inter-087",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -19695,7 +19697,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-088",
+    "id": "ml-inter-088",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19709,7 +19711,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-089",
+    "id": "ml-inter-089",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19723,7 +19725,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-090",
+    "id": "ml-inter-090",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Tools",
@@ -19737,7 +19739,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-091",
+    "id": "ml-inter-091",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Algorithms",
@@ -19751,7 +19753,7 @@
     "answerIndex": 1
   },
   {
-    "id": "ds-inter-092",
+    "id": "ml-inter-092",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Model Evaluation",
@@ -19765,7 +19767,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-093",
+    "id": "ml-inter-093",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -19779,7 +19781,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-094",
+    "id": "ml-inter-094",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19793,7 +19795,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-095",
+    "id": "ml-inter-095",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19807,7 +19809,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-096",
+    "id": "ml-inter-096",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "NLP",
@@ -19821,7 +19823,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-097",
+    "id": "ml-inter-097",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Deep Learning",
@@ -19835,7 +19837,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-098",
+    "id": "ml-inter-098",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Statistics",
@@ -19849,7 +19851,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-099",
+    "id": "ml-inter-099",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Machine Learning",
@@ -19863,7 +19865,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-inter-100",
+    "id": "ml-inter-100",
     "subject": "ml",
     "difficulty": "intermediate",
     "topic": "Tools",
@@ -19877,7 +19879,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-001",
+    "id": "ml-advance-001",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Statistics",
@@ -19891,7 +19893,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-002",
+    "id": "ml-advance-002",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -19905,7 +19907,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-003",
+    "id": "ml-advance-003",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -19919,7 +19921,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-004",
+    "id": "ml-advance-004",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Deployment",
@@ -19933,7 +19935,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-005",
+    "id": "ml-advance-005",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Causality",
@@ -19947,7 +19949,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-006",
+    "id": "ml-advance-006",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -19961,7 +19963,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-007",
+    "id": "ml-advance-007",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -19975,7 +19977,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-008",
+    "id": "ml-advance-008",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Time Series",
@@ -19989,7 +19991,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-009",
+    "id": "ml-advance-009",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Explainability",
@@ -20003,7 +20005,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-010",
+    "id": "ml-advance-010",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Big Data",
@@ -20017,7 +20019,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-011",
+    "id": "ml-advance-011",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Statistics",
@@ -20031,7 +20033,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-012",
+    "id": "ml-advance-012",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20045,7 +20047,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-013",
+    "id": "ml-advance-013",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20059,7 +20061,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-014",
+    "id": "ml-advance-014",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Deployment",
@@ -20073,7 +20075,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-015",
+    "id": "ml-advance-015",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Causality",
@@ -20087,7 +20089,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-016",
+    "id": "ml-advance-016",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20101,7 +20103,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-017",
+    "id": "ml-advance-017",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20115,7 +20117,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-018",
+    "id": "ml-advance-018",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Time Series",
@@ -20129,7 +20131,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-019",
+    "id": "ml-advance-019",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Explainability",
@@ -20143,7 +20145,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-020",
+    "id": "ml-advance-020",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Big Data",
@@ -20157,7 +20159,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-021",
+    "id": "ml-advance-021",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Statistics",
@@ -20171,7 +20173,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-022",
+    "id": "ml-advance-022",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20185,7 +20187,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-023",
+    "id": "ml-advance-023",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20199,7 +20201,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-024",
+    "id": "ml-advance-024",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Deployment",
@@ -20213,7 +20215,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-025",
+    "id": "ml-advance-025",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Causality",
@@ -20227,7 +20229,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-026",
+    "id": "ml-advance-026",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20241,7 +20243,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-027",
+    "id": "ml-advance-027",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20255,7 +20257,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-028",
+    "id": "ml-advance-028",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Time Series",
@@ -20269,7 +20271,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-029",
+    "id": "ml-advance-029",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Explainability",
@@ -20283,7 +20285,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-030",
+    "id": "ml-advance-030",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Big Data",
@@ -20297,7 +20299,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-031",
+    "id": "ml-advance-031",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Statistics",
@@ -20311,7 +20313,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-032",
+    "id": "ml-advance-032",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20325,7 +20327,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-033",
+    "id": "ml-advance-033",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20339,7 +20341,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-034",
+    "id": "ml-advance-034",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Deployment",
@@ -20353,7 +20355,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-035",
+    "id": "ml-advance-035",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Causality",
@@ -20367,7 +20369,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-036",
+    "id": "ml-advance-036",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20381,7 +20383,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-037",
+    "id": "ml-advance-037",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20395,7 +20397,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-038",
+    "id": "ml-advance-038",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Time Series",
@@ -20409,7 +20411,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-039",
+    "id": "ml-advance-039",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Explainability",
@@ -20423,7 +20425,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-040",
+    "id": "ml-advance-040",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Big Data",
@@ -20437,7 +20439,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-041",
+    "id": "ml-advance-041",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Statistics",
@@ -20451,7 +20453,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-042",
+    "id": "ml-advance-042",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20465,7 +20467,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-043",
+    "id": "ml-advance-043",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20479,7 +20481,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-044",
+    "id": "ml-advance-044",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Deployment",
@@ -20493,7 +20495,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-045",
+    "id": "ml-advance-045",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Causality",
@@ -20507,7 +20509,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-046",
+    "id": "ml-advance-046",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20521,7 +20523,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-047",
+    "id": "ml-advance-047",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20535,7 +20537,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-048",
+    "id": "ml-advance-048",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Time Series",
@@ -20549,7 +20551,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-049",
+    "id": "ml-advance-049",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Explainability",
@@ -20563,7 +20565,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-050",
+    "id": "ml-advance-050",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Big Data",
@@ -20577,7 +20579,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-051",
+    "id": "ml-advance-051",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Statistics",
@@ -20591,7 +20593,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-052",
+    "id": "ml-advance-052",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20605,7 +20607,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-053",
+    "id": "ml-advance-053",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20619,7 +20621,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-054",
+    "id": "ml-advance-054",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Deployment",
@@ -20633,7 +20635,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-055",
+    "id": "ml-advance-055",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Causality",
@@ -20647,7 +20649,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-056",
+    "id": "ml-advance-056",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20661,7 +20663,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-057",
+    "id": "ml-advance-057",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20675,7 +20677,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-058",
+    "id": "ml-advance-058",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Time Series",
@@ -20689,7 +20691,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-059",
+    "id": "ml-advance-059",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Explainability",
@@ -20703,7 +20705,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-060",
+    "id": "ml-advance-060",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Big Data",
@@ -20717,7 +20719,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-061",
+    "id": "ml-advance-061",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Statistics",
@@ -20731,7 +20733,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-062",
+    "id": "ml-advance-062",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20745,7 +20747,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-063",
+    "id": "ml-advance-063",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20759,7 +20761,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-064",
+    "id": "ml-advance-064",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Deployment",
@@ -20773,7 +20775,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-065",
+    "id": "ml-advance-065",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Causality",
@@ -20787,7 +20789,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-066",
+    "id": "ml-advance-066",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20801,7 +20803,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-067",
+    "id": "ml-advance-067",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20815,7 +20817,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-068",
+    "id": "ml-advance-068",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Time Series",
@@ -20829,7 +20831,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-069",
+    "id": "ml-advance-069",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Explainability",
@@ -20843,7 +20845,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-070",
+    "id": "ml-advance-070",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Big Data",
@@ -20857,7 +20859,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-071",
+    "id": "ml-advance-071",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Statistics",
@@ -20871,7 +20873,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-072",
+    "id": "ml-advance-072",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20885,7 +20887,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-073",
+    "id": "ml-advance-073",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20899,7 +20901,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-074",
+    "id": "ml-advance-074",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Deployment",
@@ -20913,7 +20915,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-075",
+    "id": "ml-advance-075",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Causality",
@@ -20927,7 +20929,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-076",
+    "id": "ml-advance-076",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -20941,7 +20943,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-077",
+    "id": "ml-advance-077",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -20955,7 +20957,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-078",
+    "id": "ml-advance-078",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Time Series",
@@ -20969,7 +20971,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-079",
+    "id": "ml-advance-079",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Explainability",
@@ -20983,7 +20985,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-080",
+    "id": "ml-advance-080",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Big Data",
@@ -20997,7 +20999,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-081",
+    "id": "ml-advance-081",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Statistics",
@@ -21011,7 +21013,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-082",
+    "id": "ml-advance-082",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -21025,7 +21027,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-083",
+    "id": "ml-advance-083",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -21039,7 +21041,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-084",
+    "id": "ml-advance-084",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Deployment",
@@ -21053,7 +21055,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-085",
+    "id": "ml-advance-085",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Causality",
@@ -21067,7 +21069,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-086",
+    "id": "ml-advance-086",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -21081,7 +21083,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-087",
+    "id": "ml-advance-087",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -21095,7 +21097,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-088",
+    "id": "ml-advance-088",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Time Series",
@@ -21109,7 +21111,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-089",
+    "id": "ml-advance-089",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Explainability",
@@ -21123,7 +21125,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-090",
+    "id": "ml-advance-090",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Big Data",
@@ -21137,7 +21139,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-091",
+    "id": "ml-advance-091",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Statistics",
@@ -21151,7 +21153,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-092",
+    "id": "ml-advance-092",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -21165,7 +21167,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-093",
+    "id": "ml-advance-093",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -21179,7 +21181,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-094",
+    "id": "ml-advance-094",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Deployment",
@@ -21193,7 +21195,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-095",
+    "id": "ml-advance-095",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Causality",
@@ -21207,7 +21209,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-096",
+    "id": "ml-advance-096",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Algorithms",
@@ -21221,7 +21223,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-097",
+    "id": "ml-advance-097",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Deep Learning",
@@ -21235,7 +21237,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-098",
+    "id": "ml-advance-098",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Time Series",
@@ -21249,7 +21251,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-099",
+    "id": "ml-advance-099",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Model Explainability",
@@ -21263,7 +21265,7 @@
     "answerIndex": 0
   },
   {
-    "id": "ds-advance-100",
+    "id": "ml-advance-100",
     "subject": "ml",
     "difficulty": "advance",
     "topic": "Big Data",
@@ -21275,8 +21277,4237 @@
       "A data visualization tool."
     ],
     "answerIndex": 0
+  },
+
+
+  
+
+
+
+
+
+  
+  {
+    "id": "sql-db-basic-001",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What does SQL stand for?",
+    "options": [
+      "Strong Question Language",
+      "Structured Query Language",
+      "Simple Query Language",
+      "Standard Question Language"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-002",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "SELECT",
+    "question": "Which SQL statement is used to extract data from a database?",
+    "options": [
+      "GET",
+      "EXTRACT",
+      "SELECT",
+      "OPEN"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-003",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "UPDATE",
+    "question": "Which SQL statement is used to update data in a database?",
+    "options": [
+      "MODIFY",
+      "CHANGE",
+      "UPDATE",
+      "SET"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-004",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "DELETE",
+    "question": "Which SQL statement is used to delete data from a database?",
+    "options": [
+      "REMOVE",
+      "COLLAPSE",
+      "DELETE",
+      "ERASE"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-005",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "INSERT",
+    "question": "Which SQL statement is used to insert new data in a database?",
+    "options": [
+      "ADD NEW",
+      "INSERT INTO",
+      "ADD RECORD",
+      "INSERT RECORD"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-006",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "WHERE",
+    "question": "Which SQL clause is used to filter records?",
+    "options": [
+      "FILTER BY",
+      "WHERE",
+      "SEARCH",
+      "HAVING"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-007",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "ORDER BY",
+    "question": "Which SQL clause is used to sort the result-set?",
+    "options": [
+      "SORT BY",
+      "ORDER BY",
+      "ARRANGE",
+      "ALIGN BY"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-008",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "JOIN",
+    "question": "Which type of JOIN returns all records from the left table, and the matched records from the right table?",
+    "options": [
+      "INNER JOIN",
+      "RIGHT JOIN",
+      "FULL JOIN",
+      "LEFT JOIN"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-009",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "Which operator is used to search for a specified pattern in a column?",
+    "options": [
+      "LIKE",
+      "MATCH",
+      "PATTERN",
+      "SIMILAR"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-010",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Keys",
+    "question": "Which constraint uniquely identifies each record in a database table?",
+    "options": [
+      "FOREIGN KEY",
+      "UNIQUE",
+      "PRIMARY KEY",
+      "INDEX"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-011",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is a table in a database?",
+    "options": [
+      "A collection of related data held in a structured format with rows and columns.",
+      "A single file of unstructured data.",
+      "A query result.",
+      "A database program."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-012",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "SELECT",
+    "question": "How can you select all the columns from a table named 'Customers'?",
+    "options": [
+      "SELECT all FROM Customers",
+      "SELECT Customers.*",
+      "SELECT [all] FROM Customers",
+      "SELECT * FROM Customers"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-013",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Aggregate Functions",
+    "question": "Which function returns the number of rows?",
+    "options": [
+      "SUM()",
+      "COUNT()",
+      "NUMBER()",
+      "TOTAL()"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-014",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "JOIN",
+    "question": "Which type of JOIN returns records that have matching values in both tables?",
+    "options": [
+      "INNER JOIN",
+      "OUTER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-015",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which data type is used to store text of variable length?",
+    "options": [
+      "CHAR",
+      "TEXT",
+      "STRING",
+      "VARCHAR"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-016",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What does RDBMS stand for?",
+    "options": [
+      "Relational Database Management System",
+      "Remote Database Main System",
+      "Relational Data Management Software",
+      "Rapid Database Memory System"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-017",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "Which operator selects values within a given range?",
+    "options": [
+      "RANGE",
+      "IN",
+      "BETWEEN",
+      "WITHIN"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-018",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "ORDER BY",
+    "question": "How do you sort records in descending order?",
+    "options": [
+      "ORDER BY column DESC",
+      "ORDER BY column REVERSE",
+      "SORT BY column DESC",
+      "ORDER DESC BY column"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-019",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Aggregate Functions",
+    "question": "Which function returns the largest value of the selected column?",
+    "options": [
+      "LARGE()",
+      "TOP()",
+      "MAX()",
+      "MAXIMUM()"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-020",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Keys",
+    "question": "A FOREIGN KEY is a key used to:",
+    "options": [
+      "Uniquely identify a record.",
+      "Link two tables together.",
+      "Index a table for faster queries.",
+      "Create a key from another country."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-021",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "SELECT",
+    "question": "Which keyword is used to return only different values?",
+    "options": [
+      "UNIQUE",
+      "DIFFERENT",
+      "DISTINCT",
+      "ONLY"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-022",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is a 'row' in a database table also known as?",
+    "options": [
+      "Attribute",
+      "Field",
+      "Record",
+      "Relation"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-023",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "DELETE",
+    "question": "What happens if you omit the WHERE clause in a DELETE statement?",
+    "options": [
+      "An error occurs.",
+      "The first row is deleted.",
+      "The last row is deleted.",
+      "All records in the table are deleted."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-024",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "Which operator is used to combine multiple conditions in a WHERE clause, where all conditions must be true?",
+    "options": [
+      "OR",
+      "AND",
+      "BOTH",
+      "&&"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-025",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Aggregate Functions",
+    "question": "Which function returns the smallest value of the selected column?",
+    "options": [
+      "LEAST()",
+      "MIN()",
+      "SMALL()",
+      "BOTTOM()"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-026",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "JOIN",
+    "question": "What is the keyword used to specify the join condition?",
+    "options": [
+      "ON",
+      "WHERE",
+      "JOIN_CONDITION",
+      "WITH"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-027",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which data type would be best for storing a person's age?",
+    "options": [
+      "VARCHAR",
+      "FLOAT",
+      "INT",
+      "DATE"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-028",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is a 'column' in a database table also known as?",
+    "options": [
+      "Record",
+      "Tuple",
+      "Relation",
+      "Field or Attribute"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-029",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "INSERT",
+    "question": "Is it mandatory to specify column names in an INSERT INTO statement?",
+    "options": [
+      "Yes, always.",
+      "No, if you are adding values for all columns in the table's order.",
+      "Only for text columns.",
+      "Only for the primary key."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-030",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "The `IN` operator allows you to:",
+    "options": [
+      "Specify multiple values in a WHERE clause.",
+      "Search for a pattern.",
+      "Select values within a range.",
+      "Check for NULL values."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-031",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Aggregate Functions",
+    "question": "What does the `AVG()` function do?",
+    "options": [
+      "Calculates the total sum.",
+      "Finds the average value of a numeric column.",
+      "Counts the number of values.",
+      "Finds the most frequent value."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-032",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "UPDATE",
+    "question": "What is the risk of omitting the WHERE clause in an UPDATE statement?",
+    "options": [
+      "An error will occur.",
+      "Only the first record will be updated.",
+      "All records in the table will be updated.",
+      "A new record will be inserted instead."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-033",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Definition Language (DDL)",
+    "question": "Which statement is used to create a new table?",
+    "options": [
+      "CREATE TABLE",
+      "NEW TABLE",
+      "ADD TABLE",
+      "MAKE TABLE"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-034",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "LIKE Operator",
+    "question": "Which wildcard is used to represent a single character in a LIKE clause?",
+    "options": [
+      "%",
+      "*",
+      "_",
+      "?"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-035",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Keys",
+    "question": "Can a PRIMARY KEY column contain NULL values?",
+    "options": [
+      "Yes",
+      "No",
+      "Only one NULL value",
+      "Depends on the database system"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-036",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "SQL is a language used to communicate with a:",
+    "options": [
+      "Web server",
+      "File system",
+      "Database",
+      "Operating system"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-037",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "SELECT",
+    "question": "Which keyword can be used to give a column a temporary name in the result set?",
+    "options": [
+      "AS",
+      "ALIAS",
+      "NAME",
+      "TITLE"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-038",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Aggregate Functions",
+    "question": "What does the `SUM()` function do?",
+    "options": [
+      "Counts the records.",
+      "Finds the average.",
+      "Returns the total sum of a numeric column.",
+      "Combines strings."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-039",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "JOIN",
+    "question": "Which JOIN returns all records when there is a match in either the left or the right table?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL OUTER JOIN"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-040",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which data type is suitable for storing date and time values?",
+    "options": [
+      "TIMESTAMP",
+      "DATETIME",
+      "DATE",
+      "All of the above"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-041",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "How do you check if a column's value is NULL?",
+    "options": [
+      "column = NULL",
+      "column IS NULL",
+      "column == NULL",
+      "column.isNull()"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-042",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Definition Language (DDL)",
+    "question": "Which command is used to delete a table?",
+    "options": [
+      "DELETE TABLE",
+      "REMOVE TABLE",
+      "DROP TABLE",
+      "ERASE TABLE"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-043",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "LIKE Operator",
+    "question": "Which wildcard represents zero, one, or multiple characters?",
+    "options": [
+      "_",
+      "?",
+      "*",
+      "%"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-044",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What are the main categories of SQL commands?",
+    "options": [
+      "DDL, DML, DCL, TCL",
+      "Read, Write, Update",
+      "SELECT, INSERT, UPDATE, DELETE",
+      "Basic, Advanced, Expert"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-045",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Keys",
+    "question": "Can a table have more than one FOREIGN KEY?",
+    "options": [
+      "No",
+      "Yes",
+      "Only if they refer to the same table",
+      "Only in NoSQL databases"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-046",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "SELECT",
+    "question": "The `SELECT DISTINCT` statement is used to:",
+    "options": [
+      "Select all records.",
+      "Return only different (distinct) values.",
+      "Select the first record.",
+      "Select a record with a distinct ID."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-047",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "GROUP BY",
+    "question": "The `GROUP BY` statement is often used with:",
+    "options": [
+      "ORDER BY",
+      "Aggregate functions (COUNT, MAX, etc.)",
+      "JOIN",
+      "UPDATE"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-048",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "Which operator is used to combine the result-set of two or more SELECT statements?",
+    "options": [
+      "COMBINE",
+      "MERGE",
+      "UNION",
+      "JOIN"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-049",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "A database schema is:",
+    "options": [
+      "The data itself.",
+      "A visual representation of the database.",
+      "The logical structure or blueprint of the database.",
+      "A backup of the database."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-050",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which data type is suitable for storing true/false values?",
+    "options": [
+      "BOOLEAN",
+      "BIT",
+      "TINYINT",
+      "All of the above (depending on the SQL dialect)"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-051",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Definition Language (DDL)",
+    "question": "Which statement is used to add, delete, or modify columns in an existing table?",
+    "options": [
+      "MODIFY TABLE",
+      "ALTER TABLE",
+      "UPDATE TABLE",
+      "CHANGE TABLE"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-052",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Keys",
+    "question": "Can a table have more than one PRIMARY KEY?",
+    "options": [
+      "Yes, if they are composite.",
+      "Yes, up to two.",
+      "No, a table can have only one primary key.",
+      "Yes, but it's not recommended."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-053",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Aggregate Functions",
+    "question": "The `COUNT(*)` function returns:",
+    "options": [
+      "The number of non-NULL values in all columns.",
+      "The total number of records in a table.",
+      "The number of columns.",
+      "The number of distinct values."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-054",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is a database?",
+    "options": [
+      "A single table of data.",
+      "A software for creating websites.",
+      "An organized collection of structured information, or data, typically stored electronically in a computer system.",
+      "A programming language."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-055",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "SELECT",
+    "question": "The `FROM` clause in a SELECT statement specifies:",
+    "options": [
+      "The columns to be selected.",
+      "The table from which to retrieve the data.",
+      "The conditions for filtering.",
+      "The order of the results."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-056",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "Which operator is used to test for non-equality?",
+    "options": [
+      "!=",
+      "<>",
+      "IS NOT",
+      "Both 1 and 2"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-057",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "JOIN",
+    "question": "What is another name for a `SELF JOIN`?",
+    "options": [
+      "It is a regular join but the table is joined with itself.",
+      "A join that is not valid.",
+      "An INNER JOIN.",
+      "A FULL OUTER JOIN."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-058",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "To store a fixed number of characters, like a 2-letter state code, which data type is most efficient?",
+    "options": [
+      "VARCHAR(2)",
+      "TEXT",
+      "CHAR(2)",
+      "STRING(2)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-059",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What does DML stand for?",
+    "options": [
+      "Data Model Language",
+      "Data Manipulation Language",
+      "Data Management Logic",
+      "Direct Memory Language"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-060",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Constraints",
+    "question": "Which constraint ensures that all values in a column are different?",
+    "options": [
+      "PRIMARY KEY",
+      "UNIQUE",
+      "DISTINCT",
+      "Both 1 and 2"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-061",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Definition Language (DDL)",
+    "question": "Which command belongs to DDL?",
+    "options": [
+      "SELECT",
+      "INSERT",
+      "CREATE",
+      "UPDATE"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-062",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "LIKE Operator",
+    "question": "`LIKE 'a%b'` will find strings that:",
+    "options": [
+      "Start with 'a' and end with 'b'.",
+      "Contain 'a' and 'b' in that order.",
+      "Are exactly 'a%b'.",
+      "Start with 'a', have one character, and then 'b'."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-063",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Keys",
+    "question": "A `UNIQUE` constraint ensures that:",
+    "options": [
+      "All values in a column are different.",
+      "The column cannot have NULL values.",
+      "The column is the primary key.",
+      "The column is indexed."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-064",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Aggregate Functions",
+    "question": "Can you use a WHERE clause with aggregate functions?",
+    "options": [
+      "Yes, to filter the results after grouping.",
+      "No, you must use the HAVING clause to filter groups.",
+      "Yes, but only with COUNT().",
+      "No, filtering is not allowed with aggregate functions."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-065",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is `NULL`?",
+    "options": [
+      "The same as zero (0).",
+      "The same as an empty string ('').",
+      "A special marker indicating that a data value does not exist in the database.",
+      "A data type."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-066",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "JOIN",
+    "question": "Which type of JOIN returns all records from the right table, and the matched records from the left table?",
+    "options": [
+      "INNER JOIN",
+      "RIGHT JOIN",
+      "FULL JOIN",
+      "LEFT JOIN"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-067",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "Which operator is used to combine two or more conditions where at least one must be true?",
+    "options": [
+      "AND",
+      "ANY",
+      "OR",
+      "ALL"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-068",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Definition Language (DDL)",
+    "question": "The `TRUNCATE TABLE` statement is used to:",
+    "options": [
+      "Delete a table.",
+      "Delete all data from a table quickly, without logging individual row deletions.",
+      "Delete specific rows from a table.",
+      "Rename a table."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-069",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Constraints",
+    "question": "Which constraint is used to limit the value range that can be placed in a column?",
+    "options": [
+      "RANGE",
+      "CHECK",
+      "VALIDATE",
+      "LIMIT"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-070",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "Which command belongs to DML (Data Manipulation Language)?",
+    "options": [
+      "CREATE",
+      "ALTER",
+      "DROP",
+      "INSERT"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-071",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "SELECT",
+    "question": "The `LIMIT` clause is used to:",
+    "options": [
+      "Restrict the number of rows returned by a query.",
+      "Limit the number of columns.",
+      "Set a limit on a column's value.",
+      "Filter the results."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-072",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Keys",
+    "question": "A composite key is a primary key that consists of:",
+    "options": [
+      "Only one column.",
+      "Two or more columns.",
+      "A key that is also a foreign key.",
+      "A key with a complex data type."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-073",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Aggregate Functions",
+    "question": "Which clause filters the results of a `GROUP BY`?",
+    "options": [
+      "WHERE",
+      "FILTER",
+      "HAVING",
+      "GROUPFILTER"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-074",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which of these is NOT a common SQL data type?",
+    "options": [
+      "INT",
+      "DECIMAL",
+      "ARRAY",
+      "DATE"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-075",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What does the `IS NOT NULL` operator do?",
+    "options": [
+      "Checks if a value is zero.",
+      "Checks if a value is an empty string.",
+      "Checks that a column has a value.",
+      "Checks if a value is equal to the string 'NULL'."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-076",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "The structure of a database, including its tables, columns, and relationships, is called its:",
+    "options": [
+      "Data",
+      "Schema",
+      "Query",
+      "Index"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-077",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Definition Language (DDL)",
+    "question": "How do you add a column named 'Email' to the 'Customers' table?",
+    "options": [
+      "ALTER TABLE Customers ADD COLUMN Email VARCHAR(255);",
+      "UPDATE TABLE Customers ADD Email VARCHAR(255);",
+      "MODIFY TABLE Customers ADD Email VARCHAR(255);",
+      "CREATE COLUMN Email ON Customers;"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-078",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Constraints",
+    "question": "What does the `NOT NULL` constraint do?",
+    "options": [
+      "Ensures a column cannot have a value of zero.",
+      "Ensures a column must have a value and cannot be empty.",
+      "Ensures all values are unique.",
+      "It is the default for all columns."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-079",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "JOIN",
+    "question": "What is a 'Cartesian Product' in SQL?",
+    "options": [
+      "A join that returns all possible combinations of rows from the joined tables.",
+      "A type of OUTER JOIN.",
+      "A join that is very efficient.",
+      "An error condition in a JOIN."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-080",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is a 'view' in SQL?",
+    "options": [
+      "A physical table that stores data.",
+      "A virtual table based on the result-set of an SQL statement.",
+      "A backup of a table.",
+      "A user interface for the database."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-081",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Keys",
+    "question": "Can a FOREIGN KEY contain NULL values?",
+    "options": [
+      "No, never.",
+      "Yes, it can contain NULL values.",
+      "Only if the primary key it refers to is also NULL.",
+      "Only one NULL value is allowed per table."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-082",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "LIKE Operator",
+    "question": "The query `SELECT Name FROM Customers WHERE Name LIKE '_a%';` will select names that:",
+    "options": [
+      "Start with 'a'.",
+      "End with 'a'.",
+      "Have 'a' as the second character.",
+      "Contain 'a' anywhere."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-083",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Manipulation Language (DML)",
+    "question": "Which of these is a DML command?",
+    "options": [
+      "CREATE",
+      "UPDATE",
+      "GRANT",
+      "DROP"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-084",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "The `UNION` operator combines two SELECT statements and returns:",
+    "options": [
+      "Only the common rows.",
+      "All rows, including duplicates.",
+      "Only the distinct rows.",
+      "An error if there are duplicates."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-085",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is an 'index' used for?",
+    "options": [
+      "To retrieve data from the database more quickly.",
+      "To enforce data integrity.",
+      "To store the primary key.",
+      "To backup the database."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-086",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Constraints",
+    "question": "What is a `DEFAULT` constraint?",
+    "options": [
+      "It sets the default table for a query.",
+      "It sets a default value for a column when no value is specified.",
+      "It is the default primary key.",
+      "It is the default constraint for all columns."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-087",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Definition Language (DDL)",
+    "question": "How do you rename a table from 'OldTable' to 'NewTable'?",
+    "options": [
+      "RENAME TABLE OldTable TO NewTable;",
+      "ALTER TABLE OldTable RENAME TO NewTable;",
+      "UPDATE TABLE OldTable SET NAME NewTable;",
+      "Both 1 and 2 can be correct depending on the SQL dialect."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-088",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "SELECT",
+    "question": "What does `SELECT TOP 5 ...` do in some SQL dialects like SQL Server?",
+    "options": [
+      "Selects the top 5 largest values.",
+      "Returns only the first 5 rows of the result set.",
+      "Selects the rows where the value is greater than 5.",
+      "It is not a valid SQL command."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-089",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "JOIN",
+    "question": "What is a 'cross join'?",
+    "options": [
+      "Another name for an INNER JOIN.",
+      "Another name for a FULL OUTER JOIN.",
+      "A join that produces the Cartesian product of the two tables involved.",
+      "A join used for crossing out records."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-090",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Aggregate Functions",
+    "question": "Can `COUNT()` be used on a column with NULL values?",
+    "options": [
+      "Yes, `COUNT(column_name)` counts non-NULL values, and `COUNT(*)` counts all rows.",
+      "No, it will produce an error.",
+      "Yes, it counts NULL values as 1.",
+      "Only if the column is a text type."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-091",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What does 'DDL' stand for?",
+    "options": [
+      "Data Definition Language",
+      "Data Deletion Language",
+      "Direct Data Language",
+      "Database Design Language"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-092",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "In a client-server model, where does the RDBMS software typically run?",
+    "options": [
+      "On the client machine.",
+      "On the server machine.",
+      "On both.",
+      "In the web browser."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-093",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Control Language (DCL)",
+    "question": "Which command is used to give a user permission to a database object?",
+    "options": [
+      "ALLOW",
+      "COMMIT",
+      "REVOKE",
+      "GRANT"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-094",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "Which operator would you use to select customers whose name is not 'John'?",
+    "options": [
+      "Name != 'John'",
+      "Name <> 'John'",
+      "NOT Name = 'John'",
+      "Both 1 and 2"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-basic-095",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Keys",
+    "question": "What is a 'candidate key'?",
+    "options": [
+      "A key that is a candidate to be a foreign key.",
+      "A column, or set of columns, that can uniquely identify a row and could potentially be chosen as the primary key.",
+      "A temporary key.",
+      "A key that is not unique."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-096",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "The term 'query' refers to:",
+    "options": [
+      "A question or request for data from a database.",
+      "The database itself.",
+      "A table in the database.",
+      "The result of a SELECT statement."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-basic-097",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "If you want to store a large block of text, like a blog post, which data type is most appropriate?",
+    "options": [
+      "CHAR",
+      "VARCHAR(255)",
+      "TEXT or CLOB",
+      "INT"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-basic-098",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Data Control Language (DCL)",
+    "question": "The `REVOKE` command is used to:",
+    "options": [
+      "Give permissions.",
+      "Take back permissions.",
+      "Save changes.",
+      "Undo changes."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-099",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "ORDER BY",
+    "question": "Can you order by multiple columns?",
+    "options": [
+      "No, only one column is allowed.",
+      "Yes, by separating the column names with commas.",
+      "Yes, but only in ascending order.",
+      "Yes, but only with a JOIN."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-basic-100",
+    "subject": "sql-db",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is a 'database transaction'?",
+    "options": [
+      "A single unit of work, which may consist of one or more SQL statements, that is treated as a single, indivisible operation.",
+      "A payment made to the database provider.",
+      "The process of transferring data between databases.",
+      "A log file of all database queries."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-001",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "What is a subquery?",
+    "options": [
+      "A query that is nested inside another query.",
+      "A query that runs very fast.",
+      "Another name for a JOIN.",
+      "A query that uses an alias."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-002",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "What is the main goal of database normalization?",
+    "options": [
+      "To increase data redundancy.",
+      "To reduce data redundancy and improve data integrity.",
+      "To make the database larger.",
+      "To speed up all queries."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-003",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a database index?",
+    "options": [
+      "A summary of the table's data.",
+      "A copy of the table.",
+      "A data structure that improves the speed of data retrieval operations on a database table.",
+      "The primary key of a table."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-004",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Views",
+    "question": "What is a view in SQL?",
+    "options": [
+      "A physical copy of a table.",
+      "A virtual table based on the result-set of an SQL statement.",
+      "A log of all queries run against a table.",
+      "A user interface for the database."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-005",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What does the `COMMIT` statement do?",
+    "options": [
+      "It undoes the changes in a transaction.",
+      "It starts a new transaction.",
+      "It saves all the changes made in the current transaction.",
+      "It sets a savepoint within a transaction."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-006",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "HAVING",
+    "question": "What is the difference between the WHERE and HAVING clauses?",
+    "options": [
+      "There is no difference.",
+      "WHERE filters records before grouping, while HAVING filters groups after grouping.",
+      "HAVING is used with single rows, WHERE is used with groups.",
+      "WHERE is for numbers, HAVING is for text."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-007",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "A table is in First Normal Form (1NF) if:",
+    "options": [
+      "It has a primary key.",
+      "It contains no repeating groups or multi-valued columns.",
+      "It has no partial dependencies.",
+      "It has no transitive dependencies."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-008",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "CASE Statement",
+    "question": "What is the purpose of the `CASE` statement?",
+    "options": [
+      "To perform calculations.",
+      "To create temporary tables.",
+      "To go through conditions and return a value when the first condition is met (like an if-then-else statement).",
+      "To join tables."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-009",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "What is a correlated subquery?",
+    "options": [
+      "A subquery that is evaluated once for the entire parent query.",
+      "A subquery that depends on the outer query for its values and is evaluated once for each row processed by the outer query.",
+      "A subquery that returns multiple columns.",
+      "A subquery that is faster than a non-correlated subquery."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-010",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What are the ACID properties of a transaction?",
+    "options": [
+      "Atomicity, Consistency, Isolation, Durability",
+      "Association, Clauses, Integrity, Data",
+      "Availability, Concurrency, Indexing, Division",
+      "Action, Control, Insertion, Deletion"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-011",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a clustered index?",
+    "options": [
+      "An index that stores the data pages in random order.",
+      "An index that determines the physical order of data in a table.",
+      "An index that can only be created on the primary key.",
+      "A type of index that contains all columns of a table."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-012",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "What is a key difference between SQL and NoSQL databases?",
+    "options": [
+      "SQL databases are not relational.",
+      "NoSQL databases often have flexible schemas and are designed for scalability.",
+      "SQL databases do not support transactions.",
+      "NoSQL databases only store key-value pairs."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-013",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Stored Procedures",
+    "question": "What is a stored procedure?",
+    "options": [
+      "A query that is stored on the client.",
+      "A pre-compiled collection of one or more SQL statements stored in the database.",
+      "A way to backup a database.",
+      "A type of database view."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-014",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "What is Second Normal Form (2NF)?",
+    "options": [
+      "The table is in 1NF and all non-key attributes are fully functional dependent on the primary key.",
+      "The table has no multi-valued attributes.",
+      "The table has no transitive dependencies.",
+      "The table has only one column."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-015",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "UNION vs UNION ALL",
+    "question": "What is the difference between `UNION` and `UNION ALL`?",
+    "options": [
+      "There is no difference.",
+      "`UNION` removes duplicate records, while `UNION ALL` includes all records.",
+      "`UNION ALL` is faster because it does not check for duplicates.",
+      "Both 2 and 3."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-inter-016",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What does the `ROLLBACK` command do?",
+    "options": [
+      "Saves the transaction.",
+      "Starts a new transaction.",
+      "Undoes all the changes made in the current transaction.",
+      "Deletes the transaction log."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-017",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Views",
+    "question": "What is a major advantage of using a view?",
+    "options": [
+      "It improves the performance of all queries.",
+      "It simplifies complex queries and can provide a layer of security by restricting access to data.",
+      "It stores a physical copy of the data for faster access.",
+      "It automatically updates the underlying tables."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-018",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Common Table Expressions (CTE)",
+    "question": "What is a Common Table Expression (CTE)?",
+    "options": [
+      "A temporary result set that you can reference within another SELECT, INSERT, UPDATE, or DELETE statement.",
+      "A physical table that is only temporary.",
+      "Another name for a subquery.",
+      "A type of database index."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-019",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Triggers",
+    "question": "What is a database trigger?",
+    "options": [
+      "A special stored procedure that automatically runs when an event (like INSERT, UPDATE, DELETE) occurs in the database.",
+      "A user-initiated action.",
+      "A way to schedule jobs.",
+      "A security feature."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-020",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "What is Third Normal Form (3NF)?",
+    "options": [
+      "The table is in 2NF and has no transitive dependencies.",
+      "The table is in 1NF.",
+      "The table has a composite primary key.",
+      "The table contains no NULL values."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-021",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "What is a window function?",
+    "options": [
+      "A function that operates on a set of rows and returns a single aggregated value for each row.",
+      "A function that opens a new window in the application.",
+      "Another name for an aggregate function.",
+      "A function for creating graphical user interfaces."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-022",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a non-clustered index?",
+    "options": [
+      "An index where the logical order does not match the physical stored order of the rows.",
+      "An index that is not organized.",
+      "A less efficient type of index.",
+      "An index on multiple columns."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-023",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What does 'Isolation' in ACID properties mean?",
+    "options": [
+      "The database is isolated from the network.",
+      "Ensures that concurrent execution of transactions results in a system state that would be obtained if transactions were executed serially.",
+      "Each transaction runs in its own private database.",
+      "The data is isolated from the users."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-024",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "COALESCE",
+    "question": "The `COALESCE` function returns:",
+    "options": [
+      "The last non-NULL value in a list.",
+      "The first non-NULL value in a list.",
+      "A combined string of all values.",
+      "The number of NULL values."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-025",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "What is 'denormalization'?",
+    "options": [
+      "The process of intentionally introducing redundancy into a table to improve query performance.",
+      "An error in the normalization process.",
+      "The process of making a database less normal.",
+      "The first step before normalization begins."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-026",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "Which operator can be used with a subquery to check if a value exists in the returned list?",
+    "options": [
+      "BETWEEN",
+      "LIKE",
+      "EXISTS",
+      "JOIN"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-027",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "Which of the following is a type of NoSQL database?",
+    "options": [
+      "Document store (e.g., MongoDB)",
+      "Key-value store (e.g., Redis)",
+      "Column-family store (e.g., Cassandra)",
+      "All of the above"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-inter-028",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a potential disadvantage of having too many indexes on a table?",
+    "options": [
+      "It can slow down data retrieval (SELECT statements).",
+      "It can slow down data modification (INSERT, UPDATE, DELETE) statements.",
+      "It uses no extra disk space.",
+      "There are no disadvantages."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-029",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Stored Procedures",
+    "question": "What is an advantage of using stored procedures?",
+    "options": [
+      "Improved performance due to pre-compilation.",
+      "Reduced network traffic.",
+      "Enhanced security by granting permissions to procedures instead of tables.",
+      "All of the above."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-inter-030",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "Which of these is a window function?",
+    "options": [
+      "SUM()",
+      "COUNT()",
+      "ROW_NUMBER()",
+      "AVG()"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-031",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What does 'Atomicity' in ACID mean?",
+    "options": [
+      "All changes in a transaction are performed successfully or none are.",
+      "The transaction is very small.",
+      "The transaction is consistent.",
+      "The transaction is durable."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-032",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Data Types",
+    "question": "What is the difference between `CHAR` and `VARCHAR`?",
+    "options": [
+      "`CHAR` is for variable-length strings, `VARCHAR` is for fixed-length.",
+      "`CHAR` is a fixed-length string, `VARCHAR` is a variable-length string.",
+      "They are the same.",
+      "`VARCHAR` uses more space for small strings."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-033",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "NULL Handling",
+    "question": "What is the result of `SELECT NULL = NULL;`?",
+    "options": [
+      "True",
+      "False",
+      "NULL (or Unknown)",
+      "Error"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-034",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "A 'transitive dependency' is when:",
+    "options": [
+      "A non-key attribute depends on another non-key attribute.",
+      "A key attribute depends on another key attribute.",
+      "A non-key attribute depends on the primary key.",
+      "Two tables depend on each other."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-035",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Common Table Expressions (CTE)",
+    "question": "Which clause is used to define a CTE?",
+    "options": [
+      "CTE AS ...",
+      "DEFINE CTE AS ...",
+      "WITH ... AS",
+      "SUBQUERY AS ..."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-036",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a 'covering index'?",
+    "options": [
+      "An index that includes all the columns needed to satisfy a query, avoiding a table lookup.",
+      "An index that covers the entire table.",
+      "Another name for a clustered index.",
+      "An index on a view."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-037",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Triggers",
+    "question": "Can a trigger call a stored procedure?",
+    "options": [
+      "No",
+      "Yes",
+      "Only in some SQL dialects",
+      "Only if the trigger is an AFTER trigger"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-038",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "The `PARTITION BY` clause in a window function is used to:",
+    "options": [
+      "Divide the rows into partitions to which the function is applied.",
+      "Order the rows within a partition.",
+      "Filter the partitions.",
+      "Create a new table partition."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-039",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What is a 'savepoint'?",
+    "options": [
+      "The end of a transaction.",
+      "A location in a transaction to which you can later roll back.",
+      "A backup of the database.",
+      "The starting point of a transaction."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-040",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "What does 'CAP Theorem' stand for?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "Concurrency, Atomicity, Performance",
+      "Columns, APIs, Performance",
+      "Capacity, Availability, Persistence"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-041",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "A subquery in the FROM clause acts as a:",
+    "options": [
+      "Filter condition.",
+      "Temporary table (derived table).",
+      "Column expression.",
+      "Join condition."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-042",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "Boyce-Codd Normal Form (BCNF) is a stricter version of:",
+    "options": ["1NF", "2NF", "3NF", "4NF"],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-043",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is index 'fragmentation'?",
+    "options": [
+      "When the logical ordering of pages in an index does not match the physical ordering.",
+      "When an index becomes too large.",
+      "When an index is not used by a query.",
+      "When an index is dropped."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-044",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Views",
+    "question": "What is a 'materialized view'?",
+    "options": [
+      "The same as a regular view.",
+      "A database object that contains the results of a query, which are physically stored and periodically refreshed.",
+      "A view that cannot be updated.",
+      "A view created from another view."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-045",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What is a 'deadlock'?",
+    "options": [
+      "A situation where two or more transactions are waiting for each other to release locks, causing them all to be blocked indefinitely.",
+      "A transaction that fails to commit.",
+      "A security vulnerability.",
+      "An error in the transaction log."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-046",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "The `LAG()` window function is used to:",
+    "options": [
+      "Access data from a subsequent row in the same result set.",
+      "Access data from a previous row in the same result set.",
+      "Calculate a lagging indicator.",
+      "Slow down a query."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-047",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "GROUP BY",
+    "question": "The `GROUP_CONCAT` function (in MySQL) is used to:",
+    "options": [
+      "Concatenate strings from different rows into a single string.",
+      "Count the number of groups.",
+      "Concatenate column names.",
+      "Filter groups."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-048",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Triggers",
+    "question": "What is the difference between an `AFTER` and an `INSTEAD OF` trigger?",
+    "options": [
+      "There is no difference.",
+      "`AFTER` triggers fire after the triggering action, while `INSTEAD OF` triggers (on views) fire instead of the action.",
+      "`INSTEAD OF` triggers are only for tables.",
+      "`AFTER` triggers are faster."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-049",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "What does 'eventual consistency' mean?",
+    "options": [
+      "The database will eventually become consistent at some point in the future.",
+      "A consistency model where, given a sufficiently long period of time over which no new updates are sent, all replicas will eventually become consistent.",
+      "The database is never consistent.",
+      "A property of SQL databases."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-050",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Common Table Expressions (CTE)",
+    "question": "What is a recursive CTE used for?",
+    "options": [
+      "Querying hierarchical data, like an organizational chart.",
+      "A CTE that calls itself infinitely.",
+      "It is not a valid SQL feature.",
+      "A CTE that runs very slowly."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-051",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a 'full-text' index?",
+    "options": [
+      "An index that includes the full text of every column.",
+      "An index designed for efficient searching of text data within string columns.",
+      "An index that is always full.",
+      "A very large index."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-052",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Functions",
+    "question": "What is the difference between a scalar and a table-valued function?",
+    "options": [
+      "A scalar function returns a single value, while a table-valued function returns a table (a result set).",
+      "A scalar function is faster.",
+      "A table-valued function can only be used in the FROM clause.",
+      "There is no difference."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-053",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "What is 'denormalization' often used for?",
+    "options": [
+      "To improve data integrity.",
+      "To reduce disk space.",
+      "To improve read performance by avoiding complex joins.",
+      "To simplify the database schema."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-054",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What is a 'transaction log'?",
+    "options": [
+      "A log of all user logins.",
+      "A history of all transactions performed against a database, used for recovery.",
+      "A log of query performance.",
+      "A temporary file used during a transaction."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-055",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Operators",
+    "question": "The `EXCEPT` operator is used to:",
+    "options": [
+      "Return all rows from the first SELECT statement that are not in the second SELECT statement.",
+      "Handle errors in a query.",
+      "Exclude certain columns from the result.",
+      "Find common rows between two queries."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-056",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "The `RANK()` function will assign the same rank to rows with the same value, and then...",
+    "options": [
+      "Assign consecutive ranks to the next rows.",
+      "Leave a gap in the rank sequence for the next rows.",
+      "Assign a random rank to the next rows.",
+      "Stop ranking."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-057",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "A document database like MongoDB stores data in what format?",
+    "options": [
+      "Tables",
+      "Graphs",
+      "JSON-like documents (e.g., BSON)",
+      "Key-value pairs"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-058",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a 'composite index'?",
+    "options": [
+      "An index on a single column.",
+      "An index on two or more columns.",
+      "A very complex index.",
+      "An index made of other indexes."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-059",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "Which of these is a potential downside of using subqueries?",
+    "options": [
+      "They can sometimes be less readable and perform worse than an equivalent JOIN.",
+      "They are not supported by all database systems.",
+      "They can only be used in the WHERE clause.",
+      "They always perform better than JOINs."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-060",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Triggers",
+    "question": "Can a trigger cause another trigger to fire?",
+    "options": [
+      "No, this is prevented to avoid infinite loops.",
+      "Yes, this is known as cascading triggers.",
+      "Only if they are on different tables.",
+      "Only for DELETE triggers."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-061",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "The 'I' in ACID (Isolation) helps prevent which issues?",
+    "options": [
+      "Dirty reads, non-repeatable reads, and phantom reads.",
+      "Database crashes.",
+      "Slow query performance.",
+      "Data corruption."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-062",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "PIVOT",
+    "question": "What is the purpose of the `PIVOT` operator?",
+    "options": [
+      "To rotate a table by turning the unique values from one column into multiple columns in the output.",
+      "To select the central point of a dataset.",
+      "To create a pivot table chart.",
+      "To join a table to itself."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-063",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "A 'functional dependency' (X -> Y) means that:",
+    "options": [
+      "The value of X depends on the value of Y.",
+      "The value of Y is determined by the value of X.",
+      "X and Y are always the same.",
+      "X and Y are in different tables."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-064",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "What is the difference between `ROW_NUMBER()`, `RANK()`, and `DENSE_RANK()`?",
+    "options": [
+      "They all produce the same result.",
+      "`ROW_NUMBER` gives unique ranks; `RANK` leaves gaps for ties; `DENSE_RANK` does not leave gaps for ties.",
+      "`DENSE_RANK` is the fastest.",
+      "`RANK` is the only one that handles ties."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-065",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Stored Procedures",
+    "question": "What is SQL Injection?",
+    "options": [
+      "A code injection technique that might destroy your database.",
+      "A way to speed up SQL queries.",
+      "A method for inserting data quickly.",
+      "A type of database index."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-066",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "What does the 'BASE' acronym (common in NoSQL) stand for?",
+    "options": [
+      "Basically Available, Soft state, Eventual consistency.",
+      "Basic, Atomic, Scalable, Efficient.",
+      "Before All, Start Early.",
+      "Binary, ASCII, String, Encoded."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-067",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "When is a 'full table scan' performed?",
+    "options": [
+      "When a query needs to examine every row in a table because there is no suitable index to use.",
+      "For every SELECT query.",
+      "Only when a table has no primary key.",
+      "When a table is being backed up."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-068",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Data Warehousing",
+    "question": "What is a 'star schema'?",
+    "options": [
+      "A database schema where the central table is connected to multiple dimension tables, resembling a star.",
+      "A schema designed for storing astronomical data.",
+      "A very complex database schema.",
+      "A schema with only one table."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-069",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What is an 'isolation level'?",
+    "options": [
+      "A setting that controls the degree to which a transaction is isolated from other concurrent transactions.",
+      "How isolated the database server is from the network.",
+      "A security setting for users.",
+      "A property of the database hardware."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-070",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Operators",
+    "question": "The `INTERSECT` operator is used to:",
+    "options": [
+      "Return only the rows that appear in both result sets of two SELECT statements.",
+      "Combine all rows from two SELECT statements.",
+      "Return rows from the first query that are not in the second.",
+      "Create an intersection in the database."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-071",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "The `OVER` clause is used to:",
+    "options": [
+      "End a query.",
+      "Define the window (set of rows) for a window function.",
+      "Override a previous statement.",
+      "Filter results."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-072",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "A 'partial dependency' can only occur in tables with:",
+    "options": [
+      "A single-column primary key.",
+      "A composite primary key (a primary key made of multiple columns).",
+      "No primary key.",
+      "A foreign key."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-073",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "A subquery can be used in which of the following clauses?",
+    "options": [
+      "SELECT",
+      "FROM",
+      "WHERE",
+      "All of the above"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-inter-074",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Triggers",
+    "question": "What is a potential risk of using triggers?",
+    "options": [
+      "They can be difficult to debug and can create complex, hidden dependencies.",
+      "They make the database more secure.",
+      "They always improve performance.",
+      "They cannot be disabled."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-075",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "Which of these is a characteristic of a key-value store?",
+    "options": [
+      "It uses a simple data model of a key that maps to a value.",
+      "It supports complex queries and joins.",
+      "It enforces a strict schema.",
+      "It is a type of relational database."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-076",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is 'cardinality' in the context of database indexes?",
+    "options": [
+      "The number of rows in a table.",
+      "The uniqueness of data values contained in a column.",
+      "The size of the index on disk.",
+      "The speed of the index."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-077",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Functions",
+    "question": "The `CAST` function is used to:",
+    "options": [
+      "Convert a value from one data type to another.",
+      "Create a new table.",
+      "Filter results.",
+      "Sort data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-078",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "The 'Durability' property of ACID ensures that:",
+    "options": [
+      "A transaction is long-lasting.",
+      "Once a transaction has been committed, it will remain so, even in the event of power loss or crashes.",
+      "The database is physically durable.",
+      "The transaction can be rolled back."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-079",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Data Warehousing",
+    "question": "What is a 'fact' table in a star schema?",
+    "options": [
+      "A table containing descriptive attributes.",
+      "The central table that contains the quantitative measures or facts of a business process.",
+      "A small lookup table.",
+      "A table that contains only true values."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-080",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "What does the `LEAD()` function do?",
+    "options": [
+      "Accesses data from a previous row.",
+      "Accesses data from a subsequent row within the same result set.",
+      "Finds the leader of a partition.",
+      "Calculates the lead time."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-081",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "What is the difference between `IN` and `EXISTS` with a subquery?",
+    "options": [
+      "`IN` compares a value to a list of values, while `EXISTS` simply checks if the subquery returns any rows.",
+      "They are functionally identical.",
+      "`EXISTS` is generally slower.",
+      "`IN` can be used with correlated subqueries, `EXISTS` cannot."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-082",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "Why would you use a `UNIQUE` index?",
+    "options": [
+      "To ensure that all values in the indexed column(s) are unique.",
+      "To make queries faster.",
+      "To create a primary key.",
+      "Both 1 and 2."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-inter-083",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "A graph database is optimized for:",
+    "options": [
+      "Storing and navigating relationships.",
+      "Storing large text documents.",
+      "Time-series data.",
+      "Simple key-value lookups."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-084",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Functions",
+    "question": "What is a 'user-defined function' (UDF)?",
+    "options": [
+      "A function defined by the database system.",
+      "A function created by a user to perform a specific task, which can be used in queries.",
+      "Another name for a built-in function.",
+      "A function that is not secure."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-085",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "What problem does 2NF solve?",
+    "options": [
+      "Transitive dependencies",
+      "Multi-valued dependencies",
+      "Partial dependencies",
+      "Repeating groups"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-086",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What is a 'dirty read'?",
+    "options": [
+      "When a transaction reads data that has been modified by another uncommitted transaction.",
+      "Reading data that is incorrect.",
+      "Reading data from a table that needs cleaning.",
+      "A read operation that fails."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-087",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Views",
+    "question": "Can you use INSERT, UPDATE, or DELETE on a multi-table view?",
+    "options": [
+      "Yes, always.",
+      "Generally no, or with significant restrictions, as it can be ambiguous which base table to modify.",
+      "Only if the view has a primary key.",
+      "Only the INSERT statement is allowed."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-088",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "The `NTILE(n)` function is used to:",
+    "options": [
+      "Find the nth tile in a sequence.",
+      "Divide the ordered rows in a partition into a specified number of ranked groups (tiles).",
+      "A function for tiling windows.",
+      "Calculate the percentile."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-089",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a 'query execution plan'?",
+    "options": [
+      "A plan for how to write a query.",
+      "A sequence of steps used by the database to access data for an SQL query.",
+      "A diagram of the database schema.",
+      "A list of all possible queries."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-090",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Data Warehousing",
+    "question": "What is a 'dimension' table?",
+    "options": [
+      "The central table in a star schema.",
+      "A table that contains descriptive attributes or context for the facts in the fact table.",
+      "A very large table.",
+      "A table that stores measurements."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-091",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Operators",
+    "question": "What is the difference between ANY and ALL operators?",
+    "options": [
+      "`ANY` returns true if any of the subquery values meet the condition, `ALL` returns true if all values meet the condition.",
+      "They are interchangeable.",
+      "`ALL` is used for numbers, `ANY` is for strings.",
+      "`ANY` returns a single value, `ALL` returns multiple."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-092",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "What is a primary use case for a column-family database?",
+    "options": [
+      "ACID transactions.",
+      "Handling large amounts of data for analytics and applications with high write throughput.",
+      "Storing complex JSON documents.",
+      "Graph traversals."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-093",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Triggers",
+    "question": "What is a 'recursive trigger'?",
+    "options": [
+      "A trigger that calls itself.",
+      "A trigger that causes another trigger to fire, which then causes the original trigger to fire again.",
+      "A trigger that is not allowed.",
+      "A trigger that operates on a recursive CTE."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-094",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Functions",
+    "question": "What does a `CAST('2023-01-01' AS DATE)` do?",
+    "options": [
+      "Converts the string '2023-01-01' into a DATE data type.",
+      "Returns an error.",
+      "Checks if the string is a valid date.",
+      "Extracts the year from the string."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-095",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a B-Tree?",
+    "options": [
+      "A type of binary tree.",
+      "A common self-balancing tree data structure used to implement database indexes.",
+      "A backup tree for the database.",
+      "A way to visualize table relationships."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-096",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "When might a JOIN be more performant than a subquery?",
+    "options": [
+      "Always.",
+      "Never.",
+      "Often, because the database optimizer can have more options to rearrange the query plan with a JOIN.",
+      "Only when the subquery returns a single value."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-inter-097",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What is a 'non-repeatable read'?",
+    "options": [
+      "A situation where a transaction reads the same row twice but gets different data each time.",
+      "A read operation that cannot be performed again.",
+      "Reading data that has not been committed.",
+      "An error during a read operation."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-098",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Data Warehousing",
+    "question": "What is a 'snowflake schema'?",
+    "options": [
+      "A schema where the dimension tables are normalized into multiple related tables.",
+      "A schema that looks like a snowflake.",
+      "Another name for a star schema.",
+      "A schema used for weather data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-inter-099",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "The `FIRST_VALUE()` function returns:",
+    "options": [
+      "The first value in the entire table.",
+      "The first value in an ordered partition of a result set.",
+      "The primary key of the first row.",
+      "The same as MIN()."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-inter-100",
+    "subject": "sql-db",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "What is a major advantage of a document database?",
+    "options": [
+      "Strict schema enforcement.",
+      "Support for ACID transactions across all documents.",
+      "Flexibility, as documents can have different structures.",
+      "It is always faster than a relational database."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-advance-001",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a query execution plan?",
+    "options": [
+      "A diagram of the database schema.",
+      "A sequence of steps used by the database optimizer to access data for an SQL query.",
+      "A log of all executed queries.",
+      "A user's plan for writing a query."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-002",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Concurrency Control",
+    "question": "What is Multi-Version Concurrency Control (MVCC)?",
+    "options": [
+      "A method where each user connecting to the database sees a snapshot of the data as it was at a particular time, preventing read-write conflicts.",
+      "A system that manages multiple versions of the database software.",
+      "A way to control access for multiple users.",
+      "A type of transaction logging."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-003",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is the difference between a B-Tree and a B+ Tree index?",
+    "options": [
+      "B+ Trees store all data in the leaf nodes, which are linked for sequential access, making range queries more efficient.",
+      "B-Trees are more balanced.",
+      "B+ Trees are only used for primary keys.",
+      "There is no functional difference in a database context."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-004",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Window Functions",
+    "question": "What is the difference between `ROWS BETWEEN` and `RANGE BETWEEN` in a window function's frame clause?",
+    "options": [
+      "`ROWS` defines the frame based on a fixed number of rows, while `RANGE` defines it based on a range of values from the current row's value.",
+      "`RANGE` is for numbers, `ROWS` is for other types.",
+      "They are synonymous.",
+      "`ROWS` is always more performant."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-005",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What are the four standard transaction isolation levels?",
+    "options": [
+      "Read Uncommitted, Read Committed, Repeatable Read, Serializable",
+      "Low, Medium, High, Extreme",
+      "None, Partial, Full, Total",
+      "Fast, Slow, Buffered, Unbuffered"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-006",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is database sharding?",
+    "options": [
+      "A type of database backup.",
+      "A database architecture pattern that involves horizontally partitioning data across multiple servers.",
+      "Encrypting a database.",
+      "A way to index a database."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-007",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is 'predicate pushdown'?",
+    "options": [
+      "Pushing down on the keyboard to write a predicate.",
+      "An optimization where predicates (filtering conditions) are moved as close as possible to the data source to reduce the amount of data processed.",
+      "A way to make predicates more complex.",
+      "A feature of NoSQL databases only."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-008",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'pivoting' operation?",
+    "options": [
+      "Rotating the database server.",
+      "Joining a table to itself.",
+      "Turning rows of data into columns.",
+      "Creating a summary of a table."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "sql-db-advance-009",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is index 'selectivity'?",
+    "options": [
+      "How quickly an index can be selected.",
+      "A measure of how many unique values are in a column, where high selectivity (many unique values) is good for index performance.",
+      "The type of data the index is on.",
+      "The physical size of the index."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-010",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is the CAP Theorem?",
+    "options": [
+      "It states that a distributed database can only provide two of the following three guarantees: Consistency, Availability, and Partition tolerance.",
+      "A theorem about the maximum capacity of a database.",
+      "A rule for creating database schemas.",
+      "A performance benchmark."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-011",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Concurrency Control",
+    "question": "What is a 'phantom read'?",
+    "options": [
+      "Reading data that doesn't exist.",
+      "A concurrency issue where a transaction re-executes a query and finds additional rows that have been inserted by another committed transaction.",
+      "An error in the transaction log.",
+      "A read operation that returns a ghost record."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-012",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is database replication?",
+    "options": [
+      "The process of creating copies of a database to improve reliability, fault-tolerance, or accessibility.",
+      "A way to reply to database queries.",
+      "The same as a database backup.",
+      "A method for data normalization."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-013",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What are database statistics and why are they important?",
+    "options": [
+      "Statistics about database usage.",
+      "Metadata about the distribution of data in tables and indexes, used by the query optimizer to choose the best execution plan.",
+      "Performance metrics like CPU and memory usage.",
+      "They are not important for modern databases."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-014",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is the purpose of a `MERGE` statement?",
+    "options": [
+      "To perform INSERT, UPDATE, or DELETE operations on a target table based on the results of a join with a source table.",
+      "To merge two databases together.",
+      "Another name for a UNION operation.",
+      "To merge multiple rows into one."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-015",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'covering index'?",
+    "options": [
+      "An index that covers the entire table.",
+      "A non-clustered index that includes all the columns required by a query, so the table itself doesn't need to be accessed.",
+      "An index on a materialized view.",
+      "A backup of an index."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-016",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is 'two-phase commit' (2PC)?",
+    "options": [
+      "A protocol to ensure atomicity for transactions across multiple distributed databases.",
+      "Committing a transaction in two separate steps.",
+      "A type of transaction logging.",
+      "A less reliable version of a single commit."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-017",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is a graph database?",
+    "options": [
+      "A database for storing images and graphs.",
+      "A database that uses graph structures with nodes, edges, and properties to represent and store data.",
+      "A type of relational database.",
+      "A database that is visualized as a graph."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-018",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'cardinality estimator'?",
+    "options": [
+      "A component of the query optimizer that estimates the number of rows that will be returned by an operation.",
+      "A tool for counting the rows in a table.",
+      "A way to enforce cardinality constraints.",
+      "A type of index."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-019",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What are OLAP (Online Analytical Processing) queries?",
+    "options": [
+      "Simple queries that retrieve single records.",
+      "Complex queries that involve aggregations over large amounts of data, typical in data warehousing.",
+      "Queries that run online.",
+      "Another name for DML statements."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-020",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Concurrency Control",
+    "question": "What is 'optimistic locking'?",
+    "options": [
+      "A strategy where you assume that multiple transactions can complete without affecting each other, and you only check for conflicts at commit time.",
+      "A lock that is always successful.",
+      "A less secure form of locking.",
+      "The default locking mechanism in all databases."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-021",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is an 'index-only scan'?",
+    "options": [
+      "A scan that only looks at the index definition.",
+      "A data retrieval method where all the required information for a query can be satisfied from an index, without accessing the table.",
+      "A full scan of an index.",
+      "A very fast table scan."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-022",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is the difference between OLTP and OLAP?",
+    "options": [
+      "OLTP (Online Transaction Processing) is for transactional systems, while OLAP (Online Analytical Processing) is for data warehousing and analytics.",
+      "OLAP is faster than OLTP.",
+      "They are two competing database vendors.",
+      "OLTP is a newer technology."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-023",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is a 'dirty read' concurrency problem?",
+    "options": [
+      "A transaction reads data that has been modified by another transaction that has not yet committed.",
+      "Reading data from a table that needs cleaning.",
+      "A read operation that returns incorrect data due to a hardware failure.",
+      "Reading the same row twice and getting different results."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-024",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'histogram' in the context of database statistics?",
+    "options": [
+      "A chart used to visualize query performance.",
+      "A data structure used by the optimizer to represent the distribution of values in a column.",
+      "A log of historical queries.",
+      "A type of index."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-025",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What does the `CUBE` operator do?",
+    "options": [
+      "Calculates the cube of a number.",
+      "A `GROUP BY` extension that produces result sets for all possible combinations of the grouping columns.",
+      "Creates a 3D data visualization.",
+      "A function for geometric calculations."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-026",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is 'BASE' in the context of NoSQL databases?",
+    "options": [
+      "A set of properties (Basically Available, Soft state, Eventual consistency) that describes many NoSQL database systems.",
+      "The foundational query language for NoSQL.",
+      "An acronym for the most popular NoSQL databases.",
+      "A type of data consistency model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-027",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'filtered index'?",
+    "options": [
+      "An index that has been cleaned of unnecessary data.",
+      "An optimized non-clustered index that covers a subset of rows in a table, defined by a filter predicate.",
+      "An index that cannot be used by queries.",
+      "A standard feature in all SQL databases."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-028",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Concurrency Control",
+    "question": "What is 'pessimistic locking'?",
+    "options": [
+      "A locking strategy where a resource is locked from the time it is first accessed by a transaction until the transaction is complete.",
+      "A lock that is expected to fail.",
+      "A way to prevent all concurrent access.",
+      "A less efficient locking strategy."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-029",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is a 'columnar' database?",
+    "options": [
+      "A database that stores data in columns rather than rows, which is efficient for analytical queries.",
+      "A database that only has one column per table.",
+      "A type of NoSQL database.",
+      "A database designed for storing text columns."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-030",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'hash join'?",
+    "options": [
+      "A join algorithm where a hash table is built on one of the tables to speed up the process of finding matching rows.",
+      "A join that uses a hash function to encrypt the data.",
+      "A join that is not reliable.",
+      "A join between two hash tables."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-031",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'lateral join' (or `APPLY` in some dialects)?",
+    "options": [
+      "A type of join that allows a derived table (subquery) in the FROM clause to reference columns from a preceding table.",
+      "A join that moves data laterally between tables.",
+      "An inefficient type of INNER JOIN.",
+      "A join between tables that are not related."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-032",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is a 'phantom read' concurrency issue?",
+    "options": [
+      "A transaction re-runs a query and finds new rows that were inserted by another committed transaction.",
+      "Reading a row that has been deleted.",
+      "Reading a row that was never inserted.",
+      "An error in the database's memory."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-033",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'fill factor' for an index?",
+    "options": [
+      "A setting that determines the percentage of space on each leaf-level page to be filled with data, reserving space for future growth.",
+      "How full the index is.",
+      "A measure of index performance.",
+      "The number of columns in an index."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-034",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is 'sharding' in the context of databases like MongoDB?",
+    "options": [
+      "The process of breaking up large tables into smaller, more manageable pieces called partitions.",
+      "A method of horizontally partitioning data across multiple servers.",
+      "A data replication strategy.",
+      "A way to index a large collection."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-035",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'sort-merge join'?",
+    "options": [
+      "A join algorithm where both tables are sorted on the join key, and then the sorted tables are merged together.",
+      "A join that sorts the final result.",
+      "A less efficient version of a hash join.",
+      "A join that requires manual sorting."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-036",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is a 'data mart'?",
+    "options": [
+      "A large-scale data warehouse.",
+      "A subset of a data warehouse focused on a specific business line or department.",
+      "A marketplace for buying and selling data.",
+      "A small, personal database."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-037",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "The `ROLLUP` operator is a `GROUP BY` extension that:",
+    "options": [
+      "Produces subtotals and grand totals for a set of columns.",
+      "Rolls up the data into a single row.",
+      "Is used for creating financial reports.",
+      "Is another name for `CUBE`."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-038",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Concurrency Control",
+    "question": "What is 'snapshot isolation'?",
+    "options": [
+      "An isolation level where a transaction sees a consistent snapshot of the database from the time it started.",
+      "Taking a snapshot of the database for backup.",
+      "The highest level of isolation.",
+      "A type of lock."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-039",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a potential issue with indexing a column that has low cardinality?",
+    "options": [
+      "The index may not be very effective and could be ignored by the optimizer.",
+      "It can significantly speed up queries.",
+      "It is not allowed by the database.",
+      "It uses a very large amount of disk space."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-040",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is a 'non-repeatable read'?",
+    "options": [
+      "A concurrency issue where a transaction re-reads a row and finds that the data has been modified by another committed transaction.",
+      "A read operation that can only be performed once.",
+      "Reading a row that does not exist.",
+      "An error from the storage device."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-041",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is a 'document' in a document-oriented database?",
+    "options": [
+      "A Word document or PDF file.",
+      "A record that is stored in a structured format like JSON or BSON.",
+      "A type of primary key.",
+      "A text file containing SQL queries."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-042",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'nested loop join'?",
+    "options": [
+      "A join algorithm that iterates through every row of the outer table and, for each one, scans the inner table for matches.",
+      "A join that uses nested loops in the application code.",
+      "The most efficient type of join.",
+      "A join inside another join."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-043",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is 'database normalization' vs 'denormalization'?",
+    "options": [
+      "Normalization reduces redundancy, denormalization adds redundancy for performance.",
+      "Denormalization is the process of fixing normalization errors.",
+      "They are two competing database design philosophies.",
+      "Normalization is for OLAP, denormalization is for OLTP."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-044",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "A Common Table Expression (CTE) is recursive if:",
+    "options": [
+      "It refers to itself.",
+      "It is defined within another CTE.",
+      "It uses a window function.",
+      "It is very long."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-045",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'geospatial index'?",
+    "options": [
+      "An index used for efficiently querying data based on geographic location.",
+      "An index for storing world maps.",
+      "A type of clustered index.",
+      "An index on a geography-related text column."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-046",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What does the 'Serializable' isolation level provide?",
+    "options": [
+      "The highest level of isolation, where transactions appear to run serially, preventing most concurrency issues but potentially reducing performance.",
+      "It allows transactions to be serialized to disk.",
+      "It is the lowest level of isolation.",
+      "It is the default isolation level."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-047",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is a primary use case for a time-series database?",
+    "options": [
+      "Storing data from sensors, IoT devices, or financial markets.",
+      "Storing user profiles.",
+      "Managing relational data.",
+      "Storing graph data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-048",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "Why might a database optimizer choose not to use an available index?",
+    "options": [
+      "If the table is very small and a full scan is faster.",
+      "If the index selectivity is low and a large percentage of rows would be returned.",
+      "If the query's WHERE clause does not match the index columns.",
+      "All of the above."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "sql-db-advance-049",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is the difference between active-active and active-passive database replication?",
+    "options": [
+      "In active-active, all replicas can accept writes, while in active-passive, only the primary server accepts writes.",
+      "Active-active is less reliable.",
+      "Active-passive is only for backups.",
+      "There is no difference in functionality."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-050",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is 'unpivoting'?",
+    "options": [
+      "The operation of transforming columns into rows.",
+      "Fixing a pivot operation that went wrong.",
+      "A way to improve performance.",
+      "Another name for a self-join."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-051",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'write-ahead log' (WAL)?",
+    "options": [
+      "A standard method for ensuring data integrity by writing all modifications to a log before applying them to the database.",
+      "A log of all read operations.",
+      "A plan for future write operations.",
+      "A security feature."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-052",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is 'Read Committed' isolation level?",
+    "options": [
+      "A transaction can only read data that has been committed.",
+      "A transaction must commit all its reads.",
+      "It is the same as Serializable.",
+      "It prevents phantom reads."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-053",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is 'eventual consistency'?",
+    "options": [
+      "A consistency model where, if no new updates are made, all replicas will eventually converge on the same value.",
+      "A model where the database is never consistent.",
+      "A property of ACID transactions.",
+      "A way to achieve strong consistency."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-054",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'SARGable' query?",
+    "options": [
+      "A query that is very long and difficult to read.",
+      "A query where the WHERE clause is in a format that allows the database to use an index (Search ARGument-able).",
+      "A query that uses a sarcastic tone.",
+      "A query that cannot be optimized."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-055",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is a 'data lake'?",
+    "options": [
+      "A centralized repository that allows you to store all your structured and unstructured data at any scale.",
+      "A very large database.",
+      "A database located under a lake.",
+      "Another name for a data warehouse."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-056",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What are `GROUPING SETS` used for?",
+    "options": [
+      "To generate a result set that is equivalent to a `UNION ALL` of multiple `GROUP BY` clauses.",
+      "To set the grouping for a query.",
+      "A way to create multiple groups in one statement.",
+      "A window function."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-057",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is an 'inverted index'?",
+    "options": [
+      "An index where the data is stored upside down.",
+      "An index data structure storing a mapping from content, such as words or numbers, to its locations in a document or a set of documents (commonly used in full-text search).",
+      "An index that is not valid.",
+      "A clustered index."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-058",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Concurrency Control",
+    "question": "What is 'lock escalation'?",
+    "options": [
+      "The process of converting many fine-grained locks (like row locks) into a single coarse-grained lock (like a table lock) to reduce system overhead.",
+      "When a lock becomes more important.",
+      "A type of deadlock.",
+      "A security vulnerability."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-059",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is a 'Repeatable Read' isolation level?",
+    "options": [
+      "It guarantees that any data read cannot change, but it does not prevent new rows from being added (phantom reads).",
+      "It allows you to read the same data multiple times.",
+      "It is the same as Read Committed.",
+      "It prevents all concurrency issues."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-060",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "Which of these is a good use case for a key-value store database?",
+    "options": [
+      "Complex analytical queries.",
+      "Storing user sessions, caching, and real-time bidding.",
+      "Enforcing strict relational integrity.",
+      "Graph traversal."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-061",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What does it mean to 'EXPLAIN' a query?",
+    "options": [
+      "To describe the query in plain language.",
+      "To ask the database to return the execution plan it would use for a given query.",
+      "To add comments to a query.",
+      "To simplify a complex query."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-062",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is a 'federated database'?",
+    "options": [
+      "A type of distributed database system that provides a unified interface to multiple heterogeneous data sources.",
+      "A database used by a federal government.",
+      "A single, centralized database.",
+      "A type of NoSQL database."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-063",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'hierarchical query'?",
+    "options": [
+      "A query that organizes results in a hierarchy.",
+      "A type of SQL query that handles hierarchical model data, often using a recursive CTE or specific clauses like `CONNECT BY` (in Oracle).",
+      "A query with many levels of subqueries.",
+      "A query on a view."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-064",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "A 'hash index' is most effective for which type of query?",
+    "options": [
+      "Range queries (e.g., `WHERE age > 30`).",
+      "Equality queries (e.g., `WHERE id = 123`).",
+      "Pattern matching (e.g., `LIKE '%abc%'`).",
+      "Sorting data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-065",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is a 'write skew' anomaly?",
+    "options": [
+      "A phenomenon where two transactions concurrently read a set of data, then make updates based on what they read, leading to an inconsistent state.",
+      "Writing data that is skewed.",
+      "An error during a write operation.",
+      "A problem solved by the Read Committed isolation level."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-066",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is a 'wide-column' store (like Cassandra)?",
+    "options": [
+      "A database where tables have a very large number of columns.",
+      "A type of key-value store where the values are composed of a set of columns, and rows can have different sets of columns.",
+      "A database for storing wide images.",
+      "A relational database with a flexible schema."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-067",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'join hint'?",
+    "options": [
+      "A directive given in a query to the database optimizer to influence the choice of join algorithm (e.g., HASH, MERGE, LOOP).",
+      "A hint that a join might be slow.",
+      "An automatic optimization for joins.",
+      "A comment explaining a join."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-068",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is 'polyglot persistence'?",
+    "options": [
+      "Storing data in multiple languages.",
+      "The concept of using multiple data storage technologies for different parts of an application's data needs.",
+      "A type of database that supports all programming languages.",
+      "A very old persistence method."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-069",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'temporal database'?",
+    "options": [
+      "A database that stores data relating to time instances, managing data with respect to its history.",
+      "A temporary database.",
+      "A database that is very fast.",
+      "A database for storing time-based events only."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-070",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is 'index fragmentation' and how can it be fixed?",
+    "options": [
+      "It's when an index becomes corrupted; it can be fixed by dropping and recreating it.",
+      "It's when the logical and physical order of an index diverge; it can be fixed by rebuilding or reorganizing the index.",
+      "It's when an index is split into multiple files.",
+      "It is not a real problem in modern databases."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-071",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is the difference between a `TRIGGER` and a `CHECK` constraint?",
+    "options": [
+      "`CHECK` constraints validate data on insert/update, while `TRIGGER`s can perform more complex actions in response to data modifications.",
+      "They are the same.",
+      "`TRIGGER`s are faster.",
+      "`CHECK` constraints can call stored procedures."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-072",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is a 'document' in a document database?",
+    "options": [
+      "A PDF file.",
+      "A self-contained unit of data, often represented in a JSON-like format.",
+      "A row in a table.",
+      "A primary key."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "sql-db-advance-073",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is 'cost-based optimization'?",
+    "options": [
+      "A method where the query optimizer chooses the execution plan with the lowest estimated cost (based on CPU, I/O, etc.).",
+      "Optimizing queries to reduce monetary cost.",
+      "A manual optimization technique.",
+      "The only type of query optimization."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-074",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is 'ETL'?",
+    "options": [
+      "A process in data warehousing: Extract, Transform, Load.",
+      "A type of database.",
+      "A SQL command.",
+      "A security protocol."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-075",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What does a `NATURAL JOIN` do?",
+    "options": [
+      "It joins two tables based on all columns with the same name.",
+      "It is the most natural way to join tables.",
+      "It is an alias for `LEFT JOIN`.",
+      "It creates a Cartesian product."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-076",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'bitmap index'?",
+    "options": [
+      "An index that uses a string of bits (a bitmap) to indicate the existence of a value for a column, efficient for low-cardinality columns.",
+      "An index for storing images.",
+      "A less efficient B-Tree index.",
+      "An index on a BIT data type column."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-077",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is the 'read uncommitted' isolation level?",
+    "options": [
+      "The lowest isolation level, where a transaction can read data that has not yet been committed by other transactions (dirty reads).",
+      "The highest isolation level.",
+      "It means you cannot read any data that is part of a transaction.",
+      "The default isolation level in most databases."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-078",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "In a graph database, what is a 'traversal'?",
+    "options": [
+      "The process of navigating through the graph by following edges between nodes.",
+      "A query to find a specific node.",
+      "A backup of the graph.",
+      "An index on the graph."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-079",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'seek' vs. a 'scan' operation on an index?",
+    "options": [
+      "A seek uses the index to directly navigate to the desired rows, while a scan reads all or a large part of the index.",
+      "A seek is always slower.",
+      "They are the same operation.",
+      "A scan is only used for clustered indexes."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-080",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is 'OLAP Cube'?",
+    "options": [
+      "A multi-dimensional array of data used in OLAP systems for fast analysis.",
+      "A cube-shaped database server.",
+      "A type of data visualization.",
+      "A geometric data type in SQL."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-081",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is the purpose of the `FILTER` clause with aggregate functions in some SQL dialects?",
+    "options": [
+      "To provide a way to filter the rows that are included in the aggregate calculation.",
+      "To filter the final result of the query.",
+      "It is an alternative to the HAVING clause.",
+      "It is not a valid SQL feature."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-082",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is an 'expression-based' or 'function-based' index?",
+    "options": [
+      "An index built on the result of a function or expression applied to one or more columns.",
+      "An index that is very expressive.",
+      "An index that can only be used with functions.",
+      "A less efficient type of index."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-083",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is a 'locking hint'?",
+    "options": [
+      "A hint given to the database to override the default transaction locking behavior for a query.",
+      "A comment about a lock.",
+      "A way to prevent deadlocks.",
+      "A security feature."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-084",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is 'sharding'?",
+    "options": [
+      "Horizontally partitioning data across multiple servers to distribute load.",
+      "A type of data encryption.",
+      "A way to replicate data.",
+      "A feature of relational databases only."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-085",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'covering index'?",
+    "options": [
+      "An index that includes all columns needed for a query, avoiding table access.",
+      "An index that covers the entire table.",
+      "Another name for a clustered index.",
+      "An index on all columns."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-086",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is a 'data warehouse'?",
+    "options": [
+      "A large store of data accumulated from a wide range of sources within a company and used to guide management decisions.",
+      "A physical warehouse for storing servers.",
+      "A type of NoSQL database.",
+      "A backup of a transactional database."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-087",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'materialized view'?",
+    "options": [
+      "A physical copy of the data from a view's query, which is stored on disk and periodically updated.",
+      "A view that is easy to understand.",
+      "Another name for a CTE.",
+      "A view that cannot be queried directly."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-088",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'B+ tree'?",
+    "options": [
+      "A common data structure for implementing database indexes, where all data is stored in leaf nodes.",
+      "A better version of a B-tree.",
+      "A type of binary tree.",
+      "A data structure for in-memory databases only."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-089",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is 'optimistic concurrency control'?",
+    "options": [
+      "A method where you assume conflicts are rare and only check for them at commit time.",
+      "A method where you lock resources pessimistically.",
+      "A less secure concurrency model.",
+      "A feature of NoSQL databases."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-090",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is 'eventual consistency'?",
+    "options": [
+      "A model where, given no new updates, all replicas will eventually converge to the same state.",
+      "A guarantee of immediate consistency.",
+      "A type of database error.",
+      "A property of relational databases."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-091",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is 'predicate pushdown'?",
+    "options": [
+      "An optimization that moves filtering conditions as close to the data source as possible.",
+      "Pushing down on a predicate.",
+      "A way to make predicates more complex.",
+      "A manual optimization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-092",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is a 'column-oriented' database?",
+    "options": [
+      "A database that stores data by columns instead of rows, often used for analytical workloads.",
+      "A database with only one column.",
+      "A type of relational database.",
+      "A database for storing images."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-093",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'window function'?",
+    "options": [
+      "A function that performs a calculation across a set of table rows that are somehow related to the current row.",
+      "A function for creating windows in a GUI.",
+      "Another name for an aggregate function.",
+      "A function that operates on a time window."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-094",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is 'index cardinality'?",
+    "options": [
+      "The number of unique values in an indexed column, which affects its usefulness.",
+      "The size of an index.",
+      "The speed of an index.",
+      "The number of columns in an index."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-095",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is 'MVCC' (Multi-Version Concurrency Control)?",
+    "options": [
+      "A concurrency control method where each transaction sees a snapshot of the database at a certain point in time.",
+      "A way to manage multiple versions of the database software.",
+      "A locking mechanism.",
+      "A type of transaction log."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-096",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is a 'graph database' good for?",
+    "options": [
+      "Managing and querying highly connected data, like social networks or fraud detection.",
+      "Storing large documents.",
+      "Simple key-value lookups.",
+      "Time-series data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-097",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'query hint'?",
+    "options": [
+      "An instruction given to the query optimizer to influence its execution plan.",
+      "A comment in a query.",
+      "A suggestion for how to write a query.",
+      "An automatic optimization."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-098",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is 'polyglot persistence'?",
+    "options": [
+      "The concept of using multiple data storage technologies for different data needs within a single application.",
+      "Storing data in multiple languages.",
+      "A type of database.",
+      "A backup strategy."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-099",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Model Explainability",
+    "question": "What is 'counterfactual fairness'?",
+    "options": [
+      "A definition of fairness that states a decision is fair towards an individual if it is the same in both the actual world and a counterfactual world where the individual belonged to a different demographic group.",
+      "A type of model evaluation metric.",
+      "A regularization technique.",
+      "A way to make models more biased."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "sql-db-advance-100",
+    "subject": "sql-db",
+    "difficulty": "advance",
+    "topic": "Big Data",
+    "question": "What is 'delta lake'?",
+    "options": [
+      "An open-source storage layer that brings reliability to data lakes by providing ACID transactions, scalable metadata handling, and unified streaming and batch data processing.",
+      "A data lake located near a river delta.",
+      "A type of cloud storage.",
+      "A data visualization tool."
+    ],
+    "answerIndex": 0
   }
+
+
+
+
+  
 ]
+
+
+
+
+
+
+
+
+
+  
+ 
+
+
+
+
+
+  
+ 
+
+
 
 
 

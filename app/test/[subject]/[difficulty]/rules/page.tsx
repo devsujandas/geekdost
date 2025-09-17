@@ -70,18 +70,19 @@ export default function RulesPage() {
         </div>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button
-            onClick={() => router.back()}
-            className="px-6 py-3 bg-gray-300 text-gray-800 rounded-lg font-semibold hover:opacity-90 transition-all"
-          >
-            Back
-          </button>
+        <div className="flex flex-row sm:flex-row justify-center gap-4">
+          
           <button
             onClick={handleStart}
             className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-all"
           >
             Start Exam
+          </button>
+          <button
+            onClick={() => router.back()}
+            className="px-6 py-3 bg-gray-300 text-gray-800 rounded-lg font-semibold hover:opacity-90 transition-all"
+          >
+            Back
           </button>
         </div>
       </motion.div>

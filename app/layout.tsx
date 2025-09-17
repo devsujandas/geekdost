@@ -1,19 +1,27 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
 
+// ✅ Metadata config
 export const metadata: Metadata = {
   title: "GeekDost - Roadmaps & Snippets for Developers",
   description:
     "Your ultimate developer hub for programming roadmaps, code snippets, and learning resources",
   generator: "GeekDost",
-  keywords: ["programming", "developer", "roadmaps", "code snippets", "tutorials", "web development"],
+  keywords: [
+    "programming",
+    "developer",
+    "roadmaps",
+    "code snippets",
+    "tutorials",
+    "web development",
+  ],
   authors: [{ name: "Sujan Das" }],
-  viewport: "width=device-width, initial-scale=1",
+  metadataBase: new URL("https://geekdost.vercel.app"), // ✅ added to fix warning
   openGraph: {
     title: "GeekDost - Roadmaps & Snippets for Developers",
     description:
@@ -49,6 +57,13 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+}
+
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 }
 
 export default function RootLayout({

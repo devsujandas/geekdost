@@ -1,7 +1,7 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { FaPython, FaJava, FaJsSquare, FaDatabase, FaGithub, FaCloud, FaLock } from "react-icons/fa"
+import { FaPython, FaJava, FaJsSquare, FaDatabase, FaGithub, FaCloud, FaLock, FaCode } from "react-icons/fa"
 import { SiTensorflow, SiMongodb, SiOpenai } from "react-icons/si"
 import { MdWeb, MdOutlineDeveloperMode } from "react-icons/md"
 import { PageLayout } from "@/components/page-layout"
@@ -14,6 +14,7 @@ const subjects = [
   { id: "datascience", name: "Data Science", icon: <SiTensorflow className="h-8 w-8 text-primary mb-3" /> },
   { id: "ml", name: "Machine Learning", icon: <SiTensorflow className="h-8 w-8 text-primary mb-3" /> },
   { id: "sql-db", name: "SQL & Databases", icon: <FaDatabase className="h-8 w-8 text-primary mb-3" /> },
+  { id: "dsa", name: "Data Structures & Algorithms", icon: <FaCode className="h-8 w-8 text-primary mb-3" /> },
   { id: "git", name: "Git & GitHub", icon: <FaGithub className="h-8 w-8 text-primary mb-3" /> },
   { id: "devops", name: "DevOps", icon: <MdOutlineDeveloperMode className="h-8 w-8 text-primary mb-3" /> },
   { id: "ai-llms", name: "AI & LLMs", icon: <SiOpenai className="h-8 w-8 text-primary mb-3" /> },
