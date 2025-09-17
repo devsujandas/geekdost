@@ -17067,8 +17067,4217 @@
       "A data visualization tool."
     ],
     "answerIndex": 0
+  },
+
+
+
+
+
+
+
+  
+  {
+    "id": "ml-basic-001",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "Which of the following is the best definition of Machine Learning?",
+    "options": [
+      "The field of study that gives computers the ability to learn without being explicitly programmed.",
+      "A branch of computer science that deals with creating intelligent machines.",
+      "The process of automating manual data entry tasks.",
+      "A type of database for storing large datasets."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ml-basic-002",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Types of ML",
+    "question": "Predicting a continuous value, like the price of a house, is an example of what type of problem?",
+    "options": [
+      "Classification",
+      "Regression",
+      "Clustering",
+      "Reinforcement Learning"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-003",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Types of ML",
+    "question": "Which type of machine learning uses labeled data to train a model?",
+    "options": [
+      "Unsupervised Learning",
+      "Reinforcement Learning",
+      "Supervised Learning",
+      "Semi-Supervised Learning"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-004",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "In a dataset, what is a 'feature'?",
+    "options": [
+      "The output variable you are trying to predict.",
+      "An individual measurable property or characteristic of an observation.",
+      "A complete row of data.",
+      "The algorithm used for training."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-005",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "Which algorithm is used for finding the best-fit straight line through data points?",
+    "options": [
+      "K-Means",
+      "Decision Tree",
+      "Linear Regression",
+      "K-Nearest Neighbors"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-006",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "What is the 'target' or 'label' in a supervised learning problem?",
+    "options": [
+      "An input feature used for training.",
+      "The data used to test the model.",
+      "The value or category that the model is trying to predict.",
+      "A model hyperparameter."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-007",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Types of ML",
+    "question": "Grouping similar customers together based on their purchasing behavior is an example of:",
+    "options": [
+      "Supervised Learning",
+      "Reinforcement Learning",
+      "Regression",
+      "Unsupervised Learning"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "ml-basic-008",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Splits",
+    "question": "What is a 'training set' used for?",
+    "options": [
+      "To evaluate the final performance of the model.",
+      "To train or fit the machine learning model.",
+      "To fine-tune model parameters.",
+      "To provide new, unseen data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-009",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "Which of these is a classification algorithm?",
+    "options": [
+      "Linear Regression",
+      "K-Means",
+      "Logistic Regression",
+      "Principal Component Analysis"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-010",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "What does 'accuracy' measure in a classification model?",
+    "options": [
+      "The proportion of correct predictions among the total number of cases examined.",
+      "The model's ability to find all positive samples.",
+      "The model's ability to avoid false positives.",
+      "How fast the model makes predictions."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ml-basic-011",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Types of ML",
+    "question": "Predicting whether an email is 'spam' or 'not spam' is what type of problem?",
+    "options": [
+      "Regression",
+      "Clustering",
+      "Classification",
+      "Dimensionality Reduction"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-012",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "What is an 'instance' or 'sample' in a dataset?",
+    "options": [
+      "A column or feature.",
+      "A single row of data.",
+      "The target variable.",
+      "The entire dataset."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-013",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Splits",
+    "question": "What is a 'test set' used for?",
+    "options": [
+      "To train the model.",
+      "To provide an unbiased evaluation of the final model.",
+      "To select the best features.",
+      "To visualize the data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-014",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "Which algorithm is a non-parametric method that classifies a new data point based on its neighbors?",
+    "options": [
+      "Linear Regression",
+      "K-Means",
+      "K-Nearest Neighbors (KNN)",
+      "Decision Tree"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-015",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is the process of 'fitting' a model?",
+    "options": [
+      "Evaluating the model's accuracy.",
+      "Training the model on a dataset.",
+      "Deploying the model.",
+      "Cleaning the input data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-basic-016",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Types of ML",
+    "question": "A system that learns to play a game by receiving rewards for good moves and penalties for bad ones is an example of:",
+    "options": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Reinforcement Learning",
+      "Clustering"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-017",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "The process of transforming raw data into a suitable format for a model is called:",
+    "options": [
+      "Modeling",
+      "Deployment",
+      "Data Preprocessing",
+      "Evaluation"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-018",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "A Decision Tree is a type of:",
+    "options": [
+      "Unsupervised algorithm",
+      "Supervised algorithm",
+      "Reinforcement learning algorithm",
+      "Data storage method"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-019",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Deep Learning",
+    "question": "What is a 'neural network'?",
+    "options": [
+      "A network of biological neurons.",
+      "A computing system inspired by the brain, consisting of interconnected nodes.",
+      "A type of database.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-020",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "What is a common problem with using accuracy on an imbalanced dataset?",
+    "options": [
+      "It is too difficult to calculate.",
+      "It can be high even if the model fails to predict the minority class.",
+      "It is always very low.",
+      "It requires labeled data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-021",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What does a machine learning model 'learn'?",
+    "options": [
+      "New programming languages.",
+      "Patterns from data.",
+      "How to access the internet.",
+      "The user's personal preferences."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-022",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "What does K in K-Means clustering represent?",
+    "options": [
+      "The number of features.",
+      "The number of data points.",
+      "The number of clusters to be found.",
+      "A constant value of 1000."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-023",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "What is 'feature engineering'?",
+    "options": [
+      "A type of machine learning model.",
+      "Creating new features from existing ones to improve model performance.",
+      "The process of building a machine.",
+      "A software engineering practice."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-024",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Splits",
+    "question": "Why is it important to split data into training and testing sets?",
+    "options": [
+      "To make the training process faster.",
+      "To provide an unbiased evaluation of how the model performs on unseen data.",
+      "To reduce the amount of data used for training.",
+      "It is not an important step."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-025",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Types of ML",
+    "question": "Which of these is an example of unsupervised learning?",
+    "options": [
+      "Predicting stock prices.",
+      "Identifying fraudulent transactions from labeled data.",
+      "Classifying images of cats and dogs.",
+      "Finding natural groupings in customer data."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "ml-basic-026",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "What is the output of a classification algorithm?",
+    "options": [
+      "A continuous number.",
+      "A discrete class label or category.",
+      "A probability distribution.",
+      "A cluster ID."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-027",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Deep Learning",
+    "question": "What is a 'neuron' in a neural network?",
+    "options": [
+      "A layer in the network.",
+      "A computational node that receives inputs and produces an output.",
+      "The input data.",
+      "The final prediction."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-028",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "If a model predicts 'rain' and it actually rains, this is called a:",
+    "options": [
+      "True Positive",
+      "True Negative",
+      "False Positive",
+      "False Negative"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ml-basic-029",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "What is a 'hyperparameter'?",
+    "options": [
+      "A parameter learned during training.",
+      "A configuration that is set before training begins.",
+      "The output of the model.",
+      "A feature of the input data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-030",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "The main goal of regression is to:",
+    "options": [
+      "Group similar items together.",
+      "Predict a categorical label.",
+      "Predict a continuous quantity.",
+      "Find anomalies in data."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-031",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "Which algorithm splits data based on feature values to create a tree-like structure?",
+    "options": [
+      "K-Means",
+      "Linear Regression",
+      "Decision Tree",
+      "SVM"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-032",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Types of ML",
+    "question": "Learning from data as it is generated in real-time is called:",
+    "options": [
+      "Batch learning",
+      "Offline learning",
+      "Online learning",
+      "Static learning"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-033",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Splits",
+    "question": "What is a 'validation set' often used for?",
+    "options": [
+      "For final, unbiased model evaluation.",
+      "For training the model.",
+      "For tuning hyperparameters and model selection.",
+      "For storing the data."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-034",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "What is a 'loss function'?",
+    "options": [
+      "A function that measures the error of a model's prediction.",
+      "A function that causes data loss.",
+      "The final step in model deployment.",
+      "A type of data cleaning method."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ml-basic-035",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Deep Learning",
+    "question": "The process of training a neural network involves:",
+    "options": [
+      "Adjusting its weights to minimize the loss function.",
+      "Adding more layers to the network.",
+      "Visualizing the network structure.",
+      "Manually setting the output values."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ml-basic-036",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "If a spam filter marks a real email as spam, what kind of error is it?",
+    "options": [
+      "True Positive",
+      "True Negative",
+      "False Positive",
+      "False Negative"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-037",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "Which of these fields is closely related to machine learning?",
+    "options": [
+      "Statistics",
+      "Computer Science",
+      "Artificial Intelligence",
+      "All of the above"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "ml-basic-038",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "What is the main goal of clustering algorithms?",
+    "options": [
+      "To predict future values.",
+      "To group data points such that points in the same group are more similar to each other than to those in other groups.",
+      "To classify data into predefined categories.",
+      "To find the best-fit line."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-039",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "What does 'NLP' stand for?",
+    "options": [
+      "New Learning Protocol",
+      "Natural Language Processing",
+      "Non-Linear Programming",
+      "Network Layer Protocol"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-040",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Types of ML",
+    "question": "Which type of learning involves an 'agent', an 'environment', and 'rewards'?",
+    "options": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Reinforcement Learning",
+      "Semi-Supervised Learning"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-041",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Splits",
+    "question": "A common split ratio for train/test data is:",
+    "options": [
+      "50% train, 50% test",
+      "10% train, 90% test",
+      "80% train, 20% test",
+      "100% train, 0% test"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-042",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "If a medical test for a disease is negative, but the person actually has the disease, it's a:",
+    "options": [
+      "True Positive",
+      "True Negative",
+      "False Positive",
+      "False Negative"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "ml-basic-043",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Deep Learning",
+    "question": "The first layer of a neural network is called the:",
+    "options": [
+      "Output Layer",
+      "Hidden Layer",
+      "Input Layer",
+      "Final Layer"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-044",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "Which of these is a linear model?",
+    "options": [
+      "Decision Tree",
+      "K-Nearest Neighbors",
+      "Linear Regression",
+      "Random Forest"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-045",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is the primary risk of using a model that is too complex for the data?",
+    "options": [
+      "Underfitting",
+      "Overfitting",
+      "Slow training time",
+      "Both 2 and 3"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-046",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "The process of selecting the most relevant features for a model is called:",
+    "options": [
+      "Feature Engineering",
+      "Feature Selection",
+      "Feature Extraction",
+      "Feature Scaling"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-047",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Types of ML",
+    "question": "What is 'semi-supervised learning'?",
+    "options": [
+      "Learning from data that is only half labeled.",
+      "Learning from a combination of labeled and unlabeled data.",
+      "A type of reinforcement learning.",
+      "Learning that is partially supervised by a human."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-048",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Preprocessing",
+    "question": "Why is handling missing values important?",
+    "options": [
+      "Most machine learning algorithms cannot handle missing values.",
+      "Missing values can lead to biased or incorrect models.",
+      "It is part of the data cleaning process.",
+      "All of the above."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "ml-basic-049",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "What is the main task of a regression model?",
+    "options": [
+      "To predict a category.",
+      "To predict a continuous numerical value.",
+      "To group data points.",
+      "To find hidden patterns."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-050",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Deep Learning",
+    "question": "What does a 'layer' in a neural network represent?",
+    "options": [
+      "A single neuron.",
+      "A collection of neurons that process the input and pass it to the next collection.",
+      "The input data itself.",
+      "The final prediction of the network."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-051",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "What does a 'confusion matrix' show?",
+    "options": [
+      "The errors a model makes.",
+      "The performance of a classification model by showing true positives, true negatives, false positives, and false negatives.",
+      "How confusing the data is.",
+      "The complexity of the model."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-052",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "The term 'model' in machine learning refers to:",
+    "options": [
+      "A physical model of the problem.",
+      "The output of the training process, which is an algorithm configured by the data.",
+      "The dataset used for training.",
+      "A visual representation of the data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-053",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Preprocessing",
+    "question": "Converting categorical text data into numbers is called:",
+    "options": [
+      "Scaling",
+      "Normalization",
+      "Encoding",
+      "Cleaning"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-054",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "What is 'Naive Bayes'?",
+    "options": [
+      "A complex deep learning model.",
+      "A classification technique based on Bayes' Theorem with a naive assumption of independence between predictors.",
+      "A regression algorithm.",
+      "A clustering method."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-055",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "What is 'dimensionality' of a dataset?",
+    "options": [
+      "The number of rows.",
+      "The number of features or columns.",
+      "The size of the file.",
+      "The complexity of the data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-056",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Types of ML",
+    "question": "What is the main difference between classification and regression?",
+    "options": [
+      "Classification predicts continuous values, regression predicts discrete labels.",
+      "Classification predicts discrete labels, regression predicts continuous values.",
+      "Classification is supervised, regression is unsupervised.",
+      "There is no difference."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-057",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Splits",
+    "question": "What can happen if you test your model on the same data you used for training?",
+    "options": [
+      "The model will perform poorly.",
+      "The model's performance will be unknown.",
+      "You will get an overly optimistic and biased estimate of its performance.",
+      "The training process will fail."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-058",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Deep Learning",
+    "question": "What is the 'output layer' in a neural network?",
+    "options": [
+      "The first layer.",
+      "Any layer between the first and last.",
+      "The final layer that produces the prediction.",
+      "It is not part of a neural network."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-059",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "A model with high accuracy is always a good model.",
+    "options": [
+      "True",
+      "False",
+      "Only for regression problems",
+      "Only if the dataset is large"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-060",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "A 'leaf node' in a decision tree represents:",
+    "options": [
+      "A decision based on a feature.",
+      "The root of the tree.",
+      "A class label or final outcome.",
+      "A branch of the tree."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-061",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What does it mean for a model to be a 'black box'?",
+    "options": [
+      "The model's internal workings are difficult or impossible to understand.",
+      "The model is colored black.",
+      "The model was built using a proprietary tool.",
+      "The model produces incorrect results."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ml-basic-062",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "The process of using a trained model to make predictions on new data is called:",
+    "options": [
+      "Training",
+      "Inference",
+      "Preprocessing",
+      "Fitting"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-063",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Preprocessing",
+    "question": "What is 'normalization'?",
+    "options": [
+      "Making the data follow a normal distribution.",
+      "Scaling numerical data to a range, typically [0, 1].",
+      "Removing outliers from the data.",
+      "Converting data to a standard format."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-064",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Types of ML",
+    "question": "Which of these is NOT a type of machine learning?",
+    "options": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Static Learning",
+      "Reinforcement Learning"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-065",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "What does the 'K' in K-Nearest Neighbors stand for?",
+    "options": [
+      "The number of clusters.",
+      "The number of neighbors to consider.",
+      "A constant value.",
+      "The number of features."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-066",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Deep Learning",
+    "question": "Deep learning is a subfield of:",
+    "options": [
+      "Statistics",
+      "Data Visualization",
+      "Machine Learning",
+      "Database Management"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-067",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "A False Negative is when...",
+    "options": [
+      "The model correctly predicts a negative outcome.",
+      "The model incorrectly predicts a negative outcome.",
+      "The model correctly predicts a positive outcome.",
+      "The model incorrectly predicts a positive outcome."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-068",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is the first step in the machine learning workflow?",
+    "options": [
+      "Model Training",
+      "Data Collection",
+      "Model Deployment",
+      "Feature Engineering"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-069",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "A 'sample' is also known as a:",
+    "options": [
+      "Feature",
+      "Label",
+      "Record or Row",
+      "Model"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-070",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Preprocessing",
+    "question": "Why would you remove outliers from a dataset?",
+    "options": [
+      "They can skew the results of the analysis and the model.",
+      "They are always errors in data entry.",
+      "To make the dataset smaller.",
+      "You should never remove outliers."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ml-basic-071",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "Which algorithm is often used as a baseline model for classification?",
+    "options": [
+      "Neural Networks",
+      "Logistic Regression",
+      "K-Means",
+      "Gradient Boosting"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-072",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Deep Learning",
+    "question": "What is a 'hidden layer' in a neural network?",
+    "options": [
+      "The input layer.",
+      "The output layer.",
+      "A layer between the input and output layers.",
+      "A layer that is not used during training."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-073",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "What is a 'True Negative'?",
+    "options": [
+      "When the model correctly predicts a negative outcome.",
+      "When the model incorrectly predicts a negative outcome.",
+      "When the model correctly predicts a positive outcome.",
+      "When the model incorrectly predicts a positive outcome."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ml-basic-074",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "If your model performs poorly, what is a common first step to improve it?",
+    "options": [
+      "Deploy it immediately.",
+      "Gather more or better quality data.",
+      "Use a much more complex model.",
+      "Delete the model and start over."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-075",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "What is 'big data' characterized by?",
+    "options": [
+      "Volume, Velocity, and Variety (the 3 V's).",
+      "Only a large number of rows.",
+      "Data that is very difficult to understand.",
+      "Data stored in the cloud."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ml-basic-076",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Preprocessing",
+    "question": "What is 'standardization'?",
+    "options": [
+      "Making the data follow a standard format.",
+      "Scaling data to have a mean of 0 and a standard deviation of 1.",
+      "Removing duplicate data.",
+      "Converting text to numbers."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-077",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "What kind of problem is finding the topic of a text document?",
+    "options": [
+      "Regression",
+      "Clustering",
+      "Classification (if topics are predefined)",
+      "Reinforcement Learning"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-078",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Deep Learning",
+    "question": "The connections between neurons in a neural network have associated:",
+    "options": [
+      "Colors",
+      "Weights",
+      "Labels",
+      "Features"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-079",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "A model that simply guesses the most frequent class is called a:",
+    "options": [
+      "Baseline model",
+      "Complex model",
+      "Regression model",
+      "Deep learning model"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ml-basic-080",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "Which of these is an ethical concern in machine learning?",
+    "options": [
+      "Model accuracy",
+      "Training speed",
+      "Bias and fairness",
+      "Code readability"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-081",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "What does a 'model' make?",
+    "options": [
+      "Data",
+      "Predictions or decisions",
+      "Features",
+      "Software"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-082",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Preprocessing",
+    "question": "Why might you want to convert text to lowercase during preprocessing?",
+    "options": [
+      "To reduce the size of the text.",
+      "To ensure that words like 'Apple' and 'apple' are treated as the same word.",
+      "It is a required step for all NLP tasks.",
+      "To make the text more readable."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-083",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "A 'hyperplane' is a concept associated with which algorithm?",
+    "options": [
+      "K-Means",
+      "Decision Trees",
+      "Support Vector Machines (SVM)",
+      "K-Nearest Neighbors"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-084",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Deep Learning",
+    "question": "Which of these is a common activation function?",
+    "options": [
+      "Linear Regression",
+      "ReLU (Rectified Linear Unit)",
+      "K-Means",
+      "Gradient Descent"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-085",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "What does it mean for a dataset to be 'imbalanced'?",
+    "options": [
+      "It has too many features.",
+      "The classes are not represented equally.",
+      "It contains missing values.",
+      "The data is not normalized."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-086",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "Which of these is a key skill for a machine learning engineer?",
+    "options": [
+      "Programming",
+      "Statistics and Probability",
+      "Data Modeling and Evaluation",
+      "All of the above"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "ml-basic-087",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "The process of 'deploying' a model means:",
+    "options": [
+      "Training the model.",
+      "Making the model available for use in a production environment.",
+      "Evaluating the model.",
+      "Cleaning the data for the model."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-088",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Preprocessing",
+    "question": "What is 'noise' in data?",
+    "options": [
+      "Loud sounds in audio data.",
+      "Irrelevant or meaningless data that can obscure the underlying patterns.",
+      "Data that is stored in an unstructured format.",
+      "A type of data visualization."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-089",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "Which algorithm finds groups in data without any pre-existing labels?",
+    "options": [
+      "Linear Regression",
+      "Logistic Regression",
+      "K-Means Clustering",
+      "Decision Tree"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-090",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Deep Learning",
+    "question": "What does a deep learning model typically require a lot of?",
+    "options": [
+      "Labeled data",
+      "Computational power (like GPUs)",
+      "Time for training",
+      "All of the above"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "ml-basic-091",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "If your model performs perfectly on the training data but poorly on the test data, it is likely:",
+    "options": [
+      "Underfitting",
+      "Overfitting",
+      "A good model",
+      "Biased"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-092",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is 'AI' (Artificial Intelligence)?",
+    "options": [
+      "The same as Machine Learning.",
+      "A broader field focused on creating systems that can perform tasks that normally require human intelligence.",
+      "A type of robot.",
+      "A programming language."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-093",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "An 'epoch' refers to:",
+    "options": [
+      "A single data point.",
+      "One complete pass through the entire training dataset.",
+      "The final layer of a neural network.",
+      "A measure of model error."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-094",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Preprocessing",
+    "question": "What is a 'categorical' feature?",
+    "options": [
+      "A feature with a continuous range of values.",
+      "A feature with a discrete set of possible values or categories.",
+      "A feature that is always numerical.",
+      "The target variable."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-095",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "An algorithm that is a 'black box' is:",
+    "options": [
+      "Easy to interpret.",
+      "Difficult to understand how it makes predictions.",
+      "Always a neural network.",
+      "Not very accurate."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-096",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Deep Learning",
+    "question": "What are 'weights' in a neural network?",
+    "options": [
+      "The input data values.",
+      "Parameters within the network that are learned during training.",
+      "The number of layers.",
+      "The activation functions."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-097",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Evaluation",
+    "question": "What is a 'baseline model'?",
+    "options": [
+      "The most complex model you can build.",
+      "A simple model used as a reference point for comparing the performance of more complex models.",
+      "A model that has not been trained yet.",
+      "The final, deployed model."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-098",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "Machine learning is a subset of which field?",
+    "options": [
+      "Data Visualization",
+      "Database Management",
+      "Artificial Intelligence",
+      "Software Engineering"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ml-basic-099",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Terminology",
+    "question": "What is a 'prediction'?",
+    "options": [
+      "The input to the model.",
+      "The output of the model for a given input.",
+      "The accuracy of the model.",
+      "The training data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ml-basic-100",
+    "subject": "ml",
+    "difficulty": "basic",
+    "topic": "Data Preprocessing",
+    "question": "Why is data quality important for machine learning?",
+    "options": [
+      "High-quality data leads to more accurate and reliable models.",
+      "It makes the training process faster.",
+      "It is not as important as the choice of algorithm.",
+      "It only matters for deep learning."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-001",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is overfitting?",
+    "options": [
+      "A model that performs poorly on both training and test data",
+      "A model that performs very well on training data but poorly on unseen test data",
+      "A model that is too simple to capture the underlying trend of the data",
+      "The process of fitting a model multiple times"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-002",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is the difference between covariance and correlation?",
+    "options": [
+      "There is no difference.",
+      "Covariance measures the direction of a linear relationship, while correlation measures both direction and strength.",
+      "Correlation is the standardized version of covariance.",
+      "Both 2 and 3."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "ds-inter-003",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "In a classification context, what is 'precision'?",
+    "options": [
+      "The ability of the classifier not to label as positive a sample that is negative (TP / (TP + FP))",
+      "The ability of the classifier to find all the positive samples (TP / (TP + FN))",
+      "The overall accuracy of the model",
+      "The harmonic mean of precision and recall"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-004",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Feature Engineering",
+    "question": "What is one-hot encoding?",
+    "options": [
+      "A technique to convert numerical features into categorical ones",
+      "A technique to represent categorical variables as binary vectors",
+      "A method for feature scaling",
+      "A way to handle missing values"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-005",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Algorithms",
+    "question": "How does the K-Means algorithm work?",
+    "options": [
+      "It's a supervised learning algorithm for classification.",
+      "It's an iterative clustering algorithm that partitions a dataset into K pre-defined distinct non-overlapping subgroups.",
+      "It builds a tree-like model of decisions.",
+      "It finds the best-fit line through the data points."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-006",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is an 'activation function' in a neural network?",
+    "options": [
+      "A function that activates the entire network",
+      "A function that defines the output of a neuron given a set of inputs, helping to introduce non-linearity",
+      "A function used to measure the loss of the network",
+      "A function that initializes the weights"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-007",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "What is a 'confusion matrix'?",
+    "options": [
+      "A matrix showing how confused the model is",
+      "A table used to describe the performance of a classification model on a set of test data for which the true values are known",
+      "A visualization of feature importance",
+      "A tool for debugging code"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-008",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is the central limit theorem?",
+    "options": [
+      "It states that the distribution of sample means of a large number of samples will be approximately normally distributed, regardless of the distribution of the population.",
+      "It states that all data eventually becomes normally distributed.",
+      "It's a theorem about the center of a dataset.",
+      "It proves that the mean is the best measure of central tendency."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-009",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is 'underfitting'?",
+    "options": [
+      "A model that performs very well on the training data.",
+      "A model that is too complex.",
+      "A model that cannot capture the underlying trend of the data and performs poorly on both training and test data.",
+      "A model that fits the data perfectly."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ds-inter-010",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Feature Engineering",
+    "question": "What is the purpose of 'feature scaling'?",
+    "options": [
+      "To normalize the range of independent variables or features of data",
+      "To create new features",
+      "To remove irrelevant features",
+      "To increase the number of features"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-011",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Algorithms",
+    "question": "What is a 'Random Forest'?",
+    "options": [
+      "A single, very deep decision tree.",
+      "An ensemble learning method that operates by constructing a multitude of decision trees at training time.",
+      "A clustering algorithm.",
+      "A type of neural network."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-012",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "What is 'recall' (or sensitivity)?",
+    "options": [
+      "The number of correct positive predictions.",
+      "The ability of the classifier to find all the positive samples (TP / (TP + FN)).",
+      "The accuracy on the positive class.",
+      "The number of incorrect predictions."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-013",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is 'gradient descent'?",
+    "options": [
+      "An optimization algorithm used to find the local minimum of a function, commonly used to train machine learning models.",
+      "A method for visualizing gradients.",
+      "A type of data preprocessing.",
+      "A way to measure model performance."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-014",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is the difference between a bar chart and a histogram?",
+    "options": [
+      "There is no difference.",
+      "A bar chart represents categorical data with rectangular bars, while a histogram represents the distribution of numerical data.",
+      "A histogram is a type of pie chart.",
+      "A bar chart is for continuous data, a histogram for discrete."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-015",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is 'cross-validation'?",
+    "options": [
+      "A technique for validating that your data is clean.",
+      "A resampling procedure used to evaluate machine learning models on a limited data sample.",
+      "A method for visualizing data.",
+      "A way to train multiple models at once."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-016",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Feature Engineering",
+    "question": "What is 'imputation'?",
+    "options": [
+      "The process of replacing missing data with substituted values.",
+      "The process of removing features.",
+      "A way to scale features.",
+      "A feature selection technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-017",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Algorithms",
+    "question": "What is Logistic Regression used for?",
+    "options": [
+      "Predicting a continuous value.",
+      "Predicting a categorical outcome (classification).",
+      "Clustering data points.",
+      "Reducing dimensionality."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-018",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "What is an ROC curve?",
+    "options": [
+      "A plot showing the performance of a classification model at all classification thresholds.",
+      "A curve showing the error rate over time.",
+      "A type of regression model.",
+      "A method for feature selection."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-019",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is 'backpropagation'?",
+    "options": [
+      "An algorithm for efficiently calculating the gradients of the loss function with respect to the weights of a neural network.",
+      "The process of propagating errors from the input layer to the output layer.",
+      "A way to initialize the network's weights.",
+      "A type of activation function."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-020",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "Type I vs Type II error in hypothesis testing refers to:",
+    "options": [
+      "Type I is a false positive, Type II is a false negative.",
+      "Type I is a false negative, Type II is a false positive.",
+      "Both are types of data entry errors.",
+      "They are related to the sample size."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-021",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is 'regularization'?",
+    "options": [
+      "A technique to prevent overfitting by adding a penalty term to the loss function.",
+      "The process of making your data more regular.",
+      "A method for feature selection.",
+      "A way to speed up model training."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-022",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Algorithms",
+    "question": "What kind of algorithm is Naive Bayes?",
+    "options": [
+      "A probabilistic classifier based on applying Bayes' theorem with strong (naive) independence assumptions.",
+      "A clustering algorithm.",
+      "A regression algorithm.",
+      "A deep learning model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-023",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "What is the F1-Score?",
+    "options": [
+      "The average of precision and recall.",
+      "The harmonic mean of precision and recall.",
+      "A measure of a model's speed.",
+      "The area under the ROC curve."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-024",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Dimensionality Reduction",
+    "question": "What is Principal Component Analysis (PCA)?",
+    "options": [
+      "A supervised learning technique.",
+      "A technique for reducing the dimensionality of a dataset by transforming it into a new set of uncorrelated variables (principal components).",
+      "A clustering algorithm.",
+      "A method for data visualization."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-025",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is a Convolutional Neural Network (CNN) primarily used for?",
+    "options": [
+      "Time-series analysis",
+      "Analyzing tabular data",
+      "Image recognition and processing",
+      "Reinforcement learning"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ds-inter-026",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is a 'confidence interval'?",
+    "options": [
+      "A range of values that you can be certain contains the true mean of the population.",
+      "A range of values that's likely to contain a population parameter with a certain level of confidence.",
+      "The interval between two data points.",
+      "A measure of model performance."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-027",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is 'ensemble learning'?",
+    "options": [
+      "Using a single, highly complex model.",
+      "A method that combines several machine learning models to produce one optimal predictive model.",
+      "Training a model on an ensemble of datasets.",
+      "A type of unsupervised learning."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-028",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Algorithms",
+    "question": "What is a Support Vector Machine (SVM)?",
+    "options": [
+      "A supervised learning model used for classification and regression that finds an optimal hyperplane to separate data points.",
+      "A type of database.",
+      "A deep learning architecture.",
+      "An unsupervised clustering algorithm."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-029",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "What does AUC stand for in the context of ROC curves?",
+    "options": [
+      "Area Under the Curve",
+      "Average Utility Calculation",
+      "Accuracy Under Classification",
+      "Algorithm Usage Chart"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-030",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Tools",
+    "question": "What is the purpose of the `groupby()` function in Pandas?",
+    "options": [
+      "To sort the DataFrame by a specific column.",
+      "To group rows based on some criteria and apply an aggregate function.",
+      "To drop duplicate rows.",
+      "To select a group of columns."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-031",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is a Recurrent Neural Network (RNN) particularly well-suited for?",
+    "options": [
+      "Image classification",
+      "Processing sequential data like time series or natural language",
+      "Clustering tasks",
+      "Static, tabular data"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-032",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is 'bias' in a statistical model?",
+    "options": [
+      "The error introduced by approximating a real-world problem with a too-simple model (underfitting).",
+      "A preference for a particular outcome.",
+      "The variance of the model's predictions.",
+      "The accuracy of the model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-033",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is 'data augmentation'?",
+    "options": [
+      "A technique to artificially increase the size of a training dataset by creating modified copies of data.",
+      "Adding more features to the dataset.",
+      "Purchasing more data.",
+      "A method for cleaning data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-034",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Algorithms",
+    "question": "What is the main idea behind the K-Nearest Neighbors (KNN) algorithm?",
+    "options": [
+      "It assumes that similar things exist in close proximity; it classifies a data point based on how its neighbors are classified.",
+      "It finds the K closest clusters.",
+      "It builds K different decision trees.",
+      "It is a linear regression model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-035",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "Why might accuracy be a misleading metric for an imbalanced dataset?",
+    "options": [
+      "A model can achieve high accuracy by simply predicting the majority class, while performing poorly on the minority class.",
+      "Accuracy is always the best metric.",
+      "Imbalanced datasets cannot be evaluated.",
+      "Accuracy can only be used for regression."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-036",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "NLP",
+    "question": "What is 'tokenization' in NLP?",
+    "options": [
+      "A method for encrypting text.",
+      "The process of breaking down a stream of text into words, phrases, symbols, or other meaningful elements called tokens.",
+      "A way to count word frequencies.",
+      "A machine learning model for text."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-037",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is a 'loss function'?",
+    "options": [
+      "A function that measures the difference between the model's prediction and the actual target value.",
+      "A function that causes the model to lose data.",
+      "The final layer of a neural network.",
+      "A function for optimizing the model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-038",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is 'variance' in the context of a model?",
+    "options": [
+      "The model's bias.",
+      "The error from sensitivity to small fluctuations in the training set (overfitting).",
+      "The range of the model's predictions.",
+      "A measure of how consistent the model is."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-039",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is 'gradient boosting'?",
+    "options": [
+      "A machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees.",
+      "A way to speed up gradient descent.",
+      "A type of neural network.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-040",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Tools",
+    "question": "What is the purpose of a 'lambda' function in Python?",
+    "options": [
+      "To define a large, complex function.",
+      "To create a small, anonymous function.",
+      "To perform mathematical calculations.",
+      "To import a library."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-041",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Algorithms",
+    "question": "What is the primary goal of Linear Regression?",
+    "options": [
+      "To find the line that best fits the data and can be used to predict continuous outcomes.",
+      "To classify data into two groups.",
+      "To find clusters in the data.",
+      "To build a decision tree."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-042",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "What is R-squared (Coefficient of Determination)?",
+    "options": [
+      "A measure of how well a classification model performs.",
+      "A statistical measure of how close the data are to the fitted regression line.",
+      "The correlation between two variables.",
+      "A measure of a model's bias."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-043",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is a 'hyperplane' in the context of SVMs?",
+    "options": [
+      "A plane in a high-dimensional space that separates data points of different classes.",
+      "A type of activation function.",
+      "The output of the SVM model.",
+      "A parameter that needs to be tuned."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-044",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What does it mean if two variables are 'independent'?",
+    "options": [
+      "They have a perfect correlation.",
+      "The occurrence of one does not affect the probability of occurrence of the other.",
+      "They have a correlation of -1.",
+      "They always have the same value."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-045",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is a 'validation set' used for?",
+    "options": [
+      "To train the model.",
+      "To provide an unbiased evaluation of the model.",
+      "To tune the model's hyperparameters.",
+      "To clean the data."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "ds-inter-046",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "NLP",
+    "question": "What are 'stop words'?",
+    "options": [
+      "Words that stop the analysis.",
+      "Commonly used words (like 'the', 'a', 'is') that are often removed from text before processing.",
+      "The most important words in a text.",
+      "Words with negative sentiment."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-047",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is 'transfer learning'?",
+    "options": [
+      "Transferring data between servers.",
+      "A technique where a model developed for a task is reused as the starting point for a model on a second task.",
+      "Learning to transfer files.",
+      "A type of reinforcement learning."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-048",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is 'Bayes' Theorem'?",
+    "options": [
+      "A theorem describing the probability of an event, based on prior knowledge of conditions that might be related to the event.",
+      "A theorem about the mean of a dataset.",
+      "A law of large numbers.",
+      "A theorem used for data visualization."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-049",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is the difference between 'bagging' and 'boosting'?",
+    "options": [
+      "Bagging trains models in parallel, while boosting trains them sequentially.",
+      "Boosting is a type of bagging.",
+      "Bagging is for classification, boosting is for regression.",
+      "There is no significant difference."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-050",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Tools",
+    "question": "What is a 'DataFrame' in Pandas?",
+    "options": [
+      "A 1D labeled array.",
+      "A 2D labeled data structure with columns of potentially different types.",
+      "A multi-dimensional array.",
+      "A tool for plotting data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-051",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Algorithms",
+    "question": "Which of these is a common metric to measure distance between data points?",
+    "options": [
+      "Pearson Correlation",
+      "Euclidean Distance",
+      "R-squared",
+      "P-value"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-052",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "What is 'Mean Squared Error' (MSE)?",
+    "options": [
+      "A metric used for classification models.",
+      "A common metric for regression models that measures the average of the squares of the errors.",
+      "The square root of the average error.",
+      "A measure of model complexity."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-053",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is an 'epoch' in training a neural network?",
+    "options": [
+      "One complete pass forward and backward through all the training examples.",
+      "A single training example.",
+      "The learning rate of the model.",
+      "The number of layers in the network."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-054",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is 'sampling bias'?",
+    "options": [
+      "A bias in which a sample is collected in such a way that some members of the intended population are less likely to be included than others.",
+      "A bias towards larger sample sizes.",
+      "An error in the statistical test.",
+      "The bias of a machine learning model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-055",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is the purpose of a 'learning rate'?",
+    "options": [
+      "It determines how fast the model learns.",
+      "It's a hyperparameter that controls how much to change the model in response to the estimated error each time the model weights are updated.",
+      "It measures the final accuracy of the model.",
+      "It is a parameter learned during training."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-056",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "NLP",
+    "question": "What is 'stemming'?",
+    "options": [
+      "The process of reducing inflected (or sometimes derived) words to their word stem, base or root form.",
+      "Finding the main stem of a sentence.",
+      "A more advanced version of tokenization.",
+      "A sentiment analysis technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-057",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is a 'dropout' layer used for?",
+    "options": [
+      "To drop unnecessary data.",
+      "A regularization technique to prevent overfitting by randomly setting a fraction of neuron activations to zero during training.",
+      "To speed up training.",
+      "To decrease the number of layers in a network."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-058",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is a 'p-hacking'?",
+    "options": [
+      "A type of cyber attack.",
+      "The misuse of data analysis to find patterns in data that can be presented as statistically significant, when in fact there is no real underlying effect.",
+      "A method for improving p-values.",
+      "A statistical test."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-059",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is a 'hyperparameter grid search'?",
+    "options": [
+      "A technique for tuning hyperparameters by exhaustively searching through a manually specified subset of the hyperparameter space.",
+      "A way to visualize the model's performance.",
+      "A type of machine learning algorithm.",
+      "Searching for the best features in a grid."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-060",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Tools",
+    "question": "What is the primary difference between a `.py` file and a Jupyter Notebook `.ipynb` file?",
+    "options": [
+      "There is no difference.",
+      "A `.ipynb` file is a JSON document containing code cells, markdown text, and outputs, while a `.py` file is a plain text Python script.",
+      "`.py` files can only be run from the command line.",
+      "Jupyter Notebooks do not use Python."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-061",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Algorithms",
+    "question": "What is a disadvantage of the K-Nearest Neighbors (KNN) algorithm?",
+    "options": [
+      "It is very fast during prediction.",
+      "It can become very slow and computationally expensive as the size of the dataset grows.",
+      "It is difficult to interpret.",
+      "It can only be used for regression."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-062",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "What is a 'lift chart'?",
+    "options": [
+      "A chart that shows how much a model is 'lifting' performance compared to a random guess.",
+      "A chart for lifting heavy data.",
+      "A type of regression plot.",
+      "A chart to measure model training time."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-063",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What does a 'pooling' layer do in a CNN?",
+    "options": [
+      "It increases the spatial size of the feature maps.",
+      "It reduces the spatial size of the feature maps to decrease computational complexity and control overfitting.",
+      "It adds more data to the network.",
+      "It performs the final classification."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-064",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is 'collinearity' in the context of regression?",
+    "options": [
+      "When two or more predictor variables are highly correlated with each other.",
+      "When the predictor variables are not correlated with the target.",
+      "A desirable property of a regression model.",
+      "A measure of model error."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-065",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is 'feature importance'?",
+    "options": [
+      "A score that indicates how important a feature is for the model's predictions.",
+      "A list of the most important data points.",
+      "The number of times a feature appears in the data.",
+      "A hyperparameter to be tuned."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-066",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "NLP",
+    "question": "What is 'lemmatization'?",
+    "options": [
+      "The same as stemming.",
+      "The process of grouping together the different inflected forms of a word so they can be analyzed as a single item, based on dictionary definitions.",
+      "A way to count the number of lemmas in a text.",
+      "A text summarization technique."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-067",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is the 'vanishing gradient' problem?",
+    "options": [
+      "A difficulty found in training deep neural networks where gradients become very small, preventing the weights from changing.",
+      "When the model's loss vanishes to zero.",
+      "A problem with the activation function.",
+      "When the gradient becomes too large."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-068",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is a 'chi-squared' test used for?",
+    "options": [
+      "To test the independence of two categorical variables.",
+      "To compare the means of two groups.",
+      "To measure the correlation between two numerical variables.",
+      "To fit a regression line."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-069",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is 'dimensionality reduction'?",
+    "options": [
+      "Increasing the number of features in a dataset.",
+      "Reducing the number of input variables in a dataset.",
+      "A type of data visualization.",
+      "A method for cleaning data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-070",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Tools",
+    "question": "In Pandas, what is the difference between `loc` and `iloc`?",
+    "options": [
+      "`loc` is for label-based indexing, while `iloc` is for integer position-based indexing.",
+      "`iloc` is for label-based indexing, while `loc` is for integer position-based indexing.",
+      "They are interchangeable.",
+      "`loc` is faster than `iloc`."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-071",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Algorithms",
+    "question": "What is 'hierarchical clustering'?",
+    "options": [
+      "An algorithm that builds a hierarchy of clusters, either agglomerative (bottom-up) or divisive (top-down).",
+      "A type of classification algorithm.",
+      "A method for organizing files in a hierarchy.",
+      "A deep learning model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-072",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "What is 'log loss' (logarithmic loss)?",
+    "options": [
+      "A performance metric for classification models where the prediction is a probability value between 0 and 1.",
+      "A measure of how much data was lost during training.",
+      "A metric for regression models.",
+      "A way to regularize a model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-073",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is a 'tensor' in the context of libraries like TensorFlow?",
+    "options": [
+      "A multi-dimensional array, which is a generalization of vectors and matrices.",
+      "A type of neural network layer.",
+      "A tool for measuring tension in a model.",
+      "A specific data format."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-074",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is a 'confounding variable'?",
+    "options": [
+      "A variable that is confusing to analyze.",
+      "A variable that influences both the dependent variable and independent variable, causing a spurious association.",
+      "The main variable of interest in a study.",
+      "A variable with no effect on the outcome."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-075",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is the 'bias-variance tradeoff'?",
+    "options": [
+      "The property of a model that the variance of the parameter estimates can be reduced by increasing the bias.",
+      "A decision to be made about whether to prioritize bias or variance.",
+      "The idea that you cannot have both low bias and low variance in a model.",
+      "A type of statistical test."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-076",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "NLP",
+    "question": "What is 'TF-IDF'?",
+    "options": [
+      "A numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus.",
+      "A deep learning model for text.",
+      "A type of text file format.",
+      "A method for translating text."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-077",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is a 'Long Short-Term Memory' (LSTM) network?",
+    "options": [
+      "A type of recurrent neural network (RNN) architecture used in the field of deep learning, which is well-suited to learning from sequential data.",
+      "A network with a very long memory.",
+      "A type of convolutional neural network.",
+      "A model for storing data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-078",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What does it mean for a result to be 'statistically significant'?",
+    "options": [
+      "The result is very important.",
+      "The likelihood that a relationship between two or more variables is caused by something other than random chance.",
+      "The result is 100% correct.",
+      "The result can be easily visualized."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-079",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is 'L1 and L2 regularization'?",
+    "options": [
+      "Two types of data normalization.",
+      "Techniques used to reduce overfitting by adding a penalty to the model's complexity, based on the L1 (Lasso) or L2 (Ridge) norm of the weights.",
+      "Two different loss functions.",
+      "Methods for feature selection only."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-080",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Tools",
+    "question": "What is API scraping?",
+    "options": [
+      "Extracting data by making requests to a public or private API",
+      "Building an API from a website's data",
+      "A security attack on an API",
+      "A method for cleaning API responses"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-081",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Algorithms",
+    "question": "What is a 'greedy algorithm'?",
+    "options": [
+      "An algorithm that is very slow.",
+      "An algorithm that makes the locally optimal choice at each stage with the hope of finding a global optimum.",
+      "An algorithm that uses a lot of memory.",
+      "An algorithm that is always correct."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-082",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "What is 'specificity' in classification?",
+    "options": [
+      "The same as recall.",
+      "The proportion of actual negatives that are correctly identified as such (TN / (TN + FP)).",
+      "The accuracy of the negative predictions.",
+      "A measure of how specific the model's predictions are."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-083",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is the difference between a 'dense' layer and a 'convolutional' layer?",
+    "options": [
+      "A dense layer connects every neuron to every neuron in the next layer, while a convolutional layer uses filters to connect to local regions.",
+      "A dense layer is for images, a convolutional layer is for text.",
+      "There is no difference.",
+      "A dense layer is a type of pooling layer."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-084",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is 'survivorship bias'?",
+    "options": [
+      "A logical error of concentrating on the people or things that 'survived' some process and inadvertently overlooking those that did not because of their lack of visibility.",
+      "A bias towards older data.",
+      "A statistical test for survival analysis.",
+      "A type of data visualization."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-085",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is 'semi-supervised' learning?",
+    "options": [
+      "A learning paradigm that uses a small amount of labeled data along with a large amount of unlabeled data.",
+      "Learning with only half of the data labeled.",
+      "A type of reinforcement learning.",
+      "Learning that is only partially supervised by a human."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-086",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "NLP",
+    "question": "What is a 'word embedding'?",
+    "options": [
+      "A learned representation for text where words that have the same meaning have a similar representation.",
+      "Embedding a word into an image.",
+      "A way to count words.",
+      "A type of text file."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-087",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is 'Adam' in the context of deep learning?",
+    "options": [
+      "The first neural network ever created.",
+      "An adaptive learning rate optimization algorithm that's widely used in training deep neural networks.",
+      "A type of activation function.",
+      "A dataset for benchmarking models."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-088",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is 'interpolation' vs 'extrapolation'?",
+    "options": [
+      "Interpolation is estimating a value within the range of known data, while extrapolation is estimating a value outside that range.",
+      "They are the same.",
+      "Extrapolation is more accurate than interpolation.",
+      "Interpolation is for time-series, extrapolation is for other data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-089",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is the 'curse of dimensionality'?",
+    "options": [
+      "The phenomenon where feature space becomes increasingly sparse as the number of dimensions (features) increases, making models perform poorly.",
+      "A bug in high-dimensional data.",
+      "A problem with data visualization in 3D.",
+      "When a dataset has too many rows."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-090",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Tools",
+    "question": "In Pandas, what does the `merge` function do?",
+    "options": [
+      "Combines two DataFrames by appending rows.",
+      "Combines two DataFrames based on the values of common columns, similar to a SQL join.",
+      "Combines two Series.",
+      "Sorts the DataFrame."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-091",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Algorithms",
+    "question": "What does the 'Gini impurity' measure in a decision tree?",
+    "options": [
+      "The depth of the tree.",
+      "How often a randomly chosen element from a set would be incorrectly labeled if it was randomly labeled according to the distribution of labels in the subset.",
+      "The accuracy of the tree.",
+      "The number of branches."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "ds-inter-092",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Model Evaluation",
+    "question": "What is 'learning curve' analysis?",
+    "options": [
+      "A plot of model performance on training and validation sets as a function of the training set size, used to diagnose bias or variance.",
+      "A curve showing how fast a data scientist learns.",
+      "A type of regression model.",
+      "A chart of the model's loss over time."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-093",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is a 'Generative Adversarial Network' (GAN)?",
+    "options": [
+      "A class of machine learning frameworks where two neural networks (a generator and a discriminator) contest with each other.",
+      "A network that is very adversarial.",
+      "A model for classifying images.",
+      "A type of reinforcement learning."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-094",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is 'resampling'?",
+    "options": [
+      "Methods for drawing repeated samples from the original data samples, such as bootstrapping and cross-validation.",
+      "Deleting your sample and starting over.",
+      "A method for cleaning data.",
+      "A way to visualize samples."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-095",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is 'active learning'?",
+    "options": [
+      "A special case of machine learning in which a learning algorithm is able to interactively query the user to label data.",
+      "A model that learns very quickly.",
+      "Learning from streaming data.",
+      "A type of deep learning."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-096",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "NLP",
+    "question": "What is 'sentiment analysis'?",
+    "options": [
+      "The use of natural language processing to systematically identify, extract, quantify, and study affective states and subjective information.",
+      "Analyzing the emotions of the data scientist.",
+      "A way to measure the sentiment of a dataset.",
+      "A text translation technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-097",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Deep Learning",
+    "question": "What is a 'Transformer' architecture?",
+    "options": [
+      "A deep learning model architecture that relies on self-attention mechanisms, widely used in NLP.",
+      "A model that transforms data.",
+      "A type of convolutional neural network.",
+      "A model for image generation."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-098",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Statistics",
+    "question": "What is ANOVA?",
+    "options": [
+      "A statistical test used to analyze the differences among group means in a sample.",
+      "A type of regression model.",
+      "A data visualization technique.",
+      "A machine learning algorithm."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-099",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Machine Learning",
+    "question": "What is 'imbalanced data'?",
+    "options": [
+      "A dataset where the classes are not represented equally.",
+      "A dataset with many errors.",
+      "A dataset that is not sorted.",
+      "A small dataset."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-inter-100",
+    "subject": "ml",
+    "difficulty": "intermediate",
+    "topic": "Tools",
+    "question": "What does a `docker` container provide for a data scientist?",
+    "options": [
+      "A reproducible and isolated environment for running code and experiments.",
+      "A way to store large datasets.",
+      "A tool for version control.",
+      "A machine learning framework."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-001",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Statistics",
+    "question": "What is the bias-variance tradeoff?",
+    "options": [
+      "A fundamental concept in machine learning that involves balancing the error from bias (simplistic model) and the error from variance (overly complex model).",
+      "A choice between a biased or a varied dataset.",
+      "A statistical test for model fairness.",
+      "A technique to increase both bias and variance."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-002",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is the 'kernel trick' in Support Vector Machines (SVMs)?",
+    "options": [
+      "A method for using a linear classifier to solve a non-linear problem by mapping the original data into a higher-dimensional space.",
+      "A way to speed up the training of SVMs.",
+      "A type of regularization for SVMs.",
+      "A trick to find the optimal kernel."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-003",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is a 'Transformer' architecture in NLP?",
+    "options": [
+      "A model architecture that eschews recurrence and instead relies entirely on a self-attention mechanism to draw global dependencies between input and output.",
+      "A type of RNN for transforming sequences.",
+      "A model for image transformation.",
+      "A pre-trained language model like BERT."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-004",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Deployment",
+    "question": "What is MLOps?",
+    "options": [
+      "A set of practices that aims to deploy and maintain machine learning models in production reliably and efficiently.",
+      "A new machine learning algorithm.",
+      "A cloud computing platform.",
+      "A type of data visualization."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-005",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Causality",
+    "question": "What is the difference between causal inference and predictive modeling?",
+    "options": [
+      "Causal inference aims to understand the 'why' by estimating the effect of an intervention, while predictive modeling aims to predict outcomes.",
+      "They are the same.",
+      "Predictive modeling is a type of causal inference.",
+      "Causal inference is only used in statistics."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-006",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'XGBoost'?",
+    "options": [
+      "An optimized distributed gradient boosting library designed to be highly efficient, flexible, and portable.",
+      "A type of deep learning model.",
+      "A data visualization tool.",
+      "A database system."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-007",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is a 'Generative Adversarial Network' (GAN)?",
+    "options": [
+      "A class of machine learning systems where two neural networks, a generator and a discriminator, are trained simultaneously in a zero-sum game.",
+      "A network designed for adversarial attacks.",
+      "A type of reinforcement learning model.",
+      "A model for data classification."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-008",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Time Series",
+    "question": "What is 'stationarity' in a time series?",
+    "options": [
+      "A property of a time series where its statistical properties such as mean, variance, and autocorrelation are constant over time.",
+      "When the time series data does not change.",
+      "A type of time series model.",
+      "A method for forecasting."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-009",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Explainability",
+    "question": "What is SHAP (SHapley Additive exPlanations)?",
+    "options": [
+      "A game theoretic approach to explain the output of any machine learning model.",
+      "A type of machine learning model.",
+      "A data visualization library.",
+      "A feature engineering technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-010",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Big Data",
+    "question": "What is the MapReduce programming model?",
+    "options": [
+      "A model for processing and generating large data sets with a parallel, distributed algorithm on a cluster.",
+      "A way to reduce the size of a map.",
+      "A data visualization technique.",
+      "A type of database."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-011",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Statistics",
+    "question": "What is a 'Bayesian' approach to statistics?",
+    "options": [
+      "An approach based on Bayes' theorem, where probability is interpreted as a degree of belief and updated as new evidence is acquired.",
+      "A frequentist approach.",
+      "A method for visualizing data.",
+      "A type of machine learning model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-012",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'anomaly detection'?",
+    "options": [
+      "The identification of rare items, events or observations which raise suspicions by differing significantly from the majority of the data.",
+      "A method for finding errors in code.",
+      "A type of classification problem.",
+      "A data cleaning technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-013",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is the difference between a GRU (Gated Recurrent Unit) and an LSTM (Long Short-Term Memory) unit?",
+    "options": [
+      "GRU has fewer gates and is often computationally more efficient, while LSTM has more gates offering more expressive power.",
+      "LSTM is an older, less effective architecture.",
+      "GRU is for text, LSTM is for images.",
+      "There is no functional difference."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-014",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Deployment",
+    "question": "What is 'containerization' (e.g., using Docker)?",
+    "options": [
+      "A lightweight form of virtualization that allows you to package an application with all of its dependencies into a standardized unit for software development.",
+      "Storing data in containers.",
+      "A way to deploy models to mobile devices.",
+      "A type of database."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-015",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Causality",
+    "question": "What is a 'propensity score'?",
+    "options": [
+      "The probability of a unit (e.g., person, classroom, school) being assigned to a particular treatment given a set of observed covariates.",
+      "A score measuring the quality of a model.",
+      "A type of feature engineering.",
+      "A metric for classification."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-016",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'DBSCAN'?",
+    "options": [
+      "A density-based clustering algorithm that can find arbitrarily shaped clusters and identify noise points.",
+      "A type of regression model.",
+      "A data visualization technique.",
+      "A deep learning architecture."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-017",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is 'attention mechanism' in neural networks?",
+    "options": [
+      "A mechanism that allows a model to focus on relevant parts of the input sequence when making a prediction.",
+      "A way to make the model pay more attention during training.",
+      "A type of loss function.",
+      "A technique for data augmentation."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-018",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Time Series",
+    "question": "What is an 'ARIMA' model?",
+    "options": [
+      "A statistical model used for analyzing and forecasting time series data, which stands for AutoRegressive Integrated Moving Average.",
+      "A type of deep learning model.",
+      "A data cleaning technique for time series.",
+      "A visualization for time series data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-019",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Explainability",
+    "question": "What is LIME (Local Interpretable Model-agnostic Explanations)?",
+    "options": [
+      "A technique that explains the predictions of any classifier by learning an interpretable model locally around the prediction.",
+      "A type of fruit used in data science.",
+      "A data visualization library.",
+      "A feature selection method."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-020",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Big Data",
+    "question": "What is the difference between Hadoop and Spark?",
+    "options": [
+      "Spark processes data in-memory, making it much faster than Hadoop's disk-based MapReduce.",
+      "Hadoop is a database, Spark is a processing engine.",
+      "Spark can only be used with Python.",
+      "Hadoop is a newer technology than Spark."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-021",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Statistics",
+    "question": "What is a 'Markov Chain'?",
+    "options": [
+      "A stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.",
+      "A chain of data points.",
+      "A type of data structure.",
+      "A deep learning model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-022",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'topic modeling'?",
+    "options": [
+      "A type of statistical model for discovering the abstract 'topics' that occur in a collection of documents.",
+      "Modeling a single topic.",
+      "A text classification technique.",
+      "A way to summarize documents."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-023",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is a 'Variational Autoencoder' (VAE)?",
+    "options": [
+      "A generative model that learns a probabilistic mapping from a latent space to the data space.",
+      "A type of autoencoder for data compression.",
+      "A supervised learning model.",
+      "A model for time series forecasting."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-024",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Deployment",
+    "question": "What is 'model drift'?",
+    "options": [
+      "The degradation of a model's predictive power due to changes in the environment and data distribution over time.",
+      "When a model's predictions drift towards a single value.",
+      "A technique for improving model performance.",
+      "A type of data visualization."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-025",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Causality",
+    "question": "What is a 'Directed Acyclic Graph' (DAG) used for in causal inference?",
+    "options": [
+      "To represent causal relationships between variables, where nodes are variables and directed edges represent causal effects.",
+      "To visualize data.",
+      "A type of neural network architecture.",
+      "A data storage format."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-026",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'spectral clustering'?",
+    "options": [
+      "A clustering technique that uses the eigenvalues (spectrum) of the similarity matrix of the data.",
+      "A method for clustering colors.",
+      "A type of hierarchical clustering.",
+      "A deep learning algorithm."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-027",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is a 'Residual Network' (ResNet)?",
+    "options": [
+      "A neural network architecture that utilizes skip connections to allow gradients to flow through the network more easily, enabling the training of very deep networks.",
+      "A network that calculates the residuals of a regression model.",
+      "A type of recurrent neural network.",
+      "A generative model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-028",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Time Series",
+    "question": "What is the difference between 'autocorrelation' and 'partial autocorrelation'?",
+    "options": [
+      "Autocorrelation is the correlation of a time series with a delayed copy of itself, while partial autocorrelation is the correlation after removing the effect of shorter lags.",
+      "They are the same.",
+      "Partial autocorrelation is used for forecasting, autocorrelation is not.",
+      "Autocorrelation is for stationary series only."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-029",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Explainability",
+    "question": "What are 'counterfactual explanations'?",
+    "options": [
+      "Explanations that describe the smallest change to the feature values that changes the prediction to a different outcome.",
+      "Explanations that are not factual.",
+      "A type of data visualization.",
+      "A method for measuring model bias."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-030",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Big Data",
+    "question": "What is 'data streaming'?",
+    "options": [
+      "The continuous flow of data generated by various sources, often processed in real-time.",
+      "Streaming a video about data.",
+      "A way to download large datasets.",
+      "A type of data compression."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-031",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Statistics",
+    "question": "What is 'bootstrapping' in statistics?",
+    "options": [
+      "A resampling technique used to estimate quantities about a population by sampling from a data sample with replacement.",
+      "Starting a computer from a powered-down state.",
+      "A method for cleaning data.",
+      "A type of hypothesis test."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-032",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is a 'Gaussian Mixture Model' (GMM)?",
+    "options": [
+      "A probabilistic model that assumes all the data points are generated from a mixture of a finite number of Gaussian distributions with unknown parameters.",
+      "A model for mixing different datasets.",
+      "A type of regression model.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-033",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is 'BERT' (Bidirectional Encoder Representations from Transformers)?",
+    "options": [
+      "A state-of-the-art language representation model based on the Transformer architecture, which is pre-trained on a large corpus of text.",
+      "A character from Sesame Street.",
+      "A type of data augmentation.",
+      "A model for image classification."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-034",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Deployment",
+    "question": "What is 'A/B testing' in the context of model deployment?",
+    "options": [
+      "A method of comparing two versions of a model (A and B) to determine which one performs better in a live environment.",
+      "Testing if a model is better than nothing.",
+      "A unit test for models.",
+      "A way to deploy two models at once."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-035",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Causality",
+    "question": "What is 'instrumental variable' analysis?",
+    "options": [
+      "A method used to estimate causal relationships when controlled experiments are not feasible, by using a third variable (the instrument) that is correlated with the explanatory variable but not directly with the outcome.",
+      "Analyzing the instruments used in an experiment.",
+      "A type of regression model.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-036",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'Latent Dirichlet Allocation' (LDA)?",
+    "options": [
+      "A generative statistical model often used in topic modeling.",
+      "A type of dimensionality reduction.",
+      "A classification algorithm.",
+      "A deep learning architecture."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-037",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is 'self-supervised learning'?",
+    "options": [
+      "A type of learning where a model learns to predict parts of its input from other parts of its input, without explicit labels.",
+      "A model that supervises itself.",
+      "The same as unsupervised learning.",
+      "A type of reinforcement learning."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-038",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Time Series",
+    "question": "What is 'exponential smoothing'?",
+    "options": [
+      "A rule of thumb technique for smoothing time series data using an exponential window function.",
+      "Making time series data smoother.",
+      "A type of deep learning model for time series.",
+      "A data visualization for smoothing."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-039",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Explainability",
+    "question": "What is the difference between 'global' and 'local' model explainability?",
+    "options": [
+      "Global explainability aims to understand the overall behavior of a model, while local explainability focuses on explaining individual predictions.",
+      "Global is for large models, local is for small models.",
+      "There is no difference.",
+      "Local explainability is more accurate."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-040",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Big Data",
+    "question": "What is a 'data lake' vs. a 'data warehouse'?",
+    "options": [
+      "A data lake stores raw, unstructured data, while a data warehouse stores structured, filtered data that has been processed for a specific purpose.",
+      "A data lake is for small data, a data warehouse is for big data.",
+      "They are the same.",
+      "A data warehouse is a newer technology."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-041",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Statistics",
+    "question": "What is 'Maximum Likelihood Estimation' (MLE)?",
+    "options": [
+      "A method of estimating the parameters of a statistical model by finding the parameter values that maximize the likelihood of making the observations given the parameters.",
+      "A way to estimate the maximum value in a dataset.",
+      "A type of hypothesis test.",
+      "A machine learning algorithm."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-042",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is a 'recommender system'?",
+    "options": [
+      "A system that seeks to predict the 'rating' or 'preference' a user would give to an item.",
+      "A system that recommends the best algorithm to use.",
+      "A type of search engine.",
+      "A data visualization tool."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-043",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is a 'Graph Neural Network' (GNN)?",
+    "options": [
+      "A type of neural network that operates on graph-structured data.",
+      "A network for visualizing graphs.",
+      "A type of convolutional neural network.",
+      "A model for time series analysis."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-044",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Deployment",
+    "question": "What is a 'canary deployment'?",
+    "options": [
+      "A technique to reduce the risk of introducing a new software version in production by slowly rolling out the change to a small subset of users.",
+      "Deploying a model to a small bird.",
+      "A type of A/B test.",
+      "A way to quickly deploy models."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-045",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Causality",
+    "question": "What is 'difference-in-differences' estimation?",
+    "options": [
+      "A statistical technique used in econometrics and quantitative research that attempts to mimic an experimental research design using observational study data.",
+      "Calculating the difference between two differences.",
+      "A type of data visualization.",
+      "A machine learning algorithm."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-046",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'collaborative filtering'?",
+    "options": [
+      "A method of making automatic predictions (filtering) about the interests of a user by collecting preferences from many users (collaborating).",
+      "A way for data scientists to collaborate on filtering data.",
+      "A type of data cleaning technique.",
+      "A deep learning model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-047",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is 'federated learning'?",
+    "options": [
+      "A machine learning technique that trains an algorithm across multiple decentralized edge devices or servers holding local data samples, without exchanging them.",
+      "A way to combine models from different countries.",
+      "A type of reinforcement learning.",
+      "A data privacy law."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-048",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Time Series",
+    "question": "What is a 'Fourier Transform' used for in time series analysis?",
+    "options": [
+      "To decompose a time series into its constituent frequencies.",
+      "To forecast future values.",
+      "A data cleaning technique.",
+      "A type of time series model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-049",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Explainability",
+    "question": "What is 'algorithmic fairness'?",
+    "options": [
+      "The study and mitigation of bias in algorithmic decision-making.",
+      "Making sure an algorithm is fair to all data points.",
+      "A measure of model performance.",
+      "A type of regularization."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-050",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Big Data",
+    "question": "What is 'Apache Kafka'?",
+    "options": [
+      "A distributed event streaming platform used for high-performance data pipelines, streaming analytics, and data integration.",
+      "A type of database.",
+      "A machine learning library.",
+      "A data visualization tool."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-051",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Statistics",
+    "question": "What is a 'Poisson distribution'?",
+    "options": [
+      "A discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time or space.",
+      "A distribution of fish.",
+      "A continuous probability distribution.",
+      "A type of sampling method."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-052",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 't-SNE' (t-Distributed Stochastic Neighbor Embedding)?",
+    "options": [
+      "A machine learning algorithm for visualization, used to embed high-dimensional data into a low-dimensional space.",
+      "A type of regression model.",
+      "A clustering algorithm.",
+      "A deep learning architecture."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-053",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is 'reinforcement learning from human feedback' (RLHF)?",
+    "options": [
+      "A technique that uses human feedback to train a 'reward model', which is then used to fine-tune a language model using reinforcement learning.",
+      "A way for humans to directly train a model.",
+      "A type of supervised learning.",
+      "A data labeling technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-054",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Deployment",
+    "question": "What is 'model quantization'?",
+    "options": [
+      "A technique to reduce the precision of a model's weights (e.g., from 32-bit floats to 8-bit integers) to reduce size and improve inference speed.",
+      "A way to quantify a model's performance.",
+      "A type of model evaluation metric.",
+      "A method for data augmentation."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-055",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Causality",
+    "question": "What is a 'do-calculus'?",
+    "options": [
+      "A set of rules for reasoning about causal effects from observational data, by manipulating a causal graph.",
+      "A type of calculus for data science.",
+      "A machine learning algorithm.",
+      "A statistical test."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-056",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'Apriori' algorithm?",
+    "options": [
+      "An algorithm for frequent item set mining and association rule learning over transactional databases.",
+      "A type of classification algorithm.",
+      "A clustering algorithm.",
+      "A regression model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-057",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is a 'Siamese Network'?",
+    "options": [
+      "A neural network architecture that contains two or more identical subnetworks, used to find the similarity between inputs.",
+      "A network with two heads.",
+      "A type of generative model.",
+      "A model for time series analysis."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-058",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Time Series",
+    "question": "What is a 'Kalman filter'?",
+    "options": [
+      "An algorithm that uses a series of measurements observed over time, containing statistical noise and other inaccuracies, and produces estimates of unknown variables that tend to be more accurate.",
+      "A filter for removing noise from data.",
+      "A type of time series model.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-059",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Explainability",
+    "question": "What is a 'surrogate model' in the context of explainability?",
+    "options": [
+      "A simpler, interpretable model trained to approximate the predictions of a complex, black-box model.",
+      "A model that acts as a backup.",
+      "A type of generative model.",
+      "A model for data augmentation."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-060",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Big Data",
+    "question": "What is the 'CAP theorem'?",
+    "options": [
+      "A theorem stating that it is impossible for a distributed data store to simultaneously provide more than two out of three guarantees: Consistency, Availability, and Partition tolerance.",
+      "A theorem about the maximum size of a dataset.",
+      "A rule for designing big data systems.",
+      "A machine learning algorithm."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-061",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Statistics",
+    "question": "What is 'survival analysis'?",
+    "options": [
+      "A branch of statistics for analyzing the expected duration of time until one or more events happen.",
+      "Analyzing the survival rates of a species.",
+      "A type of machine learning model.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-062",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'out-of-bag' error in a Random Forest?",
+    "options": [
+      "A method of measuring the prediction error of random forests by using the data points that were not included in the bootstrap sample for a particular tree.",
+      "An error caused by data being outside the model's range.",
+      "A type of data entry error.",
+      "The error on the test set."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-063",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is a 'denoising autoencoder'?",
+    "options": [
+      "An autoencoder that is trained to reconstruct a clean input from a corrupted version of it.",
+      "A model for removing noise from images.",
+      "A type of generative model.",
+      "A supervised learning model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-064",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Deployment",
+    "question": "What is 'shadow deployment'?",
+    "options": [
+      "Running a new model in parallel with the current production model, without affecting the live response, to test its performance.",
+      "Deploying a model that is hidden from users.",
+      "A type of security measure.",
+      "A way to quickly rollback a deployment."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-065",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Causality",
+    "question": "What is a 'regression discontinuity design'?",
+    "options": [
+      "A quasi-experimental design that estimates the causal effects of an intervention by assigning a cutoff or threshold above or below which an intervention is assigned.",
+      "A type of regression model.",
+      "A data visualization technique.",
+      "A method for cleaning data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-066",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'manifold learning'?",
+    "options": [
+      "A non-linear dimensionality reduction technique that assumes the observed data lies on a lower-dimensional manifold.",
+      "A type of deep learning model.",
+      "A data visualization technique.",
+      "A clustering algorithm."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-067",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is 'batch normalization'?",
+    "options": [
+      "A technique to normalize the input of each layer in a neural network to stabilize and speed up the training process.",
+      "Normalizing the entire dataset before training.",
+      "A type of regularization.",
+      "A method for initializing weights."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-068",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Time Series",
+    "question": "What is a 'seasonal decomposition' of a time series?",
+    "options": [
+      "The process of breaking down a time series into its constituent components: trend, seasonality, and residual.",
+      "Analyzing data from different seasons.",
+      "A type of time series model.",
+      "A forecasting method."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-069",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Explainability",
+    "question": "What is a 'partial dependence plot' (PDP)?",
+    "options": [
+      "A plot that shows the marginal effect of one or two features on the predicted outcome of a machine learning model.",
+      "A plot showing the dependence between two variables.",
+      "A type of scatter plot.",
+      "A visualization of model accuracy."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-070",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Big Data",
+    "question": "What is 'Apache Flink'?",
+    "options": [
+      "A distributed streaming dataflow engine for stateful computations over unbounded and bounded data streams.",
+      "A type of database.",
+      "A data visualization tool.",
+      "A machine learning library."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-071",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Statistics",
+    "question": "What is 'Monte Carlo simulation'?",
+    "options": [
+      "A computational algorithm that relies on repeated random sampling to obtain numerical results.",
+      "A type of gambling simulation.",
+      "A statistical test.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-072",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'OPTICS' algorithm?",
+    "options": [
+      "An algorithm for finding density-based clusters in spatial data, which is an extension of DBSCAN.",
+      "An algorithm for optical character recognition.",
+      "A type of regression model.",
+      "A deep learning architecture."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-073",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is 'zero-shot learning'?",
+    "options": [
+      "A problem setup in machine learning where, at test time, a learner observes samples from classes that were not observed during training.",
+      "Learning with zero data.",
+      "A type of unsupervised learning.",
+      "A model that requires no training."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-074",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Deployment",
+    "question": "What is 'model serving'?",
+    "options": [
+      "The process of making a trained machine learning model available to make predictions in a production environment.",
+      "Serving food to a model.",
+      "A way to store models.",
+      "A technique for model evaluation."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-075",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Causality",
+    "question": "What is 'Simpson's paradox'?",
+    "options": [
+      "A phenomenon in probability and statistics, in which a trend appears in several different groups of data but disappears or reverses when these groups are combined.",
+      "A paradox related to a cartoon character.",
+      "A type of data error.",
+      "A statistical test."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-076",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'Isolation Forest'?",
+    "options": [
+      "An anomaly detection algorithm that works by isolating observations.",
+      "A type of random forest for classification.",
+      "A clustering algorithm.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-077",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is a 'Capsule Network'?",
+    "options": [
+      "A type of neural network that aims to better model hierarchical relationships by using groups of neurons called capsules.",
+      "A network for storing data in capsules.",
+      "A type of generative model.",
+      "A model for time series analysis."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-078",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Time Series",
+    "question": "What is a 'Prophet' model?",
+    "options": [
+      "A forecasting procedure developed by Facebook, designed to handle time series with strong seasonal effects and missing data.",
+      "A model that can predict the future with perfect accuracy.",
+      "A type of deep learning model.",
+      "A statistical test for time series."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-079",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Explainability",
+    "question": "What is 'adversarial robustness'?",
+    "options": [
+      "The resilience of a model against small, intentionally crafted perturbations to the input data that are designed to cause incorrect predictions.",
+      "Making a model more adversarial.",
+      "A type of regularization.",
+      "A measure of model performance."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-080",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Big Data",
+    "question": "What is 'Lambda Architecture'?",
+    "options": [
+      "A data-processing architecture designed to handle massive quantities of data by taking advantage of both batch and stream-processing methods.",
+      "An architecture for running lambda functions.",
+      "A type of cloud architecture.",
+      "A serverless design pattern."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-081",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Statistics",
+    "question": "What are 'hidden Markov models' (HMMs)?",
+    "options": [
+      "A statistical Markov model in which the system being modeled is assumed to be a Markov process with unobserved (hidden) states.",
+      "A model where the states are hidden from the user.",
+      "A type of deep learning model.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-082",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'self-training' in semi-supervised learning?",
+    "options": [
+      "A process where a model is trained on labeled data, then used to predict labels for unlabeled data, and the most confident predictions are added to the training set.",
+      "A model that trains itself without any data.",
+      "A type of unsupervised learning.",
+      "A data augmentation technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-083",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is 'attention-based' machine translation?",
+    "options": [
+      "A machine translation approach that uses an attention mechanism to help the model focus on relevant parts of the source sentence when generating a translation.",
+      "A translation model that requires a lot of attention to train.",
+      "A type of rule-based translation.",
+      "A statistical machine translation method."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-084",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Deployment",
+    "question": "What is 'model monitoring'?",
+    "options": [
+      "The process of tracking a model's performance in production to detect issues like model drift or data quality problems.",
+      "Watching a model train.",
+      "A type of model evaluation.",
+      "A security measure."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-085",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Causality",
+    "question": "What is a 'confounder'?",
+    "options": [
+      "A variable that is associated with both the treatment and the outcome, which can distort the estimated causal effect.",
+      "A variable that makes the analysis confusing.",
+      "A type of measurement error.",
+      "A variable that is not important."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-086",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is 'active learning'?",
+    "options": [
+      "A machine learning paradigm where the algorithm can interactively query a user (or some other information source) to label new data points.",
+      "A model that learns very quickly.",
+      "A type of reinforcement learning.",
+      "A data augmentation technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-087",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is a 'diffusion model'?",
+    "options": [
+      "A generative model that works by progressively adding noise to data and then learning to reverse the noising process to generate new data samples.",
+      "A model for simulating the diffusion of information.",
+      "A type of reinforcement learning model.",
+      "A model for time series analysis."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-088",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Time Series",
+    "question": "What is a 'state-space model'?",
+    "options": [
+      "A model that represents a time series in terms of an unobserved state vector and an observation equation.",
+      "A model for analyzing different states or countries.",
+      "A type of deep learning model.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-089",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Explainability",
+    "question": "What is a 'feature attribution' method?",
+    "options": [
+      "A method that assigns a contribution score to each input feature for a given prediction.",
+      "A way to select the best features.",
+      "A type of data visualization.",
+      "A regularization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-090",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Big Data",
+    "question": "What is 'data governance'?",
+    "options": [
+      "The overall management of the availability, usability, integrity, and security of the data employed in an enterprise.",
+      "A government body that regulates data.",
+      "A type of database.",
+      "A software for managing data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-091",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Statistics",
+    "question": "What is 'FDR' (False Discovery Rate)?",
+    "options": [
+      "In multiple hypothesis testing, the expected proportion of rejected null hypotheses that are actually true (Type I errors).",
+      "The rate at which new discoveries are made.",
+      "A measure of model accuracy.",
+      "A data cleaning technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-092",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is a 'metric learning'?",
+    "options": [
+      "Learning a distance function over objects, such that similar objects are close and dissimilar objects are far apart.",
+      "Learning to convert between different measurement systems.",
+      "A type of supervised learning.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-093",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is 'meta-learning' or 'learning to learn'?",
+    "options": [
+      "A subfield of machine learning where automatic learning algorithms are applied to metadata about machine learning experiments.",
+      "Learning about the process of learning.",
+      "A type of reinforcement learning.",
+      "A technique for data augmentation."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-094",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Deployment",
+    "question": "What is 'model compression'?",
+    "options": [
+      "Techniques like pruning and quantization to reduce the size and computational cost of a model.",
+      "Compressing a model file using zip.",
+      "A way to store models more efficiently.",
+      "A type of regularization."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-095",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Causality",
+    "question": "What is 'uplift modeling'?",
+    "options": [
+      "A predictive modeling technique that models the incremental impact of a treatment on an individual's behavior.",
+      "A model for predicting how much something will be lifted.",
+      "A type of regression model.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-096",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Algorithms",
+    "question": "What is a 'Bayesian network'?",
+    "options": [
+      "A probabilistic graphical model that represents a set of variables and their conditional dependencies via a directed acyclic graph.",
+      "A network of data scientists who use Bayesian statistics.",
+      "A type of deep learning model.",
+      "A data visualization for Bayesian analysis."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-097",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Deep Learning",
+    "question": "What is a 'knowledge graph'?",
+    "options": [
+      "A knowledge base that uses a graph-structured data model to represent knowledge.",
+      "A graph showing what a model knows.",
+      "A type of neural network.",
+      "A data visualization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-098",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Time Series",
+    "question": "What is a 'GARCH' model?",
+    "options": [
+      "A statistical model used in financial time series analysis to model volatility clustering (Generalized AutoRegressive Conditional Heteroskedasticity).",
+      "A type of deep learning model.",
+      "A data cleaning technique.",
+      "A forecasting method."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-099",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Model Explainability",
+    "question": "What is 'counterfactual fairness'?",
+    "options": [
+      "A definition of fairness that states a decision is fair towards an individual if it is the same in both the actual world and a counterfactual world where the individual belonged to a different demographic group.",
+      "A type of model evaluation metric.",
+      "A regularization technique.",
+      "A way to make models more biased."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "ds-advance-100",
+    "subject": "ml",
+    "difficulty": "advance",
+    "topic": "Big Data",
+    "question": "What is 'delta lake'?",
+    "options": [
+      "An open-source storage layer that brings reliability to data lakes by providing ACID transactions, scalable metadata handling, and unified streaming and batch data processing.",
+      "A data lake located near a river delta.",
+      "A type of cloud storage.",
+      "A data visualization tool."
+    ],
+    "answerIndex": 0
   }
 ]
+
 
 
 
