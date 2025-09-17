@@ -18,6 +18,7 @@ const footerLinks = [
       { href: "/topics", label: "All Topics" },
       { href: "/search", label: "Search" },
       { href: "/roadmaps", label: "Roadmaps" },
+      { href: "/test", label: "Test" },
     ],
   },
   {
@@ -125,22 +126,19 @@ export function Footer() {
                 transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY, repeatDelay: 2 }}
                 className="mx-1"
               >
-                <FaHeart className="h-4 w-4 text-red-500" />
+                <FaHeart className="h-4 w-4 text-purple- !text-purple-500" />
+
 </motion.div>
 <span>
   by{" "}
-  <a
-    href="https://www.sujandas.info/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-primary hover:underline transition-colors duration-200"
-  >
-    Sujan Das
-  </a>
+  <span className="text-primary transition-colors duration-200 hover:text-primary/80">
+    Developers
+  </span>
   , for developers
 </span>
 </div>
 </motion.div>
+
 
         </GlassmorphismCard>
       </div>
