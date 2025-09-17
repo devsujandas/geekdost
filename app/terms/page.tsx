@@ -1,46 +1,67 @@
 export default function Terms() {
   return (
     <div className="container mx-auto py-16 px-6 leading-relaxed">
-      <h1 className="text-4xl font-extrabold mb-6">Terms of Service</h1>
-      <p className="text-muted-foreground mb-4">
-        By using our platform, you agree to the following terms and conditions. Please
-        read them carefully before using the services.
+      {/* Page Title */}
+      <h1 className="text-4xl font-extrabold mb-6 text-primary">
+        Terms of Service
+      </h1>
+      <p className="text-muted-foreground mb-6">
+        Welcome to our platform. By accessing or using our services, you agree
+        to be bound by these Terms of Service. Please read them carefully before
+        proceeding.
       </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">1. Use of Service</h2>
+      {/* Section 1 */}
+      <h2 className="text-2xl font-bold mt-10 mb-4">1. Use of Service</h2>
       <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-        <li>The platform is for educational purposes only.</li>
-        <li>You must not attempt to hack, exploit, or misuse the system.</li>
-        <li>Content provided is for practice and self-improvement.</li>
+        <li>The platform is provided strictly for educational and learning purposes.</li>
+        <li>You agree not to hack, exploit, or misuse the system in any way.</li>
+        <li>Content offered is for practice, skill-building, and self-improvement only.</li>
       </ul>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">2. Accounts & Identity</h2>
+      {/* Section 2 */}
+      <h2 className="text-2xl font-bold mt-10 mb-4">2. Accounts & Identity</h2>
       <p className="text-muted-foreground">
-        We may ask for your name to personalize your experience. You are responsible
-        for the accuracy of the data you provide.
+        We may collect your name or basic details to personalize your
+        experience. You are solely responsible for ensuring the accuracy of
+        information you provide and for maintaining its confidentiality.
       </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">3. Intellectual Property</h2>
+      {/* Section 3 */}
+      <h2 className="text-2xl font-bold mt-10 mb-4">3. Intellectual Property</h2>
       <p className="text-muted-foreground">
-        All roadmaps, quizzes, and certificates are the intellectual property of
-        GeekDost. You may not reproduce or distribute them without permission.
+        All roadmaps, quizzes, certificates, and related materials are the
+        intellectual property of <span className="font-semibold">GeekDost</span>.
+        Unauthorized reproduction, redistribution, or modification is strictly
+        prohibited without prior written consent.
       </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">4. Limitation of Liability</h2>
+      {/* Section 4 */}
+      <h2 className="text-2xl font-bold mt-10 mb-4">4. Limitation of Liability</h2>
       <p className="text-muted-foreground">
-        We are not responsible for any damages, data loss, or consequences arising from
-        the use of our platform.
+        We are not liable for any damages, data loss, interruptions, or
+        consequences resulting from the use or inability to use our platform.
+        Use of the platform is at your own risk.
       </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">5. Changes to Terms</h2>
+      {/* Section 5 */}
+      <h2 className="text-2xl font-bold mt-10 mb-4">5. Changes to Terms</h2>
       <p className="text-muted-foreground">
-        We reserve the right to update these terms at any time. Continued use of the
-        platform implies acceptance of the revised terms.
+        We reserve the right to update or revise these Terms at any time. Your
+        continued use of the platform after changes indicates acceptance of the
+        updated terms.
       </p>
 
-      <p className="text-sm text-muted-foreground mt-10">
-        Last Updated: {new Date().getFullYear()}  
-        For concerns, contact: legal@geekdost.com
+      {/* Footer Note */}
+      <p className="text-sm text-muted-foreground mt-12 border-t pt-6">
+        Last Updated: {new Date().getFullYear()} <br />
+        For legal inquiries, contact us at:{" "}
+        <a
+          href="mailto:legal@geekdost.com"
+          className="text-primary underline hover:text-primary/80"
+        >
+          legal@geekdost.com
+        </a>
       </p>
     </div>
   )

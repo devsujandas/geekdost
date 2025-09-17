@@ -1,53 +1,95 @@
+"use client"
+
 export default function Privacy() {
   return (
-    <div className="container mx-auto py-16 px-6 leading-relaxed">
-      <h1 className="text-4xl font-extrabold mb-6">Privacy Policy</h1>
-      <p className="text-muted-foreground mb-4">
-        We respect your privacy and are committed to protecting it. This Privacy Policy
-        explains how we collect, use, and safeguard your personal information when you
-        use our platform.
-      </p>
+    <div className="container mx-auto py-20 px-6 max-w-4xl leading-relaxed">
+      {/* Header Section */}
+      <div className="border-b pb-8 mb-12">
+        <h1 className="text-5xl font-extrabold tracking-tight text-primary mb-4">
+          Privacy Policy
+        </h1>
+        <p className="text-lg text-muted-foreground max-w-2xl">
+          At <strong>GeekDost</strong>, we respect your privacy and are committed to protecting
+          your personal information. This Privacy Policy explains what data we collect,
+          how we use it, and what rights you have as a user of our platform.
+        </p>
+      </div>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">1. Information We Collect</h2>
-      <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-        <li>Personal data like your name (if provided).</li>
-        <li>Usage data such as progress, scores, and time spent on tests.</li>
-        <li>Device data like browser type and version (anonymous).</li>
-      </ul>
+      {/* Section 1 */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-semibold mb-4">1. Information We Collect</h2>
+        <div className="bg-muted/40 rounded-xl p-6">
+          <ul className="list-disc pl-6 space-y-3 text-muted-foreground">
+            <li>Personal data such as your name (if provided).</li>
+            <li>Usage data like progress, scores, and time spent on tests.</li>
+            <li>Device data such as browser type and version (collected anonymously).</li>
+          </ul>
+        </div>
+      </section>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">2. How We Use Information</h2>
-      <p className="text-muted-foreground mb-4">
-        We use the collected data to:
-      </p>
-      <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-        <li>Track your exam progress and results.</li>
-        <li>Improve user experience.</li>
-        <li>Provide insights like Weakness Analysis.</li>
-      </ul>
+      {/* Section 2 */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-semibold mb-4">2. How We Use Information</h2>
+        <div className="bg-muted/40 rounded-xl p-6">
+          <p className="text-muted-foreground mb-4">
+            We use the collected information to:
+          </p>
+          <ul className="list-disc pl-6 space-y-3 text-muted-foreground">
+            <li>Track and display your exam progress and results.</li>
+            <li>Improve the platform’s performance and user experience.</li>
+            <li>Provide insights such as Weakness Analysis to help you improve.</li>
+          </ul>
+        </div>
+      </section>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">3. Data Storage</h2>
-      <p className="text-muted-foreground">
-        Your results and progress are stored locally in your browser using{" "}
-        <code>localStorage</code>. We do not store or transfer your personal data to any server.
-      </p>
+      {/* Section 3 */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-semibold mb-4">3. Data Storage</h2>
+        <div className="bg-muted/40 rounded-xl p-6">
+          <p className="text-muted-foreground">
+            All your results and progress are stored <strong>locally</strong> in your browser
+            using <code>localStorage</code>. We do not collect, transfer, or store your
+            personal data on our servers.
+          </p>
+        </div>
+      </section>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">4. Cookies</h2>
-      <p className="text-muted-foreground">
-        We may use cookies only to remember your preferences. We do not use
-        tracking cookies for ads or third-party profiling.
-      </p>
+      {/* Section 4 */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-semibold mb-4">4. Cookies</h2>
+        <div className="bg-muted/40 rounded-xl p-6">
+          <p className="text-muted-foreground">
+            Cookies may be used only to remember your preferences. We do not use cookies
+            for advertising, third-party tracking, or profiling purposes.
+          </p>
+        </div>
+      </section>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">5. Your Rights</h2>
-      <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-        <li>You can clear your results at any time.</li>
-        <li>You can delete your stored data manually.</li>
-        <li>You can stop using the platform if you disagree with this policy.</li>
-      </ul>
+      {/* Section 5 */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-semibold mb-4">5. Your Rights</h2>
+        <div className="bg-muted/40 rounded-xl p-6">
+          <ul className="list-disc pl-6 space-y-3 text-muted-foreground">
+            <li>You may clear your results and progress at any time.</li>
+            <li>You may manually delete your stored browser data.</li>
+            <li>If you disagree with this policy, you may stop using the platform at any time.</li>
+          </ul>
+        </div>
+      </section>
 
-      <p className="text-sm text-muted-foreground mt-10">
-        Last Updated: {new Date().getFullYear()}  
-        For questions about this policy, contact us at: support@geekdost.com
-      </p>
+      {/* Footer */}
+      <footer className="border-t pt-6 mt-16 text-sm text-muted-foreground text-center">
+        <p>Last Updated: {new Date().getFullYear()}</p>
+        <p>
+          For questions regarding this policy, contact us at{" "}
+          <a
+            href="mailto:support@geekdost.com"
+            className="text-primary underline hover:text-primary/80"
+          >
+            support@geekdost.com
+          </a>
+        </p>
+      </footer>
     </div>
   )
 }

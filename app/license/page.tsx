@@ -5,7 +5,7 @@ export default function License() {
     <div className="container mx-auto py-20 px-6 max-w-4xl">
       {/* Header Section */}
       <div className="border-b pb-8 mb-12">
-        <h1 className="text-5xl font-extrabold tracking-tight text-primary mb-4">
+        <h1 className="text-4xl font-extrabold tracking-tight text-primary mb-4">
           GeekDost Custom License
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl">
