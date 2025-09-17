@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react"
 import { useParams, useRouter } from "next/navigation"
-import { getQuestions } from "@/lib/questions"
 import { getResults } from "@/lib/storage"
 import { motion } from "framer-motion"
 import {
@@ -15,18 +14,39 @@ import {
   FaAward,
 } from "react-icons/fa"
 import { exportResultJSON, exportResultCSV, shareResult } from "@/lib/export"
-import { PageLayout } from "@/components/page-layout" // ✅ navbar + footer wrapper
+import { PageLayout } from "@/components/page-layout"
+
+// ✅ Type for question
+type Question = {
+  id: string
+  question: string
+  options: string[]
+  answerIndex: number
+  topic: string
+}
+
+// ✅ Type for saved result
+type Result = {
+  subject: string
+  difficulty: string
+  mode: string
+  answers: Record<string, number | null>
+  total: number
+  date: string
+  timeTaken: number
+  timePerQ: Record<string, number>
+  questions: Question[] // 👈 added: same questions used in exam
+}
 
 export default function ResultPage() {
   const { subject, difficulty } = useParams()
   const router = useRouter()
-  const [latest, setLatest] = useState<any>(null)
-  const [questions, setQuestions] = useState<any[]>([])
+
+  const [latest, setLatest] = useState<Result | null>(null)
 
   useEffect(() => {
     const prev = getResults()
-    if (prev.length > 0) setLatest(prev[0])
-    setQuestions(getQuestions(subject as string, difficulty as string, 50))
+    if (prev.length > 0) setLatest(prev[0] as Result)
   }, [subject, difficulty])
 
   if (!latest) {
@@ -39,13 +59,23 @@ export default function ResultPage() {
     )
   }
 
+  const questions = latest.questions || [] // ✅ load from saved result
+
   // --- Score Calculation ---
-  const answered = Object.values(latest.answers).filter((a) => a !== null).length
+  const answered = Object.values(latest.answers).filter(
+    (a) => a !== null && a !== undefined
+  ).length
   const notAnswered = latest.total - answered
-  const score = questions.reduce(
-    (acc, q) => (latest.answers[q.id] === q.answerIndex ? acc + 1 : acc),
-    0
-  )
+
+  const score = questions.reduce((acc: number, q: Question) => {
+    const userAns = latest.answers[q.id]
+    return userAns !== null &&
+      userAns !== undefined &&
+      userAns === q.answerIndex
+      ? acc + 1
+      : acc
+  }, 0)
+
   const wrong = answered - score
   const percentage = Math.round((score / latest.total) * 100)
 
@@ -81,11 +111,12 @@ export default function ResultPage() {
 
   // --- Weakness Analysis by Topic ---
   const topicStats: Record<string, { correct: number; wrong: number }> = {}
-  questions.forEach((q) => {
+  questions.forEach((q: Question) => {
     const userAns = latest.answers[q.id]
     if (!topicStats[q.topic]) topicStats[q.topic] = { correct: 0, wrong: 0 }
     if (userAns === q.answerIndex) topicStats[q.topic].correct++
-    else if (userAns !== null) topicStats[q.topic].wrong++
+    else if (userAns !== null && userAns !== undefined)
+      topicStats[q.topic].wrong++
   })
 
   // --- Export Data ---
@@ -226,48 +257,6 @@ export default function ResultPage() {
               <FaShareAlt /> Share
             </button>
           </div>
-
-          {/* Actions */}
-          <div className="mt-6 flex flex-wrap gap-4 justify-center">
-            <button
-              onClick={() => router.push(`/test/${subject}/${difficulty}`)}
-              className="px-4 py-2 bg-primary text-primary-foreground rounded-lg"
-            >
-              Retake Test
-            </button>
-            <button
-              onClick={() => router.push(`/test/${subject}`)}
-              className="px-4 py-2 glass rounded-lg"
-            >
-              Choose Difficulty
-            </button>
-            <button
-              onClick={() => router.push(`/test`)}
-              className="px-4 py-2 glass rounded-lg"
-            >
-              Other Subjects
-            </button>
-          </div>
-
-          {/* Suggest Practice if Exam failed */}
-          {latest.mode === "exam" && percentage < 60 && (
-            <div className="mt-8 p-4 bg-yellow-100 border border-yellow-400 text-yellow-800 rounded-lg">
-              <p className="font-semibold">
-                You scored below 60% in Exam Mode.
-              </p>
-              <p className="text-sm mt-1">
-                We recommend trying a{" "}
-                <span className="font-bold">Practice Test</span> to improve your
-                skills.
-              </p>
-              <button
-                onClick={() => router.push(`/test/${subject}?mode=practice`)}
-                className="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-lg hover:opacity-90"
-              >
-                Start Practice Test
-              </button>
-            </div>
-          )}
         </motion.div>
 
         {/* Weakness Analysis */}
@@ -275,7 +264,7 @@ export default function ResultPage() {
           Weakness Analysis
         </h2>
         <div className="max-w-2xl mx-auto grid gap-4">
-          {Object.entries(topicStats).map(([topic, stats]: any) => (
+          {Object.entries(topicStats).map(([topic, stats]) => (
             <div
               key={topic}
               className="glass p-4 rounded-xl flex justify-between"
@@ -292,43 +281,50 @@ export default function ResultPage() {
         <h2 className="text-2xl font-bold mt-12 mb-6 text-center">
           Review Answers
         </h2>
-        <div className="space-y-4 max-w-3xl mx-auto">
-          {questions.map((q, i) => {
-            const userAns = latest.answers[q.id]
-            const isCorrect = userAns === q.answerIndex
-            return (
-              <motion.div
-                key={q.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.02 }}
-                className={`p-4 rounded-xl border ${
-                  userAns === null
-                    ? "border-yellow-400 bg-yellow-500/10"
-                    : isCorrect
-                    ? "border-green-500 bg-green-500/10"
-                    : "border-red-500 bg-red-500/10"
-                }`}
-              >
-                <p className="font-medium mb-2">
-                  Q{i + 1}. {q.question}
-                </p>
-                <p className="text-sm">
-                  Your Answer:{" "}
-                  {userAns !== null ? q.options[userAns] : "Not Answered"}
-                </p>
-                <p className="text-sm">
-                  Correct: {q.options[q.answerIndex]}
-                </p>
-                {latest.timePerQ && latest.timePerQ[q.id] && (
-                  <p className="text-xs text-muted-foreground">
-                    Time Spent: {latest.timePerQ[q.id]}s
-                  </p>
-                )}
-              </motion.div>
-            )
-          })}
-        </div>
+{/* Review Section */}
+<h2 className="text-2xl font-bold mt-12 mb-6 text-center">
+  Review Answers
+</h2>
+<div className="space-y-4 max-w-3xl mx-auto">
+  {latest.questions.map((q, i) => {   // ✅ এখানেও latest.questions
+    const userAns = latest.answers[q.id]
+    const isCorrect = userAns === q.answerIndex
+    return (
+      <motion.div
+        key={q.id}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: i * 0.02 }}
+        className={`p-4 rounded-xl border ${
+          userAns === null
+            ? "border-yellow-400 bg-yellow-500/10"
+            : isCorrect
+            ? "border-green-500 bg-green-500/10"
+            : "border-red-500 bg-red-500/10"
+        }`}
+      >
+        <p className="font-medium mb-2">
+          Q{i + 1}. {q.question}
+        </p>
+        <p className="text-sm">
+          Your Answer:{" "}
+          {userAns !== null && userAns !== undefined
+            ? q.options[userAns]
+            : "Not Answered"}
+        </p>
+        <p className="text-sm">
+          Correct: {q.options[q.answerIndex]}
+        </p>
+        {latest.timePerQ && latest.timePerQ[q.id] && (
+          <p className="text-xs text-muted-foreground">
+            Time Spent: {latest.timePerQ[q.id]}s
+          </p>
+        )}
+      </motion.div>
+    )
+  })}
+</div>
+
       </div>
     </PageLayout>
   )

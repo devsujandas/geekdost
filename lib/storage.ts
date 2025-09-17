@@ -4,7 +4,14 @@
 export function saveResult(result: any) {
   try {
     const prev = JSON.parse(localStorage.getItem("tests") || "[]")
-    prev.unshift(result) // latest result first
+
+    // ✅ Ensure questions are stored with result
+    const resultWithQuestions = {
+      ...result,
+      questions: result.questions || [], // যদি না থাকে তবে ফাঁকা array
+    }
+
+    prev.unshift(resultWithQuestions) // latest result first
     localStorage.setItem("tests", JSON.stringify(prev))
   } catch (e) {
     console.error("Error saving result:", e)

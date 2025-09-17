@@ -97,12 +97,14 @@ export default function ExamPage() {
     clearInterval(timerRef.current!)
     clearProgress(subject as string, difficulty as string)
 
+    // ✅ Save the actual set of questions with result
     const result = {
       subject,
       difficulty,
       mode: "exam",
       answers,
       total: questions.length,
+      questions, // 👈 Added to ensure result page uses the same questions
       date: new Date().toISOString(),
       timeTaken: 60 * 60 - timeLeft,
       timePerQ,

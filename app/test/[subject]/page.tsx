@@ -18,10 +18,10 @@ export default function DifficultyPage() {
 
   function handleClick(level: string) {
     if (mode === "practice") {
-      // ✅ Practice Mode → সরাসরি practice page
+      
       router.push(`/test/${subject}/${level}/practice`)
     } else {
-      // ✅ Exam Mode (default) → rules page
+     
       router.push(`/test/${subject}/${level}/rules`)
     }
   }
