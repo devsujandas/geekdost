@@ -1802,7 +1802,7 @@
   {
     "id": "py-advance-001",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaclasses",
     "question": "What is a metaclass in Python?",
     "options": ["The class of a class", "A class that creates classes", "A special type of class", "All of the above"],
@@ -1811,7 +1811,7 @@
   {
     "id": "py-advance-002",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is the Global Interpreter Lock (GIL)?",
     "options": ["A mutex that protects access to Python objects", "A lock that prevents multiple threads from executing Python bytecodes", "A mechanism for thread safety", "All of the above"],
@@ -1820,7 +1820,7 @@
   {
     "id": "py-advance-003",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a descriptor in Python?",
     "options": ["An object attribute with binding behavior", "A way to customize attribute access", "A protocol for implementing properties", "All of the above"],
@@ -1829,7 +1829,7 @@
   {
     "id": "py-advance-004",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the async keyword used for?",
     "options": ["To define an asynchronous function", "To create async operations", "To enable await", "All of the above"],
@@ -1838,7 +1838,7 @@
   {
     "id": "py-advance-005",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is metaprogramming?",
     "options": ["Writing programs that manipulate other programs", "Creating programs at runtime", "Modifying program behavior", "All of the above"],
@@ -1847,7 +1847,7 @@
   {
     "id": "py-advance-006",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is the difference between threading and multiprocessing?",
     "options": ["Threading uses threads, multiprocessing uses processes", "Threading shares memory, multiprocessing doesn't", "Multiprocessing avoids GIL limitations", "All of the above"],
@@ -1856,7 +1856,7 @@
   {
     "id": "py-advance-007",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What are the three descriptor protocols?",
     "options": ["__get__, __set__, __delete__", "__get__, __put__, __remove__", "__access__, __modify__, __delete__", "__get__, __set__, __remove__"],
@@ -1865,7 +1865,7 @@
   {
     "id": "py-advance-008",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the await keyword used for?",
     "options": ["To wait for an asynchronous operation", "To pause execution until a result is available", "To work with coroutines", "All of the above"],
@@ -1874,7 +1874,7 @@
   {
     "id": "py-advance-009",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is monkey patching?",
     "options": ["Modifying code at runtime", "Changing classes or modules at runtime", "Dynamic modification of code", "All of the above"],
@@ -1883,7 +1883,7 @@
   {
     "id": "py-advance-010",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a race condition?",
     "options": ["When behavior depends on sequence of events", "When multiple threads access shared data", "When outcome depends on timing", "All of the above"],
@@ -1892,7 +1892,7 @@
   {
     "id": "py-advance-011",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is the difference between a descriptor and a property?",
     "options": ["Properties are implemented using descriptors", "Descriptors are more general", "Properties are a specific use case of descriptors", "All of the above"],
@@ -1901,7 +1901,7 @@
   {
     "id": "py-advance-012",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is an event loop?",
     "options": ["The core of async programming", "A loop that manages async tasks", "A scheduler for coroutines", "All of the above"],
@@ -1910,7 +1910,7 @@
   {
     "id": "py-advance-013",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is introspection?",
     "options": ["The ability to examine objects at runtime", "Getting information about objects", "Inspecting code structure", "All of the above"],
@@ -1919,7 +1919,7 @@
   {
     "id": "py-advance-014",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a deadlock?",
     "options": ["When threads are waiting for each other", "A circular dependency in locking", "When no progress can be made", "All of the above"],
@@ -1928,7 +1928,7 @@
   {
     "id": "py-advance-015",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a data descriptor?",
     "options": ["A descriptor that defines __set__ or __delete__", "A descriptor that only defines __get__", "A descriptor for data attributes", "A descriptor that stores data"],
@@ -1937,7 +1937,7 @@
   {
     "id": "py-advance-016",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is a coroutine?",
     "options": ["A special function that can be paused and resumed", "An async function", "A generator-like object for async programming", "All of the above"],
@@ -1946,7 +1946,7 @@
   {
     "id": "py-advance-017",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __getattr__ and __getattribute__?",
     "options": ["To customize attribute access", "To handle missing attributes", "To implement dynamic attributes", "All of the above"],
@@ -1955,7 +1955,7 @@
   {
     "id": "py-advance-018",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a thread pool?",
     "options": ["A collection of worker threads", "A way to manage concurrent tasks", "A pool of reusable threads", "All of the above"],
@@ -1964,7 +1964,7 @@
   {
     "id": "py-advance-019",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a non-data descriptor?",
     "options": ["A descriptor that only defines __get__", "A descriptor that doesn't define __set__ or __delete__", "A read-only descriptor", "All of the above"],
@@ -1973,7 +1973,7 @@
   {
     "id": "py-advance-020",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and threads?",
     "options": ["Async is single-threaded, threads are multi-threaded", "Async uses cooperative multitasking, threads use preemptive", "Async avoids context switching overhead", "All of the above"],
@@ -1982,7 +1982,7 @@
   {
     "id": "py-advance-021",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is a class decorator that modifies the class?",
     "options": ["A function that takes a class and returns a modified class", "A decorator applied to a class", "A way to modify class behavior", "All of the above"],
@@ -1991,7 +1991,7 @@
   {
     "id": "py-advance-022",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a semaphore?",
     "options": ["A synchronization primitive", "A counter for controlling access", "A way to limit concurrent access", "All of the above"],
@@ -2000,7 +2000,7 @@
   {
     "id": "py-advance-023",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "How do descriptors work with inheritance?",
     "options": ["They follow the method resolution order", "They are inherited like other attributes", "They can be overridden in subclasses", "All of the above"],
@@ -2009,7 +2009,7 @@
   {
     "id": "py-advance-024",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the asyncio module used for?",
     "options": ["Asynchronous I/O", "Event loop management", "Async/await support", "All of the above"],
@@ -2018,7 +2018,7 @@
   {
     "id": "py-advance-025",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __new__ method?",
     "options": ["To create a new instance", "To control object creation", "To customize instantiation", "All of the above"],
@@ -2027,7 +2027,7 @@
   {
     "id": "py-advance-026",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a mutex?",
     "options": ["A mutual exclusion lock", "A way to protect shared resources", "A synchronization primitive", "All of the above"],
@@ -2036,7 +2036,7 @@
   {
     "id": "py-advance-027",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is the difference between __getattr__ and __getattribute__?",
     "options": ["__getattribute__ is called for all attribute access, __getattr__ only for missing attributes", "__getattr__ is called first", "__getattribute__ is for new-style classes only", "They are the same"],
@@ -2045,7 +2045,7 @@
   {
     "id": "py-advance-028",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is a future?",
     "options": ["An object that represents a result that may not be available yet", "A placeholder for a result", "A way to handle async results", "All of the above"],
@@ -2054,7 +2054,7 @@
   {
     "id": "py-advance-029",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of the type() function with three arguments?",
     "options": ["To create a new class", "To dynamically create classes", "To modify class creation", "All of the above"],
@@ -2063,7 +2063,7 @@
   {
     "id": "py-advance-030",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a condition variable?",
     "options": ["A synchronization primitive", "A way to wait for a condition", "A mechanism for thread communication", "All of the above"],
@@ -2072,7 +2072,7 @@
   {
     "id": "py-advance-031",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a class method descriptor?",
     "options": ["The descriptor that implements class methods", "A descriptor for class methods", "The protocol for class methods", "All of the above"],
@@ -2081,7 +2081,7 @@
   {
     "id": "py-advance-032",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and synchronous code?",
     "options": ["Async doesn't block, synchronous does", "Async uses callbacks, synchronous doesn't", "Async is for I/O-bound tasks", "All of the above"],
@@ -2090,7 +2090,7 @@
   {
     "id": "py-advance-033",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __metaclass__?",
     "options": ["To specify the metaclass for a class", "To customize class creation", "To modify class behavior", "All of the above"],
@@ -2099,7 +2099,7 @@
   {
     "id": "py-advance-034",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a thread-safe data structure?",
     "options": ["A data structure that can be safely accessed by multiple threads", "A synchronized data structure", "A data structure with built-in locking", "All of the above"],
@@ -2108,7 +2108,7 @@
   {
     "id": "py-advance-035",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a static method descriptor?",
     "options": ["The descriptor that implements static methods", "A descriptor for static methods", "The protocol for static methods", "All of the above"],
@@ -2117,7 +2117,7 @@
   {
     "id": "py-advance-036",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is a task in asyncio?",
     "options": ["A wrapper around a coroutine", "A unit of work", "A way to schedule coroutines", "All of the above"],
@@ -2126,7 +2126,7 @@
   {
     "id": "py-advance-037",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __prepare__ method in metaclasses?",
     "options": ["To prepare the class namespace", "To customize the namespace dictionary", "To modify attribute ordering", "All of the above"],
@@ -2135,7 +2135,7 @@
   {
     "id": "py-advance-038",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a read-write lock?",
     "options": ["A lock that allows multiple readers or single writer", "A synchronization primitive", "A way to optimize read-heavy workloads", "All of the above"],
@@ -2144,7 +2144,7 @@
   {
     "id": "py-advance-039",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is the property descriptor?",
     "options": ["The descriptor that implements the property built-in", "A way to create managed attributes", "A data descriptor", "All of the above"],
@@ -2153,7 +2153,7 @@
   {
     "id": "py-advance-040",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between await and yield from?",
     "options": ["await is for coroutines, yield from is for generators", "await is async, yield from is sync", "They are similar but used in different contexts", "All of the above"],
@@ -2162,7 +2162,7 @@
   {
     "id": "py-advance-041",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __init_subclass__?",
     "options": ["To customize subclass creation", "To modify subclass behavior", "To run code when a subclass is created", "All of the above"],
@@ -2171,7 +2171,7 @@
   {
     "id": "py-advance-042",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a process pool?",
     "options": ["A collection of worker processes", "A way to manage parallel tasks", "A pool of reusable processes", "All of the above"],
@@ -2180,7 +2180,7 @@
   {
     "id": "py-advance-043",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is the difference between a descriptor and a decorator?",
     "options": ["Descriptors manage attribute access, decorators modify functions", "They serve different purposes", "Descriptors are lower-level", "All of the above"],
@@ -2189,7 +2189,7 @@
   {
     "id": "py-advance-044",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and callbacks?",
     "options": ["Async is more readable", "Async avoids callback hell", "Async uses await syntax", "All of the above"],
@@ -2198,7 +2198,7 @@
   {
     "id": "py-advance-045",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __set_name__?",
     "options": ["To know the name of the attribute a descriptor is assigned to", "To customize attribute naming", "To modify attribute assignment", "All of the above"],
@@ -2207,7 +2207,7 @@
   {
     "id": "py-advance-046",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a barrier?",
     "options": ["A synchronization primitive", "A way to make threads wait until all reach a point", "A coordination mechanism", "All of the above"],
@@ -2216,7 +2216,7 @@
   {
     "id": "py-advance-047",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a cached property?",
     "options": ["A property that caches its value", "A descriptor that computes once and stores", "A way to optimize expensive computations", "All of the above"],
@@ -2225,7 +2225,7 @@
   {
     "id": "py-advance-048",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and generators?",
     "options": ["Async is for concurrency, generators for iteration", "They use different keywords", "They serve different purposes", "All of the above"],
@@ -2234,7 +2234,7 @@
   {
     "id": "py-advance-049",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __class_getitem__?",
     "options": ["To support generic types", "To customize class subscripting", "To implement PEP 484 generics", "All of the above"],
@@ -2243,7 +2243,7 @@
   {
     "id": "py-advance-050",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a thread-local variable?",
     "options": ["A variable with a separate value for each thread", "A way to store thread-specific data", "A variable that is local to a thread", "All of the above"],
@@ -2252,7 +2252,7 @@
   {
     "id": "py-advance-051",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a lazy property?",
     "options": ["A property that is computed only when accessed", "A descriptor that delays computation", "A way to optimize memory usage", "All of the above"],
@@ -2261,7 +2261,7 @@
   {
     "id": "py-advance-052",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and parallel programming?",
     "options": ["Async is concurrent but may not be parallel", "Parallel uses multiple cores, async may not", "Async is for I/O-bound, parallel for CPU-bound", "All of the above"],
@@ -2270,7 +2270,7 @@
   {
     "id": "py-advance-053",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __mro_entries__?",
     "options": ["To customize MRO computation", "To modify inheritance", "To support generic types", "All of the above"],
@@ -2279,7 +2279,7 @@
   {
     "id": "py-advance-054",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a monitor?",
     "options": ["A synchronization construct", "A way to protect shared resources", "A mutex with condition variables", "All of the above"],
@@ -2288,7 +2288,7 @@
   {
     "id": "py-advance-055",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a validating descriptor?",
     "options": ["A descriptor that validates input", "A descriptor with __set__ that checks values", "A way to enforce constraints", "All of the above"],
@@ -2297,7 +2297,7 @@
   {
     "id": "py-advance-056",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and event-driven programming?",
     "options": ["Async is a form of event-driven programming", "Async uses await syntax", "Event-driven uses callbacks", "All of the above"],
@@ -2306,7 +2306,7 @@
   {
     "id": "py-advance-057",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __subclasses__()?",
     "options": ["To get all direct subclasses of a class", "To inspect class hierarchy", "To find all descendants", "All of the above"],
@@ -2315,7 +2315,7 @@
   {
     "id": "py-advance-058",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a spinlock?",
     "options": ["A lock that busy-waits", "A low-level synchronization primitive", "A lock that spins in a loop", "All of the above"],
@@ -2324,7 +2324,7 @@
   {
     "id": "py-advance-059",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a computed property?",
     "options": ["A property that is computed on access", "A descriptor that computes values", "A way to create dynamic attributes", "All of the above"],
@@ -2333,7 +2333,7 @@
   {
     "id": "py-advance-060",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and reactive programming?",
     "options": ["Async is about concurrency, reactive about data flows", "They are different paradigms", "Reactive uses observables, async uses await", "All of the above"],
@@ -2342,7 +2342,7 @@
   {
     "id": "py-advance-061",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __dict__?",
     "options": ["To access the namespace of an object", "To inspect attributes", "To modify attributes dynamically", "All of the above"],
@@ -2351,7 +2351,7 @@
   {
     "id": "py-advance-062",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a memory model?",
     "options": ["A specification of how memory accesses behave in concurrent code", "A way to understand memory consistency", "A model of memory operations", "All of the above"],
@@ -2360,7 +2360,7 @@
   {
     "id": "py-advance-063",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a non-overriding descriptor?",
     "options": ["A descriptor that doesn't override instance attributes", "A non-data descriptor", "A descriptor that only works on classes", "All of the above"],
@@ -2369,7 +2369,7 @@
   {
     "id": "py-advance-064",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and coroutine-based programming?",
     "options": ["Async uses coroutines", "They are essentially the same", "Async/await is syntax for coroutines", "All of the above"],
@@ -2378,7 +2378,7 @@
   {
     "id": "py-advance-065",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __bases__?",
     "options": ["To get the base classes of a class", "To inspect inheritance", "To modify inheritance", "All of the above"],
@@ -2387,7 +2387,7 @@
   {
     "id": "py-advance-066",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a lock-free algorithm?",
     "options": ["An algorithm that doesn't use locks", "A concurrent algorithm", "An algorithm that uses atomic operations", "All of the above"],
@@ -2396,7 +2396,7 @@
   {
     "id": "py-advance-067",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a overriding descriptor?",
     "options": ["A data descriptor", "A descriptor that overrides instance attributes", "A descriptor with __set__ or __delete__", "All of the above"],
@@ -2405,7 +2405,7 @@
   {
     "id": "py-advance-068",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and callback-based async?",
     "options": ["Async/await is more readable", "They achieve the same thing with different syntax", "Callback-based uses callbacks, async uses await", "All of the above"],
@@ -2414,7 +2414,7 @@
   {
     "id": "py-advance-069",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __qualname__?",
     "options": ["To get the qualified name of a class or function", "To inspect the full name", "To get the path from module", "All of the above"],
@@ -2423,7 +2423,7 @@
   {
     "id": "py-advance-070",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a wait-free algorithm?",
     "options": ["An algorithm that guarantees progress for all threads", "A stronger guarantee than lock-free", "An algorithm that doesn't wait", "All of the above"],
@@ -2432,7 +2432,7 @@
   {
     "id": "py-advance-071",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a class-level descriptor?",
     "options": ["A descriptor defined on a class", "A descriptor that works on class attributes", "A descriptor for class variables", "All of the above"],
@@ -2441,7 +2441,7 @@
   {
     "id": "py-advance-072",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and parallel execution?",
     "options": ["Async is about concurrency, parallel about simultaneity", "Async can be single-threaded, parallel is multi-threaded", "They are orthogonal concepts", "All of the above"],
@@ -2450,7 +2450,7 @@
   {
     "id": "py-advance-073",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __annotations__?",
     "options": ["To access type annotations", "To inspect function signatures", "To get variable types", "All of the above"],
@@ -2459,7 +2459,7 @@
   {
     "id": "py-advance-074",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a memory barrier?",
     "options": ["A instruction that enforces ordering of memory operations", "A way to ensure memory consistency", "A low-level synchronization primitive", "All of the above"],
@@ -2468,7 +2468,7 @@
   {
     "id": "py-advance-075",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a instance-level descriptor?",
     "options": ["A descriptor defined on an instance", "A descriptor that works on instance attributes", "A descriptor for instance variables", "All of the above"],
@@ -2477,7 +2477,7 @@
   {
     "id": "py-advance-076",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and multithreading?",
     "options": ["Async is single-threaded, multithreading is multi-threaded", "Async uses cooperative multitasking, multithreading uses preemptive", "Async avoids GIL limitations for I/O", "All of the above"],
@@ -2486,7 +2486,7 @@
   {
     "id": "py-advance-077",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __module__?",
     "options": ["To get the module name of a class or function", "To inspect the module", "To find where something is defined", "All of the above"],
@@ -2495,7 +2495,7 @@
   {
     "id": "py-advance-078",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a atomic operation?",
     "options": ["An operation that appears indivisible", "An operation that cannot be interrupted", "An operation that is thread-safe", "All of the above"],
@@ -2504,7 +2504,7 @@
   {
     "id": "py-advance-079",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a read-only descriptor?",
     "options": ["A descriptor that only defines __get__", "A non-data descriptor", "A descriptor that doesn't allow setting", "All of the above"],
@@ -2513,7 +2513,7 @@
   {
     "id": "py-advance-080",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and synchronous I/O?",
     "options": ["Async doesn't block, synchronous does", "Async can handle more connections", "Async is more scalable for I/O", "All of the above"],
@@ -2522,7 +2522,7 @@
   {
     "id": "py-advance-081",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __doc__?",
     "options": ["To access the docstring", "To get documentation", "To inspect help text", "All of the above"],
@@ -2531,7 +2531,7 @@
   {
     "id": "py-advance-082",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a condition variable?",
     "options": ["A synchronization primitive", "A way to wait for a condition", "A mechanism for thread communication", "All of the above"],
@@ -2540,7 +2540,7 @@
   {
     "id": "py-advance-083",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a write-only descriptor?",
     "options": ["A descriptor that only defines __set__", "A descriptor that doesn't allow reading", "A data descriptor without __get__", "All of the above"],
@@ -2549,7 +2549,7 @@
   {
     "id": "py-advance-084",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and synchronous programming?",
     "options": ["Async is non-blocking, synchronous is blocking", "Async uses callbacks or await, synchronous doesn't", "Async is for I/O-bound, synchronous for CPU-bound", "All of the above"],
@@ -2558,7 +2558,7 @@
   {
     "id": "py-advance-085",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __name__?",
     "options": ["To get the name of a function or class", "To inspect the name", "To get the identifier", "All of the above"],
@@ -2567,7 +2567,7 @@
   {
     "id": "py-advance-086",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a read-write lock?",
     "options": ["A lock that allows multiple readers or single writer", "A synchronization primitive", "A way to optimize read-heavy workloads", "All of the above"],
@@ -2576,7 +2576,7 @@
   {
     "id": "py-advance-087",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a bidirectional descriptor?",
     "options": ["A descriptor that works for both getting and setting", "A data descriptor", "A descriptor with both __get__ and __set__", "All of the above"],
@@ -2585,7 +2585,7 @@
   {
     "id": "py-advance-088",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and event loop programming?",
     "options": ["Async uses an event loop", "They are closely related", "Event loop is the mechanism, async is the syntax", "All of the above"],
@@ -2594,7 +2594,7 @@
   {
     "id": "py-advance-089",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __package__?",
     "options": ["To get the package name of a module", "To inspect the package", "To find the package", "All of the above"],
@@ -2603,7 +2603,7 @@
   {
     "id": "py-advance-090",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a thread pool executor?",
     "options": ["A way to manage thread pools", "A high-level interface for threading", "A concurrent.futures class", "All of the above"],
@@ -2612,7 +2612,7 @@
   {
     "id": "py-advance-091",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a default descriptor?",
     "options": ["A descriptor that provides default values", "A descriptor for default attributes", "A way to handle missing attributes", "All of the above"],
@@ -2621,7 +2621,7 @@
   {
     "id": "py-advance-092",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and promise-based programming?",
     "options": ["Async/await is syntax for promises", "They are similar concepts", "Promises are for JavaScript, async for Python", "All of the above"],
@@ -2630,7 +2630,7 @@
   {
     "id": "py-advance-093",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __builtins__?",
     "options": ["To access built-in functions and types", "To inspect built-in names", "To get the built-in module", "All of the above"],
@@ -2639,7 +2639,7 @@
   {
     "id": "py-advance-094",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a process pool executor?",
     "options": ["A way to manage process pools", "A high-level interface for multiprocessing", "A concurrent.futures class", "All of the above"],
@@ -2648,7 +2648,7 @@
   {
     "id": "py-advance-095",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a transforming descriptor?",
     "options": ["A descriptor that transforms values", "A descriptor that modifies attribute access", "A way to customize behavior", "All of the above"],
@@ -2657,7 +2657,7 @@
   {
     "id": "py-advance-096",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and callback hell?",
     "options": ["Async/await avoids callback hell", "Callback hell is nested callbacks, async is flat", "Async is more readable", "All of the above"],
@@ -2666,7 +2666,7 @@
   {
     "id": "py-advance-097",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Metaprogramming",
     "question": "What is the purpose of __spec__?",
     "options": ["To get the import spec of a module", "To inspect module specifications", "To get module details", "All of the above"],
@@ -2675,7 +2675,7 @@
   {
     "id": "py-advance-098",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Concurrency",
     "question": "What is a future in concurrent programming?",
     "options": ["An object that represents a result that may not be available yet", "A placeholder for a result", "A way to handle async results", "All of the above"],
@@ -2684,7 +2684,7 @@
   {
     "id": "py-advance-099",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Descriptors",
     "question": "What is a logging descriptor?",
     "options": ["A descriptor that logs attribute access", "A way to track attribute usage", "A descriptor for debugging", "All of the above"],
@@ -2693,13 +2693,14 @@
   {
     "id": "py-advance-100",
     "subject": "python",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Async/Await",
     "question": "What is the difference between async and traditional threading?",
     "options": ["Async is more lightweight", "Async uses fewer resources", "Async is better for I/O-bound tasks", "All of the above"],
     "answerIndex": 3
   },
-  
+
+
 
 
 
@@ -5951,6 +5952,2710 @@
 
 
 
+  {
+    "id": "js-basic-001",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "Which keyword is used to declare a variable that cannot be reassigned?",
+    "options": ["var", "let", "const", "static"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-002",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What is the result of `typeof null` in JavaScript?",
+    "options": ["null", "undefined", "object", "string"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-003",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the output of `console.log('5' + 3)`?",
+    "options": ["8", "53", "NaN", "Error"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-004",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "Which syntax is used to define an arrow function?",
+    "options": ["function() => {}", "() => {}", "=> function() {}", "() -> {}"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-005",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "Which method adds one or more elements to the end of an array?",
+    "options": ["pop()", "shift()", "push()", "unshift()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-006",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "Which statement is used to execute a block of code if a condition is true?",
+    "options": ["for", "while", "if", "switch"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-007",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "Which loop iterates over the properties of an object?",
+    "options": ["for...in", "for...of", "while", "do...while"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-008",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "How do you find the number of characters in a string?",
+    "options": ["string.size", "string.length", "string.count()", "string.len"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-009",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What does the `===` operator check?",
+    "options": ["Value equality only", "Type equality only", "Value and type equality", "Reference equality"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-010",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "DOM",
+    "question": "Which method is used to select an element by its ID?",
+    "options": ["querySelector()", "getElementsByClassName()", "getElementById()", "getElement()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-011",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which of these is NOT a primitive data type in JavaScript?",
+    "options": ["string", "number", "boolean", "object"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-012",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "Which method removes the last element from an array?",
+    "options": ["shift()", "removeLast()", "pop()", "splice()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-013",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "How do you call a function named `myFunction`?",
+    "options": ["call myFunction;", "myFunction;", "myFunction()", "call function myFunction()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-014",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Objects",
+    "question": "How do you access the property `name` of an object `person`?",
+    "options": ["person->name", "person('name')", "person['name']", "person.getName()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-015",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What does the `||` operator represent?",
+    "options": ["Logical AND", "Logical OR", "Bitwise OR", "Logical NOT"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-016",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method converts a string to lowercase?",
+    "options": ["toLowerCase()", "toLower()", "lowerCase()", "convertToLower()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-017",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Events",
+    "question": "Which event is triggered when a user clicks an HTML element?",
+    "options": ["onmouseover", "onchange", "onclick", "onkeypress"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-018",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "What is the value of a variable that has been declared but not assigned a value?",
+    "options": ["null", "0", "undefined", "false"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-019",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "What is the correct syntax for an else-if statement?",
+    "options": ["elseif", "else if", "elif", "else-if"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-020",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "What is the index of the first element in an array?",
+    "options": ["0", "1", "-1", "first"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-021",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What does `typeof [1, 2, 3]` return?",
+    "options": ["array", "list", "object", "undefined"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-022",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "Which loop is guaranteed to execute at least once?",
+    "options": ["for", "while", "do...while", "for...of"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-023",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is a value passed to a function when it is called?",
+    "options": ["Parameter", "Argument", "Variable", "Constant"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-024",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What does the `++` operator do?",
+    "options": ["Decrements by 1", "Increments by 1", "Adds 2", "Doubles the value"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-025",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "How do you create a template literal (template string)?",
+    "options": ["With single quotes ('')", "With double quotes (\"\")", "With backticks (``)", "With brackets ([])"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-026",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "DOM",
+    "question": "How do you change the content of an HTML element with id `demo`?",
+    "options": ["document.getElementById('demo').content = 'New';", "document.getElementById('demo').innerHTML = 'New';", "document.getElementById('demo').text = 'New';", "document.getElementById('demo').value = 'New';"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-027",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Booleans",
+    "question": "Which of the following is NOT a falsy value?",
+    "options": ["0", "''", "null", "'false'"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-028",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "Which method joins all elements of an array into a string?",
+    "options": ["concat()", "join()", "toString()", "combine()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-029",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Objects",
+    "question": "How do you create a new, empty object?",
+    "options": ["let obj = [];", "let obj = {};", "let obj = new Object;", "Both 2 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-030",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the result of `10 % 3`?",
+    "options": ["3", "1", "0", "3.33"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-031",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "A function defined inside another function is called a:",
+    "options": ["Sub function", "Inner function", "Nested function", "Both 2 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-032",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "What is the scope of a variable declared with `var`?",
+    "options": ["Block scope", "Function scope", "Global scope", "Both 2 and 3 if declared outside a function"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-033",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What does the `isNaN()` function do?",
+    "options": ["Checks if a value is a number", "Checks if a value is Not-a-Number", "Converts a value to a number", "Checks if a value is null"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-034",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "What is the ternary operator syntax?",
+    "options": ["condition ? if_true : if_false", "condition : if_true ? if_false", "if_true ? condition : if_false", "condition then if_true else if_false"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-035",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "Which method adds elements to the beginning of an array?",
+    "options": ["push()", "prepend()", "unshift()", "insertFirst()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-036",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "Which statement is used to exit from a loop?",
+    "options": ["exit", "continue", "break", "return"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-037",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method extracts a part of a string and returns a new string?",
+    "options": ["slice()", "substring()", "substr()", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-038",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "DOM",
+    "question": "How can you add a CSS class to an HTML element using JavaScript?",
+    "options": ["element.addClass('myClass')", "element.style.class = 'myClass'", "element.classList.add('myClass')", "element.className = 'myClass'"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-039",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is a callback function?",
+    "options": ["A function that calls another function.", "A function passed as an argument to another function.", "A function that is called when an event occurs.", "A function that calls itself."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-040",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the output of `2 == '2'`?",
+    "options": ["true", "false", "TypeError", "undefined"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-041",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Objects",
+    "question": "How do you delete a property from an object?",
+    "options": ["object.remove('prop')", "delete object.prop", "object.prop.delete()", "remove object.prop"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-042",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "The `undefined` value is a...",
+    "options": ["Primitive type", "Object type", "Function type", "Error type"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-043",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "How do you check if a variable is an array?",
+    "options": ["typeof myVar === 'array'", "myVar.isArray()", "Array.isArray(myVar)", "myVar instanceof 'array'"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-044",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "Which loop is ideal for iterating over the elements of an array?",
+    "options": ["while", "do...while", "for...of", "for...in"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-045",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method can be used to find the index of the first occurrence of a specified value in a string?",
+    "options": ["indexOf()", "search()", "find()", "locate()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-046",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Math",
+    "question": "Which `Math` method returns the largest of zero or more numbers?",
+    "options": ["Math.ceil()", "Math.max()", "Math.round()", "Math.abs()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-047",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Events",
+    "question": "What is the correct way to add an event listener?",
+    "options": ["element.addEventListener('click', myFunction)", "element.attachEvent('click', myFunction)", "element.onclick = myFunction", "All of the above are valid in some contexts"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-048",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "Which keyword, introduced in ES6, is used to declare block-scoped variables?",
+    "options": ["var", "let", "const", "Both 2 and 3"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-049",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is an IIFE?",
+    "options": ["Internal Invoked Function Expression", "Immediately Invoked Function Expression", "Instantly Invoked Function Example", "Internal Inline Function Expression"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-050",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What does the `&&` operator represent?",
+    "options": ["Logical OR", "Logical AND", "Bitwise AND", "Logical XOR"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-051",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What is the data type for `true` or `false` values?",
+    "options": ["string", "number", "boolean", "null"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-052",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "Which method creates a new array with the results of calling a provided function on every element?",
+    "options": ["forEach()", "filter()", "map()", "reduce()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-053",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Objects",
+    "question": "Which method returns an array of an object's own enumerable property names?",
+    "options": ["Object.get()", "Object.keys()", "Object.values()", "Object.properties()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-054",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "How can you get a character at a specific index in a string?",
+    "options": ["string.charAt(index)", "string[index]", "string.at(index)", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-055",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "DOM",
+    "question": "How do you create a new HTML element in JavaScript?",
+    "options": ["document.newElement('p')", "document.createElement('p')", "document.create('p')", "new Element('p')"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-056",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Booleans",
+    "question": "What is the result of `Boolean('')`?",
+    "options": ["true", "false", "undefined", "null"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-057",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "The `arguments` object in a function is...",
+    "options": ["A true Array", "An Array-like object", "A String", "A DOM element"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-058",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "Which statement is used for multi-way branching?",
+    "options": ["if", "if-else", "for", "switch"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-059",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "Which method removes the first element from an array?",
+    "options": ["pop()", "shift()", "slice()", "removeFirst()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-060",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What does the `!` operator do?",
+    "options": ["Assignment", "Addition", "Logical NOT", "Comparison"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-061",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which value represents the intentional absence of any object value?",
+    "options": ["undefined", "NaN", "null", "''"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-062",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Objects",
+    "question": "What is a method in an object?",
+    "options": ["A property that is a function", "A property that is a number", "A property that is an array", "A special type of object"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-063",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "How do you comment out multiple lines in JavaScript?",
+    "options": ["// Comment", "/* Comment */", "<!-- Comment -->", "# Comment"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-064",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Math",
+    "question": "Which function rounds a number to the nearest integer?",
+    "options": ["Math.floor()", "Math.ceil()", "Math.round()", "Math.random()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-065",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "Is JavaScript a case-sensitive language?",
+    "options": ["Yes", "No", "Only for variable names", "Only for function names"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-066",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "Which method can add/remove items from an array?",
+    "options": ["push()", "pop()", "slice()", "splice()"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-067",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "DOM",
+    "question": "What does DOM stand for?",
+    "options": ["Document Object Model", "Data Object Model", "Display Object Management", "Digital Ordinance Model"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-068",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What do we call the variables in the definition of a function?",
+    "options": ["Arguments", "Parameters", "Variables", "Types"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-069",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the result of `5 - '2'`?",
+    "options": ["3", "52", "NaN", "Error"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-070",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "Which of these is a complex (non-primitive) data type?",
+    "options": ["number", "bigint", "symbol", "function"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-071",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Objects",
+    "question": "How do you check if a property exists in an object?",
+    "options": ["'prop' in object", "object.hasOwnProperty('prop')", "object.prop !== undefined", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-072",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "What is the purpose of the `continue` statement?",
+    "options": ["To exit the loop.", "To skip the rest of the current iteration and move to the next.", "To continue the script execution after the loop.", "To pause the loop."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-073",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "Which method removes whitespace from both ends of a string?",
+    "options": ["strip()", "trim()", "clean()", "cut()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-074",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "Which method tests whether at least one element in the array passes the test implemented by the provided function?",
+    "options": ["every()", "includes()", "some()", "find()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-075",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Events",
+    "question": "Which event fires when an HTML form is submitted?",
+    "options": ["onclick", "onformchange", "onsubmit", "oninput"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-076",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Math",
+    "question": "How do you get a random number between 0 (inclusive) and 1 (exclusive)?",
+    "options": ["Math.random()", "Math.rand()", "Math.rnd()", "random()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-077",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "DOM",
+    "question": "Which property can be used to get or set the text content of a node?",
+    "options": ["text", "innerHTML", "nodeValue", "textContent"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-078",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "A function that is a property of an object is called a...",
+    "options": ["Method", "Variable", "Callback", "Class"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-079",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the assignment operator?",
+    "options": ["==", "===", ":=", "="],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-080",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "Which of the following is the correct way to declare a variable?",
+    "options": ["variable carName;", "var carName;", "v carName;", "string carName;"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-081",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What is the result of `parseInt('10.5em')`?",
+    "options": ["10.5", "10", "NaN", "Error"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-082",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "How do you find the number of elements in an array `myArray`?",
+    "options": ["myArray.count", "myArray.size", "myArray.length", "count(myArray)"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-083",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Objects",
+    "question": "What is `JSON.stringify()` used for?",
+    "options": ["To parse a JSON string.", "To convert a JavaScript object to a JSON string.", "To check if a string is valid JSON.", "To create a string from an object."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-084",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Booleans",
+    "question": "What is the result of `Boolean(10)`?",
+    "options": ["true", "false", "10", "Error"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-085",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "How does a `while` loop start?",
+    "options": ["while (i <= 10; i++)", "while i = 1 to 10", "while (i <= 10)", "while (i from 1 to 10)"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-086",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "What is the operator for concatenation?",
+    "options": ["&", "+", "*", "."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-087",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "DOM",
+    "question": "Which object represents the current web page in the browser?",
+    "options": ["window", "document", "page", "browser"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-088",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What is the result of `2 != '2'`?",
+    "options": ["true", "false", "TypeError", "SyntaxError"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-089",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Functions",
+    "question": "What is a function that calls itself called?",
+    "options": ["Recursive function", "Callback function", "Anonymous function", "Arrow function"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-090",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "Which method reverses the order of the elements in an array?",
+    "options": ["sort()", "reverse()", "reorder()", "flip()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-091",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Data Types",
+    "question": "What is the result of `typeof NaN`?",
+    "options": ["'NaN'", "'undefined'", "'number'", "'object'"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-092",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Math",
+    "question": "Which function is used to round a number DOWN to the nearest integer?",
+    "options": ["Math.round()", "Math.floor()", "Math.ceil()", "Math.trunc()"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-093",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Conditionals",
+    "question": "Which value is not considered falsy?",
+    "options": ["0", "undefined", "''", "[]"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-basic-094",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Objects",
+    "question": "What is `JSON.parse()` used for?",
+    "options": ["To parse a JavaScript object.", "To convert a JSON string to a JavaScript object.", "To check if a string is valid JSON.", "To create a JSON string from an object."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-095",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Loops",
+    "question": "What is the most common way to write a 'for' loop?",
+    "options": ["for (let i = 0; i < 5; i++)", "for (i <= 5; i++)", "for i in 1..5", "for (i = 0; i < 5)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-basic-096",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Variables",
+    "question": "The action of a variable or function being usable before it is declared is called:",
+    "options": ["Scoping", "Hoisting", "Lifting", "Bubbling"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-097",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Strings",
+    "question": "How do you embed a variable `name` inside a template literal?",
+    "options": ["`Hello, +name+`", "`Hello, {name}`", "`Hello, ${name}`", "`Hello, %name%`"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-098",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "Which method checks if an array contains a certain value?",
+    "options": ["contains()", "has()", "includes()", "find()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-basic-099",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "DOM",
+    "question": "Which of these selects all `<p>` elements?",
+    "options": ["document.querySelector('p')", "document.querySelectorAll('p')", "document.getElementByTagName('p')", "document.getElementsByTagName('p')"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-basic-100",
+    "subject": "javascript",
+    "difficulty": "basic",
+    "topic": "Operators",
+    "question": "What does the `**` operator do?",
+    "options": ["Multiplication", "Exponentiation", "Bitwise AND", "Concatenation"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-001",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Closures",
+    "question": "What is a closure?",
+    "options": ["A function that has access to its outer function's scope, even after the outer function has returned.", "A way to close a browser window using code.", "A syntax for creating private variables.", "A type of memory leak."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-002",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "this",
+    "question": "What does the `this` keyword refer to in a regular function call (non-method)?",
+    "options": ["The function itself", "The global object (window in browsers) in non-strict mode", "null", "The parent object"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-003",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "How do objects in JavaScript inherit properties from other objects?",
+    "options": ["Through classes and the `extends` keyword.", "Through the prototype chain.", "By copying properties during instantiation.", "They do not inherit properties."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-004",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What is object destructuring?",
+    "options": ["A way to destroy objects to free up memory.", "A syntax for unpacking properties from an object into distinct variables.", "A method for combining multiple objects.", "A way to loop through an object's properties."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-005",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "What is a Promise in JavaScript?",
+    "options": ["An object representing the eventual completion or failure of an asynchronous operation.", "A guarantee that a function will not throw an error.", "A syntax for writing asynchronous code without callbacks.", "A special type of function."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-006",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Higher-Order Functions",
+    "question": "The `Array.prototype.map()` method returns:",
+    "options": ["The original array, modified.", "A new array with the results of calling a function for every array element.", "A single value calculated from the array.", "A boolean value."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-007",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Events",
+    "question": "What is event bubbling?",
+    "options": ["The event is first captured and handled by the innermost element and then propagated to outer elements.", "The event is handled by all elements at the same time.", "A bug where events fire multiple times.", "The event is only handled by the outermost element."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-008",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "this",
+    "question": "How does an arrow function handle the `this` keyword?",
+    "options": ["It has its own `this` context.", "It lexically binds `this` from the surrounding code.", "`this` is always the global object.", "`this` is always undefined."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-009",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What is the difference between the spread operator (`...`) and the rest parameter (`...`)?",
+    "options": ["There is no difference.", "Spread expands an iterable, while rest collects multiple arguments into an array.", "Rest expands an iterable, while spread collects arguments.", "Spread is for arrays, rest is for objects."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-010",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "What is the purpose of `async/await`?",
+    "options": ["To create asynchronous functions that return Promises.", "To make asynchronous code look and behave more like synchronous code.", "To replace Promises.", "To handle all types of errors automatically."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-011",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "What is `Object.create(null)` used for?",
+    "options": ["To create an object with a `null` value.", "To create an object that does not inherit from `Object.prototype`.", "To create an empty object, equivalent to `{}`.", "To create a null reference."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-012",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Higher-Order Functions",
+    "question": "The `Array.prototype.filter()` method returns:",
+    "options": ["A new array with all elements that pass the test implemented by the provided function.", "A new array with elements that do not pass the test.", "The original array with some elements removed.", "The first element that passes the test."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-013",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Closures",
+    "question": "Which of these is a common use case for closures?",
+    "options": ["Creating loops.", "Data privacy / emulating private methods.", "Basic arithmetic operations.", "Styling HTML elements."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-014",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Events",
+    "question": "What is event delegation?",
+    "options": ["Attaching a single event listener to a parent element to manage events for its children.", "Delegating an event to another function.", "Preventing an event from bubbling.", "A way to create custom events."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-015",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "this",
+    "question": "How can you explicitly set the value of `this` for a function?",
+    "options": ["Using the `this()` method.", "Using `call()`, `apply()`, or `bind()`.", "By assigning a value to the `this` keyword.", "It cannot be set explicitly."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-016",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What is a `Map` in ES6?",
+    "options": ["An array with key-value pairs.", "A collection of key-value pairs where keys can be of any type.", "A replacement for objects.", "A visual map component."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-017",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "What does `Promise.all()` do?",
+    "options": ["Returns a single Promise that resolves when all of the promises in the iterable argument have resolved.", "Returns the first promise that resolves.", "Runs all promises in parallel without waiting for them.", "Chains promises one after another."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-018",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Higher-Order Functions",
+    "question": "The `Array.prototype.reduce()` method is used to:",
+    "options": ["Reduce the number of elements in an array.", "Execute a reducer function on each element of the array, resulting in a single output value.", "Filter out unwanted elements.", "Create a new array with transformed elements."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-019",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "What is the difference between `__proto__` and `prototype`?",
+    "options": ["They are the same.", "`__proto__` is a property of an object instance, `prototype` is a property of a constructor function.", "`prototype` is a property of an object instance, `__proto__` is a property of a constructor function.", "`__proto__` is the modern syntax for `prototype`."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-020",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Strict Mode",
+    "question": "What is the purpose of 'use strict'?",
+    "options": ["To make the code run faster.", "To enforce stricter parsing and error handling in your code.", "To enable modern ES6 features.", "To disable all JavaScript warnings."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-021",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What is a `Set` in ES6?",
+    "options": ["A collection of unique values.", "A sorted collection of values.", "A collection of key-value pairs.", "A type of array."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-022",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "What is 'callback hell'?",
+    "options": ["An error that occurs inside a callback function.", "Multiple nested callbacks, which makes code hard to read and maintain.", "A situation where a callback is never called.", "A built-in JavaScript error type."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-023",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "this",
+    "question": "What is the purpose of the `bind()` method?",
+    "options": ["To immediately call a function with a specific `this` context.", "To create a new function that, when called, has its `this` keyword set to a provided value.", "To attach an event listener to an element.", "To bind two variables together."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-024",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Events",
+    "question": "What is the difference between `event.preventDefault()` and `event.stopPropagation()`?",
+    "options": ["They do the same thing.", "`preventDefault` stops the default browser action, `stopPropagation` stops the event from bubbling up.", "`stopPropagation` stops the default action, `preventDefault` stops bubbling.", "They are used for different types of events."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-025",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is the difference between `import` and `require`?",
+    "options": ["`import` is part of the ES6 standard, `require` is from CommonJS (Node.js).", "`import` can be used conditionally, `require` cannot.", "`require` is for CSS, `import` is for JS.", "There is no difference."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-026",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "How can you check if an object has a property on its own (not inherited)?",
+    "options": ["Using the `in` operator.", "Using `object.hasOwnProperty('prop')`.", "By checking if `object.prop` is not undefined.", "It is not possible to check."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-027",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Higher-Order Functions",
+    "question": "What is a higher-order function?",
+    "options": ["A function that operates on other functions, either by taking them as arguments or by returning them.", "A function that is highly optimized.", "A function that can only be called once.", "A function declared at the top level of a script."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-028",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What are default parameters?",
+    "options": ["Parameters that are always required.", "Parameters that have a default value if no argument is passed.", "The standard set of parameters for all functions.", "A way to set global default values."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-029",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "What is the role of the `finally` block in a Promise chain or `try...catch`?",
+    "options": ["To handle successful resolution.", "To handle errors.", "To execute code after the promise is settled (either resolved or rejected).", "To mark the final promise in a chain."],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-inter-030",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Type Coercion",
+    "question": "What is type coercion in JavaScript?",
+    "options": ["The process of converting a value from one type to another automatically.", "A type of syntax error.", "A way to enforce strict typing.", "A method for checking the type of a variable."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-031",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Closures",
+    "question": "What will be logged to the console in this classic loop problem? `for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 10); }`",
+    "options": ["0, 1, 2", "3, 3, 3", "0, 0, 0", "1, 2, 3"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-032",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "this",
+    "question": "What is the difference between `call()` and `apply()`?",
+    "options": ["`call()` takes arguments separately, `apply()` takes them as an array.", "`apply()` takes arguments separately, `call()` takes them as an array.", "There is no difference.", "`call()` returns a new function, `apply()` does not."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-033",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "The `instanceof` operator checks if an object is an instance of a particular...",
+    "options": ["Object literal.", "Function.", "Constructor function in its prototype chain.", "Primitive type."],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-inter-034",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What is a `WeakMap`?",
+    "options": ["A map that can only store weak references to its keys, allowing for garbage collection.", "A map that is not very secure.", "A map that is slow.", "A map that can only hold a small number of items."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-035",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "What is the state of a promise when it is first created?",
+    "options": ["resolved", "rejected", "pending", "fulfilled"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-inter-036",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Higher-Order Functions",
+    "question": "What is currying?",
+    "options": ["A way to flavor functions.", "The process of transforming a function that takes multiple arguments into a sequence of functions that each take a single argument.", "A method for combining multiple functions into one.", "A technique for debugging functions."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-037",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Events",
+    "question": "What is event capturing?",
+    "options": ["The opposite of bubbling; the event is handled from the outermost element inward.", "Capturing an event and storing it for later.", "A security feature to capture malicious events.", "A way to stop an event from propagating."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-038",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What is a Generator function?",
+    "options": ["A function that generates random numbers.", "A function that can be paused and resumed, using the `yield` keyword.", "A function that automatically generates other functions.", "A constructor for the `Generator` object."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-039",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is the main advantage of using modules?",
+    "options": ["To make your code run faster.", "To organize code into reusable, encapsulated pieces and avoid polluting the global namespace.", "To make your script files smaller.", "To automatically handle all dependencies."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-040",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Type Coercion",
+    "question": "What is the result of `[] + []`?",
+    "options": ["[]", "0", "'' (empty string)", "undefined"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-inter-041",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "What does `Object.setPrototypeOf()` do?",
+    "options": ["Sets the prototype of a specified object to another object or null.", "Creates a new object with a specified prototype.", "Checks the prototype of an object.", "Deletes an object's prototype."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-042",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "this",
+    "question": "In an event handler like `element.addEventListener('click', myFunc)`, what is `this` inside `myFunc` (if it's a regular function)?",
+    "options": ["The global object", "The element that the event was fired on", "The event object", "undefined"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-043",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "What does `Promise.resolve(value)` do?",
+    "options": ["Returns a Promise object that is resolved with the given value.", "Waits for a value to be resolved.", "Throws an error.", "Checks if a value is a promise."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-044",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Higher-Order Functions",
+    "question": "Which of these is a higher-order function: `setTimeout`, `parseInt`, `Math.max`?",
+    "options": ["parseInt", "setTimeout", "Math.max", "None of them"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-045",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What is the difference between a `for...in` loop and a `for...of` loop?",
+    "options": ["`for...in` iterates over property names, `for...of` iterates over property values of an iterable.", "`for...of` is for objects, `for...in` is for arrays.", "They are the same.", "`for...in` is faster."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-046",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Closures",
+    "question": "How can a closure help in creating private variables?",
+    "options": ["By returning an object with methods that have access to the outer function's variables.", "By using the `private` keyword.", "Closures cannot create private variables.", "By storing variables in the global scope."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-047",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "Can you add properties and methods to `Array.prototype`?",
+    "options": ["No, the prototype is locked.", "Yes, and they will be available on all array instances.", "Yes, but only for newly created arrays.", "Only by modifying the browser's source code."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-048",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Hoisting",
+    "question": "What is hoisted in JavaScript for `var` declarations?",
+    "options": ["Both the declaration and the initialization.", "Only the declaration.", "Only the initialization.", "Nothing is hoisted."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-049",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What are `Symbol`s used for?",
+    "options": ["To create unique object properties, often to avoid name collisions.", "To store special characters.", "A new way to write strings.", "A replacement for numbers."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-050",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "What happens if you `await` a non-Promise value?",
+    "options": ["It throws an error.", "It converts the value into a resolved Promise and awaits that.", "It ignores the `await` keyword.", "The script will hang indefinitely."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-051",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Higher-Order Functions",
+    "question": "What is function composition?",
+    "options": ["The process of creating a new function by combining two or more existing functions.", "Writing a function's documentation.", "The structure of a function's code.", "A way to animate functions."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-052",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Type Coercion",
+    "question": "What is the result of `[] + {}`?",
+    "options": ["'[object Object]'", "0", "Error", "undefined"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-053",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "this",
+    "question": "In strict mode, what is `this` inside a regular function call?",
+    "options": ["The global object", "The function itself", "null", "undefined"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-inter-054",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "How do you create a class that inherits from another class in ES6?",
+    "options": ["Using `prototype`", "Using `Object.create()`", "Using the `extends` keyword", "It's not possible"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-inter-055",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "What is the role of the `constructor` property?",
+    "options": ["It returns a reference to the Object constructor function that created the instance object.", "It is the main method of an object.", "It is a private property of an object.", "It is a synonym for the `class` keyword."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-056",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "What is the purpose of the `catch` block in a Promise chain?",
+    "options": ["To handle any rejections that occur in the chain.", "To catch syntax errors.", "To execute code after the promise settles.", "To resolve the promise."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-057",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Hoisting",
+    "question": "Are `let` and `const` declarations hoisted?",
+    "options": ["No", "Yes, just like `var`", "Yes, but they are not initialized (Temporal Dead Zone)", "Only `let` is hoisted"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-inter-058",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Closures",
+    "question": "How can you fix the classic loop problem to log 0, 1, 2?",
+    "options": ["By using `let` instead of `var` in the for loop.", "By wrapping the `setTimeout` in an IIFE.", "By passing `i` as an argument to the callback.", "All of the above."],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-inter-059",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "How can you merge two objects into one?",
+    "options": ["Using `Object.assign()`", "Using the spread operator (`...`)", "Manually looping and copying properties", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-inter-060",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Higher-Order Functions",
+    "question": "What is a 'pure function'?",
+    "options": ["A function that only uses pure JavaScript.", "A function that has no side effects and returns the same output for the same input.", "A function with no parameters.", "A function that returns `undefined`."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-061",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Type Coercion",
+    "question": "What is the result of `1 < 2 < 3`?",
+    "options": ["true", "false", "SyntaxError", "1"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-062",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "Can you change the `__proto__` of an object after it's created?",
+    "options": ["Yes, but it is a slow operation and generally discouraged.", "No, it's a read-only property.", "Only in strict mode.", "Only for objects created with `Object.create()`."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-063",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "What is `Promise.race()`?",
+    "options": ["It returns a promise that resolves or rejects as soon as one of the promises in the iterable resolves or rejects.", "It races two functions to see which is faster.", "It resolves with an array of all results.", "It is an alias for `Promise.all()`."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-064",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "this",
+    "question": "What does `this` refer to inside an object method defined with an arrow function?",
+    "options": ["The object itself", "The global object (window)", "The lexical scope where the object was defined", "undefined"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-inter-065",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What does array destructuring allow you to do?",
+    "options": ["Destroy an array.", "Unpack values from an array into distinct variables.", "Filter an array.", "Create a new array."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-066",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is a default export?",
+    "options": ["A module can have one default export, which is the main value it exports.", "The first export in a file.", "An export that is available globally.", "A way to export all named exports at once."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-067",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Higher-Order Functions",
+    "question": "The `Array.prototype.forEach()` method returns:",
+    "options": ["A new array", "The original array", "The number of elements processed", "undefined"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-inter-068",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Hoisting",
+    "question": "What about function declarations and function expressions?",
+    "options": ["Both are fully hoisted.", "Only function declarations are fully hoisted (name and body).", "Only function expressions are hoisted.", "Neither are hoisted."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-069",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Type Coercion",
+    "question": "What is the result of `3 > 2 > 1`?",
+    "options": ["true", "false", "SyntaxError", "1"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-070",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What is the purpose of the `super()` call in a class constructor?",
+    "options": ["To call the constructor of the parent class.", "To create a super-powered instance.", "To access static methods of the parent.", "It is an optional call for code style."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-071",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "How do you handle errors in an `async` function?",
+    "options": ["Using `.catch()` on the function call.", "Using a `try...catch` block inside the async function.", "Both 1 and 2.", "Errors cannot be handled in async functions."],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-inter-072",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "How would you add a method `shout` to all strings?",
+    "options": ["String.prototype.shout = function() { ... }", "String.shout = function() { ... }", "You cannot add methods to built-in types.", "Create a new String class."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-073",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "this",
+    "question": "What is the primary difference in `this` binding between a regular function and an arrow function?",
+    "options": ["Regular functions have dynamic `this` binding; arrow functions have lexical `this` binding.", "Arrow functions have dynamic `this` binding; regular functions have lexical `this` binding.", "There is no difference.", "Regular functions cannot use `this`."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-074",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Closures",
+    "question": "Do closures store references to variables or the actual values?",
+    "options": ["The actual values at the time of creation.", "References to the variables from their lexical environment.", "A mix of both depending on the variable type.", "They do not store variables."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-075",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Higher-Order Functions",
+    "question": "The `Array.prototype.find()` method returns:",
+    "options": ["An array of all elements that satisfy the condition.", "The index of the first element that satisfies the condition.", "The value of the first element that satisfies the condition.", "A boolean indicating if an element was found."],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-inter-076",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What is a `WeakSet`?",
+    "options": ["A set that is not very strong.", "A collection of objects, where the objects are held weakly, allowing for garbage collection.", "A set that can only hold strings.", "An alias for the `Set` object."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-077",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Events",
+    "question": "What does `event.target` refer to?",
+    "options": ["The element where the event listener was attached.", "The element that triggered the event.", "The parent of the element that triggered the event.", "The event object itself."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-078",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "Can you `await` a value inside a regular function?",
+    "options": ["Yes, always.", "No, `await` is only valid inside `async` functions.", "Only if the function returns a Promise.", "Only in strict mode."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-079",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Type Coercion",
+    "question": "What is the result of `{} + []`?",
+    "options": ["'[object Object]'", "0", "An empty object", "An empty array"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-080",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "What is a named export?",
+    "options": ["The only export from a module.", "Exporting a variable or function with a specific name.", "Exporting the module's filename.", "A way to export an object."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-081",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "Does JavaScript have classical inheritance?",
+    "options": ["Yes, with the `class` keyword.", "No, it uses prototypal inheritance, and `class` is syntactic sugar.", "Only in older versions.", "Yes, it has both classical and prototypal inheritance."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-082",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "this",
+    "question": "When using the `new` keyword to create an instance, what is `this` inside the constructor?",
+    "options": ["The global object", "The function's prototype", "The newly created object instance", "undefined"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-inter-083",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What do `Set` objects store?",
+    "options": ["Key-value pairs", "Unique values of any type", "Only strings and numbers", "Arrays of values"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-084",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Higher-Order Functions",
+    "question": "The `Array.prototype.every()` method checks if...",
+    "options": ["At least one element passes a test.", "All elements in an array pass a test.", "The array has any elements.", "The array is equal to another array."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-085",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Hoisting",
+    "question": "What is the Temporal Dead Zone (TDZ)?",
+    "options": ["A bug in the V8 engine.", "The period between entering scope and a `let` or `const` variable's declaration where it cannot be accessed.", "A specific memory location for temporary variables.", "An old feature that has been removed."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-086",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "What is the difference between `setTimeout` and `Promise` for asynchronous operations?",
+    "options": ["Promises have better error handling and composability with `.then()` and `.catch()`.", "`setTimeout` is always faster.", "Promises are only for network requests.", "There is no major difference."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-087",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Closures",
+    "question": "When does a closure get created?",
+    "options": ["Every time a function is created.", "Only when a function is returned from another function.", "Only for arrow functions.", "When the script first loads."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-088",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Type Coercion",
+    "question": "What does the `+` operator do when one operand is a string and the other is a number?",
+    "options": ["It throws an error.", "It performs addition.", "It converts the number to a string and concatenates.", "It converts the string to a number and adds."],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-inter-089",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "How can you create an object without a prototype?",
+    "options": ["`new Object(null)`", "`Object.create(null)`", "`{}`", "It's not possible"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-090",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What is the `Symbol.iterator` used for?",
+    "options": ["To define the default iterator for an object, used by `for...of`.", "To create a new Symbol.", "To check if an object is iterable.", "A method for iterating over symbols."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-091",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "this",
+    "question": "What is the value of `this` in a constructor called without `new`?",
+    "options": ["A new object", "The global object (window) in non-strict mode", "undefined", "The constructor function itself"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-092",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "What is the event loop?",
+    "options": ["A JavaScript feature that allows it to perform non-blocking operations.", "It processes the message queue and executes tasks.", "It's what makes asynchronous programming possible in a single-threaded environment.", "All of the above."],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-inter-093",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Higher-Order Functions",
+    "question": "What is memoization?",
+    "options": ["A way to memorize the JavaScript syntax.", "An optimization technique that caches the results of expensive function calls.", "A method for creating memory-intensive functions.", "A type of data structure."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-094",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Type Coercion",
+    "question": "What is the result of `!!'hello'`?",
+    "options": ["true", "false", "SyntaxError", "'hello'"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-095",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Modules",
+    "question": "Are ES6 Modules synchronous or asynchronous?",
+    "options": ["Synchronous", "Asynchronous", "Both, depending on how they are loaded", "Neither"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-inter-096",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "ES6",
+    "question": "What is the difference between `let` and `const`?",
+    "options": ["`let` is function-scoped, `const` is block-scoped.", "`let` variables can be reassigned, `const` variables cannot.", "`const` variables can be reassigned, `let` cannot.", "There is no difference."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-097",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Prototypes",
+    "question": "What does `Object.assign()` do?",
+    "options": ["Assigns a new prototype to an object.", "Copies the values of all enumerable own properties from one or more source objects to a target object.", "Checks if two objects are the same.", "Creates a new class assignment."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-098",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Closures",
+    "question": "Are closures created for block-scoped variables declared with `let` and `const`?",
+    "options": ["Yes", "No", "Only for `let`", "Only for `const`"],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-inter-099",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "Async",
+    "question": "In the event loop, what is the difference between the task queue (or macrotask queue) and the microtask queue?",
+    "options": ["There is no difference.", "The microtask queue has higher priority and is processed after each task.", "The macrotask queue has higher priority.", "Microtasks are for small functions, macrotasks for large ones."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-inter-100",
+    "subject": "javascript",
+    "difficulty": "intermediate",
+    "topic": "this",
+    "question": "Which method creates a new function with a given `this` value, without executing it?",
+    "options": ["call()", "apply()", "bind()", "execute()"],
+    "answerIndex": 2
+  },
+  {
+    "id": "js-advance-001",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Event Loop",
+    "question": "In the event loop, what is processed first: the microtask queue or the macrotask queue?",
+    "options": ["The macrotask queue", "The microtask queue (all pending microtasks are processed after each macrotask)", "They are processed in alternating order", "It is random"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-advance-002",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Concurrency",
+    "question": "What is a Web Worker used for?",
+    "options": ["To run scripts in a background thread, separate from the main execution thread.", "To improve CSS animation performance.", "To handle all network requests.", "To manage the browser's cache."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-003",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Memory Management",
+    "question": "What is garbage collection in JavaScript?",
+    "options": ["A manual process of freeing memory.", "An automatic memory management process that reclaims memory occupied by objects that are no longer in use.", "A tool for cleaning up unused variables.", "A way to prevent memory leaks."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-advance-004",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Singleton pattern?",
+    "options": ["A pattern that restricts the instantiation of a class to a single object.", "A pattern for creating single-page applications.", "A pattern used for single-use functions.", "A way to ensure a variable is only assigned once."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-005",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is the Shadow DOM?",
+    "options": ["A hidden part of the regular DOM.", "A browser feature for encapsulating the structure and style of a component, keeping it separate from the main document's DOM.", "A virtual DOM used by frameworks.", "A tool for debugging the DOM."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-advance-006",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is Cross-Site Scripting (XSS)?",
+    "options": ["A type of attack where malicious scripts are injected into otherwise benign and trusted websites.", "A way to share scripts between different sites.", "A security feature of modern browsers.", "A technique for optimizing script loading."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-007",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What is 'tree shaking'?",
+    "options": ["An animation effect.", "A dead code elimination technique used by module bundlers like Webpack.", "A method for re-rendering a component tree.", "A way to debug nested objects."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-advance-008",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Concurrency",
+    "question": "Can Web Workers access the DOM?",
+    "options": ["Yes, they have full access.", "No, they run in a separate context and cannot directly access the DOM.", "Only for reading, not writing.", "Only with special permissions."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-advance-009",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Event Loop",
+    "question": "Which of these is a microtask: `setTimeout`, `Promise.then`, `requestAnimationFrame`?",
+    "options": ["setTimeout", "Promise.then", "requestAnimationFrame", "All of them"],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-advance-010",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Observer pattern?",
+    "options": ["A pattern in which an object (the subject) maintains a list of its dependents (observers) and notifies them automatically of any state changes.", "A way to observe user interactions.", "A built-in JavaScript method.", "A tool for performance monitoring."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-011",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What are Service Workers?",
+    "options": ["Scripts that run in the background, separate from a web page, enabling features like push notifications and offline access.", "Workers that provide customer service in a web app.", "A type of Web Worker with more permissions.", "A tool for managing web services."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-012",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Memory Management",
+    "question": "What is a common cause of memory leaks in JavaScript?",
+    "options": ["Using too many variables.", "Detached DOM elements that are still referenced in code.", "Using arrow functions.", "Declaring variables with `const`."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-advance-013",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is Cross-Site Request Forgery (CSRF)?",
+    "options": ["A way to request resources from another site.", "An attack that tricks a user into submitting a malicious request to a web application they are authenticated with.", "A policy that prevents cross-site requests.", "A method for secure data transfer."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-advance-014",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What is debouncing?",
+    "options": ["A technique to limit the rate at which a function gets called, grouping a burst of events into a single one.", "Removing bouncing animations.", "A way to fix bugs in code.", "A method for cleaning up event listeners."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-015",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is WebAssembly (Wasm)?",
+    "options": ["A new JavaScript framework.", "A binary instruction format that allows running code written in other languages on the web at near-native speed.", "An assembly language for the web.", "A tool for bundling JavaScript."],
+    "answerIndex": 1
+  },
+  {
+    "id": "js-advance-016",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Concurrency",
+    "question": "What is a `SharedArrayBuffer`?",
+    "options": ["An array that is shared between the main thread and Web Workers, allowing for fast data sharing.", "A way to share arrays between different browser tabs.", "A type of database.", "A feature that is no longer supported."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-017",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Event Loop",
+    "question": "What is the role of the call stack?",
+    "options": ["To store function calls in a LIFO (Last-In, First-Out) order.", "To queue up asynchronous tasks.", "To manage memory allocation.", "To store global variables."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-018",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Module pattern?",
+    "options": ["A pattern used to create modules with private and public members, often using closures.", "The use of ES6 `import`/`export` syntax.", "A way to organize code into multiple files.", "A pattern for creating Node.js modules."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-019",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is a Content Security Policy (CSP)?",
+    "options": ["A security standard that helps prevent XSS and other injection attacks by defining which resources a browser is allowed to load.", "A policy for managing website content.", "A JavaScript library for security.", "A type of firewall."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-020",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What is throttling?",
+    "options": ["A technique to guarantee that a function is called at most once in a specified time period.", "Slowing down the internet connection for testing.", "A way to handle CPU-intensive tasks.", "A browser performance issue."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-021",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What are Web Components?",
+    "options": ["A set of technologies (Custom Elements, Shadow DOM, HTML Templates) for creating reusable, encapsulated UI components.", "Components from a specific UI framework like React.", "A way to build websites without JavaScript.", "A new set of standard HTML tags."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-022",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Memory Management",
+    "question": "What is the Mark-and-Sweep algorithm?",
+    "options": ["A common garbage collection algorithm used in JavaScript engines.", "A way to mark variables for deletion.", "A tool for finding memory leaks.", "A sorting algorithm."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-023",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Concurrency",
+    "question": "What is the `Atomics` object used for?",
+    "options": ["To perform atomic operations on `SharedArrayBuffer` objects, ensuring predictable results in a multi-threaded context.", "To create atomic variables.", "A replacement for the `Math` object.", "A tool for nuclear simulations."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-024",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Event Loop",
+    "question": "What is the difference between `setImmediate` (in Node.js) and `setTimeout(..., 0)`?",
+    "options": ["`setImmediate` callbacks are placed in the check queue, which runs after the timer queue of `setTimeout(..., 0)` in an event loop cycle.", "There is no difference.", "`setTimeout(..., 0)` has higher priority.", "`setImmediate` is for immediate synchronous execution."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-025",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Factory pattern?",
+    "options": ["A creational pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.", "A pattern for building factories.", "A way to manage production lines in code.", "A structural design pattern."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-026",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is CORS (Cross-Origin Resource Sharing)?",
+    "options": ["A mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.", "A way to prevent all cross-origin requests.", "A type of XSS attack.", "A JavaScript library for making HTTP requests."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-027",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What is 'lazy loading'?",
+    "options": ["A strategy to defer loading of non-critical resources (like images or modules) until the moment of need.", "Code that is written lazily.", "A feature that makes websites load slower.", "A type of caching."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-028",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is the Intersection Observer API used for?",
+    "options": ["To efficiently detect when an element enters or exits the browser's viewport.", "To observe intersections in a geometric model.", "To detect collisions between DOM elements.", "To manage network traffic intersections."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-029",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Functional Programming",
+    "question": "What is function composition?",
+    "options": ["The process of combining two or more functions to produce a new function.", "Writing a function's documentation.", "The way a function is structured.", "A design pattern for classes."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-030",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "V8 Engine",
+    "question": "What is a hidden class in the V8 engine?",
+    "options": ["A mechanism used to optimize property access by grouping objects with the same structure.", "A class that is not visible in the source code.", "A security feature.", "A way to create private classes."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-031",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Proxy pattern?",
+    "options": ["A pattern that provides a surrogate or placeholder for another object to control access to it.", "A way to connect to a network proxy.", "A security pattern.", "A pattern for creating remote objects."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-032",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Memory Management",
+    "question": "What is a 'shallow copy' vs. a 'deep copy'?",
+    "options": ["A shallow copy shares references for nested objects, while a deep copy recursively copies all nested objects.", "A shallow copy is faster but less accurate.", "A deep copy duplicates the entire object and all its references.", "There is no difference in JavaScript."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-033",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "WebSockets",
+    "question": "What is the primary advantage of WebSockets over traditional HTTP?",
+    "options": ["They provide a persistent, full-duplex communication channel between a client and server.", "They are more secure.", "They can transfer larger files.", "They are easier to implement."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-034",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "How can you mitigate CSRF attacks?",
+    "options": ["By using anti-CSRF tokens (synchronizer token pattern).", "By checking the Referer header.", "By using the SameSite cookie attribute.", "All of the above."],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-advance-035",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What is 'memoization'?",
+    "options": ["An optimization technique that caches the results of expensive function calls and returns the cached result when the same inputs occur again.", "A way to manage application memory.", "A method for creating memos in code.", "A debugging technique."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-036",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Functional Programming",
+    "question": "What does it mean for a function to be 'idempotent'?",
+    "options": ["Calling it multiple times with the same input has the same effect as calling it once.", "It has no side effects.", "It always returns the same output for the same input.", "It is a function with a single parameter."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-037",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is the purpose of `requestAnimationFrame`?",
+    "options": ["To tell the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint.", "To create an animation frame by frame.", "To request a new browser window.", "To make an AJAX request."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-038",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "V8 Engine",
+    "question": "What is JIT (Just-In-Time) compilation?",
+    "options": ["A technique where code is compiled during runtime, just before it is executed, to improve performance.", "Compiling code ahead of time.", "A specific version of the JavaScript compiler.", "A way to debug code in real-time."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-039",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Decorator pattern?",
+    "options": ["A pattern that allows adding new functionality to an object dynamically without altering its structure.", "A way to decorate text with CSS.", "A pattern for creating UI components.", "A method for creating decorated objects."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-040",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Concurrency",
+    "question": "What is a 'race condition'?",
+    "options": ["A situation where the behavior of a system depends on the unpredictable sequence or timing of events, often leading to bugs.", "A competition between functions to execute first.", "A type of performance test.", "An error in the event loop."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-041",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is the purpose of the `HttpOnly` cookie flag?",
+    "options": ["To prevent client-side scripts from accessing the cookie, mitigating XSS attacks.", "To ensure the cookie is only sent over HTTP.", "To make the cookie read-only.", "To encrypt the cookie's value."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-042",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What are the Core Web Vitals?",
+    "options": ["A set of metrics related to speed, responsiveness, and visual stability (LCP, FID, CLS).", "The most essential parts of the HTML specification.", "A checklist for JavaScript best practices.", "A suite of performance testing tools."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-043",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is `IndexedDB`?",
+    "options": ["A low-level API for client-side storage of large amounts of structured data, including files/blobs.", "A way to index a database for faster queries.", "A new version of SQL for the browser.", "A library for managing data."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-044",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Functional Programming",
+    "question": "What are monads?",
+    "options": ["A design pattern used to handle computations in a structured way, often used for managing side effects or asynchronous operations.", "A type of mathematical function.", "A way to write code without variables.", "A feature of functional languages not present in JavaScript."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-045",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Facade pattern?",
+    "options": ["A pattern that provides a simplified interface to a complex subsystem.", "A way to design the front-end of an application.", "A pattern for creating visually appealing UIs.", "A method for hiding code complexity."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-046",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Event Loop",
+    "question": "What is `process.nextTick` in Node.js?",
+    "options": ["It defers the execution of a function until the next pass around the event loop, running before other I/O events.", "It is an alias for `setTimeout(..., 0)`.", "It stops the current process.", "It schedules a task in the macrotask queue."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-047",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "V8 Engine",
+    "question": "What is 'inline caching'?",
+    "options": ["An optimization technique that caches the results of property lookups to speed up subsequent accesses.", "Caching data directly in the source code.", "A way to cache function results.", "A type of CPU cache."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-048",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is the purpose of the `Proxy` object?",
+    "options": ["To create a wrapper around another object that can intercept and redefine fundamental operations.", "To connect to a network proxy server.", "To create a copy of an object.", "A tool for metaprogramming."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-049",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is the purpose of the `SameSite` cookie attribute?",
+    "options": ["To control whether a cookie is sent with cross-origin requests, helping to mitigate CSRF attacks.", "To ensure a cookie is only available on the exact same site.", "To share a cookie across multiple sites.", "A way to make cookies more secure."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-050",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What is 'virtual DOM'?",
+    "options": ["A programming concept where a virtual representation of the UI is kept in memory and synced with the 'real' DOM, optimizing updates.", "A 3D representation of the DOM.", "A DOM that does not actually exist.", "A browser feature for faster rendering."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-051",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Builder pattern?",
+    "options": ["A pattern that allows for the step-by-step creation of complex objects.", "A tool for building JavaScript projects.", "A pattern for constructing UI elements.", "A way to build classes dynamically."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-052",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Concurrency",
+    "question": "What is a 'mutex'?",
+    "options": ["A synchronization primitive that provides mutual exclusion, ensuring only one thread can access a resource at a time.", "A way to mute console logs.", "A type of variable.", "A tool for managing multiple threads."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-053",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is the `Reflect` object?",
+    "options": ["A built-in object that provides methods for interceptable JavaScript operations, often used with Proxies.", "An API for creating reflections in graphics.", "A tool for self-modifying code.", "A way to inspect an object's properties."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-054",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Memory Management",
+    "question": "What is a generational garbage collector?",
+    "options": ["A collector that divides the heap into generations (e.g., young and old) and applies different collection strategies based on the observation that most objects die young.", "A garbage collector from an older generation of browsers.", "A way to manage multiple generations of a family tree.", "A collector that runs periodically."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-055",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Functional Programming",
+    "question": "What is a 'functor' in the context of JavaScript?",
+    "options": ["An object that has a `map` method which, when called, applies a function to the object's contents and returns a new object of the same type.", "A funny type of function.", "A built-in object for functional programming.", "A way to create function factories."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-056",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is Subresource Integrity (SRI)?",
+    "options": ["A security feature that enables browsers to verify that fetched resources (e.g., from a CDN) are delivered without unexpected manipulation.", "A way to check the integrity of your own code.", "A policy for managing subresources.", "A tool for encrypting scripts."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-057",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "V8 Engine",
+    "question": "What is 'deoptimization' in the V8 engine?",
+    "options": ["A process where the engine falls back from optimized machine code to generic bytecode if an assumption made during optimization turns out to be wrong.", "Making the code intentionally slower.", "A bug in the optimizer.", "A way to disable all optimizations."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-058",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Command pattern?",
+    "options": ["A pattern that encapsulates a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.", "A way to execute shell commands.", "A pattern for creating command-line applications.", "A method for sending commands to a server."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-059",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What are 'render-blocking' resources?",
+    "options": ["Resources, like some scripts and stylesheets, that block the initial rendering of a page.", "Images that block rendering.", "Fonts that are slow to load.", "Server-side resources that are unavailable."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-060",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What does the `passive: true` option in an event listener do?",
+    "options": ["It indicates that the listener will not call `preventDefault()`, allowing the browser to optimize scrolling performance.", "It makes the listener inactive.", "It makes the event bubble passively.", "It is the default behavior for all listeners."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-061",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Functional Programming",
+    "question": "What is tail call optimization?",
+    "options": ["An optimization where you can make a recursive call without growing the call stack, preventing stack overflow errors.", "A way to optimize the tail end of a function.", "A feature that is widely supported in all JavaScript engines.", "A method for optimizing array tails."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-062",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Concurrency",
+    "question": "What is a 'data race'?",
+    "options": ["When two or more threads access the same memory location concurrently, and at least one of the accesses is a write.", "A race to see which thread can access data first.", "A type of race condition specific to databases.", "An error in data transmission."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-063",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is HTTP Strict Transport Security (HSTS)?",
+    "options": ["A web security policy mechanism which helps to protect websites against protocol downgrade attacks and cookie hijacking.", "A stricter version of the HTTP protocol.", "A way to enforce strict security on all requests.", "A JavaScript library for secure communication."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-064",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is the `ResizeObserver` API for?",
+    "options": ["For observing changes to the dimensions of an element's content or border box.", "To observe when the browser window is resized.", "A way to automatically resize images.", "A tool for creating responsive layouts."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-065",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Adapter pattern?",
+    "options": ["A pattern that allows the interface of an existing class to be used as another interface, acting as a bridge.", "A way to adapt your code for different browsers.", "A tool for connecting different hardware adapters.", "A UI design pattern."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-066",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What is `First Contentful Paint` (FCP)?",
+    "options": ["A performance metric that measures the time from when the page starts loading to when any part of the page's content is rendered on the screen.", "The time it takes to paint the first pixel.", "A way to paint content faster.", "A CSS property for controlling paint order."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-067",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Event Loop",
+    "question": "What is the difference between the call stack and the heap?",
+    "options": ["The call stack is for static memory allocation (function calls, primitive values), while the heap is for dynamic memory allocation (objects).", "The heap is for function calls, the call stack is for objects.", "They are two names for the same memory region.", "The call stack is managed by the OS, the heap by the JS engine."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-068",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "V8 Engine",
+    "question": "What is 'Smi' (Small Integer) optimization?",
+    "options": ["A V8 optimization where small integers are stored directly as tagged values, avoiding heap allocation.", "A way to make all integers smaller.", "A special data type for small numbers.", "A security feature."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-069",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is the `AbortController` API used for?",
+    "options": ["To provide a standard way to abort asynchronous tasks like `fetch` requests.", "To abort the execution of the entire script.", "To close a Web Worker.", "A way to handle user-initiated aborts."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-070",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Functional Programming",
+    "question": "What are 'side effects' in a function?",
+    "options": ["Any modification of state or observable interaction with the outside world that occurs during the execution of a function.", "Unexpected return values.", "Bugs that appear on the side of the screen.", "Performance issues caused by a function."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-071",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Revealing Module Pattern?",
+    "options": ["A variation of the Module Pattern that uses an IIFE to reveal only public members, keeping others private.", "A pattern for revealing hidden modules.", "A way to document modules.", "A UI pattern for revealing content."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-072",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is 'clickjacking'?",
+    "options": ["An attack that tricks a user into clicking on something different from what they perceive, often by overlaying a transparent iframe.", "Hijacking a user's click event.", "A tool for automating clicks.", "A type of malware."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-073",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What is a 'memory leak'?",
+    "options": ["A situation where memory is allocated but not freed, leading to a gradual loss of available memory.", "Leaking sensitive information from memory.", "A hardware fault.", "A security vulnerability."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-074",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "WebSockets",
+    "question": "How do WebSockets handle 'heartbeats'?",
+    "options": ["By periodically sending small packets (pings/pongs) to keep the connection alive and detect if it has been broken.", "By monitoring the user's heart rate.", "It is handled automatically by the TCP protocol.", "WebSockets do not require heartbeats."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-075",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is the `Beacon` API for?",
+    "options": ["For asynchronously sending small amounts of data from a browser to a web server without expecting a response, often for analytics.", "To create a flashing beacon effect.", "To signal other browser tabs.", "An API for GPS tracking."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-076",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "V8 Engine",
+    "question": "What is the difference between crankshaft and turbofan in v8?",
+    "options": ["Turbofan is a new optimizing compiler", "Crankshaft is the old optimizing compiler", "Turbofan is more efficient", "All of the above"],
+    "answerIndex": 3
+  },
+  {
+    "id": "js-advance-077",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Event Loop",
+    "question": "What is the purpose of `requestIdleCallback`?",
+    "options": ["To queue a function to be called during a browser's idle periods.", "To make the browser idle.", "A more performant version of `setTimeout`.", "To request a callback from the server."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-078",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Prototype pattern?",
+    "options": ["A creational pattern that uses a prototypical instance to create new objects by copying it.", "The pattern that governs JavaScript's inheritance model.", "A way to design prototypes for websites.", "A structural design pattern."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-079",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is a 'timing attack'?",
+    "options": ["An attack that exploits differences in the time it takes to process different inputs to infer secret information.", "An attack that is scheduled to occur at a specific time.", "A denial-of-service attack.", "A way to measure network latency."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-080",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What is 'Cumulative Layout Shift' (CLS)?",
+    "options": ["A Core Web Vital metric that measures the visual stability of a page by quantifying unexpected layout shifts.", "A way to shift the layout of a page with CSS.", "A JavaScript animation library.", "A browser rendering bug."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-081",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is the `Intl` object for?",
+    "options": ["To provide language-sensitive string comparison, number formatting, and date/time formatting (Internationalization).", "An API for international travel.", "A way to translate web pages.", "A tool for managing multiple languages in a project."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-082",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Functional Programming",
+    "question": "What is a 'higher-kinded type'?",
+    "options": ["A type that abstracts over another type, which is a concept from functional programming that is not natively supported in JavaScript.", "A more important data type.", "A type that is defined at a higher level in the code.", "An alias for the `Object` type."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-083",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Concurrency",
+    "question": "What is a 'green thread'?",
+    "options": ["A thread that is scheduled by a runtime library or virtual machine instead of the underlying operating system.", "A thread that is environmentally friendly.", "The main thread of an application.", "A thread that has not been started yet."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-084",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Mediator pattern?",
+    "options": ["A behavioral pattern that defines an object that encapsulates how a set of objects interact, promoting loose coupling.", "A pattern for mediating disputes between objects.", "A way to manage communication between different parts of an application.", "A structural design pattern."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-085",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is 'MIME sniffing'?",
+    "options": ["A browser practice of inspecting a resource's content to determine its MIME type, which can be a security risk if misinterpreted.", "A way to detect the user's browser type.", "A network monitoring tool.", "A technique for compressing files."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-086",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What is 'inlining critical CSS'?",
+    "options": ["Placing the CSS required for above-the-fold content directly in a `<style>` tag in the HTML head to speed up initial rendering.", "A tool for automatically inlining all styles.", "A way to make CSS load faster.", "A deprecated performance technique."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-087",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is the `BroadcastChannel` API?",
+    "options": ["An API for simple communication between different browser tabs, iframes, or workers of the same origin.", "A way to broadcast messages to all users on a website.", "A tool for live streaming.", "A replacement for WebSockets."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-088",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "V8 Engine",
+    "question": "What is the 'Orinoco' project in V8?",
+    "options": ["A project focused on improving V8's garbage collection to be more parallel, concurrent, and compacting.", "A new JavaScript compiler.", "A security sandbox for V8.", "A tool for debugging V8."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-089",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Functional Programming",
+    "question": "What is referential transparency?",
+    "options": ["A property of functions where a function call can be replaced by its return value without changing the program's behavior.", "The ability to see through a function to its implementation.", "A way to make code more transparent.", "A feature of pure functions."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-090",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Strategy pattern?",
+    "options": ["A behavioral pattern that enables selecting an algorithm at runtime by encapsulating each one in a separate class.", "A pattern for developing game strategies.", "A way to structure code for strategic planning.", "A creational design pattern."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-091",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is a 'prototype pollution' vulnerability?",
+    "options": ["An attack where an attacker manipulates `Object.prototype`, potentially leading to code execution or property injection across the application.", "Polluting the global namespace with prototypes.", "A bug in the prototype chain.", "Using too many prototypes in an application."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-092",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What is 'First Input Delay' (FID)?",
+    "options": ["A Core Web Vital metric that measures the time from when a user first interacts with a page to when the browser is able to respond.", "A delay before the first user input is registered.", "A way to measure network latency.", "A CSS animation delay property."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-093",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is the Web Authentication API (WebAuthn)?",
+    "options": ["An API for accessing public key credentials, enabling strong, passwordless authentication using biometrics or security keys.", "A way to authenticate web components.", "A replacement for OAuth.", "A tool for managing user sessions."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-094",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Event Loop",
+    "question": "Is DOM manipulation a macrotask or a microtask?",
+    "options": ["Neither, rendering is a separate step that typically runs after microtasks are done.", "A macrotask.", "A microtask.", "It can be both depending on the context."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-095",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Design Patterns",
+    "question": "What is the Chain of Responsibility pattern?",
+    "options": ["A behavioral pattern that passes a request along a chain of handlers, allowing multiple objects a chance to handle the request.", "A way to chain multiple method calls.", "A pattern for creating secure chains of trust.", "A data structure resembling a linked list."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-096",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "V8 Engine",
+    "question": "What is 'smashing the stack' in the context of V8?",
+    "options": ["A security vulnerability, also known as a stack buffer overflow.", "A performance optimization.", "A debugging technique.", "A way to clear the call stack."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-097",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Functional Programming",
+    "question": "What is an 'applicative functor'?",
+    "options": ["An intermediate structure between functors and monads that allows applying a wrapped function to a wrapped value.", "A type of function that applies styles.", "A UI component.", "A mathematical concept with no practical use in JS."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-098",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Performance",
+    "question": "What is 'Largest Contentful Paint' (LCP)?",
+    "options": ["A Core Web Vital metric that measures the render time of the largest image or text block visible within the viewport.", "The largest element on the entire page.", "A way to paint large background images.", "A browser rendering process."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-099",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Web APIs",
+    "question": "What is the `FinalizationRegistry` object for?",
+    "options": ["To let you request a callback when an object is garbage-collected.", "To finalize the creation of an object.", "To register a final set of variables.", "A way to force garbage collection."],
+    "answerIndex": 0
+  },
+  {
+    "id": "js-advance-100",
+    "subject": "javascript",
+    "difficulty": "advance",
+    "topic": "Security",
+    "question": "What is a 'ReDoS' (Regular Expression Denial of Service) attack?",
+    "options": ["An attack that exploits inefficient regular expressions that can take a very long time to evaluate on certain inputs, causing a denial of service.", "A DoS attack using regular network packets.", "A way to bypass regex-based validation.", "A tool for testing regex performance."],
+    "answerIndex": 0
+  },
+
+
+
+
 
 
   
@@ -8755,9 +11460,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-001",
+    "id": "web-advance-001",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is the Critical Rendering Path?",
     "options": [
@@ -8769,9 +11474,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-002",
+    "id": "web-advance-002",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is a Content Security Policy (CSP)?",
     "options": [
@@ -8783,9 +11488,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-003",
+    "id": "web-advance-003",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What is the main purpose of a Service Worker?",
     "options": [
@@ -8797,9 +11502,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-004",
+    "id": "web-advance-004",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Architecture",
     "question": "What is the difference between Server-Side Rendering (SSR) and Client-Side Rendering (CSR)?",
     "options": [
@@ -8811,9 +11516,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-005",
+    "id": "web-advance-005",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "HTTP",
     "question": "What are some key features of HTTP/2 compared to HTTP/1.1?",
     "options": [
@@ -8825,9 +11530,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-006",
+    "id": "web-advance-006",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What are Web Components?",
     "options": [
@@ -8839,9 +11544,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-007",
+    "id": "web-advance-007",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "How does a Cross-Site Request Forgery (CSRF) attack work?",
     "options": [
@@ -8853,9 +11558,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-008",
+    "id": "web-advance-008",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Build Tools",
     "question": "What is 'tree shaking' in the context of a module bundler like Webpack?",
     "options": [
@@ -8867,9 +11572,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-009",
+    "id": "web-advance-009",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What is the 'containing block' in CSS?",
     "options": [
@@ -8881,9 +11586,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-010",
+    "id": "web-advance-010",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is a 'Progressive Web App' (PWA)?",
     "options": [
@@ -8895,9 +11600,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-011",
+    "id": "web-advance-011",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What is the Shadow DOM?",
     "options": [
@@ -8909,9 +11614,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-012",
+    "id": "web-advance-012",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is the purpose of the `HttpOnly` flag on a cookie?",
     "options": [
@@ -8923,9 +11628,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-013",
+    "id": "web-advance-013",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Architecture",
     "question": "What is a 'microfrontend' architecture?",
     "options": [
@@ -8937,9 +11642,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-014",
+    "id": "web-advance-014",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "HTTP",
     "question": "What are WebSockets?",
     "options": [
@@ -8951,9 +11656,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-015",
+    "id": "web-advance-015",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is 'code splitting'?",
     "options": [
@@ -8965,9 +11670,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-016",
+    "id": "web-advance-016",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What is a 'stacking context'?",
     "options": [
@@ -8979,9 +11684,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-017",
+    "id": "web-advance-017",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What is the purpose of the Intersection Observer API?",
     "options": [
@@ -8993,9 +11698,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-018",
+    "id": "web-advance-018",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is CORS (Cross-Origin Resource Sharing)?",
     "options": [
@@ -9007,9 +11712,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-019",
+    "id": "web-advance-019",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What are 'render-blocking' resources?",
     "options": [
@@ -9021,9 +11726,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-020",
+    "id": "web-advance-020",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "HTTP",
     "question": "What are HTTP Strict Transport Security (HSTS) headers used for?",
     "options": [
@@ -9035,9 +11740,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-021",
+    "id": "web-advance-021",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Build Tools",
     "question": "What is the main role of Babel in a modern web development workflow?",
     "options": [
@@ -9049,9 +11754,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-022",
+    "id": "web-advance-022",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What is the `will-change` CSS property intended for?",
     "options": [
@@ -9063,9 +11768,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-023",
+    "id": "web-advance-023",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What are Web Workers and what problem do they solve?",
     "options": [
@@ -9077,9 +11782,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-024",
+    "id": "web-advance-024",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is the PRPL pattern?",
     "options": [
@@ -9091,9 +11796,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-025",
+    "id": "web-advance-025",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is Subresource Integrity (SRI)?",
     "options": [
@@ -9105,9 +11810,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-026",
+    "id": "web-advance-026",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What is the difference between `grid-template-columns` and `grid-auto-columns`?",
     "options": [
@@ -9119,9 +11824,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-027",
+    "id": "web-advance-027",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Architecture",
     "question": "What is a 'Jamstack' architecture?",
     "options": [
@@ -9133,9 +11838,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-028",
+    "id": "web-advance-028",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "HTTP",
     "question": "What are 'ETags' used for in HTTP?",
     "options": [
@@ -9147,9 +11852,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-029",
+    "id": "web-advance-029",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What is the main benefit of using the `IndexedDB` API over `localStorage`?",
     "options": [
@@ -9161,9 +11866,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-030",
+    "id": "web-advance-030",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is 'brotli' compression?",
     "options": [
@@ -9175,9 +11880,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-031",
+    "id": "web-advance-031",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What is the CSS `contain` property for?",
     "options": [
@@ -9189,9 +11894,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-032",
+    "id": "web-advance-032",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is a 'man-in-the-middle' (MITM) attack?",
     "options": [
@@ -9203,9 +11908,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-033",
+    "id": "web-advance-033",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Build Tools",
     "question": "What is a 'source map'?",
     "options": [
@@ -9217,9 +11922,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-034",
+    "id": "web-advance-034",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "HTTP",
     "question": "What is the purpose of the `SameSite` cookie attribute?",
     "options": [
@@ -9231,9 +11936,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-035",
+    "id": "web-advance-035",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What is the `Beacon` API used for?",
     "options": [
@@ -9245,9 +11950,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-036",
+    "id": "web-advance-036",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What is the CSS Houdini project?",
     "options": [
@@ -9259,9 +11964,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-037",
+    "id": "web-advance-037",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is 'jank' in web performance?",
     "options": [
@@ -9273,9 +11978,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-038",
+    "id": "web-advance-038",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is a 'timing attack'?",
     "options": [
@@ -9287,9 +11992,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-039",
+    "id": "web-advance-039",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Architecture",
     "question": "What are 'serverless' architectures?",
     "options": [
@@ -9301,9 +12006,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-040",
+    "id": "web-advance-040",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "HTTP",
     "question": "What is HTTP/3 and what is its main difference from HTTP/2?",
     "options": [
@@ -9315,9 +12020,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-041",
+    "id": "web-advance-041",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "How does a 'CSS cascade' work?",
     "options": [
@@ -9329,9 +12034,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-042",
+    "id": "web-advance-042",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What is the `ResizeObserver` API useful for?",
     "options": [
@@ -9343,9 +12048,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-043",
+    "id": "web-advance-043",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What are 'font-display' settings used for?",
     "options": [
@@ -9357,9 +12062,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-044",
+    "id": "web-advance-044",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is 'Clickjacking'?",
     "options": [
@@ -9371,9 +12076,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-045",
+    "id": "web-advance-045",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What is the `prefers-reduced-motion` media query for?",
     "options": [
@@ -9385,9 +12090,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-046",
+    "id": "web-advance-046",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Build Tools",
     "question": "What is 'Hot Module Replacement' (HMR)?",
     "options": [
@@ -9399,9 +12104,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-047",
+    "id": "web-advance-047",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What problem does the `AbortController` and `AbortSignal` API solve?",
     "options": [
@@ -9413,9 +12118,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-048",
+    "id": "web-advance-048",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What are the Core Web Vitals?",
     "options": [
@@ -9427,9 +12132,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-049",
+    "id": "web-advance-049",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "HTTP",
     "question": "What is the purpose of the `alt-svc` (Alternative Services) header?",
     "options": [
@@ -9441,9 +12146,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-050",
+    "id": "web-advance-050",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What does the `:is()` pseudo-class function do?",
     "options": [
@@ -9455,9 +12160,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-051",
+    "id": "web-advance-051",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What is WebAssembly (Wasm)?",
     "options": [
@@ -9469,9 +12174,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-052",
+    "id": "web-advance-052",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is a 'ReDoS' (Regular Expression Denial of Service) attack?",
     "options": [
@@ -9483,9 +12188,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-053",
+    "id": "web-advance-053",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is 'hydration' in the context of SSR frameworks like Next.js or Nuxt.js?",
     "options": [
@@ -9497,9 +12202,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-054",
+    "id": "web-advance-054",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Architecture",
     "question": "What are 'Isomorphic' or 'Universal' JavaScript applications?",
     "options": [
@@ -9511,9 +12216,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-055",
+    "id": "web-advance-055",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What is the `content-visibility` property used for?",
     "options": [
@@ -9525,9 +12230,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-056",
+    "id": "web-advance-056",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "HTTP",
     "question": "What is the role of a 'reverse proxy'?",
     "options": [
@@ -9539,9 +12244,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-057",
+    "id": "web-advance-057",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What does the Web Cryptography API provide?",
     "options": [
@@ -9553,9 +12258,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-058",
+    "id": "web-advance-058",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is a 'padding oracle' attack?",
     "options": [
@@ -9567,9 +12272,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-059",
+    "id": "web-advance-059",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is 'inlining critical CSS'?",
     "options": [
@@ -9581,9 +12286,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-060",
+    "id": "web-advance-060",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What is the purpose of the `@layer` rule in CSS?",
     "options": [
@@ -9595,9 +12300,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-061",
+    "id": "web-advance-061",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Architecture",
     "question": "What is the 'Headless CMS' concept?",
     "options": [
@@ -9609,9 +12314,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-062",
+    "id": "web-advance-062",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What is the Web Share API?",
     "options": [
@@ -9623,9 +12328,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-063",
+    "id": "web-advance-063",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is DNS spoofing?",
     "options": [
@@ -9637,9 +12342,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-064",
+    "id": "web-advance-064",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is a 'speculative' browser optimization?",
     "options": [
@@ -9651,9 +12356,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-065",
+    "id": "web-advance-065",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What does the `all` property in CSS do?",
     "options": [
@@ -9665,9 +12370,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-066",
+    "id": "web-advance-066",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "HTTP",
     "question": "What is 'head-of-line blocking'?",
     "options": [
@@ -9679,9 +12384,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-067",
+    "id": "web-advance-067",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What can you do with the Web Animations API?",
     "options": [
@@ -9693,9 +12398,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-068",
+    "id": "web-advance-068",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What are 'Certificate Transparency' logs?",
     "options": [
@@ -9707,9 +12412,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-069",
+    "id": "web-advance-069",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Architecture",
     "question": "What is the 'Island Architecture' pattern?",
     "options": [
@@ -9721,9 +12426,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-070",
+    "id": "web-advance-070",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is a 'resource hint' (e.g., `preload`, `prefetch`, `preconnect`)?",
     "options": [
@@ -9735,9 +12440,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-071",
+    "id": "web-advance-071",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What is a 'CSS Containment'?",
     "options": [
@@ -9749,9 +12454,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-072",
+    "id": "web-advance-072",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What does the `requestIdleCallback` function do?",
     "options": [
@@ -9763,9 +12468,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-073",
+    "id": "web-advance-073",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is 'session fixation'?",
     "options": [
@@ -9777,9 +12482,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-074",
+    "id": "web-advance-074",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is 'Largest Contentful Paint' (LCP)?",
     "options": [
@@ -9791,9 +12496,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-075",
+    "id": "web-advance-075",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What problem does the `gap` property solve in Flexbox and Grid?",
     "options": [
@@ -9805,9 +12510,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-076",
+    "id": "web-advance-076",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "HTTP",
     "question": "What is the purpose of 'Server-Sent Events' (SSE)?",
     "options": [
@@ -9819,9 +12524,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-077",
+    "id": "web-advance-077",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Architecture",
     "question": "What is a 'monorepo'?",
     "options": [
@@ -9833,9 +12538,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-078",
+    "id": "web-advance-078",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is a 'DNS prefetching' security risk?",
     "options": [
@@ -9847,9 +12552,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-079",
+    "id": "web-advance-079",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is 'Cumulative Layout Shift' (CLS)?",
     "options": [
@@ -9861,9 +12566,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-080",
+    "id": "web-advance-080",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What does the `:where()` pseudo-class function do?",
     "options": [
@@ -9875,9 +12580,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-081",
+    "id": "web-advance-081",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What is the primary use case for Shared Workers?",
     "options": [
@@ -9889,9 +12594,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-082",
+    "id": "web-advance-082",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is 'First Input Delay' (FID)?",
     "options": [
@@ -9903,9 +12608,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-083",
+    "id": "web-advance-083",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is 'MIME sniffing' and why can it be a security risk?",
     "options": [
@@ -9917,9 +12622,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-084",
+    "id": "web-advance-084",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What is the `backdrop-filter` property used for?",
     "options": [
@@ -9931,9 +12636,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-085",
+    "id": "web-advance-085",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "HTTP",
     "question": "What are 'I-Frames' in the context of HTTP/2 video streaming?",
     "options": [
@@ -9945,9 +12650,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-086",
+    "id": "web-advance-086",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What is the Web Authentication API (WebAuthn)?",
     "options": [
@@ -9959,9 +12664,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-087",
+    "id": "web-advance-087",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Architecture",
     "question": "What is the 'Stateful vs. Stateless' concept in backend applications?",
     "options": [
@@ -9973,9 +12678,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-088",
+    "id": "web-advance-088",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is 'virtual DOM' and how does it improve performance?",
     "options": [
@@ -9987,9 +12692,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-089",
+    "id": "web-advance-089",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What does the `@property` at-rule (part of Houdini) allow you to do?",
     "options": [
@@ -10001,9 +12706,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-090",
+    "id": "web-advance-090",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is 'Domain Fronting'?",
     "options": [
@@ -10015,9 +12720,9 @@
     "answerIndex": 1
   },
   {
-    "id": "web-adv-091",
+    "id": "web-advance-091",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What is the Portals API intended to achieve?",
     "options": [
@@ -10029,9 +12734,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-092",
+    "id": "web-advance-092",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "How can `requestIdleCallback` be used to improve performance?",
     "options": [
@@ -10043,9 +12748,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-093",
+    "id": "web-advance-093",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What are 'CSS Toggles' (an experimental feature)?",
     "options": [
@@ -10057,9 +12762,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-094",
+    "id": "web-advance-094",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "HTTP",
     "question": "What is the purpose of the `Clear-Site-Data` HTTP header?",
     "options": [
@@ -10071,9 +12776,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-095",
+    "id": "web-advance-095",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Architecture",
     "question": "What is 'CQRS' (Command Query Responsibility Segregation)?",
     "options": [
@@ -10085,9 +12790,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-096",
+    "id": "web-advance-096",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Web APIs",
     "question": "What is the Shape Detection API?",
     "options": [
@@ -10099,9 +12804,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-097",
+    "id": "web-advance-097",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Security",
     "question": "What is a 'Prototype Pollution' vulnerability?",
     "options": [
@@ -10113,9 +12818,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-098",
+    "id": "web-advance-098",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Performance",
     "question": "What is 'variable font' technology?",
     "options": [
@@ -10127,9 +12832,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-099",
+    "id": "web-advance-099",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "CSS",
     "question": "What is the purpose of the `overscroll-behavior` CSS property?",
     "options": [
@@ -10141,9 +12846,9 @@
     "answerIndex": 0
   },
   {
-    "id": "web-adv-100",
+    "id": "web-advance-100",
     "subject": "web",
-    "difficulty": "advanced",
+    "difficulty": "advance",
     "topic": "Architecture",
     "question": "What is an 'Event-Driven' architecture?",
     "options": [
@@ -10156,3 +12861,10 @@
   }
 ]
 
+
+
+
+
+
+  
+  
