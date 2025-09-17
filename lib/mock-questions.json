@@ -21286,7 +21286,7 @@
 
 
 
-  
+
   {
     "id": "sql-db-basic-001",
     "subject": "sql-db",
@@ -25481,14 +25481,4019 @@
       "A data visualization tool."
     ],
     "answerIndex": 0
-  }
+  },
+
+
+
 
 
 
 
   
-]
 
+
+
+  {
+    "id": "dsa-basic-001",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "Which data structure follows the Last-In, First-Out (LIFO) principle?",
+    "options": ["Queue", "Stack", "Linked List", "Array"],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-002",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "What is the worst-case time complexity of Linear Search?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-003",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "What is a key characteristic of an array?",
+    "options": [
+      "Elements are stored in random memory locations.",
+      "The size can be changed dynamically with zero cost.",
+      "Elements are stored in contiguous memory locations.",
+      "It can only store elements of different data types."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-004",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "Which data structure follows the First-In, First-Out (FIFO) principle?",
+    "options": ["Stack", "Array", "Graph", "Queue"],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-basic-005",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Linked Lists",
+    "question": "What does a node in a singly linked list contain?",
+    "options": [
+      "Only a data value.",
+      "A data value and a pointer to the previous node.",
+      "A data value and a pointer to the next node.",
+      "Only a pointer to another node."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-006",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Sorting",
+    "question": "Which of the following is considered the simplest sorting algorithm?",
+    "options": ["Quick Sort", "Merge Sort", "Bubble Sort", "Heap Sort"],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-007",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "What does 'O(1)' represent in Big O notation?",
+    "options": [
+      "Linear time complexity",
+      "Logarithmic time complexity",
+      "Constant time complexity",
+      "Exponential time complexity"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-008",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Searching",
+    "question": "Binary Search can be applied to which type of data structure?",
+    "options": [
+      "Any unsorted array",
+      "A sorted array",
+      "A linked list",
+      "A stack"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-009",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Stacks",
+    "question": "Which operation adds an element to the top of a stack?",
+    "options": ["Enqueue", "Push", "Add", "Insert"],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-010",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Queues",
+    "question": "Which operation removes an element from the front of a queue?",
+    "options": ["Pop", "Dequeue", "Remove", "Get"],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-011",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Trees",
+    "question": "What is the topmost node in a tree called?",
+    "options": ["Leaf", "Child", "Parent", "Root"],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-basic-012",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "What is an algorithm?",
+    "options": [
+      "A data structure.",
+      "A step-by-step procedure for solving a problem.",
+      "A programming language.",
+      "A type of computer hardware."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-013",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "What is the time complexity of accessing an element in an array by its index?",
+    "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-014",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Sorting",
+    "question": "Which sorting algorithm repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order?",
+    "options": [
+      "Insertion Sort",
+      "Selection Sort",
+      "Bubble Sort",
+      "Merge Sort"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-015",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Linked Lists",
+    "question": "What is a major disadvantage of arrays compared to linked lists for insertion and deletion?",
+    "options": [
+      "Arrays are slower for accessing elements.",
+      "Inserting or deleting elements in an array can require shifting many other elements.",
+      "Arrays cannot store duplicate values.",
+      "Arrays use more memory."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-016",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Stacks",
+    "question": "Which operation removes an element from the top of a stack?",
+    "options": ["Dequeue", "Remove", "Get", "Pop"],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-basic-017",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Queues",
+    "question": "Which operation adds an element to the back of a queue?",
+    "options": ["Push", "Add", "Enqueue", "Insert"],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-018",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Searching",
+    "question": "What is the best-case time complexity of Binary Search?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-019",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Trees",
+    "question": "A node in a tree that has no children is called a:",
+    "options": ["Root node", "Parent node", "Leaf node", "Internal node"],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-020",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "Which of these represents the fastest growing time complexity?",
+    "options": ["O(n^2)", "O(n log n)", "O(n)", "O(2^n)"],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-basic-021",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "A data structure is a way of:",
+    "options": [
+      "Writing code.",
+      "Organizing and storing data in a computer.",
+      "Sorting numbers.",
+      "Solving a problem."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-022",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "The index of an array typically starts at:",
+    "options": ["-1", "1", "0", "It can be any number."],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-023",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Sorting",
+    "question": "What is the worst-case time complexity of Insertion Sort?",
+    "options": ["O(n log n)", "O(n)", "O(1)", "O(n^2)"],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-basic-024",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Linked Lists",
+    "question": "What is the name of the first node in a linked list?",
+    "options": ["Root", "Head", "Top", "Start"],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-025",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Stacks",
+    "question": "Which of the following is an application of a stack?",
+    "options": [
+      "Function call management (call stack)",
+      "Serving requests in a web server",
+      "A printer queue",
+      "A movie ticket line"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-026",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Queues",
+    "question": "A real-world example of a queue is:",
+    "options": [
+      "A pile of plates",
+      "A line of people at a ticket counter",
+      "The undo feature in a text editor",
+      "A browser's history"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-027",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Trees",
+    "question": "In a binary tree, each node can have at most how many children?",
+    "options": ["One", "Two", "Three", "Unlimited"],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-028",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "When analyzing an algorithm, we are usually most interested in the:",
+    "options": [
+      "Best-case performance",
+      "Average-case performance",
+      "Worst-case performance",
+      "The performance on a specific machine"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-029",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Searching",
+    "question": "What is the worst-case time complexity for finding an element in a linked list?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-030",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "The efficiency of an algorithm is often measured in terms of:",
+    "options": [
+      "Time complexity and space complexity",
+      "How many lines of code it has",
+      "How easy it is to understand",
+      "The programming language it's written in"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-031",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Sorting",
+    "question": "What is an 'in-place' sorting algorithm?",
+    "options": [
+      "An algorithm that requires a lot of extra memory.",
+      "An algorithm that sorts the data in the same array, using only a constant amount of extra space.",
+      "An algorithm that is built into the programming language.",
+      "A very fast sorting algorithm."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-032",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "What is a potential issue with arrays?",
+    "options": [
+      "They have a fixed size, which must be specified at creation.",
+      "Accessing elements by index is slow.",
+      "They can only store one type of data.",
+      "They are not supported in modern languages."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-033",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Linked Lists",
+    "question": "The last node in a singly linked list points to:",
+    "options": ["The head node", "Itself", "NULL", "The previous node"],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-034",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Stacks",
+    "question": "The operation to view the top element of a stack without removing it is called:",
+    "options": ["Peek or Top", "View", "Get", "Look"],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-035",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Queues",
+    "question": "What is a 'priority queue'?",
+    "options": [
+      "A queue where elements are processed based on their priority, not just FIFO order.",
+      "A queue that is very important.",
+      "A faster version of a regular queue.",
+      "A queue that can only hold a few items."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-036",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "What does O(n log n) complexity mean?",
+    "options": [
+      "It is slower than O(n^2).",
+      "It is faster than O(n^2) but slower than O(n).",
+      "It is faster than O(n).",
+      "It is the same as O(n)."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-037",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Trees",
+    "question": "The height of a tree is:",
+    "options": [
+      "The number of nodes in the tree.",
+      "The number of leaves in the tree.",
+      "The length of the longest path from the root to a leaf.",
+      "The number of levels in the tree."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-038",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Searching",
+    "question": "What is the main requirement for using Binary Search?",
+    "options": [
+      "The data must be in a linked list.",
+      "The data must be sorted.",
+      "The data must contain only numbers.",
+      "The data must not have duplicates."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-039",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Graphs",
+    "question": "What are 'vertices' and 'edges' in a graph?",
+    "options": [
+      "Vertices are the connections, edges are the points.",
+      "Vertices are the points (or nodes), edges are the connections between them.",
+      "They are two names for the same thing.",
+      "Vertices are the start points, edges are the end points."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-040",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "A 'recursive' algorithm is one that:",
+    "options": [
+      "Runs very quickly.",
+      "Uses a loop to solve a problem.",
+      "Calls itself to solve smaller instances of the same problem.",
+      "Is difficult to understand."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-041",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Sorting",
+    "question": "A sorting algorithm is considered 'stable' if:",
+    "options": [
+      "It never crashes.",
+      "It maintains the relative order of records with equal keys.",
+      "It has a time complexity of O(n log n).",
+      "It works for all data types."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-042",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Linked Lists",
+    "question": "What is a 'doubly linked list'?",
+    "options": [
+      "A list where each node points to the next node and the head node.",
+      "A list with two data fields per node.",
+      "A list where each node has pointers to both the next and the previous nodes.",
+      "Two linked lists combined into one."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-043",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "If an algorithm's time complexity is O(n), how does its runtime change if the input size is doubled?",
+    "options": [
+      "It stays the same.",
+      "It roughly doubles.",
+      "It quadruples.",
+      "It depends on the machine."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-044",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Stacks",
+    "question": "The 'call stack' is used by a program to keep track of:",
+    "options": [
+      "User inputs.",
+      "Active function calls.",
+      "Global variables.",
+      "Network connections."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-045",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Trees",
+    "question": "What is a key property of a Binary Search Tree (BST)?",
+    "options": [
+      "The value of a node is greater than all values in its left subtree and less than all values in its right subtree.",
+      "All leaf nodes are at the same level.",
+      "Each node has exactly two children.",
+      "The root node contains the largest value."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-046",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Queues",
+    "question": "A 'dequeue' (double-ended queue) allows insertions and deletions at:",
+    "options": [
+      "Only the front.",
+      "Only the back.",
+      "Both the front and the back.",
+      "The middle of the queue."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-047",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Searching",
+    "question": "What is the worst-case time complexity of Binary Search?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-048",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Graphs",
+    "question": "A graph where edges have a direction is called a:",
+    "options": [
+      "Directed graph",
+      "Undirected graph",
+      "Weighted graph",
+      "Cyclic graph"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-049",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "What is 'pseudocode'?",
+    "options": [
+      "Code that does not work.",
+      "An informal, high-level description of the operating principle of an algorithm.",
+      "A specific programming language for algorithms.",
+      "The compiled version of an algorithm."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-050",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "Which of these is NOT a measure of complexity?",
+    "options": [
+      "Time Complexity",
+      "Space Complexity",
+      "Code Complexity (e.g. cyclomatic)",
+      "Programming Language Complexity"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-basic-051",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Sorting",
+    "question": "Which sorting algorithm builds the final sorted array one item at a time?",
+    "options": [
+      "Bubble Sort",
+      "Selection Sort",
+      "Insertion Sort",
+      "Quick Sort"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-052",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "A 2D array can be used to represent a:",
+    "options": ["List", "Stack", "Queue", "Matrix or Grid"],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-basic-053",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Linked Lists",
+    "question": "Accessing an element in the middle of a linked list is:",
+    "options": [
+      "An O(1) operation.",
+      "An O(n) operation.",
+      "An O(log n) operation.",
+      "Not possible."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-054",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Trees",
+    "question": "The number of edges connected to a node is called its:",
+    "options": ["Height", "Depth", "Degree", "Level"],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-055",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Hash Tables",
+    "question": "What is the main purpose of a hash function?",
+    "options": [
+      "To encrypt data.",
+      "To map data of arbitrary size to a fixed-size value (a hash).",
+      "To sort data.",
+      "To compress data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-056",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "What does O(n^2) represent?",
+    "options": [
+      "Linear time",
+      "Logarithmic time",
+      "Constant time",
+      "Quadratic time"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-basic-057",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "A 'pointer' is a:",
+    "options": [
+      "A variable that stores a memory address.",
+      "A type of data structure.",
+      "A graphical cursor.",
+      "An arithmetic operator."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-058",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Searching",
+    "question": "If you need to find an item in an unsorted list, which search algorithm must you use?",
+    "options": [
+      "Binary Search",
+      "Linear Search",
+      "Jump Search",
+      "Interpolation Search"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-059",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Graphs",
+    "question": "A path in a graph that starts and ends at the same vertex is called a:",
+    "options": ["Loop", "Path", "Tree", "Cycle"],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-basic-060",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "Which of these is a 'divide and conquer' algorithm?",
+    "options": [
+      "Linear Search",
+      "Insertion Sort",
+      "Merge Sort",
+      "Bubble Sort"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-061",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Sorting",
+    "question": "What is the best-case time complexity of Bubble Sort?",
+    "options": ["O(1)", "O(n)", "O(n log n)", "O(n^2)"],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-062",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Stacks",
+    "question": "What happens if you try to `pop` from an empty stack?",
+    "options": [
+      "The stack is deleted.",
+      "An underflow condition occurs.",
+      "The program waits until an item is added.",
+      "It returns a NULL value."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-063",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Queues",
+    "question": "The process of checking if a queue is empty is often called:",
+    "options": ["isEmpty()", "isFull()", "peek()", "size()"],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-064",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Trees",
+    "question": "The nodes that are children of the same parent are called:",
+    "options": ["Cousins", "Siblings", "Descendants", "Ancestors"],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-065",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Hash Tables",
+    "question": "What is a 'collision' in a hash table?",
+    "options": [
+      "When two keys have the same value.",
+      "When a hash function maps two different keys to the same bucket or index.",
+      "A database error.",
+      "When the hash table runs out of memory."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-066",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "Big O notation describes the:",
+    "options": [
+      "Exact runtime of an algorithm.",
+      "Limiting behavior of a function when the argument tends towards a particular value or infinity.",
+      "Amount of memory used by an algorithm.",
+      "Number of lines of code."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-067",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "An Abstract Data Type (ADT) is defined by its:",
+    "options": [
+      "Implementation in a specific language.",
+      "Behavior (the operations it supports).",
+      "Memory usage.",
+      "Time complexity."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-068",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Linked Lists",
+    "question": "A 'circular linked list' is one in which:",
+    "options": [
+      "The last node points back to the head node.",
+      "The nodes are arranged in a circle.",
+      "It has a cycle somewhere in the middle.",
+      "It is very slow."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-069",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Graphs",
+    "question": "A graph where edges have weights or costs is called a:",
+    "options": [
+      "Directed graph",
+      "Weighted graph",
+      "Heavy graph",
+      "Complete graph"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-070",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "A 'brute-force' algorithm:",
+    "options": [
+      "Is always the most efficient.",
+      "Systematically tries all possible candidates for the solution.",
+      "Uses advanced data structures.",
+      "Is a type of recursive algorithm."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-071",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Sorting",
+    "question": "Which sorting algorithm works by repeatedly finding the minimum element from the unsorted part and putting it at the beginning?",
+    "options": [
+      "Insertion Sort",
+      "Selection Sort",
+      "Bubble Sort",
+      "Merge Sort"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-072",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "A data structure where elements can be added or removed at either end is called a:",
+    "options": ["Stack", "Queue", "Deque", "Array"],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-073",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "When comparing two algorithms, one with O(n) and another with O(log n), which is generally better for large inputs?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "They are the same.",
+      "It is impossible to tell."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-074",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Trees",
+    "question": "What is the 'depth' of a node?",
+    "options": [
+      "The number of edges on the path from the root to that node.",
+      "The number of children the node has.",
+      "The level of the node.",
+      "The number of nodes in its subtree."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-075",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Hash Tables",
+    "question": "What is the primary advantage of a hash table?",
+    "options": [
+      "It keeps elements in a sorted order.",
+      "It offers very fast average time for insertion, deletion, and lookup.",
+      "It uses very little memory.",
+      "It is easy to implement without collisions."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-076",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "What is 'recursion'?",
+    "options": [
+      "A technique where a function calls itself.",
+      "A type of loop.",
+      "A data structure.",
+      "A sorting algorithm."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-077",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Searching",
+    "question": "Linear search involves checking each element of a list until a match is found. What is its best-case scenario?",
+    "options": [
+      "The element is not in the list.",
+      "The element is at the end of the list.",
+      "The element is at the beginning of the list.",
+      "The list is sorted."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-078",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Graphs",
+    "question": "A graph with no cycles is called an:",
+    "options": ["Acyclic graph", "Cyclic graph", "Complete graph", "Tree"],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-079",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "What must every recursive function have to avoid running forever?",
+    "options": ["A loop", "A parameter", "A base case", "A return value"],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-080",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Sorting",
+    "question": "Which of these is NOT a comparison-based sorting algorithm?",
+    "options": [
+      "Merge Sort",
+      "Heap Sort",
+      "Counting Sort",
+      "Quick Sort"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-081",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Arrays",
+    "question": "What is a dynamic array?",
+    "options": [
+      "An array that can change its size.",
+      "An array that stores dynamic content.",
+      "An array that is allocated on the heap.",
+      "Another name for a linked list."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-082",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Linked Lists",
+    "question": "What is traversing a linked list?",
+    "options": [
+      "Deleting the list.",
+      "Inserting a new node.",
+      "Accessing each node of the list, usually starting from the head.",
+      "Sorting the list."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-083",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Stacks",
+    "question": "What does it mean for a stack to be full?",
+    "options": [
+      "An overflow condition.",
+      "An underflow condition.",
+      "The stack contains one element.",
+      "The stack is empty."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-084",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Trees",
+    "question": "A 'full' binary tree is a tree in which every node has either:",
+    "options": [
+      "0 or 1 child",
+      "1 or 2 children",
+      "0 or 2 children",
+      "Exactly 2 children"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-085",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Hash Tables",
+    "question": "A common way to handle collisions in a hash table is called:",
+    "options": [
+      "Re-hashing",
+      "Chaining (using linked lists)",
+      "Ignoring the collision",
+      "Deleting the old value"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-086",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "When we say Big O, we are typically referring to the ________ bound on the growth rate of the algorithm.",
+    "options": ["Lower", "Tight", "Average", "Upper"],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-basic-087",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "Which data structure would be best to model a file system directory structure?",
+    "options": ["Queue", "Stack", "Tree", "Array"],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-088",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Searching",
+    "question": "The time complexity of finding an element in a balanced Binary Search Tree is:",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-089",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Graphs",
+    "question": "A graph where you can get from any node to any other node is called:",
+    "options": ["A connected graph", "A complete graph", "A directed graph", "A weighted graph"],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-090",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "Which of these is NOT a property of a good algorithm?",
+    "options": [
+      "It must be correct.",
+      "It must be efficient.",
+      "It must be easy to implement in any language.",
+      "It must terminate."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-091",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Sorting",
+    "question": "What is the space complexity of Insertion Sort?",
+    "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-092",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Queues",
+    "question": "The operation to view the front element of a queue without removing it is often called:",
+    "options": ["Top", "Peek or Front", "View", "Get"],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-093",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Trees",
+    "question": "The set of all nodes at a given depth is called:",
+    "options": ["A path", "A subtree", "A level", "A branch"],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-094",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Hash Tables",
+    "question": "What is a 'bucket' in a hash table?",
+    "options": [
+      "The key itself.",
+      "A location in the hash table's array where one or more key-value pairs are stored.",
+      "The value associated with a key.",
+      "The hash function."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-095",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Big O Notation",
+    "question": "A nested loop where the outer loop runs N times and the inner loop runs N times has what complexity?",
+    "options": ["O(n)", "O(n log n)", "O(2n)", "O(n^2)"],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-basic-096",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Fundamentals",
+    "question": "The 'undo' feature in a text editor is typically implemented using a:",
+    "options": ["Queue", "Stack", "Linked List", "Array"],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-basic-097",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Searching",
+    "question": "Linear search is also known as:",
+    "options": [
+      "Sequential search",
+      "Random search",
+      "Logarithmic search",
+      "Hashed search"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-basic-098",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Graphs",
+    "question": "A graph can be represented by:",
+    "options": [
+      "An adjacency matrix",
+      "An adjacency list",
+      "An incidence matrix",
+      "All of the above"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-basic-099",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Algorithms",
+    "question": "Which paradigm involves breaking a problem into smaller subproblems, solving them, and storing the solutions to avoid re-computation?",
+    "options": [
+      "Greedy Algorithms",
+      "Divide and Conquer",
+      "Dynamic Programming",
+      "Brute Force"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-basic-100",
+    "subject": "dsa",
+    "difficulty": "basic",
+    "topic": "Sorting",
+    "question": "What does it mean for a sorting algorithm to be 'adaptive'?",
+    "options": [
+      "It adapts to the size of the input.",
+      "Its performance improves for lists that are already partially sorted.",
+      "It can sort any data type.",
+      "It adapts to the hardware it's running on."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-001",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "What is a subquery?",
+    "options": [
+      "A query that is nested inside another query.",
+      "A query that runs very fast.",
+      "Another name for a JOIN.",
+      "A query that uses an alias."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-002",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "What is the main goal of database normalization?",
+    "options": [
+      "To increase data redundancy.",
+      "To reduce data redundancy and improve data integrity.",
+      "To make the database larger.",
+      "To speed up all queries."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-003",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a database index?",
+    "options": [
+      "A summary of the table's data.",
+      "A copy of the table.",
+      "A data structure that improves the speed of data retrieval operations on a database table.",
+      "The primary key of a table."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-004",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Views",
+    "question": "What is a view in SQL?",
+    "options": [
+      "A physical copy of a table.",
+      "A virtual table based on the result-set of an SQL statement.",
+      "A log of all queries run against a table.",
+      "A user interface for the database."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-005",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What does the `COMMIT` statement do?",
+    "options": [
+      "It undoes the changes in a transaction.",
+      "It starts a new transaction.",
+      "It saves all the changes made in the current transaction.",
+      "It sets a savepoint within a transaction."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-006",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "HAVING",
+    "question": "What is the difference between the WHERE and HAVING clauses?",
+    "options": [
+      "There is no difference.",
+      "WHERE filters records before grouping, while HAVING filters groups after grouping.",
+      "HAVING is used with single rows, WHERE is used with groups.",
+      "WHERE is for numbers, HAVING is for text."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-007",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "A table is in First Normal Form (1NF) if:",
+    "options": [
+      "It has a primary key.",
+      "It contains no repeating groups or multi-valued columns.",
+      "It has no partial dependencies.",
+      "It has no transitive dependencies."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-008",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "CASE Statement",
+    "question": "What is the purpose of the `CASE` statement?",
+    "options": [
+      "To perform calculations.",
+      "To create temporary tables.",
+      "To go through conditions and return a value when the first condition is met (like an if-then-else statement).",
+      "To join tables."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-009",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "What is a correlated subquery?",
+    "options": [
+      "A subquery that is evaluated once for the entire parent query.",
+      "A subquery that depends on the outer query for its values and is evaluated once for each row processed by the outer query.",
+      "A subquery that returns multiple columns.",
+      "A subquery that is faster than a non-correlated subquery."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-010",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What are the ACID properties of a transaction?",
+    "options": [
+      "Atomicity, Consistency, Isolation, Durability",
+      "Association, Clauses, Integrity, Data",
+      "Availability, Concurrency, Indexing, Division",
+      "Action, Control, Insertion, Deletion"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-011",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a clustered index?",
+    "options": [
+      "An index that stores the data pages in random order.",
+      "An index that determines the physical order of data in a table.",
+      "An index that can only be created on the primary key.",
+      "A type of index that contains all columns of a table."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-012",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "What is a key difference between SQL and NoSQL databases?",
+    "options": [
+      "SQL databases are not relational.",
+      "NoSQL databases often have flexible schemas and are designed for scalability.",
+      "SQL databases do not support transactions.",
+      "NoSQL databases only store key-value pairs."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-013",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Stored Procedures",
+    "question": "What is a stored procedure?",
+    "options": [
+      "A query that is stored on the client.",
+      "A pre-compiled collection of one or more SQL statements stored in the database.",
+      "A way to backup a database.",
+      "A type of database view."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-014",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "What is Second Normal Form (2NF)?",
+    "options": [
+      "The table is in 1NF and all non-key attributes are fully functional dependent on the primary key.",
+      "The table has no multi-valued attributes.",
+      "The table has no transitive dependencies.",
+      "The table has only one column."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-015",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "UNION vs UNION ALL",
+    "question": "What is the difference between `UNION` and `UNION ALL`?",
+    "options": [
+      "There is no difference.",
+      "`UNION` removes duplicate records, while `UNION ALL` includes all records.",
+      "`UNION ALL` is faster because it does not check for duplicates.",
+      "Both 2 and 3."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-inter-016",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What does the `ROLLBACK` command do?",
+    "options": [
+      "Saves the transaction.",
+      "Starts a new transaction.",
+      "Undoes all the changes made in the current transaction.",
+      "Deletes the transaction log."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-017",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Views",
+    "question": "What is a major advantage of using a view?",
+    "options": [
+      "It improves the performance of all queries.",
+      "It simplifies complex queries and can provide a layer of security by restricting access to data.",
+      "It stores a physical copy of the data for faster access.",
+      "It automatically updates the underlying tables."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-018",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Common Table Expressions (CTE)",
+    "question": "What is a Common Table Expression (CTE)?",
+    "options": [
+      "A temporary result set that you can reference within another SELECT, INSERT, UPDATE, or DELETE statement.",
+      "A physical table that is only temporary.",
+      "Another name for a subquery.",
+      "A type of database index."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-019",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Triggers",
+    "question": "What is a database trigger?",
+    "options": [
+      "A special stored procedure that automatically runs when an event (like INSERT, UPDATE, DELETE) occurs in the database.",
+      "A user-initiated action.",
+      "A way to schedule jobs.",
+      "A security feature."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-020",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "What is Third Normal Form (3NF)?",
+    "options": [
+      "The table is in 2NF and has no transitive dependencies.",
+      "The table is in 1NF.",
+      "The table has a composite primary key.",
+      "The table contains no NULL values."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-021",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "What is a window function?",
+    "options": [
+      "A function that operates on a set of rows and returns a single aggregated value for each row.",
+      "A function that opens a new window in the application.",
+      "Another name for an aggregate function.",
+      "A function for creating graphical user interfaces."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-022",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a non-clustered index?",
+    "options": [
+      "An index where the logical order does not match the physical stored order of the rows.",
+      "An index that is not organized.",
+      "A less efficient type of index.",
+      "An index on multiple columns."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-023",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What does 'Isolation' in ACID properties mean?",
+    "options": [
+      "The database is isolated from the network.",
+      "Ensures that concurrent execution of transactions results in a system state that would be obtained if transactions were executed serially.",
+      "Each transaction runs in its own private database.",
+      "The data is isolated from the users."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-024",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "COALESCE",
+    "question": "The `COALESCE` function returns:",
+    "options": [
+      "The last non-NULL value in a list.",
+      "The first non-NULL value in a list.",
+      "A combined string of all values.",
+      "The number of NULL values."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-025",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "What is 'denormalization'?",
+    "options": [
+      "The process of intentionally introducing redundancy into a table to improve query performance.",
+      "An error in the normalization process.",
+      "The process of making a database less normal.",
+      "The first step before normalization begins."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-026",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "Which operator can be used with a subquery to check if a value exists in the returned list?",
+    "options": [
+      "BETWEEN",
+      "LIKE",
+      "EXISTS",
+      "JOIN"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-027",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "Which of the following is a type of NoSQL database?",
+    "options": [
+      "Document store (e.g., MongoDB)",
+      "Key-value store (e.g., Redis)",
+      "Column-family store (e.g., Cassandra)",
+      "All of the above"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-inter-028",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a potential disadvantage of having too many indexes on a table?",
+    "options": [
+      "It can slow down data retrieval (SELECT statements).",
+      "It can slow down data modification (INSERT, UPDATE, DELETE) statements.",
+      "It uses no extra disk space.",
+      "There are no disadvantages."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-029",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Stored Procedures",
+    "question": "What is an advantage of using stored procedures?",
+    "options": [
+      "Improved performance due to pre-compilation.",
+      "Reduced network traffic.",
+      "Enhanced security by granting permissions to procedures instead of tables.",
+      "All of the above."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-inter-030",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "Which of these is a window function?",
+    "options": [
+      "SUM()",
+      "COUNT()",
+      "ROW_NUMBER()",
+      "AVG()"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-031",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What does 'Atomicity' in ACID mean?",
+    "options": [
+      "All changes in a transaction are performed successfully or none are.",
+      "The transaction is very small.",
+      "The transaction is consistent.",
+      "The transaction is durable."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-032",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Data Types",
+    "question": "What is the difference between `CHAR` and `VARCHAR`?",
+    "options": [
+      "`CHAR` is for variable-length strings, `VARCHAR` is for fixed-length.",
+      "`CHAR` is a fixed-length string, `VARCHAR` is a variable-length string.",
+      "They are the same.",
+      "`VARCHAR` uses more space for small strings."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-033",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "NULL Handling",
+    "question": "What is the result of `SELECT NULL = NULL;`?",
+    "options": [
+      "True",
+      "False",
+      "NULL (or Unknown)",
+      "Error"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-034",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "A 'transitive dependency' is when:",
+    "options": [
+      "A non-key attribute depends on another non-key attribute.",
+      "A key attribute depends on another key attribute.",
+      "A non-key attribute depends on the primary key.",
+      "Two tables depend on each other."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-035",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Common Table Expressions (CTE)",
+    "question": "Which clause is used to define a CTE?",
+    "options": [
+      "CTE AS ...",
+      "DEFINE CTE AS ...",
+      "WITH ... AS",
+      "SUBQUERY AS ..."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-036",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a 'covering index'?",
+    "options": [
+      "An index that includes all the columns needed to satisfy a query, avoiding a table lookup.",
+      "An index that covers the entire table.",
+      "Another name for a clustered index.",
+      "An index on a view."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-037",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Triggers",
+    "question": "Can a trigger call a stored procedure?",
+    "options": [
+      "No",
+      "Yes",
+      "Only in some SQL dialects",
+      "Only if the trigger is an AFTER trigger"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-038",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "The `PARTITION BY` clause in a window function is used to:",
+    "options": [
+      "Divide the rows into partitions to which the function is applied.",
+      "Order the rows within a partition.",
+      "Filter the partitions.",
+      "Create a new table partition."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-039",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What is a 'savepoint'?",
+    "options": [
+      "The end of a transaction.",
+      "A location in a transaction to which you can later roll back.",
+      "A backup of the database.",
+      "The starting point of a transaction."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-040",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "What does 'CAP Theorem' stand for?",
+    "options": [
+      "Consistency, Availability, Partition tolerance",
+      "Concurrency, Atomicity, Performance",
+      "Columns, APIs, Performance",
+      "Capacity, Availability, Persistence"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-041",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "A subquery in the FROM clause acts as a:",
+    "options": [
+      "Filter condition.",
+      "Temporary table (derived table).",
+      "Column expression.",
+      "Join condition."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-042",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "Boyce-Codd Normal Form (BCNF) is a stricter version of:",
+    "options": ["1NF", "2NF", "3NF", "4NF"],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-043",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is index 'fragmentation'?",
+    "options": [
+      "When the logical ordering of pages in an index does not match the physical ordering.",
+      "When an index becomes too large.",
+      "When an index is not used by a query.",
+      "When an index is dropped."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-044",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Views",
+    "question": "What is a 'materialized view'?",
+    "options": [
+      "The same as a regular view.",
+      "A database object that contains the results of a query, which are physically stored and periodically refreshed.",
+      "A view that cannot be updated.",
+      "A view created from another view."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-045",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What is a 'deadlock'?",
+    "options": [
+      "A situation where two or more transactions are waiting for each other to release locks, causing them all to be blocked indefinitely.",
+      "A transaction that fails to commit.",
+      "A security vulnerability.",
+      "An error in the transaction log."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-046",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "The `LAG()` window function is used to:",
+    "options": [
+      "Access data from a subsequent row in the same result set.",
+      "Access data from a previous row in the same result set.",
+      "Calculate a lagging indicator.",
+      "Slow down a query."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-047",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "GROUP BY",
+    "question": "The `GROUP_CONCAT` function (in MySQL) is used to:",
+    "options": [
+      "Concatenate strings from different rows into a single string.",
+      "Count the number of groups.",
+      "Concatenate column names.",
+      "Filter groups."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-048",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Triggers",
+    "question": "What is the difference between an `AFTER` and an `INSTEAD OF` trigger?",
+    "options": [
+      "There is no difference.",
+      "`AFTER` triggers fire after the triggering action, while `INSTEAD OF` triggers (on views) fire instead of the action.",
+      "`INSTEAD OF` triggers are only for tables.",
+      "`AFTER` triggers are faster."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-049",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "What does 'eventual consistency' mean?",
+    "options": [
+      "The database will eventually become consistent at some point in the future.",
+      "A consistency model where, given a sufficiently long period of time over which no new updates are sent, all replicas will eventually become consistent.",
+      "The database is never consistent.",
+      "A property of SQL databases."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-050",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Common Table Expressions (CTE)",
+    "question": "What is a recursive CTE used for?",
+    "options": [
+      "Querying hierarchical data, like an organizational chart.",
+      "A CTE that calls itself infinitely.",
+      "It is not a valid SQL feature.",
+      "A CTE that runs very slowly."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-051",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a 'full-text' index?",
+    "options": [
+      "An index that includes the full text of every column.",
+      "An index designed for efficient searching of text data within string columns.",
+      "An index that is always full.",
+      "A very large index."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-052",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Functions",
+    "question": "What is the difference between a scalar and a table-valued function?",
+    "options": [
+      "A scalar function returns a single value, while a table-valued function returns a table (a result set).",
+      "A scalar function is faster.",
+      "A table-valued function can only be used in the FROM clause.",
+      "There is no difference."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-053",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "What is 'denormalization' often used for?",
+    "options": [
+      "To improve data integrity.",
+      "To reduce disk space.",
+      "To improve read performance by avoiding complex joins.",
+      "To simplify the database schema."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-054",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What is a 'transaction log'?",
+    "options": [
+      "A log of all user logins.",
+      "A history of all transactions performed against a database, used for recovery.",
+      "A log of query performance.",
+      "A temporary file used during a transaction."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-055",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Operators",
+    "question": "The `EXCEPT` operator is used to:",
+    "options": [
+      "Return all rows from the first SELECT statement that are not in the second SELECT statement.",
+      "Handle errors in a query.",
+      "Exclude certain columns from the result.",
+      "Find common rows between two queries."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-056",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "The `RANK()` function will assign the same rank to rows with the same value, and then...",
+    "options": [
+      "Assign consecutive ranks to the next rows.",
+      "Leave a gap in the rank sequence for the next rows.",
+      "Assign a random rank to the next rows.",
+      "Stop ranking."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-057",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "A document database like MongoDB stores data in what format?",
+    "options": [
+      "Tables",
+      "Graphs",
+      "JSON-like documents (e.g., BSON)",
+      "Key-value pairs"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-058",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a 'composite index'?",
+    "options": [
+      "An index on a single column.",
+      "An index on two or more columns.",
+      "A very complex index.",
+      "An index made of other indexes."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-059",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "Which of these is a potential downside of using subqueries?",
+    "options": [
+      "They can sometimes be less readable and perform worse than an equivalent JOIN.",
+      "They are not supported by all database systems.",
+      "They can only be used in the WHERE clause.",
+      "They always perform better than JOINs."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-060",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Triggers",
+    "question": "Can a trigger cause another trigger to fire?",
+    "options": [
+      "No, this is prevented to avoid infinite loops.",
+      "Yes, this is known as cascading triggers.",
+      "Only if they are on different tables.",
+      "Only for DELETE triggers."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-061",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "The 'I' in ACID (Isolation) helps prevent which issues?",
+    "options": [
+      "Dirty reads, non-repeatable reads, and phantom reads.",
+      "Database crashes.",
+      "Slow query performance.",
+      "Data corruption."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-062",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "PIVOT",
+    "question": "What is the purpose of the `PIVOT` operator?",
+    "options": [
+      "To rotate a table by turning the unique values from one column into multiple columns in the output.",
+      "To select the central point of a dataset.",
+      "To create a pivot table chart.",
+      "To join a table to itself."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-063",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "A 'functional dependency' (X -> Y) means that:",
+    "options": [
+      "The value of X depends on the value of Y.",
+      "The value of Y is determined by the value of X.",
+      "X and Y are always the same.",
+      "X and Y are in different tables."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-064",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "What is the difference between `ROW_NUMBER()`, `RANK()`, and `DENSE_RANK()`?",
+    "options": [
+      "They all produce the same result.",
+      "`ROW_NUMBER` gives unique ranks; `RANK` leaves gaps for ties; `DENSE_RANK` does not leave gaps for ties.",
+      "`DENSE_RANK` is the fastest.",
+      "`RANK` is the only one that handles ties."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-065",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Stored Procedures",
+    "question": "What is SQL Injection?",
+    "options": [
+      "A code injection technique that might destroy your database.",
+      "A way to speed up SQL queries.",
+      "A method for inserting data quickly.",
+      "A type of database index."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-066",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "What does 'BASE' acronym (common in NoSQL) stand for?",
+    "options": [
+      "Basically Available, Soft state, Eventual consistency.",
+      "Basic, Atomic, Scalable, Efficient.",
+      "Before All, Start Early.",
+      "Binary, ASCII, String, Encoded."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-067",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "When is a 'full table scan' performed?",
+    "options": [
+      "When a query needs to examine every row in a table because there is no suitable index to use.",
+      "For every SELECT query.",
+      "Only when a table has no primary key.",
+      "When a table is being backed up."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-068",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Data Warehousing",
+    "question": "What is a 'star schema'?",
+    "options": [
+      "A database schema where the central table is connected to multiple dimension tables, resembling a star.",
+      "A schema designed for storing astronomical data.",
+      "A very complex database schema.",
+      "A schema with only one table."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-069",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What is an 'isolation level'?",
+    "options": [
+      "A setting that controls the degree to which a transaction is isolated from other concurrent transactions.",
+      "How isolated the database server is from the network.",
+      "A security setting for users.",
+      "A property of the database hardware."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-070",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Operators",
+    "question": "The `INTERSECT` operator is used to:",
+    "options": [
+      "Return only the rows that appear in both result sets of two SELECT statements.",
+      "Combine all rows from two SELECT statements.",
+      "Return rows from the first query that are not in the second.",
+      "Create an intersection in the database."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-071",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "The `OVER` clause is used to:",
+    "options": [
+      "End a query.",
+      "Define the window (set of rows) for a window function.",
+      "Override a previous statement.",
+      "Filter results."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-072",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "A 'partial dependency' can only occur in tables with:",
+    "options": [
+      "A single-column primary key.",
+      "A composite primary key (a primary key made of multiple columns).",
+      "No primary key.",
+      "A foreign key."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-073",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "A subquery can be used in which of the following clauses?",
+    "options": [
+      "SELECT",
+      "FROM",
+      "WHERE",
+      "All of the above"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-inter-074",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Triggers",
+    "question": "What is a potential risk of using triggers?",
+    "options": [
+      "They can be difficult to debug and can create complex, hidden dependencies.",
+      "They make the database more secure.",
+      "They always improve performance.",
+      "They cannot be disabled."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-075",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "Which of these is a characteristic of a key-value store?",
+    "options": [
+      "It uses a simple data model of a key that maps to a value.",
+      "It supports complex queries and joins.",
+      "It enforces a strict schema.",
+      "It is a type of relational database."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-076",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is 'cardinality' in the context of database indexes?",
+    "options": [
+      "The number of rows in a table.",
+      "The uniqueness of data values contained in a column.",
+      "The size of the index on disk.",
+      "The speed of the index."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-077",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Functions",
+    "question": "The `CAST` function is used to:",
+    "options": [
+      "Convert a value from one data type to another.",
+      "Create a new table.",
+      "Filter results.",
+      "Sort data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-078",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "The 'Durability' property of ACID ensures that:",
+    "options": [
+      "A transaction is long-lasting.",
+      "Once a transaction has been committed, it will remain so, even in the event of power loss or crashes.",
+      "The database is physically durable.",
+      "The transaction can be rolled back."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-079",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Data Warehousing",
+    "question": "What is a 'fact' table in a star schema?",
+    "options": [
+      "A table containing descriptive attributes.",
+      "The central table that contains the quantitative measures or facts of a business process.",
+      "A small lookup table.",
+      "A table that contains only true values."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-080",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "What does the `LEAD()` function do?",
+    "options": [
+      "Accesses data from a previous row.",
+      "Accesses data from a subsequent row within the same result set.",
+      "Finds the leader of a partition.",
+      "Calculates the lead time."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-081",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "What is the difference between `IN` and `EXISTS` with a subquery?",
+    "options": [
+      "`IN` compares a value to a list of values, while `EXISTS` simply checks if the subquery returns any rows.",
+      "They are functionally identical.",
+      "`EXISTS` is generally slower.",
+      "`IN` can be used with correlated subqueries, `EXISTS` cannot."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-082",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "Why would you use a `UNIQUE` index?",
+    "options": [
+      "To ensure that all values in the indexed column(s) are unique.",
+      "To make queries faster.",
+      "To create a primary key.",
+      "Both 1 and 2."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-inter-083",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "A graph database is optimized for:",
+    "options": [
+      "Storing and navigating relationships.",
+      "Storing large text documents.",
+      "Time-series data.",
+      "Simple key-value lookups."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-084",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Functions",
+    "question": "What is a 'user-defined function' (UDF)?",
+    "options": [
+      "A function defined by the database system.",
+      "A function created by a user to perform a specific task, which can be used in queries.",
+      "Another name for a built-in function.",
+      "A function that is not secure."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-085",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Normalization",
+    "question": "What problem does 2NF solve?",
+    "options": [
+      "Transitive dependencies",
+      "Multi-valued dependencies",
+      "Partial dependencies",
+      "Repeating groups"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-086",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What is a 'dirty read'?",
+    "options": [
+      "When a transaction reads data that has been modified by another uncommitted transaction.",
+      "Reading data that is incorrect.",
+      "Reading data from a table that needs cleaning.",
+      "A read operation that fails."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-087",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Views",
+    "question": "Can you use INSERT, UPDATE, or DELETE on a multi-table view?",
+    "options": [
+      "Yes, always.",
+      "Generally no, or with significant restrictions, as it can be ambiguous which base table to modify.",
+      "Only if the view has a primary key.",
+      "Only the INSERT statement is allowed."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-088",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "The `NTILE(n)` function is used to:",
+    "options": [
+      "Find the nth tile in a sequence.",
+      "Divide the ordered rows in a partition into a specified number of ranked groups (tiles).",
+      "A function for tiling windows.",
+      "Calculate the percentile."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-089",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a 'query execution plan'?",
+    "options": [
+      "A plan for how to write a query.",
+      "A sequence of steps used by the database to access data for an SQL query.",
+      "A diagram of the database schema.",
+      "A list of all possible queries."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-090",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Data Warehousing",
+    "question": "What is a 'dimension' table?",
+    "options": [
+      "The central table in a star schema.",
+      "A table that contains descriptive attributes or context for the facts in the fact table.",
+      "A very large table.",
+      "A table that stores measurements."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-091",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Operators",
+    "question": "What is the difference between ANY and ALL operators?",
+    "options": [
+      "`ANY` returns true if any of the subquery values meet the condition, `ALL` returns true if all values meet the condition.",
+      "They are interchangeable.",
+      "`ALL` is used for numbers, `ANY` is for strings.",
+      "`ANY` returns a single value, `ALL` returns multiple."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-092",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "What is a primary use case for a column-family database?",
+    "options": [
+      "ACID transactions.",
+      "Handling large amounts of data for analytics and applications with high write throughput.",
+      "Storing complex JSON documents.",
+      "Graph traversals."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-093",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Triggers",
+    "question": "What is a 'recursive trigger'?",
+    "options": [
+      "A trigger that calls itself.",
+      "A trigger that causes another trigger to fire, which then causes the original trigger to fire again.",
+      "A trigger that is not allowed.",
+      "A trigger that operates on a recursive CTE."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-094",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Functions",
+    "question": "What does a `CAST('2023-01-01' AS DATE)` do?",
+    "options": [
+      "Converts the string '2023-01-01' into a DATE data type.",
+      "Returns an error.",
+      "Checks if the string is a valid date.",
+      "Extracts the year from the string."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-095",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Indexes",
+    "question": "What is a B-Tree?",
+    "options": [
+      "A type of binary tree.",
+      "A common self-balancing tree data structure used to implement database indexes.",
+      "A backup tree for the database.",
+      "A way to visualize table relationships."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-096",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Subqueries",
+    "question": "When might a JOIN be more performant than a subquery?",
+    "options": [
+      "Always.",
+      "Never.",
+      "Often, because the database optimizer can have more options to rearrange the query plan with a JOIN.",
+      "Only when the subquery returns a single value."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-inter-097",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Transactions",
+    "question": "What is a 'non-repeatable read'?",
+    "options": [
+      "A situation where a transaction reads the same row twice but gets different data each time.",
+      "A read operation that cannot be performed again.",
+      "Reading data that has not been committed.",
+      "An error during a read operation."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-098",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Data Warehousing",
+    "question": "What is a 'snowflake schema'?",
+    "options": [
+      "A schema where the dimension tables are normalized into multiple related tables.",
+      "A schema that looks like a snowflake.",
+      "Another name for a star schema.",
+      "A schema used for weather data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-inter-099",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "Window Functions",
+    "question": "The `FIRST_VALUE()` function returns:",
+    "options": [
+      "The first value in the entire table.",
+      "The first value in an ordered partition of a result set.",
+      "The primary key of the first row.",
+      "The same as MIN()."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-inter-100",
+    "subject": "dsa",
+    "difficulty": "intermediate",
+    "topic": "NoSQL",
+    "question": "What is a major advantage of a document database?",
+    "options": [
+      "Strict schema enforcement.",
+      "Support for ACID transactions across all documents.",
+      "Flexibility, as documents can have different structures.",
+      "It is always faster than a relational database."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-advance-001",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a query execution plan?",
+    "options": [
+      "A diagram of the database schema.",
+      "A sequence of steps used by the database optimizer to access data for an SQL query.",
+      "A log of all executed queries.",
+      "A user's plan for writing a query."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-002",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Concurrency Control",
+    "question": "What is Multi-Version Concurrency Control (MVCC)?",
+    "options": [
+      "A method where each user connecting to the database sees a snapshot of the data as it was at a particular time, preventing read-write conflicts.",
+      "A system that manages multiple versions of the database software.",
+      "A way to control access for multiple users.",
+      "A type of transaction logging."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-003",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is the difference between a B-Tree and a B+ Tree index?",
+    "options": [
+      "B+ Trees store all data in the leaf nodes, which are linked for sequential access, making range queries more efficient.",
+      "B-Trees are more balanced.",
+      "B+ Trees are only used for primary keys.",
+      "There is no functional difference in a database context."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-004",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Window Functions",
+    "question": "What is the difference between `ROWS BETWEEN` and `RANGE BETWEEN` in a window function's frame clause?",
+    "options": [
+      "`ROWS` defines the frame based on a fixed number of rows, while `RANGE` defines it based on a range of values from the current row's value.",
+      "`RANGE` is for numbers, `ROWS` is for other types.",
+      "They are synonymous.",
+      "`ROWS` is always more performant."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-005",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What are the four standard transaction isolation levels?",
+    "options": [
+      "Read Uncommitted, Read Committed, Repeatable Read, Serializable",
+      "Low, Medium, High, Extreme",
+      "None, Partial, Full, Total",
+      "Fast, Slow, Buffered, Unbuffered"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-006",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is database sharding?",
+    "options": [
+      "A type of database backup.",
+      "A database architecture pattern that involves horizontally partitioning data across multiple servers.",
+      "Encrypting a database.",
+      "A way to index a database."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-007",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is 'predicate pushdown'?",
+    "options": [
+      "Pushing down on the keyboard to write a predicate.",
+      "An optimization where predicates (filtering conditions) are moved as close as possible to the data source to reduce the amount of data processed.",
+      "A way to make predicates more complex.",
+      "A feature of NoSQL databases only."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-008",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'pivoting' operation?",
+    "options": [
+      "Rotating the database server.",
+      "Joining a table to itself.",
+      "Turning rows of data into columns.",
+      "Creating a summary of a table."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "dsa-advance-009",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is index 'selectivity'?",
+    "options": [
+      "How quickly an index can be selected.",
+      "A measure of how many unique values are in a column, where high selectivity (many unique values) is good for index performance.",
+      "The type of data the index is on.",
+      "The physical size of the index."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-010",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is the CAP Theorem?",
+    "options": [
+      "It states that a distributed database can only provide two of the following three guarantees: Consistency, Availability, and Partition tolerance.",
+      "A theorem about the maximum capacity of a database.",
+      "A rule for creating database schemas.",
+      "A performance benchmark."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-011",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Concurrency Control",
+    "question": "What is a 'phantom read'?",
+    "options": [
+      "Reading data that doesn't exist.",
+      "A concurrency issue where a transaction re-executes a query and finds additional rows that have been inserted by another committed transaction.",
+      "An error in the transaction log.",
+      "A read operation that returns a ghost record."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-012",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is database replication?",
+    "options": [
+      "The process of creating copies of a database to improve reliability, fault-tolerance, or accessibility.",
+      "A way to reply to database queries.",
+      "The same as a database backup.",
+      "A method for data normalization."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-013",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What are database statistics and why are they important?",
+    "options": [
+      "Statistics about database usage.",
+      "Metadata about the distribution of data in tables and indexes, used by the query optimizer to choose the best execution plan.",
+      "Performance metrics like CPU and memory usage.",
+      "They are not important for modern databases."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-014",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is the purpose of a `MERGE` statement?",
+    "options": [
+      "To perform INSERT, UPDATE, or DELETE operations on a target table based on the results of a join with a source table.",
+      "To merge two databases together.",
+      "Another name for a UNION operation.",
+      "To merge multiple rows into one."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-015",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'covering index'?",
+    "options": [
+      "An index that covers the entire table.",
+      "A non-clustered index that includes all the columns required by a query, so the table itself doesn't need to be accessed.",
+      "An index on a materialized view.",
+      "A backup of an index."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-016",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is 'two-phase commit' (2PC)?",
+    "options": [
+      "A protocol to ensure atomicity for transactions across multiple distributed databases.",
+      "Committing a transaction in two separate steps.",
+      "A type of transaction logging.",
+      "A less reliable version of a single commit."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-017",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is a graph database?",
+    "options": [
+      "A database for storing images and graphs.",
+      "A database that uses graph structures with nodes, edges, and properties to represent and store data.",
+      "A type of relational database.",
+      "A database that is visualized as a graph."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-018",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'cardinality estimator'?",
+    "options": [
+      "A component of the query optimizer that estimates the number of rows that will be returned by an operation.",
+      "A tool for counting the rows in a table.",
+      "A way to enforce cardinality constraints.",
+      "A type of index."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-019",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What are OLAP (Online Analytical Processing) queries?",
+    "options": [
+      "Simple queries that retrieve single records.",
+      "Complex queries that involve aggregations over large amounts of data, typical in data warehousing.",
+      "Queries that run online.",
+      "Another name for DML statements."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-020",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Concurrency Control",
+    "question": "What is 'optimistic locking'?",
+    "options": [
+      "A strategy where you assume that multiple transactions can complete without affecting each other, and you only check for conflicts at commit time.",
+      "A lock that is always successful.",
+      "A less secure form of locking.",
+      "The default locking mechanism in all databases."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-021",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is an 'index-only scan'?",
+    "options": [
+      "A scan that only looks at the index definition.",
+      "A data retrieval method where all the required information for a query can be satisfied from an index, without accessing the table.",
+      "A full scan of an index.",
+      "A very fast table scan."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-022",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is the difference between OLTP and OLAP?",
+    "options": [
+      "OLTP (Online Transaction Processing) is for transactional systems, while OLAP (Online Analytical Processing) is for data warehousing and analytics.",
+      "OLAP is faster than OLTP.",
+      "They are two competing database vendors.",
+      "OLTP is a newer technology."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-023",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is a 'dirty read' concurrency problem?",
+    "options": [
+      "A transaction reads data that has been modified by another transaction that has not yet committed.",
+      "Reading data from a table that needs cleaning.",
+      "A read operation that returns incorrect data due to a hardware failure.",
+      "Reading the same row twice and getting different results."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-024",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'histogram' in the context of database statistics?",
+    "options": [
+      "A chart used to visualize query performance.",
+      "A data structure used by the optimizer to represent the distribution of values in a column.",
+      "A log of historical queries.",
+      "A type of index."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-025",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What does the `CUBE` operator do?",
+    "options": [
+      "Calculates the cube of a number.",
+      "A `GROUP BY` extension that produces result sets for all possible combinations of the grouping columns.",
+      "Creates a 3D data visualization.",
+      "A function for geometric calculations."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-026",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is 'BASE' in the context of NoSQL databases?",
+    "options": [
+      "A set of properties (Basically Available, Soft state, Eventual consistency) that describes many NoSQL database systems.",
+      "The foundational query language for NoSQL.",
+      "An acronym for the most popular NoSQL databases.",
+      "A type of data consistency model."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-027",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'filtered index'?",
+    "options": [
+      "An index that has been cleaned of unnecessary data.",
+      "An optimized non-clustered index that covers a subset of rows in a table, defined by a filter predicate.",
+      "An index that cannot be used by queries.",
+      "A standard feature in all SQL databases."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-028",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Concurrency Control",
+    "question": "What is 'pessimistic locking'?",
+    "options": [
+      "A locking strategy where a resource is locked from the time it is first accessed by a transaction until the transaction is complete.",
+      "A lock that is expected to fail.",
+      "A way to prevent all concurrent access.",
+      "A less efficient locking strategy."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-029",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is a 'columnar' database?",
+    "options": [
+      "A database that stores data in columns rather than rows, which is efficient for analytical queries.",
+      "A database that only has one column per table.",
+      "A type of NoSQL database.",
+      "A database designed for storing text columns."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-030",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'hash join'?",
+    "options": [
+      "A join algorithm where a hash table is built on one of the tables to speed up the process of finding matching rows.",
+      "A join that uses a hash function to encrypt the data.",
+      "A join that is not reliable.",
+      "A join between two hash tables."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-031",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'lateral join' (or `APPLY` in some dialects)?",
+    "options": [
+      "A type of join that allows a derived table (subquery) in the FROM clause to reference columns from a preceding table.",
+      "A join that moves data laterally between tables.",
+      "An inefficient type of INNER JOIN.",
+      "A join between tables that are not related."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-032",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is a 'phantom read' concurrency issue?",
+    "options": [
+      "A transaction re-runs a query and finds new rows that were inserted by another committed transaction.",
+      "Reading a row that has been deleted.",
+      "Reading a row that was never inserted.",
+      "An error in the database's memory."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-033",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'fill factor' for an index?",
+    "options": [
+      "A setting that determines the percentage of space on each leaf-level page to be filled with data, reserving space for future growth.",
+      "How full the index is.",
+      "A measure of index performance.",
+      "The number of columns in an index."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-034",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is 'sharding' in the context of databases like MongoDB?",
+    "options": [
+      "The process of breaking up large tables into smaller, more manageable pieces called partitions.",
+      "A method of horizontally partitioning data across multiple servers.",
+      "A data replication strategy.",
+      "A way to index a large collection."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-035",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'sort-merge join'?",
+    "options": [
+      "A join algorithm where both tables are sorted on the join key, and then the sorted tables are merged together.",
+      "A join that sorts the final result.",
+      "A less efficient version of a hash join.",
+      "A join that requires manual sorting."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-036",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is a 'data mart'?",
+    "options": [
+      "A large-scale data warehouse.",
+      "A subset of a data warehouse focused on a specific business line or department.",
+      "A marketplace for buying and selling data.",
+      "A small, personal database."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-037",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "The `ROLLUP` operator is a `GROUP BY` extension that:",
+    "options": [
+      "Produces subtotals and grand totals for a set of columns.",
+      "Rolls up the data into a single row.",
+      "Is used for creating financial reports.",
+      "Is another name for `CUBE`."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-038",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Concurrency Control",
+    "question": "What is 'snapshot isolation'?",
+    "options": [
+      "An isolation level where a transaction sees a consistent snapshot of the database from the time it started.",
+      "Taking a snapshot of the database for backup.",
+      "The highest level of isolation.",
+      "A type of lock."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-039",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a potential issue with indexing a column that has low cardinality?",
+    "options": [
+      "The index may not be very effective and could be ignored by the optimizer.",
+      "It can significantly speed up queries.",
+      "It is not allowed by the database.",
+      "It uses a very large amount of disk space."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-040",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is a 'non-repeatable read'?",
+    "options": [
+      "A concurrency issue where a transaction re-reads a row and finds that the data has been modified by another committed transaction.",
+      "A read operation that can only be performed once.",
+      "Reading a row that does not exist.",
+      "An error from the storage device."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-041",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is a 'document' in a document-oriented database?",
+    "options": [
+      "A Word document or PDF file.",
+      "A record that is stored in a structured format like JSON or BSON.",
+      "A type of primary key.",
+      "A text file containing SQL queries."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-042",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'nested loop join'?",
+    "options": [
+      "A join algorithm that iterates through every row of the outer table and, for each one, scans the inner table for matches.",
+      "A join that uses nested loops in the application code.",
+      "The most efficient type of join.",
+      "A join inside another join."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-043",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is 'database normalization' vs 'denormalization'?",
+    "options": [
+      "Normalization reduces redundancy, denormalization adds redundancy for performance.",
+      "Denormalization is the process of fixing normalization errors.",
+      "They are two competing database design philosophies.",
+      "Normalization is for OLAP, denormalization is for OLTP."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-044",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "A Common Table Expression (CTE) is recursive if:",
+    "options": [
+      "It refers to itself.",
+      "It is defined within another CTE.",
+      "It uses a window function.",
+      "It is very long."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-045",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'geospatial index'?",
+    "options": [
+      "An index used for efficiently querying data based on geographic location.",
+      "An index for storing world maps.",
+      "A type of clustered index.",
+      "An index on a geography-related text column."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-046",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What does the 'Serializable' isolation level provide?",
+    "options": [
+      "The highest level of isolation, where transactions appear to run serially, preventing most concurrency issues but potentially reducing performance.",
+      "It allows transactions to be serialized to disk.",
+      "It is the lowest level of isolation.",
+      "It is the default isolation level."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-047",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is a primary use case for a time-series database?",
+    "options": [
+      "Storing data from sensors, IoT devices, or financial markets.",
+      "Storing user profiles.",
+      "Managing relational data.",
+      "Storing graph data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-048",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "Why might a database optimizer choose not to use an available index?",
+    "options": [
+      "If the table is very small and a full scan is faster.",
+      "If the index selectivity is low and a large percentage of rows would be returned.",
+      "If the query's WHERE clause does not match the index columns.",
+      "All of the above."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "dsa-advance-049",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is the difference between active-active and active-passive database replication?",
+    "options": [
+      "In active-active, all replicas can accept writes, while in active-passive, only the primary server accepts writes.",
+      "Active-active is less reliable.",
+      "Active-passive is only for backups.",
+      "There is no difference in functionality."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-050",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is 'unpivoting'?",
+    "options": [
+      "The operation of transforming columns into rows.",
+      "Fixing a pivot operation that went wrong.",
+      "A way to improve performance.",
+      "Another name for a self-join."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-051",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'write-ahead log' (WAL)?",
+    "options": [
+      "A standard method for ensuring data integrity by writing all modifications to a log before applying them to the database.",
+      "A log of all read operations.",
+      "A plan for future write operations.",
+      "A security feature."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-052",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is 'Read Committed' isolation level?",
+    "options": [
+      "A transaction can only read data that has been committed.",
+      "A transaction must commit all its reads.",
+      "It is the same as Serializable.",
+      "It prevents phantom reads."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-053",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is 'eventual consistency'?",
+    "options": [
+      "A consistency model where, if no new updates are made, all replicas will eventually converge on the same value.",
+      "A model where the database is never consistent.",
+      "A property of ACID transactions.",
+      "A way to achieve strong consistency."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-054",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'SARGable' query?",
+    "options": [
+      "A query that is very long and difficult to read.",
+      "A query where the WHERE clause is in a format that allows the database to use an index (Search ARGument-able).",
+      "A query that uses a sarcastic tone.",
+      "A query that cannot be optimized."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-055",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is a 'data lake'?",
+    "options": [
+      "A centralized repository that allows you to store all your structured and unstructured data at any scale.",
+      "A very large database.",
+      "A database located under a lake.",
+      "Another name for a data warehouse."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-056",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What are `GROUPING SETS` used for?",
+    "options": [
+      "To generate a result set that is equivalent to a `UNION ALL` of multiple `GROUP BY` clauses.",
+      "To set the grouping for a query.",
+      "A way to create multiple groups in one statement.",
+      "A window function."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-057",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is an 'inverted index'?",
+    "options": [
+      "An index where the data is stored upside down.",
+      "An index data structure storing a mapping from content, such as words or numbers, to its locations in a document or a set of documents (commonly used in full-text search).",
+      "An index that is not valid.",
+      "A clustered index."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-058",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Concurrency Control",
+    "question": "What is 'lock escalation'?",
+    "options": [
+      "The process of converting many fine-grained locks (like row locks) into a single coarse-grained lock (like a table lock) to reduce system overhead.",
+      "When a lock becomes more important.",
+      "A type of deadlock.",
+      "A security vulnerability."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-059",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is a 'Repeatable Read' isolation level?",
+    "options": [
+      "It guarantees that any data read cannot change, but it does not prevent new rows from being added (phantom reads).",
+      "It allows you to read the same data multiple times.",
+      "It is the same as Read Committed.",
+      "It prevents all concurrency issues."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-060",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "Which of these is a good use case for a key-value store database?",
+    "options": [
+      "Complex analytical queries.",
+      "Storing user sessions, caching, and real-time bidding.",
+      "Enforcing strict relational integrity.",
+      "Graph traversal."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-061",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What does it mean to 'EXPLAIN' a query?",
+    "options": [
+      "To describe the query in plain language.",
+      "To ask the database to return the execution plan it would use for a given query.",
+      "To add comments to a query.",
+      "To simplify a complex query."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-062",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is a 'federated database'?",
+    "options": [
+      "A type of distributed database system that provides a unified interface to multiple heterogeneous data sources.",
+      "A database used by a federal government.",
+      "A single, centralized database.",
+      "A type of NoSQL database."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-063",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'hierarchical query'?",
+    "options": [
+      "A query that organizes results in a hierarchy.",
+      "A type of SQL query that handles hierarchical model data, often using a recursive CTE or specific clauses like `CONNECT BY` (in Oracle).",
+      "A query with many levels of subqueries.",
+      "A query on a view."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-064",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "A 'hash index' is most effective for which type of query?",
+    "options": [
+      "Range queries (e.g., `WHERE age > 30`).",
+      "Equality queries (e.g., `WHERE id = 123`).",
+      "Pattern matching (e.g., `LIKE '%abc%'`).",
+      "Sorting data."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-065",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is a 'write skew' anomaly?",
+    "options": [
+      "A phenomenon where two transactions concurrently read a set of data, then make updates based on what they read, leading to an inconsistent state.",
+      "Writing data that is skewed.",
+      "An error during a write operation.",
+      "A problem solved by the Read Committed isolation level."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-066",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is a 'wide-column' store (like Cassandra)?",
+    "options": [
+      "A database where tables have a very large number of columns.",
+      "A type of key-value store where the values are composed of a set of columns, and rows can have different sets of columns.",
+      "A database for storing wide images.",
+      "A relational database with a flexible schema."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-067",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'join hint'?",
+    "options": [
+      "A directive given in a query to the database optimizer to influence the choice of join algorithm (e.g., HASH, MERGE, LOOP).",
+      "A hint that a join might be slow.",
+      "An automatic optimization for joins.",
+      "A comment explaining a join."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-068",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is 'polyglot persistence'?",
+    "options": [
+      "Storing data in multiple languages.",
+      "The concept of using multiple data storage technologies for different parts of an application's data needs.",
+      "A type of database that supports all programming languages.",
+      "A very old persistence method."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-069",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'temporal database'?",
+    "options": [
+      "A database that stores data relating to time instances, managing data with respect to its history.",
+      "A temporary database.",
+      "A database that is very fast.",
+      "A database for storing time-based events only."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-070",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is 'index fragmentation' and how can it be fixed?",
+    "options": [
+      "It's when an index becomes corrupted; it can be fixed by dropping and recreating it.",
+      "It's when the logical and physical order of an index diverge; it can be fixed by rebuilding or reorganizing the index.",
+      "It's when an index is split into multiple files.",
+      "It is not a real problem in modern databases."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-071",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is the difference between a `TRIGGER` and a `CHECK` constraint?",
+    "options": [
+      "`CHECK` constraints validate data on insert/update, while `TRIGGER`s can perform more complex actions in response to data modifications.",
+      "They are the same.",
+      "`TRIGGER`s are faster.",
+      "`CHECK` constraints can call stored procedures."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-072",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is a 'document' in a document database?",
+    "options": [
+      "A PDF file.",
+      "A self-contained unit of data, often represented in a JSON-like format.",
+      "A row in a table.",
+      "A primary key."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "dsa-advance-073",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is 'cost-based optimization'?",
+    "options": [
+      "A method where the query optimizer chooses the execution plan with the lowest estimated cost (based on CPU, I/O, etc.).",
+      "Optimizing queries to reduce monetary cost.",
+      "A manual optimization technique.",
+      "The only type of query optimization."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-074",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is 'ETL'?",
+    "options": [
+      "A process in data warehousing: Extract, Transform, Load.",
+      "A type of database.",
+      "A SQL command.",
+      "A security protocol."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-075",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What does a `NATURAL JOIN` do?",
+    "options": [
+      "It joins two tables based on all columns with the same name.",
+      "It is the most natural way to join tables.",
+      "It is an alias for `LEFT JOIN`.",
+      "It creates a Cartesian product."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-076",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'bitmap index'?",
+    "options": [
+      "An index that uses a string of bits (a bitmap) to indicate the existence of a value for a column, efficient for low-cardinality columns.",
+      "An index for storing images.",
+      "A less efficient B-Tree index.",
+      "An index on a BIT data type column."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-077",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is the 'read uncommitted' isolation level?",
+    "options": [
+      "The lowest isolation level, where a transaction can read data that has not yet been committed by other transactions (dirty reads).",
+      "The highest isolation level.",
+      "It means you cannot read any data that is part of a transaction.",
+      "The default isolation level in most databases."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-078",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "In a graph database, what is a 'traversal'?",
+    "options": [
+      "The process of navigating through the graph by following edges between nodes.",
+      "A query to find a specific node.",
+      "A backup of the graph.",
+      "An index on the graph."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-079",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'seek' vs. a 'scan' operation on an index?",
+    "options": [
+      "A seek uses the index to directly navigate to the desired rows, while a scan reads all or a large part of the index.",
+      "A seek is always slower.",
+      "They are the same operation.",
+      "A scan is only used for clustered indexes."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-080",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is 'OLAP Cube'?",
+    "options": [
+      "A multi-dimensional array of data used in OLAP systems for fast analysis.",
+      "A cube-shaped database server.",
+      "A type of data visualization.",
+      "A geometric data type in SQL."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-081",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is the purpose of the `FILTER` clause with aggregate functions in some SQL dialects?",
+    "options": [
+      "To provide a way to filter the rows that are included in the aggregate calculation.",
+      "To filter the final result of the query.",
+      "It is an alternative to the HAVING clause.",
+      "It is not a valid SQL feature."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-082",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is an 'expression-based' or 'function-based' index?",
+    "options": [
+      "An index built on the result of a function or expression applied to one or more columns.",
+      "An index that is very expressive.",
+      "An index that can only be used with functions.",
+      "A less efficient type of index."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-083",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is a 'locking hint'?",
+    "options": [
+      "A hint given to the database to override the default transaction locking behavior for a query.",
+      "A comment about a lock.",
+      "A way to prevent deadlocks.",
+      "A security feature."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-084",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is 'sharding'?",
+    "options": [
+      "Horizontally partitioning data across multiple servers to distribute load.",
+      "A type of data encryption.",
+      "A way to replicate data.",
+      "A feature of relational databases only."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-085",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'covering index'?",
+    "options": [
+      "An index that includes all columns needed for a query, avoiding table access.",
+      "An index that covers the entire table.",
+      "Another name for a clustered index.",
+      "An index on all columns."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-086",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is a 'data warehouse'?",
+    "options": [
+      "A large store of data accumulated from a wide range of sources within a company and used to guide management decisions.",
+      "A physical warehouse for storing servers.",
+      "A type of NoSQL database.",
+      "A backup of a transactional database."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-087",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'materialized view'?",
+    "options": [
+      "A physical copy of the data from a view's query, which is stored on disk and periodically updated.",
+      "A view that is easy to understand.",
+      "Another name for a CTE.",
+      "A view that cannot be queried directly."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-088",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is a 'B+ tree'?",
+    "options": [
+      "A common data structure for implementing database indexes, where all data is stored in leaf nodes.",
+      "A better version of a B-tree.",
+      "A type of binary tree.",
+      "A data structure for in-memory databases only."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-089",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is 'optimistic concurrency control'?",
+    "options": [
+      "A method where you assume conflicts are rare and only check for them at commit time.",
+      "A method where you lock resources pessimistically.",
+      "A less secure concurrency model.",
+      "A feature of NoSQL databases."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-090",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is 'eventual consistency'?",
+    "options": [
+      "A model where, given no new updates, all replicas will eventually converge to the same state.",
+      "A guarantee of immediate consistency.",
+      "A type of database error.",
+      "A property of relational databases."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-091",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is 'predicate pushdown'?",
+    "options": [
+      "An optimization that moves filtering conditions as close to the data source as possible.",
+      "Pushing down on a predicate.",
+      "A way to make predicates more complex.",
+      "A manual optimization technique."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-092",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is a 'column-oriented' database?",
+    "options": [
+      "A database that stores data by columns instead of rows, often used for analytical workloads.",
+      "A database with only one column.",
+      "A type of relational database.",
+      "A database for storing images."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-093",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'window function'?",
+    "options": [
+      "A function that performs a calculation across a set of table rows that are somehow related to the current row.",
+      "A function for creating windows in a GUI.",
+      "Another name for an aggregate function.",
+      "A function that operates on a time window."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-094",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is 'index cardinality'?",
+    "options": [
+      "The number of unique values in an indexed column, which affects its usefulness.",
+      "The size of an index.",
+      "The speed of an index.",
+      "The number of columns in an index."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-095",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Transactions",
+    "question": "What is 'MVCC' (Multi-Version Concurrency Control)?",
+    "options": [
+      "A concurrency control method where each transaction sees a snapshot of the database at a certain point in time.",
+      "A way to manage multiple versions of the database software.",
+      "A locking mechanism.",
+      "A type of transaction log."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-096",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "NoSQL",
+    "question": "What is a 'graph database' good for?",
+    "options": [
+      "Managing and querying highly connected data, like social networks or fraud detection.",
+      "Storing large documents.",
+      "Simple key-value lookups.",
+      "Time-series data."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-097",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Query Optimization",
+    "question": "What is a 'query hint'?",
+    "options": [
+      "An instruction given to the query optimizer to influence its execution plan.",
+      "A comment in a query.",
+      "A suggestion for how to write a query.",
+      "An automatic optimization."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-098",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Database Architecture",
+    "question": "What is 'polyglot persistence'?",
+    "options": [
+      "The concept of using multiple data storage technologies for different data needs within a single application.",
+      "Storing data in multiple languages.",
+      "A type of database.",
+      "A backup strategy."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-099",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Advanced SQL",
+    "question": "What is a 'temporal database'?",
+    "options": [
+      "A database that stores data relating to time instances, managing data with respect to its history.",
+      "A temporary database.",
+      "A database that is very fast.",
+      "A database for storing time-based events only."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "dsa-advance-100",
+    "subject": "dsa",
+    "difficulty": "advance",
+    "topic": "Indexes",
+    "question": "What is 'index fragmentation' and how can it be fixed?",
+    "options": [
+      "It's when an index becomes corrupted; it can be fixed by dropping and recreating it.",
+      "It's when the logical and physical order of an index diverge; it can be fixed by rebuilding or reorganizing the index.",
+      "It's when an index is split into multiple files.",
+      "It is not a real problem in modern databases."
+    ],
+    "answerIndex": 1
+  }
+]
 
 
 
