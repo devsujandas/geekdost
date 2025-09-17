@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { FaCode, FaRocket, FaUsers, FaCertificate } from "react-icons/fa"
+import { FaBookOpen, FaCode, FaUsers, FaAward  } from "react-icons/fa"
 import { topicsData } from "@/lib/topics-data"
 import { TopicCard } from "@/components/topic-card"
 import { GlassmorphismCard } from "@/components/glassmorphism-card"
@@ -59,7 +59,7 @@ export default function HomePage() {
               className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-16"
             >
               <GlassmorphismCard delay={0.7} className="text-center">
-                <FaCode className="h-8 w-8 text-primary mx-auto mb-3" />
+                <FaBookOpen className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   <AnimatedCounter value={12} suffix="+" />
                 </h3>
@@ -69,7 +69,7 @@ export default function HomePage() {
               </GlassmorphismCard>
 
               <GlassmorphismCard delay={0.8} className="text-center">
-                <FaRocket className="h-8 w-8 text-primary mx-auto mb-3" />
+                <FaCode className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   <AnimatedCounter value={50} suffix="+" />
                 </h3>
@@ -87,7 +87,7 @@ export default function HomePage() {
               </GlassmorphismCard>
 
               <GlassmorphismCard delay={1.0} className="text-center">
-                <FaCertificate className="h-8 w-8 text-primary mx-auto mb-3" />
+                <FaAward  className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   <AnimatedCounter value={20} suffix="+" />
                 </h3>
