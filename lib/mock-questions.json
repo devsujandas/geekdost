@@ -68198,6 +68198,237 @@
       "To run the application logic."
     ],
     "answerIndex": 1
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "test-add-001",
+    "subject": "test",
+    "difficulty": "basic",
+    "topic": "Simple Addition",
+    "question": "What is 1 + 1?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "test-add-002",
+    "subject": "test",
+    "difficulty": "basic",
+    "topic": "Simple Addition",
+    "question": "What is 2 + 3?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "23"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "test-add-003",
+    "subject": "test",
+    "difficulty": "basic",
+    "topic": "Simple Addition",
+    "question": "What is 5 + 4?",
+    "options": [
+      "8",
+      "1",
+      "9",
+      "54"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "test-add-004",
+    "subject": "test",
+    "difficulty": "basic",
+    "topic": "Simple Addition",
+    "question": "What is 7 + 1?",
+    "options": [
+      "8",
+      "7",
+      "6",
+      "71"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "test-add-005",
+    "subject": "test",
+    "difficulty": "basic",
+    "topic": "Simple Addition",
+    "question": "What is 6 + 3?",
+    "options": [
+      "3",
+      "10",
+      "9",
+      "63"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "test-add-harder-001",
+    "subject": "test",
+    "difficulty": "intermediate",
+    "topic": "Harder Addition",
+    "question": "What is 10 + 10?",
+    "options": [
+      "0",
+      "100",
+      "20",
+      "10"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "test-add-harder-002",
+    "subject": "test",
+    "difficulty": "intermediate",
+    "topic": "Harder Addition",
+    "question": "What is 15 + 20?",
+    "options": [
+      "35",
+      "25",
+      "40",
+      "1520"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "test-add-harder-003",
+    "subject": "test",
+    "difficulty": "intermediate",
+    "topic": "Harder Addition",
+    "question": "What is 50 + 25?",
+    "options": [
+      "25",
+      "50",
+      "75",
+      "5025"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "test-add-harder-004",
+    "subject": "test",
+    "difficulty": "intermediate",
+    "topic": "Harder Addition",
+    "question": "What is 100 + 1?",
+    "options": [
+      "101",
+      "100",
+      "99",
+      "1001"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "test-add-harder-005",
+    "subject": "test",
+    "difficulty": "intermediate",
+    "topic": "Harder Addition",
+    "question": "What is 30 + 70?",
+    "options": [
+      "40",
+      "100",
+      "90",
+      "3070"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "test-sub-001",
+    "subject": "test",
+    "difficulty": "advance",
+    "topic": "Simple Subtraction",
+    "question": "What is 10 - 5?",
+    "options": [
+      "15",
+      "5",
+      "10",
+      "0"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "test-sub-002",
+    "subject": "test",
+    "difficulty": "advance",
+    "topic": "Simple Subtraction",
+    "question": "What is 20 - 10?",
+    "options": [
+      "10",
+      "30",
+      "20",
+      "0"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "test-sub-003",
+    "subject": "test",
+    "difficulty": "advance",
+    "topic": "Simple Subtraction",
+    "question": "What is 8 - 4?",
+    "options": [
+      "12",
+      "8",
+      "4",
+      "2"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "test-sub-004",
+    "subject": "test",
+    "difficulty": "advance",
+    "topic": "Simple Subtraction",
+    "question": "What is 5 - 5?",
+    "options": [
+      "10",
+      "5",
+      "1",
+      "0"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "test-sub-005",
+    "subject": "test",
+    "difficulty": "advance",
+    "topic": "Simple Subtraction",
+    "question": "What is 9 - 3?",
+    "options": [
+      "12",
+      "6",
+      "3",
+      "9"
+    ],
+    "answerIndex": 1
   }
 ]
+
+
 

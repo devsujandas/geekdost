@@ -5,7 +5,7 @@ import { useParams, useRouter } from "next/navigation"
 import { getQuestions } from "@/lib/questions"
 import { saveResult, saveProgress, getProgress, clearProgress } from "@/lib/storage"
 import { motion, AnimatePresence } from "framer-motion"
-import { FaCheckCircle, FaTimesCircle, FaQuestionCircle } from "react-icons/fa"
+import { FaCheckCircle, FaTimesCircle, FaQuestionCircle, FaRegClock } from "react-icons/fa"
 
 export default function ExamPage() {
   const { subject, difficulty } = useParams()
@@ -97,14 +97,14 @@ export default function ExamPage() {
     clearInterval(timerRef.current!)
     clearProgress(subject as string, difficulty as string)
 
-    // ✅ Save the actual set of questions with result
+    
     const result = {
       subject,
       difficulty,
       mode: "exam",
       answers,
       total: questions.length,
-      questions, // 👈 Added to ensure result page uses the same questions
+      questions, 
       date: new Date().toISOString(),
       timeTaken: 60 * 60 - timeLeft,
       timePerQ,
@@ -147,7 +147,7 @@ export default function ExamPage() {
 
   const q = questions[current]
 
-  // ✅ Correct Answer / Not Answered count
+  //  Correct Answer / Not Answered count
   const totalQuestions = questions.length
   const answeredCount = Object.values(answers).filter(
     (a) => a !== null && a !== undefined
@@ -157,9 +157,10 @@ export default function ExamPage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 py-6">
       {/* Timer */}
-      <div className="fixed top-4 right-4 glass px-4 py-2 rounded-lg font-bold text-lg z-50">
-        ⏳ {formatTime(timeLeft)}
-      </div>
+      <div className="fixed top-4 right-4 glass px-4 py-2 rounded-lg font-bold text-lg z-50 flex items-center gap-2">
+      <FaRegClock className="text-xl" />
+      {formatTime(timeLeft)}
+    </div>
 
       {/* Question Card */}
       <motion.div

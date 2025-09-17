@@ -40,7 +40,8 @@ const subjects = [
   { id: "cyber", name: "Cyber Security", icon: <FaLock className="h-10 w-10 text-primary" /> },
   { id: "os", name: "Operating Systems", icon: <SiLinux className="h-10 w-10 text-primary" /> },
   { id: "networks", name: "Computer Networks", icon: <FaNetworkWired className="h-10 w-10 text-primary" /> },
-  { id: "se", name: "Software Engineering", icon: <FaProjectDiagram className="h-10 w-10 text-primary" /> }
+  { id: "se", name: "Software Engineering", icon: <FaProjectDiagram className="h-10 w-10 text-primary" /> },
+  { id: "test", name: "Test", icon: <FaProjectDiagram className="h-10 w-10 text-primary" /> }
 
 
 
