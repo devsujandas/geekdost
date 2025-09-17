@@ -35,7 +35,7 @@ type Result = {
   date: string
   timeTaken: number
   timePerQ: Record<string, number>
-  questions: Question[] // 👈 added: same questions used in exam
+  questions: Question[]
 }
 
 export default function ResultPage() {
@@ -59,7 +59,7 @@ export default function ResultPage() {
     )
   }
 
-  const questions = latest.questions || [] // ✅ load from saved result
+  const questions = latest.questions || []
 
   // --- Score Calculation ---
   const answered = Object.values(latest.answers).filter(
@@ -82,8 +82,9 @@ export default function ResultPage() {
   // --- Grade Calculation ---
   let grade = "F"
   if (percentage >= 90) grade = "O"
-  else if (percentage >= 75) grade = "A"
-  else if (percentage >= 60) grade = "E"
+  else if (percentage >= 80) grade = "E"
+  else if (percentage >= 70) grade = "A"
+  else if (percentage >= 60) grade = "B"
 
   // --- Performance Summary ---
   let summary = {
@@ -217,7 +218,7 @@ export default function ResultPage() {
           </div>
 
           {/* Achievement Claim Section */}
-          {latest.mode === "exam" && percentage >= 60 && (
+          {latest.mode === "exam" && percentage >= 60 ? (
             <div className="mt-10 text-center">
               <h3 className="text-lg font-semibold mb-2">
                 Congratulations! 🎉
@@ -234,7 +235,26 @@ export default function ResultPage() {
                 <FaAward /> Claim Achievement
               </button>
             </div>
-          )}
+          ) : latest.mode === "exam" && percentage < 60 ? (
+            <div className="mt-10 text-center">
+              <h3 className="text-lg font-semibold mb-2 text-red-500">
+                Keep Practicing 💪
+              </h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                You scored below 60%. Focus on your weak topics and practice
+                more to earn your certificate next time!
+              </p>
+<button
+  onClick={() =>
+    router.push(`/test/${subject}/${difficulty}/practice`)
+  }
+  className="px-6 py-2 bg-yellow-500 text-white rounded-lg flex items-center gap-2 mx-auto hover:opacity-90"
+>
+  Practice More
+</button>
+
+            </div>
+          ) : null}
 
           {/* Export & Share */}
           <div className="mt-8 flex gap-4 justify-center">
@@ -281,50 +301,43 @@ export default function ResultPage() {
         <h2 className="text-2xl font-bold mt-12 mb-6 text-center">
           Review Answers
         </h2>
-{/* Review Section */}
-<h2 className="text-2xl font-bold mt-12 mb-6 text-center">
-  Review Answers
-</h2>
-<div className="space-y-4 max-w-3xl mx-auto">
-  {latest.questions.map((q, i) => {   // ✅ এখানেও latest.questions
-    const userAns = latest.answers[q.id]
-    const isCorrect = userAns === q.answerIndex
-    return (
-      <motion.div
-        key={q.id}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: i * 0.02 }}
-        className={`p-4 rounded-xl border ${
-          userAns === null
-            ? "border-yellow-400 bg-yellow-500/10"
-            : isCorrect
-            ? "border-green-500 bg-green-500/10"
-            : "border-red-500 bg-red-500/10"
-        }`}
-      >
-        <p className="font-medium mb-2">
-          Q{i + 1}. {q.question}
-        </p>
-        <p className="text-sm">
-          Your Answer:{" "}
-          {userAns !== null && userAns !== undefined
-            ? q.options[userAns]
-            : "Not Answered"}
-        </p>
-        <p className="text-sm">
-          Correct: {q.options[q.answerIndex]}
-        </p>
-        {latest.timePerQ && latest.timePerQ[q.id] && (
-          <p className="text-xs text-muted-foreground">
-            Time Spent: {latest.timePerQ[q.id]}s
-          </p>
-        )}
-      </motion.div>
-    )
-  })}
-</div>
-
+        <div className="space-y-4 max-w-3xl mx-auto">
+          {latest.questions.map((q, i) => {
+            const userAns = latest.answers[q.id]
+            const isCorrect = userAns === q.answerIndex
+            return (
+              <motion.div
+                key={q.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.02 }}
+                className={`p-4 rounded-xl border ${
+                  userAns === null
+                    ? "border-yellow-400 bg-yellow-500/10"
+                    : isCorrect
+                    ? "border-green-500 bg-green-500/10"
+                    : "border-red-500 bg-red-500/10"
+                }`}
+              >
+                <p className="font-medium mb-2">
+                  Q{i + 1}. {q.question}
+                </p>
+                <p className="text-sm">
+                  Your Answer:{" "}
+                  {userAns !== null && userAns !== undefined
+                    ? q.options[userAns]
+                    : "Not Answered"}
+                </p>
+                <p className="text-sm">Correct: {q.options[q.answerIndex]}</p>
+                {latest.timePerQ && latest.timePerQ[q.id] && (
+                  <p className="text-xs text-muted-foreground">
+                    Time Spent: {latest.timePerQ[q.id]}s
+                  </p>
+                )}
+              </motion.div>
+            )
+          })}
+        </div>
       </div>
     </PageLayout>
   )

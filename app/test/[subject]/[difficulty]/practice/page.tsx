@@ -41,6 +41,7 @@ export default function PracticePage() {
       answers,
       total: questions.length,
       date: new Date().toISOString(),
+      questions, // ✅ এখন questions সবসময় save হবে
     }
     saveResult(result)
 
@@ -66,11 +67,19 @@ export default function PracticePage() {
   if (submitting) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen px-6 text-center">
-        <motion.h2 initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-2xl font-bold mb-6">
+        <motion.h2
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-2xl font-bold mb-6"
+        >
           Checking Your Practice...
         </motion.h2>
         <div className="w-full max-w-md bg-accent/20 rounded-full h-4 overflow-hidden mb-4">
-          <motion.div className="bg-primary h-4" initial={{ width: "0%" }} animate={{ width: `${progress}%` }} />
+          <motion.div
+            className="bg-primary h-4"
+            initial={{ width: "0%" }}
+            animate={{ width: `${progress}%` }}
+          />
         </div>
         <p className="text-lg font-semibold text-primary">{progress}%</p>
         <p className="text-muted-foreground mt-2">Almost done...</p>
@@ -107,7 +116,6 @@ export default function PracticePage() {
                     ? "border-primary bg-primary/20"
                     : "border-border hover:bg-accent/10"
                 } ${
-                  // ✅ practice mode এ সাথে সাথে দেখাবে correct/wrong
                   isSelected
                     ? isCorrect
                       ? "border-green-500 bg-green-500/10"
@@ -123,14 +131,20 @@ export default function PracticePage() {
 
         <div className="flex justify-between">
           {current > 0 ? (
-            <button onClick={() => setCurrent((c) => c - 1)} className="px-5 py-2 glass rounded-lg">
+            <button
+              onClick={() => setCurrent((c) => c - 1)}
+              className="px-5 py-2 glass rounded-lg"
+            >
               Previous
             </button>
           ) : (
             <div />
           )}
           {current < questions.length - 1 ? (
-            <button onClick={() => setCurrent((c) => c + 1)} className="px-5 py-2 glass rounded-lg">
+            <button
+              onClick={() => setCurrent((c) => c + 1)}
+              className="px-5 py-2 glass rounded-lg"
+            >
               Next
             </button>
           ) : (
@@ -145,7 +159,12 @@ export default function PracticePage() {
       </motion.div>
 
       {/* Navigation Grid */}
-      <ExamNavigation total={questions.length} current={current} answers={answers} onNavigate={setCurrent} />
+      <ExamNavigation
+        total={questions.length}
+        current={current}
+        answers={answers}
+        onNavigate={setCurrent}
+      />
 
       {/* Confirm Submit Modal */}
       <AnimatePresence>
@@ -164,10 +183,15 @@ export default function PracticePage() {
             >
               <h3 className="text-xl font-bold mb-4">Submit Practice?</h3>
               <p className="text-muted-foreground mb-6">
-                You still have {Object.values(answers).filter((a) => a === null).length} unanswered questions.
+                You still have{" "}
+                {Object.values(answers).filter((a) => a === null).length}{" "}
+                unanswered questions.
               </p>
               <div className="flex justify-center gap-4">
-                <button onClick={() => setShowConfirm(false)} className="px-4 py-2 glass rounded-lg">
+                <button
+                  onClick={() => setShowConfirm(false)}
+                  className="px-4 py-2 glass rounded-lg"
+                >
                   Cancel
                 </button>
                 <button

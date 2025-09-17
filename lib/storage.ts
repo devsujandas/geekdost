@@ -8,7 +8,10 @@ export function saveResult(result: any) {
     // ✅ Ensure questions are stored with result
     const resultWithQuestions = {
       ...result,
-      questions: result.questions || [], // যদি না থাকে তবে ফাঁকা array
+      // যদি result এ questions না আসে, তবে fallback []
+      questions: result.questions && Array.isArray(result.questions)
+        ? result.questions
+        : [],
     }
 
     prev.unshift(resultWithQuestions) // latest result first
