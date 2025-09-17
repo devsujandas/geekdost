@@ -1,15 +1,22 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { PageLayout } from "@/components/page-layout"
-import { GlassmorphismCard } from "@/components/glassmorphism-card"
-import { InteractiveButton } from "@/components/interactive-button"
-import { ScrollReveal } from "@/components/scroll-reveal"
+import PageLayout from "@/components/page-layout"
+import GlassmorphismCard from "@/components/glassmorphism-card"
+import InteractiveButton from "@/components/interactive-button"
+import ScrollReveal from "@/components/scroll-reveal"
 import { useRouter } from "next/navigation"
-import { FaGithub, FaPlusCircle, FaFileAlt } from "react-icons/fa"
+import { FaGithub, FaPlusCircle, FaFileAlt, FaRegCopy } from "react-icons/fa"
 
 export default function ContributePage() {
   const router = useRouter()
+  const [isClient, setIsClient] = useState(false)
+  const [copied, setCopied] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   const steps = [
     {
@@ -32,35 +39,54 @@ export default function ContributePage() {
     },
   ]
 
+  const gitCommands = `# Clone the repository
+git clone https://github.com/devsujandas/geekdost.git
+
+# Create a new branch
+git checkout -b feature/my-new-topic
+
+# Make your changes (add topics, snippets)
+git add .
+git commit -m "Add new topic or snippet"
+
+# Push to your fork
+git push origin feature/my-new-topic
+
+# Open a Pull Request on GitHub`
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(gitCommands)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
+
+  if (!isClient) return null
+
   return (
     <PageLayout>
       {/* Hero Section */}
       <section className="py-28 px-4 text-center relative overflow-hidden">
         <ScrollReveal>
           <motion.h1
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-6xl font-extrabold text-foreground mb-6"
           >
-            Contribute to{" "}
-            <span className="relative text-primary underline decoration-primary/60 decoration-4 underline-offset-8">
-              GeekDost
-            </span>
+            Contribute to <span className="text-primary">GeekDost</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12"
           >
-            Help grow our developer community! Share your knowledge, code snippets, tutorials, or suggest new topics. Every contribution helps someone learn faster.
+            Help grow our developer community! Share your knowledge, code snippets,
+            tutorials, or suggest new topics. Every contribution helps someone learn faster.
           </motion.p>
-          <InteractiveButton
-            size="lg"
-            className="hover:scale-105 transition-transform"
-            onClick={() => router.push("/topics")}
-          >
+          <InteractiveButton size="lg" onClick={() => router.push("/topics")}>
             Explore Existing Topics
           </InteractiveButton>
         </ScrollReveal>
@@ -72,20 +98,17 @@ export default function ContributePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
             How to Contribute
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {steps.map((step, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: idx * 0.2 }}
               >
-                <GlassmorphismCard className="p-8 text-center hover:-translate-y-3 hover:shadow-xl transition-transform duration-300 relative">
-                  {/* Number Badge */}
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-primary text-background font-bold flex items-center justify-center text-lg shadow-md">
-                    {idx + 1}
-                  </div>
-                  <step.icon className="text-primary h-12 w-12 mx-auto mb-4 mt-4" />
+                <GlassmorphismCard className="p-8 text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                  <step.icon className="text-primary h-12 w-12 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-foreground mb-2">
                     {step.title}
                   </h3>
@@ -94,50 +117,46 @@ export default function ContributePage() {
               </motion.div>
             ))}
           </div>
+
+          {/* Git Workflow IDE Card */}
+          <div className="max-w-3xl mx-auto">
+            <GlassmorphismCard className="relative p-6 bg-background/50 border border-border shadow-lg">
+              <h3 className="text-2xl font-semibold text-foreground mb-4">
+                Git Workflow Example
+              </h3>
+
+              {/* Copy Button */}
+              <button
+                onClick={handleCopy}
+                className="absolute top-4 right-4 flex items-center gap-2 bg-background/70 hover:bg-background/80 text-foreground text-sm px-3 py-1 rounded-lg transition"
+              >
+                <FaRegCopy /> {copied ? "Copied!" : "Copy"}
+              </button>
+
+              {/* Code Block with Line Numbers */}
+              <pre className="bg-background/20 p-4 rounded-lg overflow-x-auto text-sm font-mono text-foreground mt-4">
+                {gitCommands.split("\n").map((line, idx) => (
+                  <div key={idx} className="flex">
+                    <span className="text-muted-foreground w-6 text-right mr-4 select-none">
+                      {idx + 1}
+                    </span>
+                    <code>{line}</code>
+                  </div>
+                ))}
+              </pre>
+            </GlassmorphismCard>
+          </div>
         </div>
       </section>
 
-      {/* Gamification / Contribution Hint Section */}
-      <section className="py-24 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <GlassmorphismCard className="py-12 px-6 text-center">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-3xl md:text-4xl font-bold text-foreground mb-6"
-            >
-              Earn Recognition & Badges
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-lg text-muted-foreground mb-8"
-            >
-              Every contribution you make can earn badges and recognition on our platform. Motivate yourself and others to create a thriving developer community!
-            </motion.p>
-            <InteractiveButton
-              size="lg"
-              variant="primary"
-              onClick={() =>
-                window.open("https://github.com/YourRepoLink", "_blank")
-              }
-              className="hover:scale-105 transition-transform"
-            >
-              Contribute on GitHub
-            </InteractiveButton>
-          </GlassmorphismCard>
-        </div>
-      </section>
-
-      {/* Final CTA */}
+      {/* Call to Action */}
       <section className="py-24 px-4 text-center relative">
         <ScrollReveal>
-          <GlassmorphismCard className="py-12 px-6 max-w-3xl mx-auto">
+          <GlassmorphismCard className="py-12 px-6 max-w-3xl mx-auto shadow-lg">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               className="text-3xl md:text-4xl font-bold text-foreground mb-6"
             >
@@ -146,17 +165,19 @@ export default function ContributePage() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg text-muted-foreground mb-8"
             >
-              Join our open-source community. Every snippet, note, and guide you contribute empowers thousands of developers around the world.
+              Join our open-source community. Every snippet, note, and guide you contribute
+              empowers thousands of developers around the world.
             </motion.p>
             <div className="flex justify-center gap-4 flex-wrap">
               <InteractiveButton
                 size="lg"
                 variant="primary"
                 onClick={() =>
-                  window.open("https://github.com/YourRepoLink", "_blank")
+                  window.open("https://github.com/devsujandas/geekdost", "_blank")
                 }
               >
                 Contribute on GitHub
