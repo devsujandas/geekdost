@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { FaCode, FaRocket, FaUsers } from "react-icons/fa"
+import { FaCode, FaRocket, FaUsers, FaCertificate } from "react-icons/fa"
 import { topicsData } from "@/lib/topics-data"
 import { TopicCard } from "@/components/topic-card"
 import { GlassmorphismCard } from "@/components/glassmorphism-card"
@@ -31,39 +31,11 @@ export default function HomePage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl md:text-7xl font-bold text-foreground mb-6 text-balance"
-            >
-              <motion.span
-                initial={{ backgroundPosition: "0% 50%" }}
-                animate={{ backgroundPosition: "100% 50%" }}
-                transition={{
-                  duration: 3,
-                  repeat: Number.POSITIVE_INFINITY,
-                  repeatType: "reverse",
-                }}
-                className="bg-gradient-to-r from-primary via-blue-500 to-primary bg-[length:200%_100%] bg-clip-text text-transparent [&:not(:hover)]:text-foreground hover:text-transparent"
-                style={{
-                  background:
-                    "linear-gradient(90deg, hsl(var(--primary)), #3b82f6, hsl(var(--primary)))",
-                  backgroundSize: "200% 100%",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
-              >
-                GeekDost
-              </motion.span>
-            </motion.h1>
-
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance max-w-3xl mx-auto"
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-xl md:text-2xl text-foreground font-bold mb-4"
             >
               Roadmaps & Snippets for Developers
             </motion.p>
@@ -71,43 +43,57 @@ export default function HomePage() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-lg text-muted-foreground mb-12 text-pretty max-w-2xl mx-auto"
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto"
             >
-              Your ultimate developer hub for programming roadmaps, code
-              snippets, and learning resources. Master the skills that matter
-              with curated content and practical examples.
+              Your ultimate developer hub for programming roadmaps, code snippets,
+              and learning resources. Master the skills that matter with curated
+              content and practical examples.
             </motion.p>
 
             {/* Stats Cards */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-16"
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-16"
             >
-              <GlassmorphismCard delay={0.9} className="text-center">
+              <GlassmorphismCard delay={0.7} className="text-center">
                 <FaCode className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   <AnimatedCounter value={12} suffix="+" />
                 </h3>
-                <p className="text-muted-foreground">Programming Topics</p>
+                <p className="text-muted-foreground text-sm">
+                  Programming Topics
+                </p>
               </GlassmorphismCard>
 
-              <GlassmorphismCard delay={1.0} className="text-center">
+              <GlassmorphismCard delay={0.8} className="text-center">
                 <FaRocket className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   <AnimatedCounter value={50} suffix="+" />
                 </h3>
-                <p className="text-muted-foreground">Code Snippets</p>
+                <p className="text-muted-foreground text-sm">Code Snippets</p>
               </GlassmorphismCard>
 
-              <GlassmorphismCard delay={1.1} className="text-center">
+              <GlassmorphismCard delay={0.9} className="text-center">
                 <FaUsers className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   <AnimatedCounter value={100} suffix="+" />
                 </h3>
-                <p className="text-muted-foreground">Learning Resources</p>
+                <p className="text-muted-foreground text-sm">
+                  Learning Resources
+                </p>
+              </GlassmorphismCard>
+
+              <GlassmorphismCard delay={1.0} className="text-center">
+                <FaCertificate className="h-8 w-8 text-primary mx-auto mb-3" />
+                <h3 className="text-2xl font-bold text-foreground mb-2">
+                  <AnimatedCounter value={20} suffix="+" />
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  Subjects with Tests & Certificates
+                </p>
               </GlassmorphismCard>
             </motion.div>
           </motion.div>
@@ -158,12 +144,12 @@ export default function HomePage() {
             ))}
           </StaggeredList>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {topicsData.map((topic) => (
               <motion.div
                 key={topic.id}
-                className="group rounded-2xl overflow-hidden shadow-lg bg-background/40 backdrop-blur-lg border border-border hover:shadow-xl transition cursor-pointer"
-                whileHover={{ scale: 1.03 }}
+                className="group rounded-2xl overflow-hidden shadow-md bg-background/40 backdrop-blur-lg border border-border hover:shadow-lg transition cursor-pointer"
+                whileHover={{ scale: 1.02 }}
                 onClick={() => router.push(`/topics/${topic.slug}`)}
               >
                 <div className="h-full flex flex-col">
@@ -172,11 +158,11 @@ export default function HomePage() {
                       src={(topic as any).image ?? "/images/default-topic.jpg"}
                       alt={topic.title}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-bold text-foreground mb-2">
+                    <h3 className="text-xl font-semibold text-foreground mb-2">
                       {topic.title}
                     </h3>
                     <p className="text-muted-foreground text-sm flex-grow">
@@ -204,13 +190,13 @@ export default function HomePage() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                   Ready to Level Up Your Skills?
                 </h2>
-                <p className="text-lg text-muted-foreground mb-8 text-pretty">
+                <p className="text-lg text-muted-foreground mb-8">
                   Join thousands of developers who are accelerating their
-                  learning journey with GeekDost. Start exploring our
-                  comprehensive roadmaps and practical code examples today.
+                  learning journey with our roadmaps, snippets and tests.
+                  Start exploring today.
                 </p>
                 <InteractiveButton
                   size="lg"
