@@ -158,7 +158,7 @@ export default function AboutPage() {
         {/* Avatar */}
         <div className="flex-shrink-0">
           <img
-            src="/developer-avatar-1.png" // replace with your image
+            src="/developer-avatar-1.jpg" // replace with your image
             alt="Sujan Das"
             className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-primary/30 shadow-lg object-cover"
           />

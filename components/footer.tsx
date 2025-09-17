@@ -17,7 +17,7 @@ const footerLinks = [
     links: [
       { href: "/topics", label: "All Topics" },
       { href: "/search", label: "Search" },
-      { href: "/roadmaps", label: "Roadmaps" },
+      { href: "/topics", label: "Roadmaps" },
       { href: "/test", label: "Test" },
     ],
   },
