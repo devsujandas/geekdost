@@ -152,3 +152,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(139, 92, 246, 0.7);
 }
+
+
+pre[class*="language-"],
+code[class*="language-"] {
+  background: transparent !important;
+}
