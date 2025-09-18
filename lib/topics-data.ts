@@ -69,7 +69,7 @@ export const topicsData = [
       "android",
       "software-engineering",
     ],
-    image: "/images/java.png",
+    image: "/images/java.jpg",
     chapters: [
       {
         id: "intro",
