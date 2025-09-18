@@ -2,16 +2,9 @@
 
 import { use } from "react"
 import Link from "next/link"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { topicsData } from "@/lib/topics-utils"
 import { ArrowLeft, Notebook, Code2, Copy } from "lucide-react"
-import Prism from "prismjs"
-import "prismjs/themes/prism.css"           // light theme
-import "prismjs/themes/prism-tomorrow.css" // dark theme support
-import "prismjs/components/prism-javascript"
-import "prismjs/components/prism-typescript"
-import "prismjs/components/prism-jsx"
-import "prismjs/components/prism-tsx"
 
 export default function ChapterPage({
   params,
@@ -19,15 +12,11 @@ export default function ChapterPage({
   params: Promise<{ id: string; chapter: string }>
 }) {
   const { id, chapter } = use(params)
+
   const [copied, setCopied] = useState(false)
 
   const topic = topicsData.find((t) => t.id === id)
   const chapterData = topic?.chapters?.find((c) => c.id === chapter)
-
-  // ✅ Prism highlight trigger
-  useEffect(() => {
-    Prism.highlightAll()
-  }, [chapterData?.code])
 
   if (!topic || !chapterData) {
     return <div className="p-6">❌ Chapter not found</div>
@@ -67,14 +56,12 @@ export default function ChapterPage({
 
       {/* Notes Section */}
       {chapterData.notes && (
-        <div className="p-5 rounded-lg bg-accent/40 shadow-sm space-y-2">
+        <div className="p-5 rounded-lg bg-accent/15 shadow-sm space-y-2">
           <div className="flex items-center gap-2 text-base font-semibold">
             <Notebook className="w-5 h-5 text-primary" />
             Notes
           </div>
-          <p className="leading-relaxed text-foreground/90">
-            {chapterData.notes}
-          </p>
+          <p className="leading-relaxed text-foreground/90">{chapterData.notes}</p>
         </div>
       )}
 
@@ -94,8 +81,8 @@ export default function ChapterPage({
               {copied ? "Copied!" : "Copy"}
             </button>
           </div>
-          <pre className="relative p-4 rounded-lg bg-zinc-900 text-sm overflow-x-auto shadow-inner">
-            <code className="language-js">{chapterData.code}</code>
+          <pre className="relative p-4 rounded-lg bg-zinc-900 text-green-400 text-sm overflow-x-auto shadow-inner">
+            <code>{chapterData.code}</code>
           </pre>
         </div>
       )}
