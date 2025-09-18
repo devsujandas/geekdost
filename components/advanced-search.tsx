@@ -1,11 +1,11 @@
-"use client"
+// Remove "use client" from this file
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { FaSearch, FaFilter, FaTimes } from "react-icons/fa"
 import { Input } from "@/components/ui/input"
 import { GlassmorphismCard } from "./glassmorphism-card"
 import { InteractiveButton } from "./interactive-button"
-import { getCategories, getDifficulties } from "@/lib/topics-data"
+import { topicsData } from "@/lib/topics-data"
 
 interface AdvancedSearchProps {
   onSearch: (query: string) => void
@@ -35,8 +35,8 @@ export function AdvancedSearch({
   const [isFilterOpen, setIsFilterOpen] = useState(false)
   const [localQuery, setLocalQuery] = useState(searchQuery)
   
-  const categories = getCategories()
-  const difficulties = getDifficulties()
+  const categories = Array.from(new Set(topicsData.map(topic => topic.category)))
+  const difficulties = Array.from(new Set(topicsData.map(topic => topic.difficulty)))
   
   const sortOptions = [
     { value: "default", label: "Default" },
@@ -142,7 +142,7 @@ export function AdvancedSearch({
                       onChange={(e) => onCategoryFilter(e.target.value)}
                       className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5 text-foreground focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                     >
-                      {categories.map((category) => (
+                      {categories.map((category: string) => (
                         <option key={category} value={category} className="bg-background">
                           {category}
                         </option>
@@ -160,7 +160,7 @@ export function AdvancedSearch({
                       onChange={(e) => onDifficultyFilter(e.target.value)}
                       className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5 text-foreground focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                     >
-                      {difficulties.map((difficulty) => (
+                      {difficulties.map((difficulty: string) => (
                         <option key={difficulty} value={difficulty} className="bg-background">
                           {difficulty}
                         </option>

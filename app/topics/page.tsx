@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { topicsData, searchTopics, sortTopics } from "@/lib/topics-data"
+import { topicsData } from "@/lib/topics-data"
 import { PageLayout } from "@/components/page-layout"
 import { GlassmorphismCard } from "@/components/glassmorphism-card"
 import { TopicCard } from "@/components/topic-card"
@@ -15,39 +15,51 @@ export default function TopicsPage() {
   const [selectedDifficulty, setSelectedDifficulty] = useState("All")
   const [sortBy, setSortBy] = useState("default")
   const [filteredTopics, setFilteredTopics] = useState(topicsData)
-
-  // নতুন state for load more
   const [visibleCount, setVisibleCount] = useState(9)
 
   useEffect(() => {
     let results = topicsData
     if (searchQuery.trim() !== "") {
-      results = searchTopics(searchQuery)
+      const query = searchQuery.trim().toLowerCase()
+      results = results.filter(
+        t =>
+          t.title.toLowerCase().includes(query) ||
+          (t.description && t.description.toLowerCase().includes(query))
+      )
     }
-    if (selectedCategory !== "All") {
-      results = results.filter((topic) => topic.category === selectedCategory)
-    }
-    if (selectedDifficulty !== "All") {
-      results = results.filter((topic) => topic.difficulty === selectedDifficulty)
-    }
+    if (selectedCategory !== "All") results = results.filter(t => t.category === selectedCategory)
+    if (selectedDifficulty !== "All") results = results.filter(t => t.difficulty === selectedDifficulty)
     results = sortTopics(results, sortBy)
     setFilteredTopics(results)
-    setVisibleCount(9) // 
+    setVisibleCount(9)
   }, [searchQuery, selectedCategory, selectedDifficulty, sortBy])
+
+  // Helper function to sort topics
+  function sortTopics(topics: typeof topicsData, sortBy: string) {
+    switch (sortBy) {
+      case "title-asc":
+        return [...topics].sort((a, b) => a.title.localeCompare(b.title))
+      case "title-desc":
+        return [...topics].sort((a, b) => b.title.localeCompare(a.title))
+      case "difficulty-asc":
+        return [...topics].sort((a, b) => (a.difficulty || "").localeCompare(b.difficulty || ""))
+      case "difficulty-desc":
+        return [...topics].sort((a, b) => (b.difficulty || "").localeCompare(a.difficulty || ""))
+      default:
+        return topics
+    }
+  }
 
   return (
     <PageLayout>
       <div className="min-h-screen bg-background">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 py-8 sm:py-12">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 py-12">
           {/* Header */}
           <ScrollReveal>
             <div className="text-center mb-10 sm:mb-14">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-5">
-                All Programming Topics
-              </h1>
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-                Explore our comprehensive collection of programming topics, roadmaps, and code examples
-                to accelerate your learning journey.
+              <h1 className="text-4xl font-bold mb-4 text-gray-800">Explore Topics</h1>
+              <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+                Browse our collection of programming topics, roadmaps, and code examples.
               </p>
             </div>
           </ScrollReveal>
@@ -76,76 +88,65 @@ export default function TopicsPage() {
           <ScrollReveal delay={0.4}>
             {filteredTopics.length > 0 ? (
               <div className="relative z-0">
-                {/* Responsive Grid Container */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                   {filteredTopics.slice(0, visibleCount).map((topic, index) => (
                     <motion.div
                       key={topic.id}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ 
-                        duration: 0.6,
-                        delay: index * 0.06,
-                        ease: "easeOut"
-                      }}
-                      className="w-full h-full"
+                      transition={{ duration: 0.6, delay: index * 0.06, ease: "easeOut" }}
                     >
-                      <TopicCard topic={topic} />
+                      <TopicCard
+                        topic={topic}
+                      />
                     </motion.div>
                   ))}
                 </div>
 
                 {/* Load More Button */}
                 {visibleCount < filteredTopics.length && (
-                 <motion.div
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ delay: 0.8 }}
-  className="text-center mt-12"
->
-  <InteractiveButton
-    onClick={() => setVisibleCount((prev) => prev + 9)}
-    className="
-      px-6 py-2 rounded-md text-sm sm:text-base
-      border border-border text-foreground
-      hover:bg-muted transition-colors
-    "
-  >
-    Load More
-  </InteractiveButton>
-</motion.div>
-
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.8 }}
+                    className="text-center mt-12"
+                  >
+                    <InteractiveButton
+                      onClick={() => setVisibleCount((prev) => prev + 9)}
+                      className="px-6 py-2 rounded-md text-sm sm:text-base border border-border text-foreground hover:bg-muted transition-colors"
+                    >
+                      Load More
+                    </InteractiveButton>
+                  </motion.div>
                 )}
               </div>
             ) : (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 className="text-center py-16 sm:py-20"
               >
-                <GlassmorphismCard className="max-w-md mx-auto">
-                  <div className="p-6 sm:p-8">
-                    <div className="text-4xl sm:text-5xl mb-4">🔍</div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-foreground mb-4">
-                      No topics found
-                    </h3>
-                    <p className="text-muted-foreground mb-6 text-sm sm:text-base">
-                      Try adjusting your search terms or filters to find what you're looking for.
-                    </p>
-                    <InteractiveButton
-                      onClick={() => {
-                        setSearchQuery("")
-                        setSelectedCategory("All")
-                        setSelectedDifficulty("All")
-                        setSortBy("default")
-                      }}
-                      variant="outline"
-                      className="w-full sm:w-auto"
-                    >
-                      Clear All Filters
-                    </InteractiveButton>
-                  </div>
+                <GlassmorphismCard className="max-w-md mx-auto p-6 sm:p-8 rounded-xl bg-gradient-to-br from-white to-gray-50 shadow-sm">
+                  <div className="text-4xl sm:text-5xl mb-4">🔍</div>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    No topics found
+                  </h3>
+                  <p className="text-gray-500 mb-6 text-sm sm:text-base">
+                    Try adjusting your search terms or filters to find what you're looking for.
+                  </p>
+                  <InteractiveButton
+                    onClick={() => {
+                      setSearchQuery("")
+                      setSelectedCategory("All")
+                      setSelectedDifficulty("All")
+                      setSortBy("default")
+                    }}
+                    variant="outline"
+                    className="w-full sm:w-auto"
+                  >
+                    Clear All Filters
+                  </InteractiveButton>
                 </GlassmorphismCard>
               </motion.div>
             )}

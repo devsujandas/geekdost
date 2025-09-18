@@ -2,11 +2,11 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { FaBookOpen, FaCode, FaUsers, FaAward  } from "react-icons/fa"
+import { FaBookOpen, FaCode, FaUsers, FaAward } from "react-icons/fa"
 import { topicsData } from "@/lib/topics-data"
 import { TopicCard } from "@/components/topic-card"
 import { GlassmorphismCard } from "@/components/glassmorphism-card"
-import { PageLayout } from "@/components/page-layout"
+import { PageLayout } from "@/components/page-layout"   
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { AnimatedCounter } from "@/components/animated-counter"
 import { FloatingElements } from "@/components/floating-elements"
@@ -46,9 +46,9 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto"
             >
-              Your ultimate developer hub for programming roadmaps, code snippets,
-              and learning resources. Master the skills that matter with curated
-              content and practical examples.
+              Your ultimate developer hub for programming roadmaps, code
+              snippets, and learning resources. Master the skills that matter
+              with curated content and practical examples.
             </motion.p>
 
             {/* Stats Cards */}
@@ -87,7 +87,7 @@ export default function HomePage() {
               </GlassmorphismCard>
 
               <GlassmorphismCard delay={1.0} className="text-center">
-                <FaAward  className="h-8 w-8 text-primary mx-auto mb-3" />
+                <FaAward className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   <AnimatedCounter value={20} suffix="+" />
                 </h3>
@@ -137,7 +137,7 @@ export default function HomePage() {
               <div
                 key={topic.id}
                 className="mb-6 cursor-pointer"
-                onClick={() => router.push(`/topics/${topic.slug}`)}
+                onClick={() => router.push(`/topics/${topic.id}`)} // ✅ use id
               >
                 <TopicCard topic={topic} />
               </div>
@@ -150,13 +150,13 @@ export default function HomePage() {
                 key={topic.id}
                 className="group rounded-2xl overflow-hidden shadow-md bg-background/40 backdrop-blur-lg border border-border hover:shadow-lg transition cursor-pointer"
                 whileHover={{ scale: 1.02 }}
-                onClick={() => router.push(`/topics/${topic.slug}`)}
+                onClick={() => router.push(`/topics/${topic.id}`)} // ✅ use id
               >
                 <div className="h-full flex flex-col">
                   <div className="relative h-48 w-full overflow-hidden">
                     <Image
                       src={(topic as any).image ?? "/images/default-topic.jpg"}
-                      alt={topic.title}
+                      alt={topic.id}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -166,7 +166,7 @@ export default function HomePage() {
                       {topic.title}
                     </h3>
                     <p className="text-muted-foreground text-sm flex-grow">
-                      {topic.description}
+                      {topic.slug}
                     </p>
                     <button className="mt-4 px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition">
                       Explore
@@ -195,8 +195,8 @@ export default function HomePage() {
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
                   Join thousands of developers who are accelerating their
-                  learning journey with our roadmaps, snippets and tests.
-                  Start exploring today.
+                  learning journey with our roadmaps, snippets and tests. Start
+                  exploring today.
                 </p>
                 <InteractiveButton
                   size="lg"
