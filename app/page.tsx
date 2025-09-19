@@ -1,9 +1,8 @@
 "use client"
 
-import { useState } from "react"
 import { motion } from "framer-motion"
 import { FaBookOpen, FaCode, FaUsers, FaAward } from "react-icons/fa"
-import { FiList, FiCode, FiFileText } from "react-icons/fi"
+import { FiList, FiCode, FiFileText, FiTag } from "react-icons/fi"
 import { topicsData } from "@/lib/topics-utils"
 import { GlassmorphismCard } from "@/components/glassmorphism-card"
 import { PageLayout } from "@/components/page-layout"
@@ -11,14 +10,11 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 import { AnimatedCounter } from "@/components/animated-counter"
 import { FloatingElements } from "@/components/floating-elements"
 import { InteractiveButton } from "@/components/interactive-button"
-import Image from "next/image"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import React from "react"
 
 export default function HomePage() {
-  // 🔥 Default set to "image"
-  const [view, setView] = useState<"image" | "list">("image")
   const router = useRouter()
 
   const filteredTopics = topicsData
@@ -115,37 +111,13 @@ export default function HomePage() {
             Choose from our curated collection of programming topics, each with
             detailed roadmaps, practical notes, and ready-to-use code snippets.
           </p>
-
-          {/* Toggle Buttons */}
-          <div className="flex justify-center gap-4">
-            <InteractiveButton
-              size="sm"
-              variant={view === "image" ? "primary" : "outline"}
-              onClick={() => setView("image")}
-            >
-              Image View
-            </InteractiveButton>
-            <InteractiveButton
-              size="sm"
-              variant={view === "list" ? "primary" : "outline"}
-              onClick={() => setView("list")}
-            >
-              List View
-            </InteractiveButton>
-          </div>
         </div>
 
         {/* Topics Grid */}
         <ScrollReveal delay={0.4}>
           {filteredTopics.length > 0 && (
             <div className="relative z-0">
-              <div
-                className={`grid ${
-                  view === "list"
-                    ? "grid-cols-1"
-                    : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-                } gap-6`}
-              >
+              <div className="grid grid-cols-1 gap-6">
                 {filteredTopics.slice(0, visibleCount).map((topic, index) => {
                   const codeCount = topic.chapters?.filter(
                     (ch) => ch.code && ch.code.trim() !== ""
@@ -196,42 +168,37 @@ export default function HomePage() {
                           </h2>
                         </div>
 
-                        {/* 🔥 Image directly after Title */}
-                        {view === "image" && topic.image && (
-                          <div className="relative h-40 w-full overflow-hidden rounded-lg mb-3">
-                            <Image
-                              src={(topic as any).image ?? "/images/default-topic.jpg"}
-                              alt={topic.id}
-                              fill
-                              className="object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                          </div>
-                        )}
-
                         {/* Description */}
                         <p className="text-base text-gray-300 line-clamp-3">
                           {topic.desc}
                         </p>
 
-                        {/* Learning, Code, Notes Count */}
-                        <div className="flex justify-between text-sm text-gray-400 mt-4">
-                          <span className="flex items-center gap-1">
-                            <FiList className="w-4 h-4 text-gray-600" />
-                            {topic.chapters?.length} chapters
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <FiCode className="w-4 h-4" /> {codeCount} Snippets
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <FiFileText className="w-4 h-4" /> {notesCount} Notes
-                          </span>
-                        </div>
-
-                        {/* Explore Button */}
-                        {view === "image" && (
-                          <button className="mt-4 px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition">
-                            Explore
-                          </button>
+                        {/* Categories + Counts (List View Only) */}
+                        {topic.categories && topic.categories.length > 0 && (
+                          <div className="flex justify-between items-center mt-3">
+                            <div className="flex flex-wrap gap-2">
+                              {topic.categories.map((cat: string, i: number) => (
+                                <span
+                                  key={i}
+                                  className="flex items-center gap-1 text-xs bg-primary/10 text-primary px-2 py-1 rounded"
+                                >
+                                  <FiTag className="w-3 h-3" /> {cat}
+                                </span>
+                              ))}
+                            </div>
+                            <div className="flex gap-4 text-sm text-gray-400">
+                              <span className="flex items-center gap-1">
+                                <FiList className="w-4 h-4 text-gray-600" />
+                                {topic.chapters?.length} chapters
+                              </span>
+                              <span className="flex items-center gap-1">
+                                <FiCode className="w-4 h-4" /> {codeCount} Snippets
+                              </span>
+                              <span className="flex items-center gap-1">
+                                <FiFileText className="w-4 h-4" /> {notesCount} Notes
+                              </span>
+                            </div>
+                          </div>
                         )}
                       </motion.div>
                     </Link>
