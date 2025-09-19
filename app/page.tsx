@@ -175,7 +175,8 @@ export default function HomePage() {
 
                         {/* Categories + Counts (List View Only) */}
                         {topic.categories && topic.categories.length > 0 && (
-                          <div className="flex justify-between items-center mt-3">
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-3 gap-3">
+                            {/* Categories */}
                             <div className="flex flex-wrap gap-2">
                               {topic.categories.map((cat: string, i: number) => (
                                 <span
@@ -186,7 +187,8 @@ export default function HomePage() {
                                 </span>
                               ))}
                             </div>
-                            <div className="flex gap-4 text-sm text-gray-400">
+                            {/* Counts */}
+                            <div className="flex flex-wrap gap-4 text-sm text-gray-400">
                               <span className="flex items-center gap-1">
                                 <FiList className="w-4 h-4 text-gray-600" />
                                 {topic.chapters?.length} chapters

@@ -21,7 +21,7 @@ export default function TopicsPage() {
   const [filteredTopics, setFilteredTopics] = useState(topicsData)
   const [visibleCount, setVisibleCount] = useState(9)
 
-  //  New state for view toggle
+  // 🔥 New state for view toggle
   const [view, setView] = useState<"image" | "list">("image")
 
   useEffect(() => {
@@ -104,7 +104,7 @@ export default function TopicsPage() {
             </div>
           </ScrollReveal>
 
-          {/*  Toggle Buttons */}
+          {/* 🔥 Toggle Buttons */}
           <div className="flex justify-center gap-4 mb-10">
             <InteractiveButton
               size="sm"
@@ -183,7 +183,7 @@ export default function TopicsPage() {
                             </h2>
                           </div>
 
-                          {/*  Image for image view */}
+                          {/* 🔥 Image for image view */}
                           {view === "image" && topic.image && (
                             <div className="relative h-40 w-full overflow-hidden rounded-lg mb-3">
                               <Image
@@ -220,7 +220,8 @@ export default function TopicsPage() {
                                   )}
                                 </div>
                               ) : (
-                                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-3 gap-3">
+                                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-3 gap-3">
+                                  {/* Categories */}
                                   <div className="flex flex-wrap gap-2">
                                     {topic.categories.map(
                                       (cat: string, i: number) => (
@@ -233,7 +234,8 @@ export default function TopicsPage() {
                                       )
                                     )}
                                   </div>
-                                  <div className="flex gap-4 text-sm text-gray-400">
+                                  {/* Counts */}
+                                  <div className="flex flex-wrap gap-4 text-sm text-gray-400">
                                     <span className="flex items-center gap-1">
                                       <FiList className="w-4 h-4 text-gray-600" />
                                       {topic.chapters?.length} chapters
@@ -252,7 +254,7 @@ export default function TopicsPage() {
 
                           {/* Counts (only in image view) */}
                           {view === "image" && (
-                            <div className="flex flex-col sm:flex-row justify-between text-sm text-gray-400 mt-4 gap-2">
+                            <div className="flex justify-between text-sm text-gray-400 mt-4">
                               <span className="flex items-center gap-1">
                                 <FiList className="w-4 h-4 text-gray-600" />
                                 {topic.chapters?.length} chapters
