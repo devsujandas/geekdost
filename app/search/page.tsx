@@ -3,11 +3,15 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { FaSearch, FaLightbulb } from "react-icons/fa"
-import { topicsData, searchTopics } from "@/lib/topics-data"
+import { topicsData } from "@/lib/topics-utils"
+import { searchTopics } from "@/lib/search-topics"
 import { PageLayout } from "@/components/page-layout"
 import { GlassmorphismCard } from "@/components/glassmorphism-card"
 import { TopicCard } from "@/components/topic-card"
 import { Input } from "@/components/ui/input"
+
+// rest of your SearchPage component remains exactly the same
+
 
 export default function SearchPage() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -31,7 +35,7 @@ export default function SearchPage() {
 
       // Difficulty filter
       if (selectedDifficulty && selectedDifficulty !== "All Difficulty") {
-        results = results.filter((t) => t.difficulty === selectedDifficulty)
+        results = results.filter((t: { difficulty: string }) => t.difficulty === selectedDifficulty)
       }
 
       setSearchResults(results)
