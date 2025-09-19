@@ -57,10 +57,11 @@ export default function TopicsPage() {
           {/* Header */}
           <ScrollReveal>
             <div className="text-center mb-10 sm:mb-14">
-              <h1 className="text-4xl font-bold mb-4 text-gray-800">Explore Topics</h1>
-              <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-                Browse our collection of programming topics, roadmaps, and code examples.
-              </p>
+              <h1 className="text-4xl font-bold mb-4 text-gray-100">Explore Topics</h1>
+<p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
+  Discover detailed notes and code examples to boost your learning journey.
+</p>
+
             </div>
           </ScrollReveal>
 

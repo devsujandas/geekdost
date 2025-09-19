@@ -7,11 +7,11 @@ import { topicsData } from "@/lib/topics-utils"
 import { ArrowLeft, Notebook, Code2, Copy } from "lucide-react"
 import Prism from "prismjs"
 
-// ✅ Prism themes import
+//  Prism themes import
 import "prism-themes/themes/prism-ghcolors.css"
 import "prism-themes/themes/prism-night-owl.css"
 
-// ✅ Load common languages
+//  Load common languages
 import "prismjs/components/prism-javascript"
 import "prismjs/components/prism-typescript"
 import "prismjs/components/prism-jsx"
@@ -29,12 +29,12 @@ export default function ChapterPage({
   const { id, chapter } = use(params)
 
   const [copied, setCopied] = useState(false)
-  const [mounted, setMounted] = useState(false) // ✅ hydration fix
+  const [mounted, setMounted] = useState(false) //  hydration fix
 
   const topic = topicsData.find((t) => t.id === id)
   const chapterData = topic?.chapters?.find((c) => c.id === chapter)
 
-  // ✅ Prism trigger only after mounted
+  //  Prism trigger only after mounted
   useEffect(() => {
     setMounted(true)
   }, [])
@@ -46,10 +46,10 @@ export default function ChapterPage({
   }, [mounted, chapterData?.code])
 
   if (!topic || !chapterData) {
-    return <div className="p-6">❌ Chapter not found</div>
+    return <div className="p-6"> Chapter not found</div>
   }
 
-  // ✅ Copy handler
+  //  Copy handler
   const handleCopy = async () => {
     if (chapterData?.code) {
       await navigator.clipboard.writeText(chapterData.code)
@@ -60,7 +60,7 @@ export default function ChapterPage({
 
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-12">
-      {/* 🔙 Back Button */}
+      {/*  Back Button */}
       <div>
         <Link
           href={`/topics/${topic.id}`}
@@ -71,7 +71,7 @@ export default function ChapterPage({
         </Link>
       </div>
 
-      {/* 📌 Title + Description */}
+      {/*  Title + Description */}
       <div className="space-y-3">
         <h1 className="text-4xl font-bold tracking-tight">{chapterData.title}</h1>
         {chapterData.desc && (
@@ -81,9 +81,9 @@ export default function ChapterPage({
         )}
       </div>
 
-      {/* 📝 Notes Section */}
+      {/*  Notes Section */}
       {chapterData.notes && (
-        <div className="p-5 rounded-lg bg-accent/40 shadow-md border border-border space-y-2">
+        <div className="p-5 rounded-lg bg-accent/15 shadow-md border border-border space-y-2">
           <div className="flex items-center gap-2 text-base font-semibold">
             <Notebook className="w-5 h-5 text-primary" />
             Notes
@@ -94,7 +94,7 @@ export default function ChapterPage({
         </div>
       )}
 
-      {/* 💻 Code Section */}
+      {/*  Code Section */}
       {chapterData.code && mounted && (
         <div className="space-y-3">
           {/* Header + Copy Button */}
@@ -112,7 +112,7 @@ export default function ChapterPage({
             </button>
           </div>
 
-          {/* ✅ Code Block */}
+          {/*  Code Block */}
           <div className="rounded-lg shadow-md border border-border bg-card overflow-hidden">
             <pre className="p-4 text-sm overflow-x-auto">
               <code
