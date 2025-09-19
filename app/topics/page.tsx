@@ -50,10 +50,11 @@ export default function TopicsPage() {
     // ⏳ Completion Time filter
     if (sortBy !== "all") {
       results = results.filter((t) => {
-        const weeks = t.chapters?.reduce((acc, ch) => {
-          const num = parseInt(ch.duration ?? "0")
-          return acc + (isNaN(num) ? 0 : num)
-        }, 0) || 0
+        const weeks =
+          t.chapters?.reduce((acc, ch) => {
+            const num = parseInt(ch.duration ?? "0")
+            return acc + (isNaN(num) ? 0 : num)
+          }, 0) || 0
 
         if (sortBy === "short") return weeks <= 1
         if (sortBy === "medium") return weeks >= 1 && weeks <= 4
@@ -219,7 +220,7 @@ export default function TopicsPage() {
                                   )}
                                 </div>
                               ) : (
-                                <div className="flex justify-between items-center mt-3">
+                                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-3 gap-3">
                                   <div className="flex flex-wrap gap-2">
                                     {topic.categories.map(
                                       (cat: string, i: number) => (
@@ -251,7 +252,7 @@ export default function TopicsPage() {
 
                           {/* Counts (only in image view) */}
                           {view === "image" && (
-                            <div className="flex justify-between text-sm text-gray-400 mt-4">
+                            <div className="flex flex-col sm:flex-row justify-between text-sm text-gray-400 mt-4 gap-2">
                               <span className="flex items-center gap-1">
                                 <FiList className="w-4 h-4 text-gray-600" />
                                 {topic.chapters?.length} chapters

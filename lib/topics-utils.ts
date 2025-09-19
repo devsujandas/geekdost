@@ -30,66 +30,75 @@ export interface Topic {
 
 //  Raw topics (no need to manually calculate examples/notes)
 const rawTopics: Omit<Topic, "examples" | "notes" | "steps">[] = [
-  {
-    id: "python",
-    title: "Python",
-    desc: "Learn Python programming from basics to advanced. Python is a high-level, interpreted programming language known for its simple syntax and readability.",
-    description: "Learn Python programming from basics to advanced. Python is a high-level, interpreted programming language known for its simple syntax and readability.", //  added
-    category: "Programming",
-    categories: ["Programming", "Data Science", "Automation"],
-    difficulty: "Beginner",
-    image: "/images/python.png", // Python image path
-    icon: FaPython, //  Python icon
+ 
 
-    chapters: [
-      {
-        id: "intro",
-        title: "Introduction to Python",
-        desc: "Overview of Python, its uses, and why it’s popular.",
-        notes: "Python is beginner-friendly, widely used in web development, data science, and automation.",
-        code: `print("Hello, Python!")`,
-        duration: "1 week",
-      },
-      {
-        id: "variables",
-        title: "Variables and Data Types",
-        desc: "Learn how to store data in variables and understand Python's data types.",
-        notes: "Python is dynamically typed. Common types are int, float, str, bool.",
-        code: `name = "Alice"
+
+
+
+
+
+  //python-----------------------------------------------------------python
+
+  {
+  id: "python",
+  title: "Python",
+  desc: "Learn Python programming from basics to advanced. Python is a high-level, interpreted programming language known for its simple syntax and readability.",
+  description: "Learn Python programming from basics to advanced. Python is a high-level, interpreted programming language known for its simple syntax and readability.", 
+  category: "Programming",
+  categories: ["Programming", "Data Science", "Automation"],
+  difficulty: "Beginner to Advanced",
+  image: "/images/python.png", 
+  icon: FaPython, 
+
+  chapters: [
+    {
+      id: "intro",
+      title: "Introduction to Python",
+      desc: "Overview of Python, its uses, and why it’s popular.",
+      notes: "Python is beginner-friendly, widely used in web development, data science, and automation.",
+      code: `print("Hello, Python!")`,
+      duration: "1 week",
+    },
+    {
+      id: "variables",
+      title: "Variables and Data Types",
+      desc: "Learn how to store data in variables and understand Python's data types.",
+      notes: "Python is dynamically typed. Common types are int, float, str, bool.",
+      code: `name = "Alice"
 age = 30
 height = 5.5
 is_student = True
 print(f"Name: {name}, Age: {age}")`,
-        duration: "1 week",
-      },
-      {
-        id: "data_structures",
-        title: "Data Structures: Lists & Dictionaries",
-        desc: "Explore lists and dictionaries in Python.",
-        notes: "Lists are ordered and mutable. Dictionaries store key-value pairs.",
-        code: `my_list = [1, "hello", 3.14]
+      duration: "1 week",
+    },
+    {
+      id: "data_structures",
+      title: "Data Structures: Lists & Dictionaries",
+      desc: "Explore lists and dictionaries in Python.",
+      notes: "Lists are ordered and mutable. Dictionaries store key-value pairs.",
+      code: `my_list = [1, "hello", 3.14]
 my_dict = {"name": "Bob", "age": 25}
 print(my_list[1])
 print(my_dict["name"])`,
-        duration: "1 week",
-      },
-      {
-        id: "functions",
-        title: "Functions in Python",
-        desc: "Learn to create and use functions for reusable code.",
-        notes: "Functions help organize and reuse code blocks.",
-        code: `def greet(name):
+      duration: "1 week",
+    },
+    {
+      id: "functions",
+      title: "Functions in Python",
+      desc: "Learn to create and use functions for reusable code.",
+      notes: "Functions help organize and reuse code blocks.",
+      code: `def greet(name):
     return f"Hello, {name}!"
 
 print(greet("Alice"))`,
-        duration: "1 week",
-      },
-      {
-        id: "oop",
-        title: "Object-Oriented Programming (OOP)",
-        desc: "Understand OOP principles with classes and objects.",
-        notes: "Key concepts: Encapsulation, Inheritance, Polymorphism.",
-        code: `class Dog:
+      duration: "1 week",
+    },
+    {
+      id: "oop",
+      title: "Object-Oriented Programming (OOP)",
+      desc: "Understand OOP principles with classes and objects.",
+      notes: "Key concepts: Encapsulation, Inheritance, Polymorphism.",
+      code: `class Dog:
     def __init__(self, name):
         self.name = name
 
@@ -99,19 +108,159 @@ print(greet("Alice"))`,
 dog = Dog("Buddy")
 print(dog.name)
 print(dog.bark())`,
-        duration: "1 week",
-      },
-      {
-        id: "modules",
-        title: "Modules and Packages",
-        desc: "Learn how to organize code with modules and packages.",
-        notes: "Modules are .py files. Packages are folders with __init__.py.",
-        code: `import math
+      duration: "1 week",
+    },
+    {
+      id: "modules",
+      title: "Modules and Packages",
+      desc: "Learn how to organize code with modules and packages.",
+      notes: "Modules are .py files. Packages are folders with __init__.py.",
+      code: `import math
 print(math.sqrt(16))`,
-        duration: "1 week",
-      },
-    ],
-  },
+      duration: "1 week",
+    },
+
+    // 🔥 Advanced Roadmap Chapters
+    {
+      id: "file_handling",
+      title: "File Handling",
+      desc: "Work with text, CSV, and JSON files.",
+      notes: "Use open() with modes like r, w, a, rb.",
+      code: `with open("data.txt","w") as f:
+    f.write("Hello File!")`,
+      duration: "1 week",
+    },
+    {
+      id: "exception_handling",
+      title: "Exception Handling",
+      desc: "Handle runtime errors safely.",
+      notes: "try-except-finally is used for error handling.",
+      code: `try:
+    print(10/0)
+except ZeroDivisionError:
+    print("Can't divide by zero!")`,
+      duration: "1 week",
+    },
+    {
+      id: "advanced_functions",
+      title: "Advanced Functions",
+      desc: "Learn lambda, map, filter, reduce, and comprehensions.",
+      notes: "Python supports functional programming style.",
+      code: `nums = [1,2,3,4]
+squares = list(map(lambda x: x**2, nums))
+print(squares)`,
+      duration: "1 week",
+    },
+    {
+      id: "iterators_generators",
+      title: "Iterators and Generators",
+      desc: "Build custom iterators and memory-efficient generators.",
+      notes: "Use yield to create generators.",
+      code: `def my_gen():
+    yield 1
+    yield 2
+for val in my_gen():
+    print(val)`,
+      duration: "1 week",
+    },
+    {
+      id: "decorators",
+      title: "Decorators",
+      desc: "Modify functions dynamically.",
+      notes: "Common in logging, authentication, etc.",
+      code: `def log(func):
+    def wrapper():
+        print("Running", func.__name__)
+        func()
+    return wrapper
+
+@log
+def greet():
+    print("Hello!")
+
+greet()`,
+      duration: "1 week",
+    },
+    {
+      id: "async",
+      title: "Async Programming",
+      desc: "Use asyncio for concurrency.",
+      notes: "async/await helps manage async tasks.",
+      code: `import asyncio
+
+async def say_hello():
+    await asyncio.sleep(1)
+    print("Hello Async!")
+
+asyncio.run(say_hello())`,
+      duration: "2 weeks",
+    },
+    {
+      id: "libraries",
+      title: "Popular Libraries",
+      desc: "Learn NumPy, Pandas, Matplotlib, and more.",
+      notes: "Powerful for Data Science and Automation.",
+      code: `import numpy as np
+arr = np.array([1,2,3])
+print(arr.mean())`,
+      duration: "2 weeks",
+    },
+    {
+      id: "web_dev",
+      title: "Web Development with Flask",
+      desc: "Create APIs and Web Apps using Flask.",
+      notes: "Flask is lightweight and beginner friendly.",
+      code: `from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello Flask!"
+
+app.run()`,
+      duration: "2 weeks",
+    },
+    {
+      id: "automation",
+      title: "Automation & Scripting",
+      desc: "Automate tasks with Python scripts.",
+      notes: "Use os, shutil, requests, BeautifulSoup.",
+      code: `import requests
+html = requests.get("https://example.com").text
+print(html[:100])`,
+      duration: "2 weeks",
+    },
+    {
+      id: "testing",
+      title: "Testing & Debugging",
+      desc: "Write tests and debug code.",
+      notes: "Use unittest, pytest, and pdb.",
+      code: `import unittest
+
+def add(a,b): return a+b
+
+class TestAdd(unittest.TestCase):
+    def test_sum(self):
+        self.assertEqual(add(2,3),5)
+
+unittest.main()`,
+      duration: "1 week",
+    },
+    {
+      id: "deployment",
+      title: "Deployment & DevOps",
+      desc: "Deploy Python apps with Docker and CI/CD.",
+      notes: "Use Docker, GitHub Actions, Jenkins.",
+      code: `# Dockerfile Example
+FROM python:3.11
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+CMD ["python","app.py"]`,
+      duration: "2 weeks",
+    }
+  ]
+},
 
   {
     id: "java",
