@@ -1,4 +1,3 @@
-// Remove "use client" from this file
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { FaSearch, FaFilter, FaTimes } from "react-icons/fa"
@@ -36,28 +35,48 @@ export function AdvancedSearch({
   const [localQuery, setLocalQuery] = useState(searchQuery)
 
   // ✅ ensure category/difficulty are always strings
-  const categories = Array.from(
-    new Set(
-      topicsData.map(topic => topic.category ?? "Uncategorized")
-    )
-  ) as string[]
+  const categories = [
+    "All",
+    ...Array.from(
+      new Set(topicsData.map((topic) => topic.category ?? "Uncategorized"))
+    ),
+  ] as string[]
 
-  const difficulties = Array.from(
-    new Set(
-      topicsData.map(topic => topic.difficulty ?? "Unknown")
-    )
-  ) as string[]
+  const difficulties = [
+    "All",
+    ...Array.from(
+      new Set(topicsData.map((topic) => topic.difficulty ?? "Unknown"))
+    ),
+  ] as string[]
 
-  const sortOptions = [
-    { value: "default", label: "Default" },
-    { value: "title", label: "Title A-Z" },
-    { value: "difficulty", label: "Difficulty" },
-    { value: "category", label: "Category" },
+  // ✅ Completion Time filter ranges
+  const completionTimes = [
+    { value: "all", label: "All" },
+    { value: "short", label: "Learn Fast (1 Week)" },
+    { value: "medium", label: "Standard Track (1–4W)" },
+    { value: "long", label: "Long-Term Path (4+W)" },
   ]
+
+  // ✅ Boolean Search Parser
+  function parseBooleanSearch(query: string) {
+    if (!query) return ""
+    const q = query.toLowerCase()
+    if (q.includes(" and ")) {
+      const parts = q.split(" and ").map((p) => p.trim())
+      return JSON.stringify({ type: "AND", terms: parts })
+    } else if (q.includes(" or ")) {
+      const parts = q.split(" or ").map((p) => p.trim())
+      return JSON.stringify({ type: "OR", terms: parts })
+    } else if (q.includes(" not ")) {
+      const parts = q.split(" not ").map((p) => p.trim())
+      return JSON.stringify({ type: "NOT", terms: parts })
+    }
+    return query
+  }
 
   useEffect(() => {
     const delayedSearch = setTimeout(() => {
-      onSearch(localQuery)
+      onSearch(parseBooleanSearch(localQuery))
     }, 300)
     return () => clearTimeout(delayedSearch)
   }, [localQuery, onSearch])
@@ -67,23 +86,25 @@ export function AdvancedSearch({
     onSearch("")
     onCategoryFilter("All")
     onDifficultyFilter("All")
-    onSort("default")
+    onSort("all")
   }
 
   const hasActiveFilters =
-    searchQuery || selectedCategory !== "All" || selectedDifficulty !== "All" || sortBy !== "default"
+    searchQuery ||
+    selectedCategory !== "All" ||
+    selectedDifficulty !== "All" ||
+    sortBy !== "all"
 
   return (
     <div className="w-full space-y-6 mb-8">
-      {/* Main Search Bar */}
+      {/* Main Search Bar with Boolean Support */}
       <GlassmorphismCard>
         <div className="flex flex-col md:flex-row gap-4 items-stretch">
-          {/* Search Input */}
           <div className="flex-1 relative min-w-0">
             <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground z-10" />
             <Input
               type="text"
-              placeholder="Search topics, technologies, concepts..."
+              placeholder='Search anything...'
               value={localQuery}
               onChange={(e) => setLocalQuery(e.target.value)}
               className="pl-10 pr-10 bg-input/50 border-border/50 focus:border-primary/50 w-full"
@@ -102,7 +123,6 @@ export function AdvancedSearch({
             )}
           </div>
 
-          {/* Filter Toggle */}
           <div className="flex-shrink-0">
             <InteractiveButton
               variant="outline"
@@ -149,10 +169,10 @@ export function AdvancedSearch({
                     <select
                       value={selectedCategory}
                       onChange={(e) => onCategoryFilter(e.target.value)}
-                      className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5 text-foreground focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                      className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5"
                     >
                       {categories.map((category) => (
-                        <option key={category} value={category} className="bg-background">
+                        <option key={category} value={category}>
                           {category}
                         </option>
                       ))}
@@ -167,28 +187,28 @@ export function AdvancedSearch({
                     <select
                       value={selectedDifficulty}
                       onChange={(e) => onDifficultyFilter(e.target.value)}
-                      className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5 text-foreground focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                      className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5"
                     >
                       {difficulties.map((difficulty) => (
-                        <option key={difficulty} value={difficulty} className="bg-background">
+                        <option key={difficulty} value={difficulty}>
                           {difficulty}
                         </option>
                       ))}
                     </select>
                   </div>
 
-                  {/* Sort Options */}
+                  {/* ✅ Completion Time Filter */}
                   <div className="space-y-2">
                     <label className="block text-sm font-medium text-foreground">
-                      Sort By
+                      Completion Time
                     </label>
                     <select
                       value={sortBy}
                       onChange={(e) => onSort(e.target.value)}
-                      className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5 text-foreground focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                      className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5"
                     >
-                      {sortOptions.map((option) => (
-                        <option key={option.value} value={option.value} className="bg-background">
+                      {completionTimes.map((option) => (
+                        <option key={option.value} value={option.value}>
                           {option.label}
                         </option>
                       ))}
@@ -204,7 +224,7 @@ export function AdvancedSearch({
                       variant="primary"
                       onClick={clearAllFilters}
                       disabled={!hasActiveFilters}
-                      className="w-full h-10 rounded-lg bg-red-600 text-white font-medium shadow-sm hover:bg-red-700 hover:shadow-md transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-red-400"
+                      className="w-full h-10 rounded-lg bg-red-600 text-white"
                     >
                       Clear All
                     </InteractiveButton>
@@ -225,11 +245,14 @@ export function AdvancedSearch({
       >
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-sm text-muted-foreground">
           <div className="flex-1">
-            Showing <span className="text-primary font-medium">{resultsCount}</span> of{" "}
+            Showing{" "}
+            <span className="text-primary font-medium">{resultsCount}</span> of{" "}
             <span className="font-medium">{totalCount}</span> topics
             {searchQuery && (
               <span className="block sm:inline">
-                {" "}for "<span className="text-primary font-medium">{searchQuery}</span>"
+                {" "}
+                for "
+                <span className="text-primary font-medium">{searchQuery}</span>"
               </span>
             )}
           </div>
@@ -242,34 +265,26 @@ export function AdvancedSearch({
             transition={{ delay: 0.2 }}
             className="flex flex-col sm:flex-row sm:items-center gap-3"
           >
-            <span className="text-sm text-muted-foreground flex-shrink-0">Active filters:</span>
+            <span className="text-sm text-muted-foreground flex-shrink-0">
+              Active filters:
+            </span>
             <div className="flex flex-wrap gap-2">
               {selectedCategory !== "All" && (
-                <motion.span
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium"
-                >
+                <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium">
                   {selectedCategory}
-                </motion.span>
+                </span>
               )}
               {selectedDifficulty !== "All" && (
-                <motion.span
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium"
-                >
+                <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium">
                   {selectedDifficulty}
-                </motion.span>
+                </span>
               )}
-              {sortBy !== "default" && (
-                <motion.span
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium"
-                >
-                  Sorted by {sortOptions.find((opt) => opt.value === sortBy)?.label}
-                </motion.span>
+              {sortBy !== "all" && (
+                <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium">
+                  {
+                    completionTimes.find((c) => c.value === sortBy)?.label
+                  }
+                </span>
               )}
             </div>
           </motion.div>
