@@ -3,21 +3,26 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { FaBookOpen, FaCode, FaUsers, FaAward } from "react-icons/fa"
-import { topicsData } from "@/lib/topics-utils" 
-import { TopicCard } from "@/components/topic-card"
+import { FiList, FiCode, FiFileText } from "react-icons/fi"
+import { topicsData } from "@/lib/topics-utils"
 import { GlassmorphismCard } from "@/components/glassmorphism-card"
-import { PageLayout } from "@/components/page-layout"   
+import { PageLayout } from "@/components/page-layout"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { AnimatedCounter } from "@/components/animated-counter"
 import { FloatingElements } from "@/components/floating-elements"
 import { InteractiveButton } from "@/components/interactive-button"
-import { StaggeredList } from "@/components/staggered-list"
 import Image from "next/image"
+import Link from "next/link"
 import { useRouter } from "next/navigation"
+import React from "react"
 
 export default function HomePage() {
-  const [view, setView] = useState<"default" | "image">("default")
+  // 🔥 Default set to "image"
+  const [view, setView] = useState<"image" | "list">("image")
   const router = useRouter()
+
+  const filteredTopics = topicsData
+  const visibleCount = topicsData.length
 
   return (
     <PageLayout>
@@ -115,68 +120,127 @@ export default function HomePage() {
           <div className="flex justify-center gap-4">
             <InteractiveButton
               size="sm"
-              variant={view === "default" ? "primary" : "outline"}
-              onClick={() => setView("default")}
-            >
-              Default View
-            </InteractiveButton>
-            <InteractiveButton
-              size="sm"
               variant={view === "image" ? "primary" : "outline"}
               onClick={() => setView("image")}
             >
               Image View
             </InteractiveButton>
+            <InteractiveButton
+              size="sm"
+              variant={view === "list" ? "primary" : "outline"}
+              onClick={() => setView("list")}
+            >
+              List View
+            </InteractiveButton>
           </div>
         </div>
 
         {/* Topics Grid */}
-        {view === "default" ? (
-          <StaggeredList stagger={0.05}>
-            {topicsData.map((topic) => (
+        <ScrollReveal delay={0.4}>
+          {filteredTopics.length > 0 && (
+            <div className="relative z-0">
               <div
-                key={topic.id}
-                className="mb-6 cursor-pointer"
-                onClick={() => router.push(`/topics/${topic.id}`)} // ✅ use id
+                className={`grid ${
+                  view === "list"
+                    ? "grid-cols-1"
+                    : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+                } gap-6`}
               >
-                <TopicCard topic={topic} />
+                {filteredTopics.slice(0, visibleCount).map((topic, index) => {
+                  const codeCount = topic.chapters?.filter(
+                    (ch) => ch.code && ch.code.trim() !== ""
+                  ).length
+                  const notesCount = topic.chapters?.filter(
+                    (ch) => ch.notes && ch.notes.trim() !== ""
+                  ).length
+
+                  return (
+                    <Link key={topic.id} href={`/topics/${topic.id}`}>
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                          duration: 0.6,
+                          delay: index * 0.06,
+                          ease: "easeOut",
+                        }}
+                        whileHover={{ y: -5, scale: 1.02 }}
+                        className="p-6 rounded-xl bg-background border border-border shadow-md cursor-pointer group hover:border-primary/50 transition-all"
+                      >
+                        {/* Category & Difficulty */}
+                        <div className="flex items-center justify-between mb-3">
+                          <span className="text-xs px-2 py-1 rounded text-gray-200">
+                            {topic.category || topic.categories?.join(", ")}
+                          </span>
+                          <span
+                            className={`text-xs px-2 py-1 rounded font-medium ${
+                              topic.difficulty === "Beginner"
+                                ? "bg-green-600 text-white"
+                                : topic.difficulty === "Intermediate"
+                                ? "bg-yellow-600 text-white"
+                                : "bg-red-600 text-white"
+                            }`}
+                          >
+                            {topic.difficulty}
+                          </span>
+                        </div>
+
+                        {/* Icon + Title */}
+                        <div className="flex items-center gap-2 mb-2">
+                          {topic.icon &&
+                            React.createElement(topic.icon, {
+                              className: "w-6 h-6 text-primary",
+                            })}
+                          <h2 className="text-xl font-bold text-gray-100 group-hover:text-primary transition-colors">
+                            {topic.title}
+                          </h2>
+                        </div>
+
+                        {/* 🔥 Image directly after Title */}
+                        {view === "image" && topic.image && (
+                          <div className="relative h-40 w-full overflow-hidden rounded-lg mb-3">
+                            <Image
+                              src={(topic as any).image ?? "/images/default-topic.jpg"}
+                              alt={topic.id}
+                              fill
+                              className="object-cover group-hover:scale-105 transition-transform duration-500"
+                            />
+                          </div>
+                        )}
+
+                        {/* Description */}
+                        <p className="text-base text-gray-300 line-clamp-3">
+                          {topic.desc}
+                        </p>
+
+                        {/* Learning, Code, Notes Count */}
+                        <div className="flex justify-between text-sm text-gray-400 mt-4">
+                          <span className="flex items-center gap-1">
+                            <FiList className="w-4 h-4 text-gray-600" />
+                            {topic.chapters?.length} chapters
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <FiCode className="w-4 h-4" /> {codeCount} Snippets
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <FiFileText className="w-4 h-4" /> {notesCount} Notes
+                          </span>
+                        </div>
+
+                        {/* Explore Button */}
+                        {view === "image" && (
+                          <button className="mt-4 px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition">
+                            Explore
+                          </button>
+                        )}
+                      </motion.div>
+                    </Link>
+                  )
+                })}
               </div>
-            ))}
-          </StaggeredList>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {topicsData.map((topic) => (
-              <motion.div
-                key={topic.id}
-                className="group rounded-2xl overflow-hidden shadow-md bg-background/40 backdrop-blur-lg border border-border hover:shadow-lg transition cursor-pointer"
-                whileHover={{ scale: 1.02 }}
-                onClick={() => router.push(`/topics/${topic.id}`)} // ✅ use id
-              >
-                <div className="h-full flex flex-col">
-                  <div className="relative h-48 w-full overflow-hidden">
-                    <Image
-                      src={(topic as any).image ?? "/images/default-topic.jpg"}
-                      alt={topic.id}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
-                      {topic.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm flex-grow">
-                      {topic.desc} {/* ✅ fixed: was topic.slug */}
-                    </p>
-                    <button className="mt-4 px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition">
-                      Explore
-                    </button>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        )}
+            </div>
+          )}
+        </ScrollReveal>
       </div>
 
       {/* Call to Action Section */}
