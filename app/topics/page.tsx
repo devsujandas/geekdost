@@ -21,7 +21,7 @@ export default function TopicsPage() {
   const [filteredTopics, setFilteredTopics] = useState(topicsData)
   const [visibleCount, setVisibleCount] = useState(9)
 
-  // 🔥 New state for view toggle
+  //  New state for view toggle
   const [view, setView] = useState<"image" | "list">("image")
 
   useEffect(() => {
@@ -103,7 +103,7 @@ export default function TopicsPage() {
             </div>
           </ScrollReveal>
 
-          {/* 🔥 Toggle Buttons */}
+          {/*  Toggle Buttons */}
           <div className="flex justify-center gap-4 mb-10">
             <InteractiveButton
               size="sm"
@@ -182,7 +182,7 @@ export default function TopicsPage() {
                             </h2>
                           </div>
 
-                          {/* 🔥 Image for image view */}
+                          {/*  Image for image view */}
                           {view === "image" && topic.image && (
                             <div className="relative h-40 w-full overflow-hidden rounded-lg mb-3">
                               <Image

@@ -1,5 +1,3 @@
-// lib/topics-utils.ts
-
 import { IconType } from "react-icons"
 import { FaJava, FaPython } from "react-icons/fa"
 
@@ -215,6 +213,6 @@ export const topicsData: Topic[] = rawTopics.map((topic) => {
     examples,
     notes,
     steps,
-    description: topic.description ?? topic.desc, //  ensure description exists
+    description: topic.description ?? topic.desc,
   }
 })

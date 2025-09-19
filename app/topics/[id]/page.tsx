@@ -100,7 +100,7 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                   </div>
                 </div>
 
-                {/* ✅ Button + Time (Same Row, Always) */}
+                
                 <div className="pt-2 flex items-center justify-between gap-4">
                   <Link
                     href={`/topics/${topic.id}/${chapter.id}`}

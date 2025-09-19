@@ -1,14 +1,12 @@
-// lib/storage.ts
-
 // --- Save Final Result ---
 export function saveResult(result: any) {
   try {
     const prev = JSON.parse(localStorage.getItem("tests") || "[]")
 
-    // ✅ Ensure questions are stored with result
+   
     const resultWithQuestions = {
       ...result,
-      // যদি result এ questions না আসে, তবে fallback []
+      
       questions: result.questions && Array.isArray(result.questions)
         ? result.questions
         : [],
@@ -58,7 +56,7 @@ export function getProgress(subject: string, difficulty: string) {
   }
 }
 
-// --- Clear Progress for Specific Exam ---
+
 export function clearProgress(subject: string, difficulty: string) {
   try {
     const key = `progress_${subject}_${difficulty}`
