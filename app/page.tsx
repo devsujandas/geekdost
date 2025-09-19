@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { FaBookOpen, FaCode, FaUsers, FaAward } from "react-icons/fa"
-import { topicsData } from "@/lib/topics-data"
+import { topicsData } from "@/lib/topics-utils" 
 import { TopicCard } from "@/components/topic-card"
 import { GlassmorphismCard } from "@/components/glassmorphism-card"
 import { PageLayout } from "@/components/page-layout"   
@@ -166,7 +166,7 @@ export default function HomePage() {
                       {topic.title}
                     </h3>
                     <p className="text-muted-foreground text-sm flex-grow">
-                      {topic.slug}
+                      {topic.desc} {/* ✅ fixed: was topic.slug */}
                     </p>
                     <button className="mt-4 px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition">
                       Explore

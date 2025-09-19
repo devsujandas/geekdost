@@ -5,7 +5,7 @@ import { FaSearch, FaFilter, FaTimes } from "react-icons/fa"
 import { Input } from "@/components/ui/input"
 import { GlassmorphismCard } from "./glassmorphism-card"
 import { InteractiveButton } from "./interactive-button"
-import { topicsData } from "@/lib/topics-data"
+import { topicsData } from "@/lib/topics-utils"
 
 interface AdvancedSearchProps {
   onSearch: (query: string) => void
@@ -34,10 +34,20 @@ export function AdvancedSearch({
 }: AdvancedSearchProps) {
   const [isFilterOpen, setIsFilterOpen] = useState(false)
   const [localQuery, setLocalQuery] = useState(searchQuery)
-  
-  const categories = Array.from(new Set(topicsData.map(topic => topic.category)))
-  const difficulties = Array.from(new Set(topicsData.map(topic => topic.difficulty)))
-  
+
+  // ✅ ensure category/difficulty are always strings
+  const categories = Array.from(
+    new Set(
+      topicsData.map(topic => topic.category ?? "Uncategorized")
+    )
+  ) as string[]
+
+  const difficulties = Array.from(
+    new Set(
+      topicsData.map(topic => topic.difficulty ?? "Unknown")
+    )
+  ) as string[]
+
   const sortOptions = [
     { value: "default", label: "Default" },
     { value: "title", label: "Title A-Z" },
@@ -91,7 +101,7 @@ export function AdvancedSearch({
               </motion.button>
             )}
           </div>
-          
+
           {/* Filter Toggle */}
           <div className="flex-shrink-0">
             <InteractiveButton
@@ -101,15 +111,14 @@ export function AdvancedSearch({
                 isFilterOpen ? "bg-primary/10 text-primary" : ""
               }`}
             >
-              {/* ✅ Wrapper ensures icon + text side by side */}
               <div className="flex flex-row items-center gap-2">
                 <FaFilter className="h-4 w-4 shrink-0" />
                 <span className="whitespace-nowrap">Filters</span>
                 {hasActiveFilters && (
-                  <motion.div 
-                    initial={{ scale: 0 }} 
-                    animate={{ scale: 1 }} 
-                    className="w-2 h-2 bg-primary rounded-full shrink-0" 
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    className="w-2 h-2 bg-primary rounded-full shrink-0"
                   />
                 )}
               </div>
@@ -142,7 +151,7 @@ export function AdvancedSearch({
                       onChange={(e) => onCategoryFilter(e.target.value)}
                       className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5 text-foreground focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                     >
-                      {categories.map((category: string) => (
+                      {categories.map((category) => (
                         <option key={category} value={category} className="bg-background">
                           {category}
                         </option>
@@ -160,7 +169,7 @@ export function AdvancedSearch({
                       onChange={(e) => onDifficultyFilter(e.target.value)}
                       className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5 text-foreground focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                     >
-                      {difficulties.map((difficulty: string) => (
+                      {difficulties.map((difficulty) => (
                         <option key={difficulty} value={difficulty} className="bg-background">
                           {difficulty}
                         </option>
@@ -191,15 +200,14 @@ export function AdvancedSearch({
                     <label className="block text-sm font-medium text-transparent">
                       Action
                     </label>
-<InteractiveButton
-  variant="primary"
-  onClick={clearAllFilters}
-  disabled={!hasActiveFilters}
-  className="w-full h-10 rounded-lg bg-red-600 text-white font-medium shadow-sm hover:bg-red-700 hover:shadow-md transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-red-400"
->
-  Clear All
-</InteractiveButton>
-
+                    <InteractiveButton
+                      variant="primary"
+                      onClick={clearAllFilters}
+                      disabled={!hasActiveFilters}
+                      className="w-full h-10 rounded-lg bg-red-600 text-white font-medium shadow-sm hover:bg-red-700 hover:shadow-md transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-red-400"
+                    >
+                      Clear All
+                    </InteractiveButton>
                   </div>
                 </div>
               </div>
@@ -215,7 +223,6 @@ export function AdvancedSearch({
         transition={{ delay: 0.1 }}
         className="space-y-3"
       >
-        {/* Results Count */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-sm text-muted-foreground">
           <div className="flex-1">
             Showing <span className="text-primary font-medium">{resultsCount}</span> of{" "}
@@ -228,7 +235,6 @@ export function AdvancedSearch({
           </div>
         </div>
 
-        {/* Active Filters */}
         {hasActiveFilters && (
           <motion.div
             initial={{ opacity: 0, y: 5 }}
@@ -239,7 +245,7 @@ export function AdvancedSearch({
             <span className="text-sm text-muted-foreground flex-shrink-0">Active filters:</span>
             <div className="flex flex-wrap gap-2">
               {selectedCategory !== "All" && (
-                <motion.span 
+                <motion.span
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium"
@@ -248,7 +254,7 @@ export function AdvancedSearch({
                 </motion.span>
               )}
               {selectedDifficulty !== "All" && (
-                <motion.span 
+                <motion.span
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium"
@@ -257,7 +263,7 @@ export function AdvancedSearch({
                 </motion.span>
               )}
               {sortBy !== "default" && (
-                <motion.span 
+                <motion.span
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium"

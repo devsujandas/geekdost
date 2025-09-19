@@ -1,13 +1,16 @@
 "use client"
+
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { topicsData } from "@/lib/topics-data"
+import Link from "next/link"
+import { topicsData } from "@/lib/topics-utils"
 import { PageLayout } from "@/components/page-layout"
 import { GlassmorphismCard } from "@/components/glassmorphism-card"
-import { TopicCard } from "@/components/topic-card"
 import { AdvancedSearch } from "@/components/advanced-search"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { InteractiveButton } from "@/components/interactive-button"
+import React from "react"
+import { FiCode, FiFileText, FiList, FiArrowRight } from "react-icons/fi"
 
 export default function TopicsPage() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -22,29 +25,28 @@ export default function TopicsPage() {
     if (searchQuery.trim() !== "") {
       const query = searchQuery.trim().toLowerCase()
       results = results.filter(
-        t =>
+        (t) =>
           t.title.toLowerCase().includes(query) ||
-          (t.description && t.description.toLowerCase().includes(query))
+          (t.desc && t.desc.toLowerCase().includes(query))
       )
     }
-    if (selectedCategory !== "All") results = results.filter(t => t.category === selectedCategory)
-    if (selectedDifficulty !== "All") results = results.filter(t => t.difficulty === selectedDifficulty)
+    if (selectedCategory !== "All") {
+      results = results.filter((t) => t.category === selectedCategory)
+    }
+    if (selectedDifficulty !== "All") {
+      results = results.filter((t) => t.difficulty === selectedDifficulty)
+    }
     results = sortTopics(results, sortBy)
     setFilteredTopics(results)
     setVisibleCount(9)
   }, [searchQuery, selectedCategory, selectedDifficulty, sortBy])
 
-  // Helper function to sort topics
   function sortTopics(topics: typeof topicsData, sortBy: string) {
     switch (sortBy) {
       case "title-asc":
         return [...topics].sort((a, b) => a.title.localeCompare(b.title))
       case "title-desc":
         return [...topics].sort((a, b) => b.title.localeCompare(a.title))
-      case "difficulty-asc":
-        return [...topics].sort((a, b) => (a.difficulty || "").localeCompare(b.difficulty || ""))
-      case "difficulty-desc":
-        return [...topics].sort((a, b) => (b.difficulty || "").localeCompare(a.difficulty || ""))
       default:
         return topics
     }
@@ -57,11 +59,13 @@ export default function TopicsPage() {
           {/* Header */}
           <ScrollReveal>
             <div className="text-center mb-10 sm:mb-14">
-              <h1 className="text-4xl font-bold mb-4 text-gray-100">Explore Topics</h1>
-<p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
-  Discover detailed notes and code examples to boost your learning journey.
-</p>
-
+              <h1 className="text-4xl font-bold mb-4 text-gray-100">
+                Explore Topics
+              </h1>
+              <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
+                Discover detailed notes, learning steps, and code examples to
+                boost your journey.
+              </p>
             </div>
           </ScrollReveal>
 
@@ -90,21 +94,94 @@ export default function TopicsPage() {
             {filteredTopics.length > 0 ? (
               <div className="relative z-0">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredTopics.slice(0, visibleCount).map((topic, index) => (
-                    <motion.div
-                      key={topic.id}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, delay: index * 0.06, ease: "easeOut" }}
-                    >
-                      <TopicCard
-                        topic={topic}
-                      />
-                    </motion.div>
-                  ))}
+                  {filteredTopics.slice(0, visibleCount).map((topic, index) => {
+                    const codeCount = topic.chapters.filter(
+                      (ch) => ch.code && ch.code.trim() !== ""
+                    ).length
+                    const notesCount = topic.chapters.filter(
+                      (ch) => ch.notes && ch.notes.trim() !== ""
+                    ).length
+                    const stepsCount = topic.steps || 0
+
+                    return (
+                      <Link key={topic.id} href={`/topics/${topic.id}`}>
+                        <motion.div
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            duration: 0.6,
+                            delay: index * 0.06,
+                            ease: "easeOut",
+                          }}
+                          whileHover={{ y: -5, scale: 1.02 }}
+                          className="p-6 rounded-xl bg-background border border-border shadow-md cursor-pointer group hover:border-primary/50 transition-all"
+                        >
+                          {/* Category & Difficulty */}
+                          <div className="flex items-center justify-between mb-3">
+                            <span className="text-xs px-2 py-1 rounded text-gray-200">
+                              {topic.category || topic.categories?.join(", ")}
+                            </span>
+                            <span
+                              className={`text-xs px-2 py-1 rounded font-medium ${
+                                topic.difficulty === "Beginner"
+                                  ? "bg-green-600 text-white"
+                                  : topic.difficulty === "Intermediate"
+                                  ? "bg-yellow-600 text-white"
+                                  : "bg-red-600 text-white"
+                              }`}
+                            >
+                              {topic.difficulty}
+                            </span>
+                          </div>
+
+                          {/* Icon + Title */}
+                          <div className="flex items-center gap-2 mb-2">
+                            {topic.icon &&
+                              React.createElement(topic.icon, {
+                                className: "w-6 h-6 text-primary",
+                              })}
+                            <h2 className="text-xl font-bold text-gray-100 group-hover:text-primary transition-colors">
+                              {topic.title}
+                            </h2>
+                          </div>
+
+                          {/* Description */}
+                          <p className="text-base text-gray-300 line-clamp-3">
+                            {topic.desc}
+                          </p>
+
+                          {/* Learning, Code, Notes Count */}
+                          <div className="flex justify-between text-sm text-gray-400 mt-4">
+                            <span className="flex items-center gap-1">
+                              <FiList className="w-4 h-4 text-gray-600" />
+                              {topic.chapters?.length} chapters
+                            </span>
+                            <span className="flex items-center gap-1">
+                              <FiCode className="w-4 h-4" /> {codeCount} Snippets
+                            </span>
+                            <span className="flex items-center gap-1">
+                              <FiFileText className="w-4 h-4" /> {notesCount} Notes
+                            </span>
+                          </div>
+
+                          {/* Explore Button at Bottom */}
+                          <div className="flex justify-end mt-5">
+                            <motion.div
+                              whileHover={{ x: 5 }}
+                              transition={{ duration: 0.2 }}
+                              className="flex items-center gap-2 text-primary font-medium group-hover:font-semibold"
+                            >
+                              <span>Explore</span>
+                              <FiArrowRight className="w-5 h-5" />
+                            </motion.div>
+                          </div>
+                        </motion.div>
+                      </Link>
+                    )
+                  })}
                 </div>
 
-                {/* Load More Button */}
+                {/* Load More */}
                 {visibleCount < filteredTopics.length && (
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -124,7 +201,7 @@ export default function TopicsPage() {
             ) : (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="text-center py-16 sm:py-20"
               >
@@ -134,7 +211,8 @@ export default function TopicsPage() {
                     No topics found
                   </h3>
                   <p className="text-gray-500 mb-6 text-sm sm:text-base">
-                    Try adjusting your search terms or filters to find what you're looking for.
+                    Try adjusting your search terms or filters to find what
+                    you're looking for.
                   </p>
                   <InteractiveButton
                     onClick={() => {

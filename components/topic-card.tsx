@@ -16,8 +16,21 @@ import {
   FaCloud,
   FaShieldAlt,
 } from "react-icons/fa"
-import type { Topic } from "@/lib/topics-data"
 import { GlassmorphismCard } from "./glassmorphism-card"
+
+// Topic interface locally defined
+interface Topic {
+  id: string
+  title: string
+  description: string
+  icon?: string
+  category?: string
+  difficulty?: "Beginner" | "Intermediate" | "Advanced"
+  tags?: string[]
+  roadmap?: any[]
+  codeSnippets?: any[]
+  notes?: any[]
+}
 
 interface TopicCardProps {
   topic: Topic
@@ -25,18 +38,18 @@ interface TopicCardProps {
 }
 
 const iconMap = {
-  FaPython: FaPython,
-  FaJs: FaJs,
-  FaJava: FaJava,
-  FaCode: FaCode,
-  FaChartBar: FaChartBar,
-  FaBrain: FaBrain,
-  FaDatabase: FaDatabase,
-  FaGitAlt: FaGitAlt,
-  FaDocker: FaDocker,
-  FaRobot: FaRobot,
-  FaCloud: FaCloud,
-  FaShieldAlt: FaShieldAlt,
+  FaPython,
+  FaJs,
+  FaJava,
+  FaCode,
+  FaChartBar,
+  FaBrain,
+  FaDatabase,
+  FaGitAlt,
+  FaDocker,
+  FaRobot,
+  FaCloud,
+  FaShieldAlt,
 }
 
 const difficultyColors = {
@@ -46,10 +59,7 @@ const difficultyColors = {
 }
 
 export function TopicCard({ topic, delay = 0 }: TopicCardProps) {
-  if (!topic) {
-    console.log("[v0] TopicCard received undefined topic")
-    return null
-  }
+  if (!topic) return null
 
   const IconComponent = iconMap[topic.icon as keyof typeof iconMap] || FaCode
   const tags = topic.tags || []
@@ -57,19 +67,20 @@ export function TopicCard({ topic, delay = 0 }: TopicCardProps) {
   const codeSnippets = topic.codeSnippets || []
   const notes = topic.notes || []
   const category = topic.category || "General"
-  const difficulty = topic.difficulty || "Beginner"
-
-  console.log("[v0] TopicCard rendering:", {
-    id: topic.id,
-    title: topic.title,
-    tagsLength: tags.length,
-    roadmapLength: roadmap.length,
-  })
+  const difficulty: keyof typeof difficultyColors =
+    topic.difficulty || "Beginner"
 
   return (
     <Link href={`/topics/${topic.id}`}>
-      <GlassmorphismCard delay={delay} className="h-full group cursor-pointer overflow-hidden">
-        <motion.div whileHover={{ y: -2 }} transition={{ duration: 0.2 }} className="flex flex-col h-full relative">
+      <GlassmorphismCard
+        delay={delay}
+        className="h-full group cursor-pointer overflow-hidden"
+      >
+        <motion.div
+          whileHover={{ y: -2 }}
+          transition={{ duration: 0.2 }}
+          className="flex flex-col h-full relative"
+        >
           {/* Hover Effect Background */}
           <motion.div
             className="absolute inset-0 bg-primary/5 rounded-xl"
@@ -80,15 +91,21 @@ export function TopicCard({ topic, delay = 0 }: TopicCardProps) {
 
           {/* Content */}
           <div className="relative z-10">
-            {/* Header with Category and Difficulty */}
+            {/* Header */}
             <div className="flex items-center justify-between mb-4">
-              <span className="text-xs text-muted-foreground bg-muted/20 px-2 py-1 rounded">{category}</span>
-              <span className={`text-xs px-2 py-1 rounded font-medium ${difficultyColors[difficulty]}`}>
+              <span className="text-xs text-muted-foreground bg-muted/20 px-2 py-1 rounded">
+                {category}
+              </span>
+              <span
+                className={`text-xs px-2 py-1 rounded font-medium ${
+                  difficultyColors[difficulty]
+                }`}
+              >
                 {difficulty}
               </span>
             </div>
 
-            {/* Icon and Title */}
+            {/* Icon + Title */}
             <div className="flex items-center mb-4">
               <motion.div
                 className="p-3 rounded-lg bg-primary/10 mr-4 group-hover:bg-primary/20 transition-colors duration-200"
@@ -106,7 +123,9 @@ export function TopicCard({ topic, delay = 0 }: TopicCardProps) {
             </div>
 
             {/* Description */}
-            <p className="text-muted-foreground text-sm mb-4 flex-grow text-pretty">{topic.description}</p>
+            <p className="text-muted-foreground text-sm mb-4 flex-grow text-pretty">
+              {topic.description}
+            </p>
 
             {/* Tags */}
             <div className="flex flex-wrap gap-1 mb-4">
@@ -118,15 +137,25 @@ export function TopicCard({ topic, delay = 0 }: TopicCardProps) {
                   {tag}
                 </span>
               ))}
-              {tags.length > 3 && <span className="text-xs text-muted-foreground">+{tags.length - 3} more</span>}
+              {tags.length > 3 && (
+                <span className="text-xs text-muted-foreground">
+                  +{tags.length - 3} more
+                </span>
+              )}
             </div>
 
             {/* Stats */}
             <div className="flex items-center justify-between text-xs text-muted-foreground">
               <div className="flex items-center gap-4">
-                <motion.span whileHover={{ scale: 1.05 }}>{roadmap.length} Steps</motion.span>
-                <motion.span whileHover={{ scale: 1.05 }}>{codeSnippets.length} Snippets</motion.span>
-                <motion.span whileHover={{ scale: 1.05 }}>{notes.length} Notes</motion.span>
+                <motion.span whileHover={{ scale: 1.05 }}>
+                  {roadmap.length} Steps
+                </motion.span>
+                <motion.span whileHover={{ scale: 1.05 }}>
+                  {codeSnippets.length} Snippets
+                </motion.span>
+                <motion.span whileHover={{ scale: 1.05 }}>
+                  {notes.length} Notes
+                </motion.span>
               </div>
               <motion.div
                 className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
