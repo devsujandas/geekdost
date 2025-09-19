@@ -17,7 +17,7 @@ export default function TopicsPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [selectedDifficulty, setSelectedDifficulty] = useState("All")
-  const [sortBy, setSortBy] = useState("default")
+  const [sortBy, setSortBy] = useState("all") // ✅ default all
   const [filteredTopics, setFilteredTopics] = useState(topicsData)
   const [visibleCount, setVisibleCount] = useState(9)
 
@@ -26,6 +26,8 @@ export default function TopicsPage() {
 
   useEffect(() => {
     let results = topicsData
+
+    // 🔍 Search
     if (searchQuery.trim() !== "") {
       const query = searchQuery.trim().toLowerCase()
       results = results.filter(
@@ -34,27 +36,35 @@ export default function TopicsPage() {
           (t.desc && t.desc.toLowerCase().includes(query))
       )
     }
+
+    // 📂 Category
     if (selectedCategory !== "All") {
       results = results.filter((t) => t.category === selectedCategory)
     }
+
+    // 🎯 Difficulty
     if (selectedDifficulty !== "All") {
       results = results.filter((t) => t.difficulty === selectedDifficulty)
     }
-    results = sortTopics(results, sortBy)
+
+    // ⏳ Completion Time filter
+    if (sortBy !== "all") {
+      results = results.filter((t) => {
+        const weeks = t.chapters?.reduce((acc, ch) => {
+          const num = parseInt(ch.duration ?? "0")
+          return acc + (isNaN(num) ? 0 : num)
+        }, 0) || 0
+
+        if (sortBy === "short") return weeks <= 1
+        if (sortBy === "medium") return weeks >= 1 && weeks <= 4
+        if (sortBy === "long") return weeks > 4
+        return true
+      })
+    }
+
     setFilteredTopics(results)
     setVisibleCount(9)
   }, [searchQuery, selectedCategory, selectedDifficulty, sortBy])
-
-  function sortTopics(topics: typeof topicsData, sortBy: string) {
-    switch (sortBy) {
-      case "title-asc":
-        return [...topics].sort((a, b) => a.title.localeCompare(b.title))
-      case "title-desc":
-        return [...topics].sort((a, b) => b.title.localeCompare(a.title))
-      default:
-        return topics
-    }
-  }
 
   return (
     <PageLayout>
@@ -258,7 +268,7 @@ export default function TopicsPage() {
                           {/* Explore Button (only in image view) */}
                           {view === "image" && (
                             <div className="mt-auto">
-<button className="mt-4 w-full py-2.5 rounded-lg bg-primary text-primary-foreground font-semibold tracking-wide hover:bg-primary/90 transition">
+                              <button className="mt-4 w-full py-2.5 rounded-lg bg-primary text-primary-foreground font-semibold tracking-wide hover:bg-primary/90 transition">
                                 Explore
                               </button>
                             </div>
@@ -307,7 +317,7 @@ export default function TopicsPage() {
                       setSearchQuery("")
                       setSelectedCategory("All")
                       setSelectedDifficulty("All")
-                      setSortBy("default")
+                      setSortBy("all")
                     }}
                     variant="outline"
                     className="w-full sm:w-auto"

@@ -18,12 +18,12 @@ export interface Topic {
   id: string
   title: string
   desc: string
-  description?: string   // 🔥 added this (alias for desc)
+  description?: string   
   icon?: IconType 
-  image?: string        //  Correct type for react-icons
-  examples: number       // auto calculated
-  notes: number          // auto calculated
-  steps: number          // auto calculated
+  image?: string        
+  examples: number      
+  notes: number          
+  steps: number          
   category?: string
   categories?: string[]  //  multiple categories
   difficulty?: string
@@ -123,7 +123,7 @@ print(math.sqrt(16))`,
     category: "Programming",
     categories: ["Programming", "Backend", "OOP"],
     difficulty: "Intermediate",
-    image: "/images/java.jpg", // 🔥 Python image path
+    image: "/images/java.jpg", //  Python image path
     icon: FaJava, //  Java icon
 
     chapters: [

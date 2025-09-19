@@ -104,7 +104,7 @@ export function AdvancedSearch({
             <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground z-10" />
             <Input
               type="text"
-              placeholder='Search anything...'
+              placeholder="Search anything..."
               value={localQuery}
               onChange={(e) => setLocalQuery(e.target.value)}
               className="pl-10 pr-10 bg-input/50 border-border/50 focus:border-primary/50 w-full"
@@ -169,10 +169,14 @@ export function AdvancedSearch({
                     <select
                       value={selectedCategory}
                       onChange={(e) => onCategoryFilter(e.target.value)}
-                      className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5"
+                      className="w-full bg-background text-foreground border border-border/50 rounded-lg px-3 py-2.5"
                     >
                       {categories.map((category) => (
-                        <option key={category} value={category}>
+                        <option
+                          key={category}
+                          value={category}
+                          className="bg-background text-foreground"
+                        >
                           {category}
                         </option>
                       ))}
@@ -187,10 +191,14 @@ export function AdvancedSearch({
                     <select
                       value={selectedDifficulty}
                       onChange={(e) => onDifficultyFilter(e.target.value)}
-                      className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5"
+                      className="w-full bg-background text-foreground border border-border/50 rounded-lg px-3 py-2.5"
                     >
                       {difficulties.map((difficulty) => (
-                        <option key={difficulty} value={difficulty}>
+                        <option
+                          key={difficulty}
+                          value={difficulty}
+                          className="bg-background text-foreground"
+                        >
                           {difficulty}
                         </option>
                       ))}
@@ -205,10 +213,14 @@ export function AdvancedSearch({
                     <select
                       value={sortBy}
                       onChange={(e) => onSort(e.target.value)}
-                      className="w-full bg-input/50 border border-border/50 rounded-lg px-3 py-2.5"
+                      className="w-full bg-background text-foreground border border-border/50 rounded-lg px-3 py-2.5"
                     >
                       {completionTimes.map((option) => (
-                        <option key={option.value} value={option.value}>
+                        <option
+                          key={option.value}
+                          value={option.value}
+                          className="bg-background text-foreground"
+                        >
                           {option.label}
                         </option>
                       ))}
@@ -281,9 +293,7 @@ export function AdvancedSearch({
               )}
               {sortBy !== "all" && (
                 <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium">
-                  {
-                    completionTimes.find((c) => c.value === sortBy)?.label
-                  }
+                  {completionTimes.find((c) => c.value === sortBy)?.label}
                 </span>
               )}
             </div>
