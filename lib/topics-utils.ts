@@ -1,9 +1,7 @@
 // lib/topics-utils.ts
 
 import { IconType } from "react-icons"
-
 import { FaJava, FaPython } from "react-icons/fa"
-
 
 // ✅ Chapter interface
 export interface Chapter {
@@ -20,12 +18,13 @@ export interface Topic {
   id: string
   title: string
   desc: string
-  icon?: IconType   // 🔥 Correct type for react-icons
-  examples: number // auto calculated
-  notes: number    // auto calculated
-  steps: number    // auto calculated
+  description?: string   // 🔥 added this (alias for desc)
+  icon?: IconType        // ✅ Correct type for react-icons
+  examples: number       // auto calculated
+  notes: number          // auto calculated
+  steps: number          // auto calculated
   category?: string
-  categories?: string[] // ✅ added multiple categories
+  categories?: string[]  // ✅ multiple categories
   difficulty?: string
   chapters: Chapter[]
 }
@@ -36,6 +35,7 @@ const rawTopics: Omit<Topic, "examples" | "notes" | "steps">[] = [
     id: "python",
     title: "Python",
     desc: "Learn Python programming from basics to advanced. Python is a high-level, interpreted programming language known for its simple syntax and readability.",
+    description: "Learn Python programming from basics to advanced. Python is a high-level, interpreted programming language known for its simple syntax and readability.", // ✅ added
     category: "Programming",
     categories: ["Programming", "Data Science", "Automation"],
     difficulty: "Beginner",
@@ -113,15 +113,11 @@ print(math.sqrt(16))`,
     ],
   },
 
-
-
-
-
-  
   {
     id: "java",
     title: "Java",
     desc: "Learn Java programming, an object-oriented language widely used for enterprise applications and Android development.",
+    description: "Learn Java programming, an object-oriented language widely used for enterprise applications and Android development.", // ✅ added
     category: "Programming",
     categories: ["Programming", "Backend", "OOP"],
     difficulty: "Intermediate",
@@ -216,5 +212,6 @@ export const topicsData: Topic[] = rawTopics.map((topic) => {
     examples,
     notes,
     steps,
+    description: topic.description ?? topic.desc, // ✅ ensure description exists
   }
 })
