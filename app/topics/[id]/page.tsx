@@ -61,7 +61,7 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
             </div>
             <div className="flex items-center gap-2">
               <Code2 className="w-4 h-4" />
-              {topic.examples || 0} Code Examples
+              {topic.examples || 0} Snippets
             </div>
             <div className="flex items-center gap-2">
               <FileText className="w-4 h-4" />
