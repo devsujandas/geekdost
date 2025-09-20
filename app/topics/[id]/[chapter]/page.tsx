@@ -5,7 +5,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { topicsData } from "@/lib/topics-utils"
 import { ScrollReveal } from "@/components/scroll-reveal"
-import { ArrowLeft, Clock, FileText, PlayCircle } from "lucide-react"
+import { ArrowLeft, Clock, FileText } from "lucide-react"
 
 export default function ChapterPage({
   params,
@@ -89,7 +89,12 @@ export default function ChapterPage({
                   {/* Text */}
                   <div>
                     <h2 className="text-lg font-semibold">{t.title}</h2>
-                    <p className="text-sm text-muted-foreground mt-1">{t.note}</p>
+                    {/* ✅ Show desc here instead of notes */}
+                    {t.desc && (
+                      <p className="text-sm text-muted-foreground mt-1">
+                        {t.desc}
+                      </p>
+                    )}
                   </div>
                 </div>
 

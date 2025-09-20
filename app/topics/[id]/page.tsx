@@ -16,6 +16,16 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
     return <div className="p-6">❌ Topic not found</div>
   }
 
+  // ✅ Recalculate notes properly (using desc fields)
+  const keyNotes =
+    topic.chapters?.reduce(
+      (acc, ch) =>
+        acc +
+        (ch.desc?.trim() ? 1 : 0) + // chapter descriptions
+        (ch.topics?.filter((tp) => tp.desc?.trim()).length || 0), // nested topic descriptions
+      0
+    ) || 0
+
   return (
     <div className="max-w-5xl mx-auto p-6 space-y-12">
       {/* Back Button */}
@@ -55,7 +65,7 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
             </div>
             <div className="flex items-center gap-2">
               <FileText className="w-4 h-4" />
-              {topic.notes || 0} Key Notes
+              {keyNotes}  Notes
             </div>
           </div>
         </div>
@@ -100,7 +110,6 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
                   </div>
                 </div>
 
-                
                 <div className="pt-2 flex items-center justify-between gap-4">
                   <Link
                     href={`/topics/${topic.id}/${chapter.id}`}

@@ -1,0 +1,96 @@
+[
+  {
+    "id": "python",
+    "title": "Python",
+    "desc": "Short overview of Python",
+    "description": "Full roadmap description",
+    "category": "Programming",
+    "categories": ["Programming", "Data Science", "Automation"],
+    "difficulty": "Beginner to Advanced",
+    "image": "/images/python.png",
+    "icon": "FaPython",
+    "chapters": [
+      {
+        "id": "intro",
+        "title": "Introduction to Python",
+        "desc": "Basics of Python programming",
+        "notes": "History, installation, syntax basics",
+        "code": "",
+        "duration": "1 week",
+        "topics": [
+          {
+            "id": "syntax",
+            "title": "Python Syntax",
+            "desc": "Understand Python’s indentation and basic structure.",
+            "note": "Learn about indentation, variables, and basic print statements",
+            "code": "print(\"Hello, Python!\")"
+          },
+          {
+            "id": "datatypes",
+            "title": "Data Types",
+            "desc": "Learn about Python’s built-in types like int, str, list, and dict.",
+            "note": "Numbers, strings, lists, dictionaries, and sets",
+            "code": "x = 10\nname = \"Alice\"\nitems = [1, 2, 3]\nprint(type(items))"
+          }
+        ]
+      },
+      {
+        "id": "control-flow",
+        "title": "Control Flow",
+        "desc": "Conditionals and loops in Python",
+        "notes": "if/else, for loops, while loops",
+        "code": "",
+        "duration": "1 week",
+        "topics": [
+          {
+            "id": "ifelse",
+            "title": "If-Else Statements",
+            "desc": "Use conditional statements to control program flow.",
+            "note": "Branching logic based on conditions",
+            "code": "x = 5\nif x > 0:\n    print(\"Positive\")\nelse:\n    print(\"Negative\")"
+          },
+          {
+            "id": "loops",
+            "title": "Loops",
+            "desc": "Repeat tasks using for and while loops.",
+            "note": "Iterating using for and while loops",
+            "code": "for i in range(3):\n    print(i)"
+          }
+        ]
+      }
+    ]
+  },
+
+
+  {
+  "id": "java",
+  "title": "Java",
+  "desc": "Short overview of Java",
+  "description": "Full roadmap for Java learning",
+  "category": "Programming",
+  "categories": ["Programming", "Backend", "OOP"],
+  "difficulty": "Intermediate",
+  "image": "/images/java.jpg",
+  "icon": "FaJava",
+  "chapters": [
+    {
+      "id": "intro",
+      "title": "Introduction to Java",
+      "desc": "Basics of Java programming",
+      "notes": "JVM, JDK, Hello World program",
+      "code": "public class Main { public static void main(String[] args) { System.out.println(\"Hello, Java!\"); } }",
+      "duration": "1 week",
+      "topics": [
+        {
+          "id": "syntax",
+          "title": "Java Syntax",
+          "desc": "Understand Java’s structure and syntax",
+          "note": "Learn about classes, methods, and main function",
+          "code": "class Main { public static void main(String[] args) { System.out.println(\"Hello World\"); } }"
+        }
+      ]
+    }
+  ]
+}
+
+]

@@ -62,16 +62,19 @@ export default function TopicDetailPage({
 
       {/* Header */}
       <ScrollReveal>
-        <div className="rounded-2xl bg-card shadow-md p-8 text-center space-y-3">
-          <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-primary/10 text-primary">
-            {mainTopic.icon ? <mainTopic.icon size={28} /> : <FileText size={28} />}
-          </div>
-          <h1 className="text-3xl font-bold">{topicData.title}</h1>
-          {topicData.note && (
-            <p className="text-muted-foreground max-w-xl mx-auto">{topicData.note}</p>
-          )}
-        </div>
-      </ScrollReveal>
+  <div className="rounded-2xl bg-card shadow-md p-8 text-center space-y-3">
+    <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-primary/10 text-primary">
+      {mainTopic.icon ? <mainTopic.icon size={28} /> : <FileText size={28} />}
+    </div>
+    <h1 className="text-3xl font-bold">{topicData.title}</h1>
+    {topicData.desc && (
+      <p className="text-muted-foreground max-w-xl mx-auto">
+        {topicData.desc}
+      </p>
+    )}
+  </div>
+</ScrollReveal>
+
 
       {/* Notes Section */}
       {topicData.note && (
