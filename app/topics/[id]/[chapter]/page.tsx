@@ -2,24 +2,10 @@
 
 import { use } from "react"
 import Link from "next/link"
-import { useEffect, useState } from "react"
+import { motion } from "framer-motion"
 import { topicsData } from "@/lib/topics-utils"
-import { ArrowLeft, Notebook, Code2, Copy } from "lucide-react"
-import Prism from "prismjs"
-
-//  Prism themes import
-import "prism-themes/themes/prism-ghcolors.css"
-import "prism-themes/themes/prism-night-owl.css"
-
-//  Load common languages
-import "prismjs/components/prism-javascript"
-import "prismjs/components/prism-typescript"
-import "prismjs/components/prism-jsx"
-import "prismjs/components/prism-tsx"
-import "prismjs/components/prism-python"
-import "prismjs/components/prism-java"
-import "prismjs/components/prism-c"
-import "prismjs/components/prism-cpp"
+import { ScrollReveal } from "@/components/scroll-reveal"
+import { ArrowLeft, Clock, FileText, PlayCircle } from "lucide-react"
 
 export default function ChapterPage({
   params,
@@ -28,102 +14,99 @@ export default function ChapterPage({
 }) {
   const { id, chapter } = use(params)
 
-  const [copied, setCopied] = useState(false)
-  const [mounted, setMounted] = useState(false) //  hydration fix
-
   const topic = topicsData.find((t) => t.id === id)
   const chapterData = topic?.chapters?.find((c) => c.id === chapter)
 
-  //  Prism trigger only after mounted
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  useEffect(() => {
-    if (mounted && chapterData?.code) {
-      Prism.highlightAll()
-    }
-  }, [mounted, chapterData?.code])
-
   if (!topic || !chapterData) {
-    return <div className="p-6"> Chapter not found</div>
-  }
-
-  //  Copy handler
-  const handleCopy = async () => {
-    if (chapterData?.code) {
-      await navigator.clipboard.writeText(chapterData.code)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    }
+    return <div className="p-6">❌ Chapter not found</div>
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-6 space-y-12">
-      {/*  Back Button */}
+    <div className="max-w-5xl mx-auto p-6 space-y-12">
+      {/* Back Button */}
       <div>
         <Link
           href={`/topics/${topic.id}`}
           className="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-md bg-muted hover:bg-accent transition"
         >
-          <ArrowLeft size={16} />
-          Back to {topic.title}
+          <ArrowLeft size={16} /> Back to {topic.title}
         </Link>
       </div>
 
-      {/*  Title + Description */}
-      <div className="space-y-3">
-        <h1 className="text-4xl font-bold tracking-tight">{chapterData.title}</h1>
-        {chapterData.desc && (
-          <p className="text-muted-foreground leading-relaxed text-lg">
+      {/* Header Card */}
+      <ScrollReveal>
+        <div className="rounded-2xl bg-card shadow-md p-10 text-center space-y-4">
+          {/* Icon */}
+          <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-primary/10 text-primary">
+            {topic.icon ? <topic.icon size={32} /> : <FileText size={32} />}
+          </div>
+
+          {/* Title + Desc */}
+          <h1 className="text-4xl font-bold">{chapterData.title}</h1>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             {chapterData.desc}
           </p>
-        )}
+
+          {/* Duration */}
+          {chapterData.duration && (
+            <div className="flex justify-center items-center gap-2 text-sm text-muted-foreground pt-2">
+              <Clock className="w-4 h-4" /> {chapterData.duration}
+            </div>
+          )}
+        </div>
+      </ScrollReveal>
+
+      {/* Roadmap Title */}
+      <div className="text-center">
+        <h2 className="text-2xl font-bold">Topics in this Chapter</h2>
       </div>
 
-      {/*  Notes Section */}
-      {chapterData.notes && (
-        <div className="p-5 rounded-lg bg-accent/15 shadow-md border border-border space-y-2">
-          <div className="flex items-center gap-2 text-base font-semibold">
-            <Notebook className="w-5 h-5 text-primary" />
-            Notes
-          </div>
-          <p className="leading-relaxed text-foreground/90">
-            {chapterData.notes}
-          </p>
-        </div>
-      )}
-
-      {/*  Code Section */}
-      {chapterData.code && mounted && (
-        <div className="space-y-3">
-          {/* Header + Copy Button */}
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 text-base font-semibold">
-              <Code2 className="w-5 h-5 text-primary" />
-              Example Code
-            </div>
-            <button
-              onClick={handleCopy}
-              className="flex items-center gap-1 text-sm px-3 py-1.5 rounded-md bg-muted hover:bg-accent transition"
+      {/* Topics List */}
+      <ScrollReveal delay={0.2}>
+        <div className="space-y-6 relative">
+          {chapterData.topics?.map((t, index) => (
+            <motion.div
+              key={t.id}
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: index * 0.06 }}
+              className="relative"
             >
-              <Copy size={16} />
-              {copied ? "Copied!" : "Copy"}
-            </button>
-          </div>
+              <div className="relative rounded-xl bg-card p-5 shadow-sm hover:shadow-md transition border border-border space-y-3">
+                {/* Timeline Dot + Line */}
+                <div className="absolute -left-4 top-6 w-2 h-2 rounded-full bg-primary" />
+                {index !== chapterData.topics.length - 1 && (
+                  <div className="absolute -left-3 top-8 bottom-0 w-px bg-border" />
+                )}
 
-          {/*  Code Block */}
-          <div className="rounded-lg shadow-md border border-border bg-card overflow-hidden">
-            <pre className="p-4 text-sm overflow-x-auto">
-              <code
-                className="language-python"
-              >
-                {chapterData.code}
-              </code>
-            </pre>
-          </div>
+                {/* Number + Content */}
+                <div className="flex items-start gap-4">
+                  {/* Numbering */}
+                  <div className="w-8 h-8 flex items-center justify-center rounded-full bg-primary/10 text-primary font-medium">
+                    {index + 1}
+                  </div>
+
+                  {/* Text */}
+                  <div>
+                    <h2 className="text-lg font-semibold">{t.title}</h2>
+                    <p className="text-sm text-muted-foreground mt-1">{t.note}</p>
+                  </div>
+                </div>
+
+                {/* Button */}
+                <div className="pt-2 flex items-center justify-between gap-4">
+                  <Link
+                    href={`/topics/${topic.id}/${chapterData.id}/${t.id}`}
+                    className="inline-block px-4 py-2 text-sm rounded-md bg-primary text-primary-foreground font-medium hover:opacity-90 transition"
+                  >
+                    Start Learning
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </div>
-      )}
+      </ScrollReveal>
     </div>
   )
 }

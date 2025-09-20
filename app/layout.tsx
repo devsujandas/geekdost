@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
 
-// ✅ Metadata config
+//  Metadata config
 export const metadata: Metadata = {
   title: "GeekDost - Roadmaps & Snippets for Developers",
   description:
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "web development",
   ],
   authors: [{ name: "Sujan Das" }],
-  metadataBase: new URL("https://geekdost.vercel.app"), // ✅ added to fix warning
+  metadataBase: new URL("https://geekdost.vercel.app"), //  added to fix warning
   openGraph: {
     title: "GeekDost - Roadmaps & Snippets for Developers",
     description:

@@ -25,6 +25,15 @@ export default function RulesPage() {
     if (saved) setName(saved)
   }, [])
 
+  // ✅ Handle input with validation (only letters + spaces)
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value
+    const regex = /^[A-Za-z\s]*$/ // allow only alphabets + spaces
+    if (regex.test(value)) {
+      setName(value)
+    }
+  }
+
   const handleStart = () => {
     if (!name.trim()) {
       setShowPopup(true)
@@ -108,7 +117,7 @@ export default function RulesPage() {
             <input
               type="text"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={handleNameChange}
               placeholder="Enter your name"
               className="w-full max-w-md px-4 py-2 rounded-lg border border-gray-400 focus:outline-none focus:border-primary text-center"
             />

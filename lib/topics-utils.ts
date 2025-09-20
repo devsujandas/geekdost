@@ -1,7 +1,15 @@
 import { IconType } from "react-icons"
 import { FaJava, FaPython } from "react-icons/fa"
 
-//  Chapter interface
+// 🔹 Topic inside a Chapter
+export interface ChapterTopic {
+  id: string
+  title: string
+  note: string
+  code: string
+}
+
+// 🔹 Chapter interface
 export interface Chapter {
   id: string
   title: string
@@ -9,132 +17,130 @@ export interface Chapter {
   notes: string
   code: string
   duration?: string
+  topics: ChapterTopic[]   // ✅ added nested topics
 }
 
-//  Topic interface
+// 🔹 Main Topic interface
 export interface Topic {
   id: string
   title: string
   desc: string
-  description?: string   
-  icon?: IconType 
-  image?: string        
-  examples: number      
-  notes: number          
-  steps: number          
+  description?: string
+  icon?: IconType
+  image?: string
+  examples: number
+  notes: number
+  steps: number
   category?: string
-  categories?: string[]  //  multiple categories
+  categories?: string[]
   difficulty?: string
   chapters: Chapter[]
 }
 
-//  Raw topics (no need to manually calculate examples/notes)
+// 🔹 Raw topics (no examples/notes/steps yet)
 const rawTopics: Omit<Topic, "examples" | "notes" | "steps">[] = [
- 
-
-
-
-
-
-
-  //python-----------------------------------------------------------python
-
-
-
-  
+  // --------------------------------------------------- Python
   {
-    id: "java",
-    title: "Java",
-    desc: "Learn Java programming, an object-oriented language widely used for enterprise applications and Android development.",
-    description: "Learn Java programming, an object-oriented language widely used for enterprise applications and Android development.", //  added
+    id: "python",
+    title: "Python",
+    desc: "Short overview of Python",
+    description: "Full roadmap description",
     category: "Programming",
-    categories: ["Programming", "Backend", "OOP"],
-    difficulty: "Intermediate",
-    image: "/images/java.jpg", //  Python image path
-    icon: FaJava, //  Java icon
+    categories: ["Programming", "Data Science", "Automation"],
+    difficulty: "Beginner to Advanced",
+    image: "/images/python.png",
+    icon: FaPython,
 
     chapters: [
       {
-        id: "intro_java",
-        title: "Introduction to Java",
-        desc: "History, JVM, and Hello World.",
-        notes: "Java is strongly-typed. Entry point is the `main` method.",
-        code: `public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, Java!");
-    }
-}`,
+        id: "intro",
+        title: "Introduction to Python",
+        desc: "Basics of Python programming",
+        notes: "History, installation, syntax basics",
+        code: "",
         duration: "1 week",
-      },
-      {
-        id: "variables_java",
-        title: "Variables and Data Types",
-        desc: "Learn primitive types and variable declaration in Java.",
-        notes: "Primitive types: int, double, char, boolean. String is an object.",
-        code: `public class Variables {
-    public static void main(String[] args) {
-        String name = "Budi";
-        int age = 28;
-        double height = 1.75;
-        boolean isDeveloper = true;
-        System.out.println("Name: " + name);
-    }
-}`,
-        duration: "1 week",
-      },
-      {
-        id: "control_flow",
-        title: "Control Flow in Java",
-        desc: "Learn about if-else statements in Java.",
-        notes: "Use conditional statements to control program execution.",
-        code: `public class ControlFlow {
-    public static void main(String[] args) {
-        int score = 85;
-        if (score >= 90) {
-            System.out.println("Grade: A");
-        } else if (score >= 80) {
-            System.out.println("Grade: B");
-        } else {
-            System.out.println("Grade: C");
-        }
-    }
-}`,
-        duration: "1 week",
-      },
-      {
-        id: "oop_java",
-        title: "Object-Oriented Programming (OOP)",
-        desc: "Learn OOP principles in Java.",
-        notes: "Java supports Encapsulation, Inheritance, and Polymorphism.",
-        code: `class Car {
-    String brand;
 
-    public Car(String brand) {
-        this.brand = brand;
-    }
+        topics: [
+          {
+            id: "syntax",
+            title: "Python Syntax",
+            note: "Learn about indentation, variables, and basic print statements",
+            code: `print("Hello, Python!")`,
+          },
+          {
+            id: "datatypes",
+            title: "Data Types",
+            note: "Numbers, strings, lists, dictionaries, and sets",
+            code: `
+x = 10
+name = "Alice"
+items = [1, 2, 3]
+print(type(items))
+            `,
+          },
+        ],
+      },
 
-    public void honk() {
-        System.out.println("Beep beep!");
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Car myCar = new Car("Toyota");
-        System.out.println(myCar.brand);
-        myCar.honk();
-    }
-}`,
+      {
+        id: "control-flow",
+        title: "Control Flow",
+        desc: "Conditionals and loops in Python",
+        notes: "if/else, for loops, while loops",
+        code: "",
         duration: "1 week",
+
+        topics: [
+          {
+            id: "ifelse",
+            title: "If-Else Statements",
+            note: "Branching logic based on conditions",
+            code: `
+x = 5
+if x > 0:
+    print("Positive")
+else:
+    print("Negative")
+            `,
+          },
+          {
+            id: "loops",
+            title: "Loops",
+            note: "Iterating using for and while loops",
+            code: `
+for i in range(3):
+    print(i)
+            `,
+          },
+        ],
       },
     ],
   },
+
+
+  
+  
 ]
 
-//  Auto calculate examples, notes & steps
+// 🔹 Auto calculate examples, notes & steps
 export const topicsData: Topic[] = rawTopics.map((topic) => {
-  const examples = topic.chapters.filter((c) => c.code?.trim()).length
-  const notes = topic.chapters.filter((c) => c.notes?.trim()).length
+  const examples =
+    topic.chapters.reduce(
+      (acc, ch) =>
+        acc +
+        (ch.code?.trim() ? 1 : 0) +
+        (ch.topics?.filter((t) => t.code?.trim()).length || 0),
+      0
+    ) || 0
+
+  const notes =
+    topic.chapters.reduce(
+      (acc, ch) =>
+        acc +
+        (ch.notes?.trim() ? 1 : 0) +
+        (ch.topics?.filter((t) => t.note?.trim()).length || 0),
+      0
+    ) || 0
+
   const steps = topic.chapters.length
 
   return {

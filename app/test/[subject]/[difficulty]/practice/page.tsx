@@ -17,9 +17,9 @@ export default function PracticePage() {
   const [submitting, setSubmitting] = useState(false)
   const [progress, setProgress] = useState(0)
   const [showConfirm, setShowConfirm] = useState(false)
-  const [startTime, setStartTime] = useState<number>(Date.now()) // ✅ Track start time
-  const [timePerQ, setTimePerQ] = useState<Record<string, number>>({}) // ✅ Track per-question time
-  const [lastSwitch, setLastSwitch] = useState<number>(Date.now()) // ✅ Track last question switch
+  const [startTime, setStartTime] = useState<number>(Date.now()) //  Track start time
+  const [timePerQ, setTimePerQ] = useState<Record<string, number>>({}) //  Track per-question time
+  const [lastSwitch, setLastSwitch] = useState<number>(Date.now()) //  Track last question switch
 
   // Load questions
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function PracticePage() {
     setAnswers((prev) => ({ ...prev, [qid]: idx }))
   }
 
-  // ✅ Track time spent on each question
+  //  Track time spent on each question
   function switchQuestion(newIndex: number) {
     const now = Date.now()
     const qid = questions[current].id
@@ -52,7 +52,7 @@ export default function PracticePage() {
   }
 
   function submit() {
-    // ✅ Add last question time
+    //  Add last question time
     const now = Date.now()
     const lastQ = questions[current].id
     const spent = Math.floor((now - lastSwitch) / 1000)
@@ -64,18 +64,18 @@ export default function PracticePage() {
 
     setSubmitting(true)
 
-    const totalTime = Math.floor((now - startTime) / 1000) // ✅ Total time
+    const totalTime = Math.floor((now - startTime) / 1000) //  Total time
 
     const result = {
       subject,
       difficulty,
-      mode: "practice", // 🔥 fixed practice mode
+      mode: "practice", //  fixed practice mode
       answers,
       total: questions.length,
       date: new Date().toISOString(),
-      questions, // ✅ Save questions always
-      timeTaken: totalTime, // ✅ Save total time
-      timePerQ: finalTimePerQ, // ✅ Save per-question times
+      questions, //  Save questions always
+      timeTaken: totalTime, //  Save total time
+      timePerQ: finalTimePerQ, //  Save per-question times
     }
 
     saveResult(result)

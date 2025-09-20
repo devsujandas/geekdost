@@ -16,7 +16,7 @@ import {
 import { exportResultJSON, exportResultCSV, shareResult } from "@/lib/export"
 import { PageLayout } from "@/components/page-layout"
 
-// ✅ Type for question
+//  Type for question
 type Question = {
   id: string
   question: string
@@ -25,7 +25,7 @@ type Question = {
   topic: string
 }
 
-// ✅ Type for saved result
+//  Type for saved result
 type Result = {
   subject: string
   difficulty: string

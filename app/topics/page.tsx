@@ -17,11 +17,11 @@ export default function TopicsPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [selectedDifficulty, setSelectedDifficulty] = useState("All")
-  const [sortBy, setSortBy] = useState("all") // ✅ default all
+  const [sortBy, setSortBy] = useState("all") //  default all
   const [filteredTopics, setFilteredTopics] = useState(topicsData)
   const [visibleCount, setVisibleCount] = useState(9)
 
-  // 🔥 New state for view toggle
+  //  New state for view toggle
   const [view, setView] = useState<"image" | "list">("image")
 
   useEffect(() => {
@@ -104,7 +104,7 @@ export default function TopicsPage() {
             </div>
           </ScrollReveal>
 
-          {/* 🔥 Toggle Buttons */}
+          {/*  Toggle Buttons */}
           <div className="flex justify-center gap-4 mb-10">
             <InteractiveButton
               size="sm"
@@ -134,12 +134,21 @@ export default function TopicsPage() {
                   } gap-6`}
                 >
                   {filteredTopics.slice(0, visibleCount).map((topic, index) => {
-                    const codeCount = topic.chapters.filter(
-                      (ch) => ch.code && ch.code.trim() !== ""
-                    ).length
-                    const notesCount = topic.chapters.filter(
-                      (ch) => ch.notes && ch.notes.trim() !== ""
-                    ).length
+                    //  Count snippets properly
+                    const codeCount =
+                      topic.chapters?.reduce((acc, ch) => {
+                        const chapterCode = ch.code?.trim() ? 1 : 0
+                        const topicCodes =
+                          ch.topics?.filter((tp) => tp.code?.trim()).length || 0
+                        return acc + chapterCode + topicCodes
+                      }, 0) || 0
+
+                    //  Count notes = total topics
+                    const notesCount =
+                      topic.chapters?.reduce(
+                        (acc, ch) => acc + (ch.topics?.length || 0),
+                        0
+                      ) || 0
 
                     return (
                       <Link key={topic.id} href={`/topics/${topic.id}`}>
@@ -183,7 +192,7 @@ export default function TopicsPage() {
                             </h2>
                           </div>
 
-                          {/* 🔥 Image for image view */}
+                          {/*  Image for image view */}
                           {view === "image" && topic.image && (
                             <div className="relative h-40 w-full overflow-hidden rounded-lg mb-3">
                               <Image

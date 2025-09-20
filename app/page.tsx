@@ -20,6 +20,28 @@ export default function HomePage() {
   const filteredTopics = topicsData
   const visibleCount = topicsData.length
 
+  //  Global counts
+  const totalChapters =
+    topicsData.reduce((acc, t) => acc + (t.chapters?.length || 0), 0) || 0
+
+  const totalSnippets =
+    topicsData.reduce((acc, t) => {
+      return (
+        acc +
+        (t.chapters?.reduce((chAcc, ch) => {
+          const chapterCode = ch.code?.trim() ? 1 : 0
+          const topicCodes =
+            ch.topics?.filter((tp) => tp.code?.trim()).length || 0
+          return chAcc + chapterCode + topicCodes
+        }, 0) || 0)
+      )
+    }, 0) || 0
+
+  const totalNotes =
+    topicsData.reduce((acc, t) => {
+      return acc + (t.chapters?.reduce((chAcc, ch) => chAcc + (ch.topics?.length || 0), 0) || 0)
+    }, 0) || 0
+
   return (
     <PageLayout>
       {/* Hero Section */}
@@ -62,7 +84,7 @@ export default function HomePage() {
               <GlassmorphismCard delay={0.7} className="text-center">
                 <FaBookOpen className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
-                  <AnimatedCounter value={12} suffix="+" />
+                  <AnimatedCounter value={filteredTopics.length} suffix="+" />
                 </h3>
                 <p className="text-muted-foreground text-sm">
                   Programming Topics
@@ -72,7 +94,7 @@ export default function HomePage() {
               <GlassmorphismCard delay={0.8} className="text-center">
                 <FaCode className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
-                  <AnimatedCounter value={50} suffix="+" />
+                  <AnimatedCounter value={totalSnippets} suffix="+" />
                 </h3>
                 <p className="text-muted-foreground text-sm">Code Snippets</p>
               </GlassmorphismCard>
@@ -80,17 +102,15 @@ export default function HomePage() {
               <GlassmorphismCard delay={0.9} className="text-center">
                 <FaUsers className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
-                  <AnimatedCounter value={100} suffix="+" />
+                  <AnimatedCounter value={totalNotes} suffix="+" />
                 </h3>
-                <p className="text-muted-foreground text-sm">
-                  Learning Resources
-                </p>
+                <p className="text-muted-foreground text-sm">Notes</p>
               </GlassmorphismCard>
 
               <GlassmorphismCard delay={1.0} className="text-center">
                 <FaAward className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">
-                  <AnimatedCounter value={20} suffix="+" />
+                  <AnimatedCounter value={18} suffix="+" />
                 </h3>
                 <p className="text-muted-foreground text-sm">
                   Subjects with Tests & Certificates
@@ -119,12 +139,21 @@ export default function HomePage() {
             <div className="relative z-0">
               <div className="grid grid-cols-1 gap-6">
                 {filteredTopics.slice(0, visibleCount).map((topic, index) => {
-                  const codeCount = topic.chapters?.filter(
-                    (ch) => ch.code && ch.code.trim() !== ""
-                  ).length
-                  const notesCount = topic.chapters?.filter(
-                    (ch) => ch.notes && ch.notes.trim() !== ""
-                  ).length
+                  //  Count snippets properly
+                  const codeCount =
+                    topic.chapters?.reduce((acc, ch) => {
+                      const chapterCode = ch.code?.trim() ? 1 : 0
+                      const topicCodes =
+                        ch.topics?.filter((tp) => tp.code?.trim()).length || 0
+                      return acc + chapterCode + topicCodes
+                    }, 0) || 0
+
+                  //  Count notes properly (total topics)
+                  const notesCount =
+                    topic.chapters?.reduce(
+                      (acc, ch) => acc + (ch.topics?.length || 0),
+                      0
+                    ) || 0
 
                   return (
                     <Link key={topic.id} href={`/topics/${topic.id}`}>
