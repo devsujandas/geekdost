@@ -21,13 +21,13 @@ export default function TopicsPage() {
   const [filteredTopics, setFilteredTopics] = useState(topicsData)
   const [visibleCount, setVisibleCount] = useState(9)
 
-  // 🔥 New state for view toggle
+  //  New state for view toggle
   const [view, setView] = useState<"image" | "list">("image")
 
   useEffect(() => {
     let results = topicsData
 
-    // 🔍 Search
+    //  Search
     if (searchQuery.trim() !== "") {
       const query = searchQuery.trim().toLowerCase()
       results = results.filter(
@@ -37,17 +37,17 @@ export default function TopicsPage() {
       )
     }
 
-    // 📂 Category
+    //  Category
     if (selectedCategory !== "All") {
       results = results.filter((t) => t.category === selectedCategory)
     }
 
-    // 🎯 Difficulty
+    //  Difficulty
     if (selectedDifficulty !== "All") {
       results = results.filter((t) => t.difficulty === selectedDifficulty)
     }
 
-    // ⏳ Completion Time filter
+    //  Completion Time filter
     if (sortBy !== "all") {
       results = results.filter((t) => {
         const weeks =
@@ -104,7 +104,7 @@ export default function TopicsPage() {
             </div>
           </ScrollReveal>
 
-          {/* 🔥 Toggle Buttons */}
+          {/*  Toggle Buttons */}
           <div className="flex justify-center gap-4 mb-10">
             <InteractiveButton
               size="sm"
@@ -134,7 +134,7 @@ export default function TopicsPage() {
                   } gap-6`}
                 >
                   {filteredTopics.slice(0, visibleCount).map((topic, index) => {
-                    // ✅ Use pre-calculated values
+                    //  Use pre-calculated values
                     const codeCount = topic.examples || 0
                     const notesCount = topic.notes || 0
 
@@ -180,7 +180,7 @@ export default function TopicsPage() {
                             </h2>
                           </div>
 
-                          {/* 🔥 Image for image view */}
+                          {/*  Image for image view */}
                           {view === "image" && topic.image && (
                             <div className="relative h-40 w-full overflow-hidden rounded-lg mb-3">
                               <Image
@@ -196,9 +196,7 @@ export default function TopicsPage() {
                           )}
 
                           {/* Description */}
-                          <p className="text-base text-gray-300 line-clamp-3">
-                            {topic.desc}
-                          </p>
+                          
 
                           {/* Categories + Counts */}
                           {topic.categories && topic.categories.length > 0 && (
