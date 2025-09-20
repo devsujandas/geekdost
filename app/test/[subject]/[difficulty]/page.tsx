@@ -283,7 +283,7 @@ export default function ExamPage() {
                   onClick={() => submit(false)}
                   className="px-4 py-2 bg-primary text-primary-foreground rounded-lg"
                 >
-                  Submit Anyway
+                  Submit 
                 </button>
               </div>
             </motion.div>
