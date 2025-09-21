@@ -9,7 +9,6 @@
     "categories": ["Programming", "Data Science", "Automation", "Web Development", "Artificial Intelligence"],
     "difficulty": "Beginner to Advanced",
     "image": "/images/python.png",
-    "icon": "FaPython",
     "chapters": [
       {
         "id": "introduction",
@@ -756,41 +755,5 @@
         ]
       }
     ]
-  },
-
-
-
-
-
-  {
-  "id": "java",
-  "title": "Java",
-  "desc": "Short overview of Java",
-  "description": "Full roadmap for Java learning",
-  "category": "Programming",
-  "categories": ["Programming", "Backend", "OOP"],
-  "difficulty": "Intermediate",
-  "image": "/images/java.jpg",
-  "icon": "FaJava",
-  "chapters": [
-    {
-      "id": "intro",
-      "title": "Introduction to Java",
-      "desc": "Basics of Java programming",
-      "notes": "JVM, JDK, Hello World program",
-      "code": "public class Main { public static void main(String[] args) { System.out.println(\"Hello, Java!\"); } }",
-      "duration": "1 week",
-      "topics": [
-        {
-          "id": "syntax",
-          "title": "Java Syntax",
-          "desc": "Understand Java’s structure and syntax",
-          "note": "Learn about classes, methods, and main function",
-          "code": "class Main { public static void main(String[] args) { System.out.println(\"Hello World\"); } }"
-        }
-      ]
-    }
-  ]
-}
-
+  }
 ]
