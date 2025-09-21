@@ -1,22 +1,26 @@
 import { IconType } from "react-icons"
-import { FaJava, FaPython, FaDatabase, FaLaptopCode, FaLock, FaCode, FaGitAlt, FaCloud, FaMicrochip, FaBrain, FaNetworkWired, FaRobot } from "react-icons/fa"
-import { SiC, SiCplusplus, SiJavascript } from "react-icons/si" // C, C++ and JS icons
+import { 
+  FaJava, FaPython, FaDatabase, FaLaptopCode, FaLock, FaCode, 
+  FaGitAlt, FaCloud, FaMicrochip, FaBrain, FaNetworkWired, 
+  FaRobot, FaServer, FaDocker, FaCogs 
+} from "react-icons/fa"
+import { SiC, SiCplusplus, SiJavascript } from "react-icons/si" 
 
 // 🔹 Interfaces
 export interface ChapterTopic {
   id: string
   title: string
   desc: string
-  note: string
-  code: string
+  note?: string
+  code?: string
 }
 
 export interface Chapter {
   id: string
   title: string
   desc: string
-  notes: string
-  code?: string
+  notes?: string   
+  code?: string    
   duration?: string
   topics: ChapterTopic[]
 }
@@ -53,11 +57,9 @@ import osData from "./data/os.json"
 import mlData from "./data/ml.json"
 import cnData from "./data/cn.json"
 import aiLlmsData from "./data/ai-llms.json"
-
-
-
-
-
+import dockerData from "./data/docker.json"
+import ciCdData from "./data/ci-cd.json"
+import apiDevData from "./data/api-dev.json"
 
 // 🔹 Map JSON → Topics with Icons
 const rawTopics: Omit<Topic, "examples" | "notes" | "steps">[] = [
@@ -65,7 +67,6 @@ const rawTopics: Omit<Topic, "examples" | "notes" | "steps">[] = [
   { ...(Array.isArray(javaData) ? javaData[0] : javaData), icon: FaJava },
   { ...(Array.isArray(cData) ? cData[0] : cData), icon: SiC },
 
-  // Added new topics
   { ...(Array.isArray(cppData) ? cppData[0] : cppData), icon: SiCplusplus },
   { ...(Array.isArray(javascriptData) ? javascriptData[0] : javascriptData), icon: SiJavascript },
   { ...(Array.isArray(dsaData) ? dsaData[0] : dsaData), icon: FaCode },
@@ -77,15 +78,13 @@ const rawTopics: Omit<Topic, "examples" | "notes" | "steps">[] = [
   { ...(Array.isArray(osData) ? osData[0] : osData), icon: FaMicrochip },
   { ...(Array.isArray(mlData) ? mlData[0] : mlData), icon: FaBrain },
   { ...(Array.isArray(cnData) ? cnData[0] : cnData), icon: FaNetworkWired },
-  { ...(Array.isArray(aiLlmsData) ? aiLlmsData[0] : aiLlmsData), icon: FaRobot }
-
-
-
-
-
+  { ...(Array.isArray(aiLlmsData) ? aiLlmsData[0] : aiLlmsData), icon: FaRobot },
+  { ...(Array.isArray(dockerData) ? dockerData[0] : dockerData), icon: FaDocker },
+  { ...(Array.isArray(ciCdData) ? ciCdData[0] : ciCdData), icon: FaCogs },
+  { ...(Array.isArray(apiDevData) ? apiDevData[0] : apiDevData), icon: FaServer },
 ]
 
-// 🔹 Auto calculate examples, notes & steps
+// Auto calculate examples, notes & steps
 export const topicsData: Topic[] = rawTopics.map((topic) => {
   const examples =
     topic.chapters.reduce(
