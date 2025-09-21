@@ -1,5 +1,5 @@
 import { IconType } from "react-icons"
-import { FaJava, FaPython, FaDatabase, FaLaptopCode, FaLock, FaCode, FaGitAlt, FaCloud } from "react-icons/fa"
+import { FaJava, FaPython, FaDatabase, FaLaptopCode, FaLock, FaCode, FaGitAlt, FaCloud, FaMicrochip} from "react-icons/fa"
 import { SiC, SiCplusplus, SiJavascript } from "react-icons/si" // C, C++ and JS icons
 
 // 🔹 Interfaces
@@ -49,6 +49,8 @@ import webData from "./data/web.json"
 import cybersecurityData from "./data/cybersecurity.json"
 import gitGithubData from "./data/git-github.json"
 import cloudData from "./data/cloud.json"
+import osData from "./data/os.json"
+
 
 
 // 🔹 Map JSON → Topics with Icons
@@ -65,7 +67,9 @@ const rawTopics: Omit<Topic, "examples" | "notes" | "steps">[] = [
   { ...(Array.isArray(webData) ? webData[0] : webData), icon: FaLaptopCode },
   { ...(Array.isArray(cybersecurityData) ? cybersecurityData[0] : cybersecurityData), icon: FaLock },
   { ...(Array.isArray(gitGithubData) ? gitGithubData[0] : gitGithubData), icon: FaGitAlt },
-  { ...(Array.isArray(cloudData) ? cloudData[0] : cloudData), icon: FaCloud }
+  { ...(Array.isArray(cloudData) ? cloudData[0] : cloudData), icon: FaCloud },
+  { ...(Array.isArray(osData) ? osData[0] : osData), icon: FaMicrochip }
+
 
 ]
 
