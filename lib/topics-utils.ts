@@ -1,6 +1,6 @@
 import { IconType } from "react-icons"
-import { FaJava, FaPython } from "react-icons/fa"
-import { SiC } from "react-icons/si" // ✅ C icon এখানে আছে
+import { FaJava, FaPython, FaDatabase, FaLaptopCode, FaLock, FaCode } from "react-icons/fa"
+import { SiC, SiCplusplus, SiJavascript } from "react-icons/si" // C and C++ and JS icons
 
 // 🔹 Interfaces
 export interface ChapterTopic {
@@ -16,7 +16,7 @@ export interface Chapter {
   title: string
   desc: string
   notes: string
-  code: string
+  code?: string
   duration?: string
   topics: ChapterTopic[]
 }
@@ -41,12 +41,26 @@ export interface Topic {
 import pythonData from "./data/python.json"
 import javaData from "./data/java.json"
 import cData from "./data/c.json"
+import cppData from "./data/cpp.json"
+import javascriptData from "./data/javascript.json"
+import dsaData from "./data/dsa.json"
+import dbmsData from "./data/dbms.json"
+import webData from "./data/web.json"
+import cybersecurityData from "./data/cybersecurity.json"
 
 // 🔹 Map JSON → Topics with Icons
 const rawTopics: Omit<Topic, "examples" | "notes" | "steps">[] = [
   { ...(Array.isArray(pythonData) ? pythonData[0] : pythonData), icon: FaPython },
   { ...(Array.isArray(javaData) ? javaData[0] : javaData), icon: FaJava },
-  { ...(Array.isArray(cData) ? cData[0] : cData), icon: SiC }
+  { ...(Array.isArray(cData) ? cData[0] : cData), icon: SiC },
+
+  // Added new topics
+  { ...(Array.isArray(cppData) ? cppData[0] : cppData), icon: SiCplusplus },
+  { ...(Array.isArray(javascriptData) ? javascriptData[0] : javascriptData), icon: SiJavascript },
+  { ...(Array.isArray(dsaData) ? dsaData[0] : dsaData), icon: FaCode },
+  { ...(Array.isArray(dbmsData) ? dbmsData[0] : dbmsData), icon: FaDatabase },
+  { ...(Array.isArray(webData) ? webData[0] : webData), icon: FaLaptopCode },
+  { ...(Array.isArray(cybersecurityData) ? cybersecurityData[0] : cybersecurityData), icon: FaLock }
 ]
 
 // 🔹 Auto calculate examples, notes & steps

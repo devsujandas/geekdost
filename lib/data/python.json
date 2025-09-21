@@ -7,7 +7,7 @@
     "description": "Python is a high-level, interpreted programming language renowned for its clear syntax and code readability. Created by Guido van Rossum and first released in 1991, Python supports multiple programming paradigms including procedural, object-oriented, and functional programming. It features a comprehensive standard library and a vast ecosystem of third-party packages, making it suitable for web development, data analysis, artificial intelligence, scientific computing, automation, and more. Python's design philosophy emphasizes code readability with its notable use of significant whitespace, making it an excellent choice for beginners while being powerful enough for professional developers.",
     "category": "Programming",
     "categories": ["Programming", "Data Science", "Automation", "Web Development", "Artificial Intelligence"],
-    "difficulty": "Beginner to Advanced",
+    "difficulty": "Advanced",
     "image": "/images/python.png",
     "chapters": [
       {
