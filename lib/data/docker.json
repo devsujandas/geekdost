@@ -6,7 +6,7 @@
     "description": "A complete 1-week Docker roadmap with extensive theory and practical, runnable examples for beginners moving to an intermediate level. Covers core concepts, images, containers, networking, volumes, Docker Compose, and best practices.",
     "category": "DevOps",
     "categories": ["DevOps", "Containers", "Cloud", "Software Development"],
-    "difficulty": "Beginner to Intermediate",
+    "difficulty": "Intermediate",
     "image": "/images/docker.png",
     "icon": "FaDocker",
     "chapters": [

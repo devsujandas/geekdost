@@ -6,7 +6,7 @@
     "description": "Complete CI/CD roadmap with theory and practical examples",
     "category": "DevOps",
     "categories": ["DevOps", "Automation", "Cloud"],
-    "difficulty": "Beginner to Intermediate",
+    "difficulty": "Beginner",
     "image": "/images/ci-cd.webp",
     "icon": "FaCogs",
     "chapters": [
