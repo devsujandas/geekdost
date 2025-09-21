@@ -7,7 +7,7 @@
     "category": "DevOps",
     "categories": ["DevOps", "Automation", "Cloud"],
     "difficulty": "Beginner to Intermediate",
-    "image": "/images/ci-cd.jpeg",
+    "image": "/images/ci-cd.webp",
     "icon": "FaCogs",
     "chapters": [
       {

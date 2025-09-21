@@ -118,7 +118,7 @@ export function Footer() {
             viewport={{ once: true }}
             className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between"
           >
-            <p className="text-muted-foreground text-sm mb-4 md:mb-0">© 2024 GeekDost. All rights reserved.</p>
+            <p className="text-muted-foreground text-sm mb-4 md:mb-0">© 2025 GeekDost. All rights reserved.</p>
             <div className="flex items-center text-muted-foreground text-sm">
               <span>Made with</span>
               <motion.div
