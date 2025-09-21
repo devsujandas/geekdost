@@ -1,5 +1,5 @@
 import { IconType } from "react-icons"
-import { FaJava, FaPython, FaDatabase, FaLaptopCode, FaLock, FaCode, FaGitAlt, FaCloud, FaMicrochip, FaBrain, FaNetworkWired } from "react-icons/fa"
+import { FaJava, FaPython, FaDatabase, FaLaptopCode, FaLock, FaCode, FaGitAlt, FaCloud, FaMicrochip, FaBrain, FaNetworkWired, FaRobot } from "react-icons/fa"
 import { SiC, SiCplusplus, SiJavascript } from "react-icons/si" // C, C++ and JS icons
 
 // 🔹 Interfaces
@@ -52,6 +52,8 @@ import cloudData from "./data/cloud.json"
 import osData from "./data/os.json"
 import mlData from "./data/ml.json"
 import cnData from "./data/cn.json"
+import aiLlmsData from "./data/ai-llms.json"
+
 
 
 
@@ -74,7 +76,9 @@ const rawTopics: Omit<Topic, "examples" | "notes" | "steps">[] = [
   { ...(Array.isArray(cloudData) ? cloudData[0] : cloudData), icon: FaCloud },
   { ...(Array.isArray(osData) ? osData[0] : osData), icon: FaMicrochip },
   { ...(Array.isArray(mlData) ? mlData[0] : mlData), icon: FaBrain },
-  { ...(Array.isArray(cnData) ? cnData[0] : cnData), icon: FaNetworkWired }
+  { ...(Array.isArray(cnData) ? cnData[0] : cnData), icon: FaNetworkWired },
+  { ...(Array.isArray(aiLlmsData) ? aiLlmsData[0] : aiLlmsData), icon: FaRobot }
+
 
 
 
