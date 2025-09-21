@@ -1,6 +1,6 @@
 import { IconType } from "react-icons"
-import { FaJava, FaPython, FaDatabase, FaLaptopCode, FaLock, FaCode } from "react-icons/fa"
-import { SiC, SiCplusplus, SiJavascript } from "react-icons/si" // C and C++ and JS icons
+import { FaJava, FaPython, FaDatabase, FaLaptopCode, FaLock, FaCode, FaGitAlt, FaCloud } from "react-icons/fa"
+import { SiC, SiCplusplus, SiJavascript } from "react-icons/si" // C, C++ and JS icons
 
 // 🔹 Interfaces
 export interface ChapterTopic {
@@ -47,6 +47,9 @@ import dsaData from "./data/dsa.json"
 import dbmsData from "./data/dbms.json"
 import webData from "./data/web.json"
 import cybersecurityData from "./data/cybersecurity.json"
+import gitGithubData from "./data/git-github.json"
+import cloudData from "./data/cloud.json"
+
 
 // 🔹 Map JSON → Topics with Icons
 const rawTopics: Omit<Topic, "examples" | "notes" | "steps">[] = [
@@ -60,7 +63,10 @@ const rawTopics: Omit<Topic, "examples" | "notes" | "steps">[] = [
   { ...(Array.isArray(dsaData) ? dsaData[0] : dsaData), icon: FaCode },
   { ...(Array.isArray(dbmsData) ? dbmsData[0] : dbmsData), icon: FaDatabase },
   { ...(Array.isArray(webData) ? webData[0] : webData), icon: FaLaptopCode },
-  { ...(Array.isArray(cybersecurityData) ? cybersecurityData[0] : cybersecurityData), icon: FaLock }
+  { ...(Array.isArray(cybersecurityData) ? cybersecurityData[0] : cybersecurityData), icon: FaLock },
+  { ...(Array.isArray(gitGithubData) ? gitGithubData[0] : gitGithubData), icon: FaGitAlt },
+  { ...(Array.isArray(cloudData) ? cloudData[0] : cloudData), icon: FaCloud }
+
 ]
 
 // 🔹 Auto calculate examples, notes & steps

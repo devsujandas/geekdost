@@ -1,0 +1,209 @@
+[
+  {
+    "id": "git-github",
+    "title": "Git & GitHub",
+    "desc": "A comprehensive roadmap for mastering Git and GitHub, from basic commands to collaborative workflows.",
+    "description": "This roadmap provides a structured, chapter-by-chapter guide to learning Git and GitHub. It starts with the fundamentals of version control, moves through essential Git commands, explores branching and merging, and concludes with an introduction to collaborating on projects using GitHub. Each chapter is designed to build upon the last, ensuring a solid foundation for both beginners and those looking to refresh their skills.",
+    "category": "Version Control",
+    "categories": ["Git", "GitHub", "Collaboration", "Developer Tools"],
+    "difficulty": "Beginner",
+    "image": "/images/git-github.png",
+    "icon": "FaGitAlt",
+    "chapters": [
+      {
+        "id": "c1-introduction",
+        "title": "Introduction to Git",
+        "desc": "Learn what Git is, why it's essential for developers, and how to get it set up on your machine.",
+        "notes": "This foundational chapter introduces the core concepts of version control and Git. You'll understand why tracking changes in your code is crucial for any project, big or small. We will cover the installation process for different operating systems and the initial one-time configuration to identify you as the author of your work. The chapter also explains the concept of a repository, which is the heart of any Git project—a directory where all your project files and their history are stored. Finally, we'll walk through the two primary ways to start a project: creating a brand new repository from scratch on your local machine using 'git init' or making a copy of an existing project from a remote source like GitHub using 'git clone'. By the end of this chapter, you'll have Git installed and be ready to start version-controlling your first project.",
+        "code": "",
+        "duration": "Day 1",
+        "topics": [
+          {
+            "id": "t1-what-is-git",
+            "title": "What is Git?",
+            "desc": "An overview of what Git is and why it is the most popular version control system.",
+            "note": "Git is a distributed version control system (DVCS) that helps developers track changes in their source code during software development. It was created by Linus Torvalds in 2005 for the development of the Linux kernel. Unlike centralized systems where the entire project history is stored on a single server, Git gives every developer a full copy of the repository, including its entire history. This 'distributed' nature means you can work completely offline, committing changes locally. When you're ready, you can synchronize your work with a central remote repository. Git is incredibly powerful because it allows for non-linear development through branching, enabling multiple developers to work on different features simultaneously without interfering with each other's work. It's renowned for its speed, data integrity, and support for complex workflows, making it the standard for version control in the software industry today.",
+            "code": "// Example 1: Check the installed Git version\ngit --version\n\n// Example 2: Access the built-in help for a command\ngit help config"
+          },
+          {
+            "id": "t2-install-config",
+            "title": "Installing and Configuring Git",
+            "desc": "Step-by-step guide to installing Git on your system and setting up your initial configuration.",
+            "note": "Before you can start using Git, you need to install it on your computer. The installation process varies depending on your operating system—Windows, macOS, or Linux. Once installed, you should perform a one-time configuration to set your identity. This is crucial because every commit you make will be stamped with this information, making it clear who made which changes. The two most important settings to configure are your username and email address. You can set these globally, meaning they will be used for every repository on your system. This is done using the `git config --global` command. Setting your identity ensures that your contributions are properly attributed, which is especially important when you start collaborating with others on projects hosted on platforms like GitHub. You can also configure other settings, like your default text editor, but setting your name and email is the essential first step.",
+            "code": "// Example 1: Set your username for all repositories\ngit config --global user.name \"Your Name\"\n\n// Example 2: Set your email for all repositories\ngit config --global user.email \"youremail@example.com\""
+          },
+          {
+            "id": "t3-repositories",
+            "title": "Understanding Repositories",
+            "desc": "Learn what a Git repository is and the difference between local and remote repositories.",
+            "note": "A Git repository (or 'repo') is a directory or folder where your project's files and their entire revision history are stored. It's the fundamental unit of storage in Git. There are two main types of repositories: local and remote. A local repository is the one that resides on your own computer. It contains all the files, branches, and commit history of your project. This is where you do all your work: creating files, making changes, and committing them. A remote repository is a version of your project that is hosted on the internet or a network, typically on a platform like GitHub, GitLab, or Bitbucket. It serves as a central point for collaboration, allowing multiple team members to share their work. You can 'push' your local changes to the remote repository to share them with others, and 'pull' changes made by others from the remote repository to your local machine to stay up-to-date.",
+            "code": "// Example 1: List configured remote repositories\ngit remote -v\n\n// Example 2: Show information about a remote repository\ngit remote show origin"
+          },
+          {
+            "id": "t4-git-init",
+            "title": "Initializing a Repository with git init",
+            "desc": "How to create a new Git repository in an existing or new project folder.",
+            "note": "The `git init` command is the first step to start tracking a project with Git. You use it to create a new, empty Git repository. You can run this command in two ways. First, you can navigate to an existing project directory in your terminal and simply run `git init`. This will create a hidden subdirectory named `.git` inside your project folder. This `.git` directory is where Git stores all the metadata and object database for your project, including the complete history of changes. Nothing in your project is tracked yet; `git init` just prepares the directory for version control. Second, you can create a new directory and initialize a repository inside it at the same time by running `git init <project-name>`. This command is the starting point for any new project you want to manage with Git. Once a repository is initialized, you can start adding files and committing your changes.",
+            "code": "// Example 1: Initialize a repository in the current directory\nmkdir my-project\ncd my-project\ngit init\n\n// Example 2: Create a new directory and initialize it\ngit init another-project"
+          },
+          {
+            "id": "t5-git-clone",
+            "title": "Cloning a Repository with git clone",
+            "desc": "How to create a local copy of an existing remote repository from a server like GitHub.",
+            "note": "The `git clone` command is used to create a local copy of an existing remote repository. This is the most common way to get started on a project that already exists on a platform like GitHub. When you clone a repository, you get a full copy of the project's data—not just the latest version of the files, but the entire history of every file and every commit. Git also automatically sets up a connection to the original remote repository, which is typically named 'origin' by default. This connection makes it easy to pull updates from the remote or push your own local changes back to it. To clone a repository, you just need its URL. For example, you would find the URL on the project's main page on GitHub. The command `git clone <URL>` will create a new directory on your machine, named after the repository, and download all the project data into it.",
+            "code": "// Example 1: Clone a repository from GitHub\ngit clone https://github.com/facebook/react.git\n\n// Example 2: Clone a repository into a specific folder name\ngit clone https://github.com/facebook/react.git my-react-app"
+          }
+        ]
+      },
+      {
+        "id": "c2-commands",
+        "title": "Basic Git Commands",
+        "desc": "Master the core commands for tracking changes, committing work, and viewing project history.",
+        "notes": "This chapter covers the essential day-to-day commands that form the core workflow in Git. You'll learn about the three main states a file can be in: modified, staged, and committed. We'll start with `git add`, the command used to move changes from your working directory to the staging area, preparing them for the next commit. Next, you'll master `git commit`, which takes the staged changes and saves them permanently to your local repository's history with a descriptive message. We'll explore `git status` to check the current state of your repository and see which files are tracked, untracked, or staged. To review the project's history, you'll learn to use `git log`, which displays a chronological list of all commits. We will also cover how to undo simple changes and, critically, how to use a `.gitignore` file to tell Git to intentionally ignore certain files or directories, such as sensitive data or dependency folders.",
+        "code": "",
+        "duration": "Day 2",
+        "topics": [
+          {
+            "id": "t6-git-add",
+            "title": "Staging Changes with git add",
+            "desc": "Learn how to use the 'git add' command to stage changes before committing.",
+            "note": "The `git add` command is a crucial step in the Git workflow. It moves changes from your working directory to the 'staging area' (also known as the 'index'). The staging area is an intermediate space where you can prepare and review a set of changes before officially recording them in a commit. This two-step process—adding and then committing—gives you precise control over your project's history. Instead of committing all changes at once, you can carefully select related modifications and group them into a single, logical commit. For example, you might have fixed a bug and added a new feature in different files. The staging area allows you to create two separate commits: one for the bug fix and one for the new feature. You can add a specific file with `git add <filename>` or add all modified and new files in the current directory with `git add .`. This intentional staging is a powerful feature that encourages well-organized and meaningful commits.",
+            "code": "// Example 1: Stage a single file\ngit add README.md\n\n// Example 2: Stage all modified and new files in the current directory\ngit add ."
+          },
+          {
+            "id": "t7-git-commit",
+            "title": "Saving Changes with git commit",
+            "desc": "How to save your staged changes to the local repository history.",
+            "note": "The `git commit` command is how you save a snapshot of your staged changes to the project's history. Each commit is a permanent record in your local repository. Think of it as a save point in a game; you can always return to it later. When you run `git commit`, you must include a commit message. This message is vital as it describes the changes you made. A good commit message explains 'why' a change was made, not just 'what' was changed. This context is invaluable for your future self and for collaborators trying to understand the project's evolution. The most common way to commit is with the `-m` flag, which lets you write a short message directly in the command line: `git commit -m \"Your descriptive message\"`. Every commit has a unique ID (a SHA-1 hash) that allows you to identify and reference it later. Creating small, logical commits with clear messages is one of the most important habits for effective version control.",
+            "code": "// Example 1: Commit staged changes with a short message\ngit commit -m \"Add initial project files\"\n\n// Example 2: Stage and commit all tracked files in one command\ngit commit -a -m \"Update navigation bar styles\""
+          },
+          {
+            "id": "t8-git-status",
+            "title": "Checking the Status with git status",
+            "desc": "Use 'git status' to see the state of your working directory and staging area.",
+            "note": "The `git status` command is your primary tool for understanding the current state of your repository. It is one of the most frequently used commands, and for good reason. It provides a wealth of information about your working directory and staging area. Running `git status` will tell you which branch you are currently on. It shows you which files have been modified but not yet staged ('Changes not staged for commit'). It also lists the files that have been staged but not yet committed ('Changes to be committed'). Additionally, it will identify any new files in your directory that Git doesn't know about yet ('Untracked files'). This command is essential for keeping track of your work. Before you add or commit, you should always run `git status` to ensure you are only including the changes you intend to. It provides a safe overview, preventing you from accidentally committing unfinished work or temporary files.",
+            "code": "// Example 1: Get a comprehensive status report\ngit status\n\n// Example 2: Get a shorter, more compact status report\ngit status -s"
+          },
+          {
+            "id": "t9-git-log",
+            "title": "Viewing History with git log",
+            "desc": "Learn how to view the project's commit history in different formats.",
+            "note": "The `git log` command is your window into the project's history. In its simplest form, it displays a chronological list of all the commits made in the repository, starting with the most recent. Each entry in the log includes the commit's unique SHA-1 hash, the author's name and email, the date of the commit, and the commit message. This information is invaluable for understanding how the project has evolved over time. The default output can be quite verbose, but `git log` is highly customizable. You can use flags to format the output in many different ways. For example, `git log --oneline` provides a compact view, showing just the commit hash and the message on a single line. Another useful option is `git log --graph`, which displays a simple ASCII graph showing the branching and merging history. Exploring the various formatting options of `git log` will allow you to quickly find the specific historical information you need.",
+            "code": "// Example 1: View the commit history in a compact, one-line format\ngit log --oneline\n\n// Example 2: View the history with a graph showing branches and merges\ngit log --graph --oneline --decorate"
+          },
+          {
+            "id": "t10-undo-changes",
+            "title": "Undoing Changes",
+            "desc": "How to revert changes in your working directory or unstage files.",
+            "note": "Mistakes happen, and Git provides several ways to undo changes. The method you use depends on what you want to undo. If you have modified a file in your working directory but haven't staged it yet, you can discard those changes and revert the file to the version from your last commit using `git checkout -- <filename>`. This is a destructive operation, so use it with care, as your changes will be lost permanently. If you have already staged a file with `git add` but decide you don't want to include it in the next commit, you can unstage it using `git reset HEAD <filename>`. This command moves the file from the staging area back to the working directory; the modifications themselves are not lost, they are just no longer staged. Understanding these basic undo commands is crucial for managing your work effectively and keeping your commit history clean and intentional. They give you the confidence to experiment, knowing you can easily revert back if things go wrong.",
+            "code": "// Example 1: Discard changes in a file in the working directory\ngit checkout -- style.css\n\n// Example 2: Unstage a file that has been added to the staging area\ngit reset HEAD index.html"
+          },
+          {
+            "id": "t11-gitignore",
+            "title": "Ignoring Files with .gitignore",
+            "desc": "Learn how to use a .gitignore file to exclude certain files and directories from being tracked.",
+            "note": "A `.gitignore` file is a simple text file where you list files and directories that you want Git to ignore. Git will not track changes to these files, nor will they show up in `git status` as untracked. This is extremely useful for preventing certain types of files from being accidentally committed to the repository. Common examples of files to ignore include compiled code (like `.o` or `.exe` files), log files, build artifacts, and dependency directories (like `/node_modules` or `/vendor`). You should also ignore files containing sensitive information, such as API keys or passwords. The `.gitignore` file should be placed in the root directory of your repository and committed like any other file, so that the ignore rules are shared with all collaborators. You can use patterns to ignore multiple files, such as `*.log` to ignore any file ending with `.log`, or specify entire directories by adding their name followed by a slash, like `build/`.",
+            "code": "// Example 1: A sample .gitignore file\n# Ignore dependency directories\nnode_modules/\n\n# Ignore log files\n*.log\n\n# Ignore environment variables file\n.env\n\n// Example 2: Check which file is ignoring a specific file\ngit check-ignore -v .env"
+          }
+        ]
+      },
+      {
+        "id": "c3-branches",
+        "title": "Working with Branches",
+        "desc": "Understand the power of branching for parallel development, feature creation, and bug fixing.",
+        "notes": "Branching is one of Git's most powerful features. A branch is essentially an independent line of development. This chapter will teach you how to leverage branches to work on new features, fix bugs, or experiment with ideas without affecting the main, stable version of your project (often called the 'main' or 'master' branch). We will start by learning how to create and list branches. Then, you'll learn how to switch between different branches using the `git checkout` command. The core of this chapter is understanding how to integrate changes from one branch into another using `git merge`. This is how you bring a completed feature back into the main codebase. Sometimes, when merging, changes in both branches might conflict with each other. We will cover how to identify and resolve these 'merge conflicts'. Finally, you'll learn how to clean up your repository by deleting branches once their work has been fully integrated. Mastering branching is key to maintaining a clean workflow and collaborating effectively with a team.",
+        "code": "",
+        "duration": "Day 3",
+        "topics": [
+          {
+            "id": "t12-branching",
+            "title": "Introduction to Branching",
+            "desc": "Understand what branches are and how to create and list them.",
+            "note": "In Git, a branch is a lightweight, movable pointer to a specific commit. Think of it as an independent timeline of your project's history. The default branch is usually named `main` (or `master`). When you start a project, you are on this branch. Branching allows you to diverge from the main line of development and continue to work in isolation without affecting the stable `main` branch. This is incredibly useful for developing new features or fixing bugs. For example, you can create a new branch called `new-feature`, work on it for days or weeks, and the `main` branch will remain untouched. To create a new branch, you use the command `git branch <branch-name>`. To see a list of all the branches in your local repository, you can simply run `git branch`. The currently active branch will be marked with an asterisk. This ability to create isolated environments for development is what makes Git so flexible and powerful for both solo developers and large teams.",
+            "code": "// Example 1: Create a new branch named 'dev-feature'\ngit branch dev-feature\n\n// Example 2: List all local branches\ngit branch"
+          },
+          {
+            "id": "t13-git-checkout",
+            "title": "Switching Branches with git checkout",
+            "desc": "How to switch between different branches in your repository.",
+            "note": "After creating a new branch, you need a way to switch to it so you can start working on it. The `git checkout <branch-name>` command is used for this purpose. When you switch to a different branch, Git updates the files in your working directory to match the snapshot of the latest commit on that branch. This allows you to completely change contexts. For instance, if you switch from the `main` branch to a `bug-fix` branch, your files will change to the state they were in when that branch was created, allowing you to focus solely on the bug fix. You can also create and switch to a new branch in a single command using the `-b` flag: `git checkout -b <new-branch-name>`. This is a very common and convenient shortcut. Being able to effortlessly switch between different lines of development is a core part of the Git workflow, enabling you to manage multiple tasks concurrently.",
+            "code": "// Example 1: Switch to an existing branch named 'dev-feature'\ngit checkout dev-feature\n\n// Example 2: Create a new branch and switch to it immediately\ngit checkout -b new-login-feature"
+          },
+          {
+            "id": "t14-git-merge",
+            "title": "Merging Branches with git merge",
+            "desc": "Learn how to integrate changes from one branch into another.",
+            "note": "Once you have completed your work on a feature or bug-fix branch, you'll want to integrate those changes back into your main codebase (e.g., the `main` branch). The `git merge` command is used to combine the history of two or more branches into a single branch. The typical workflow is to first switch to the branch you want to merge *into* (the receiving branch), and then run the `git merge <source-branch-name>` command. For example, to merge the `dev-feature` branch into `main`, you would first `git checkout main` and then `git merge dev-feature`. Git will look at the commits on both branches and attempt to combine them. If the changes on the two branches are on different lines of code or in different files, Git will often be able to merge them automatically, creating a new 'merge commit' to tie the histories together. This process allows for a safe and controlled way to integrate new code into your project.",
+            "code": "// Example 1: Merge the 'dev-feature' branch into the current branch (e.g., 'main')\ngit checkout main\ngit merge dev-feature\n\n// Example 2: Abort a merge that has conflicts\ngit merge --abort"
+          },
+          {
+            "id": "t15-merge-conflicts",
+            "title": "Handling Merge Conflicts",
+            "desc": "What to do when Git cannot automatically merge changes and a conflict occurs.",
+            "note": "A merge conflict happens when you try to merge two branches that have competing changes. This occurs when both branches have edited the same line in the same file, or when one branch deletes a file that another branch has modified. Git cannot automatically decide which change is correct, so it pauses the merge process and asks you to resolve the conflict manually. When a conflict occurs, Git will mark the conflicted areas in the affected file with visual indicators (`<<<<<<<`, `=======`, `>>>>>>>`). Your task is to open the file, examine the conflicting sections, and edit the file to keep the version you want. This might mean keeping the code from one branch, the other branch, or a combination of both. Once you have edited the file to your satisfaction and removed the conflict markers, you must save the file, stage the resolved file using `git add <filename>`, and then finalize the merge by running `git commit`.",
+            "code": "// Example 1: Manually edit the conflicted file to resolve differences\n// Git will mark the file like this:\n// <<<<<<< HEAD\n// Code from the current branch (e.g., main)\n// =======\n// Code from the branch being merged (e.g., dev-feature)\n// >>>>>>> dev-feature\n\n// Example 2: After resolving, stage the file and commit the merge\ngit add conflicted-file.js\ngit commit"
+          },
+          {
+            "id": "t16-delete-branch",
+            "title": "Deleting a Branch",
+            "desc": "How to safely delete local and remote branches after they have been merged.",
+            "note": "Once a feature branch has been successfully merged into your main branch, it is good practice to delete it to keep your repository clean and tidy. Deleting old branches prevents clutter and makes it easier to see what work is currently in progress. To delete a local branch, you use the `git branch -d <branch-name>` command. The `-d` (lowercase) flag is a safety measure; it will only allow you to delete a branch if its changes have already been merged into another branch. If you want to force-delete a branch that has unmerged changes (which you should do with extreme caution), you can use the `-D` (uppercase) flag. Deleting a local branch does not affect any remote branch with the same name. To delete a branch from a remote repository like GitHub, you use the command `git push origin --delete <branch-name>`. This helps keep the central repository as clean as your local one.",
+            "code": "// Example 1: Delete a local branch that has been merged\ngit branch -d dev-feature\n\n// Example 2: Delete a remote branch on GitHub\ngit push origin --delete dev-feature"
+          }
+        ]
+      },
+      {
+        "id": "c4-github",
+        "title": "Introduction to GitHub",
+        "desc": "Learn how to use GitHub to host your repositories, collaborate with others, and manage projects.",
+        "notes": "This chapter transitions from local Git usage to leveraging GitHub, the most popular platform for hosting remote repositories. You will learn what a remote repository is and how to connect your local repository to one on GitHub. We will cover the three essential commands for synchronizing your work: `git push` to upload your local commits to the remote, `git pull` to download and merge changes from the remote, and `git fetch` to download changes without immediately merging them. A central part of collaborating on GitHub is the 'Pull Request' (PR). We will explain what a PR is and how it facilitates code reviews and discussions before changes are merged into the main codebase. This workflow is the foundation of open-source collaboration and team projects. By the end of this chapter, you will understand how to use GitHub to back up your code, share it with the world, and work effectively with other developers on the same project.",
+        "code": "",
+        "duration": "Day 4",
+        "topics": [
+          {
+            "id": "t17-remote-repos",
+            "title": "Working with Remote Repositories",
+            "desc": "How to connect your local repository to a remote one on GitHub.",
+            "note": "A remote is a common repository that all team members use to exchange their changes. It's usually hosted on a server or a platform like GitHub. When you clone a repository, Git automatically sets up a remote named 'origin' that points to the URL you cloned from. If you initialized your own repository locally, you can connect it to a new remote repository you've created on GitHub. The command for this is `git remote add <name> <URL>`. The standard name for the primary remote is 'origin'. For example: `git remote add origin https://github.com/your-username/your-repo.git`. Once the remote is added, your local repository knows where to push changes to and fetch updates from. You can have multiple remotes for a single local repository, which can be useful for collaborating with different teams. You can always check your configured remotes using `git remote -v`, which will list the names and URLs of your connections.",
+            "code": "// Example 1: Add a new remote repository named 'origin'\ngit remote add origin https://github.com/user/repo.git\n\n// Example 2: View your configured remote repositories\ngit remote -v"
+          },
+          {
+            "id": "t18-git-push",
+            "title": "Uploading Changes with git push",
+            "desc": "Learn how to push your local commits to a remote repository.",
+            "note": "The `git push` command is used to upload your committed changes from your local repository to a remote repository. This is how you share your work with your team or back up your code on a platform like GitHub. When you push, you specify which remote you want to push to and which local branch's changes you want to send. The command format is `git push <remote-name> <branch-name>`. For instance, to push the changes from your local `main` branch to the `origin` remote, you would run `git push origin main`. The first time you push a new branch, you might need to use the `-u` flag (`git push -u origin <branch-name>`). This sets up a tracking relationship between your local branch and the remote branch, so in the future, you can simply run `git push` from that branch without specifying the remote and branch name again. Pushing only sends commits that the remote repository doesn't already have.",
+            "code": "// Example 1: Push your 'main' branch to the 'origin' remote\ngit push origin main\n\n// Example 2: Push a new branch and set up tracking\ngit push -u origin new-feature"
+          },
+          {
+            "id": "t19-git-pull",
+            "title": "Downloading Changes with git pull",
+            "desc": "How to fetch changes from a remote repository and merge them into your current branch.",
+            "note": "The `git pull` command is used to update your local repository with changes from a remote repository. It's a compound command that essentially performs two actions in one: it first runs `git fetch` to download the new data from the remote, and then it runs `git merge` to integrate the downloaded changes into your current local branch. This is the most common way to synchronize your local repository with the latest updates from your team. You simply run `git pull <remote-name> <branch-name>` to get the latest changes for a specific branch. If you have a tracking relationship set up, you can just run `git pull` from within your branch, and Git will know where to pull from. It's a good practice to pull frequently to ensure you are working with the most up-to-date version of the codebase, which helps minimize merge conflicts.",
+            "code": "// Example 1: Fetch from and integrate with 'origin/main'\ngit pull origin main\n\n// Example 2: Pull changes for the current tracked branch\ngit pull"
+          },
+          {
+            "id": "t20-git-fetch",
+            "title": "Understanding git fetch",
+            "desc": "Learn the difference between 'git pull' and 'git fetch'.",
+            "note": "While `git pull` is convenient, `git fetch` offers a safer and more controlled way to update your repository. The `git fetch` command downloads all the new data from the remote repository—new branches, new commits, new tags—but it does *not* automatically merge any of that new data into your local working branches. Instead, it updates your remote-tracking branches (e.g., `origin/main`). This gives you a chance to review the changes before you decide to integrate them into your own work. You can see what others have been working on by checking out the remote-tracking branch (`git checkout origin/main`) or by comparing it with your local branch (`git diff main origin/main`). Once you have reviewed the changes and are ready to integrate them, you can then manually run `git merge origin/main` while on your `main` branch. This separation of downloading and merging makes `git fetch` a safer alternative for updating your code, as it allows you to handle potential merge conflicts before they affect your local work.",
+            "code": "// Example 1: Download all new data from the 'origin' remote\ngit fetch origin\n\n// Example 2: After fetching, see the difference and then merge\ngit log --oneline main..origin/main\ngit merge origin/main"
+          },
+          {
+            "id": "t21-pull-requests",
+            "title": "Collaborating with Pull Requests",
+            "desc": "Understand the concept of a Pull Request for proposing and reviewing changes.",
+            "note": "A Pull Request (PR) is a feature of hosting platforms like GitHub, not a core Git command. It is the primary mechanism for collaboration. A PR is a way of telling others about changes you've pushed to a branch in a repository on GitHub. Once a Pull Request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the main branch. The typical workflow is: you push your new feature branch to the remote repository, then go to GitHub and open a Pull Request to merge your feature branch into the `main` branch. This kicks off a code review process. Your teammates can comment on your code, request changes, and discuss the implementation. Once the PR is approved, it can be merged into the `main` branch directly through the GitHub interface. This workflow ensures code quality and provides a clear history of decisions made about the project.",
+            "code": "// Example 1: Conceptual workflow for a Pull Request\n// 1. Push your branch to the remote\ngit push origin my-cool-feature\n// 2. Go to GitHub and open a Pull Request from 'my-cool-feature' to 'main'.\n\n// Example 2: After review, update your branch and push again\n// Make changes based on feedback...\ngit commit -a -m \"Incorporate review feedback\"\ngit push origin my-cool-feature"
+          },
+          {
+            "id": "t22-collaboration",
+            "title": "Collaboration Basics (Forking)",
+            "desc": "A basic overview of the fork-and-clone workflow for contributing to projects.",
+            "note": "The fork-and-clone workflow is standard for contributing to open-source projects or any project where you don't have direct push access. First, you 'fork' the original repository on GitHub. A fork is a personal copy of someone else's repository that lives in your own GitHub account. This copy is entirely yours to modify as you wish. Next, you 'clone' your forked repository to your local machine. Now you can create a new branch, make your changes, and commit them. Once you're ready to propose your changes to the original project, you 'push' your branch to your forked repository on GitHub (not the original one). Finally, you open a Pull Request from your forked repository's branch back to the original project's `main` branch. The project maintainers can then review your contribution, discuss it with you, and, if they approve, merge it into their project. This workflow allows anyone to contribute to any public project without needing direct write access.",
+            "code": "// Example 1: Add the original repository as an 'upstream' remote\n// This helps you keep your fork's main branch updated\ngit remote add upstream https://github.com/original-owner/original-repo.git\n\n// Example 2: Sync your fork's main branch with the original\ngit fetch upstream\ngit checkout main\ngit merge upstream/main"
+          }
+        ]
+      }
+    ]
+  }
+]
