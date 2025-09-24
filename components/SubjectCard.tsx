@@ -27,8 +27,14 @@ export function SubjectCard({ subject }: SubjectCardProps) {
     >
       <Link
         href={`/roadmap/${subject}`}
-        className="flex flex-col justify-between h-full p-6 rounded-xl bg-card border border-border shadow-sm hover:shadow-lg transition"
+        className="relative flex flex-col justify-between h-full p-6 rounded-xl bg-card border border-border shadow-sm hover:shadow-lg transition"
       >
+        {/* Time Info - Top Right */}
+        <div className="absolute top-4 right-4 flex items-center gap-1 text-xs font-medium text-muted-foreground">
+          <FaRegClock className="w-4 h-4 text-primary" />
+          <span>{meta.time}</span>
+        </div>
+
         {/* Top content */}
         <div className="flex flex-col items-center text-center space-y-4">
           {/* Icon */}
@@ -38,19 +44,13 @@ export function SubjectCard({ subject }: SubjectCardProps) {
 
           {/* Subject Name */}
           <h2 className="text-xl font-bold text-primary capitalize">
-            {meta.title}   {/* ✅ subject er jaygay meta.title use korlam */}
+            {meta.title}
           </h2>
 
           {/* Description */}
           <p className="text-sm text-muted-foreground line-clamp-2">
             {meta.description}
           </p>
-        </div>
-
-        {/* Footer (Time Info) */}
-        <div className="mt-6 flex items-center justify-center gap-2 text-xs font-medium text-muted-foreground">
-          <FaRegClock className="w-4 h-4 text-primary" />
-          <span>{meta.time}</span>
         </div>
       </Link>
     </motion.div>
