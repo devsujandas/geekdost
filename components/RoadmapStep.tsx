@@ -35,39 +35,54 @@ export function RoadmapStep({ index, title, topics, time }: RoadmapStepProps) {
         {index + 1}
       </motion.div>
 
-      {/* Card */}
+      {/* Unique Double Card */}
       <motion.div
         initial={{ y: 40, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         whileHover={{ y: -4, scale: 1.02 }}
         transition={{ duration: 0.6, delay: index * 0.25 }}
         viewport={{ once: true }}
-        className="relative p-6 rounded-xl bg-card border border-border 
-                   shadow-sm group-hover:shadow-lg transition-all duration-300"
+        className="relative"
       >
-        {/* Decorative Corner Accent */}
-        <div className="absolute top-0 right-0 w-2 h-2 bg-primary rounded-bl-lg" />
+        {/* Back Layer (slanted shape) */}
+        <div
+          className="absolute inset-0 translate-x-2 translate-y-2 bg-primary/20 border border-primary/30 rounded-lg"
+          style={{
+            clipPath: "polygon(0 0, 100% 8%, 95% 100%, 0% 92%)",
+          }}
+        />
 
-        {/* Title */}
-        <h3 className="text-lg font-semibold text-foreground">{title}</h3>
+        {/* Front Layer (main card) */}
+        <div
+          className="relative p-6 bg-card border border-border shadow-sm group-hover:shadow-lg transition-all duration-300 rounded-lg"
+          style={{
+            clipPath: "polygon(0 0, 100% 10%, 96% 100%, 0% 90%)",
+          }}
+        >
+          {/* Decorative Accent Strip */}
+          <div className="absolute top-0 left-0 w-full h-1 bg-primary/80 rounded-t-lg" />
 
-        {/* Time (just below title) */}
-        {time && (
-          <div className="flex items-center gap-2 mt-1 mb-3 text-xs font-medium text-muted-foreground">
-            <FaClock className="h-3 w-3 text-primary" />
-            <span>{time}</span>
-          </div>
-        )}
+          {/* Title */}
+          <h3 className="text-lg font-semibold text-foreground">{title}</h3>
 
-        {/* Topics */}
-        <ul className="text-sm text-muted-foreground space-y-1 leading-relaxed">
-          {topics.map((t, i) => (
-            <li key={i} className="flex gap-2 items-start">
-              <span className="text-primary">▹</span>
-              <span>{t}</span>
-            </li>
-          ))}
-        </ul>
+          {/* Time */}
+          {time && (
+            <div className="flex items-center gap-2 mt-1 mb-3 text-xs font-medium text-muted-foreground">
+              <FaClock className="h-3 w-3 text-primary" />
+              <span>{time}</span>
+            </div>
+          )}
+
+          {/* Topics */}
+          <ul className="text-sm text-muted-foreground space-y-1 leading-relaxed">
+            {topics.map((t, i) => (
+              <li key={i} className="flex gap-2 items-start">
+                <span className="text-primary">▹</span>
+                <span>{t}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </motion.div>
     </motion.div>
   )
