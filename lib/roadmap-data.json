@@ -4171,8 +4171,179 @@
         }
       ]
     }
+  },
+
+
+
+  
+  "computer_architecture": {
+    "meta": {
+      "icon": "SiMicrochip",
+      "title": "Computer Architecture",
+      "description": "Learn how computers are structured internally, covering processors, memory, instruction sets, pipelining, and modern architectures.",
+      "time": "5-10 months"
+    },
+    "beginner": {
+      "title": "Computer Architecture Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to Computer Architecture",
+          "topics": [
+            "What is Computer Architecture?",
+            "Computer Organization vs Computer Architecture",
+            "Von Neumann vs Harvard Architecture",
+            "Basic Components of a Computer System",
+            "Instruction Cycle (Fetch, Decode, Execute)"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Number Systems & Data Representation",
+          "topics": [
+            "Binary, Octal, Decimal, Hexadecimal",
+            "Signed & Unsigned Numbers",
+            "Floating Point Representation",
+            "Character Encoding (ASCII, Unicode)",
+            "Boolean Algebra Basics"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Basic CPU Organization",
+          "topics": [
+            "Registers",
+            "ALU (Arithmetic Logic Unit)",
+            "Control Unit (CU)",
+            "Instruction Set Basics",
+            "Machine Language vs Assembly Language"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Memory Fundamentals",
+          "topics": [
+            "RAM, ROM, Cache, Virtual Memory",
+            "Memory Hierarchy",
+            "Primary vs Secondary Storage",
+            "Memory Addressing Modes",
+            "Bus Systems (Data, Address, Control)"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Computer Architecture Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Instruction Set Architecture (ISA)",
+          "topics": [
+            "CISC vs RISC",
+            "Addressing Modes in Detail",
+            "Instruction Formats",
+            "Stack vs Register-based Architectures",
+            "Examples: x86, ARM"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Pipelining & Performance",
+          "topics": [
+            "Instruction Pipelining",
+            "Pipeline Hazards (Structural, Data, Control)",
+            "Branch Prediction",
+            "Superscalar Architecture",
+            "Performance Metrics (CPI, MIPS, FLOPS)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Memory Hierarchy & Management",
+          "topics": [
+            "Cache Organization (L1, L2, L3)",
+            "Cache Mapping Techniques",
+            "TLB (Translation Lookaside Buffer)",
+            "Virtual Memory & Paging",
+            "Segmentation & Address Translation"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "I/O and Storage",
+          "topics": [
+            "I/O Organization",
+            "Interrupts & Polling",
+            "Direct Memory Access (DMA)",
+            "Disk Organization & Access",
+            "RAID Levels & Reliability"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Computer Architecture Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Parallelism & Multicore",
+          "topics": [
+            "Instruction Level Parallelism (ILP)",
+            "Data Level Parallelism (SIMD, VLIW)",
+            "Thread Level Parallelism (TLP)",
+            "Multicore Processors",
+            "GPU Architecture Basics"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Advanced Processor Design",
+          "topics": [
+            "Out-of-Order Execution",
+            "Speculative Execution",
+            "Micro-operations & Pipelines",
+            "Superscalar & VLIW Designs",
+            "RISC-V and Modern ISAs"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Advanced Memory & Storage",
+          "topics": [
+            "NUMA (Non-Uniform Memory Access)",
+            "Memory Coherency & Consistency Models",
+            "Flash Storage Architecture",
+            "Persistent Memory (NVM)",
+            "Memory Optimization Techniques"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Emerging Architectures",
+          "topics": [
+            "Quantum Computing Basics",
+            "Neuromorphic Computing",
+            "Optical Computing",
+            "Edge & Embedded Architectures",
+            "Green Computing"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Case Studies",
+          "topics": [
+            "Design of Intel x86 Architecture",
+            "ARM Cortex Architecture",
+            "RISC-V Open Source ISA",
+            "NVIDIA GPU Architecture",
+            "Apple M-Series Processors"
+          ],
+          "time": "4 weeks"
+        }
+      ]
+    }
   }
 }
+
 
 
 
