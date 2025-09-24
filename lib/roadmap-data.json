@@ -3411,8 +3411,159 @@
         }
       ]
     }
+  },
+
+
+
+
+  
+  "computer_networks": {
+    "meta": {
+      "icon": "FaNetworkWired",
+      "title": "Computer Networks",
+      "description": "Learn computer networking fundamentals, OSI & TCP/IP models, routing, switching, protocols, network security, and advanced distributed systems concepts.",
+      "time": "6-10 months"
+    },
+    "beginner": {
+      "title": "Computer Networks Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to Networking",
+          "topics": [
+            "What is a Computer Network?",
+            "Types of Networks (LAN, WAN, MAN, PAN)",
+            "Network Topologies (Bus, Star, Ring, Mesh, Hybrid)",
+            "Networking Devices (Switch, Router, Hub, Bridge, Modem)",
+            "Bandwidth, Latency, and Throughput"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Network Models",
+          "topics": [
+            "OSI Model Layers",
+            "TCP/IP Model",
+            "Encapsulation & Decapsulation",
+            "Comparison of OSI and TCP/IP",
+            "Protocols and Standards (IETF, IEEE)"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Data Transmission",
+          "topics": [
+            "Analog vs Digital Transmission",
+            "Transmission Modes (Simplex, Half-Duplex, Full-Duplex)",
+            "Error Detection (Parity, CRC, Checksums)",
+            "Error Correction (Hamming Code)",
+            "Flow Control & Congestion Control Basics"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Computer Networks Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Data Link Layer",
+          "topics": [
+            "Framing & Error Control",
+            "Media Access Control (MAC)",
+            "Ethernet (IEEE 802.3)",
+            "Switching Techniques (Circuit, Packet, Message)",
+            "ARP (Address Resolution Protocol)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Network Layer",
+          "topics": [
+            "IPv4 Addressing & Subnetting",
+            "IPv6 Fundamentals",
+            "Routing Algorithms (Distance Vector, Link State)",
+            "NAT (Network Address Translation)",
+            "ICMP & IP Fragmentation"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Transport Layer",
+          "topics": [
+            "TCP vs UDP",
+            "3-Way Handshake & Connection Management",
+            "Flow Control & Sliding Window",
+            "Congestion Control (AIMD, Slow Start, Fast Retransmit)",
+            "Socket Programming Basics"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Application Layer",
+          "topics": [
+            "DNS (Domain Name System)",
+            "HTTP/HTTPS",
+            "FTP, SMTP, POP3, IMAP",
+            "DHCP (Dynamic Host Configuration Protocol)",
+            "Remote Login (SSH, Telnet)"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Computer Networks Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Routing & Switching",
+          "topics": [
+            "Static vs Dynamic Routing",
+            "RIP, OSPF, BGP Protocols",
+            "Switching Concepts (VLAN, Trunking, STP)",
+            "MPLS (Multiprotocol Label Switching)",
+            "Software Defined Networking (SDN)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Wireless & Mobile Networks",
+          "topics": [
+            "Wi-Fi Standards (IEEE 802.11)",
+            "Cellular Networks (2G, 3G, 4G, 5G)",
+            "Bluetooth, NFC, and IoT Protocols",
+            "Wireless Security (WPA, WPA2, WPA3)",
+            "Ad-Hoc & Mesh Networks"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Network Security",
+          "topics": [
+            "Firewalls & VPNs",
+            "Intrusion Detection & Prevention Systems (IDS/IPS)",
+            "Cryptography Basics (AES, RSA, Diffie-Hellman)",
+            "TLS/SSL Handshake",
+            "DDoS Attacks & Mitigation"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Advanced Networking Concepts",
+          "topics": [
+            "Content Delivery Networks (CDN)",
+            "Peer-to-Peer Networks",
+            "Overlay Networks",
+            "Cloud Networking & Virtualization (VPC, SD-WAN)",
+            "Future of Networking (6G, Quantum Networking)"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    }
   }
 }
+
+
 
 
 
