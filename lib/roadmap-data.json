@@ -2607,8 +2607,173 @@
         }
       ]
     }
+  },
+
+
+
+  
+  "ai_llms": {
+    "meta": {
+      "icon": "FaRobot",
+      "title": "AI & LLMs",
+      "description": "Master Artificial Intelligence, Machine Learning, Deep Learning, and Large Language Models (LLMs) including transformers, fine-tuning, and deployment.",
+      "time": "9-18 months"
+    },
+    "beginner": {
+      "title": "AI & LLMs Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to AI",
+          "topics": [
+            "What is Artificial Intelligence?",
+            "AI vs Machine Learning vs Deep Learning",
+            "Applications of AI in Real Life",
+            "Ethics in AI & Bias Issues"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Mathematics for AI",
+          "topics": [
+            "Linear Algebra Basics (Vectors, Matrices)",
+            "Calculus for Optimization (Derivatives, Gradients)",
+            "Probability & Statistics",
+            "Discrete Math Basics"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Python for AI",
+          "topics": [
+            "Numpy & Pandas",
+            "Data Visualization (Matplotlib, Seaborn)",
+            "Scikit-learn Basics",
+            "Jupyter Notebooks"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Machine Learning Fundamentals",
+          "topics": [
+            "Supervised vs Unsupervised Learning",
+            "Linear & Logistic Regression",
+            "Decision Trees & Random Forests",
+            "Clustering (K-Means, Hierarchical)",
+            "Evaluation Metrics (Accuracy, Precision, Recall, F1)"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "AI & LLMs Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Neural Networks & Deep Learning",
+          "topics": [
+            "Introduction to Neural Networks",
+            "Activation Functions",
+            "Forward & Backpropagation",
+            "Gradient Descent & Optimization",
+            "Regularization & Dropout",
+            "Frameworks: TensorFlow & PyTorch"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Computer Vision & NLP Basics",
+          "topics": [
+            "Image Classification with CNNs",
+            "Data Augmentation",
+            "Text Preprocessing (Tokenization, Stemming, Lemmatization)",
+            "Word Embeddings (Word2Vec, GloVe)",
+            "Sentiment Analysis"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Sequence Models",
+          "topics": [
+            "RNN Basics",
+            "LSTMs & GRUs",
+            "Sequence-to-Sequence Models",
+            "Applications: Translation, Chatbots"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Transformers & Attention",
+          "topics": [
+            "Attention Mechanism",
+            "Self-Attention",
+            "Transformer Architecture",
+            "BERT & GPT Basics"
+          ],
+          "time": "4 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "AI & LLMs Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Large Language Models (LLMs)",
+          "topics": [
+            "Pretraining vs Fine-tuning",
+            "Prompt Engineering",
+            "Transfer Learning in NLP",
+            "LoRA (Low-Rank Adaptation)",
+            "Instruction Tuning & RLHF (Reinforcement Learning from Human Feedback)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Advanced Model Architectures",
+          "topics": [
+            "GPT Family (GPT-2, GPT-3, GPT-4+)",
+            "BERT Variants (RoBERTa, DistilBERT, ALBERT)",
+            "T5 & Seq2Seq Transformers",
+            "Mixtral & Mixture of Experts (MoE)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Model Deployment & Scaling",
+          "topics": [
+            "Exporting Models (ONNX, TorchScript)",
+            "Serving with FastAPI & Flask",
+            "Using Hugging Face Transformers",
+            "Scaling with Kubernetes & Docker",
+            "GPU/TPU Optimization"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Ethics, Safety & Responsible AI",
+          "topics": [
+            "Bias & Fairness in AI",
+            "Explainability (XAI)",
+            "Adversarial Attacks & Defenses",
+            "Privacy Preserving AI (Federated Learning, Differential Privacy)",
+            "AI Regulations & Governance"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Cutting Edge Research",
+          "topics": [
+            "Multimodal Models (CLIP, DALL·E, Gemini)",
+            "Self-Supervised Learning",
+            "Reinforcement Learning with Transformers",
+            "Autonomous Agents (AutoGPT, LangChain)"
+          ],
+          "time": "4 weeks"
+        }
+      ]
+    }
   }
 }
+
 
 
 
