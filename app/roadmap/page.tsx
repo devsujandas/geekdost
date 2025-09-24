@@ -12,21 +12,23 @@ export default function RoadmapSubjectsPage() {
     <PageLayout>
       {/* Hero Section */}
       <section className="relative overflow-hidden py-16 px-4">
-        <div className="container mx-auto max-w-5xl relative z-10">
+        <div className="container mx-auto max-w-6xl relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-12"
+            className="mb-12"
           >
-            <h1 className="text-4xl md:text-5xl font-extrabold text-primary mb-4">
-              Choose a Subject
-            </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Explore detailed roadmaps for programming languages and subjects.
-              Start your journey from Beginner, grow to Intermediate, and
-              master Advanced concepts.
-            </p>
+            <div className="p-8 rounded-xl border border-border bg-card/60 shadow-md text-center">
+              <h1 className="text-4xl md:text-5xl font-extrabold text-primary mb-4">
+                Choose a Subject
+              </h1>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Explore detailed roadmaps for programming languages and core CS
+                subjects. Start your journey at Beginner level, grow to
+                Intermediate, and finally master Advanced concepts.
+              </p>
+            </div>
           </motion.div>
 
           {/* Subjects Grid */}
@@ -34,7 +36,7 @@ export default function RoadmapSubjectsPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
           >
             {subjects.map((subject, index) => (
               <motion.div

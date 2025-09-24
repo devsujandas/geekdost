@@ -1,31 +1,62 @@
 import data from "./roadmap-data.json"
 
-//  Each topic section inside a chapter
+// 🔹 Topic list inside a chapter
 export interface RoadmapTopic {
   title: string
   topics: string[]
+  time?: string
 }
 
-//  A level (Beginner, Intermediate, Advanced) with multiple chapters
+// 🔹 Each level roadmap (Beginner, Intermediate, Advanced)
 export interface RoadmapLevel {
   title: string
   chapters: RoadmapTopic[]
 }
 
-//  Full data type: subject -> level -> roadmap
-export const roadmapData: Record<string, Record<string, RoadmapLevel>> = data
+// 🔹 Meta info for each subject
+export interface RoadmapMeta {
+  icon: string
+  description: string
+  time: string
+}
 
-//  Get all subjects (Python, Java, etc.)
+// 🔹 Subject data type
+export interface RoadmapSubject {
+  meta: RoadmapMeta
+  beginner?: RoadmapLevel
+  intermediate?: RoadmapLevel
+  advanced?: RoadmapLevel
+}
+
+// 🔹 All data
+export const roadmapData: Record<string, RoadmapSubject> = data as Record<
+  string,
+  RoadmapSubject
+>
+
+// ✅ Get all subjects
 export function getSubjects(): string[] {
   return Object.keys(roadmapData)
 }
 
-//  Get levels for a subject (Beginner, Intermediate, Advanced)
-export function getLevels(subject: string): string[] {
-  return roadmapData[subject] ? Object.keys(roadmapData[subject]) : []
+// ✅ Get meta info for a subject
+export function getMeta(subject: string): RoadmapMeta | null {
+  return roadmapData[subject]?.meta || null
 }
 
-// Get specific roadmap for subject + level
-export function getRoadmap(subject: string, level: string): RoadmapLevel | null {
-  return roadmapData[subject]?.[level] || null
+// ✅ Get levels for a subject (excluding meta)
+export function getLevels(subject: string): string[] {
+  return roadmapData[subject]
+    ? Object.keys(roadmapData[subject]).filter((key) => key !== "meta")
+    : []
+}
+
+// ✅ Get full roadmap for subject + level
+export function getRoadmap(
+  subject: string,
+  level: string
+): RoadmapLevel | null {
+  const subjectData = roadmapData[subject]
+  if (!subjectData) return null
+  return subjectData[level as keyof RoadmapSubject] as RoadmapLevel
 }

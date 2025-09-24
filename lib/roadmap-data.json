@@ -1,23 +1,89 @@
 {
   "python": {
+    "meta": {
+      "icon": "FaPython",
+      "description": "A beginner-friendly language for data, AI, and web development.",
+      "time": "6-12 months"
+    },
     "beginner": {
       "title": "Python Roadmap - Beginner",
       "chapters": [
         {
           "title": "Introduction",
-          "topics": ["What is Python?", "Install Python", "Hello World", "Python Interpreter & REPL", "Basic Syntax & Indentation"]
+          "topics": [
+            "What is Python?",
+            "Install Python",
+            "Hello World",
+            "Python Interpreter & REPL",
+            "Basic Syntax & Indentation",
+            "Comments in Python"
+          ],
+          "time": "1 week"
         },
         {
           "title": "Data Types & Variables",
-          "topics": ["Numbers & Math", "Strings & String Methods", "Booleans", "Lists", "Tuples", "Sets", "Dictionaries", "Type Conversion"]
+          "topics": [
+            "Numbers & Math",
+            "Strings & String Methods",
+            "Booleans",
+            "Lists",
+            "Tuples",
+            "Sets",
+            "Dictionaries",
+            "Type Conversion",
+            "Variables & Constants",
+            "f-Strings & String Formatting"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Operators & Expressions",
+          "topics": [
+            "Arithmetic Operators",
+            "Comparison Operators",
+            "Logical Operators",
+            "Bitwise Operators",
+            "Assignment Operators",
+            "Membership & Identity Operators",
+            "Operator Precedence"
+          ],
+          "time": "1 week"
         },
         {
           "title": "Control Flow",
-          "topics": ["If-Else Statements", "For Loops", "While Loops", "Loop Control (break, continue, pass)", "List Comprehensions"]
+          "topics": [
+            "If-Else Statements",
+            "Nested Conditions",
+            "For Loops",
+            "While Loops",
+            "Loop Control (break, continue, pass)",
+            "List Comprehensions",
+            "Ternary Operator"
+          ],
+          "time": "2 weeks"
         },
         {
           "title": "Functions",
-          "topics": ["Defining Functions", "Arguments & Return Values", "Default & Keyword Arguments", "Lambda Functions", "Scope & Global Variables"]
+          "topics": [
+            "Defining Functions",
+            "Arguments & Return Values",
+            "Default & Keyword Arguments",
+            "Variable-Length Arguments (*args, **kwargs)",
+            "Lambda Functions",
+            "Scope & Global Variables",
+            "Docstrings"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Basic Data Handling",
+          "topics": [
+            "Input & Output",
+            "Reading User Input",
+            "Printing with Formatting",
+            "Basic Error Handling"
+          ],
+          "time": "1 week"
         }
       ]
     },
@@ -26,19 +92,64 @@
       "chapters": [
         {
           "title": "Object-Oriented Programming",
-          "topics": ["Classes & Objects", "Constructors (__init__)", "Methods", "Inheritance", "Polymorphism", "Encapsulation"]
+          "topics": [
+            "Classes & Objects",
+            "Constructors (__init__)",
+            "Instance vs Class Variables",
+            "Instance, Class & Static Methods",
+            "Inheritance",
+            "Multiple Inheritance",
+            "Polymorphism",
+            "Encapsulation",
+            "Magic/Dunder Methods (__str__, __len__, etc.)"
+          ],
+          "time": "3 weeks"
         },
         {
           "title": "Modules & Packages",
-          "topics": ["Importing Modules", "Creating Modules", "Using Packages", "Virtual Environments", "Pip & Package Management"]
+          "topics": [
+            "Importing Modules",
+            "Creating Custom Modules",
+            "Using Built-in Modules (math, os, sys, random)",
+            "Packages & __init__.py",
+            "Virtual Environments",
+            "Pip & Package Management"
+          ],
+          "time": "2 weeks"
         },
         {
           "title": "File Handling",
-          "topics": ["Reading & Writing Files", "Working with CSV & JSON", "Exception Handling", "With Context Manager"]
+          "topics": [
+            "Reading & Writing Files",
+            "Working with Text Files",
+            "Working with CSV & JSON",
+            "With Context Manager",
+            "Pickle Module (Serialization)"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Error & Exception Handling",
+          "topics": [
+            "Try, Except, Finally",
+            "Multiple Exceptions",
+            "Raising Exceptions",
+            "Custom Exceptions",
+            "Best Practices"
+          ],
+          "time": "1 week"
         },
         {
           "title": "Libraries & Tools",
-          "topics": ["NumPy Basics", "Pandas Basics", "Matplotlib Visualization", "Requests (API calls)"]
+          "topics": [
+            "NumPy Basics",
+            "Pandas Basics",
+            "Matplotlib Visualization",
+            "Seaborn Basics",
+            "Requests (API calls)",
+            "BeautifulSoup (Web Scraping)"
+          ],
+          "time": "3 weeks"
         }
       ]
     },
@@ -47,43 +158,110 @@
       "chapters": [
         {
           "title": "Advanced OOP",
-          "topics": ["Class vs Static Methods", "Decorators", "Iterators", "Generators", "Metaclasses"]
+          "topics": [
+            "Class vs Static Methods",
+            "Decorators",
+            "Property Decorators (Getters & Setters)",
+            "Iterators",
+            "Generators & yield",
+            "Context Managers (with __enter__ and __exit__)",
+            "Metaclasses"
+          ],
+          "time": "3 weeks"
         },
         {
           "title": "Functional Programming",
-          "topics": ["Map, Filter, Reduce", "Closures", "Higher-Order Functions"]
+          "topics": [
+            "Map, Filter, Reduce",
+            "Closures",
+            "Higher-Order Functions",
+            "Functools Module",
+            "itertools Module"
+          ],
+          "time": "2 weeks"
         },
         {
           "title": "Concurrency & Parallelism",
-          "topics": ["Multithreading", "Multiprocessing", "AsyncIO", "Concurrent Futures"]
+          "topics": [
+            "Multithreading",
+            "Multiprocessing",
+            "AsyncIO",
+            "Concurrent Futures",
+            "ThreadPoolExecutor & ProcessPoolExecutor"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Database & Persistence",
+          "topics": [
+            "SQLite with Python",
+            "MySQL/PostgreSQL Connector",
+            "ORM with SQLAlchemy",
+            "NoSQL with MongoDB"
+          ],
+          "time": "2 weeks"
         },
         {
           "title": "Web Development",
-          "topics": ["Flask Basics", "Django Framework", "FastAPI", "REST APIs"]
+          "topics": [
+            "Flask Basics",
+            "Flask Routing & Templates",
+            "Django Framework Basics",
+            "Django Models & ORM",
+            "FastAPI Basics",
+            "Building REST APIs"
+          ],
+          "time": "4 weeks"
         },
         {
           "title": "Testing & Deployment",
-          "topics": ["PyTest & Unit Testing", "Logging & Debugging", "Packaging Projects", "Docker Basics", "CI/CD Pipelines"]
+          "topics": [
+            "Unit Testing with unittest",
+            "PyTest Framework",
+            "Logging & Debugging",
+            "Packaging Projects (setup.py, pyproject.toml)",
+            "Virtual Environments Best Practices",
+            "Docker Basics",
+            "CI/CD Pipelines (GitHub Actions, Jenkins)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Data Science & AI (Optional Advanced Track)",
+          "topics": [
+            "Exploratory Data Analysis with Pandas",
+            "Data Visualization with Matplotlib & Seaborn",
+            "Machine Learning with Scikit-Learn",
+            "Deep Learning with TensorFlow/Keras",
+            "Natural Language Processing with NLTK/Spacy"
+          ],
+          "time": "6-8 weeks"
         }
       ]
     }
   },
 
+
+
   "java": {
+    "meta": {
+      "icon": "FaJava",
+      "description": "Powerful OOP language used in backend and enterprise apps.",
+      "time": "4-7 months"
+    },
     "beginner": {
       "title": "Java Roadmap - Beginner",
       "chapters": [
         {
           "title": "Setup & Basics",
-          "topics": ["Install JDK", "IDE Setup (IntelliJ/Eclipse)", "Hello World Program", "Java Syntax & Structure", "Data Types & Variables"]
-        },
-        {
-          "title": "Operators & Control Flow",
-          "topics": ["Arithmetic & Logical Operators", "If-Else Statements", "Switch Case", "For & While Loops", "Break & Continue"]
-        },
-        {
-          "title": "Methods & Arrays",
-          "topics": ["Defining Methods", "Parameters & Return Values", "Method Overloading", "1D & 2D Arrays", "Enhanced For Loop"]
+          "topics": [
+            "Install JDK",
+            "IDE Setup (IntelliJ/Eclipse)",
+            "Hello World Program",
+            "Java Syntax & Structure",
+            "Data Types & Variables"
+          ],
+          "time": "2 weeks"
         }
       ]
     },
@@ -91,16 +269,9 @@
       "title": "Java Roadmap - Intermediate",
       "chapters": [
         {
-          "title": "Object-Oriented Programming",
-          "topics": ["Classes & Objects", "Constructors", "Inheritance", "Polymorphism", "Abstract Classes", "Interfaces"]
-        },
-        {
           "title": "Java Collections",
-          "topics": ["ArrayList", "LinkedList", "HashMap", "HashSet", "Iterators"]
-        },
-        {
-          "title": "Exception Handling & File I/O",
-          "topics": ["Try-Catch-Finally", "Throw & Throws", "Checked vs Unchecked Exceptions", "FileReader & FileWriter", "Serialization"]
+          "topics": ["ArrayList", "LinkedList", "HashMap", "HashSet", "Iterators"],
+          "time": "3 weeks"
         }
       ]
     },
@@ -108,70 +279,105 @@
       "title": "Java Roadmap - Advanced",
       "chapters": [
         {
-          "title": "Advanced Concepts",
-          "topics": ["Generics", "Annotations", "Enums", "Java Streams API", "Lambda Expressions"]
-        },
-        {
-          "title": "Multithreading & Concurrency",
-          "topics": ["Thread Class & Runnable Interface", "Synchronization", "Executor Framework", "Concurrent Collections"]
-        },
-        {
-          "title": "Frameworks & Enterprise",
-          "topics": ["Spring Boot", "Spring Data JPA", "Spring Security", "REST APIs", "Hibernate ORM"]
-        },
-        {
-          "title": "Build & Deployment",
-          "topics": ["Maven/Gradle", "JUnit Testing", "Logging", "Docker for Java", "CI/CD with Jenkins"]
+          "title": "Spring Boot & Deployment",
+          "topics": [
+            "Spring Boot",
+            "Spring Data JPA",
+            "REST APIs",
+            "Hibernate ORM",
+            "CI/CD"
+          ],
+          "time": "5 weeks"
         }
       ]
     }
   },
 
   "c-programming": {
+    "meta": {
+      "icon": "SiC",
+      "description": "Low-level programming language for system-level coding.",
+      "time": "2-4 months"
+    },
     "beginner": { "title": "C Roadmap - Beginner", "chapters": [] },
     "intermediate": { "title": "C Roadmap - Intermediate", "chapters": [] },
     "advanced": { "title": "C Roadmap - Advanced", "chapters": [] }
   },
 
   "cpp": {
+    "meta": {
+      "icon": "SiCplusplus",
+      "description": "C++ for competitive programming, OOP, and performance apps.",
+      "time": "3-6 months"
+    },
     "beginner": { "title": "C++ Roadmap - Beginner", "chapters": [] },
     "intermediate": { "title": "C++ Roadmap - Intermediate", "chapters": [] },
     "advanced": { "title": "C++ Roadmap - Advanced", "chapters": [] }
   },
 
   "javascript": {
+    "meta": {
+      "icon": "SiJavascript",
+      "description": "The language of the web. Core for frontend and backend.",
+      "time": "2-5 months"
+    },
     "beginner": { "title": "JavaScript Roadmap - Beginner", "chapters": [] },
     "intermediate": { "title": "JavaScript Roadmap - Intermediate", "chapters": [] },
     "advanced": { "title": "JavaScript Roadmap - Advanced", "chapters": [] }
   },
 
   "web-development": {
-    "beginner": { "title": "Web Development Roadmap - Beginner", "chapters": [] },
-    "intermediate": { "title": "Web Development Roadmap - Intermediate", "chapters": [] },
-    "advanced": { "title": "Web Development Roadmap - Advanced", "chapters": [] }
+    "meta": {
+      "icon": "FaGlobe",
+      "description": "Full stack roadmap with frontend, backend, and deployment.",
+      "time": "6-12 months"
+    },
+    "beginner": { "title": "Web Dev Roadmap - Beginner", "chapters": [] },
+    "intermediate": { "title": "Web Dev Roadmap - Intermediate", "chapters": [] },
+    "advanced": { "title": "Web Dev Roadmap - Advanced", "chapters": [] }
   },
 
   "data-science": {
+    "meta": {
+      "icon": "SiNumpy",
+      "description": "Python, Pandas, Machine Learning, and visualization.",
+      "time": "6-12 months"
+    },
     "beginner": { "title": "Data Science Roadmap - Beginner", "chapters": [] },
     "intermediate": { "title": "Data Science Roadmap - Intermediate", "chapters": [] },
     "advanced": { "title": "Data Science Roadmap - Advanced", "chapters": [] }
   },
 
   "machine-learning": {
+    "meta": {
+      "icon": "SiTensorflow",
+      "description": "AI, Deep Learning, and Neural Networks explained.",
+      "time": "8-15 months"
+    },
     "beginner": { "title": "Machine Learning Roadmap - Beginner", "chapters": [] },
     "intermediate": { "title": "Machine Learning Roadmap - Intermediate", "chapters": [] },
     "advanced": { "title": "Machine Learning Roadmap - Advanced", "chapters": [] }
   },
 
   "sql-databases": {
-    "beginner": { "title": "SQL & Databases Roadmap - Beginner", "chapters": [] },
-    "intermediate": { "title": "SQL & Databases Roadmap - Intermediate", "chapters": [] },
-    "advanced": { "title": "SQL & Databases Roadmap - Advanced", "chapters": [] }
+    "meta": {
+      "icon": "FaDatabase",
+      "description": "Master relational databases, queries, and transactions.",
+      "time": "2-4 months"
+    },
+    "beginner": { "title": "SQL Roadmap - Beginner", "chapters": [] },
+    "intermediate": { "title": "SQL Roadmap - Intermediate", "chapters": [] },
+    "advanced": { "title": "SQL Roadmap - Advanced", "chapters": [] }
   },
 
   "dsa": {
-    "beginner": { "title": "Data Structures & Algorithms Roadmap - Beginner", "chapters": [] },
-    "intermediate": { "title": "Data Structures & Algorithms Roadmap - Intermediate", "chapters": [] },
-    "advanced": { "title": "Data Structures & Algorithms Roadmap - Advanced", "chapters": [] }
+    "meta": {
+      "icon": "FaProjectDiagram",
+      "description": "Data structures & algorithms for coding interviews.",
+      "time": "4-8 months"
+    },
+    "beginner": { "title": "DSA Roadmap - Beginner", "chapters": [] },
+    "intermediate": { "title": "DSA Roadmap - Intermediate", "chapters": [] },
+    "advanced": { "title": "DSA Roadmap - Advanced", "chapters": [] }
   }
 }

@@ -1,22 +1,23 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { FaMapMarkerAlt } from "react-icons/fa"
+import { FaMapMarkerAlt, FaClock } from "react-icons/fa"
 
 interface RoadmapStepProps {
   index: number
   title: string
   topics: string[]
+  time?: string
 }
 
-export function RoadmapStep({ index, title, topics }: RoadmapStepProps) {
+export function RoadmapStep({ index, title, topics, time }: RoadmapStepProps) {
   const isLeft = index % 2 === 0
 
   return (
     <motion.div
       initial={{ opacity: 0, x: isLeft ? -120 : 120 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.3 }}
+      transition={{ duration: 0.6, delay: index * 0.25 }}
       viewport={{ once: true }}
       className="relative flex w-full"
     >
@@ -25,55 +26,53 @@ export function RoadmapStep({ index, title, topics }: RoadmapStepProps) {
         initial={{ scale: 0, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{
-          duration: 0.6,
-          delay: index * 0.3 + 0.5,
+          duration: 0.5,
+          delay: index * 0.25 + 0.4,
           type: "spring",
         }}
         viewport={{ once: true }}
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
       >
-        <div className="w-14 h-14 rounded-full bg-gradient-to-r from-primary to-purple-600 text-white flex items-center justify-center shadow-[0_0_15px_rgba(139,92,246,0.9)] border-4 border-background animate-pulse">
-          <FaMapMarkerAlt className="w-6 h-6" />
+        <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-md border-4 border-background">
+          <FaMapMarkerAlt className="w-5 h-5" />
         </div>
       </motion.div>
 
       {/* ─ Connector line */}
-      <motion.div
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        transition={{
-          duration: 0.6,
-          delay: index * 0.3 + 0.2,
-        }}
-        viewport={{ once: true }}
-        className={`absolute top-1/2 h-0.5 bg-primary/50 ${
-          isLeft
-            ? "left-1/2 -translate-x-full w-16 origin-right"
-            : "right-1/2 translate-x-full w-16 origin-left"
-        }`}
+      <div
+        className={`absolute top-1/2 h-0.5 bg-border 
+        ${isLeft ? "left-1/2 -translate-x-full w-16" : "right-1/2 translate-x-full w-16"}`}
       />
 
       {/* 🪧 Info Card */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.6,
-          delay: index * 0.3 + 0.6,
-        }}
+        transition={{ duration: 0.5, delay: index * 0.25 + 0.5 }}
         viewport={{ once: true }}
-        className={`w-80 p-6 rounded-xl backdrop-blur-md bg-gradient-to-b from-white/10 to-white/5 border border-primary/30 shadow-lg hover:shadow-primary/50 transition ${
-          isLeft ? "mr-auto text-left" : "ml-auto text-right"
-        }`}
+        className={`w-80 p-6 rounded-xl bg-card border border-border shadow-md hover:shadow-lg transition
+          ${isLeft ? "mr-auto" : "ml-auto"}
+        `}
       >
-        <h3 className="text-lg font-bold text-primary mb-2">
+        {/* Title */}
+        <h3 className="text-lg font-bold text-primary mb-3">
           {index + 1 < 10 ? `0${index + 1}` : index + 1}. {title}
         </h3>
-        <ul className="text-sm text-muted-foreground space-y-1">
+
+        {/* Topics */}
+        <ul className="text-sm text-muted-foreground space-y-1 text-left">
           {topics.map((t, i) => (
             <li key={i}>• {t}</li>
           ))}
         </ul>
+
+        {/* Time */}
+        {time && (
+          <div className="flex items-center gap-2 mt-4 text-xs font-medium text-muted-foreground justify-start">
+            <FaClock className="h-3 w-3 text-primary" />
+            <span>{time}</span>
+          </div>
+        )}
       </motion.div>
     </motion.div>
   )
