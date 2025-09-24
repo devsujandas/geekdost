@@ -4,7 +4,13 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { use } from "react"
 import { getLevels, getMeta } from "@/lib/roadmap-data"
-import { FaArrowLeft, FaBaby, FaUserGraduate, FaCrown, FaRegClock } from "react-icons/fa"
+import {
+  FaArrowLeft,
+  FaBaby,
+  FaUserGraduate,
+  FaCrown,
+  FaRegClock,
+} from "react-icons/fa"
 
 interface LevelInfo {
   icon: React.ReactNode
@@ -88,10 +94,10 @@ export default function SubjectPage({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.6 }}
-        // ✅ always 3 per row from md breakpoint
-        className="max-w-5xl mx-auto grid gap-6 grid-cols-1 md:grid-cols-3"
+        // ✅ Mobile = 1 card, Tablet = 2 card, Desktop+ = 3 card
+        className="max-w-5xl mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
       >
-        {levels.map((level, idx) => {
+        {levels.map((level) => {
           const config = levelConfig[level] || {
             icon: <FaUserGraduate className="w-5 h-5" />,
             color: "border-gray-500/40 hover:border-gray-500/60",
