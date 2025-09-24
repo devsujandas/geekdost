@@ -4000,8 +4000,180 @@
         }
       ]
     }
+  },
+
+
+
+
+  
+  "system_design": {
+    "meta": {
+      "icon": "FaSitemap",
+      "title": "System Design",
+      "description": "Learn how to design scalable, reliable, and efficient systems. Covers fundamentals, distributed systems, scalability patterns, and real-world case studies.",
+      "time": "6-12 months"
+    },
+    "beginner": {
+      "title": "System Design Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to System Design",
+          "topics": [
+            "What is System Design?",
+            "System Design vs Software Design",
+            "Why System Design Matters",
+            "Types of System Design (High-Level, Low-Level)",
+            "Interview Expectations"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Core Fundamentals",
+          "topics": [
+            "Client-Server Architecture",
+            "HTTP Basics",
+            "DNS & How the Web Works",
+            "IP, TCP, UDP Overview",
+            "Sockets & APIs"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Scalability Basics",
+          "topics": [
+            "Vertical vs Horizontal Scaling",
+            "Throughput, Latency & Availability",
+            "Load Balancers Basics",
+            "Content Delivery Networks (CDNs)",
+            "Caching Basics"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Databases Overview",
+          "topics": [
+            "SQL vs NoSQL",
+            "Relational DB Fundamentals",
+            "Indexes & Query Optimization",
+            "Key-Value Stores",
+            "CAP Theorem Basics"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "System Design Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Distributed Systems",
+          "topics": [
+            "What is a Distributed System?",
+            "Replication & Sharding",
+            "Consistency Models",
+            "Leader Election & Consensus",
+            "Eventual Consistency"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Scalability Patterns",
+          "topics": [
+            "Load Balancing Strategies",
+            "Database Sharding",
+            "Message Queues & Pub/Sub",
+            "Rate Limiting & Throttling",
+            "API Gateway Basics"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Caching & Storage",
+          "topics": [
+            "Types of Caching (Client, CDN, DB)",
+            "Redis & Memcached Basics",
+            "Write-Through, Write-Back Caches",
+            "Object Storage (S3, MinIO)",
+            "Blob Storage & File Systems"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Reliability & Fault Tolerance",
+          "topics": [
+            "High Availability",
+            "Failover Mechanisms",
+            "Data Replication",
+            "Disaster Recovery Strategies",
+            "Monitoring & Alerting"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "System Design Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Advanced Distributed Systems",
+          "topics": [
+            "CAP Theorem Deep Dive",
+            "Paxos & Raft Consensus",
+            "Distributed Transactions",
+            "Event Sourcing & CQRS",
+            "Vector Clocks & Lamport Timestamps"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Microservices & Architecture Patterns",
+          "topics": [
+            "Monolithic vs Microservices",
+            "Service Discovery",
+            "API Gateway Patterns",
+            "Circuit Breaker Pattern",
+            "Event-Driven Architecture"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Performance & Optimization",
+          "topics": [
+            "CDN Advanced Usage",
+            "Database Indexing & Partitioning",
+            "Query Optimization",
+            "Performance Benchmarking",
+            "Scalability Testing"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Security & System Design",
+          "topics": [
+            "Authentication & Authorization",
+            "OAuth 2.0 & JWT",
+            "Data Encryption (at rest & in transit)",
+            "Rate Limiting for Security",
+            "DDoS Protection Strategies"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Case Studies",
+          "topics": [
+            "Design a URL Shortener",
+            "Design Instagram",
+            "Design WhatsApp",
+            "Design YouTube",
+            "Design Payment System"
+          ],
+          "time": "4 weeks"
+        }
+      ]
+    }
   }
 }
+
 
 
 
