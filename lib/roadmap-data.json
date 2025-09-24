@@ -4341,8 +4341,157 @@
         }
       ]
     }
+  },
+
+
+
+  
+  "compiler_design": {
+    "meta": {
+      "icon": "SiCompilerexplorer",
+      "title": "Compiler Design",
+      "description": "Learn how compilers translate high-level code into machine code. Covers lexical analysis, parsing, semantic analysis, intermediate code generation, optimization, and runtime environments.",
+      "time": "5-9 months"
+    },
+    "beginner": {
+      "title": "Compiler Design Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to Compilers",
+          "topics": [
+            "What is a Compiler?",
+            "Phases of a Compiler",
+            "Compiler vs Interpreter",
+            "Bootstrapping Compilers",
+            "Structure of a Typical Compiler"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Lexical Analysis",
+          "topics": [
+            "Role of Lexical Analyzer",
+            "Tokens, Lexemes, Patterns",
+            "Regular Expressions Basics",
+            "Finite Automata (DFA & NFA)",
+            "Lexical Errors & Recovery"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Syntax Analysis (Parsing)",
+          "topics": [
+            "Context-Free Grammar",
+            "Parse Trees & Derivations",
+            "Top-Down Parsing",
+            "Bottom-Up Parsing",
+            "Error Handling in Parsing"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Compiler Design Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Advanced Parsing Techniques",
+          "topics": [
+            "LL(1) Parsing",
+            "LR Parsing (SLR, LALR, Canonical LR)",
+            "Recursive Descent Parsing",
+            "Shift-Reduce Conflicts",
+            "Parser Generators (YACC, Bison)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Semantic Analysis",
+          "topics": [
+            "Role of Semantic Analyzer",
+            "Type Checking",
+            "Scope & Symbol Table Management",
+            "Attribute Grammars",
+            "Semantic Errors"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Intermediate Code Generation",
+          "topics": [
+            "Three Address Code (TAC)",
+            "Syntax-Directed Translation",
+            "Postfix Notation",
+            "Abstract Syntax Tree (AST)",
+            "Control Flow Graphs"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Runtime Environment",
+          "topics": [
+            "Runtime Memory Organization",
+            "Activation Records & Call Stack",
+            "Parameter Passing Methods",
+            "Heap Management",
+            "Garbage Collection Techniques"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Compiler Design Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Code Optimization",
+          "topics": [
+            "Need for Optimization",
+            "Peephole Optimization",
+            "Loop Optimization",
+            "Data Flow Analysis",
+            "Dead Code Elimination"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Code Generation",
+          "topics": [
+            "Target Code Generation",
+            "Register Allocation",
+            "Instruction Scheduling",
+            "Handling Machine-Specific Issues",
+            "Code Emission"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Advanced Compiler Techniques",
+          "topics": [
+            "Just-In-Time Compilation (JIT)",
+            "Dynamic Compilation",
+            "Parallelizing Compilers",
+            "Optimizing for Modern Architectures",
+            "Domain-Specific Language (DSL) Compilers"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Case Studies & Tools",
+          "topics": [
+            "LLVM Compiler Infrastructure",
+            "GCC Internals",
+            "Java Virtual Machine (JVM)",
+            "Python Interpreter (CPython, PyPy)",
+            "WebAssembly Compilation"
+          ],
+          "time": "4 weeks"
+        }
+      ]
+    }
   }
 }
+
 
 
 
