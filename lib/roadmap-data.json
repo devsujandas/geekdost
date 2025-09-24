@@ -2234,8 +2234,196 @@
         }
       ]
     }
+  },
+
+
+
+  
+  "mern_stack": {
+    "meta": {
+      "icon": "SiMongodb",
+      "title": "MERN Stack Development",
+      "description": "Master full-stack development using MongoDB, Express.js, React, and Node.js. Learn to build scalable, production-ready web applications.",
+      "time": "8-12 months"
+    },
+    "beginner": {
+      "title": "MERN Stack Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to MERN",
+          "topics": [
+            "What is the MERN Stack?",
+            "Understanding Client-Server Model",
+            "Why MERN? Advantages & Use Cases",
+            "Setting Up Development Environment (Node.js, npm, VS Code, Git)"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "HTML & CSS Fundamentals",
+          "topics": [
+            "HTML Structure & Semantic Tags",
+            "Text, Links, Lists, Tables, Forms",
+            "CSS Selectors, Colors, Units",
+            "Box Model & Positioning",
+            "Flexbox & Grid",
+            "Responsive Design with Media Queries",
+            "CSS Frameworks (Tailwind, Bootstrap Basics)"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "JavaScript Fundamentals",
+          "topics": [
+            "Variables & Data Types",
+            "Operators & Control Flow",
+            "Loops & Functions",
+            "Arrays & Objects",
+            "DOM Manipulation",
+            "Events",
+            "ES6 Features (let, const, arrow functions, template literals)",
+            "Basic Debugging"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Git & GitHub",
+          "topics": [
+            "Introduction to Version Control",
+            "Basic Git Commands",
+            "Branches & Merging",
+            "Working with Remote Repositories",
+            "GitHub Workflow (Fork, Pull Request)"
+          ],
+          "time": "1 week"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "MERN Stack Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Advanced JavaScript & ES6+",
+          "topics": [
+            "Functions & Scope",
+            "Higher-Order Functions",
+            "Closures",
+            "Async JS (Callbacks, Promises, async/await)",
+            "Modules (import/export)",
+            "Error Handling",
+            "LocalStorage & SessionStorage",
+            "Fetch API & AJAX"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "React.js Fundamentals",
+          "topics": [
+            "Introduction to React & JSX",
+            "Components & Props",
+            "State & Lifecycle",
+            "React Hooks (useState, useEffect, useContext)",
+            "Forms & Controlled Components",
+            "React Router (Navigation & Routing)",
+            "Lists & Keys",
+            "Conditional Rendering"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Node.js & Express.js Basics",
+          "topics": [
+            "Introduction to Node.js",
+            "npm & Package.json",
+            "Modules & require/import",
+            "Building a Basic Server",
+            "Express.js Basics (Routing, Middleware)",
+            "Handling Requests & Responses",
+            "REST API Basics (GET, POST, PUT, DELETE)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "MongoDB Basics",
+          "topics": [
+            "Introduction to NoSQL & MongoDB",
+            "CRUD Operations",
+            "Data Modeling & Schema Design",
+            "Indexes",
+            "Working with Mongo Shell & Compass",
+            "Connecting Node.js with MongoDB (Mongoose)"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "MERN Stack Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Advanced React.js",
+          "topics": [
+            "React Context API",
+            "State Management with Redux Toolkit",
+            "Custom Hooks",
+            "Performance Optimization (memo, useCallback, useMemo)",
+            "Code Splitting & Lazy Loading",
+            "Testing React Apps (Jest, React Testing Library)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Advanced Node.js & Express.js",
+          "topics": [
+            "Middleware Deep Dive",
+            "Authentication & Authorization (JWT, OAuth)",
+            "File Uploads & Multer",
+            "Error Handling & Logging",
+            "Environment Variables & Config",
+            "Security Best Practices (Helmet, Rate Limiting, CORS)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Full-Stack Integration",
+          "topics": [
+            "Connecting React Frontend to Node.js Backend",
+            "Consuming REST APIs",
+            "Authentication Flow (Login, Register, Protected Routes)",
+            "Role-Based Access Control",
+            "Real-Time Apps with WebSockets (Socket.io)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Deployment & DevOps",
+          "topics": [
+            "Preparing App for Production",
+            "Hosting Frontend (Vercel, Netlify)",
+            "Hosting Backend (Heroku, Render, Railway, AWS EC2)",
+            "MongoDB Atlas Setup",
+            "CI/CD Basics with GitHub Actions",
+            "Dockerizing a MERN App"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Advanced Topics",
+          "topics": [
+            "GraphQL with Apollo",
+            "Microservices Architecture",
+            "Serverless Functions",
+            "Caching with Redis",
+            "Message Queues (RabbitMQ, Kafka Basics)",
+            "Monitoring & Logging Tools (PM2, Winston)"
+          ],
+          "time": "5 weeks"
+        }
+      ]
+    }
   }
 }
+
 
 
 
