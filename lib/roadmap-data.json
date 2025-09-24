@@ -3120,8 +3120,301 @@
         }
       ]
     }
+  },
+
+
+
+  
+  "operating_system": {
+    "meta": {
+      "icon": "FaDesktop",
+      "title": "Operating System",
+      "description": "Learn how operating systems work: process management, memory management, file systems, concurrency, and advanced OS concepts.",
+      "time": "6-10 months"
+    },
+    "beginner": {
+      "title": "Operating System Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to Operating Systems",
+          "topics": [
+            "What is an Operating System?",
+            "History of Operating Systems",
+            "Types of Operating Systems (Batch, Time-Sharing, Distributed, Real-Time)",
+            "OS as Resource Manager",
+            "OS Structure (Monolithic, Microkernel, Hybrid)"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Processes & Threads",
+          "topics": [
+            "Process Concept",
+            "Process States & PCB",
+            "Threads vs Processes",
+            "Multithreading Basics",
+            "Context Switching"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "CPU Scheduling",
+          "topics": [
+            "Scheduling Criteria",
+            "First Come First Serve (FCFS)",
+            "Shortest Job Next (SJN)",
+            "Round Robin Scheduling",
+            "Priority Scheduling",
+            "Multilevel Queue Scheduling"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Operating System Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Process Synchronization",
+          "topics": [
+            "Critical Section Problem",
+            "Locks & Semaphores",
+            "Monitors",
+            "Deadlocks (Detection, Prevention, Avoidance)",
+            "Producer-Consumer Problem",
+            "Readers-Writers Problem",
+            "Dining Philosophers Problem"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Memory Management",
+          "topics": [
+            "Memory Allocation (Single, Partitioned)",
+            "Paging & Segmentation",
+            "Virtual Memory",
+            "Demand Paging",
+            "Page Replacement Algorithms (FIFO, LRU, Optimal)",
+            "Thrashing"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "File System Management",
+          "topics": [
+            "File Concepts",
+            "File Access Methods (Sequential, Direct, Indexed)",
+            "Directory Structure",
+            "File Allocation Methods",
+            "Free Space Management",
+            "File System Mounting"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Operating System Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Storage & I/O Management",
+          "topics": [
+            "Disk Scheduling Algorithms (FCFS, SSTF, SCAN, C-SCAN)",
+            "RAID Levels",
+            "I/O Hardware & Drivers",
+            "Buffering & Caching",
+            "Spooling"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Security & Protection",
+          "topics": [
+            "User Authentication",
+            "Access Control Lists (ACLs)",
+            "Capability Lists",
+            "OS Security Threats",
+            "Encryption in OS",
+            "Trusted Operating Systems"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Distributed & Modern OS Concepts",
+          "topics": [
+            "Distributed Operating Systems",
+            "Network Operating Systems",
+            "Clustered Systems",
+            "Virtualization Concepts",
+            "Cloud-based OS",
+            "Mobile OS (Android, iOS)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Case Studies",
+          "topics": [
+            "Unix/Linux Internals",
+            "Windows OS Architecture",
+            "MacOS",
+            "Android OS",
+            "Microkernel (Mach, Minix)"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    }
+  },
+
+
+  
+  "software_engineering": {
+    "meta": {
+      "icon": "FaProjectDiagram",
+      "title": "Software Engineering",
+      "description": "Learn the principles of software engineering including SDLC, design patterns, requirements engineering, testing, project management, and advanced practices.",
+      "time": "6-12 months"
+    },
+    "beginner": {
+      "title": "Software Engineering Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to Software Engineering",
+          "topics": [
+            "What is Software Engineering?",
+            "Importance of Software Engineering",
+            "Difference between Programming & Software Engineering",
+            "Software Characteristics",
+            "Software Engineering Ethics"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Software Development Life Cycle (SDLC)",
+          "topics": [
+            "SDLC Phases",
+            "Waterfall Model",
+            "Incremental Model",
+            "Spiral Model",
+            "V-Model",
+            "Agile & Scrum Basics"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Requirements Engineering",
+          "topics": [
+            "Requirement Types (Functional, Non-Functional)",
+            "Requirement Gathering Techniques",
+            "SRS (Software Requirements Specification)",
+            "Use Cases & User Stories",
+            "Requirement Validation"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Software Engineering Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Software Design",
+          "topics": [
+            "Software Design Principles (SOLID, DRY, KISS, YAGNI)",
+            "Modularity & Cohesion",
+            "Coupling & Interfaces",
+            "Top-Down & Bottom-Up Design",
+            "UML Diagrams (Class, Sequence, Use Case, Activity)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Design Patterns",
+          "topics": [
+            "Creational Patterns (Singleton, Factory, Builder)",
+            "Structural Patterns (Adapter, Composite, Proxy, Decorator)",
+            "Behavioral Patterns (Observer, Strategy, Command, Iterator)",
+            "Anti-Patterns"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Software Project Management",
+          "topics": [
+            "Project Planning",
+            "Effort Estimation Techniques (COCOMO, Function Point)",
+            "Risk Management",
+            "Scheduling (PERT, Gantt Charts, CPM)",
+            "Team Roles & Responsibilities"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Software Quality Assurance",
+          "topics": [
+            "Importance of Quality Assurance",
+            "Verification vs Validation",
+            "Code Reviews & Inspections",
+            "Static & Dynamic Analysis",
+            "Software Metrics"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Software Engineering Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Software Testing",
+          "topics": [
+            "Levels of Testing (Unit, Integration, System, Acceptance)",
+            "Black Box vs White Box Testing",
+            "Automated Testing Tools (JUnit, Selenium, PyTest)",
+            "Test-Driven Development (TDD)",
+            "Behavior-Driven Development (BDD)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Software Maintenance & Evolution",
+          "topics": [
+            "Types of Maintenance (Corrective, Adaptive, Perfective, Preventive)",
+            "Reverse Engineering",
+            "Re-engineering",
+            "Legacy Systems",
+            "Maintenance Tools & Metrics"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Advanced Software Development Models",
+          "topics": [
+            "DevOps in Software Engineering",
+            "Agile Frameworks (Scrum, Kanban, XP)",
+            "Scaled Agile Framework (SAFe)",
+            "Lean Software Development",
+            "Continuous Integration & Deployment"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Emerging Trends in Software Engineering",
+          "topics": [
+            "Microservices Architecture",
+            "Cloud-Native Development",
+            "AI in Software Engineering",
+            "Low-Code / No-Code Platforms",
+            "Software Security Engineering"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    }
   }
 }
+
+
 
 
 
