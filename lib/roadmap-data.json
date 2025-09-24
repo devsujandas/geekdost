@@ -3706,8 +3706,156 @@
         }
       ]
     }
+  },
+
+
+  
+  "blockchain_web3": {
+    "meta": {
+      "icon": "SiBlockchain",
+      "title": "Blockchain & Web3",
+      "description": "Learn blockchain fundamentals, smart contracts, Ethereum, dApps, DeFi, NFTs, and Web3 security for decentralized application development.",
+      "time": "6-12 months"
+    },
+    "beginner": {
+      "title": "Blockchain & Web3 Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to Blockchain",
+          "topics": [
+            "What is Blockchain?",
+            "History of Blockchain & Bitcoin",
+            "How Blockchain Works",
+            "Blocks, Transactions & Hashing",
+            "Consensus Mechanisms Overview"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Cryptography Basics",
+          "topics": [
+            "Public & Private Keys",
+            "Digital Signatures",
+            "Hash Functions (SHA-256, Keccak)",
+            "Merkle Trees",
+            "Wallets & Addresses"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Ethereum & Smart Contracts",
+          "topics": [
+            "Ethereum Basics",
+            "Gas & Transactions",
+            "Ethereum Virtual Machine (EVM)",
+            "Smart Contracts Overview",
+            "Solidity Basics"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Blockchain & Web3 Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Smart Contract Development",
+          "topics": [
+            "Solidity Programming in Depth",
+            "Data Types, Functions & Events",
+            "Inheritance & Modifiers",
+            "Deploying Smart Contracts",
+            "Testing Smart Contracts (Hardhat, Truffle)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Decentralized Applications (dApps)",
+          "topics": [
+            "Web3.js & Ethers.js",
+            "Connecting dApps with Metamask",
+            "Interacting with Smart Contracts",
+            "Frontend Integration (React + Web3)",
+            "Event Handling & Contract Calls"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Decentralized Finance (DeFi)",
+          "topics": [
+            "What is DeFi?",
+            "Decentralized Exchanges (DEX)",
+            "Liquidity Pools & AMMs",
+            "Yield Farming & Staking",
+            "Stablecoins & Oracles"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Non-Fungible Tokens (NFTs)",
+          "topics": [
+            "What are NFTs?",
+            "ERC-721 & ERC-1155 Standards",
+            "Minting NFTs",
+            "NFT Marketplaces",
+            "NFT Metadata & IPFS"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Blockchain & Web3 Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Advanced Blockchain Concepts",
+          "topics": [
+            "Proof of Work vs Proof of Stake",
+            "Layer 1 vs Layer 2 Solutions",
+            "Sharding & Rollups",
+            "Cross-Chain Bridges",
+            "Blockchain Scalability Challenges"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Blockchain Platforms",
+          "topics": [
+            "Ethereum 2.0",
+            "Polkadot & Parachains",
+            "Cardano",
+            "Solana",
+            "Hyperledger Fabric"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Web3 Security",
+          "topics": [
+            "Common Smart Contract Vulnerabilities",
+            "Reentrancy Attacks",
+            "Integer Overflow/Underflow",
+            "Phishing & Wallet Security",
+            "Security Tools (MythX, Slither)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Future of Web3",
+          "topics": [
+            "DAO (Decentralized Autonomous Organizations)",
+            "Decentralized Identity",
+            "Metaverse & Web3 Gaming",
+            "CBDCs (Central Bank Digital Currencies)",
+            "Sustainability & Green Blockchain"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    }
   }
 }
+
 
 
 
