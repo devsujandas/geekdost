@@ -1697,7 +1697,7 @@
   },
 
 
-  "dbms": {
+  "Database Management System": {
     "meta": {
       "icon": "FaDatabase",
       "description": "Database Management Systems (DBMS) are software systems that manage data efficiently, ensuring security, consistency, and concurrent access.",
