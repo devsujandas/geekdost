@@ -1,0 +1,177 @@
+{
+  "python": {
+    "beginner": {
+      "title": "Python Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction",
+          "topics": ["What is Python?", "Install Python", "Hello World", "Python Interpreter & REPL", "Basic Syntax & Indentation"]
+        },
+        {
+          "title": "Data Types & Variables",
+          "topics": ["Numbers & Math", "Strings & String Methods", "Booleans", "Lists", "Tuples", "Sets", "Dictionaries", "Type Conversion"]
+        },
+        {
+          "title": "Control Flow",
+          "topics": ["If-Else Statements", "For Loops", "While Loops", "Loop Control (break, continue, pass)", "List Comprehensions"]
+        },
+        {
+          "title": "Functions",
+          "topics": ["Defining Functions", "Arguments & Return Values", "Default & Keyword Arguments", "Lambda Functions", "Scope & Global Variables"]
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Python Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Object-Oriented Programming",
+          "topics": ["Classes & Objects", "Constructors (__init__)", "Methods", "Inheritance", "Polymorphism", "Encapsulation"]
+        },
+        {
+          "title": "Modules & Packages",
+          "topics": ["Importing Modules", "Creating Modules", "Using Packages", "Virtual Environments", "Pip & Package Management"]
+        },
+        {
+          "title": "File Handling",
+          "topics": ["Reading & Writing Files", "Working with CSV & JSON", "Exception Handling", "With Context Manager"]
+        },
+        {
+          "title": "Libraries & Tools",
+          "topics": ["NumPy Basics", "Pandas Basics", "Matplotlib Visualization", "Requests (API calls)"]
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Python Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Advanced OOP",
+          "topics": ["Class vs Static Methods", "Decorators", "Iterators", "Generators", "Metaclasses"]
+        },
+        {
+          "title": "Functional Programming",
+          "topics": ["Map, Filter, Reduce", "Closures", "Higher-Order Functions"]
+        },
+        {
+          "title": "Concurrency & Parallelism",
+          "topics": ["Multithreading", "Multiprocessing", "AsyncIO", "Concurrent Futures"]
+        },
+        {
+          "title": "Web Development",
+          "topics": ["Flask Basics", "Django Framework", "FastAPI", "REST APIs"]
+        },
+        {
+          "title": "Testing & Deployment",
+          "topics": ["PyTest & Unit Testing", "Logging & Debugging", "Packaging Projects", "Docker Basics", "CI/CD Pipelines"]
+        }
+      ]
+    }
+  },
+
+  "java": {
+    "beginner": {
+      "title": "Java Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Setup & Basics",
+          "topics": ["Install JDK", "IDE Setup (IntelliJ/Eclipse)", "Hello World Program", "Java Syntax & Structure", "Data Types & Variables"]
+        },
+        {
+          "title": "Operators & Control Flow",
+          "topics": ["Arithmetic & Logical Operators", "If-Else Statements", "Switch Case", "For & While Loops", "Break & Continue"]
+        },
+        {
+          "title": "Methods & Arrays",
+          "topics": ["Defining Methods", "Parameters & Return Values", "Method Overloading", "1D & 2D Arrays", "Enhanced For Loop"]
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Java Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Object-Oriented Programming",
+          "topics": ["Classes & Objects", "Constructors", "Inheritance", "Polymorphism", "Abstract Classes", "Interfaces"]
+        },
+        {
+          "title": "Java Collections",
+          "topics": ["ArrayList", "LinkedList", "HashMap", "HashSet", "Iterators"]
+        },
+        {
+          "title": "Exception Handling & File I/O",
+          "topics": ["Try-Catch-Finally", "Throw & Throws", "Checked vs Unchecked Exceptions", "FileReader & FileWriter", "Serialization"]
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Java Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Advanced Concepts",
+          "topics": ["Generics", "Annotations", "Enums", "Java Streams API", "Lambda Expressions"]
+        },
+        {
+          "title": "Multithreading & Concurrency",
+          "topics": ["Thread Class & Runnable Interface", "Synchronization", "Executor Framework", "Concurrent Collections"]
+        },
+        {
+          "title": "Frameworks & Enterprise",
+          "topics": ["Spring Boot", "Spring Data JPA", "Spring Security", "REST APIs", "Hibernate ORM"]
+        },
+        {
+          "title": "Build & Deployment",
+          "topics": ["Maven/Gradle", "JUnit Testing", "Logging", "Docker for Java", "CI/CD with Jenkins"]
+        }
+      ]
+    }
+  },
+
+  "c-programming": {
+    "beginner": { "title": "C Roadmap - Beginner", "chapters": [] },
+    "intermediate": { "title": "C Roadmap - Intermediate", "chapters": [] },
+    "advanced": { "title": "C Roadmap - Advanced", "chapters": [] }
+  },
+
+  "cpp": {
+    "beginner": { "title": "C++ Roadmap - Beginner", "chapters": [] },
+    "intermediate": { "title": "C++ Roadmap - Intermediate", "chapters": [] },
+    "advanced": { "title": "C++ Roadmap - Advanced", "chapters": [] }
+  },
+
+  "javascript": {
+    "beginner": { "title": "JavaScript Roadmap - Beginner", "chapters": [] },
+    "intermediate": { "title": "JavaScript Roadmap - Intermediate", "chapters": [] },
+    "advanced": { "title": "JavaScript Roadmap - Advanced", "chapters": [] }
+  },
+
+  "web-development": {
+    "beginner": { "title": "Web Development Roadmap - Beginner", "chapters": [] },
+    "intermediate": { "title": "Web Development Roadmap - Intermediate", "chapters": [] },
+    "advanced": { "title": "Web Development Roadmap - Advanced", "chapters": [] }
+  },
+
+  "data-science": {
+    "beginner": { "title": "Data Science Roadmap - Beginner", "chapters": [] },
+    "intermediate": { "title": "Data Science Roadmap - Intermediate", "chapters": [] },
+    "advanced": { "title": "Data Science Roadmap - Advanced", "chapters": [] }
+  },
+
+  "machine-learning": {
+    "beginner": { "title": "Machine Learning Roadmap - Beginner", "chapters": [] },
+    "intermediate": { "title": "Machine Learning Roadmap - Intermediate", "chapters": [] },
+    "advanced": { "title": "Machine Learning Roadmap - Advanced", "chapters": [] }
+  },
+
+  "sql-databases": {
+    "beginner": { "title": "SQL & Databases Roadmap - Beginner", "chapters": [] },
+    "intermediate": { "title": "SQL & Databases Roadmap - Intermediate", "chapters": [] },
+    "advanced": { "title": "SQL & Databases Roadmap - Advanced", "chapters": [] }
+  },
+
+  "dsa": {
+    "beginner": { "title": "Data Structures & Algorithms Roadmap - Beginner", "chapters": [] },
+    "intermediate": { "title": "Data Structures & Algorithms Roadmap - Intermediate", "chapters": [] },
+    "advanced": { "title": "Data Structures & Algorithms Roadmap - Advanced", "chapters": [] }
+  }
+}

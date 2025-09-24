@@ -7,21 +7,21 @@ import { usePathname } from "next/navigation"
 import {
   FaHome,
   FaCode,
-  FaSearch,
   FaUser,
   FaBars,
   FaTimes,
   FaClipboardList,
+  FaMap, // ✅ new icon for Roadmap
 } from "react-icons/fa"
 import { GlassmorphismCard } from "./glassmorphism-card"
 import Image from "next/image"
 
-// 🔑 Added Mock Test here
+// 🔑 Updated navItems (Search → Roadmap)
 const navItems = [
   { href: "/", icon: FaHome, label: "Home" },
   { href: "/topics", icon: FaCode, label: "Topics" },
-  { href: "/search", icon: FaSearch, label: "Search" },
-  { href: "/test", icon: FaClipboardList, label: "Test" }, // ✅ new item
+  { href: "/roadmap", icon: FaMap, label: "Roadmap" }, // ✅ replaced Search with Roadmap
+  { href: "/test", icon: FaClipboardList, label: "Test" },
   { href: "/about", icon: FaUser, label: "About" },
 ]
 
