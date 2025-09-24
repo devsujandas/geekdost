@@ -3853,8 +3853,156 @@
         }
       ]
     }
+  },
+
+
+  
+  "ui_ux_frontend": {
+    "meta": {
+      "icon": "FaPaintBrush",
+      "title": "UI/UX & Frontend Engineering",
+      "description": "Master design principles, user experience, and frontend engineering with modern frameworks to build engaging and accessible applications.",
+      "time": "6-12 months"
+    },
+    "beginner": {
+      "title": "UI/UX & Frontend Engineering Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to UI/UX",
+          "topics": [
+            "What is UI vs UX?",
+            "Principles of Good Design",
+            "User-Centered Design",
+            "Wireframing & Prototyping Basics",
+            "Design Tools (Figma, Sketch, Adobe XD)"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Frontend Fundamentals",
+          "topics": [
+            "HTML Basics",
+            "CSS Fundamentals",
+            "JavaScript Basics",
+            "Responsive Web Design",
+            "Flexbox & Grid Layouts"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Accessibility & Usability",
+          "topics": [
+            "Web Accessibility Standards (WCAG)",
+            "Keyboard Navigation & ARIA",
+            "Color Contrast & Readability",
+            "Usability Testing",
+            "Inclusive Design"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "UI/UX & Frontend Engineering Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Advanced CSS & Styling",
+          "topics": [
+            "CSS Animations & Transitions",
+            "CSS Variables & Custom Properties",
+            "Preprocessors (Sass, Less)",
+            "CSS Frameworks (Tailwind, Bootstrap)",
+            "Component-based Styling"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "JavaScript for Frontend",
+          "topics": [
+            "ES6+ Features",
+            "DOM Manipulation",
+            "Event Handling",
+            "Async JavaScript (Promises, async/await)",
+            "Fetch API & AJAX"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Frontend Frameworks",
+          "topics": [
+            "React Basics",
+            "Component Lifecycle",
+            "State & Props",
+            "Routing (React Router, Next.js)",
+            "Hooks & Context API"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Design Systems & Pattern Libraries",
+          "topics": [
+            "What is a Design System?",
+            "Atomic Design Principles",
+            "Storybook Basics",
+            "Reusable Components",
+            "UI Consistency & Branding"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "UI/UX & Frontend Engineering Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Advanced Frontend Engineering",
+          "topics": [
+            "Next.js Advanced Features",
+            "Server-Side Rendering (SSR) vs Static Site Generation (SSG)",
+            "Performance Optimization",
+            "Code Splitting & Lazy Loading",
+            "Progressive Web Apps (PWA)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "UI/UX Research & Testing",
+          "topics": [
+            "User Research Techniques",
+            "A/B Testing",
+            "Heatmaps & Analytics",
+            "User Feedback Integration",
+            "Design Iteration Process"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Mobile & Cross-Platform UI",
+          "topics": [
+            "Responsive vs Adaptive Design",
+            "React Native Basics",
+            "Flutter for UI",
+            "Design for Multiple Screen Sizes",
+            "Mobile Usability Guidelines"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Future of UI/UX & Frontend",
+          "topics": [
+            "Design for AR/VR Interfaces",
+            "Voice User Interfaces (VUIs)",
+            "AI in UI/UX",
+            "Dark Mode Design Principles",
+            "Trends in Frontend Development"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    }
   }
 }
+
 
 
 
