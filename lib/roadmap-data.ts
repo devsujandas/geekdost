@@ -16,6 +16,7 @@ export interface RoadmapLevel {
 // 🔹 Meta info for each subject
 export interface RoadmapMeta {
   icon: string
+  title: string   // ✅ added title
   description: string
   time: string
 }

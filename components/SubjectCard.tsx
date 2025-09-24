@@ -38,7 +38,7 @@ export function SubjectCard({ subject }: SubjectCardProps) {
 
           {/* Subject Name */}
           <h2 className="text-xl font-bold text-primary capitalize">
-            {subject.replace(/-/g, " ")}
+            {meta.title}   {/* ✅ subject er jaygay meta.title use korlam */}
           </h2>
 
           {/* Description */}

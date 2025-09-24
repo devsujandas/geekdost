@@ -2,6 +2,7 @@
   "python": {
     "meta": {
       "icon": "FaPython",
+      "title": "Pyhton", 
       "description": "A beginner-friendly language for data, AI, and web development.",
       "time": "6-12 months"
     },
@@ -266,6 +267,7 @@
   "java": {
     "meta": {
       "icon": "FaJava",
+      "title": "Java", 
       "description": "A powerful, object-oriented programming language widely used for enterprise applications, Android, and backend development.",
       "time": "10-18 months"
     },
@@ -571,6 +573,7 @@
   "c": {
     "meta": {
       "icon": "SiC",
+      "title": "C", 
       "description": "A foundational programming language for system programming, embedded systems, and performance-critical applications.",
       "time": "6-10 months"
     },
@@ -789,9 +792,10 @@
 
 
 
-  "C++": {
+  "cpp": {
     "meta": {
       "icon": "SiCplusplus",
+      "title": "C++", 
       "description": "A high-performance, object-oriented programming language widely used for system programming, game engines, and competitive programming.",
       "time": "8-14 months"
     },
@@ -1046,6 +1050,7 @@
   "javascript": {
     "meta": {
       "icon": "FaJs",
+      "title": "JavaScript", 
       "description": "JavaScript is the language of the web. It powers interactivity in websites, web apps, and is now used in backend (Node.js), mobile, and even desktop apps.",
       "time": "6-12 months"
     },
@@ -1268,9 +1273,10 @@
 
 
   
-  "Data structure & algorithm": {
+  "dsa": {
     "meta": {
       "icon": "FaProjectDiagram",
+      "title": " Data Structure & Algorithm", 
       "description": "DSA (Data Structures & Algorithms) builds problem-solving and optimization skills for coding interviews, CP, and real-world systems.",
       "time": "9-15 months"
     },
@@ -1517,9 +1523,12 @@
 
 
 
-  "Machine Learning": {
+
+
+  "machineLearning": {
     "meta": {
       "icon": "FaRobot",
+      "title": "Machine Learning", 
       "description": "Machine Learning is a subset of AI that focuses on building systems that learn from data to make predictions or decisions.",
       "time": "9-18 months"
     },
@@ -1697,9 +1706,10 @@
   },
 
 
-  "Database Management System": {
+  "dbms": {
     "meta": {
       "icon": "FaDatabase",
+      "title": "Database Management System", 
       "description": "Database Management Systems (DBMS) are software systems that manage data efficiently, ensuring security, consistency, and concurrent access.",
       "time": "4-8 months"
     },
@@ -1844,7 +1854,173 @@
         }
       ]
     }
+  },
+
+
+
+  
+  "data_science": {
+    "meta": {
+      "icon": "FaChartLine",
+      "title": "Data Science",
+      "description": "Data Science combines statistics, programming, and domain expertise to extract insights and build predictive models from data.",
+      "time": "8-12 months"
+    },
+    "beginner": {
+      "title": "Data Science Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to Data Science",
+          "topics": [
+            "What is Data Science?",
+            "Applications of Data Science",
+            "Data Science vs Data Analytics vs AI/ML",
+            "Data Science Workflow (CRISP-DM)"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Python for Data Science",
+          "topics": [
+            "Python Basics Refresher",
+            "Jupyter Notebook",
+            "NumPy Arrays",
+            "Pandas DataFrames",
+            "Matplotlib & Seaborn Visualization",
+            "Mini-Project: Data Cleaning & Visualization"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Statistics & Probability",
+          "topics": [
+            "Descriptive Statistics (Mean, Median, Mode, Variance, Std Dev)",
+            "Probability Basics",
+            "Distributions (Normal, Binomial, Poisson)",
+            "Hypothesis Testing",
+            "p-values & Confidence Intervals",
+            "Mini-Project: A/B Testing Simulation"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Data Science Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Data Wrangling & Preprocessing",
+          "topics": [
+            "Handling Missing Values",
+            "Data Transformation & Scaling",
+            "Feature Engineering",
+            "Feature Selection",
+            "Outlier Detection",
+            "Mini-Project: Customer Data Cleaning"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Exploratory Data Analysis (EDA)",
+          "topics": [
+            "Univariate, Bivariate, Multivariate Analysis",
+            "Correlation & Heatmaps",
+            "Feature Distributions",
+            "Time Series EDA",
+            "Mini-Project: Sales Dataset EDA"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Machine Learning Basics",
+          "topics": [
+            "Supervised vs Unsupervised Learning",
+            "Regression (Linear, Logistic)",
+            "Classification (KNN, Decision Trees)",
+            "Clustering (K-Means, Hierarchical)",
+            "Evaluation Metrics (Accuracy, Precision, Recall, F1, ROC)",
+            "Mini-Project: Iris Dataset Classifier"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Data Visualization",
+          "topics": [
+            "Advanced Matplotlib & Seaborn",
+            "Plotly & Interactive Visualizations",
+            "Dashboards with PowerBI / Tableau",
+            "Mini-Project: Interactive COVID Dashboard"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Data Science Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Advanced Machine Learning",
+          "topics": [
+            "Ensemble Methods (Bagging, Boosting, Random Forest, XGBoost)",
+            "Feature Importance",
+            "Dimensionality Reduction (PCA, t-SNE)",
+            "Hyperparameter Tuning (GridSearch, RandomSearch)",
+            "Mini-Project: Predicting House Prices"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Deep Learning",
+          "topics": [
+            "Neural Networks Basics",
+            "TensorFlow & Keras",
+            "CNNs (Image Classification)",
+            "RNNs & LSTMs (Sequence Data)",
+            "Transfer Learning",
+            "Mini-Project: Image Classifier with CNN"
+          ],
+          "time": "5 weeks"
+        },
+        {
+          "title": "Natural Language Processing (NLP)",
+          "topics": [
+            "Text Preprocessing (Tokenization, Stopwords, Lemmatization)",
+            "Bag of Words & TF-IDF",
+            "Word Embeddings (Word2Vec, GloVe, BERT)",
+            "Sentiment Analysis",
+            "Text Classification",
+            "Mini-Project: Twitter Sentiment Analysis"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Big Data & Cloud",
+          "topics": [
+            "Big Data Concepts",
+            "Hadoop & Spark Basics",
+            "Data Pipelines (Airflow, Kafka)",
+            "Cloud Platforms (AWS, GCP, Azure)",
+            "Mini-Project: Spark Data Analysis"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Deployment & MLOps",
+          "topics": [
+            "Model Serialization (Pickle, Joblib)",
+            "Flask/FastAPI for Model Deployment",
+            "Dockerizing ML Models",
+            "CI/CD for ML",
+            "Monitoring & Retraining",
+            "Mini-Project: ML Model Deployment on Cloud"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    }
   }
+
+
 
 
 
