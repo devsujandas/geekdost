@@ -2421,8 +2421,195 @@
         }
       ]
     }
+  },
+
+
+
+
+
+  
+  "cloud_computing": {
+    "meta": {
+      "icon": "FaCloud",
+      "title": "Cloud Computing",
+      "description": "Master Cloud Computing fundamentals, services, and deployment models. Learn AWS, Azure, GCP, DevOps practices, and advanced cloud-native architecture.",
+      "time": "9-15 months"
+    },
+    "beginner": {
+      "title": "Cloud Computing Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to Cloud Computing",
+          "topics": [
+            "What is Cloud Computing?",
+            "Benefits & Challenges",
+            "Cloud Service Models (IaaS, PaaS, SaaS)",
+            "Cloud Deployment Models (Public, Private, Hybrid, Multi-Cloud)",
+            "Major Cloud Providers (AWS, Azure, GCP)"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Networking Basics for Cloud",
+          "topics": [
+            "IP Addressing & Subnets",
+            "DNS Basics",
+            "HTTP/HTTPS Protocols",
+            "Firewalls & Load Balancers",
+            "VPNs & VPCs"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Linux & Command Line Basics",
+          "topics": [
+            "Linux File System",
+            "Basic Commands",
+            "User & Permission Management",
+            "Package Management",
+            "Shell Scripting Basics"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Cloud Fundamentals",
+          "topics": [
+            "Shared Responsibility Model",
+            "Cloud Pricing Models",
+            "Regions & Availability Zones",
+            "Cloud Storage Basics (Object vs Block Storage)",
+            "Compute Basics (VMs, Containers, Serverless)"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Cloud Computing Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "AWS Fundamentals",
+          "topics": [
+            "EC2 (Virtual Machines)",
+            "S3 (Object Storage)",
+            "RDS & DynamoDB (Databases)",
+            "IAM (Identity & Access Management)",
+            "VPC (Networking in AWS)",
+            "CloudWatch & Monitoring"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Azure Fundamentals",
+          "topics": [
+            "Azure Virtual Machines",
+            "Azure Blob Storage",
+            "Azure SQL Database & CosmosDB",
+            "Azure Active Directory",
+            "Azure Virtual Network",
+            "Azure Monitor"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Google Cloud Platform Fundamentals",
+          "topics": [
+            "Compute Engine",
+            "Cloud Storage",
+            "Cloud SQL & Firestore",
+            "IAM in GCP",
+            "VPC & Networking",
+            "Stackdriver Monitoring"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Containers & Orchestration",
+          "topics": [
+            "Docker Basics",
+            "Container Registries",
+            "Kubernetes Fundamentals",
+            "Deploying Apps on Kubernetes",
+            "Managed Kubernetes (EKS, AKS, GKE)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "CI/CD in Cloud",
+          "topics": [
+            "DevOps Basics",
+            "CI/CD Concepts",
+            "Jenkins Pipelines",
+            "GitHub Actions",
+            "AWS CodePipeline / Azure DevOps Pipelines / GCP Cloud Build"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Cloud Computing Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Advanced Cloud Architecture",
+          "topics": [
+            "Designing Scalable Architectures",
+            "High Availability & Fault Tolerance",
+            "Disaster Recovery Planning",
+            "Multi-Cloud & Hybrid Cloud Strategies",
+            "Edge Computing"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Cloud Security",
+          "topics": [
+            "Cloud Security Best Practices",
+            "Encryption (At Rest & In Transit)",
+            "Key Management Systems (KMS)",
+            "Zero Trust Security Model",
+            "Identity Federation & SSO",
+            "Cloud Compliance (GDPR, HIPAA, SOC2)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Serverless Computing",
+          "topics": [
+            "AWS Lambda Basics",
+            "Azure Functions",
+            "Google Cloud Functions",
+            "Event-Driven Architectures",
+            "Serverless Databases & Storage"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Big Data & AI in Cloud",
+          "topics": [
+            "AWS EMR & Athena",
+            "Azure Synapse Analytics",
+            "Google BigQuery",
+            "Cloud Machine Learning Services (SageMaker, Azure ML, GCP AI Platform)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Monitoring, Logging & Automation",
+          "topics": [
+            "Infrastructure as Code (Terraform, CloudFormation, Pulumi)",
+            "Configuration Management (Ansible, Chef, Puppet)",
+            "Centralized Logging (ELK Stack, Cloud Logging)",
+            "Monitoring Tools (Prometheus, Grafana, CloudWatch, Azure Monitor)",
+            "Cost Optimization & Governance"
+          ],
+          "time": "4 weeks"
+        }
+      ]
+    }
   }
 }
+
 
 
 
