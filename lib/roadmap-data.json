@@ -3560,8 +3560,155 @@
         }
       ]
     }
+  },
+
+
+  
+  "data_engineering": {
+    "meta": {
+      "icon": "SiDatabricks",
+      "title": "Data Engineering",
+      "description": "Learn how to design, build, and manage large-scale data pipelines, warehouses, and big data systems for analytics and AI.",
+      "time": "6-12 months"
+    },
+    "beginner": {
+      "title": "Data Engineering Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to Data Engineering",
+          "topics": [
+            "What is Data Engineering?",
+            "Role of Data Engineers vs Data Scientists",
+            "ETL vs ELT",
+            "Batch vs Stream Processing",
+            "Overview of Data Architectures"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Programming & Scripting",
+          "topics": [
+            "Python for Data Engineering",
+            "SQL Basics",
+            "Shell Scripting",
+            "Regular Expressions",
+            "Working with APIs"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Databases & Data Modeling",
+          "topics": [
+            "Relational Databases (PostgreSQL, MySQL)",
+            "NoSQL Databases (MongoDB, Cassandra)",
+            "Data Modeling Basics",
+            "Normalization & Denormalization",
+            "Indexes, Keys, and Query Optimization"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Data Engineering Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Data Warehousing",
+          "topics": [
+            "Data Warehouse Concepts",
+            "OLTP vs OLAP",
+            "Star & Snowflake Schema",
+            "Cloud Data Warehouses (BigQuery, Redshift, Snowflake)",
+            "Data Marts"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Data Pipelines & ETL Tools",
+          "topics": [
+            "ETL vs ELT Workflows",
+            "Apache Airflow",
+            "Luigi",
+            "dbt (Data Build Tool)",
+            "Orchestration & Scheduling"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Big Data Ecosystem",
+          "topics": [
+            "Hadoop Ecosystem",
+            "HDFS",
+            "Apache Spark Basics",
+            "MapReduce Concepts",
+            "Hive & Pig"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Streaming & Real-Time Processing",
+          "topics": [
+            "Apache Kafka Basics",
+            "Kafka Streams & KSQL",
+            "Apache Flink",
+            "Spark Streaming",
+            "Real-Time Use Cases"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Data Engineering Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Data Lakes & Lakehouse",
+          "topics": [
+            "What is a Data Lake?",
+            "Data Lake vs Data Warehouse",
+            "Delta Lake & Apache Iceberg",
+            "Lakehouse Architecture",
+            "Cloud Storage Integration"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Advanced Data Engineering Tools",
+          "topics": [
+            "Spark Advanced (MLlib, GraphX)",
+            "Presto & Trino",
+            "Apache Beam",
+            "ElasticSearch for Analytics",
+            "Data Lineage & Governance"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Cloud Data Engineering",
+          "topics": [
+            "AWS Data Engineering (Glue, EMR, Kinesis, Redshift)",
+            "Azure Data Engineering (Data Factory, Synapse, Event Hub)",
+            "Google Cloud Data Engineering (BigQuery, Dataflow, Pub/Sub)",
+            "Multi-Cloud & Hybrid Pipelines"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Data Engineering Best Practices",
+          "topics": [
+            "Data Quality & Validation",
+            "Data Security & Privacy (GDPR, HIPAA)",
+            "Data Catalogs & Metadata Management",
+            "CI/CD for Data Pipelines",
+            "Monitoring & Observability"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    }
   }
 }
+
 
 
 
