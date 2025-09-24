@@ -1,17 +1,19 @@
 "use client"
 
+import * as React from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { getRoadmap } from "@/lib/roadmap-data"
 import { RoadmapTimeline } from "@/components/RoadmapTimeline"
 import { FaRocket, FaArrowLeft } from "react-icons/fa"
 
-export default async function RoadmapDetailPage({
+export default function RoadmapDetailPage({
   params,
 }: {
   params: Promise<{ subject: string; level: string }>
 }) {
-  const { subject, level } = await params // ✅ await directly
+  // ✅ unwrap params in Client Component
+  const { subject, level } = React.use(params)
 
   const roadmap = getRoadmap(subject, level)
 

@@ -13,6 +13,7 @@ export default function RoadmapSubjectsPage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden py-16 px-4">
         <div className="container mx-auto max-w-6xl relative z-10">
+          {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -36,7 +37,7 @@ export default function RoadmapSubjectsPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8"
           >
             {subjects.map((subject, index) => (
               <motion.div

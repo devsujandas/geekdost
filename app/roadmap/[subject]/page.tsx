@@ -50,7 +50,7 @@ export default function SubjectPage({
   return (
     <div className="min-h-screen bg-background py-12 px-6">
       {/* Back Button */}
-      <div className="max-w-4xl mx-auto mb-6">
+      <div className="max-w-5xl mx-auto mb-6">
         <Link
           href="/roadmap"
           className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -65,7 +65,7 @@ export default function SubjectPage({
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="max-w-3xl mx-auto mb-10"
+        className="max-w-4xl mx-auto mb-10"
       >
         <div className="p-6 rounded-xl border border-border bg-card/60 shadow-md text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold text-primary capitalize">
@@ -88,7 +88,8 @@ export default function SubjectPage({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.6 }}
-        className="max-w-3xl mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        // ✅ always 3 per row from md breakpoint
+        className="max-w-5xl mx-auto grid gap-6 grid-cols-1 md:grid-cols-3"
       >
         {levels.map((level, idx) => {
           const config = levelConfig[level] || {
