@@ -2940,8 +2940,189 @@
         }
       ]
     }
+  },
+
+
+  
+  "devops": {
+    "meta": {
+      "icon": "FaTools",
+      "title": "DevOps",
+      "description": "Learn how to integrate development and operations by mastering CI/CD, cloud, automation, monitoring, and infrastructure as code.",
+      "time": "8-12 months"
+    },
+    "beginner": {
+      "title": "DevOps Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to DevOps",
+          "topics": [
+            "What is DevOps?",
+            "DevOps Culture & Principles",
+            "Agile & Lean Basics",
+            "SDLC vs DevOps Lifecycle",
+            "Benefits of DevOps"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Linux & Scripting Basics",
+          "topics": [
+            "Linux File System & Permissions",
+            "Basic Shell Commands",
+            "Bash Scripting",
+            "User & Group Management",
+            "System Monitoring Tools"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Version Control with Git",
+          "topics": [
+            "Git Basics (init, clone, commit, push, pull)",
+            "Branching & Merging",
+            "Git Workflows (Gitflow, Feature Branches)",
+            "GitHub/GitLab Basics",
+            "Code Collaboration & Pull Requests"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Networking & Fundamentals",
+          "topics": [
+            "OSI & TCP/IP Models",
+            "DNS, DHCP, HTTP/HTTPS, FTP, SSH",
+            "IP Addressing & Subnetting",
+            "Ports & Protocols",
+            "Basic Troubleshooting with ping, traceroute, netstat"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "DevOps Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Continuous Integration (CI)",
+          "topics": [
+            "What is CI?",
+            "CI Tools (Jenkins, GitHub Actions, GitLab CI)",
+            "Build Automation",
+            "Automated Testing",
+            "Pipeline as Code"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Continuous Delivery & Deployment (CD)",
+          "topics": [
+            "What is CD?",
+            "Deployment Strategies (Blue/Green, Canary, Rolling)",
+            "Infrastructure Rollbacks",
+            "Automated Releases",
+            "Configuration Management"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Containerization",
+          "topics": [
+            "Introduction to Containers",
+            "Docker Basics (images, containers, volumes, networks)",
+            "Docker Compose",
+            "Container Registries (DockerHub, ECR, GCR)",
+            "Container Security"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Infrastructure as Code (IaC)",
+          "topics": [
+            "What is IaC?",
+            "Terraform Basics",
+            "Ansible Basics",
+            "Infrastructure Provisioning",
+            "Configuration Management vs Provisioning"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Cloud Fundamentals",
+          "topics": [
+            "AWS / Azure / GCP Basics",
+            "Compute, Storage, Networking Services",
+            "IAM (Identity & Access Management)",
+            "Serverless Basics",
+            "Cloud Security Fundamentals"
+          ],
+          "time": "4 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "DevOps Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Kubernetes & Orchestration",
+          "topics": [
+            "Kubernetes Architecture",
+            "Pods, Deployments, Services",
+            "ConfigMaps & Secrets",
+            "Helm Charts",
+            "Kubernetes Security"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Monitoring & Logging",
+          "topics": [
+            "Importance of Monitoring",
+            "Prometheus & Grafana",
+            "Logging with ELK Stack",
+            "Distributed Tracing (Jaeger, Zipkin)",
+            "Alerting Systems"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Security in DevOps (DevSecOps)",
+          "topics": [
+            "Shift Left Security",
+            "SAST & DAST",
+            "Dependency Scanning",
+            "Secrets Management (Vault, AWS Secrets Manager)",
+            "Security Compliance in CI/CD"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Advanced CI/CD & Automation",
+          "topics": [
+            "Multi-Stage Pipelines",
+            "GitOps with ArgoCD / Flux",
+            "Infrastructure Pipelines",
+            "Automated Rollbacks",
+            "Policy as Code (OPA)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Site Reliability Engineering (SRE)",
+          "topics": [
+            "SRE Principles & Practices",
+            "SLIs, SLOs, SLAs",
+            "Error Budgets",
+            "Incident Management",
+            "Chaos Engineering"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    }
   }
 }
+
 
 
 
