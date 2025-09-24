@@ -11,27 +11,29 @@
         {
           "title": "Introduction",
           "topics": [
-            "What is Python?",
-            "Install Python",
-            "Hello World",
+            "What is Python? History & Features",
+            "Install Python (Windows, Mac, Linux)",
+            "Hello World Program",
             "Python Interpreter & REPL",
-            "Basic Syntax & Indentation",
-            "Comments in Python"
+            "Basic Syntax & Indentation Rules",
+            "Comments in Python (Single-line, Multi-line)",
+            "Running Python Scripts (.py files)",
+            "Using Jupyter Notebook / IDE setup"
           ],
           "time": "1 week"
         },
         {
           "title": "Data Types & Variables",
           "topics": [
-            "Numbers & Math",
-            "Strings & String Methods",
-            "Booleans",
-            "Lists",
-            "Tuples",
-            "Sets",
-            "Dictionaries",
-            "Type Conversion",
-            "Variables & Constants",
+            "Numbers & Math Operations",
+            "Strings & String Methods (len, slice, join, split)",
+            "Booleans (True, False, comparison results)",
+            "Lists (creation, indexing, slicing, methods)",
+            "Tuples (immutability, packing & unpacking)",
+            "Sets (unique values, set operations)",
+            "Dictionaries (key-value pairs, methods)",
+            "Type Conversion (int, float, str, list)",
+            "Variables & Constants (naming conventions, PEP8)",
             "f-Strings & String Formatting"
           ],
           "time": "2 weeks"
@@ -39,13 +41,14 @@
         {
           "title": "Operators & Expressions",
           "topics": [
-            "Arithmetic Operators",
-            "Comparison Operators",
-            "Logical Operators",
-            "Bitwise Operators",
-            "Assignment Operators",
-            "Membership & Identity Operators",
-            "Operator Precedence"
+            "Arithmetic Operators (+, -, *, /, %, **, //)",
+            "Comparison Operators (==, !=, >, <, >=, <=)",
+            "Logical Operators (and, or, not)",
+            "Bitwise Operators (&, |, ^, ~, <<, >>)",
+            "Assignment Operators (=, +=, -=, etc.)",
+            "Membership Operators (in, not in)",
+            "Identity Operators (is, is not)",
+            "Operator Precedence & Associativity"
           ],
           "time": "1 week"
         },
@@ -54,34 +57,37 @@
           "topics": [
             "If-Else Statements",
             "Nested Conditions",
-            "For Loops",
+            "For Loops (range, iterables)",
             "While Loops",
             "Loop Control (break, continue, pass)",
             "List Comprehensions",
-            "Ternary Operator"
+            "Ternary Operator (inline if else)",
+            "Practical Mini-Projects (guessing game, calculator)"
           ],
           "time": "2 weeks"
         },
         {
           "title": "Functions",
           "topics": [
-            "Defining Functions",
+            "Defining Functions with def",
             "Arguments & Return Values",
             "Default & Keyword Arguments",
             "Variable-Length Arguments (*args, **kwargs)",
             "Lambda Functions",
             "Scope & Global Variables",
-            "Docstrings"
+            "Docstrings & Annotations",
+            "Recursion Basics"
           ],
           "time": "2 weeks"
         },
         {
           "title": "Basic Data Handling",
           "topics": [
-            "Input & Output",
-            "Reading User Input",
-            "Printing with Formatting",
-            "Basic Error Handling"
+            "Input & Output Functions",
+            "Reading User Input (input())",
+            "Printing with Formatting (sep, end, format)",
+            "Basic Error Handling (try-except)",
+            "Mini-Project: Simple Text-based Calculator"
           ],
           "time": "1 week"
         }
@@ -94,37 +100,41 @@
           "title": "Object-Oriented Programming",
           "topics": [
             "Classes & Objects",
-            "Constructors (__init__)",
+            "Constructors (__init__ method)",
             "Instance vs Class Variables",
             "Instance, Class & Static Methods",
-            "Inheritance",
+            "Inheritance (single, multilevel)",
             "Multiple Inheritance",
-            "Polymorphism",
-            "Encapsulation",
-            "Magic/Dunder Methods (__str__, __len__, etc.)"
+            "Polymorphism (method overriding)",
+            "Encapsulation (private, protected, public)",
+            "Magic/Dunder Methods (__str__, __len__, __add__)",
+            "OOP Mini-Project: Student Management System"
           ],
           "time": "3 weeks"
         },
         {
           "title": "Modules & Packages",
           "topics": [
-            "Importing Modules",
+            "Importing Modules (import, from, as)",
             "Creating Custom Modules",
-            "Using Built-in Modules (math, os, sys, random)",
+            "Using Built-in Modules (math, os, sys, random, datetime)",
             "Packages & __init__.py",
-            "Virtual Environments",
-            "Pip & Package Management"
+            "Virtual Environments (venv, conda basics)",
+            "Pip & Package Management (pip install, requirements.txt)",
+            "Publishing Packages (basic intro)"
           ],
           "time": "2 weeks"
         },
         {
           "title": "File Handling",
           "topics": [
-            "Reading & Writing Files",
-            "Working with Text Files",
-            "Working with CSV & JSON",
-            "With Context Manager",
-            "Pickle Module (Serialization)"
+            "Opening & Closing Files",
+            "Reading & Writing Text Files",
+            "Working with CSV Files (csv module)",
+            "Working with JSON (json module)",
+            "With Context Manager (with open syntax)",
+            "Pickle Module (Serialization & Deserialization)",
+            "File Handling Errors & Best Practices"
           ],
           "time": "2 weeks"
         },
@@ -135,19 +145,21 @@
             "Multiple Exceptions",
             "Raising Exceptions",
             "Custom Exceptions",
-            "Best Practices"
+            "Exception Hierarchy",
+            "Best Practices in Error Handling"
           ],
           "time": "1 week"
         },
         {
           "title": "Libraries & Tools",
           "topics": [
-            "NumPy Basics",
-            "Pandas Basics",
-            "Matplotlib Visualization",
-            "Seaborn Basics",
-            "Requests (API calls)",
-            "BeautifulSoup (Web Scraping)"
+            "NumPy Basics (arrays, operations)",
+            "Pandas Basics (DataFrames, Series)",
+            "Matplotlib Visualization (plots, charts)",
+            "Seaborn Basics (statistical plots)",
+            "Requests Library (HTTP requests, APIs)",
+            "BeautifulSoup (Web Scraping Basics)",
+            "Mini-Project: Web Scraping + Pandas Analysis"
           ],
           "time": "3 weeks"
         }
@@ -159,13 +171,13 @@
         {
           "title": "Advanced OOP",
           "topics": [
-            "Class vs Static Methods",
-            "Decorators",
-            "Property Decorators (Getters & Setters)",
-            "Iterators",
+            "Class vs Static Methods (deep dive)",
+            "Decorators & Function Wrapping",
+            "Property Decorators (Getters, Setters, Deleters)",
+            "Iterators (iter, next, custom classes)",
             "Generators & yield",
-            "Context Managers (with __enter__ and __exit__)",
-            "Metaclasses"
+            "Context Managers (with __enter__, __exit__)",
+            "Metaclasses (type, customizing class creation)"
           ],
           "time": "3 weeks"
         },
@@ -173,43 +185,47 @@
           "title": "Functional Programming",
           "topics": [
             "Map, Filter, Reduce",
-            "Closures",
+            "Closures & Nested Functions",
             "Higher-Order Functions",
-            "Functools Module",
-            "itertools Module"
+            "Functools Module (lru_cache, partial)",
+            "itertools Module (cycle, permutations, combinations)"
           ],
           "time": "2 weeks"
         },
         {
           "title": "Concurrency & Parallelism",
           "topics": [
-            "Multithreading",
-            "Multiprocessing",
-            "AsyncIO",
+            "Multithreading (threading module)",
+            "Multiprocessing (process pools)",
+            "AsyncIO (async, await, event loops)",
             "Concurrent Futures",
-            "ThreadPoolExecutor & ProcessPoolExecutor"
+            "ThreadPoolExecutor & ProcessPoolExecutor",
+            "When to Use Threads vs Processes"
           ],
           "time": "3 weeks"
         },
         {
           "title": "Database & Persistence",
           "topics": [
-            "SQLite with Python",
+            "SQLite with Python (sqlite3 module)",
             "MySQL/PostgreSQL Connector",
             "ORM with SQLAlchemy",
-            "NoSQL with MongoDB"
+            "NoSQL with MongoDB (pymongo)",
+            "Basic CRUD Operations",
+            "Mini-Project: To-do App with Database"
           ],
           "time": "2 weeks"
         },
         {
           "title": "Web Development",
           "topics": [
-            "Flask Basics",
-            "Flask Routing & Templates",
-            "Django Framework Basics",
+            "Flask Basics (setup, routes, templates)",
+            "Flask Forms & Jinja Templates",
+            "Django Framework Basics (MVT structure)",
             "Django Models & ORM",
-            "FastAPI Basics",
-            "Building REST APIs"
+            "Django Authentication System",
+            "FastAPI Basics (async APIs)",
+            "Building REST APIs with Flask & FastAPI"
           ],
           "time": "4 weeks"
         },
@@ -217,12 +233,12 @@
           "title": "Testing & Deployment",
           "topics": [
             "Unit Testing with unittest",
-            "PyTest Framework",
+            "PyTest Framework (fixtures, asserts)",
             "Logging & Debugging",
             "Packaging Projects (setup.py, pyproject.toml)",
             "Virtual Environments Best Practices",
-            "Docker Basics",
-            "CI/CD Pipelines (GitHub Actions, Jenkins)"
+            "Docker Basics (images, containers)",
+            "CI/CD Pipelines (GitHub Actions, Jenkins basics)"
           ],
           "time": "3 weeks"
         },
@@ -233,7 +249,8 @@
             "Data Visualization with Matplotlib & Seaborn",
             "Machine Learning with Scikit-Learn",
             "Deep Learning with TensorFlow/Keras",
-            "Natural Language Processing with NLTK/Spacy"
+            "Natural Language Processing with NLTK & SpaCy",
+            "Mini-Project: ML Model Deployment"
           ],
           "time": "6-8 weeks"
         }
@@ -243,25 +260,107 @@
 
 
 
+
+  
+  
   "java": {
     "meta": {
       "icon": "FaJava",
-      "description": "Powerful OOP language used in backend and enterprise apps.",
-      "time": "4-7 months"
+      "description": "A powerful, object-oriented programming language widely used for enterprise applications, Android, and backend development.",
+      "time": "10-18 months"
     },
     "beginner": {
       "title": "Java Roadmap - Beginner",
       "chapters": [
         {
-          "title": "Setup & Basics",
+          "title": "Introduction to Java",
           "topics": [
-            "Install JDK",
-            "IDE Setup (IntelliJ/Eclipse)",
-            "Hello World Program",
-            "Java Syntax & Structure",
-            "Data Types & Variables"
+            "What is Java? History & Features (Platform Independent, OOPs)",
+            "Java's Philosophy: WORA (Write Once, Run Anywhere)",
+            "Java Ecosystem (JDK, JRE, JVM)",
+            "Java Versions (LTS vs Latest)",
+            "Install Java & IDE Setup (IntelliJ, Eclipse, VS Code)",
+            "Hello World Program: Your First Java Code",
+            "Java Program Structure (Class, main method)",
+            "Understanding `System.out.println()`",
+            "Compiling & Running Java Programs (from IDE and command line)",
+            "Comments & Code Style (Best Practices)"
+          ],
+          "time": "1-2 weeks"
+        },
+        {
+          "title": "Data Types, Variables & Input/Output",
+          "topics": [
+            "Primitive Data Types (int, float, double, char, boolean, byte, short, long)",
+            "Non-Primitive/Reference Data Types (String, Arrays, Classes)",
+            "Variables & Constants (final keyword)",
+            "Naming Conventions",
+            "Type Casting (Implicit & Explicit)",
+            "Wrapper Classes (Integer, Double, Boolean)",
+            "String Class & Common String Methods",
+            "Taking User Input (Scanner Class)"
           ],
           "time": "2 weeks"
+        },
+        {
+          "title": "Operators & Expressions",
+          "topics": [
+            "Arithmetic Operators (+, -, *, /, %)",
+            "Comparison/Relational Operators (==, !=, >, <, >=, <=)",
+            "Logical Operators (&&, ||, !)",
+            "Bitwise Operators (&, |, ^, ~, <<, >>)",
+            "Assignment Operators (=, +=, -=, *=, /=)",
+            "Unary Operators (++, --)",
+            "Ternary Operator (? :)",
+            "instanceof Operator",
+            "Operator Precedence & Associativity"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Control Flow Statements",
+          "topics": [
+            "If, If-Else, If-Else-If Statements",
+            "Nested If-Else",
+            "Switch Case Statements",
+            "For Loop",
+            "While Loop",
+            "Do-While Loop",
+            "Nested Loops",
+            "Break, Continue, Return Keywords",
+            "Enhanced For Loop (for-each)",
+            "Mini-Project: Simple Calculator or Number Guessing Game"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Methods & Functions",
+          "topics": [
+            "What are Methods?",
+            "Defining and Calling Methods",
+            "Method Parameters & Return Types",
+            "Method Overloading",
+            "Static vs Instance Methods",
+            "The `static` keyword",
+            "Varargs (variable arguments)",
+            "Scope of Variables (Local, Instance, Class)",
+            "Introduction to Recursion"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Arrays & Basic Data Structures",
+          "topics": [
+            "Single-Dimensional Arrays (Declaration, Instantiation, Initialization)",
+            "Accessing and Iterating through Arrays",
+            "Multi-Dimensional Arrays",
+            "Passing Arrays to Methods",
+            "`String[] args` in the main method",
+            "Common Array Problems (searching, sorting, reversing)",
+            "Introduction to ArrayList",
+            "Mini-Project: Student Marks Management System"
+          ],
+          "time": "2-3 weeks"
         }
       ]
     },
@@ -269,9 +368,92 @@
       "title": "Java Roadmap - Intermediate",
       "chapters": [
         {
-          "title": "Java Collections",
-          "topics": ["ArrayList", "LinkedList", "HashMap", "HashSet", "Iterators"],
+          "title": "Object-Oriented Programming (OOPs)",
+          "topics": [
+            "Classes & Objects",
+            "Constructors & Constructor Overloading",
+            "The `this` & `super` keywords",
+            "Pillars of OOP: Encapsulation (Getters/Setters, Access Modifiers)",
+            "Pillars of OOP: Inheritance (single, multilevel, hierarchical)",
+            "Pillars of OOP: Polymorphism (Method Overloading & Overriding)",
+            "Pillars of OOP: Abstraction (Abstract Classes & Methods)",
+            "The `final` keyword (for variables, methods, classes)",
+            "Interfaces & `implements` keyword",
+            "Static & Final keywords in detail",
+            "The `Object` Class (`equals()`, `hashCode()`, `toString()`)",
+            "Mini-Project: Library Management System"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Strings & Collections Framework",
+          "topics": [
+            "String Immutability",
+            "StringBuilder & StringBuffer",
+            "Collections Framework Hierarchy",
+            "List Interface (ArrayList, LinkedList, Vector)",
+            "Set Interface (HashSet, TreeSet, LinkedHashSet)",
+            "Map Interface (HashMap, TreeMap, LinkedHashMap)",
+            "Queue Interface (PriorityQueue, ArrayDeque)",
+            "Stack Class",
+            "Iterators & For-Each loop",
+            "Comparable & Comparator Interfaces",
+            "Mini-Project: Contact Book using HashMap"
+          ],
           "time": "3 weeks"
+        },
+        {
+          "title": "Exception Handling",
+          "topics": [
+            "Errors vs Exceptions",
+            "Exception Hierarchy (Throwable, Exception, Error)",
+            "Checked vs Unchecked Exceptions",
+            "Try, Catch, Finally blocks",
+            "Multiple Catch Blocks",
+            "The `throw` & `throws` keywords",
+            "Creating Custom Exceptions",
+            "Try-with-resources statement",
+            "Best Practices for Exception Handling"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "File Handling & I/O Streams",
+          "topics": [
+            "I/O Streams (Byte Streams, Character Streams)",
+            "Reading & Writing Files (FileInputStream, FileOutputStream)",
+            "Buffered Streams (BufferedReader, BufferedWriter)",
+            "File Class for file operations",
+            "Scanner for reading files",
+            "Serialization & Deserialization",
+            "Introduction to Java NIO (Path, Files)",
+            "Mini-Project: File-based Note Taking App"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Generics, Enums & Annotations",
+          "topics": [
+            "Generics in Java (Generic Classes, Methods, Interfaces)",
+            "Wildcards (? extends T, ? super T)",
+            "Type Erasure",
+            "Enums (Enumerations)",
+            "Annotations (Built-in and Custom)",
+            "Inner Classes (Static Nested, Non-static/Inner, Local, Anonymous)"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Date & Time API",
+          "topics": [
+            "Legacy Date/Calendar vs New API",
+            "`java.time` package",
+            "LocalDate, LocalTime, LocalDateTime",
+            "ZonedDateTime & Timezones",
+            "Period & Duration",
+            "Formatting and Parsing Dates (DateTimeFormatter)"
+          ],
+          "time": "1 week"
         }
       ]
     },
@@ -279,105 +461,1391 @@
       "title": "Java Roadmap - Advanced",
       "chapters": [
         {
-          "title": "Spring Boot & Deployment",
+          "title": "Multithreading & Concurrency",
           "topics": [
-            "Spring Boot",
-            "Spring Data JPA",
-            "REST APIs",
-            "Hibernate ORM",
-            "CI/CD"
+            "Processes vs Threads",
+            "Creating Threads (Thread Class & Runnable Interface)",
+            "Thread Lifecycle",
+            "Synchronization (synchronized keyword, locks)",
+            "Inter-thread Communication (wait, notify, notifyAll)",
+            "`volatile` keyword and Memory Visibility",
+            "Executor Framework & Thread Pools",
+            "Callable & Future Interfaces",
+            "Atomic Variables",
+            "Concurrency Utilities (CountDownLatch, Semaphore, CyclicBarrier)"
           ],
-          "time": "5 weeks"
+          "time": "3 weeks"
+        },
+        {
+          "title": "Functional Programming & Streams API",
+          "topics": [
+            "Lambda Expressions",
+            "Functional Interfaces (@FunctionalInterface)",
+            "Method References",
+            "Introduction to Streams API",
+            "Intermediate Operations (filter, map, sorted, distinct)",
+            "Terminal Operations (forEach, collect, reduce, count)",
+            "Optional Class for handling nulls",
+            "Collectors (toList, toSet, toMap, groupingBy)",
+            "Parallel Streams"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Database Connectivity (JDBC)",
+          "topics": [
+            "Introduction to JDBC",
+            "JDBC Architecture and Drivers",
+            "Connecting to a Database (MySQL/PostgreSQL)",
+            "Statements, PreparedStatements, and CallableStatements",
+            "Executing CRUD Operations",
+            "ResultSet and processing results",
+            "Transaction Management (commit, rollback)",
+            "Connection Pooling",
+            "Mini-Project: Banking System with JDBC"
+          ],
+          "time": "2-3 weeks"
+        },
+        {
+          "title": "Build Tools & Testing",
+          "topics": [
+            "Introduction to Build Tools",
+            "Maven (pom.xml, dependencies, lifecycle)",
+            "Gradle (build.gradle, tasks)",
+            "Logging Frameworks (SLF4J, Logback/Log4j)",
+            "Unit Testing with JUnit 5",
+            "Assertions and Annotations in JUnit",
+            "Mocking with Mockito",
+            "Integration Testing"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Introduction to Java Frameworks (Spring & Hibernate)",
+          "topics": [
+            "What is a Framework? (Inversion of Control)",
+            "Spring Core (ApplicationContext, Beans)",
+            "Dependency Injection & Annotations (@Component, @Autowired)",
+            "Introduction to Spring Boot",
+            "Building a Simple REST API with Spring MVC",
+            "Introduction to ORM & Hibernate",
+            "JPA (Java Persistence API) Basics",
+            "Spring Data JPA",
+            "Mini-Project: RESTful API with Spring Boot & Spring Data JPA"
+          ],
+          "time": "4-5 weeks"
+        },
+        {
+          "title": "Deployment & DevOps Basics",
+          "topics": [
+            "Packaging Applications (JAR vs WAR)",
+            "Introduction to Web Servers (Tomcat)",
+            "Introduction to Docker & Containers",
+            "Dockerizing a Java Application",
+            "Basic CI/CD Concepts",
+            "Building with GitHub Actions or Jenkins"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Expert & Emerging Topics",
+          "topics": [
+            "Design Patterns (Singleton, Factory, Observer, etc.)",
+            "Microservices Architecture Concepts",
+            "Spring Cloud for Microservices",
+            "Reactive Programming (Project Reactor/RxJava)",
+            "Message Queues (RabbitMQ/Kafka)",
+            "Java Memory Model & Garbage Collection Tuning",
+            "Virtual Threads (Project Loom)",
+            "Kotlin & Java Interoperability"
+          ],
+          "time": "6-8 weeks"
         }
       ]
     }
   },
 
-  "c-programming": {
+
+
+  
+  "c": {
     "meta": {
       "icon": "SiC",
-      "description": "Low-level programming language for system-level coding.",
-      "time": "2-4 months"
+      "description": "A foundational programming language for system programming, embedded systems, and performance-critical applications.",
+      "time": "6-10 months"
     },
-    "beginner": { "title": "C Roadmap - Beginner", "chapters": [] },
-    "intermediate": { "title": "C Roadmap - Intermediate", "chapters": [] },
-    "advanced": { "title": "C Roadmap - Advanced", "chapters": [] }
+    "beginner": {
+      "title": "C Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction",
+          "topics": [
+            "What is C? History & Features",
+            "Installing a C Compiler (GCC, Clang, MSVC)",
+            "Setting up IDE (Code::Blocks, VS Code, Dev-C++)",
+            "Hello World Program",
+            "Structure of a C Program",
+            "Compilation & Execution Process",
+            "Comments in C"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Basic Syntax & Data Types",
+          "topics": [
+            "Keywords & Identifiers",
+            "Constants, Variables & Scope",
+            "Data Types (int, float, char, double, void)",
+            "Format Specifiers (printf & scanf)",
+            "Type Modifiers (short, long, unsigned, signed)",
+            "Type Casting"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Operators & Expressions",
+          "topics": [
+            "Arithmetic Operators",
+            "Relational Operators",
+            "Logical Operators",
+            "Bitwise Operators",
+            "Assignment Operators",
+            "Increment & Decrement",
+            "Ternary Operator",
+            "Operator Precedence"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Control Flow",
+          "topics": [
+            "if, if-else, nested if",
+            "switch-case",
+            "for loop",
+            "while loop",
+            "do-while loop",
+            "break, continue, goto",
+            "Mini-Project: Number Guessing Game"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Functions",
+          "topics": [
+            "Defining & Calling Functions",
+            "Function Parameters & Return Types",
+            "Pass by Value vs Pass by Reference",
+            "Recursion Basics",
+            "Scope & Storage Classes (auto, static, extern, register)",
+            "Inline Functions (macro-based)"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Arrays & Strings",
+          "topics": [
+            "1D Arrays (declaration, initialization)",
+            "2D Arrays (matrices)",
+            "Array Iteration & Manipulation",
+            "Strings in C (char arrays)",
+            "String Functions (strlen, strcpy, strcat, strcmp)",
+            "Mini-Project: Simple Student Record Program"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "C Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Pointers",
+          "topics": [
+            "Introduction to Pointers",
+            "Pointer Arithmetic",
+            "Pointers & Arrays",
+            "Pointers & Strings",
+            "Pointers to Pointers",
+            "Function Pointers",
+            "Mini-Project: Pointer-based Calculator"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Structures & Unions",
+          "topics": [
+            "Defining Structures",
+            "Accessing Structure Members",
+            "Nested Structures",
+            "Array of Structures",
+            "Pointers to Structures",
+            "Unions & Differences with Structures",
+            "typedef Keyword",
+            "Mini-Project: Employee Management System"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Dynamic Memory Management",
+          "topics": [
+            "malloc, calloc, realloc, free",
+            "Memory Leaks & Dangling Pointers",
+            "Dynamic Arrays",
+            "Mini-Project: Dynamic Student Database"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "File Handling",
+          "topics": [
+            "Opening & Closing Files",
+            "Reading & Writing Files",
+            "File Pointers (fopen, fclose, fgetc, fputc, fscanf, fprintf)",
+            "Binary Files",
+            "Random File Access (fseek, ftell, rewind)",
+            "Mini-Project: Contact Book with File Storage"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Preprocessor & Macros",
+          "topics": [
+            "#define Macros",
+            "#include & Header Files",
+            "#ifdef, #ifndef, #endif",
+            "Macro Functions",
+            "Conditional Compilation"
+          ],
+          "time": "1 week"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "C Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Advanced Pointers",
+          "topics": [
+            "Pointer to Functions",
+            "Pointer to Structures",
+            "Pointer to Arrays",
+            "Void Pointers",
+            "Null Pointers & Wild Pointers",
+            "Mini-Project: Function Pointer-based Menu System"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Data Structures in C",
+          "topics": [
+            "Linked Lists (singly, doubly, circular)",
+            "Stacks (array & linked list implementation)",
+            "Queues (normal, circular, priority)",
+            "Trees (binary tree basics)",
+            "Graphs (adjacency matrix & list basics)",
+            "Mini-Project: Linked List-based Student Database"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Advanced Memory & System Programming",
+          "topics": [
+            "Command Line Arguments",
+            "Bit Manipulation",
+            "Memory Layout of C Program (stack, heap, data, code)",
+            "Inline Assembly with C",
+            "Interfacing with OS Libraries",
+            "Mini-Project: Shell-like Command Line Program"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "C for Embedded & OS Concepts",
+          "topics": [
+            "Introduction to Embedded C",
+            "Volatile Keyword & Hardware Registers",
+            "C in Operating System Development",
+            "Processes & Threads (system-level intro)",
+            "Mini-Project: Simple Embedded Simulation (LED toggle program)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Best Practices & Optimization",
+          "topics": [
+            "Code Optimization Techniques",
+            "Memory Management Best Practices",
+            "Debugging with gdb",
+            "Makefiles & Build Automation",
+            "Modular Programming in C",
+            "Mini-Project: Modular Banking System"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    }
   },
 
-  "cpp": {
+
+
+
+  "C++": {
     "meta": {
       "icon": "SiCplusplus",
-      "description": "C++ for competitive programming, OOP, and performance apps.",
-      "time": "3-6 months"
+      "description": "A high-performance, object-oriented programming language widely used for system programming, game engines, and competitive programming.",
+      "time": "8-14 months"
     },
-    "beginner": { "title": "C++ Roadmap - Beginner", "chapters": [] },
-    "intermediate": { "title": "C++ Roadmap - Intermediate", "chapters": [] },
-    "advanced": { "title": "C++ Roadmap - Advanced", "chapters": [] }
+    "beginner": {
+      "title": "C++ Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction",
+          "topics": [
+            "What is C++? History & Features",
+            "Installing Compiler (GCC, Clang, MSVC)",
+            "Setting up IDE (VS Code, CLion, Code::Blocks, Dev-C++)",
+            "Hello World Program",
+            "Basic Program Structure",
+            "Compiling & Running C++ Code",
+            "Comments & Code Style (single-line, multi-line)"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Basic Syntax & Data Types",
+          "topics": [
+            "Keywords & Identifiers",
+            "Variables & Constants",
+            "Primitive Data Types (int, float, char, double, bool)",
+            "Type Modifiers (short, long, unsigned, signed)",
+            "Type Casting (static_cast, dynamic_cast, etc.)",
+            "Strings (std::string basics)",
+            "I/O with cin, cout"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Operators & Expressions",
+          "topics": [
+            "Arithmetic Operators",
+            "Relational Operators",
+            "Logical Operators",
+            "Bitwise Operators",
+            "Assignment Operators",
+            "Increment & Decrement",
+            "Ternary Operator",
+            "Operator Precedence"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Control Flow",
+          "topics": [
+            "if, if-else, nested if",
+            "switch-case",
+            "for loop",
+            "while loop",
+            "do-while loop",
+            "break, continue, goto",
+            "Range-based for loop (C++11+)",
+            "Mini-Project: Simple Calculator"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Functions",
+          "topics": [
+            "Defining & Calling Functions",
+            "Function Parameters & Return Types",
+            "Function Overloading",
+            "Default Arguments",
+            "Inline Functions",
+            "Recursion Basics",
+            "Namespaces"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Arrays & Strings",
+          "topics": [
+            "1D & 2D Arrays",
+            "Multidimensional Arrays",
+            "Character Arrays (C-strings)",
+            "String Functions (strcmp, strcpy, strlen)",
+            "std::string Class",
+            "Mini-Project: Student Marks Manager"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "C++ Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Object-Oriented Programming",
+          "topics": [
+            "Classes & Objects",
+            "Constructors & Destructors",
+            "Encapsulation (Access Modifiers)",
+            "Inheritance (single, multilevel, multiple)",
+            "Polymorphism (overloading, overriding, virtual functions)",
+            "Abstraction (abstract classes, pure virtual functions)",
+            "Friend Functions & Classes",
+            "this Pointer",
+            "Mini-Project: Library Management System"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Pointers & References",
+          "topics": [
+            "Introduction to Pointers",
+            "Pointer Arithmetic",
+            "Pointers & Arrays",
+            "Pointers & Functions",
+            "Reference Variables",
+            "Dynamic Memory Allocation (new, delete)",
+            "Smart Pointers (unique_ptr, shared_ptr, weak_ptr - C++11+)",
+            "Mini-Project: Pointer-based Calculator"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "File Handling",
+          "topics": [
+            "File Streams (ifstream, ofstream, fstream)",
+            "Reading & Writing Text Files",
+            "Binary File Handling",
+            "File Pointers (seekg, seekp)",
+            "Error Handling in Files",
+            "Mini-Project: File-based Contact Book"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Exception Handling",
+          "topics": [
+            "try, catch, throw",
+            "C++ Exception Hierarchy",
+            "Multiple Catch Blocks",
+            "Custom Exceptions",
+            "Best Practices"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "STL (Standard Template Library)",
+          "topics": [
+            "Overview of STL",
+            "Containers (vector, list, deque, set, map, unordered_map)",
+            "Iterators",
+            "Algorithms (sort, find, binary_search, count)",
+            "Function Objects & Lambdas",
+            "Mini-Project: Contact Book with STL Map"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "C++ Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Advanced OOP",
+          "topics": [
+            "Operator Overloading",
+            "Copy Constructor & Assignment Operator",
+            "Move Semantics (C++11)",
+            "Virtual Destructors",
+            "Abstract Base Classes",
+            "Multiple & Virtual Inheritance",
+            "Mini-Project: Bank Account Management System"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Templates & Generic Programming",
+          "topics": [
+            "Function Templates",
+            "Class Templates",
+            "Template Specialization",
+            "Variadic Templates",
+            "STL Template Usage",
+            "Mini-Project: Generic Data Structure Library"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Advanced Memory Management",
+          "topics": [
+            "Dynamic Allocation Deep Dive",
+            "Placement new Operator",
+            "Memory Leaks & Debugging",
+            "RAII (Resource Acquisition Is Initialization)",
+            "Smart Pointers (Advanced)"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Multithreading & Concurrency",
+          "topics": [
+            "Thread Class (C++11)",
+            "Joining & Detaching Threads",
+            "Mutex & Locks",
+            "Condition Variables",
+            "Async & Futures",
+            "Thread Pools",
+            "Mini-Project: Multithreaded Download Manager"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Advanced STL & Algorithms",
+          "topics": [
+            "Priority Queue & Heap",
+            "Graph Representation with STL",
+            "Advanced Sorting & Searching",
+            "Custom Comparators",
+            "Mini-Project: Graph Traversal Visualizer"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Modern C++ (C++11, C++14, C++17, C++20)",
+          "topics": [
+            "auto & decltype",
+            "Range-based loops",
+            "nullptr & nullptr_t",
+            "Lambda Expressions (deep dive)",
+            "Move Semantics & Rvalue References",
+            "std::tuple & std::pair",
+            "constexpr & inline variables",
+            "Structured Bindings (C++17)",
+            "Concepts & Ranges (C++20)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Advanced Projects & Best Practices",
+          "topics": [
+            "Design Patterns in C++",
+            "Modular Programming with Headers",
+            "Makefiles & CMake",
+            "Debugging with gdb & Valgrind",
+            "Performance Optimization Techniques",
+            "Mini-Project: Game Engine Core (basic 2D)"
+          ],
+          "time": "4 weeks"
+        }
+      ]
+    }
   },
+
 
   "javascript": {
     "meta": {
-      "icon": "SiJavascript",
-      "description": "The language of the web. Core for frontend and backend.",
-      "time": "2-5 months"
-    },
-    "beginner": { "title": "JavaScript Roadmap - Beginner", "chapters": [] },
-    "intermediate": { "title": "JavaScript Roadmap - Intermediate", "chapters": [] },
-    "advanced": { "title": "JavaScript Roadmap - Advanced", "chapters": [] }
-  },
-
-  "web-development": {
-    "meta": {
-      "icon": "FaGlobe",
-      "description": "Full stack roadmap with frontend, backend, and deployment.",
+      "icon": "FaJs",
+      "description": "JavaScript is the language of the web. It powers interactivity in websites, web apps, and is now used in backend (Node.js), mobile, and even desktop apps.",
       "time": "6-12 months"
     },
-    "beginner": { "title": "Web Dev Roadmap - Beginner", "chapters": [] },
-    "intermediate": { "title": "Web Dev Roadmap - Intermediate", "chapters": [] },
-    "advanced": { "title": "Web Dev Roadmap - Advanced", "chapters": [] }
-  },
-
-  "data-science": {
-    "meta": {
-      "icon": "SiNumpy",
-      "description": "Python, Pandas, Machine Learning, and visualization.",
-      "time": "6-12 months"
+    "beginner": {
+      "title": "JavaScript Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction",
+          "topics": [
+            "What is JavaScript? History & Features",
+            "How JavaScript Works in Browser",
+            "Setting up Environment (Browser Console, VS Code, Node.js)",
+            "Hello World Program",
+            "JavaScript Execution Context & Engine (V8 basics)"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Basic Syntax & Data Types",
+          "topics": [
+            "Variables (var, let, const)",
+            "Data Types (string, number, boolean, null, undefined, symbol, bigint)",
+            "Type Conversion & Coercion",
+            "Operators (arithmetic, logical, comparison, assignment)",
+            "Template Literals",
+            "Mini-Project: Simple Interest Calculator"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Control Flow",
+          "topics": [
+            "if, else if, else",
+            "switch-case",
+            "Loops (for, while, do-while)",
+            "for...in & for...of",
+            "break & continue",
+            "Mini-Project: Number Guessing Game"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Functions",
+          "topics": [
+            "Function Declarations & Expressions",
+            "Arrow Functions",
+            "Default Parameters",
+            "Rest & Spread Operators",
+            "Return Values",
+            "Scope (local, global, block)",
+            "Closures Basics",
+            "Mini-Project: Basic Calculator"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Arrays & Objects",
+          "topics": [
+            "Array Basics (push, pop, shift, unshift, splice, slice)",
+            "Iterating Arrays (map, filter, reduce, forEach)",
+            "Objects & Properties",
+            "Object Methods",
+            "Destructuring (array & object)",
+            "Mini-Project: To-Do List (basic)"
+          ],
+          "time": "3 weeks"
+        }
+      ]
     },
-    "beginner": { "title": "Data Science Roadmap - Beginner", "chapters": [] },
-    "intermediate": { "title": "Data Science Roadmap - Intermediate", "chapters": [] },
-    "advanced": { "title": "Data Science Roadmap - Advanced", "chapters": [] }
-  },
-
-  "machine-learning": {
-    "meta": {
-      "icon": "SiTensorflow",
-      "description": "AI, Deep Learning, and Neural Networks explained.",
-      "time": "8-15 months"
+    "intermediate": {
+      "title": "JavaScript Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "DOM Manipulation",
+          "topics": [
+            "Selecting Elements (getElementById, querySelector)",
+            "Modifying Elements (innerHTML, textContent, style)",
+            "Event Listeners (click, input, submit, etc.)",
+            "DOM Traversal & Nodes",
+            "Mini-Project: Interactive Quiz App"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "ES6+ Features",
+          "topics": [
+            "let, const vs var",
+            "Arrow Functions Deep Dive",
+            "Template Literals Advanced",
+            "Destructuring & Spread",
+            "Modules (import/export)",
+            "Mini-Project: Modular Calculator"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Objects & OOP in JS",
+          "topics": [
+            "Constructor Functions",
+            "Prototypes & Inheritance",
+            "ES6 Classes",
+            "Static Methods & Properties",
+            "Getters & Setters",
+            "Mini-Project: Book Library App"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Asynchronous JavaScript",
+          "topics": [
+            "setTimeout & setInterval",
+            "Callbacks",
+            "Promises",
+            "async/await",
+            "Error Handling (try/catch/finally)",
+            "Mini-Project: Weather App with Fetch API"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "JSON & APIs",
+          "topics": [
+            "JSON Basics",
+            "Parsing & Stringifying JSON",
+            "REST APIs Basics",
+            "Fetch API",
+            "Handling Responses & Errors",
+            "Mini-Project: Movie Search App (OMDb API)"
+          ],
+          "time": "2 weeks"
+        }
+      ]
     },
-    "beginner": { "title": "Machine Learning Roadmap - Beginner", "chapters": [] },
-    "intermediate": { "title": "Machine Learning Roadmap - Intermediate", "chapters": [] },
-    "advanced": { "title": "Machine Learning Roadmap - Advanced", "chapters": [] }
+    "advanced": {
+      "title": "JavaScript Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Advanced Functions & Patterns",
+          "topics": [
+            "Closures (in depth)",
+            "Currying",
+            "Higher Order Functions",
+            "Functional Programming Concepts",
+            "Design Patterns (Module, Singleton, Observer, Factory)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Advanced DOM & Events",
+          "topics": [
+            "Event Bubbling & Capturing",
+            "Event Delegation",
+            "Custom Events",
+            "Mini-Project: Drag & Drop Kanban Board"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Error Handling & Debugging",
+          "topics": [
+            "try/catch Advanced",
+            "Custom Errors",
+            "Debugging with DevTools",
+            "Linting with ESLint"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "JavaScript in Browser",
+          "topics": [
+            "LocalStorage, SessionStorage",
+            "Cookies",
+            "IndexedDB",
+            "Service Workers & Offline Apps",
+            "Mini-Project: Notes App with LocalStorage"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "JavaScript in Backend (Node.js Basics)",
+          "topics": [
+            "Intro to Node.js",
+            "npm & Packages",
+            "Creating Simple Server with http Module",
+            "File System Module",
+            "Express.js Basics",
+            "Mini-Project: REST API with Express.js"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Modern JavaScript (ES6+ to ESNext)",
+          "topics": [
+            "Generators",
+            "Symbols",
+            "Proxy & Reflect",
+            "Iterators",
+            "Optional Chaining",
+            "Nullish Coalescing",
+            "Async Iteration",
+            "Mini-Project: Real-time Chat App (with WebSockets)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Advanced Projects & Best Practices",
+          "topics": [
+            "Bundlers (Webpack, Vite, Parcel)",
+            "Transpilers (Babel)",
+            "Code Splitting & Lazy Loading",
+            "Testing (Jest, Mocha)",
+            "Performance Optimization",
+            "Mini-Project: E-commerce Frontend"
+          ],
+          "time": "4 weeks"
+        }
+      ]
+    }
   },
 
-  "sql-databases": {
-    "meta": {
-      "icon": "FaDatabase",
-      "description": "Master relational databases, queries, and transactions.",
-      "time": "2-4 months"
-    },
-    "beginner": { "title": "SQL Roadmap - Beginner", "chapters": [] },
-    "intermediate": { "title": "SQL Roadmap - Intermediate", "chapters": [] },
-    "advanced": { "title": "SQL Roadmap - Advanced", "chapters": [] }
-  },
 
-  "dsa": {
+  
+  "Data structure & algorithm": {
     "meta": {
       "icon": "FaProjectDiagram",
-      "description": "Data structures & algorithms for coding interviews.",
+      "description": "DSA (Data Structures & Algorithms) builds problem-solving and optimization skills for coding interviews, CP, and real-world systems.",
+      "time": "9-15 months"
+    },
+    "beginner": {
+      "title": "DSA Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Mathematics & Basics",
+          "topics": [
+            "Number Systems (Binary, Decimal, Hexadecimal)",
+            "Bit Manipulation Basics",
+            "Prime Numbers, Sieve of Eratosthenes",
+            "Greatest Common Divisor (GCD) & LCM",
+            "Modular Arithmetic",
+            "Fast Exponentiation",
+            "Recursion Basics"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Complexity Analysis",
+          "topics": [
+            "Time Complexity (Big-O, Big-Omega, Big-Theta)",
+            "Space Complexity",
+            "Best, Worst, Average Case",
+            "Recurrence Relations",
+            "Master Theorem"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Arrays & Strings",
+          "topics": [
+            "Introduction to Arrays",
+            "Array Traversal & Operations",
+            "Two-Pointer Technique",
+            "Prefix Sum & Sliding Window",
+            "String Basics",
+            "Pattern Matching (Naive, KMP, Rabin-Karp)",
+            "Mini-Project: Subarray Sum Finder"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Searching & Sorting",
+          "topics": [
+            "Linear Search",
+            "Binary Search & Variants",
+            "Binary Search on Answer",
+            "Sorting Basics (Bubble, Selection, Insertion)",
+            "Merge Sort",
+            "Quick Sort",
+            "Counting Sort, Radix Sort, Bucket Sort",
+            "Mini-Project: Custom Sort Library"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Recursion & Backtracking",
+          "topics": [
+            "Recursion Fundamentals",
+            "Recursion Tree & Stack",
+            "Factorial & Fibonacci with Recursion",
+            "Backtracking Basics",
+            "N-Queens Problem",
+            "Rat in a Maze",
+            "Sudoku Solver"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "DSA Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Linked List",
+          "topics": [
+            "Singly Linked List (Insert, Delete, Traverse)",
+            "Doubly Linked List",
+            "Circular Linked List",
+            "Reverse Linked List",
+            "Detect & Remove Loop",
+            "Merge Two Sorted Linked Lists",
+            "Mini-Project: Playlist Manager"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Stacks & Queues",
+          "topics": [
+            "Stack Basics (Push, Pop, Peek)",
+            "Infix, Prefix, Postfix Expressions",
+            "Queue Basics",
+            "Circular Queue",
+            "Deque (Double Ended Queue)",
+            "Priority Queue",
+            "Mini-Project: Browser History Manager"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Hashing",
+          "topics": [
+            "Hash Tables & Hash Maps",
+            "Collision Handling (Chaining, Open Addressing)",
+            "Applications (Frequency Count, Subarray Problems)",
+            "Set Implementation",
+            "Mini-Project: Word Counter"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Recursion & DP Basics",
+          "topics": [
+            "Memoization vs Tabulation",
+            "Fibonacci DP",
+            "Climbing Stairs Problem",
+            "Knapsack (0/1, Unbounded)",
+            "Coin Change",
+            "Longest Common Subsequence",
+            "Mini-Project: DP-Based Game Solver"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Binary Trees",
+          "topics": [
+            "Tree Terminology",
+            "Binary Tree Traversals (Inorder, Preorder, Postorder, Level Order)",
+            "Height & Diameter of Tree",
+            "Lowest Common Ancestor",
+            "Serialize & Deserialize Tree",
+            "Mini-Project: Expression Tree Evaluator"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Binary Search Trees (BST)",
+          "topics": [
+            "BST Basics (Insert, Search, Delete)",
+            "Traversal in BST",
+            "Balanced BST (AVL, Red-Black Basics)",
+            "Kth Smallest & Largest Element",
+            "Range Queries",
+            "Mini-Project: Student Records Manager"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Heaps",
+          "topics": [
+            "Min Heap & Max Heap",
+            "Heapify & Heap Sort",
+            "Priority Queue with Heap",
+            "Kth Largest/Smallest Problems",
+            "Median of Running Stream",
+            "Mini-Project: Task Scheduler"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "DSA Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Graphs Basics",
+          "topics": [
+            "Graph Representation (Adjacency List, Matrix)",
+            "DFS & BFS",
+            "Connected Components",
+            "Cycle Detection",
+            "Topological Sort",
+            "Mini-Project: Maze Solver"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Graphs Advanced",
+          "topics": [
+            "Shortest Path (Dijkstra, Bellman-Ford, Floyd-Warshall)",
+            "Minimum Spanning Tree (Prim’s, Kruskal’s)",
+            "Disjoint Set Union (Union-Find)",
+            "Strongly Connected Components (Kosaraju, Tarjan)",
+            "Network Flow (Ford-Fulkerson, Edmonds-Karp)",
+            "Mini-Project: Road Map Navigation"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Advanced Dynamic Programming",
+          "topics": [
+            "Matrix Chain Multiplication",
+            "Longest Increasing Subsequence",
+            "Edit Distance",
+            "DP on Trees",
+            "DP on Graphs",
+            "Bitmask DP",
+            "Mini-Project: Optimal Game Strategy"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "String Algorithms",
+          "topics": [
+            "Trie Data Structure",
+            "Suffix Array & Suffix Tree (basics)",
+            "Z Algorithm",
+            "Manacher’s Algorithm (Longest Palindromic Substring)",
+            "Aho-Corasick Algorithm",
+            "Mini-Project: Autocomplete System"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Advanced Topics",
+          "topics": [
+            "Segment Trees",
+            "Fenwick Tree (Binary Indexed Tree)",
+            "Disjoint Set (Union by Rank & Path Compression)",
+            "Sparse Table",
+            "Mo’s Algorithm",
+            "Heavy-Light Decomposition",
+            "Mini-Project: Range Query System"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Competitive Programming & Interview Prep",
+          "topics": [
+            "Problem-Solving Patterns (Greedy, Divide & Conquer, Sliding Window)",
+            "Codeforces/LeetCode/AtCoder Practice",
+            "Mock Interview Problems",
+            "Optimizing Solutions & Edge Cases"
+          ],
+          "time": "4 weeks"
+        }
+      ]
+    }
+  },
+
+
+
+
+
+  "Machine Learning": {
+    "meta": {
+      "icon": "FaRobot",
+      "description": "Machine Learning is a subset of AI that focuses on building systems that learn from data to make predictions or decisions.",
+      "time": "9-18 months"
+    },
+    "beginner": {
+      "title": "Machine Learning Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Mathematics Foundations",
+          "topics": [
+            "Linear Algebra (Vectors, Matrices, Operations)",
+            "Calculus Basics (Derivatives, Gradients, Partial Derivatives)",
+            "Probability & Statistics Basics",
+            "Distributions (Normal, Binomial, Poisson)",
+            "Bayes’ Theorem"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Python for ML",
+          "topics": [
+            "NumPy Basics",
+            "Pandas for Data Handling",
+            "Matplotlib & Seaborn for Visualization",
+            "Jupyter Notebook Workflow",
+            "Mini-Project: Data Cleaning & Visualization"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Introduction to ML",
+          "topics": [
+            "What is Machine Learning?",
+            "Types of ML (Supervised, Unsupervised, Reinforcement)",
+            "ML Workflow (Data → Model → Evaluate → Deploy)",
+            "Overfitting vs Underfitting",
+            "Bias-Variance Tradeoff"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Data Preprocessing",
+          "topics": [
+            "Handling Missing Values",
+            "Encoding Categorical Variables",
+            "Feature Scaling (Normalization & Standardization)",
+            "Train-Test Split",
+            "Mini-Project: Titanic Survival Prediction (Data Preprocessing)"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Machine Learning Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Supervised Learning",
+          "topics": [
+            "Linear Regression",
+            "Logistic Regression",
+            "Decision Trees",
+            "Random Forests",
+            "Support Vector Machines (SVM)",
+            "K-Nearest Neighbors (KNN)",
+            "Mini-Project: House Price Prediction"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Unsupervised Learning",
+          "topics": [
+            "Clustering (K-Means, Hierarchical, DBSCAN)",
+            "Dimensionality Reduction (PCA, t-SNE)",
+            "Association Rule Mining (Apriori, FP-Growth)",
+            "Mini-Project: Customer Segmentation"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Model Evaluation & Validation",
+          "topics": [
+            "Cross Validation",
+            "Confusion Matrix",
+            "Precision, Recall, F1-Score",
+            "ROC Curve & AUC",
+            "Hyperparameter Tuning (Grid Search, Random Search)",
+            "Mini-Project: Credit Card Fraud Detection"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Feature Engineering",
+          "topics": [
+            "Feature Selection Techniques",
+            "Polynomial Features",
+            "Feature Importance",
+            "Dimensionality Reduction for Features",
+            "Mini-Project: Spam Email Classifier"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Machine Learning Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Neural Networks & Deep Learning",
+          "topics": [
+            "Perceptron & Multilayer Perceptron",
+            "Activation Functions (ReLU, Sigmoid, Tanh, Softmax)",
+            "Forward & Backpropagation",
+            "Gradient Descent Variants (SGD, Adam, RMSProp)",
+            "Mini-Project: Handwritten Digit Classifier (MNIST)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Convolutional Neural Networks (CNNs)",
+          "topics": [
+            "Convolution & Pooling Layers",
+            "CNN Architectures (LeNet, AlexNet, ResNet, VGG)",
+            "Transfer Learning",
+            "Data Augmentation",
+            "Mini-Project: Image Classification (CIFAR-10)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Recurrent Neural Networks (RNNs)",
+          "topics": [
+            "RNN Basics",
+            "Vanishing Gradient Problem",
+            "LSTM & GRU Networks",
+            "Sequence-to-Sequence Models",
+            "Mini-Project: Text Generation with LSTMs"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Natural Language Processing (NLP)",
+          "topics": [
+            "Text Preprocessing (Tokenization, Lemmatization, Stopwords)",
+            "Word Embeddings (Word2Vec, GloVe, FastText)",
+            "Transformers (Attention Mechanism, BERT, GPT basics)",
+            "Mini-Project: Sentiment Analysis"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Reinforcement Learning",
+          "topics": [
+            "Markov Decision Processes",
+            "Q-Learning",
+            "Deep Q Networks (DQN)",
+            "Policy Gradient Methods",
+            "Mini-Project: Game AI with RL"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Production & Deployment",
+          "topics": [
+            "Saving & Loading Models",
+            "Flask/FastAPI for ML Deployment",
+            "Dockerizing ML Models",
+            "ML in Cloud (AWS, GCP, Azure)",
+            "MLOps Basics (CI/CD for ML, Monitoring Models)",
+            "Mini-Project: Deploy ML Model as API"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    }
+  },
+
+
+  "dbms": {
+    "meta": {
+      "icon": "FaDatabase",
+      "description": "Database Management Systems (DBMS) are software systems that manage data efficiently, ensuring security, consistency, and concurrent access.",
       "time": "4-8 months"
     },
-    "beginner": { "title": "DSA Roadmap - Beginner", "chapters": [] },
-    "intermediate": { "title": "DSA Roadmap - Intermediate", "chapters": [] },
-    "advanced": { "title": "DSA Roadmap - Advanced", "chapters": [] }
+    "beginner": {
+      "title": "DBMS Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to Databases",
+          "topics": [
+            "What is a Database?",
+            "DBMS vs RDBMS",
+            "Types of Databases (Hierarchical, Network, Relational, NoSQL)",
+            "Advantages of DBMS",
+            "Popular DBMS Tools (MySQL, PostgreSQL, MongoDB, Oracle, SQL Server)"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Basic SQL",
+          "topics": [
+            "SQL Syntax & Commands",
+            "CREATE, DROP, ALTER statements",
+            "INSERT, UPDATE, DELETE",
+            "SELECT & WHERE Clauses",
+            "ORDER BY, LIMIT",
+            "Mini-Project: Student Record Management"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Relational Model",
+          "topics": [
+            "Relations, Tuples, Attributes",
+            "Keys (Primary, Foreign, Candidate, Composite)",
+            "Constraints (NOT NULL, UNIQUE, CHECK, DEFAULT)",
+            "Entity-Relationship (E-R) Diagrams",
+            "Mini-Project: Library Database Schema"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "DBMS Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Advanced SQL",
+          "topics": [
+            "Joins (INNER, LEFT, RIGHT, FULL)",
+            "UNION, INTERSECT, EXCEPT",
+            "Subqueries & Nested Queries",
+            "Views",
+            "Indexes",
+            "Stored Procedures & Functions",
+            "Mini-Project: Online Store Database Queries"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Normalization & Design",
+          "topics": [
+            "Functional Dependencies",
+            "1NF, 2NF, 3NF, BCNF",
+            "Denormalization",
+            "Schema Design",
+            "Mini-Project: Hospital Management Database"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Transactions & Concurrency",
+          "topics": [
+            "ACID Properties",
+            "Transaction States",
+            "Concurrency Control",
+            "Locking Mechanisms (Shared, Exclusive)",
+            "Deadlocks",
+            "Mini-Project: Banking Transaction Simulation"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Indexing & Query Optimization",
+          "topics": [
+            "Clustered vs Non-clustered Index",
+            "B-Tree & Hash Index",
+            "Cost-based Query Optimization",
+            "Execution Plans",
+            "Mini-Project: Optimizing Search Queries"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "DBMS Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Distributed Databases",
+          "topics": [
+            "Centralized vs Distributed DB",
+            "Data Fragmentation, Replication, Allocation",
+            "Distributed Query Processing",
+            "CAP Theorem",
+            "Mini-Project: Distributed Student Database"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "NoSQL Databases",
+          "topics": [
+            "Types of NoSQL (Document, Key-Value, Column, Graph)",
+            "MongoDB Basics",
+            "Cassandra Basics",
+            "When to Use SQL vs NoSQL",
+            "Mini-Project: Blog Platform with MongoDB"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Big Data & New Trends",
+          "topics": [
+            "Introduction to Big Data",
+            "Hadoop & HDFS",
+            "Spark SQL",
+            "Cloud Databases (AWS RDS, Google BigQuery, Azure CosmosDB)",
+            "Mini-Project: Analytics Dashboard with BigQuery"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "DBMS Security",
+          "topics": [
+            "Authentication & Authorization",
+            "Encryption (At-Rest & In-Transit)",
+            "SQL Injection Prevention",
+            "Backup & Recovery",
+            "Audit Trails",
+            "Mini-Project: Secure E-commerce Database"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    }
   }
+
+
+
 }
