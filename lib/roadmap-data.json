@@ -2018,10 +2018,228 @@
         }
       ]
     }
+  },
+
+
+
+  
+  "web_development": {
+    "meta": {
+      "icon": "FaGlobe",
+      "title": "Web Development",
+      "description": "Learn how to build modern, scalable, and responsive websites and applications using frontend, backend, and full-stack technologies.",
+      "time": "9-15 months"
+    },
+    "beginner": {
+      "title": "Web Development Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to Web Development",
+          "topics": [
+            "What is Web Development?",
+            "Frontend vs Backend vs Full Stack",
+            "How the Web Works (Client-Server Model, HTTP/HTTPS)",
+            "Browsers & Rendering Engines",
+            "Setting Up Development Environment"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "HTML Fundamentals",
+          "topics": [
+            "HTML Structure (doctype, html, head, body)",
+            "Headings, Paragraphs, Text Formatting",
+            "Links & Anchors",
+            "Lists (Ordered, Unordered, Nested)",
+            "Images, Audio & Video",
+            "Forms & Input Elements",
+            "Tables",
+            "Semantic HTML (header, footer, section, article)"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "CSS Fundamentals",
+          "topics": [
+            "Selectors & Combinators",
+            "Colors, Units, and Measurements",
+            "Box Model (margin, border, padding, content)",
+            "Typography (fonts, text styles)",
+            "Backgrounds & Borders",
+            "Positioning (static, relative, absolute, fixed, sticky)",
+            "Flexbox Basics",
+            "CSS Grid Basics",
+            "Responsive Design & Media Queries"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "JavaScript Basics",
+          "topics": [
+            "Variables & Data Types",
+            "Operators & Expressions",
+            "Control Flow (if, else, switch)",
+            "Loops (for, while, for...of)",
+            "Functions",
+            "Events & DOM Manipulation",
+            "ES6+ Features (let/const, template literals, arrow functions)",
+            "Basic Debugging with Console"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Version Control",
+          "topics": [
+            "Introduction to Git",
+            "Basic Git Commands (init, add, commit, push, pull, clone)",
+            "Branching & Merging",
+            "Working with GitHub/GitLab"
+          ],
+          "time": "1 week"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Web Development Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Advanced CSS & Styling",
+          "topics": [
+            "CSS Variables",
+            "Advanced Flexbox",
+            "Advanced Grid",
+            "Animations & Transitions",
+            "Responsive Patterns (Mobile First Design)",
+            "CSS Frameworks (Bootstrap, Tailwind CSS)"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "JavaScript Deep Dive",
+          "topics": [
+            "Objects & Arrays",
+            "Higher-Order Functions (map, filter, reduce)",
+            "Closures & Scope",
+            "Event Loop & Asynchronous JS",
+            "Promises & async/await",
+            "Modules (import/export)",
+            "Error Handling",
+            "LocalStorage & SessionStorage",
+            "Fetch API & AJAX"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Frontend Frameworks",
+          "topics": [
+            "Introduction to Single Page Applications (SPA)",
+            "React Basics (JSX, Components, Props, State)",
+            "React Hooks (useState, useEffect, useContext)",
+            "Component Lifecycle",
+            "React Router (Navigation & Routing)",
+            "State Management (Context API, Redux Basics)",
+            "Performance Optimization"
+          ],
+          "time": "5 weeks"
+        },
+        {
+          "title": "Backend Fundamentals",
+          "topics": [
+            "Introduction to Backend Development",
+            "Node.js Basics (npm, modules, events)",
+            "Express.js Basics (routing, middleware)",
+            "REST APIs (CRUD operations)",
+            "Authentication & Authorization",
+            "Environment Variables & Config Management"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Databases",
+          "topics": [
+            "SQL vs NoSQL Databases",
+            "Relational Databases (MySQL/PostgreSQL)",
+            "NoSQL Databases (MongoDB Basics)",
+            "CRUD Operations in Databases",
+            "Database Relationships & Joins",
+            "ORMs (Sequelize, Mongoose Basics)"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Web Development Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Advanced Frontend",
+          "topics": [
+            "Next.js Basics (SSR, SSG, CSR)",
+            "Advanced Routing & API Routes",
+            "Code Splitting & Lazy Loading",
+            "Styling in Next.js (CSS Modules, Styled Components, Tailwind)",
+            "State Management (Redux Toolkit, Zustand, Recoil)",
+            "Testing React Apps (Jest, React Testing Library)"
+          ],
+          "time": "5 weeks"
+        },
+        {
+          "title": "Advanced Backend",
+          "topics": [
+            "Advanced Express.js Patterns",
+            "Authentication (JWT, OAuth)",
+            "Security Best Practices (Helmet, Rate Limiting, CORS)",
+            "File Uploads & Handling",
+            "Background Jobs (Bull, Redis Queues)",
+            "API Versioning & Best Practices"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Full Stack Integration",
+          "topics": [
+            "Connecting Frontend & Backend",
+            "REST API Consumption",
+            "GraphQL Basics",
+            "Real-Time Apps with WebSockets (Socket.io)",
+            "Authentication Flows (Login, Signup, Tokens)",
+            "Deployment to Cloud (Vercel, Netlify, Render, AWS)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "DevOps & Deployment",
+          "topics": [
+            "Linux Basics for Developers",
+            "CI/CD Pipelines (GitHub Actions, Jenkins)",
+            "Containerization with Docker",
+            "Serverless Functions (AWS Lambda, Vercel Functions)",
+            "Nginx & Reverse Proxy",
+            "Monitoring & Logging (PM2, Winston, Log Management)"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Advanced Topics & Best Practices",
+          "topics": [
+            "Progressive Web Apps (PWAs)",
+            "Web Performance Optimization",
+            "SEO Basics",
+            "Accessibility (WCAG Guidelines)",
+            "Testing & QA (Unit, Integration, E2E)",
+            "Microservices Architecture",
+            "Scalable Design Patterns"
+          ],
+          "time": "5 weeks"
+        }
+      ]
+    }
   }
-
-
-
-
-
 }
+
+
+
+
+
+
+
