@@ -2771,8 +2771,178 @@
         }
       ]
     }
+  },
+
+
+  
+  "cyber_security": {
+    "meta": {
+      "icon": "FaShieldAlt",
+      "title": "Cyber Security",
+      "description": "Learn the fundamentals of Cyber Security, Ethical Hacking, Network Security, Cryptography, Cloud & Application Security, and advanced Threat Intelligence.",
+      "time": "9-15 months"
+    },
+    "beginner": {
+      "title": "Cyber Security Roadmap - Beginner",
+      "chapters": [
+        {
+          "title": "Introduction to Cyber Security",
+          "topics": [
+            "What is Cyber Security?",
+            "Types of Cyber Threats",
+            "CIA Triad (Confidentiality, Integrity, Availability)",
+            "Security Principles & Best Practices",
+            "Careers in Cyber Security"
+          ],
+          "time": "1 week"
+        },
+        {
+          "title": "Networking Fundamentals",
+          "topics": [
+            "OSI & TCP/IP Models",
+            "IP Addressing & Subnetting",
+            "Routing & Switching Basics",
+            "DNS, DHCP, NAT",
+            "HTTP, HTTPS, FTP, SSH protocols"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Operating System Basics",
+          "topics": [
+            "Windows Security Basics",
+            "Linux File System & Permissions",
+            "Command Line Essentials",
+            "User & Group Management",
+            "System Monitoring Tools"
+          ],
+          "time": "2 weeks"
+        },
+        {
+          "title": "Fundamentals of Security",
+          "topics": [
+            "Malware Types (Virus, Worm, Trojan, Ransomware)",
+            "Firewalls & IDS/IPS",
+            "VPNs & Proxy",
+            "Password Policies",
+            "Security Policies & Compliance"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    },
+    "intermediate": {
+      "title": "Cyber Security Roadmap - Intermediate",
+      "chapters": [
+        {
+          "title": "Cryptography",
+          "topics": [
+            "Symmetric & Asymmetric Encryption",
+            "Hashing Algorithms (MD5, SHA, bcrypt)",
+            "Digital Signatures & Certificates",
+            "Public Key Infrastructure (PKI)",
+            "SSL/TLS Protocols"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Web Application Security",
+          "topics": [
+            "OWASP Top 10",
+            "SQL Injection",
+            "Cross-Site Scripting (XSS)",
+            "Cross-Site Request Forgery (CSRF)",
+            "Authentication & Authorization Attacks"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Ethical Hacking & Penetration Testing",
+          "topics": [
+            "Footprinting & Reconnaissance",
+            "Scanning & Enumeration",
+            "Exploitation Basics",
+            "Post-Exploitation",
+            "Reporting Vulnerabilities"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Network Security",
+          "topics": [
+            "Secure Network Design",
+            "Firewalls, IDS & IPS Advanced Configurations",
+            "Wireless Security (WPA, WPA2, WPA3)",
+            "Man-in-the-Middle Attacks",
+            "DDoS Attacks & Mitigation"
+          ],
+          "time": "3 weeks"
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Cyber Security Roadmap - Advanced",
+      "chapters": [
+        {
+          "title": "Cloud Security",
+          "topics": [
+            "AWS, Azure & GCP Security",
+            "Identity & Access Management (IAM)",
+            "Shared Responsibility Model",
+            "Cloud Threats & Vulnerabilities",
+            "Cloud Security Tools"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Digital Forensics & Incident Response (DFIR)",
+          "topics": [
+            "Incident Response Lifecycle",
+            "Log Analysis",
+            "Forensic Tools (Autopsy, FTK, EnCase)",
+            "Chain of Custody",
+            "Malware Reverse Engineering Basics"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Threat Intelligence & Advanced Security",
+          "topics": [
+            "Threat Modeling",
+            "MITRE ATT&CK Framework",
+            "Zero Trust Architecture",
+            "Advanced Persistent Threats (APTs)",
+            "Red Team vs Blue Team Exercises"
+          ],
+          "time": "4 weeks"
+        },
+        {
+          "title": "Security Automation & Tools",
+          "topics": [
+            "SIEM (Splunk, ELK Stack)",
+            "SOAR Platforms",
+            "Automating Security with Python",
+            "Vulnerability Scanners (Nmap, Nessus, OpenVAS)",
+            "Bug Bounty Platforms"
+          ],
+          "time": "3 weeks"
+        },
+        {
+          "title": "Compliance & Governance",
+          "topics": [
+            "GDPR, HIPAA, PCI-DSS",
+            "ISO 27001",
+            "Risk Assessment & Management",
+            "Security Audits",
+            "Ethical & Legal Aspects"
+          ],
+          "time": "2 weeks"
+        }
+      ]
+    }
   }
 }
+
 
 
 
